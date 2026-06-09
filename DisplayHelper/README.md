@@ -10,6 +10,6 @@ edition of DisplayHelper.
 
 - Source copy: `/Users/sam/GitHub/DisplayHelperSource/Website/DisplayHelperWebsiteAppStore`
 - Published GitHub Pages repo: `/Users/sam/GitHub/DisplayHelper`
-- Public URL: `https://samx2015.github.io/DisplayHelper/`
+- Public URL: `https://xintechllc.com/DisplayHelper/`
 
 It does not contain the private macOS app source code.

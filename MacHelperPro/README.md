@@ -5,6 +5,6 @@ metadata for MacHelper Pro.
 
 - Source copy: `/Users/sam/GitHub/HelperSuite/Websites/Sources/MacHelperPro`
 - Published GitHub Pages repo: `/Users/sam/GitHub/MacHelperPro`
-- Public URL: `https://samx2015.github.io/MacHelperPro/`
+- Public URL: `https://xintechllc.com/MacHelperPro/`
 
 It does not contain the private macOS app source code.
