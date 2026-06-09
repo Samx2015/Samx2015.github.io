@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DisplayHelper Support</title>
+    <meta
+      name="description"
+      content="Support for DisplayHelper."
+    >
+    <link rel="canonical" href="https://xintechllc.com/DisplayHelper/support.html">
+    <link rel="alternate" hreflang="en-US" href="https://xintechllc.com/DisplayHelper/support.html">
+    <link rel="alternate" hreflang="zh-Hans" href="https://xintechllc.com/DisplayHelper/zh-Hans/support.html">
+    <link rel="alternate" hreflang="zh-Hant" href="https://xintechllc.com/DisplayHelper/zh-Hant/support.html">
+    <link rel="alternate" hreflang="ja" href="https://xintechllc.com/DisplayHelper/ja/support.html">
+    <link rel="alternate" hreflang="fr" href="https://xintechllc.com/DisplayHelper/fr/support.html">
+    <link rel="alternate" hreflang="de" href="https://xintechllc.com/DisplayHelper/de/support.html">
+    <link rel="alternate" hreflang="es" href="https://xintechllc.com/DisplayHelper/es/support.html">
+    <link rel="alternate" hreflang="ko" href="https://xintechllc.com/DisplayHelper/ko/support.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://xintechllc.com/DisplayHelper/pt-BR/support.html">
+    <link rel="alternate" hreflang="it" href="https://xintechllc.com/DisplayHelper/it/support.html">
+    <link rel="alternate" hreflang="nl" href="https://xintechllc.com/DisplayHelper/nl/support.html">
+    <link rel="alternate" hreflang="pl" href="https://xintechllc.com/DisplayHelper/pl/support.html">
+    <link rel="alternate" hreflang="tr" href="https://xintechllc.com/DisplayHelper/tr/support.html">
+    <link rel="alternate" hreflang="vi" href="https://xintechllc.com/DisplayHelper/vi/support.html">
+    <link rel="alternate" hreflang="ru" href="https://xintechllc.com/DisplayHelper/ru/support.html">
+    <link rel="alternate" hreflang="ar" href="https://xintechllc.com/DisplayHelper/ar/support.html">
+    <link rel="alternate" hreflang="hi" href="https://xintechllc.com/DisplayHelper/hi/support.html">
+    <link rel="alternate" hreflang="id" href="https://xintechllc.com/DisplayHelper/id/support.html">
+    <link rel="alternate" hreflang="cs" href="https://xintechllc.com/DisplayHelper/cs/support.html">
+    <link rel="alternate" hreflang="da" href="https://xintechllc.com/DisplayHelper/da/support.html">
+    <link rel="alternate" hreflang="fi" href="https://xintechllc.com/DisplayHelper/fi/support.html">
+    <link rel="alternate" hreflang="ms" href="https://xintechllc.com/DisplayHelper/ms/support.html">
+    <link rel="alternate" hreflang="nb" href="https://xintechllc.com/DisplayHelper/nb/support.html">
+    <link rel="alternate" hreflang="sv" href="https://xintechllc.com/DisplayHelper/sv/support.html">
+    <link rel="alternate" hreflang="th" href="https://xintechllc.com/DisplayHelper/th/support.html">
+    <link rel="alternate" hreflang="uk" href="https://xintechllc.com/DisplayHelper/uk/support.html">
+    <link rel="alternate" hreflang="x-default" href="https://xintechllc.com/DisplayHelper/support.html">
+    <style>
+      :root {
+        color-scheme: dark;
+        --ink: #f4f7f2;
+        --muted: #a6b1aa;
+        --paper: #080a09;
+        --panel: #111614;
+        --panel-strong: #171e1b;
+        --line: rgba(255, 255, 255, 0.12);
+        --teal: #54ddd3;
+        --teal-dark: #86f1ea;
+        --coral: #ff795f;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(84, 221, 211, 0.1), transparent 34rem),
+          linear-gradient(180deg, var(--paper) 0%, #0c100f 46%, var(--paper) 100%);
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-weight: 300;
+        line-height: 1.65;
+      }
+
+      a {
+        color: var(--teal-dark);
+        font-weight: 400;
+      }
+
+      header,
+      main {
+        width: min(100%, 880px);
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      header {
+        padding-top: 30px;
+        padding-bottom: 24px;
+      }
+
+      main {
+        padding-bottom: 44px;
+      }
+
+      h1 {
+        max-width: 760px;
+        margin: 0 0 10px;
+        font-size: clamp(2rem, 5vw, 2.7rem);
+        font-weight: 300;
+        line-height: 1.14;
+        letter-spacing: 0;
+      }
+
+      h2 {
+        margin: 32px 0 8px;
+        color: var(--teal-dark);
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 1.18;
+      }
+
+      p {
+        margin: 0 0 13px;
+        color: var(--muted);
+      }
+
+      ul {
+        margin: 0 0 14px;
+        padding-left: 22px;
+        color: var(--muted);
+      }
+
+      li + li {
+        margin-top: 4px;
+      }
+
+      .top-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-bottom: 18px;
+        font-size: 0.95rem;
+      }
+
+      .top-links a {
+        padding: 6px 10px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(17, 22, 20, 0.72);
+        text-decoration: none;
+      }
+
+      .summary {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1px;
+        margin: 2px 0 28px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .summary div {
+        min-height: 96px;
+        padding: 16px;
+        background: rgba(17, 22, 20, 0.78);
+      }
+
+      .summary strong,
+      .summary span {
+        display: block;
+      }
+
+      .summary strong {
+        margin-bottom: 4px;
+        color: var(--ink);
+        font-weight: 400;
+      }
+
+      .summary span {
+        color: var(--muted);
+      }
+
+      .meta {
+        color: var(--muted);
+        font-weight: 300;
+      }
+
+      @media (max-width: 720px) {
+        .summary {
+          grid-template-columns: 1fr;
+        }
+
+        .summary div {
+          min-height: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="top-links" aria-label="Site links">
+        <a href="index.html">DisplayHelper Home</a>
+        <a href="app-store.html">App Store Version</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="zh-Hans/support.html" lang="zh-Hans">简体中文</a>
+        <a href="zh-Hant/support.html" lang="zh-Hant">繁體中文</a>
+        <a href="ja/support.html" lang="ja">日本語</a>
+        <a href="fr/support.html" lang="fr">Français</a>
+        <a href="es/support.html" lang="es">Español</a>
+        <a href="de/support.html" lang="de">Deutsch</a>
+      </nav>
+      <h1>DisplayHelper Support</h1>
+      <p class="meta">Support for the DisplayHelper App Store version.</p>
+      <p>
+        DisplayHelper keeps unused MacBook screens dark in mirrored setups.
+      </p>
+    </header>
+
+    <main>
+      <section class="summary" aria-label="Support options">
+        <div>
+          <strong>Email support</strong>
+          <span><a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a></span>
+        </div>
+        <div>
+          <strong>In-app feedback</strong>
+          <span>Use Report a Bug, Suggest a Feature, or Send Feedback in the app menu.</span>
+        </div>
+        <div>
+          <strong>No account required</strong>
+          <span>DisplayHelper does not require sign-in or a user profile.</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>
+          For support, privacy questions, bugs, or ideas, email
+          <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>.
+        </p>
+        <p>
+          You can also use the feedback items in the app menu. They open an email draft.
+        </p>
+      </section>
+
+      <section>
+        <h2>Helpful Details</h2>
+        <p>When reporting an issue, please include:</p>
+        <ul>
+          <li>What happened and what you expected to happen.</li>
+          <li>Your macOS version and Mac model, if known.</li>
+          <li>Whether the MacBook screen was mirrored or extended.</li>
+          <li>The steps that reproduce the issue.</li>
+        </ul>
+        <p>
+          Bug report drafts may include a short diagnostic note. Remove anything you do not want to
+          send.
+        </p>
+      </section>
+
+      <section>
+        <h2>Common Notes</h2>
+        <ul>
+          <li>DisplayHelper appears in the macOS menu bar and does not show a Dock icon.</li>
+          <li>The App Store build is made for mirrored display setups.</li>
+          <li>No account, analytics, ads, or tracking are included.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Privacy</h2>
+        <p>
+          Read the <a href="privacy.html">DisplayHelper Privacy Policy</a> for details.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

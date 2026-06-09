@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>DisplayHelper Pro Updates</title>
+        <link>https://github.com/Samx2015/DisplayHelperPro/releases</link>
+        <description>Software updates for DisplayHelper Pro.</description>
+        <language>en</language>
+        <item>
+            <title>1.1.1</title>
+            <pubDate>Mon, 08 Jun 2026 08:32:24 -0700</pubDate>
+            <link>https://xintechllc.com/DisplayHelperPro/</link>
+            <sparkle:version>25</sparkle:version>
+            <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[
+## DisplayHelper Pro
+
+- Improved the Auto Wi-Fi Switch location-permission flow so the permission prompt appears when the feature is enabled and the menu refreshes after approval.
+- Improved launch coordination across the HelperSuite family so only one HelperSuite app is active at a time.
+- Fixed product website/privacy link routing so DisplayHelper Pro opens the correct localized DisplayHelper Pro pages.
+- Refined Finder/right-click integration shared with the MacHelper family, including reliability fixes for opening selected Finder items.
+- Improved release automation so build numbers, appcasts, websites, and latest build artifacts stay in sync.
+
+]]></description>
+            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-25-macOS.dmg" length="3616923" type="application/octet-stream" sparkle:edSignature="R0gMXByavIsc/tc10l3QqWotz8DcyAToe8bdrlMTmktWm6AoPb1T349V6HCV6j7z1AiBBGZ5AdpLl5ZIzkjgCQ=="/>
+        </item>
+        <item>
+            <title>1.1.1</title>
+            <pubDate>Sun, 07 Jun 2026 06:38:15 -0700</pubDate>
+            <link>https://xintechllc.com/DisplayHelperPro/</link>
+            <sparkle:version>24</sparkle:version>
+            <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[
+## DisplayHelper Pro 1.1.1 (24)
+
+- Maintenance release for DisplayHelper Pro.
+
+]]></description>
+            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-24-macOS.dmg" length="3592521" type="application/octet-stream" sparkle:edSignature="8VM/dR/qLHSkxMYcm1v6DHFy900c92WijU5RXLVYlG7bYhZqdF6+XCcNjzS0qEMZx26LOH7BchPctYxI4EHLCA=="/>
+        </item>
+        <item>
+            <title>1.1.1</title>
+            <pubDate>Sun, 07 Jun 2026 05:24:15 -0700</pubDate>
+            <link>https://xintechllc.com/DisplayHelperPro/</link>
+            <sparkle:version>23</sparkle:version>
+            <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# DisplayHelper Pro 1.1.1 (23)
+
+## What's New
+
+- Keeps only one HelperSuite family app running at a time to avoid overlapping
+  menu bar behavior across DisplayHelper, DisplayHelper Pro, MacHelper, and
+  MacHelper Pro.
+- Uses the newest launched family app as the active app, with deterministic
+  tie-breaking when launch times are unavailable.
+- Refreshes DMG packaging so Sparkle's bundled updater helpers are signed with
+  secure Developer ID timestamps before notarization.
+- Keeps the App Store DisplayHelper product path unchanged.
+
+Requires macOS 13.0 or later.
+]]></description>
+            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-23-macOS.dmg" length="3592403" type="application/octet-stream" sparkle:edSignature="cZKn6YQAnAidz+Z1n6aaLXpQU8AWKhRuQM9FNcH3tbur6fdvh2GnRx2XW6AZT9Rh9kbIGHySbd2UCt6mME09BA=="/>
+        </item>
+        <item>
+            <title>1.1.1</title>
+            <pubDate>Sun, 07 Jun 2026 04:26:33 -0700</pubDate>
+            <link>https://xintechllc.com/DisplayHelperPro/</link>
+            <sparkle:version>22</sparkle:version>
+            <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# DisplayHelper Pro 1.1.1 (22)
+
+## What's New
+
+- Refreshes the direct-download build with Developer ID signing, notarization,
+  and Sparkle update metadata.
+- Signs Sparkle's bundled updater helpers with secure Developer ID timestamps
+  for the direct distribution update path.
+- Keeps the App Store DisplayHelper product path unchanged.
+
+Requires macOS 13.0 or later.
+]]></description>
+            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-22-macOS.dmg" length="3809506" type="application/octet-stream" sparkle:edSignature="Jak0ohI1ZFFcLDdlgLmgTREqiFhoNOSHigZ/hiyUMwmr0r/9u0l3qguM0/Oykr0napIYL9tdXxfqN2KzGPDXAA=="/>
+        </item>
+        <item>
+            <title>1.1.1</title>
+            <pubDate>Thu, 04 Jun 2026 23:57:49 -0700</pubDate>
+            <link>https://xintechllc.com/DisplayHelperPro/</link>
+            <sparkle:version>21</sparkle:version>
+            <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# DisplayHelper Pro 1.1.1
+
+## What's New
+
+- Publishes build 21 for Sparkle update-path testing from build 20.
+- Shows Sparkle update errors in the same centered dialog style as successful update status dialogs.
+- Adds a Keyboard Brightness slider for MacBook built-in keyboard backlights, placed with the display brightness and contrast controls in the Pro menu.
+- Adds localized Pro homepages for all supported app languages and opens the matching localized homepage from About when available.
+- Fixes localized Pro website links so the About window follows the selected app language, including Swedish.
+- Adds a compact flag-based language menu label in the app and localized website.
+- Fixes the manual Check for Updates action so Sparkle shows its visible update check instead of starting an invisible probe first.
+- Queues a manual Check for Updates click while Sparkle is still warming up, so the first click is not silently dropped.
+- Adds optional Auto Wi-Fi Switch for saved Wi-Fi networks, with a signal
+  threshold and conservative scans.
+- Shows current and alternative Wi-Fi network details in the menu using public
+  macOS Wi-Fi APIs.
+- Keeps Wi-Fi passwords out of scope; the app does not read, store, or send
+  Wi-Fi passwords.
+- Avoids showing a Keychain permission prompt during launch if an older local
+  build created the saved license item.
+- Hides the saved license key in the Manage License window.
+- Validates licenses from the live DisplayHelper Pro Lemon Squeezy product.
+- Adds a Buy License button to the Manage License window.
+- Enables Start at Login by default on first launch while preserving later
+  user changes.
+- Fixes duplicate "You're up to date!" dialogs when checking for updates.
+- Uses `DisplayHelper Pro.app` as the installed app name.
+- Refines the compact menu with About, feedback, privacy, license, and update
+  actions.
+- Ships in a modern drag-to-Applications DMG.
+
+## Install
+
+1. Open the DMG.
+2. Drag `DisplayHelper Pro.app` onto `Applications`.
+3. Open DisplayHelper Pro from Applications.
+
+The app appears in the macOS menu bar.
+
+## Compatibility
+
+Compatibility note: This app depends on macOS display brightness behavior that
+may change in future macOS updates.
+
+Requires macOS 13.0 or later.
+]]></description>
+            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-21-macOS.dmg" length="3688712" type="application/octet-stream" sparkle:edSignature="kE3P4UJCSOQceQQZcfrY8ZMp5KGMagN0lM4JvKkQipjbjuBN6nCIJnTtTxV6BL3oRcCO/v4Dt2/pQsjDSIN4DA=="/>
+        </item>
+    </channel>
+</rss>

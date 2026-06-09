@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MacHelper Support</title>
+    <meta name="description" content="Support for MacHelper.">
+    <link rel="canonical" href="https://xintechllc.com/MacHelper/support.html">
+    <link rel="alternate" hreflang="en" href="https://xintechllc.com/MacHelper/support.html">
+    <link rel="alternate" hreflang="x-default" href="https://xintechllc.com/MacHelper/support.html">
+    <style>
+      :root {
+        color-scheme: dark;
+        --ink: #f5f7f4;
+        --muted: #aab6b0;
+        --paper: #080d0e;
+        --panel: #111819;
+        --line: #2a3436;
+        --teal: #80f2ea;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(128, 242, 234, 0.12), transparent 32rem),
+          linear-gradient(180deg, #0b1112 0%, var(--paper) 48%, #050707 100%);
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-weight: 240;
+        line-height: 1.65;
+      }
+
+      a {
+        color: var(--teal);
+        font-weight: 320;
+      }
+
+      header,
+      main {
+        width: min(100%, 880px);
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      header {
+        padding-top: 36px;
+        padding-bottom: 24px;
+      }
+
+      main {
+        padding-bottom: 44px;
+      }
+
+      h1 {
+        max-width: 760px;
+        margin: 0 0 10px;
+        font-size: clamp(2rem, 5vw, 2.7rem);
+        line-height: 1.14;
+        font-weight: 280;
+        letter-spacing: 0;
+      }
+
+      h2 {
+        margin: 32px 0 8px;
+        font-size: 1.5rem;
+        line-height: 1.18;
+        font-weight: 220;
+      }
+
+      p {
+        margin: 0 0 13px;
+        color: var(--muted);
+      }
+
+      ul {
+        margin: 0 0 14px;
+        padding-left: 22px;
+        color: var(--muted);
+      }
+
+      li + li {
+        margin-top: 4px;
+      }
+
+      .top-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-bottom: 18px;
+        font-size: 0.95rem;
+      }
+
+      .top-links a {
+        padding: 6px 10px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(17, 24, 25, 0.72);
+        text-decoration: none;
+      }
+
+      .summary {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1px;
+        margin: 2px 0 28px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        overflow: hidden;
+        background: var(--line);
+      }
+
+      .summary div {
+        min-height: 96px;
+        padding: 16px;
+        background: var(--panel);
+      }
+
+      .summary strong,
+      .summary span {
+        display: block;
+      }
+
+      .summary strong {
+        margin-bottom: 4px;
+        font-weight: 320;
+      }
+
+      .summary span {
+        color: var(--muted);
+      }
+
+      @media (max-width: 720px) {
+        .summary {
+          grid-template-columns: 1fr;
+        }
+
+        .summary div {
+          min-height: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="top-links" aria-label="Site links">
+        <a href="./">MacHelper Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="mailto:admin@xintechllc.com">Email Support</a>
+      </nav>
+      <h1>MacHelper Support</h1>
+      <p>Support for the MacHelper Mac App Store edition.</p>
+    </header>
+
+    <main>
+      <section class="summary" aria-label="Support summary">
+        <div>
+          <strong>Email</strong>
+          <span><a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a></span>
+        </div>
+        <div>
+          <strong>Updates</strong>
+          <span>Handled through the Mac App Store.</span>
+        </div>
+        <div>
+          <strong>Privacy</strong>
+          <span>No account, analytics, or background telemetry.</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Before Contacting Support</h2>
+        <ul>
+          <li>Make sure MacHelper is launched from Applications, not directly from a temporary download location.</li>
+          <li>If Finder right-click menus do not appear, open MacHelper's menu and choose Configure Finder right-click menus.</li>
+          <li>If a Finder action cannot open a selected folder, macOS may need you to approve that access prompt.</li>
+          <li>If the menu-bar item is missing, open macOS Control Center settings and check Menu Bar items.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Finder Right-Click Menus</h2>
+        <p>
+          MacHelper uses a bundled Finder extension. macOS controls whether that
+          extension is enabled. You can open the permission/settings flow from the
+          MacHelper menu, or open System Settings and look under Login Items &amp;
+          Extensions.
+        </p>
+      </section>
+
+      <section>
+        <h2>Feedback</h2>
+        <p>
+          Use Report a Bug, Suggest a Feature, or Send Feedback from the MacHelper
+          menu. MacHelper opens an email draft so you can review everything before
+          sending it.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>
+          Email <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>.
+          Please include your macOS version, Mac model, and a short description of
+          what you expected to happen.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

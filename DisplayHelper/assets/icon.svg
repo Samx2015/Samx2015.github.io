@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DisplayHelper icon">
+  <rect width="64" height="64" rx="14" fill="#141716"/>
+  <rect x="13" y="14" width="38" height="30" rx="4" fill="#f7f8f6"/>
+  <rect x="17" y="18" width="30" height="22" rx="2" fill="#020303"/>
+  <path d="M22 50h20" stroke="#f7f8f6" stroke-width="4" stroke-linecap="round"/>
+  <path d="M47 14c-5 2-8 7-8 12 0 7 5 13 12 14-3 4-8 7-14 7-10 0-18-8-18-18 0-9 7-17 16-18 4-1 8 0 12 3z" fill="#00a7a5"/>
+  <circle cx="48" cy="19" r="3" fill="#ff6f59"/>
+</svg>
