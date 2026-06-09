@@ -452,6 +452,135 @@ li + li {
   font-weight: 240;
 }
 
+.app-store-page {
+  color-scheme: light;
+  --ink: #182023;
+  --muted: #667579;
+  --paper: #fbfaf7;
+  --panel: #ffffff;
+  --panel-strong: #f2f7f5;
+  --line: #dfe8e5;
+  --charcoal: #f5f2eb;
+  --teal: #12615f;
+  --teal-dark: #0b7f7c;
+  --coral: #12615f;
+  --gold: #d7b454;
+  --shadow: 0 18px 42px rgba(24, 32, 35, 0.1);
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.app-store-page .page-header {
+  position: sticky;
+  top: 0;
+  color: var(--ink);
+  background: rgba(255, 255, 252, 0.92);
+  border-bottom-color: var(--line);
+  backdrop-filter: blur(18px);
+}
+
+.app-store-page .brand {
+  font-weight: 320;
+}
+
+.app-store-page .brand img {
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(24, 32, 35, 0.12);
+}
+
+.app-store-page .language-menu summary {
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.84);
+  border-color: var(--line);
+}
+
+.app-store-page .language-menu-list {
+  background: rgba(255, 255, 255, 0.98);
+  border-color: var(--line);
+  box-shadow: var(--shadow);
+}
+
+.app-store-page .language-menu-list a {
+  color: var(--muted);
+}
+
+.app-store-page .language-menu-list a:hover,
+.app-store-page .language-menu-list a:focus-visible,
+.app-store-page .language-menu-list a[aria-current="page"] {
+  color: var(--ink);
+  background: var(--panel-strong);
+}
+
+.app-store-page.page-header .header-cta,
+.app-store-page .page-header .header-cta {
+  color: #ffffff;
+  background: var(--teal);
+  box-shadow: 0 12px 26px rgba(18, 97, 95, 0.14);
+}
+
+.app-store-page .page-hero {
+  padding-top: clamp(2rem, 4vw, 3.25rem);
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.app-store-page h1,
+.app-store-page h2,
+.app-store-page h3 {
+  color: var(--ink);
+  font-weight: 360;
+}
+
+.app-store-page p,
+.app-store-page li {
+  color: var(--muted);
+  font-weight: 320;
+}
+
+.app-store-page .eyebrow,
+.app-store-page .section-kicker,
+.app-store-page .text-link,
+.app-store-page .edition-card a:not(.button) {
+  color: var(--teal-dark);
+  font-weight: 420;
+}
+
+.app-store-page .edition-card,
+.app-store-page .truth-band {
+  background: var(--panel);
+  border-color: var(--line);
+  box-shadow: none;
+}
+
+.app-store-page .edition-card-pro {
+  background: var(--panel-strong);
+  border-color: rgba(18, 97, 95, 0.18);
+}
+
+.app-store-page .edition-badge {
+  color: var(--teal-dark);
+  background: var(--panel-strong);
+  border-color: var(--line);
+}
+
+.app-store-page .menu-shot img {
+  border: 1px solid rgba(24, 32, 35, 0.1);
+  box-shadow: 0 24px 54px rgba(24, 32, 35, 0.16);
+}
+
+.app-store-page .truth-band {
+  color: var(--ink);
+}
+
+.app-store-page .truth-band p {
+  color: var(--muted);
+}
+
+.app-store-page .truth-band .section-kicker,
+.app-store-page .truth-band .text-link {
+  color: var(--teal-dark);
+}
+
 .page {
   width: min(960px, calc(100% - 36px));
   margin: 0 auto;
