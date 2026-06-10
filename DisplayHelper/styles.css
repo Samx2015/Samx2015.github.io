@@ -12,6 +12,8 @@
   --coral: #ff795f;
   --gold: #d8b758;
   --shadow: 0 22px 54px rgba(0, 0, 0, 0.36);
+  --page-gutter: clamp(1rem, 4vw, 4rem);
+  --wide-max: 70rem;
 }
 
 * {
@@ -53,7 +55,7 @@ a {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: 1.2rem;
-  padding: 0.9rem clamp(1rem, 4vw, 4rem);
+  padding: 0.9rem var(--page-gutter);
   color: #ffffff;
 }
 
@@ -473,6 +475,11 @@ li + li {
 .app-store-page .page-header {
   position: sticky;
   top: 0;
+  left: auto;
+  right: auto;
+  width: 100%;
+  transform: none;
+  padding-inline: max(var(--page-gutter), calc((100vw - var(--wide-max)) / 2));
   color: var(--ink);
   background: rgba(255, 255, 252, 0.92);
   border-bottom-color: var(--line);
