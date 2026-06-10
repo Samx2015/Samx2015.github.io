@@ -3,9 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DisplayHelper App Store Edition</title>
-    <meta name="description" content="DisplayHelper keeps unused MacBook displays dark in mirrored Mac setups.">
+    <title>DisplayHelper for Mac</title>
+    <meta
+      name="description"
+      content="DisplayHelper is a Mac App Store menu-bar app for mirrored MacBook display setups."
+    >
     <link rel="canonical" href="https://xintechllc.com/DisplayHelper/app-store.html">
+    <meta name="google-site-verification" content="E7DLX6ZlccKL2RXTHrOx2P_Wzp35A1nDlLM3SkugHPE">
     <link rel="alternate" hreflang="en-US" href="https://xintechllc.com/DisplayHelper/app-store.html">
     <link rel="alternate" hreflang="zh-Hans" href="https://xintechllc.com/DisplayHelper/zh-Hans/app-store.html">
     <link rel="alternate" hreflang="zh-Hant" href="https://xintechllc.com/DisplayHelper/zh-Hant/app-store.html">
@@ -34,16 +38,24 @@
     <link rel="alternate" hreflang="uk" href="https://xintechllc.com/DisplayHelper/uk/app-store.html">
     <link rel="alternate" hreflang="x-default" href="https://xintechllc.com/DisplayHelper/app-store.html">
     <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="preload" href="assets/hero-display.png" as="image">
+    <link rel="stylesheet" href="styles.css?v=20260610-appstore-ui">
   </head>
-  <body class="app-store-page">
-    <header class="site-header page-header" aria-label="Primary">
-      <a class="brand" href="app-store.html" aria-label="DisplayHelper Home">
+  <body class="compact-page displayhelper-appstore-page">
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="app-store.html" aria-label="DisplayHelper home">
         <img src="assets/icon.svg" alt="" width="34" height="34">
         <span>DisplayHelper</span>
       </a>
+      <nav class="site-nav" aria-label="Page sections">
+        <a href="#what">What It Is</a>
+        <a href="#why">Why It's Good</a>
+        <a href="#app-store">Get It</a>
+      </nav>
       <div class="header-actions">
+        <a class="header-cta" href="https://apps.apple.com/us/app/displayhelper/id6773671145?mt=12">
+          Mac App Store
+        </a>
         <details class="language-menu">
           <summary>🌐 - 🇺🇸🇬🇧 English</summary>
           <div class="language-menu-list" aria-label="Language">
@@ -75,66 +87,179 @@
             <a href="uk/app-store.html" lang="uk">🇺🇦 Українська</a>
           </div>
         </details>
-        <a class="header-cta" href="support.html">Support</a>
       </div>
     </header>
 
-    <main>
-      <section class="page-hero" aria-labelledby="page-title">
-        <p class="eyebrow">Mac App Store edition</p>
-        <h1 id="page-title">DisplayHelper</h1>
-        <p>The easiest way to install and update DisplayHelper.</p>
-      </section>
-
-      <section class="section compact-section">
-        <div class="edition-grid">
-          <article class="edition-card">
-            <h2>What it is for</h2>
-            <p>For mirrored Mac setups where the external monitor is the screen you want to watch.</p>
-            <ul>
-              <li>Darken the built-in screen.</li>
-              <li>Mirror or unmirror from the menu.</li>
-              <li>Dim displays when stepping away.</li>
-              <li>Adjust brightness and contrast.</li>
-            </ul>
-          </article>
-
-          <article class="edition-card">
-            <h2>Privacy</h2>
-            <p>No account, analytics, tracking, ads, or automatic reports.</p>
-            <ul>
-              <li>Display controls run locally.</li>
-              <li>Feedback opens an email draft.</li>
-              <li>You can remove logs before sending.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="section screenshot-section" aria-labelledby="app-store-menu-title">
-        <div class="screenshot-layout">
-          <div>
-            <p class="section-kicker">Menu controls</p>
-            <h2 id="app-store-menu-title">Everything stays in the menu bar.</h2>
-            <p>Enable auto blackout, mirror, dim, adjust brightness and contrast, sleep, send feedback, and open privacy controls from one menu.</p>
+    <main id="top">
+      <section class="hero compact-hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/hero-display.png"
+          alt="Laptop with a dim built-in display in front of an active external monitor."
+        >
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Mac App Store menu-bar display helper</p>
+          <h1 id="hero-title">DisplayHelper</h1>
+          <p class="hero-subtitle">
+            A quiet menu-bar app for mirrored MacBook display setups.
+          </p>
+          <div class="hero-summary" aria-label="DisplayHelper summary">
+            <div>
+              <strong>Blackout</strong>
+              <span>Keep the built-in MacBook display dark while mirroring to an external monitor.</span>
+            </div>
+            <div>
+              <strong>Controls</strong>
+              <span>Mirror, dim, sleep, display levels, and shortcuts from the menu bar.</span>
+            </div>
+            <div>
+              <strong>Local</strong>
+              <span>No account, no analytics, no tracking, and no Dock window.</span>
+            </div>
           </div>
-          <figure class="menu-shot">
-            <img src="assets/menu-screenshot.png?v=20260529c" alt="DisplayHelper menu showing automatic blackout, mirroring, brightness and contrast sliders, dimming, sleep, feedback, privacy, and quit controls." width="732" height="902">
-          </figure>
+          <div class="trust-pills" aria-label="Highlights">
+            <span>Mac App Store edition</span>
+            <span>No account</span>
+            <span>No analytics</span>
+            <span>Menu bar only</span>
+          </div>
         </div>
       </section>
 
-      <section class="truth-band">
-        <div>
-          <p class="section-kicker">Related links</p>
-          <h2>Support and privacy.</h2>
+      <section class="section controls-section compact-section" id="what" aria-labelledby="what-title">
+        <div class="section-kicker">What is it?</div>
+        <div class="controls-layout">
+          <div>
+            <h2 id="what-title">Display controls for mirrored MacBooks.</h2>
+            <ul class="copy-points" aria-label="What DisplayHelper does">
+              <li>
+                <strong>Auto Blackout</strong>
+                <span>Keeps the built-in MacBook display dark while it mirrors an external display.</span>
+              </li>
+              <li>
+                <strong>Display controls</strong>
+                <span>Switch mirroring, dim displays until key press, sleep the Mac, and adjust display brightness or contrast from the menu bar.</span>
+              </li>
+              <li>
+                <strong>Keyboard shortcuts</strong>
+                <span>Assign shortcuts for mirroring, dimming, and sleep.</span>
+              </li>
+              <li>
+                <strong>Start at Login</strong>
+                <span>Launch DisplayHelper automatically when you sign in.</span>
+              </li>
+              <li>
+                <strong>Privacy basics</strong>
+                <span>No account, no analytics, no automatic reports, and no Dock window.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="product-screenshots single-product-screenshot" aria-label="DisplayHelper screenshot">
+            <figure class="menu-screenshot">
+              <img
+                src="assets/menu-screenshot.png?v=20260610-menu"
+                width="960"
+                height="926"
+                loading="lazy"
+                decoding="async"
+                alt="DisplayHelper menu showing Auto Blackout, mirroring, dimming, sleep, display controls, start at login, language, feedback, privacy, and quit."
+              >
+            </figure>
+          </div>
         </div>
-        <p>Find contact details or read how DisplayHelper handles local data and feedback.</p>
-        <div class="inline-links">
-          <a class="text-link" href="support.html">Support</a>
-          <a class="text-link" href="privacy.html">Privacy Policy</a>
+      </section>
+
+      <section class="section compact-section" id="why" aria-labelledby="why-title">
+        <div class="section-kicker">What's good about it?</div>
+        <div class="compact-split">
+          <div>
+            <h2 id="why-title">Less glare, less fuss.</h2>
+            <ul class="copy-points" aria-label="DisplayHelper benefits">
+              <li>
+                <strong>Only blacks out when it should</strong>
+                <span>dark when mirrored, normal when the MacBook screen is part of your workspace</span>
+              </li>
+              <li>
+                <strong>Fast everyday actions</strong>
+                <span>switch mirroring, dim until key press, sleep, adjust levels, and open common settings from one menu</span>
+              </li>
+              <li>
+                <strong>Local-first by default</strong>
+                <span>settings stay on your Mac, feedback opens as a reviewable email draft, and there is no analytics SDK</span>
+              </li>
+            </ul>
+          </div>
+          <div class="capability-list" aria-label="Key benefits">
+            <article>
+              <strong>For desk setups</strong>
+              <span>made for MacBooks that spend real time connected to an external display</span>
+            </article>
+            <article>
+              <strong>For quick control</strong>
+              <span>the main experience is the menu bar, with focused dialogs only when needed</span>
+            </article>
+            <article>
+              <strong>For App Store updates</strong>
+              <span>install and update through the Mac App Store</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact-section compact-release" id="app-store" aria-labelledby="app-store-title">
+        <div class="section-kicker">How to get it</div>
+        <div class="compact-split">
+          <div>
+            <h2 id="app-store-title">Get DisplayHelper from the Mac App Store.</h2>
+            <ul class="copy-points" aria-label="App Store summary">
+              <li>
+                <strong>Install</strong>
+                <span>download DisplayHelper from the Mac App Store</span>
+              </li>
+              <li>
+                <strong>Update</strong>
+                <span>receive updates through the Mac App Store</span>
+              </li>
+              <li>
+                <strong>Run locally</strong>
+                <span>use menu-bar display controls without an account or analytics</span>
+              </li>
+            </ul>
+            <div class="compatibility-list" aria-label="Compatibility">
+              <span>macOS 13.0 or later</span>
+              <span>Apple Silicon + Intel</span>
+            </div>
+          </div>
+          <ol class="steps compact-steps">
+            <li>
+              <strong>1</strong>
+              <span>Open the Mac App Store listing.</span>
+            </li>
+            <li>
+              <strong>2</strong>
+              <span>Install DisplayHelper.</span>
+            </li>
+            <li>
+              <strong>3</strong>
+              <span>Launch it from Applications.</span>
+            </li>
+          </ol>
+        </div>
+        <div class="download-card" aria-label="Mac App Store call to action">
+          <div>
+            <strong>Available on the Mac App Store.</strong>
+          </div>
+          <div class="download-actions">
+            <a class="button button-primary" href="https://apps.apple.com/us/app/displayhelper/id6773671145?mt=12">
+              Mac App Store
+            </a>
+            <a class="text-link" href="support.html">Support</a>
+            <a class="text-link" href="privacy.html">Privacy</a>
+          </div>
         </div>
       </section>
     </main>
+    <script src="script.js?v=20260610-appstore-ui"></script>
   </body>
 </html>

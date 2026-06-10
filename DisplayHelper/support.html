@@ -40,13 +40,21 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
   </head>
-  <body class="app-store-page support-page">
-    <header class="site-header page-header" aria-label="Primary">
+  <body class="policy-page displayhelper-appstore-page">
+    <header class="site-header" aria-label="Primary">
       <a class="brand" href="./" aria-label="DisplayHelper Home">
         <img src="assets/icon.svg" alt="" width="34" height="34">
         <span>DisplayHelper</span>
       </a>
+      <nav class="site-nav" aria-label="Page links">
+        <a href="./">Home</a>
+        <a href="support.html" aria-current="page">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
       <div class="header-actions">
+        <a class="header-cta" href="https://apps.apple.com/us/app/displayhelper/id6773671145?mt=12">
+          Mac App Store
+        </a>
         <details class="language-menu">
           <summary>🌐 - 🇺🇸🇬🇧 English</summary>
           <div class="language-menu-list" aria-label="Language">
@@ -78,21 +86,20 @@
             <a href="uk/support.html" lang="uk">🇺🇦 Українська</a>
           </div>
         </details>
-        <a class="header-cta" href="privacy.html">Privacy</a>
       </div>
     </header>
 
-    <main class="support-main">
-      <section class="page-hero" aria-labelledby="page-title">
-        <p class="eyebrow">Support</p>
+    <main>
+      <section class="policy-hero" aria-labelledby="page-title">
+        <p class="policy-date">Support</p>
         <h1 id="page-title">DisplayHelper Support</h1>
-        <p>Support for the DisplayHelper App Store version.</p>
         <p>
-          DisplayHelper keeps unused MacBook screens dark in mirrored setups.
+          Help for the Mac App Store edition of DisplayHelper, a local menu-bar
+          app for mirrored MacBook display setups.
         </p>
       </section>
 
-      <section class="support-summary" aria-label="Support options">
+      <section class="policy-summary" aria-label="Support options">
         <div>
           <strong>Email support</strong>
           <span><a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a></span>
@@ -107,47 +114,60 @@
         </div>
       </section>
 
-      <section class="support-section">
-        <h2>Contact</h2>
-        <p>
-          For support, privacy questions, bugs, or ideas, email
-          <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>.
-        </p>
-        <p>
-          You can also use the feedback items in the app menu. They open an email draft.
-        </p>
-      </section>
+      <div class="policy-shell">
+        <nav class="policy-nav" aria-label="Support topics">
+          <a href="#contact">Contact</a>
+          <a href="#details">Helpful details</a>
+          <a href="#notes">Common notes</a>
+          <a href="#privacy">Privacy</a>
+        </nav>
 
-      <section class="support-section">
-        <h2>Helpful Details</h2>
-        <p>When reporting an issue, please include:</p>
-        <ul>
-          <li>What happened and what you expected to happen.</li>
-          <li>Your macOS version and Mac model, if known.</li>
-          <li>Whether the MacBook screen was mirrored or extended.</li>
-          <li>The steps that reproduce the issue.</li>
-        </ul>
-        <p>
-          Bug report drafts may include a short diagnostic note. Remove anything you do not want to
-          send.
-        </p>
-      </section>
+        <div class="policy-content">
+          <section class="policy-section" id="contact">
+            <h2>Contact</h2>
+            <p>
+              For support, privacy questions, bugs, or ideas, email
+              <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>.
+            </p>
+            <p>
+              You can also use the feedback items in the app menu. They open an
+              email draft so you can review everything before sending it.
+            </p>
+          </section>
 
-      <section class="support-section">
-        <h2>Common Notes</h2>
-        <ul>
-          <li>DisplayHelper appears in the macOS menu bar and does not show a Dock icon.</li>
-          <li>The App Store build is made for mirrored display setups.</li>
-          <li>No account, analytics, ads, or tracking are included.</li>
-        </ul>
-      </section>
+          <section class="policy-section" id="details">
+            <h2>Helpful Details</h2>
+            <p>When reporting an issue, please include:</p>
+            <ul>
+              <li>What happened and what you expected to happen.</li>
+              <li>Your macOS version and Mac model, if known.</li>
+              <li>Whether the MacBook screen was mirrored or extended.</li>
+              <li>The steps that reproduce the issue.</li>
+            </ul>
+            <p>
+              Bug report drafts may include a short diagnostic note. Remove
+              anything you do not want to send.
+            </p>
+          </section>
 
-      <section class="support-section">
-        <h2>Privacy</h2>
-        <p>
-          Read the <a href="privacy.html">DisplayHelper Privacy Policy</a> for details.
-        </p>
-      </section>
+          <section class="policy-section" id="notes">
+            <h2>Common Notes</h2>
+            <ul>
+              <li>DisplayHelper appears in the macOS menu bar and does not show a Dock icon.</li>
+              <li>The App Store build is made for mirrored display setups.</li>
+              <li>No account, analytics, ads, or tracking are included.</li>
+            </ul>
+          </section>
+
+          <section class="policy-section" id="privacy">
+            <h2>Privacy</h2>
+            <p>
+              Read the <a href="privacy.html">DisplayHelper Privacy Policy</a>
+              for details.
+            </p>
+          </section>
+        </div>
+      </div>
     </main>
   </body>
 </html>
