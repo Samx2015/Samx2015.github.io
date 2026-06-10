@@ -581,6 +581,79 @@ li + li {
   color: var(--teal-dark);
 }
 
+.support-page .support-main {
+  width: min(960px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: 0 0 3rem;
+}
+
+.support-page .page-hero {
+  width: auto;
+  padding: clamp(2rem, 4vw, 3.25rem) 0 1.45rem;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+
+.support-page .page-hero p {
+  max-width: 42rem;
+  font-size: 1.08rem;
+}
+
+.support-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin: 1.5rem 0 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--line);
+}
+
+.support-summary div {
+  min-height: 7rem;
+  padding: 1rem;
+  background: var(--panel);
+}
+
+.support-summary strong,
+.support-summary span {
+  display: block;
+}
+
+.support-summary strong {
+  margin-bottom: 0.3rem;
+  color: var(--ink);
+  font-weight: 420;
+}
+
+.support-summary span {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.support-section {
+  padding: 1.75rem 0 1.6rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.support-section h2 {
+  margin-bottom: 0.65rem;
+  font-size: clamp(1.55rem, 3vw, 2rem);
+}
+
+.support-section p,
+.support-section ul {
+  max-width: 44rem;
+}
+
+.support-main a {
+  color: var(--teal-dark);
+  font-weight: 420;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
 .page {
   width: min(960px, calc(100% - 36px));
   margin: 0 auto;
@@ -804,8 +877,13 @@ li + li {
   .split,
   .screenshot-layout,
   .edition-grid,
+  .support-summary,
   .truth-band {
     grid-template-columns: 1fr;
+  }
+
+  .support-summary div {
+    min-height: 0;
   }
 
   .section {
