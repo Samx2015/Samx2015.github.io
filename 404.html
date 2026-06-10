@@ -45,10 +45,18 @@
       const canonical = match ? aliases[match[1].toLowerCase()] : null;
 
       if (canonical) {
-        const suffix = match[2] || "/";
+        const suffix = (match[2] || "/").replace(/\/Privacy\.html$/i, "/privacy.html");
         const target = `/${canonical}${suffix}${window.location.search}${window.location.hash}`;
-        document.getElementById("message").innerHTML = `Redirecting to <a href="${target}">${target}</a>.`;
-        window.location.replace(target);
+        const message = document.getElementById("message");
+        const link = document.createElement("a");
+        link.href = target;
+        link.textContent = target;
+        message.textContent = "Redirecting to ";
+        message.append(link, ".");
+
+        if (target !== `${window.location.pathname}${window.location.search}${window.location.hash}`) {
+          window.location.replace(target);
+        }
       }
     </script>
   </body>
