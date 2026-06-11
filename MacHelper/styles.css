@@ -966,9 +966,11 @@ body[data-demo-mode="disabled"] .status-dot {
 .product-screenshots {
   width: min(100%, 42rem);
   display: grid;
-  grid-template-columns: minmax(0, 0.98fr) minmax(0, 0.88fr);
+  /* Column ratio matches the two screenshots' aspect ratios so both render
+     at the same height. */
+  grid-template-columns: minmax(0, 1.32fr) minmax(0, 1fr);
   gap: 1rem;
-  align-items: start;
+  align-items: center;
   justify-self: center;
 }
 
@@ -983,7 +985,7 @@ body[data-demo-mode="disabled"] .status-dot {
 }
 
 .finder-context-screenshot {
-  padding-top: clamp(0.9rem, 3vw, 2.1rem);
+  padding-top: 0;
 }
 
 .menu-screenshot {
