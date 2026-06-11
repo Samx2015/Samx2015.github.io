@@ -39,7 +39,7 @@
   <body>
     <header>
       <h1>MacHelper Privacy Policy</h1>
-      <p class="effective-date">Effective date: June 8, 2026</p>
+      <p class="effective-date">Effective date: June 11, 2026</p>
       <p>
         MacHelper is a local-first macOS menu-bar utility for display controls
         and Finder right-click actions.
@@ -91,6 +91,7 @@
         <ul>
           <li>Menu settings such as auto blackout, mirroring, display adjustment, keyboard shortcut, and start-at-login preferences.</li>
           <li>Finder right-click menu preferences, including which actions are enabled and which editor or terminal app you selected.</li>
+          <li>Folder access bookmarks that remember folders you approved for the New File action, so macOS does not ask again for those folders.</li>
           <li>Local diagnostic messages used to troubleshoot display and Finder-extension behavior.</li>
         </ul>
         <p>
@@ -117,6 +118,7 @@
         </p>
         <ul>
           <li>MacHelper reads the current Finder selection only when you choose a MacHelper Finder action.</li>
+          <li>New File creates an empty text file in the folder you right-clicked, after you approve access to that folder.</li>
           <li>Copy Path writes the selected path to the clipboard on your Mac.</li>
           <li>Open actions pass the selected path to the local app you chose, such as TextEdit, Terminal, Codex, or VSCode.</li>
           <li>Finder action preferences may be mirrored through the app group shared by MacHelper and its Finder extension.</li>
@@ -131,8 +133,10 @@
         <h2>Permissions</h2>
         <p>
           macOS may ask you to enable the Finder extension or approve access needed
-          to open selected files or folders in another app. These approvals are
-          managed by macOS. MacHelper cannot grant itself those permissions.
+          to open selected files or folders in another app. The New File action asks
+          for one-time folder access; approving a folder also covers its subfolders,
+          and the approval is remembered on your Mac. These approvals are managed by
+          macOS. MacHelper cannot grant itself those permissions.
         </p>
       </section>
 
