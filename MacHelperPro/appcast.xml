@@ -31,7 +31,7 @@
 
 - Improved the Auto Wi-Fi Switch location-permission flow so the permission prompt appears when the feature is enabled and the menu refreshes after approval.
 - Improved launch coordination across the HelperSuite family so only one HelperSuite app is active at a time.
-- Refined Finder right-click menus and open actions, including selected-path handoff to editor, terminal, Codex, VSCode, and custom app handlers.
+- Refined Finder context menus and open actions, including selected-path handoff to editor, terminal, Codex, VSCode, and custom app handlers.
 - Added product-specific website/privacy routing for the MacHelper family.
 - Improved release automation so build numbers, appcasts, websites, and latest build artifacts stay in sync.
 
@@ -65,7 +65,7 @@
 - Keeps only one HelperSuite family app running at a time to avoid overlapping
   menu bar behavior across DisplayHelper, DisplayHelper Pro, MacHelper, and
   MacHelper Pro.
-- Ensures Finder right-click menus are owned by the active HelperSuite app, so
+- Ensures Finder context menus are owned by the active HelperSuite app, so
   multiple installed Finder extensions do not show duplicate actions.
 - Uses the direct MacHelper Pro Finder extension when no family app is running
   and both MacHelper variants are installed.
@@ -100,7 +100,7 @@
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[## MacHelper Pro 1.0.0 (13)
 
-- Prevents duplicate Finder right-click menus when MacHelper and MacHelper Pro are both installed.
+- Prevents duplicate Finder context menus when MacHelper and MacHelper Pro are both installed.
 - Keeps only one of the two Helper apps running at a time; the newest launched app wins, with Pro as the tie-breaker.
 - Adds regression coverage for Finder menu ownership decisions.
 ]]></description>
@@ -122,7 +122,7 @@
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[## MacHelper Pro 1.0.0 (12)
 
-- Fixes Finder right-click menu actions in installed builds by resolving Finder-rewritten menu identifiers.
+- Fixes Finder context menu actions in installed builds by resolving Finder-rewritten menu identifiers.
 - Uses a sandbox-safe app handoff so Terminal, editor, VSCode, Codex, and custom app actions run reliably.
 - Adds regression coverage for Finder context menu action identity resolution.
 ]]></description>
@@ -144,7 +144,7 @@
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[## MacHelper Pro 1.0.0 (11)
 
-- Fixes Finder right-click menu clicks so action identifiers survive Finder menu dispatch and the selected action can run.
+- Fixes Finder context menu clicks so action identifiers survive Finder menu dispatch and the selected action can run.
 - Routes Finder open actions through the same command path for configured editors, terminals, Codex, VSCode, and custom apps.
 - Keeps Finder action success diagnostics at debug level to avoid noisy public logs.
 ]]></description>
