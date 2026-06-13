@@ -6,7 +6,7 @@
     <title>MacHelper Pro Privacy Policy</title>
     <meta
       name="description"
-      content="MacHelper Pro's privacy policy for local display controls, optional Wi-Fi switching, update checks, feedback emails, diagnostics, licensing, and support contact."
+      content="MacHelper Pro's privacy policy for local display controls, optional Wi-Fi switching, Finder context menus, Safes, Secure Pocket, update checks, diagnostics, licensing, and support contact."
     >
     <link rel="canonical" href="https://xintechllc.com/MacHelperPro/privacy.html">
     <link rel="alternate" hreflang="en" href="https://xintechllc.com/MacHelperPro/privacy.html">
@@ -64,11 +64,11 @@
   <body>
     <header>
       <h1>MacHelper Pro Privacy Policy</h1>
-      <p class="effective-date">Effective date: June 2, 2026</p>
+      <p class="effective-date">Effective date: June 13, 2026</p>
       <p>
         MacHelper Pro is a local-first macOS menu-bar utility for controlling the built-in
         display in mirrored Mac setups and optionally helping the Mac switch to stronger saved
-        Wi-Fi.
+        Wi-Fi. It also includes Finder context menu actions, local Safes, and Secure Pocket.
       </p>
       <p class="notice">
         Translated versions are provided for convenience. The English version is the authoritative
@@ -125,6 +125,8 @@
           <li>Trial start and trial-expired markers stored locally and in Keychain to manage trial access.</li>
           <li>A license key and Lemon Squeezy license instance identifier stored in your Mac's Keychain if you activate a license.</li>
           <li>Non-secret license timestamps, such as the last successful validation time, used for offline grace behavior.</li>
+          <li>Finder context menu preferences, including enabled actions and selected editor, terminal, or compatible apps.</li>
+          <li>Secure Pocket vault metadata, encrypted manifests, encrypted payload blobs, and .mhpocket packages stored locally on your Mac.</li>
         </ul>
         <p>
           The app uses macOS display APIs to inspect display layout, detect mirroring, adjust
@@ -137,6 +139,44 @@
         <p>
           The Pro build can also adjust the built-in MacBook keyboard backlight brightness locally
           when supported by the Mac. This does not read typed text, key names, or keyboard history.
+        </p>
+      </section>
+
+      <section>
+        <h2>Finder Context Menus and Safes</h2>
+        <p>
+          MacHelper Pro includes a bundled Finder extension. If you enable it in
+          macOS settings, Finder can show MacHelper Pro actions for selected files,
+          folders, or Finder windows.
+        </p>
+        <ul>
+          <li>Finder selections are read only after you choose a MacHelper Pro Finder action.</li>
+          <li>New File, New Folder, Paste, Copy Path, and Open actions run locally on your Mac.</li>
+          <li>Open actions pass the selected path to the local app you choose, such as TextEdit, Terminal, Codex, Claude, VSCode, or another compatible app.</li>
+          <li>Encrypt to New Safe reads selected local files or folders and writes a single encrypted .safe file after you choose a password and destination.</li>
+          <li>Add to Existing Safe reads selected local items and the chosen .safe file, then rewrites a replacement Safe after the operation succeeds.</li>
+          <li>Decrypt Safe reads the chosen .safe file and restores its contents only to the folder you choose.</li>
+        </ul>
+        <p>
+          Safe encryption and decryption are local actions. MacHelper Pro never
+          stores or logs Safe passwords, and it does not upload Finder paths or
+          file contents to Xintech LLC.
+        </p>
+      </section>
+
+      <section>
+        <h2>Secure Pocket</h2>
+        <p>
+          Secure Pocket is a local encrypted vault for small private notes,
+          clipboard snippets, and files. The vault is stored on your Mac with
+          encrypted manifests and encrypted payload data. MacHelper Pro can export
+          or import encrypted .mhpocket packages when you choose those actions.
+        </p>
+        <p>
+          Secure Link and Secure Drop flows may recognize links or prepare future
+          encrypted handoff flows, but the app does not upload selected files or
+          transmit Secure Pocket contents unless a future flow clearly asks you to
+          start that transfer.
         </p>
       </section>
 
@@ -225,6 +265,9 @@
           <li>You can disable automatic update checks in the Sparkle update preferences.</li>
           <li>You can turn Auto Wi-Fi Switch on or off from the MacHelper Pro menu.</li>
           <li>You can grant, deny, or revoke Location permission for Wi-Fi details in macOS System Settings.</li>
+          <li>You can enable, disable, or revoke Finder extension access in macOS Login Items &amp; Extensions settings.</li>
+          <li>You can open Full Disk Access settings from MacHelper Pro if Finder actions need protected macOS locations; macOS manages that permission.</li>
+          <li>You can revoke saved folder grants in the Finder context menu settings window.</li>
           <li>You can use Pro display controls during the trial without activating a license.</li>
           <li>You can deactivate this Mac from the license window.</li>
           <li>You can remove local app preferences using normal macOS preference-management tools.</li>
