@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexible Timers SMS Opt-In Evidence</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+
+    body {
+      color: CanvasText;
+      background: Canvas;
+      font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 40px 24px;
+    }
+
+    main {
+      margin: 0 auto;
+      max-width: 900px;
+    }
+
+    h1 {
+      font-size: 34px;
+      line-height: 1.15;
+      margin: 0 0 18px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin: 32px 0 8px;
+    }
+
+    a {
+      color: LinkText;
+    }
+
+    img {
+      border: 1px solid color-mix(in srgb, CanvasText 18%, Canvas);
+      border-radius: 8px;
+      display: block;
+      height: auto;
+      margin-top: 14px;
+      max-width: 100%;
+    }
+
+    .quote {
+      border-left: 4px solid color-mix(in srgb, CanvasText 30%, Canvas);
+      margin: 12px 0;
+      padding-left: 16px;
+    }
+
+    .links {
+      display: grid;
+      gap: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Flexible Timers SMS Opt-In Evidence</h1>
+
+    <p>
+      This page documents the Flexible Timers SMS opt-in flow for Twilio
+      toll-free verification. Flexible Timers SMS is limited to account phone
+      verification codes and user-created timer/reminder SMS sent only to a
+      signed-in user's own verified, opted-in account phone number. Flexible Timers does
+      not let users message arbitrary third parties, does not send marketing
+      text messages, and does not provide two-way SMS chat.
+    </p>
+
+    <h2>Opt-In Flow</h2>
+    <ol>
+      <li>User signs in to Flexible Timers.</li>
+      <li>User opens Account Info.</li>
+      <li>User opens Set Up SMS.</li>
+      <li>User enters their own phone number.</li>
+      <li>User checks the SMS consent checkbox.</li>
+      <li>User can open the SMS Terms and Privacy Policy links from the same screen.</li>
+      <li>User clicks Continue to request a one-time verification code.</li>
+      <li>
+        After the phone is verified and opted in, the user may schedule reminder SMS
+        only to that same verified, opted-in account phone number.
+      </li>
+    </ol>
+
+    <h2>Consent Language</h2>
+    <p class="quote">
+      I agree to receive SMS verification codes and Flexible Timers reminder
+      messages I schedule for myself at this phone number. Standard message and
+      data rates may apply. Reply STOP to opt out and HELP for help. Message
+      frequency varies. Flexible Timers will not send marketing texts. Consent
+      is not a condition of purchase.
+    </p>
+
+    <h2>Screenshot</h2>
+    <p>
+      The opt-in screen shows the phone number field, affirmative checkbox,
+      consent language, SMS Terms link, Privacy Policy link, STOP/HELP wording,
+      message frequency disclosure, message/data rates disclosure, and the
+      owner-phone-only SMS scope.
+    </p>
+    <img
+      src="assets/sms-consent.png"
+      alt="Flexible Timers SMS consent screen showing phone entry, consent checkbox, terms, privacy, STOP and HELP language">
+
+    <h2>Sample Production Messages</h2>
+    <p class="quote">
+      Flexible Timers verification code: 123456. This code expires in 10
+      minutes. Reply STOP to opt out, HELP for help.
+    </p>
+    <p class="quote">
+      Flexible Timers reminder: You scheduled this SMS reminder for 4:00 PM:
+      Pick up child for after-school piano class. Reply STOP to opt out, HELP
+      for help.
+    </p>
+
+    <h2>Keyword Responses</h2>
+    <p>
+      Inbound keywords are used only for compliance and account-phone messaging
+      controls. Flexible Timers does not accept general SMS conversations.
+    </p>
+    <p class="quote">
+      STOP response: You are opted out of Flexible Timers SMS. No more messages
+      will be sent. Reply START to opt in again.
+    </p>
+    <p class="quote">
+      HELP response: Flexible Timers sends account verification codes and
+      reminder SMS you schedule for yourself. Help:
+      https://xintechllc.com/FlexibleTimers/support.html. Reply STOP to opt out.
+    </p>
+    <p class="quote">
+      START response: You have opted back in to Flexible Timers SMS messages.
+      Message frequency varies. Reply STOP to opt out, HELP for help.
+    </p>
+
+    <h2>Support and Policies</h2>
+    <div class="links">
+      <a href="sms-terms.html">SMS Terms</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+    </div>
+
+    <p>Last updated: June 6, 2026.</p>
+  </main>
+</body>
+</html>
