@@ -6,7 +6,7 @@
     <title>MacHelper Privacy Policy</title>
     <meta
       name="description"
-      content="MacHelper's privacy policy for local display controls, Finder context menus, feedback emails, diagnostics, and support contact."
+      content="MacHelper's privacy policy for local display controls, Finder context menus, local Safe encryption, feedback emails, diagnostics, and support contact."
     >
     <link rel="canonical" href="https://xintechllc.com/MacHelper/privacy.html">
     <link rel="alternate" hreflang="en" href="https://xintechllc.com/MacHelper/privacy.html">
@@ -39,10 +39,10 @@
   <body>
     <header>
       <h1>MacHelper Privacy Policy</h1>
-      <p class="effective-date">Effective date: June 11, 2026</p>
+      <p class="effective-date">Effective date: June 13, 2026</p>
       <p>
         MacHelper is a local-first macOS menu-bar utility for display controls
-        and Finder context menu actions.
+        Finder context menu actions, and local Safe encryption.
       </p>
       <p class="notice">
         MacHelper is the Mac App Store edition of the product family. Updates are
@@ -62,7 +62,7 @@
         </div>
         <div>
           <strong>Local actions</strong>
-          <span>Display and Finder features run on your Mac.</span>
+          <span>Display, Finder, and Safe features run on your Mac.</span>
         </div>
       </section>
 
@@ -70,7 +70,8 @@
         <h2>Data Collection</h2>
         <p>
           MacHelper does not collect, store, sell, share, or transmit personal
-          information through its display-management or Finder action features.
+          information through its display-management, Finder action, or Safe
+          encryption features.
           Xintech LLC does not receive information about your displays, files,
           settings, usage, or device from the app unless you intentionally send
           it through email support.
@@ -90,8 +91,9 @@
         </p>
         <ul>
           <li>Menu settings such as auto blackout, mirroring, display adjustment, keyboard shortcut, and start-at-login preferences.</li>
-          <li>Finder context menu preferences, including which actions are enabled and which editor or terminal app you selected.</li>
-          <li>Folder access bookmarks that remember folders you approved for the New File action, so macOS does not ask again for those folders.</li>
+          <li>Finder context menu preferences, including which actions are enabled and which editor, terminal, or compatible app you selected.</li>
+          <li>Folder access bookmarks that remember folders you approved for Finder actions, so macOS does not ask again for those folders.</li>
+          <li>Safe workflow preferences such as the last destination you chose through a macOS save or open panel. MacHelper never stores Safe passwords.</li>
           <li>Local diagnostic messages used to troubleshoot display and Finder-extension behavior.</li>
         </ul>
         <p>
@@ -118,9 +120,14 @@
         </p>
         <ul>
           <li>MacHelper reads the current Finder selection only when you choose a MacHelper Finder action.</li>
-          <li>New File creates an empty text file in the folder where you opened the Finder context menu, after you approve access to that folder.</li>
+          <li>New File creates an empty text file in the current Finder folder, after you approve access to that folder.</li>
+          <li>New Folder creates an untitled folder in the current Finder folder, after you approve access to that folder.</li>
+          <li>Paste copies Finder clipboard items into the current Finder folder, after you approve access to that folder.</li>
           <li>Copy Path writes the selected path to the clipboard on your Mac.</li>
-          <li>Open actions pass the selected path to the local app you chose, such as TextEdit, Terminal, Codex, or VSCode.</li>
+          <li>Open actions pass the selected path to the local app you chose, such as TextEdit, Terminal, Codex, Claude, or VSCode.</li>
+          <li>Encrypt to New Safe reads the selected local files or folders and writes a single encrypted .safe file after you choose a password and destination.</li>
+          <li>Add to Existing Safe reads the selected local items and the chosen .safe file, then rewrites a replacement Safe after the operation succeeds.</li>
+          <li>Decrypt Safe reads the chosen .safe file and restores its contents only to the folder you choose.</li>
           <li>Finder action preferences may be mirrored through the app group shared by MacHelper and its Finder extension.</li>
         </ul>
         <p>
@@ -130,13 +137,31 @@
       </section>
 
       <section>
+        <h2>Safe Encryption</h2>
+        <p>
+          Safe encryption and decryption are local actions. A .safe file is an
+          encrypted archive created from the files or folders you selected. The
+          archive manifest and file contents are encrypted locally, and passwords
+          are never stored, logged, uploaded, or sent to Xintech LLC.
+        </p>
+        <p>
+          Decryption writes to a temporary staging folder first and moves the
+          completed result into the destination only after the full operation
+          succeeds. If an operation fails or is canceled, MacHelper removes the
+          temporary output when possible.
+        </p>
+      </section>
+
+      <section>
         <h2>Permissions</h2>
         <p>
           macOS may ask you to enable the Finder extension or approve access needed
-          to open selected files or folders in another app. The New File action asks
-          for one-time folder access; approving a folder also covers its subfolders,
-          and the approval is remembered on your Mac. These approvals are managed by
-          macOS. MacHelper cannot grant itself those permissions.
+          to open selected files or folders in another app. New File, New Folder,
+          Paste, Open, and Safe actions may ask for file or folder access when
+          macOS requires this sandboxed app to confirm access. Approving a folder
+          also covers its subfolders, and the approval is remembered on your Mac.
+          These approvals are managed by macOS. MacHelper cannot grant itself
+          those permissions.
         </p>
       </section>
 
@@ -162,4 +187,3 @@
     </main>
   </body>
 </html>
-

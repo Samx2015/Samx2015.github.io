@@ -10,4 +10,5 @@ this site is intentionally App Store-oriented:
 - no Auto Wi-Fi switching copy
 - Finder context menus are described as the App Store-compatible Finder
   extension feature
-
+- local `.safe` encryption/decryption is described as an App Store-compatible
+  local Finder action
