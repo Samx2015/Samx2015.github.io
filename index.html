@@ -30,9 +30,49 @@
         line-height: 1.55;
       }
 
+      .site-header {
+        border-bottom: 1px solid var(--line);
+        background: rgba(251, 251, 248, 0.94);
+      }
+
+      .header-inner,
       main {
         width: min(100%, 1040px);
         margin: 0 auto;
+      }
+
+      .header-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 18px 24px;
+      }
+
+      .wordmark {
+        font-weight: 620;
+      }
+
+      .top-links,
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .top-links a,
+      .footer-links a {
+        display: inline;
+        min-height: 0;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        color: var(--teal);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      main {
         padding: 72px 24px;
       }
 
@@ -164,7 +204,32 @@
         text-underline-offset: 3px;
       }
 
+      .site-footer {
+        border-top: 1px solid var(--line);
+      }
+
+      .footer-inner {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 20px;
+        width: min(100%, 1040px);
+        margin: 0 auto;
+        padding: 24px;
+        color: var(--muted);
+      }
+
+      .footer-inner p {
+        margin: 0 0 6px;
+      }
+
       @media (max-width: 680px) {
+        .header-inner,
+        .footer-inner {
+          align-items: flex-start;
+          grid-template-columns: 1fr;
+          flex-direction: column;
+        }
+
         main {
           padding-top: 44px;
         }
@@ -184,6 +249,16 @@
     </style>
   </head>
   <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="wordmark">Xintech LLC</div>
+        <div class="top-links" aria-label="Primary links">
+          <a href="/FlexibleTimers/">Flexible Timers</a>
+          <a href="/support.html">Support</a>
+          <a href="mailto:shuitao@hotmail.com">Contact</a>
+        </div>
+      </div>
+    </header>
     <main>
       <h1>Xintech LLC</h1>
       <p class="intro">
@@ -191,6 +266,22 @@
         productivity apps for Mac, iPhone, and iPad.
       </p>
       <nav aria-label="Product websites">
+        <a href="/FlexibleTimers/#mac">
+          <img class="app-icon" src="/FlexibleTimers/assets/flexible-timers/brand/app-icon.png" alt="" width="58" height="58">
+          <span>
+            <strong>Flexible Timers for Mac</strong>
+            <span>Timers, countdowns, clocks, account email reports, and SMS reminders.</span>
+            <span class="platform">macOS</span>
+          </span>
+        </a>
+        <a href="/FlexibleTimers/#ios">
+          <img class="app-icon" src="/FlexibleTimers/assets/flexible-timers/brand/app-icon.png" alt="" width="58" height="58">
+          <span>
+            <strong>Flexible Timers for iPhone and iPad</strong>
+            <span>Timers and reminders for iPhone and iPad.</span>
+            <span class="platform">iOS and iPadOS</span>
+          </span>
+        </a>
         <a href="/DisplayHelper/">
           <img class="app-icon" src="/DisplayHelper/assets/icon.svg" alt="" width="58" height="58">
           <span>
@@ -221,22 +312,6 @@
             <strong>MacHelper Pro</strong>
             <span>Direct-distribution utility suite.</span>
             <span class="platform">macOS</span>
-          </span>
-        </a>
-        <a href="/FlexibleTimers/#mac">
-          <img class="app-icon" src="/FlexibleTimers/assets/flexible-timers/brand/app-icon.png" alt="" width="58" height="58">
-          <span>
-            <strong>Flexible Timers for Mac</strong>
-            <span>Timers, countdowns, clocks, account email reports, and SMS reminders.</span>
-            <span class="platform">macOS</span>
-          </span>
-        </a>
-        <a href="/FlexibleTimers/#ios">
-          <img class="app-icon" src="/FlexibleTimers/assets/flexible-timers/brand/app-icon.png" alt="" width="58" height="58">
-          <span>
-            <strong>Flexible Timers for iPhone and iPad</strong>
-            <span>Timers and reminders for iPhone and iPad.</span>
-            <span class="platform">iOS and iPadOS</span>
           </span>
         </a>
       </nav>
@@ -276,5 +351,19 @@
         </div>
       </section>
     </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <p>© 2026 Xintech LLC. Sammamish, Washington, United States.</p>
+          <p>Contact: <a href="mailto:shuitao@hotmail.com">shuitao@hotmail.com</a></p>
+        </div>
+        <div class="footer-links" aria-label="Footer links">
+          <a href="/support.html">Support</a>
+          <a href="/privacy.html">Flexible Timers Privacy</a>
+          <a href="/sms-terms.html">Flexible Timers SMS Terms</a>
+          <a href="/sms-opt-in.html">Flexible Timers SMS Opt-In Proof</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
