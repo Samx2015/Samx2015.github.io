@@ -44,6 +44,13 @@
         letter-spacing: 0;
       }
 
+      .intro {
+        max-width: 760px;
+        margin: -16px 0 30px;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+
       nav {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -116,6 +123,47 @@
         text-underline-offset: 3px;
       }
 
+      .business-details {
+        margin-top: 40px;
+        padding-top: 28px;
+        border-top: 1px solid var(--line);
+      }
+
+      .business-details h2 {
+        margin: 0 0 14px;
+        font-size: 1.35rem;
+        line-height: 1.2;
+        font-weight: 540;
+      }
+
+      .detail-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .detail-card {
+        padding: 16px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fff;
+      }
+
+      .detail-card strong {
+        color: var(--ink);
+      }
+
+      .detail-card a {
+        display: inline;
+        min-height: 0;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        color: var(--teal);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
       @media (max-width: 680px) {
         main {
           padding-top: 44px;
@@ -128,12 +176,20 @@
         nav {
           grid-template-columns: 1fr;
         }
+
+        .detail-grid {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
   </head>
   <body>
     <main>
       <h1>Xintech LLC</h1>
+      <p class="intro">
+        Xintech LLC is a Washington-based software business building Apple-platform
+        productivity apps for Mac, iPhone, and iPad.
+      </p>
       <nav aria-label="Product websites">
         <a href="/DisplayHelper/">
           <img class="app-icon" src="/DisplayHelper/assets/icon.svg" alt="" width="58" height="58">
@@ -190,6 +246,35 @@
         <a href="/sms-terms.html">SMS Terms</a>
         <a href="/sms-opt-in.html">SMS Opt-In Proof</a>
       </div>
+      <section class="business-details" aria-labelledby="business-details-title">
+        <h2 id="business-details-title">Business Details</h2>
+        <div class="detail-grid">
+          <div class="detail-card">
+            <strong>Legal business name</strong>
+            <span>Xintech LLC</span>
+          </div>
+          <div class="detail-card">
+            <strong>Business location</strong>
+            <span>Sammamish, Washington, United States</span>
+          </div>
+          <div class="detail-card">
+            <strong>Services offered</strong>
+            <span>Apple-platform productivity apps, including timer, display, and Mac utility apps.</span>
+          </div>
+          <div class="detail-card">
+            <strong>Support contact</strong>
+            <span><a href="/support.html">Xintech LLC support and messaging help</a></span>
+          </div>
+          <div class="detail-card">
+            <strong>Flexible Timers SMS</strong>
+            <span>Verification codes and user-scheduled reminders are sent only to the signed-in user's own verified phone number.</span>
+          </div>
+          <div class="detail-card">
+            <strong>SMS policies</strong>
+            <span><a href="/sms-terms.html">SMS Terms</a> and <a href="/sms-opt-in.html">SMS opt-in proof</a></span>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
