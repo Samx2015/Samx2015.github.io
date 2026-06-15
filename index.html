@@ -98,6 +98,24 @@
         color: var(--teal);
       }
 
+      .site-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 36px;
+      }
+
+      .site-links a {
+        display: inline;
+        min-height: 0;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        color: var(--teal);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
       @media (max-width: 680px) {
         main {
           padding-top: 44px;
@@ -153,7 +171,7 @@
           <img class="app-icon" src="/FlexibleTimers/assets/flexible-timers/brand/app-icon.png" alt="" width="58" height="58">
           <span>
             <strong>Flexible Timers for Mac</strong>
-            <span>Timers, countdowns, clocks, and reports.</span>
+            <span>Timers, countdowns, clocks, account email reports, and SMS reminders.</span>
             <span class="platform">macOS</span>
           </span>
         </a>
@@ -166,6 +184,12 @@
           </span>
         </a>
       </nav>
+      <div class="site-links" aria-label="Company policies">
+        <a href="/support.html">Support</a>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/sms-terms.html">SMS Terms</a>
+        <a href="/sms-opt-in.html">SMS Opt-In Proof</a>
+      </div>
     </main>
   </body>
 </html>
