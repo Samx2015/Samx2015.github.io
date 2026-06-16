@@ -38,8 +38,8 @@
       const aliases = {
         displayhelper: "DisplayHelper",
         displayhelperpro: "DisplayHelperPro",
-        machelper: "DeskHelper",
-        machelperpro: "DeskHelperPro"
+        deskhelper: "DeskHelper",
+        deskhelperpro: "DeskHelperPro"
       };
       const match = window.location.pathname.match(/^\/([^/]+)(\/.*)?$/);
       const canonical = match ? aliases[match[1].toLowerCase()] : null;
