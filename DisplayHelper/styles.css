@@ -2392,7 +2392,7 @@ p {
 .app-store-page .screenshot-layout,
 .support-page .support-summary,
 .support-page .support-section {
-  width: min(100%, var(--wide-max));
+  width: min(calc(100% - var(--page-gutter) - var(--page-gutter)), var(--wide-max));
   margin-inline: auto;
 }
 

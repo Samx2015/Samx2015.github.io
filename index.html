@@ -6,18 +6,18 @@
     <title>Xintech LLC</title>
     <meta
       name="description"
-      content="Xintech LLC builds Apple-platform apps including DisplayHelper, DisplayHelper Pro, DeskHelper, DeskHelper Pro, and Flexible Timers."
+      content="Xintech LLC builds software, internet services, and mobile apps including DisplayHelper, DisplayHelper Pro, DeskHelper, DeskHelper Pro, and Flexible Timers."
     >
     <link rel="canonical" href="https://xintechllc.com/">
     <meta name="theme-color" content="#fbfbf8">
     <meta property="og:title" content="Xintech LLC">
-    <meta property="og:description" content="Apple-platform productivity apps for Mac, iPhone, and iPad — including Flexible Timers, DisplayHelper, and DeskHelper.">
+    <meta property="og:description" content="Software, internet services, and mobile apps for timers, displays, and Mac utilities — including Flexible Timers, DisplayHelper, and DeskHelper.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://xintechllc.com/">
     <meta property="og:image" content="https://xintechllc.com/FlexibleTimers/assets/flexible-timers/macos/1-single-light.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Xintech LLC">
-    <meta name="twitter:description" content="Apple-platform productivity apps for Mac, iPhone, and iPad — including Flexible Timers, DisplayHelper, and DeskHelper.">
+    <meta name="twitter:description" content="Software, internet services, and mobile apps for timers, displays, and Mac utilities — including Flexible Timers, DisplayHelper, and DeskHelper.">
     <meta name="twitter:image" content="https://xintechllc.com/FlexibleTimers/assets/flexible-timers/macos/1-single-light.png">
     <style>
       :root {
@@ -25,7 +25,9 @@
         --ink: #182023;
         --muted: #667276;
         --paper: #fbfbf8;
+        --surface: #fff;
         --line: #dce6e2;
+        --soft-line: #edf3f0;
         --teal: #0f766e;
       }
 
@@ -61,20 +63,28 @@
       }
 
       .wordmark {
+        display: flex;
+        align-items: center;
+        gap: 10px;
         margin: 0;
         font-size: 1.45rem;
         line-height: 1.2;
         font-weight: 620;
       }
 
-      .top-links,
+      .brand-mark {
+        width: 32px;
+        height: 32px;
+        flex: 0 0 auto;
+        object-fit: contain;
+      }
+
       .footer-links {
         display: flex;
         flex-wrap: wrap;
         gap: 16px;
       }
 
-      .top-links a,
       .footer-links a {
         display: inline;
         min-height: 0;
@@ -87,7 +97,7 @@
       }
 
       main {
-        padding: 22px 24px 56px;
+        padding: 30px 24px 52px;
       }
 
       h1 {
@@ -99,10 +109,61 @@
       }
 
       .intro {
-        max-width: 700px;
-        margin: 0 0 28px;
+        max-width: 660px;
+        margin: 0;
         color: var(--muted);
         font-size: 1.05rem;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: end;
+        gap: 24px;
+        margin-bottom: 28px;
+      }
+
+      .store-links {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8px;
+        color: var(--muted);
+        font-size: 0.9rem;
+        white-space: nowrap;
+      }
+
+      .store-links strong {
+        color: var(--ink);
+        font-size: 0.88rem;
+        font-weight: 560;
+      }
+
+      .store-links a {
+        padding: 5px 10px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        color: var(--teal);
+        background: var(--surface);
+        text-decoration: none;
+      }
+
+      .store-links a:hover,
+      .store-links a:focus-visible {
+        border-color: rgba(15, 118, 110, 0.35);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      .section-label {
+        margin: 0 0 12px;
+        color: var(--muted);
+        font-size: 0.82rem;
+        font-weight: 620;
+        letter-spacing: 0.08em;
+        line-height: 1.2;
+        text-transform: uppercase;
       }
 
       nav {
@@ -114,14 +175,14 @@
       nav a {
         display: grid;
         grid-template-columns: auto minmax(0, 1fr);
-        align-items: center;
+        align-items: start;
         gap: 14px;
         min-height: 106px;
-        padding: 16px;
+        padding: 15px;
         border: 1px solid var(--line);
         border-radius: 8px;
         color: var(--ink);
-        background: #fff;
+        background: var(--surface);
         text-decoration: none;
       }
 
@@ -139,79 +200,66 @@
         box-shadow: 0 10px 22px rgba(24, 32, 35, 0.14);
       }
 
-      strong,
-      span {
+      nav strong {
         display: block;
-      }
-
-      strong {
         margin-bottom: 4px;
         font-weight: 520;
       }
 
-      span {
+      .card-copy,
+      .platform {
         color: var(--muted);
       }
 
+      .card-features {
+        display: grid;
+        gap: 1px;
+        margin: 6px 0 0;
+        padding: 0;
+        list-style: none;
+        color: var(--muted);
+        font-size: 0.88rem;
+        line-height: 1.34;
+      }
+
+      .card-features li {
+        position: relative;
+        padding-left: 10px;
+      }
+
+      .card-features li::before {
+        position: absolute;
+        left: 0;
+        top: 0.68em;
+        width: 3px;
+        height: 3px;
+        border-radius: 999px;
+        background: var(--teal);
+        content: "";
+      }
+
       .platform {
-        margin-top: 5px;
+        display: block;
+        margin-top: 6px;
         font-size: 0.82rem;
         color: var(--teal);
       }
 
-      .business-details {
-        margin-top: 34px;
-        padding-top: 24px;
-        border-top: 1px solid var(--line);
-      }
-
-      .business-details h2 {
-        margin: 0 0 14px;
-        font-size: 1.35rem;
-        line-height: 1.2;
-        font-weight: 540;
-      }
-
-      .detail-grid {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 14px;
-      }
-
-      .detail-card {
-        padding: 14px;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: #fff;
-      }
-
-      .detail-card strong {
-        color: var(--ink);
-      }
-
-      .detail-card a {
-        display: inline;
-        min-height: 0;
-        padding: 0;
-        border: 0;
-        background: transparent;
-        color: var(--teal);
-        text-decoration: underline;
-        text-underline-offset: 3px;
-      }
-
       .site-footer {
         border-top: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.4);
       }
 
       .footer-inner {
         display: grid;
         grid-template-columns: minmax(0, 1fr) auto;
-        gap: 20px;
+        align-items: start;
+        gap: 18px;
         width: min(100%, 1040px);
         margin: 0 auto;
-        padding: 24px;
+        padding: 20px 24px;
         color: var(--muted);
+        font-size: 0.95rem;
       }
 
       .footer-inner p {
@@ -236,15 +284,20 @@
           padding-top: 18px;
         }
 
+        .hero {
+          grid-template-columns: 1fr;
+        }
+
+        .store-links {
+          justify-content: flex-start;
+          white-space: normal;
+        }
+
         h1 {
           font-size: 1.9rem;
         }
 
         nav {
-          grid-template-columns: 1fr;
-        }
-
-        .detail-grid {
           grid-template-columns: 1fr;
         }
       }
@@ -253,105 +306,116 @@
   <body>
     <header class="site-header">
       <div class="header-inner">
-        <h1 class="wordmark">Xintech LLC</h1>
-        <div class="top-links" aria-label="Primary links">
-          <a href="/FlexibleTimers/">Flexible Timers</a>
-          <a href="/support.html">Support</a>
-          <a href="mailto:admin@xintechllc.com">Contact</a>
+        <h1 class="wordmark">
+          <img class="brand-mark" src="/assets/xintech-icon.png?v=20260616-xintechllc" alt="" width="32" height="32">
+          <span>Xintech LLC</span>
+        </h1>
+        <div class="store-links" aria-label="App Store links">
+          <strong>On App Store</strong>
+          <a href="https://apps.apple.com/us/app/flexible-timers/id1296620733">Flexible Timers</a>
+          <a href="https://apps.apple.com/us/app/displayhelper/id6773671145">DisplayHelper</a>
         </div>
       </div>
     </header>
     <main>
-      <p class="intro">
-        A Washington-based software business building Apple-platform
-        productivity apps for Mac, iPhone, and iPad.
-      </p>
-      <p>
-        <strong>On the App Store:</strong>
-        <a href="https://apps.apple.com/us/app/flexible-timers/id1296620733">Flexible Timers</a>
-        &middot;
-        <a href="https://apps.apple.com/us/app/displayhelper/id6773671145">DisplayHelper</a>
-      </p>
+      <section class="hero" aria-label="Company summary">
+        <p class="intro">
+          Software, internet services, and mobile apps.
+        </p>
+      </section>
+      <p class="section-label">Products</p>
       <nav aria-label="Product websites">
         <a href="/FlexibleTimers/#mac">
           <img class="app-icon" src="/FlexibleTimers/assets/flexible-timers/brand/app-icon.png" alt="" width="58" height="58">
-          <span>
+          <div class="card-copy">
             <strong>Flexible Timers for Mac</strong>
-            <span>Timers, countdowns, clocks, account email reports, and SMS reminders.</span>
+            <ul class="card-features">
+              <li>Timers, countdowns, world clocks</li>
+              <li>Task sets, archives, reports</li>
+              <li>Custom sounds and notifications</li>
+              <li>Sync across devices</li>
+              <li>Menu-bar status and expanded layouts</li>
+            </ul>
             <span class="platform">macOS</span>
-          </span>
+          </div>
         </a>
         <a href="/FlexibleTimers/#ios">
           <img class="app-icon" src="/FlexibleTimers/assets/flexible-timers/brand/app-icon.png" alt="" width="58" height="58">
-          <span>
+          <div class="card-copy">
             <strong>Flexible Timers for iPhone and iPad</strong>
-            <span>Timers, countdowns, clocks, reminders, and reports.</span>
+            <ul class="card-features">
+              <li>Timers, countdowns, world clocks</li>
+              <li>Task sets and reminders</li>
+              <li>Reports, settings, sounds</li>
+              <li>iPhone list and iPad grid layouts</li>
+              <li>Sync across devices</li>
+            </ul>
             <span class="platform">iOS and iPadOS</span>
-          </span>
+          </div>
         </a>
         <a href="/DisplayHelper/">
           <img class="app-icon" src="/DisplayHelper/assets/icon.svg" alt="" width="58" height="58">
-          <span>
+          <div class="card-copy">
             <strong>DisplayHelper</strong>
-            <span>Mac App Store display helper.</span>
+            <ul class="card-features">
+              <li>Auto Blackout for mirrored MacBooks</li>
+              <li>Mirror, dim, sleep controls</li>
+              <li>Brightness, contrast, display levels</li>
+              <li>Keyboard shortcuts</li>
+              <li>Local-only, no account</li>
+            </ul>
             <span class="platform">macOS</span>
-          </span>
+          </div>
         </a>
         <a href="/DisplayHelperPro/">
           <img class="app-icon" src="/DisplayHelperPro/assets/app-icon.png" alt="" width="58" height="58">
-          <span>
+          <div class="card-copy">
             <strong>DisplayHelper Pro</strong>
-            <span>Direct-distribution display helper.</span>
+            <ul class="card-features">
+              <li>Auto Blackout and display controls</li>
+              <li>Keyboard backlight slider</li>
+              <li>Auto Wi-Fi Switch</li>
+              <li>Shortcuts and start at login</li>
+              <li>Direct-download trial</li>
+            </ul>
             <span class="platform">macOS</span>
-          </span>
+          </div>
         </a>
         <a href="/DeskHelper/">
           <img class="app-icon" src="/DeskHelper/assets/app-icon.png" alt="" width="58" height="58">
-          <span>
+          <div class="card-copy">
             <strong>DeskHelper</strong>
-            <span>Mac App Store utility suite.</span>
+            <ul class="card-features">
+              <li>Display controls and Auto Blackout</li>
+              <li>Finder context menu actions</li>
+              <li>New file, folder, paste, copy path</li>
+              <li>Open in editors and terminals</li>
+              <li>Local Safes</li>
+            </ul>
             <span class="platform">macOS</span>
-          </span>
+          </div>
         </a>
         <a href="/DeskHelperPro/">
           <img class="app-icon" src="/DeskHelperPro/assets/app-icon.png" alt="" width="58" height="58">
-          <span>
+          <div class="card-copy">
             <strong>DeskHelper Pro</strong>
-            <span>Direct-distribution utility suite.</span>
+            <ul class="card-features">
+              <li>Display controls and Auto Wi-Fi Switch</li>
+              <li>Finder actions and local Safes</li>
+              <li>Secure Pocket encrypted vault</li>
+              <li>Keyboard backlight controls</li>
+              <li>Direct-download trial</li>
+            </ul>
             <span class="platform">macOS</span>
-          </span>
+          </div>
         </a>
       </nav>
-      <section class="business-details" aria-labelledby="business-details-title">
-        <h2 id="business-details-title">Business Details</h2>
-        <div class="detail-grid">
-          <div class="detail-card">
-            <strong>Legal business name</strong>
-            <span>Xintech LLC</span>
-          </div>
-          <div class="detail-card">
-            <strong>Business location</strong>
-            <span>Sammamish, Washington, United States</span>
-          </div>
-          <div class="detail-card">
-            <strong>Services offered</strong>
-            <span>Apple-platform productivity apps for timers, displays, and Mac utilities.</span>
-          </div>
-          <div class="detail-card">
-            <strong>Support contact</strong>
-            <span><a href="/support.html">Support and messaging help</a></span>
-          </div>
-          <div class="detail-card">
-            <strong>Flexible Timers messaging</strong>
-            <span>Verification codes and reminders go only to the signed-in user's own verified phone number.</span>
-          </div>
-        </div>
-      </section>
     </main>
     <footer class="site-footer">
       <div class="footer-inner">
         <div>
-          <p>© 2026 Xintech LLC. Sammamish, Washington, United States.</p>
+          <p>© 2026 Xintech LLC.</p>
+          <p>Sammamish, Washington, United States.</p>
           <p>Contact: <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a></p>
         </div>
         <div class="footer-links" aria-label="Footer links">
