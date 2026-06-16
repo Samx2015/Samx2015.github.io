@@ -11,179 +11,154 @@
     <link rel="canonical" href="https://xintechllc.com/DeskHelper/privacy.html">
     <link rel="alternate" hreflang="en" href="https://xintechllc.com/DeskHelper/privacy.html">
     <link rel="alternate" hreflang="x-default" href="https://xintechllc.com/DeskHelper/privacy.html">
-    <style>
-  :root { color-scheme: light; --ink: #182023; --muted: #667276; --paper: #fbfbf8; --panel: #fff; --panel-soft: #f3f7f5; --line: #dce6e2; --teal: #0f766e; --teal-dark: #0f766e; --coral: #c2410c; }
-  * { box-sizing: border-box; }
-  body { margin: 0; color: var(--ink); background: var(--paper); font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-weight: 300; line-height: 1.65; }
-  a { color: var(--teal); font-weight: 400; }
-  header, main { width: min(100%, 880px); margin: 0 auto; padding: 0 24px; }
-  header { padding-top: 32px; padding-bottom: 24px; }
-  main { padding-bottom: 44px; }
-  h1 { max-width: 760px; margin: 0 0 10px; font-size: clamp(2rem, 5vw, 2.7rem); line-height: 1.14; font-weight: 340; letter-spacing: 0; }
-  h2 { margin: 32px 0 8px; color: var(--ink); font-size: 1.5rem; line-height: 1.18; font-weight: 340; }
-  p { margin: 0 0 13px; color: var(--muted); }
-  ul { margin: 0 0 14px; padding-left: 22px; color: var(--muted); }
-  li + li { margin-top: 4px; }
-  .top-links { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 18px; font-size: .95rem; }
-  .top-links a { padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); text-decoration: none; }
-  .top-links a:hover, .top-links a:focus-visible { background: var(--panel-soft); }
-  .summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; margin: 2px 0 28px; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--line); }
-  .summary div { min-height: 96px; padding: 16px; background: var(--panel); }
-  .summary strong, .summary span { display: block; }
-  .summary strong { margin-bottom: 4px; color: var(--ink); font-weight: 420; }
-  .summary span, .meta, .effective-date { color: var(--muted); }
-  .notice { padding: 14px 16px; margin: 0 0 24px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel-soft); }
-  @media (max-width: 720px) { .summary { grid-template-columns: 1fr; } .summary div { min-height: 0; } }
-</style>
+    <link rel="icon" href="assets/app-icon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css?v=20260616-deskhelper-support">
+    <script src="script.js?v=20260609-dropdown2" defer></script>
   </head>
-  <body>
-    <header>
-      <h1>DeskHelper Privacy Policy</h1>
-      <p class="effective-date">Effective date: June 13, 2026</p>
-      <p>
-        DeskHelper is a local-first macOS menu-bar utility for display controls
-        Finder context menu actions, and local Safe encryption.
-      </p>
-      <p class="notice">
-        DeskHelper is the Mac App Store edition of the product family. Updates are
-        handled through the Mac App Store.
-      </p>
+  <body class="support-page app-store-page deskhelper-appstore-page privacy-simple-page">
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="./" aria-label="DeskHelper home">
+        <img src="assets/app-icon.png" alt="" width="34" height="34">
+        <span>DeskHelper</span>
+      </a>
+      <div class="header-actions">
+        <a class="header-cta" href="./#app-store">Mac App Store</a>
+        <details class="language-menu">
+          <summary>🌐 - 🇺🇸🇬🇧 English</summary>
+          <div class="language-menu-list" aria-label="Language">
+            <a href="privacy.html" lang="en" aria-current="page">🇺🇸🇬🇧 English</a>
+          </div>
+        </details>
+      </div>
     </header>
 
-    <main>
-      <section class="summary" aria-label="Privacy highlights">
-        <div>
-          <strong>No app account</strong>
-          <span>No DeskHelper sign-in or user profile.</span>
-        </div>
-        <div>
-          <strong>No analytics</strong>
-          <span>No event tracking, session tracking, advertising pixels, or usage telemetry.</span>
-        </div>
-        <div>
-          <strong>Local actions</strong>
-          <span>Display, Finder, and Safe features run on your Mac.</span>
-        </div>
-      </section>
+    <main id="top">
+      <div class="support-main">
+        <section class="support-section" id="overview">
+          <h1>Privacy Policy</h1>
+          <p>Effective date: June 13, 2026.</p>
+          <p>
+            DeskHelper is a local-first macOS menu-bar utility for display
+            controls, Finder context menu actions, and local Safe encryption.
+          </p>
+          <ul>
+            <li>No DeskHelper sign-in, subscription account, or user profile.</li>
+            <li>No event tracking, session tracking, advertising pixels, or usage telemetry.</li>
+            <li>Display, Finder, Safe, and feedback actions run locally unless you choose to send email support.</li>
+          </ul>
+        </section>
 
-      <section>
-        <h2>Data Collection</h2>
-        <p>
-          DeskHelper does not collect, store, sell, share, or transmit personal
-          information through its display-management, Finder action, or Safe
-          encryption features.
-          Xintech LLC does not receive information about your displays, files,
-          settings, usage, or device from the app unless you intentionally send
-          it through email support.
-        </p>
-        <ul>
-          <li>No DeskHelper account is required.</li>
-          <li>No analytics, tracking SDKs, advertising SDKs, or crash-reporting SDKs are included.</li>
-          <li>No background telemetry is sent to Xintech LLC.</li>
-        </ul>
-      </section>
+        <section class="support-section" id="collection">
+          <h2>Data Collection</h2>
+          <p>
+            DeskHelper does not collect, store, sell, share, or transmit personal
+            information through its display-management, Finder action, or Safe
+            encryption features. Xintech LLC does not receive information about
+            your displays, files, settings, usage, or device from the app unless
+            you intentionally send it through email support.
+          </p>
+          <ul>
+            <li>No DeskHelper account is required.</li>
+            <li>No analytics, tracking SDKs, advertising SDKs, or crash-reporting SDKs are included.</li>
+            <li>No background telemetry is sent to Xintech LLC.</li>
+          </ul>
+        </section>
 
-      <section>
-        <h2>Local Data</h2>
-        <p>
-          DeskHelper may store a small amount of local preference data and bounded
-          local diagnostic logs on your Mac. This can include:
-        </p>
-        <ul>
-          <li>Menu settings such as auto blackout, mirroring, display adjustment, keyboard shortcut, and start-at-login preferences.</li>
-          <li>Finder context menu preferences, including which actions are enabled and which editor, terminal, or compatible app you selected.</li>
-          <li>Folder access bookmarks that remember folders you approved for Finder actions, so macOS does not ask again for those folders.</li>
-          <li>Safe workflow preferences such as the last destination you chose through a macOS save or open panel. DeskHelper never stores Safe passwords.</li>
-          <li>Local diagnostic messages used to troubleshoot display and Finder-extension behavior.</li>
-        </ul>
-        <p>
-          These files stay on your Mac unless you choose to send them to support.
-        </p>
-      </section>
+        <section class="support-section" id="local-data">
+          <h2>Local Data</h2>
+          <p>
+            DeskHelper may store a small amount of local preference data and
+            bounded local diagnostic logs on your Mac. This is used to make the
+            app behave consistently between launches and to prepare bug-report
+            drafts when you choose to report a bug.
+          </p>
+          <p>Local preferences may include:</p>
+          <ul>
+            <li>Menu settings such as auto blackout, mirroring, display adjustment, keyboard shortcut, and start-at-login preferences.</li>
+            <li>Finder context menu preferences, including which actions are enabled and which editor, terminal, or compatible app you selected.</li>
+            <li>Folder access bookmarks, Safe workflow preferences, and bounded local diagnostic messages. DeskHelper never stores Safe passwords.</li>
+          </ul>
+          <p>
+            DeskHelper uses macOS display APIs for display controls and macOS
+            Finder extension APIs for Finder context menu actions. Finder and
+            Safe operations read local selections only when you choose a
+            DeskHelper action, and DeskHelper does not upload Finder paths,
+            file contents, Safe contents, or Safe passwords to Xintech LLC.
+          </p>
+        </section>
 
-      <section>
-        <h2>Display Controls</h2>
-        <p>
-          DeskHelper uses macOS display APIs to detect displays, mirror or unmirror
-          displays, darken the built-in screen, dim displays until key press, and
-          adjust display brightness where supported. It does not send display
-          information to Xintech LLC.
-        </p>
-      </section>
+        <section class="support-section" id="network">
+          <h2>Network Activity</h2>
+          <p>
+            DeskHelper's normal display controls, Finder context menus, and Safe
+            encryption features do not require a network connection. Updates are
+            handled through the Mac App Store.
+          </p>
+          <p>
+            Feedback menu items open a draft in your default email app. The app
+            does not send email automatically, and nothing is sent unless you
+            choose Send.
+          </p>
+        </section>
 
-      <section>
-        <h2>Finder Context Menus</h2>
-        <p>
-          DeskHelper includes a bundled Finder extension. If you enable it in macOS
-          settings, Finder may show DeskHelper actions for selected files, folders,
-          or Finder windows.
-        </p>
-        <ul>
-          <li>DeskHelper reads the current Finder selection only when you choose a DeskHelper Finder action.</li>
-          <li>New File creates an empty text file in the current Finder folder, after you approve access to that folder.</li>
-          <li>New Folder creates an untitled folder in the current Finder folder, after you approve access to that folder.</li>
-          <li>Paste copies Finder clipboard items into the current Finder folder, after you approve access to that folder.</li>
-          <li>Copy Path writes the selected path to the clipboard on your Mac.</li>
-          <li>Open actions pass the selected path to the local app you chose, such as TextEdit, Terminal, Codex, Claude, or VSCode.</li>
-          <li>Encrypt to New Safe reads the selected local files or folders and writes a single encrypted .safe file after you choose a password and destination.</li>
-          <li>Add to Existing Safe reads the selected local items and the chosen .safe file, then rewrites a replacement Safe after the operation succeeds.</li>
-          <li>Decrypt Safe reads the chosen .safe file and restores its contents only to the folder you choose.</li>
-          <li>Finder action preferences may be mirrored through the app group shared by DeskHelper and its Finder extension.</li>
-        </ul>
-        <p>
-          DeskHelper does not upload Finder paths or file contents to Xintech LLC.
-          Apps you open from a Finder action may have their own privacy policies.
-        </p>
-      </section>
+        <section class="support-section" id="feedback">
+          <h2>Bug Reports, Feature Requests, and Feedback</h2>
+            <p>
+              The "Report a Bug...", "Suggest a Feature...", and "Send Feedback..."
+              menu items open a draft in your default email app addressed to
+              Xintech LLC. The app does not send email automatically. You can
+              review, edit, or delete the draft before sending it.
+            </p>
+            <p>
+              The draft may include a short diagnostic summary so support can
+              understand the context: app version, macOS version, processor
+              architecture, display state, Finder extension state, enabled
+              actions, and current app status. Your email address is visible to
+              Xintech LLC only if you send the email.
+            </p>
+            <p>
+              Bug report drafts may include a bounded excerpt of recent
+              DeskHelper diagnostic logs. Feature request and general feedback
+              drafts do not include logs.
+            </p>
+        </section>
 
-      <section>
-        <h2>Safe Encryption</h2>
-        <p>
-          Safe encryption and decryption are local actions. A .safe file is an
-          encrypted archive created from the files or folders you selected. The
-          archive manifest and file contents are encrypted locally, and passwords
-          are never stored, logged, uploaded, or sent to Xintech LLC.
-        </p>
-        <p>
-          Decryption writes to a temporary staging folder first and moves the
-          completed result into the destination only after the full operation
-          succeeds. If an operation fails or is canceled, DeskHelper removes the
-          temporary output when possible.
-        </p>
-      </section>
+        <section class="support-section" id="logs">
+          <h2>Diagnostics and Logs</h2>
+            <p>
+              DeskHelper writes diagnostic messages to Apple's local unified
+              logging system and keeps a small bounded app-local diagnostic log.
+              These logs are stored locally on your Mac. Choosing "Report a Bug..."
+              may collect a bounded DeskHelper-only excerpt from the app-local
+              log and insert it into the email draft.
+            </p>
+            <p>
+              Nothing is sent unless you choose Send, and you can delete the
+              diagnostic summary or log excerpt before sending bug reports.
+            </p>
+        </section>
 
-      <section>
-        <h2>Permissions</h2>
-        <p>
-          macOS may ask you to enable the Finder extension or approve access needed
-          to open selected files or folders in another app. New File, New Folder,
-          Paste, Open, and Safe actions may ask for file or folder access when
-          macOS requires this sandboxed app to confirm access. Approving a folder
-          also covers its subfolders, and the approval is remembered on your Mac.
-          These approvals are managed by macOS. DeskHelper cannot grant itself
-          those permissions.
-        </p>
-      </section>
+        <section class="support-section" id="choices">
+          <h2>Your Choices</h2>
+            <ul>
+              <li>You can leave feedback drafts unsent, edit them, or delete diagnostic details.</li>
+              <li>You can enable or disable the Finder extension in macOS settings.</li>
+              <li>You can remove local app preferences and folder approvals using normal macOS preference-management tools.</li>
+            </ul>
+        </section>
 
-      <section>
-        <h2>Feedback and Support</h2>
-        <p>
-          If you choose Report a Bug, Suggest a Feature, or Send Feedback, DeskHelper
-          opens an email draft. You can review, edit, or delete the email and any
-          included diagnostic text before sending it.
-        </p>
-      </section>
-
-      <section>
-        <h2>Contact</h2>
-        <p>
-          For privacy questions or support, contact
-          <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>.
-        </p>
-        <p>
-          <a href="./">Return to DeskHelper</a>
-        </p>
-      </section>
+        <section class="support-section" id="contact">
+          <h2>Contact</h2>
+            <p>
+              For privacy questions or support, contact Xintech LLC at
+              <a class="text-link" href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>.
+            </p>
+            <p>
+              Xintech LLC may update this policy if DeskHelper's behavior
+              changes. The effective date above will change when the policy changes.
+            </p>
+        </section>
+      </div>
     </main>
   </body>
 </html>
