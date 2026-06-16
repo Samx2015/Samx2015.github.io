@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="yes"?>
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
-        <title>MacHelper Pro</title>
+        <title>DeskHelper Pro</title>
         <item>
             <title>1.0.0</title>
             <pubDate>Sat, 13 Jun 2026 18:58:24 -0700</pubDate>
@@ -10,7 +10,7 @@
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-## MacHelper Pro 1.0.0 (20)
+## DeskHelper Pro 1.0.0 (20)
 
 - Polishes the Secure Pocket New Private Note dialog so the privacy text and input fields stay cleanly separated.
 
@@ -25,11 +25,11 @@
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-# MacHelper Pro 1.0.0
+# DeskHelper Pro 1.0.0
 
 ## What's New
 
-- Introduces MacHelper Pro as the direct-download flagship Mac utility app.
+- Introduces DeskHelper Pro as the direct-download flagship Mac utility app.
 - Includes display tools for mirrored MacBook display blackout, brightness,
   contrast, dim-until-key-press, and keyboard backlight control.
 - Adds optional Auto Wi-Fi Switch for saved Wi-Fi networks, with signal
@@ -45,13 +45,13 @@
 - Lets users configure the default terminal, default editor, enabled Finder
   menu items, saved folder grants, Full Disk Access guidance, and copy-path
   escaping.
-- Ships with a new MacHelper Pro icon and Sparkle update support.
+- Ships with a new DeskHelper Pro icon and Sparkle update support.
 
 ## Install
 
 1. Open the DMG.
-2. Drag `MacHelper Pro.app` onto `Applications`.
-3. Open MacHelper Pro from Applications.
+2. Drag `DeskHelper Pro.app` onto `Applications`.
+3. Open DeskHelper Pro from Applications.
 
 The app appears in the macOS menu bar.
 
@@ -74,11 +74,11 @@ Requires macOS 13.0 or later.
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-## MacHelper Pro
+## DeskHelper Pro
 
-- Enables the live MacHelper Pro Lemon Squeezy checkout flow in the app.
-- Enables Buy License links on the MacHelper Pro website in all supported languages.
-- Keeps MacHelper Pro license validation tied to the MacHelper Pro Lemon Squeezy product and variant.
+- Enables the live DeskHelper Pro Lemon Squeezy checkout flow in the app.
+- Enables Buy License links on the DeskHelper Pro website in all supported languages.
+- Keeps DeskHelper Pro license validation tied to the DeskHelper Pro Lemon Squeezy product and variant.
 
 ]]></description>
             <enclosure url="https://github.com/Samx2015/MacHelperPro/releases/download/v1.0.0/MacHelperPro-1.0.0-18-macOS.dmg" length="5443264" type="application/octet-stream" sparkle:edSignature="b6/YCFVJ5uqsHSBI4G7+Z2vD4LN2V+eBO5EoM/8bK5Rw2m0UNIZK0kG+75ZerKDfI2Zi9iU8Gk2+BfKelO97Cg=="/>
@@ -91,7 +91,7 @@ Requires macOS 13.0 or later.
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-## MacHelper Pro
+## DeskHelper Pro
 
 - Improved the Auto Wi-Fi Switch location-permission flow so the permission prompt appears when the feature is enabled and the menu refreshes after approval.
 - Improved launch coordination across the HelperSuite family so only one HelperSuite app is active at a time.
@@ -110,9 +110,9 @@ Requires macOS 13.0 or later.
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-## MacHelper Pro 1.0.0 (16)
+## DeskHelper Pro 1.0.0 (16)
 
-- Maintenance release for MacHelper Pro.
+- Maintenance release for DeskHelper Pro.
 
 ]]></description>
             <enclosure url="https://github.com/Samx2015/MacHelperPro/releases/download/v1.0.0/MacHelperPro-1.0.0-16-macOS.dmg" length="5370630" type="application/octet-stream" sparkle:edSignature="1mWqssOOImR7TJ+MD6OB447mdepAHt7kQCLJykbOZziw+w0AvBGGtyvfk9EbeoCVpcjMJ6oke6uekDTGy0+6Bw=="/>
@@ -124,14 +124,14 @@ Requires macOS 13.0 or later.
             <sparkle:version>15</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[## MacHelper Pro 1.0.0 (15)
+            <description sparkle:format="markdown"><![CDATA[## DeskHelper Pro 1.0.0 (15)
 
 - Keeps only one HelperSuite family app running at a time to avoid overlapping
   menu bar behavior across DisplayHelper, DisplayHelper Pro, MacHelper, and
-  MacHelper Pro.
+  DeskHelper Pro.
 - Ensures Finder context menus are owned by the active HelperSuite app, so
   multiple installed Finder extensions do not show duplicate actions.
-- Uses the direct MacHelper Pro Finder extension when no family app is running
+- Uses the direct DeskHelper Pro Finder extension when no family app is running
   and both MacHelper variants are installed.
 - Refreshes DMG packaging so Sparkle's bundled updater helpers are signed with
   secure Developer ID timestamps before notarization.
@@ -145,7 +145,7 @@ Requires macOS 13.0 or later.
             <sparkle:version>14</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[## MacHelper Pro 1.0.0 (14)
+            <description sparkle:format="markdown"><![CDATA[## DeskHelper Pro 1.0.0 (14)
 
 - Refreshes the direct-download build with Developer ID signing, notarization,
   and Sparkle update metadata.
@@ -162,9 +162,9 @@ Requires macOS 13.0 or later.
             <sparkle:version>13</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[## MacHelper Pro 1.0.0 (13)
+            <description sparkle:format="markdown"><![CDATA[## DeskHelper Pro 1.0.0 (13)
 
-- Prevents duplicate Finder context menus when MacHelper and MacHelper Pro are both installed.
+- Prevents duplicate Finder context menus when MacHelper and DeskHelper Pro are both installed.
 - Keeps only one of the two Helper apps running at a time; the newest launched app wins, with Pro as the tie-breaker.
 - Adds regression coverage for Finder menu ownership decisions.
 ]]></description>
@@ -184,7 +184,7 @@ Requires macOS 13.0 or later.
             <sparkle:version>12</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[## MacHelper Pro 1.0.0 (12)
+            <description sparkle:format="markdown"><![CDATA[## DeskHelper Pro 1.0.0 (12)
 
 - Fixes Finder context menu actions in installed builds by resolving Finder-rewritten menu identifiers.
 - Uses a sandbox-safe app handoff so Terminal, editor, VSCode, Codex, and custom app actions run reliably.
@@ -206,7 +206,7 @@ Requires macOS 13.0 or later.
             <sparkle:version>11</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[## MacHelper Pro 1.0.0 (11)
+            <description sparkle:format="markdown"><![CDATA[## DeskHelper Pro 1.0.0 (11)
 
 - Fixes Finder context menu clicks so action identifiers survive Finder menu dispatch and the selected action can run.
 - Routes Finder open actions through the same command path for configured editors, terminals, Codex, VSCode, and custom apps.
