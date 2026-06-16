@@ -33,7 +33,7 @@
 - Improved the Auto Wi-Fi Switch location-permission flow so the permission prompt appears when the feature is enabled and the menu refreshes after approval.
 - Improved launch coordination across the HelperSuite family so only one HelperSuite app is active at a time.
 - Fixed product website/privacy link routing so DisplayHelper Pro opens the correct localized DisplayHelper Pro pages.
-- Refined Finder/context menu integration shared with the MacHelper family, including reliability fixes for opening selected Finder items.
+- Refined Finder/context menu integration shared with the DeskHelper family, including reliability fixes for opening selected Finder items.
 - Improved release automation so build numbers, appcasts, websites, and latest build artifacts stay in sync.
 
 ]]></description>
@@ -66,8 +66,8 @@
 ## What's New
 
 - Keeps only one HelperSuite family app running at a time to avoid overlapping
-  menu bar behavior across DisplayHelper, DisplayHelper Pro, MacHelper, and
-  MacHelper Pro.
+  menu bar behavior across DisplayHelper, DisplayHelper Pro, DeskHelper, and
+  DeskHelper Pro.
 - Uses the newest launched family app as the active app, with deterministic
   tie-breaking when launch times are unavailable.
 - Refreshes DMG packaging so Sparkle's bundled updater helpers are signed with
