@@ -6,11 +6,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://xintechllc.com/DeskHelperPro/es/</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://xintechllc.com/DeskHelperPro/zh-Hans/</loc>
     <lastmod>2026-06-03</lastmod>
     <priority>0.8</priority>
@@ -26,12 +21,17 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://xintechllc.com/DeskHelperPro/de/</loc>
+    <lastmod>2026-06-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://xintechllc.com/DeskHelperPro/fr/</loc>
     <lastmod>2026-06-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://xintechllc.com/DeskHelperPro/de/</loc>
+    <loc>https://xintechllc.com/DeskHelperPro/es/</loc>
     <lastmod>2026-06-03</lastmod>
     <priority>0.8</priority>
   </url>
@@ -46,12 +46,37 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://xintechllc.com/DeskHelperPro/ru/</loc>
+    <lastmod>2026-06-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://xintechllc.com/DeskHelperPro/it/</loc>
     <lastmod>2026-06-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://xintechllc.com/DeskHelperPro/nl/</loc>
+    <lastmod>2026-06-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/sv/</loc>
+    <lastmod>2026-06-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/da/</loc>
+    <lastmod>2026-06-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/nb/</loc>
+    <lastmod>2026-06-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/fi/</loc>
     <lastmod>2026-06-03</lastmod>
     <priority>0.8</priority>
   </url>
@@ -66,22 +91,17 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://xintechllc.com/DeskHelperPro/vi/</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/DeskHelperPro/ru/</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://xintechllc.com/DeskHelperPro/ar/</loc>
     <lastmod>2026-06-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://xintechllc.com/DeskHelperPro/hi/</loc>
+    <loc>https://xintechllc.com/DeskHelperPro/th/</loc>
+    <lastmod>2026-06-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/vi/</loc>
     <lastmod>2026-06-03</lastmod>
     <priority>0.8</priority>
   </url>
@@ -91,37 +111,17 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://xintechllc.com/DeskHelperPro/cs/</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/DeskHelperPro/da/</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/DeskHelperPro/fi/</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://xintechllc.com/DeskHelperPro/ms/</loc>
     <lastmod>2026-06-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://xintechllc.com/DeskHelperPro/nb/</loc>
+    <loc>https://xintechllc.com/DeskHelperPro/hi/</loc>
     <lastmod>2026-06-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://xintechllc.com/DeskHelperPro/sv/</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/DeskHelperPro/th/</loc>
+    <loc>https://xintechllc.com/DeskHelperPro/cs/</loc>
     <lastmod>2026-06-03</lastmod>
     <priority>0.8</priority>
   </url>
@@ -136,133 +136,258 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://xintechllc.com/DeskHelperPro/support.html</loc>
+    <loc>https://xintechllc.com/DeskHelperPro/zh-Hans/privacy.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/zh-Hant/privacy.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/ja/privacy.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/de/privacy.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/fr/privacy.html</loc>
     <lastmod>2026-06-16</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://xintechllc.com/DeskHelperPro/es/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/DeskHelperPro/zh-Hans/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/DeskHelperPro/zh-Hant/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/DeskHelperPro/ja/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/DeskHelperPro/fr/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/DeskHelperPro/de/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://xintechllc.com/DeskHelperPro/ko/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://xintechllc.com/DeskHelperPro/pt-BR/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/DeskHelperPro/it/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/DeskHelperPro/nl/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/DeskHelperPro/pl/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/DeskHelperPro/tr/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/DeskHelperPro/vi/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://xintechllc.com/DeskHelperPro/ru/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://xintechllc.com/DeskHelperPro/ar/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
+    <loc>https://xintechllc.com/DeskHelperPro/it/privacy.html</loc>
+    <lastmod>2026-06-16</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://xintechllc.com/DeskHelperPro/hi/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/DeskHelperPro/id/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/DeskHelperPro/cs/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/DeskHelperPro/da/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/DeskHelperPro/fi/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/DeskHelperPro/ms/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/DeskHelperPro/nb/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
+    <loc>https://xintechllc.com/DeskHelperPro/nl/privacy.html</loc>
+    <lastmod>2026-06-16</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://xintechllc.com/DeskHelperPro/sv/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/da/privacy.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/nb/privacy.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/fi/privacy.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/pl/privacy.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/tr/privacy.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/ar/privacy.html</loc>
+    <lastmod>2026-06-16</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://xintechllc.com/DeskHelperPro/th/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/vi/privacy.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/id/privacy.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/ms/privacy.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/hi/privacy.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/cs/privacy.html</loc>
+    <lastmod>2026-06-16</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://xintechllc.com/DeskHelperPro/uk/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/zh-Hans/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/zh-Hant/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/ja/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/de/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/fr/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/es/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/ko/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/pt-BR/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/ru/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/it/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/nl/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/sv/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/da/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/nb/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/fi/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/pl/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/tr/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/ar/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/th/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/vi/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/id/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/ms/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/hi/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/cs/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/uk/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
     <priority>0.3</priority>
   </url>
 </urlset>
