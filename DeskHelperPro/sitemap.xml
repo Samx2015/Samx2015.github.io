@@ -132,7 +132,12 @@
   </url>
   <url>
     <loc>https://xintechllc.com/DeskHelperPro/privacy.html</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/DeskHelperPro/support.html</loc>
+    <lastmod>2026-06-16</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
