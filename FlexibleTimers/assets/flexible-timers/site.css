@@ -146,6 +146,7 @@
       font-size: 15px;
       font-weight: 540;
       border: 1px solid transparent;
+      white-space: nowrap;
       transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
     }
 
@@ -625,6 +626,7 @@
     }
 
 .nav-actions {
+  flex-wrap: wrap;
   gap: 10px;
 }
 
