@@ -3,28 +3,28 @@
     <channel>
         <title>DeskHelper Pro</title>
         <item>
+            <title>1.1.1</title>
+            <pubDate>Sat, 20 Jun 2026 18:53:39 -0700</pubDate>
+            <link>https://xintechllc.com/DeskHelperPro/</link>
+            <sparkle:version>23</sparkle:version>
+            <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[
+## DeskHelper Pro 1.1.1
+
+- The "new version available" dialog now shows the build number next to the version (e.g. "1.1.1 (23)"), so a build-only update is never ambiguous.
+- Minor fixes and localization polish.
+
+]]></description>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.1.1/DeskHelperPro-1.1.1-23-macOS.dmg" length="10174594" type="application/octet-stream" sparkle:edSignature="0Edd804yroe74XB82YpT8cgPxKBrNHYwmoe6UZANhXjvvcUrPRN9ZLj9/+PHU6Rw9o/jXsufG+gx5yyxXF8jAA=="/>
+        </item>
+        <item>
             <title>1.1.0</title>
             <pubDate>Sat, 20 Jun 2026 18:36:02 -0700</pubDate>
             <link>https://xintechllc.com/DeskHelperPro/</link>
             <sparkle:version>22</sparkle:version>
             <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[
-## DeskHelper Pro 1.1.0
-
-**New**
-- **Display Resolution** — a menu-bar tool to switch your display's resolution instantly, and to create and install custom HiDPI ("Retina-style") resolutions. Each preset shows a clear status: available, installable, available after reboot, or rejected by macOS.
-- **7z & ZIP in Secure Archive** — create and extract password-protected 7z and ZIP archives from Finder. The engine is bundled, so there is nothing extra to install.
-
-**Improvements**
-- Applied resolutions persist after you quit the app, with a 15-second confirm-or-revert safety in case a mode is not usable.
-- The Resolution window floats above other windows, follows you across Spaces, and closes with Esc.
-- Broader localization across all supported languages.
-
-**Fixes**
-- More reliable menu-bar icon and background helper registration.
-
-]]></description>
             <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.1.0/DeskHelperPro-1.1.0-22-macOS.dmg" length="10174630" type="application/octet-stream" sparkle:edSignature="Hjl42+EVijjPnh15JMcGMzgi5J/1kIqTx+5f8nuyRz4wmR1jsVMxX6mbGmF2Pibff41YqQ8YWInO+nA1W+KNAA=="/>
         </item>
         <item>
