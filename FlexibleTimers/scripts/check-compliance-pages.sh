@@ -2,11 +2,6 @@
 set -euo pipefail
 
 BASE_URL="${BASE_URL:-https://xintechllc.com/FlexibleTimers}"
-LOCAL_ROOT="${LOCAL_ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
-TMP_DIR="$(mktemp -d)"
-trap 'rm -rf "$TMP_DIR"' EXIT
-
-failures=0
 
 require_command() {
   if ! command -v "$1" >/dev/null 2>&1; then
@@ -14,6 +9,16 @@ require_command() {
     exit 2
   fi
 }
+
+require_command dirname
+require_command mktemp
+require_command rm
+
+LOCAL_ROOT="${LOCAL_ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
+TMP_DIR="$(mktemp -d)"
+trap 'rm -rf "$TMP_DIR"' EXIT
+
+failures=0
 
 check() {
   local description="$1"
@@ -158,8 +163,13 @@ localized_flexible_timers_pages_have_footer_links() {
   return "$failed"
 }
 
+require_command basename
 require_command curl
+require_command find
 require_command grep
+require_command sed
+require_command sort
+require_command tr
 
 echo "Checking Flexible Timers public compliance pages"
 echo "Base URL: $BASE_URL"
