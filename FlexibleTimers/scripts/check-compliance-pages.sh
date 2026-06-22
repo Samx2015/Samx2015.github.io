@@ -82,7 +82,7 @@ localized_flexible_timers_pages_exist() {
         failed=1
       fi
     done
-  done < <(find "$LOCAL_ROOT" -mindepth 1 -maxdepth 1 -type d ! -name assets ! -name scripts | sort)
+  done < <(find "$LOCAL_ROOT" -mindepth 1 -maxdepth 1 -type d ! -name '.*' ! -name assets ! -name scripts | sort)
 
   return "$failed"
 }
@@ -100,7 +100,7 @@ localized_flexible_timers_pages_declare_language() {
         failed=1
       fi
     done
-  done < <(find "$LOCAL_ROOT" -mindepth 1 -maxdepth 1 -type d ! -name assets ! -name scripts | sort)
+  done < <(find "$LOCAL_ROOT" -mindepth 1 -maxdepth 1 -type d ! -name '.*' ! -name assets ! -name scripts | sort)
 
   return "$failed"
 }
@@ -125,7 +125,7 @@ localized_flexible_timers_pages_have_canonicals() {
         failed=1
       fi
     done
-  done < <(find "$LOCAL_ROOT" -mindepth 1 -maxdepth 1 -type d ! -name assets ! -name scripts | sort)
+  done < <(find "$LOCAL_ROOT" -mindepth 1 -maxdepth 1 -type d ! -name '.*' ! -name assets ! -name scripts | sort)
 
   return "$failed"
 }
@@ -153,7 +153,7 @@ localized_flexible_timers_pages_have_footer_links() {
         fi
       done
     done
-  done < <(find "$LOCAL_ROOT" -mindepth 1 -maxdepth 1 -type d ! -name assets ! -name scripts | sort)
+  done < <(find "$LOCAL_ROOT" -mindepth 1 -maxdepth 1 -type d ! -name '.*' ! -name assets ! -name scripts | sort)
 
   return "$failed"
 }
