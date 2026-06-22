@@ -2,6 +2,7 @@
 set -euo pipefail
 
 BASE_URL="${BASE_URL:-https://xintechllc.com/FlexibleTimers}"
+LOCAL_ROOT="${LOCAL_ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
 TMP_DIR="$(mktemp -d)"
 trap 'rm -rf "$TMP_DIR"' EXIT
 
@@ -51,6 +52,12 @@ page_text_has() {
   tr '\n' ' ' < "$file" | sed -E 's/[[:space:]]+/ /g' | grep -Eq "$pattern"
 }
 
+local_text_has() {
+  local relative_path="$1"
+  local pattern="$2"
+  tr '\n' ' ' < "$LOCAL_ROOT/$relative_path" | sed -E 's/[[:space:]]+/ /g' | grep -Eq "$pattern"
+}
+
 url_ok() {
   local path="$1"
   curl -fsSIL "$BASE_URL$path" >/dev/null
@@ -62,12 +69,111 @@ content_type_has() {
   curl -fsSIL "$BASE_URL$path" | grep -Eqi "^content-type: $pattern"
 }
 
+localized_flexible_timers_pages_exist() {
+  local page
+  local locale_dir
+  local failed=0
+  while IFS= read -r locale_dir; do
+    local locale
+    locale="$(basename "$locale_dir")"
+    for page in index.html support.html privacy.html sms-terms.html sms-opt-in.html; do
+      if [[ ! -f "$locale_dir/$page" ]]; then
+        echo "Missing localized page: $locale/$page" >&2
+        failed=1
+      fi
+    done
+  done < <(find "$LOCAL_ROOT" -mindepth 1 -maxdepth 1 -type d ! -name assets ! -name scripts | sort)
+
+  return "$failed"
+}
+
+localized_flexible_timers_pages_declare_language() {
+  local page
+  local locale_dir
+  local failed=0
+  while IFS= read -r locale_dir; do
+    local locale
+    locale="$(basename "$locale_dir")"
+    for page in index.html support.html privacy.html sms-terms.html sms-opt-in.html; do
+      if ! local_text_has "$locale/$page" "<html[^>]*lang=\"$locale\""; then
+        echo "Missing lang=\"$locale\" on localized page: $locale/$page" >&2
+        failed=1
+      fi
+    done
+  done < <(find "$LOCAL_ROOT" -mindepth 1 -maxdepth 1 -type d ! -name assets ! -name scripts | sort)
+
+  return "$failed"
+}
+
+localized_flexible_timers_pages_have_canonicals() {
+  local page
+  local locale_dir
+  local failed=0
+  while IFS= read -r locale_dir; do
+    local locale
+    locale="$(basename "$locale_dir")"
+    for page in index.html support.html privacy.html sms-terms.html sms-opt-in.html; do
+      local canonical
+      if [[ "$page" == "index.html" ]]; then
+        canonical="$BASE_URL/$locale/"
+      else
+        canonical="$BASE_URL/$locale/$page"
+      fi
+
+      if ! local_text_has "$locale/$page" "(rel=\"canonical\"[^>]*href=\"$canonical\"|href=\"$canonical\"[^>]*rel=\"canonical\")"; then
+        echo "Missing canonical URL on localized page: $locale/$page" >&2
+        failed=1
+      fi
+    done
+  done < <(find "$LOCAL_ROOT" -mindepth 1 -maxdepth 1 -type d ! -name assets ! -name scripts | sort)
+
+  return "$failed"
+}
+
+localized_flexible_timers_pages_have_footer_links() {
+  local page
+  local locale_dir
+  local failed=0
+  while IFS= read -r locale_dir; do
+    local locale
+    locale="$(basename "$locale_dir")"
+    for page in index.html support.html privacy.html sms-terms.html sms-opt-in.html; do
+      local footer
+      footer="$(sed -n '/<footer/,/<\/footer>/p' "$locale_dir/$page" | tr '\n' ' ')"
+      for required_href in \
+        'href="support.html"' \
+        'href="privacy.html"' \
+        'href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"' \
+        'href="sms-terms.html"' \
+        'href="sms-opt-in.html"'
+      do
+        if [[ "$footer" != *"$required_href"* ]]; then
+          echo "Missing footer link $required_href on localized page: $locale/$page" >&2
+          failed=1
+        fi
+      done
+    done
+  done < <(find "$LOCAL_ROOT" -mindepth 1 -maxdepth 1 -type d ! -name assets ! -name scripts | sort)
+
+  return "$failed"
+}
+
 require_command curl
 require_command grep
 
 echo "Checking Flexible Timers public compliance pages"
 echo "Base URL: $BASE_URL"
+echo "Local root: $LOCAL_ROOT"
 echo
+
+check "Localized Flexible Timers pages exist" \
+  localized_flexible_timers_pages_exist
+check "Localized Flexible Timers pages declare matching languages" \
+  localized_flexible_timers_pages_declare_language
+check "Localized Flexible Timers pages carry canonical URLs" \
+  localized_flexible_timers_pages_have_canonicals
+check "Localized Flexible Timers pages keep footer link parity" \
+  localized_flexible_timers_pages_have_footer_links
 
 check "Homepage is reachable" url_ok "/"
 check "Support page is reachable" url_ok "/support.html"
