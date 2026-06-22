@@ -28,7 +28,7 @@ check() {
 
 fetch() {
   local path="$1"
-  local output="$TMP_DIR/${path//\\//_}"
+  local output="$TMP_DIR/${path//\//_}"
   if [[ "$path" == "/" ]]; then
     output="$TMP_DIR/index"
   fi
