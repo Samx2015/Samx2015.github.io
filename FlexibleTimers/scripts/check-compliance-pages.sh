@@ -2,6 +2,7 @@
 set -euo pipefail
 
 BASE_URL="${BASE_URL:-https://xintechllc.com/FlexibleTimers}"
+PAGES_ROOT="${PAGES_ROOT:-/Users/sam/GitHub/Samx2015.github.io/FlexibleTimers}"
 
 require_command() {
   if ! command -v "$1" >/dev/null 2>&1; then
@@ -15,6 +16,7 @@ require_command mktemp
 require_command rm
 
 LOCAL_ROOT="${LOCAL_ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
+LOCAL_ROOT="$(cd "$LOCAL_ROOT" && pwd)"
 TMP_DIR="$(mktemp -d)"
 trap 'rm -rf "$TMP_DIR"' EXIT
 
@@ -72,6 +74,22 @@ content_type_has() {
   local path="$1"
   local pattern="$2"
   curl -fsSIL "$BASE_URL$path" | grep -Eqi "^content-type: $pattern"
+}
+
+pages_deploy_tree_matches_source() {
+  local pages_root
+  pages_root="$(cd "$PAGES_ROOT" && pwd)"
+  local diff_args=(-qr
+    -x .git
+    -x .gitignore
+    -x .nojekyll
+    -x README.md
+    -x publish.sh)
+  if [[ ! -d "$LOCAL_ROOT/download" ]]; then
+    diff_args+=(-x download)
+  fi
+
+  diff "${diff_args[@]}" "$LOCAL_ROOT" "$pages_root"
 }
 
 localized_flexible_timers_pages_exist() {
@@ -165,6 +183,7 @@ localized_flexible_timers_pages_have_footer_links() {
 
 require_command basename
 require_command curl
+require_command diff
 require_command find
 require_command grep
 require_command sed
@@ -174,7 +193,20 @@ require_command tr
 echo "Checking Flexible Timers public compliance pages"
 echo "Base URL: $BASE_URL"
 echo "Local root: $LOCAL_ROOT"
+echo "Pages root: $PAGES_ROOT"
 echo
+
+if [[ -d "$PAGES_ROOT" ]]; then
+  PAGES_ROOT="$(cd "$PAGES_ROOT" && pwd)"
+  if [[ "$PAGES_ROOT" != "$LOCAL_ROOT" ]]; then
+    check "Pages deploy subtree matches source" \
+      pages_deploy_tree_matches_source
+  else
+    echo "SKIP Pages deploy subtree matches source (local root is Pages root)"
+  fi
+else
+  echo "SKIP Pages deploy subtree matches source (Pages root not found)"
+fi
 
 check "Localized Flexible Timers pages exist" \
   localized_flexible_timers_pages_exist
