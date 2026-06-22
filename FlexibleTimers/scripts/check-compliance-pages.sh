@@ -111,7 +111,7 @@ check "SMS Terms documents HELP keyword" \
 check "SMS Terms documents START or YES keyword" \
   page_has "/sms-terms.html" "START or YES"
 check "SMS Terms documents support URL" \
-  page_has "/sms-terms.html" "xintechllc.com/support.html"
+  page_has "/sms-terms.html" "xintechllc.com/FlexibleTimers/support.html"
 check "SMS Terms says no marketing texts" \
   page_text_has "/sms-terms.html" "does not send marketing text messages"
 check "SMS Terms says SMS is not two-way chat" \
@@ -121,7 +121,7 @@ check "SMS Terms says consent is not required for purchase" \
 check "SMS Terms includes exact STOP response" \
   page_text_has "/sms-terms.html" "You are opted out of Flexible Timers SMS\\. No more messages will be sent\\. Reply START to opt in again\\."
 check "SMS Terms includes exact HELP response" \
-  page_text_has "/sms-terms.html" "Flexible Timers sends account verification codes and reminder SMS you schedule for yourself\\. Help: https://xintechllc\\.com/support\\.html\\. Reply STOP to opt out\\."
+  page_text_has "/sms-terms.html" "Flexible Timers sends account verification codes and reminder SMS you schedule for yourself\\. Help: https://xintechllc\\.com/FlexibleTimers/support\\.html\\. Reply STOP to opt out\\."
 check "SMS Terms includes exact START response" \
   page_text_has "/sms-terms.html" "You have opted back in to Flexible Timers SMS messages\\. Message frequency varies\\. Reply STOP to opt out, HELP for help\\."
 check "Privacy says SMS opt-in data is not sold" \
@@ -129,7 +129,7 @@ check "Privacy says SMS opt-in data is not sold" \
 check "Privacy says SMS opt-in data is not shared for marketing" \
   page_text_has "/privacy.html" "does not share SMS opt-in data"
 check "Privacy links support page" \
-  page_has "/privacy.html" "xintechllc.com/support.html"
+  page_has "/privacy.html" "xintechllc.com/FlexibleTimers/support.html"
 check "Opt-in page includes consent wording" \
   page_text_has "/sms-opt-in.html" "I agree to receive SMS verification codes and reminder messages I schedule for myself from Flexible Timers by Xintech LLC at this phone number"
 check "Opt-in page says checkbox is not pre-selected" \
@@ -149,7 +149,7 @@ check "Opt-in page documents verified account-phone reminders" \
 check "Opt-in page includes exact STOP response" \
   page_text_has "/sms-opt-in.html" "STOP response: You are opted out of Flexible Timers SMS\\. No more messages will be sent\\. Reply START to opt in again\\."
 check "Opt-in page includes exact HELP response" \
-  page_text_has "/sms-opt-in.html" "HELP response: Flexible Timers sends account verification codes and reminder SMS you schedule for yourself\\. Help: https://xintechllc\\.com/support\\.html\\. Reply STOP to opt out\\."
+  page_text_has "/sms-opt-in.html" "HELP response: Flexible Timers sends account verification codes and reminder SMS you schedule for yourself\\. Help: https://xintechllc\\.com/FlexibleTimers/support\\.html\\. Reply STOP to opt out\\."
 check "Opt-in page includes exact START response" \
   page_text_has "/sms-opt-in.html" "START response: You have opted back in to Flexible Timers SMS messages\\. Message frequency varies\\. Reply STOP to opt out, HELP for help\\."
 check "Opt-in page links support page" \
@@ -163,7 +163,7 @@ check "Compliance page says third-party messaging is disabled" \
 check "Compliance page says SMS is not two-way chat" \
   page_has "/compliance.html" "not a two-way chat"
 check "Compliance page links support page" \
-  page_has "/compliance.html" "xintechllc.com/support.html"
+  page_has "/compliance.html" "xintechllc.com/FlexibleTimers/support.html"
 check "Support page includes contact path" \
   page_has "/support.html" "mailto:admin@xintechllc.com"
 check "Support page documents SMS opt-out and help" \
