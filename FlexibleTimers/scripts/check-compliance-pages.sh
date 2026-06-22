@@ -100,6 +100,8 @@ check "SMS Terms documents verification and reminder use" \
   page_has "/sms-terms.html" "verification codes and user-created"
 check "SMS Terms documents own account phone scope" \
   page_text_has "/sms-terms.html" "own account phone number|own verified, opted-in account phone number"
+check "SMS Terms links visible opt-in evidence URL" \
+  page_has "/sms-terms.html" "xintechllc.com/FlexibleTimers/sms-opt-in.html"
 check "SMS Terms documents no third-party SMS" \
   page_text_has "/sms-terms.html" "arbitrary third-party recipients"
 check "SMS Terms documents STOP keyword" \
