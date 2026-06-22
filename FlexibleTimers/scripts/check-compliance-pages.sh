@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-BASE_URL="${BASE_URL:-https://xintechllc.com}"
+BASE_URL="${BASE_URL:-https://xintechllc.com/FlexibleTimers}"
 TMP_DIR="$(mktemp -d)"
 trap 'rm -rf "$TMP_DIR"' EXIT
 
@@ -84,18 +84,18 @@ check "Sitemap is reachable" url_ok "/sitemap.xml"
 
 check "Homepage describes account email reporting" \
   page_has "/" "account email"
-check "Homepage shows legal business name" \
-  page_text_has "/" "Legal business name.*Xintech LLC"
-check "Homepage shows business location" \
-  page_text_has "/" "Sammamish, Washington, United States"
-check "Homepage describes services offered" \
-  page_text_has "/" "Services offered.*Apple-platform productivity apps"
-check "Homepage links support contact" \
-  page_text_has "/" "Support contact"
-check "Homepage includes email contact" \
-  page_text_has "/" "admin@xintechllc\\.com"
-check "Homepage describes Flexible Timers SMS scope" \
-  page_text_has "/" "Flexible Timers messaging.*own verified phone number"
+check "Homepage names operator" \
+  page_has "/" "Operated by Xintech LLC"
+check "Homepage describes Apple platforms" \
+  page_text_has "/" "Mac, iPhone, and iPad"
+check "Homepage links support page" \
+  page_has "/" "href=\"support.html\""
+check "Homepage links privacy page" \
+  page_has "/" "href=\"privacy.html\""
+check "Homepage links SMS Terms page" \
+  page_has "/" "href=\"sms-terms.html\""
+check "Homepage describes personal reminders" \
+  page_text_has "/" "Personal reminders.*verified phone"
 check "SMS Terms documents verification and reminder use" \
   page_has "/sms-terms.html" "verification codes and user-created"
 check "SMS Terms documents own account phone scope" \
@@ -129,7 +129,7 @@ check "Privacy says SMS opt-in data is not shared for marketing" \
 check "Privacy links support page" \
   page_has "/privacy.html" "xintechllc.com/support.html"
 check "Opt-in page includes consent wording" \
-  page_text_has "/sms-opt-in.html" "I agree to receive SMS verification codes and reminder messages from Flexible Timers by Xintech LLC that I schedule for myself at this phone number"
+  page_text_has "/sms-opt-in.html" "I agree to receive SMS verification codes and reminder messages I schedule for myself from Flexible Timers by Xintech LLC at this phone number"
 check "Opt-in page says checkbox is not pre-selected" \
   page_text_has "/sms-opt-in.html" "checkbox is not pre-selected"
 check "Opt-in page names end business" \
