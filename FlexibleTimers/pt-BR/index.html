@@ -95,5 +95,23 @@
     </main>
     <footer><div>© 2017-2026 Xintech LLC.</div><div class="footer-links"><a href="support.html">Suporte</a><a href="privacy.html">Privacidade</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a><a href="sms-terms.html">Termos SMS</a><a href="sms-opt-in.html">Ativação SMS</a></div></footer>
   </div>
+    <script>
+      // ft-language-menu-dismiss: close the language dropdown when clicking
+      // outside it or pressing Escape. A native <details> otherwise only closes
+      // on a second click of its <summary>.
+      (function () {
+        function closeAll() {
+          document.querySelectorAll('details.language-menu[open]')
+            .forEach(function (d) { d.removeAttribute('open'); });
+        }
+        document.addEventListener('click', function (e) {
+          document.querySelectorAll('details.language-menu[open]')
+            .forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute('open'); });
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' || e.key === 'Esc') closeAll();
+        });
+      })();
+    </script>
 </body>
 </html>
