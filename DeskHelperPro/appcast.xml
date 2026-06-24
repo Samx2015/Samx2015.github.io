@@ -3,19 +3,32 @@
     <channel>
         <title>DeskHelper Pro</title>
         <item>
+            <title>1.2.0</title>
+            <pubDate>Wed, 24 Jun 2026 15:38:16 -0700</pubDate>
+            <link>https://xintechllc.com/DeskHelperPro/</link>
+            <sparkle:version>24</sparkle:version>
+            <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[
+## DeskHelper Pro 1.2.0
+
+**New**
+- **Window management** — snap the focused window to halves, the four corners, Maximize, Center, or Restore, from the new **Window** menu or global keyboard shortcuts (⌃⌥ + arrows/keys). Needs Accessibility permission, which DeskHelper Pro asks for on first use.
+
+**Improvements**
+- Broad reliability and security hardening across Secure Archive, the display helper, and Finder integration.
+- Added a Third-Party Acknowledgements section to the About window.
+
+]]></description>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.2.0/DeskHelperPro-1.2.0-24-macOS.dmg" length="10630160" type="application/octet-stream" sparkle:edSignature="ZDA2skFjazC/sfshSmHgKPbym6cAqpMBNFL8Eu+XnIP/Y2FSNF6K2jeFM8bMJMlSbvsKqOPg2Yyn3AVisi+vAw=="/>
+        </item>
+        <item>
             <title>1.1.1</title>
             <pubDate>Sat, 20 Jun 2026 18:53:39 -0700</pubDate>
             <link>https://xintechllc.com/DeskHelperPro/</link>
             <sparkle:version>23</sparkle:version>
             <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[
-## DeskHelper Pro 1.1.1
-
-- The "new version available" dialog now shows the build number next to the version (e.g. "1.1.1 (23)"), so a build-only update is never ambiguous.
-- Minor fixes and localization polish.
-
-]]></description>
             <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.1.1/DeskHelperPro-1.1.1-23-macOS.dmg" length="10174594" type="application/octet-stream" sparkle:edSignature="0Edd804yroe74XB82YpT8cgPxKBrNHYwmoe6UZANhXjvvcUrPRN9ZLj9/+PHU6Rw9o/jXsufG+gx5yyxXF8jAA=="/>
         </item>
         <item>
