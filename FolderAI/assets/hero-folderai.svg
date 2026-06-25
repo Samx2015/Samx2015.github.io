@@ -1,114 +1,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1500" viewBox="0 0 2400 1500" role="img" aria-labelledby="title desc">
-  <title id="title">FolderAI app interface on a dark Mac desktop</title>
-  <desc id="desc">A stylized FolderAI window reviewing file moves with loose documents and folders.</desc>
+  <title id="title">FolderAI app window reviewing a cleanup plan</title>
+  <desc id="desc">The real FolderAI interface with a staged cleanup tree on a dark desktop-style background.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="2400" y2="1500" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#071112"/>
-      <stop offset="0.56" stop-color="#0d1516"/>
+      <stop offset="0" stop-color="#080d0e"/>
+      <stop offset="0.5" stop-color="#0f1218"/>
       <stop offset="1" stop-color="#050707"/>
     </linearGradient>
-    <linearGradient id="surface" x1="1040" y1="210" x2="2090" y2="1170" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#182326"/>
-      <stop offset="1" stop-color="#0c1315"/>
-    </linearGradient>
-    <linearGradient id="panel" x1="1130" y1="370" x2="2050" y2="1110" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#142023"/>
-      <stop offset="1" stop-color="#0b1214"/>
-    </linearGradient>
-    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#78ceff"/>
-      <stop offset="1" stop-color="#1684de"/>
-    </linearGradient>
-    <filter id="shadow" x="-15%" y="-15%" width="130%" height="135%" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="34" stdDeviation="42" flood-color="#000000" flood-opacity="0.42"/>
-      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.26"/>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1740 690) rotate(38) scale(860 520)">
+      <stop offset="0" stop-color="#4f8cff" stop-opacity="0.32"/>
+      <stop offset="0.48" stop-color="#80f2ea" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#80f2ea" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shotShadow" x="-10%" y="-12%" width="120%" height="130%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="36" stdDeviation="42" flood-color="#000000" flood-opacity="0.52"/>
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.28"/>
     </filter>
-    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity="0.25"/>
-    </filter>
+    <clipPath id="shotClip">
+      <rect x="805" y="196" width="1510" height="1014" rx="34"/>
+    </clipPath>
   </defs>
 
   <rect width="2400" height="1500" fill="url(#bg)"/>
-  <path d="M0 1180 C460 1070 810 1135 1180 1048 C1600 950 1970 910 2400 990 L2400 1500 L0 1500 Z" fill="#091013" opacity="0.72"/>
-  <g opacity="0.22">
-    <path d="M1090 190 L2220 1015" stroke="#80f2ea" stroke-width="1"/>
-    <path d="M1240 160 L2370 985" stroke="#80f2ea" stroke-width="1"/>
-    <path d="M980 330 L2110 1155" stroke="#80f2ea" stroke-width="1"/>
-    <path d="M950 560 H2250" stroke="#ffffff" stroke-width="1" opacity="0.22"/>
-    <path d="M900 790 H2200" stroke="#ffffff" stroke-width="1" opacity="0.16"/>
+  <rect width="2400" height="1500" fill="url(#glow)"/>
+
+  <g opacity="0.18">
+    <path d="M880 180 L2240 1180" stroke="#80f2ea" stroke-width="1.4"/>
+    <path d="M1030 120 L2390 1120" stroke="#80f2ea" stroke-width="1.1"/>
+    <path d="M760 390 L2120 1390" stroke="#80f2ea" stroke-width="1"/>
+    <path d="M0 1010 C420 925 780 930 1150 845 C1585 745 1970 755 2400 820" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.2"/>
+    <path d="M0 1220 C510 1110 825 1165 1190 1070 C1590 965 1985 985 2400 1060" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.13"/>
   </g>
 
-  <g transform="translate(1078 220)" filter="url(#shadow)">
-    <rect x="0" y="0" width="1070" height="860" rx="30" fill="url(#surface)" stroke="#2a383b" stroke-width="2"/>
-    <rect x="0" y="0" width="1070" height="74" rx="30" fill="#111a1d"/>
-    <path d="M0 47 H1070" stroke="#273538" stroke-width="2"/>
-    <circle cx="34" cy="36" r="10" fill="#ff7568"/>
-    <circle cx="66" cy="36" r="10" fill="#f2c76f"/>
-    <circle cx="98" cy="36" r="10" fill="#8ed39d"/>
-    <text x="136" y="43" fill="#f5f7f4" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="300">FolderAI</text>
-    <rect x="870" y="22" width="150" height="32" rx="8" fill="#ff8b73"/>
-    <text x="900" y="44" fill="#190b07" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15" font-weight="600">Clean up</text>
-
-    <rect x="34" y="108" width="212" height="706" rx="16" fill="#0b1214" stroke="#223034"/>
-    <text x="58" y="151" fill="#80f2ea" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="500">SOURCES</text>
-    <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" font-weight="300">
-      <rect x="54" y="180" width="156" height="42" rx="8" fill="#17272a"/>
-      <text x="76" y="207" fill="#f5f7f4">Downloads</text>
-      <text x="76" y="268" fill="#aab6b0">Documents</text>
-      <text x="76" y="329" fill="#aab6b0">Desktop</text>
-      <text x="76" y="390" fill="#aab6b0">External</text>
-    </g>
-    <text x="58" y="486" fill="#80f2ea" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="500">DESTINATIONS</text>
-    <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="17" font-weight="300" fill="#aab6b0">
-      <text x="76" y="538">Finance</text>
-      <text x="76" y="590">Projects</text>
-      <text x="76" y="642">Screenshots</text>
-      <text x="76" y="694">Archive</text>
-    </g>
-
-    <rect x="284" y="108" width="742" height="706" rx="16" fill="url(#panel)" stroke="#273538"/>
-    <text x="326" y="160" fill="#f5f7f4" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="36" font-weight="260">Review before anything moves.</text>
-    <text x="326" y="201" fill="#aab6b0" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" font-weight="300">A staged cleanup plan for a messy Downloads folder.</text>
-
-    <g transform="translate(326 246)" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
-      <rect x="0" y="0" width="656" height="62" rx="10" fill="#0c1416" stroke="#273538"/>
-      <circle cx="34" cy="31" r="12" fill="#80f2ea"/>
-      <text x="62" y="27" fill="#f5f7f4" font-size="18" font-weight="320">invoice_april.pdf</text>
-      <text x="62" y="49" fill="#aab6b0" font-size="13">Documents / Finance / Invoices</text>
-      <rect x="506" y="17" width="112" height="28" rx="7" fill="#163338"/>
-      <text x="531" y="37" fill="#80f2ea" font-size="13" font-weight="500">move</text>
-
-      <rect x="0" y="78" width="656" height="62" rx="10" fill="#0c1416" stroke="#273538"/>
-      <circle cx="34" cy="109" r="12" fill="#f0c96e"/>
-      <text x="62" y="105" fill="#f5f7f4" font-size="18" font-weight="320">setup-old.dmg</text>
-      <text x="62" y="127" fill="#aab6b0" font-size="13">Cleanup Quarantine</text>
-      <rect x="506" y="95" width="112" height="28" rx="7" fill="#39291b"/>
-      <text x="528" y="115" fill="#f0c96e" font-size="13" font-weight="500">remove</text>
-
-      <rect x="0" y="156" width="656" height="62" rx="10" fill="#0c1416" stroke="#273538"/>
-      <circle cx="34" cy="187" r="12" fill="#8ed39d"/>
-      <text x="62" y="183" fill="#f5f7f4" font-size="18" font-weight="320">wireframe.png</text>
-      <text x="62" y="205" fill="#aab6b0" font-size="13">Projects / Design</text>
-      <rect x="506" y="173" width="112" height="28" rx="7" fill="#143222"/>
-      <text x="531" y="193" fill="#8ed39d" font-size="13" font-weight="500">move</text>
-
-      <rect x="0" y="234" width="656" height="62" rx="10" fill="#0c1416" stroke="#273538"/>
-      <circle cx="34" cy="265" r="12" fill="#ff8b73"/>
-      <text x="62" y="261" fill="#f5f7f4" font-size="18" font-weight="320">notes-from-scan.jpg</text>
-      <text x="62" y="283" fill="#aab6b0" font-size="13">Documents / Notes</text>
-      <rect x="506" y="251" width="112" height="28" rx="7" fill="#371c18"/>
-      <text x="531" y="271" fill="#ff8b73" font-size="13" font-weight="500">OCR</text>
-    </g>
-
-    <rect x="326" y="626" width="656" height="126" rx="12" fill="#0c1416" stroke="#273538"/>
-    <text x="354" y="665" fill="#f5f7f4" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="20" font-weight="320">Plain-language adjustment</text>
-    <text x="354" y="702" fill="#aab6b0" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="17" font-weight="300">"keep screenshots together and remove old installers"</text>
-    <path d="M354 724 H954" stroke="#243235" stroke-width="2"/>
-  </g>
-
-  <g transform="translate(1850 1055) rotate(-8)" filter="url(#soft)">
-    <path d="M0 94 C3 75 19 62 38 62 H117 C132 62 140 69 150 81 L165 98 H311 C330 98 344 115 341 134 L314 296 C310 321 289 339 264 339 H58 C33 339 12 321 8 297 L-15 135 C-19 112 -10 94 0 94 Z" fill="url(#blue)"/>
-    <path d="M0 94 C4 77 19 66 38 66 H117 C132 66 141 72 151 84 L166 101 H310 C326 101 338 112 340 128 H176 C156 128 144 121 132 107 L117 90 H38 C22 90 8 101 4 117 H-11 C-8 107 -4 99 0 94 Z" fill="#9edcff" opacity="0.5"/>
-    <rect x="28" y="154" width="275" height="130" rx="20" fill="#2493e6" opacity="0.88"/>
+  <g filter="url(#shotShadow)">
+    <image href="review-screenshot.png" x="805" y="196" width="1510" height="1014" preserveAspectRatio="xMidYMid slice" clip-path="url(#shotClip)"/>
+    <rect x="805" y="196" width="1510" height="1014" rx="34" fill="none" stroke="#2a3240" stroke-width="3"/>
+    <rect x="805" y="196" width="1510" height="1014" rx="34" fill="rgba(8,13,14,0.16)"/>
   </g>
 </svg>
