@@ -3,20 +3,32 @@
     <channel>
         <title>DeskHelper Pro</title>
         <item>
+            <title>1.3.5</title>
+            <pubDate>Mon, 29 Jun 2026 20:59:46 -0700</pubDate>
+            <link>https://xintechllc.com/DeskHelperPro/</link>
+            <sparkle:version>30</sparkle:version>
+            <sparkle:shortVersionString>1.3.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[
+## DeskHelper Pro 1.3.5
+
+**New**
+- **Key & Button Remapping** — create rules that remap a key or a supported mouse button to a key, a shortcut, a dual-role key (tap for one thing, hold as a modifier), or a Hyper key. It's off by default and turns on from the menu; rules stay on this Mac and are never uploaded.
+
+**Fixes**
+- **Scroll** — per-device scroll speed and acceleration now reliably take effect, including on mice where the adjustment previously did nothing.
+- **Full Disk Access** — clearer guidance for adding DeskHelper Pro when macOS doesn't list it automatically.
+
+]]></description>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.3.5/DeskHelperPro-1.3.5-30-macOS.dmg" length="11661125" type="application/octet-stream" sparkle:edSignature="YCB1ZTyjolS2vJoN6s3f+1LdKybrxa0qiavmvQXjhenUrh4ybxqsc+L21ImVIJS00pmc0QY2ad5uQE8UJw8ZBA=="/>
+        </item>
+        <item>
             <title>1.3.4</title>
             <pubDate>Mon, 29 Jun 2026 13:37:47 -0700</pubDate>
             <link>https://xintechllc.com/DeskHelperPro/</link>
             <sparkle:version>29</sparkle:version>
             <sparkle:shortVersionString>1.3.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[
-## DeskHelper Pro 1.3.4
-
-**Improvements**
-- **Pointer & Scroll** — the Pointer and Scroll panels now stay in sync with the mouse you're actually using. Moving or scrolling with a device highlights it in both panels, so per-device settings reliably apply to the right mouse, including when a virtual input device (such as Karabiner) is in the pipeline.
-- **Permissions** — the permissions overview groups each permission by how essential it is and explains which feature it enables, so it's clearer what to grant and why.
-
-]]></description>
             <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.3.4/DeskHelperPro-1.3.4-29-macOS.dmg" length="11512348" type="application/octet-stream" sparkle:edSignature="ytN4yp3WvfsyPYGE1wRXHiJHj18FSbMyg9omKowPqJkPfcPUiMfZsHkVFI/Qa1UTvp82eGq0p4AxH/R/FVsPDA=="/>
         </item>
     </channel>
