@@ -6,7 +6,7 @@
     <title>DeskHelper Pro Privacy Policy</title>
     <meta
       name="description"
-      content="DeskHelper Pro's privacy policy for local display controls, optional Wi-Fi switching, Finder context menus, Safes, update checks, diagnostics, licensing, and support contact."
+      content="DeskHelper Pro's privacy policy for local display controls, window shortcuts, optional Wi-Fi switching, Finder context menus, Safes, pointer profiles, key/button remapping, Audio Mixer, update checks, diagnostics, licensing, and support contact."
     >
     <link rel="canonical" href="https://xintechllc.com/DeskHelperPro/privacy.html">
     <link rel="alternate" hreflang="en" href="https://xintechllc.com/DeskHelperPro/privacy.html">
@@ -91,13 +91,14 @@
           <p>Effective date: June 13, 2026.</p>
           <p>
             DeskHelper Pro is a local-first macOS menu-bar utility for display
-            controls, optional Wi-Fi switching, Finder context menu actions,
-            and local Safes.
+            controls, window shortcuts, optional Wi-Fi switching, Finder context
+            menu actions, local Safes, pointer profiles, key/button remapping,
+            and audio controls.
           </p>
           <ul>
             <li>No DeskHelper Pro sign-in or user profile.</li>
             <li>No event tracking, session tracking, advertising pixels, or usage telemetry.</li>
-            <li>Display, Finder, Safe, and feedback actions run locally unless you choose an explicit network action.</li>
+            <li>Display, window, Finder, Safe, pointer, remapping, audio, and feedback actions run locally unless you choose an explicit network action.</li>
           </ul>
         </section>
 
@@ -105,11 +106,12 @@
           <h2>Data Collection</h2>
           <p>
             DeskHelper Pro does not collect, store, sell, share, or transmit
-            personal information through its display-management, Finder action,
-            or Safe features. Xintech LLC does not receive
-            information about your displays, files, settings, usage, or device
-            from the app unless you intentionally send it through email support,
-            check for updates, or activate a license.
+            personal information through its display-management, window
+            arrangement, Finder action, Safe, pointer, remapping, or Audio Mixer
+            features. Xintech LLC does not receive information about your
+            displays, files, settings, usage, devices, keyboard input, mouse
+            input, or audio from the app unless you intentionally send it
+            through email support, check for updates, or activate a license.
           </p>
           <ul>
             <li>No DeskHelper Pro account is required.</li>
@@ -129,17 +131,21 @@
           <p>Local preferences may include:</p>
           <ul>
             <li>Menu settings such as auto blackout, mirroring, display adjustment, keyboard shortcut, keyboard backlight, Wi-Fi switching, and start-at-login preferences.</li>
+            <li>Window arrangement shortcuts, app-focus shortcuts, arranged-window focus state, Active Window Highlight appearance, and conflict-helper preferences.</li>
             <li>Finder context menu preferences, including which actions are enabled and which editor, terminal, or compatible app you selected.</li>
             <li>Safe workflow preferences, local folder choices, and bounded local diagnostic messages. DeskHelper Pro never stores Safe passwords.</li>
+            <li>Pointer and scrolling profiles, key/button remapping rules, and Audio Mixer preferences. DeskHelper Pro does not store typed text, Safe passwords, or recorded audio.</li>
             <li>Trial markers, license validation timestamps, and a license key stored in your Mac's Keychain if you activate a license.</li>
           </ul>
           <p>
             DeskHelper Pro uses macOS display APIs for display controls, CoreWLAN
-            APIs for optional Wi-Fi switching, and macOS Finder extension APIs
-            for Finder context menu actions. Finder and Safe
+            APIs for optional Wi-Fi switching, macOS Accessibility APIs for
+            window control, local input APIs for pointer and remapping features,
+            system audio APIs for Audio Mixer after permission, and macOS Finder
+            extension APIs for Finder context menu actions. Finder and Safe
             operations read local selections only when you choose a DeskHelper Pro
             action, and DeskHelper Pro does not upload Finder paths, file
-            contents, Safe contents, or passwords to
+            contents, Safe contents, input events, audio, or passwords to
             Xintech LLC.
           </p>
         </section>
@@ -158,6 +164,7 @@
             <li>Encrypt to New Safe reads selected local files or folders and writes a single encrypted .safe file after you choose a password and destination.</li>
             <li>Add to Existing Safe reads selected local items and the chosen .safe file, then rewrites a replacement Safe after the operation succeeds.</li>
             <li>Decrypt Safe reads the chosen .safe file and restores only the selected contents to the folder you choose.</li>
+            <li>Supported .7z, .zip, and .dmg archive flows also run locally and use the password only for the action you start.</li>
           </ul>
           <p>
             Safe encryption and decryption are local actions. DeskHelper Pro
@@ -166,11 +173,22 @@
           </p>
         </section>
 
+        <section class="support-section" id="window-input-audio">
+          <h2>Window, Pointer, Remapping, and Audio Tools</h2>
+          <ul>
+            <li>Window arrangement, arranged-window focus, app-focus shortcuts, move-to-display actions, and Active Window Highlight act on local windows only after you enable or trigger those features.</li>
+            <li>Pointer profiles and scrolling settings store local device identifiers and preference values so DeskHelper Pro can apply settings to the intended mouse or pointing device.</li>
+            <li>Key & Button Remapping uses local keyboard or mouse events to perform the mappings you configure. It does not store typed text or build a history of keys you press.</li>
+            <li>Audio Mixer uses macOS system audio capture permission to adjust per-app volume locally. DeskHelper Pro does not record, save, upload, transcribe, or analyze your audio content.</li>
+          </ul>
+        </section>
+
         <section class="support-section" id="network">
           <h2>Network Activity</h2>
           <p>
-            DeskHelper Pro's normal display controls, Finder context menus,
-            and Safes do not require a
+            DeskHelper Pro's normal display controls, window shortcuts, Finder
+            context menus, Safes, pointer profiles, remapping, and Audio Mixer
+            do not require a
             network connection.
           </p>
           <p>
@@ -211,6 +229,8 @@
             <li>You can disable automatic update checks in Sparkle update preferences.</li>
             <li>You can turn Auto Wi-Fi Switch on or off from the DeskHelper Pro menu.</li>
             <li>You can grant, deny, or revoke Location permission for Wi-Fi details in macOS System Settings.</li>
+            <li>You can grant, deny, or revoke Accessibility, Input Monitoring, and System Audio Recording permissions in macOS System Settings.</li>
+            <li>You can disable Pointer Profiles, Scroll Speed & Acceleration, Key & Button Remapping, Active Window Highlight, and Audio Mixer from the DeskHelper Pro menu or their settings windows.</li>
             <li>You can enable or disable the Finder extension in macOS settings.</li>
             <li>You can open Full Disk Access settings from DeskHelper Pro if Finder actions need protected macOS locations.</li>
             <li>You can deactivate this Mac from the license window.</li>
