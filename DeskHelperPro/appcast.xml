@@ -3,23 +3,20 @@
     <channel>
         <title>DeskHelper Pro</title>
         <item>
-            <title>1.3.11</title>
-            <pubDate>Wed, 01 Jul 2026 18:21:38 -0700</pubDate>
+            <title>1.3.12</title>
+            <pubDate>Wed, 01 Jul 2026 21:36:33 -0700</pubDate>
             <link>https://xintechllc.com/DeskHelperPro/</link>
-            <sparkle:version>36</sparkle:version>
-            <sparkle:shortVersionString>1.3.11</sparkle:shortVersionString>
+            <sparkle:version>37</sparkle:version>
+            <sparkle:shortVersionString>1.3.12</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-## DeskHelper Pro 1.3.11
-
-**New**
-- **Notifications button on Blackout** — the Blackout Built-in Display row now has a **Notifications…** button. Because blacking out mirrors your display, macOS hides notifications while it's active; the button opens system Notification settings so you can allow them, with a tip explaining why.
+## DeskHelper Pro 1.3.12
 
 **Improvements**
-- **Easier-to-read menu tips** — hover tooltips in the menu now use a larger font and lay out multi-line explanations as clear paragraphs.
+- **Quieter updates** — when a new version is found in the background, DeskHelper Pro no longer pops up a dialog. Instead, the menu's "Check for Updates…" button becomes a green **Update…** button; click it when you're ready.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.3.11/DeskHelperPro-1.3.11-36-macOS.dmg" length="11789475" type="application/octet-stream" sparkle:edSignature="MonINMmXqNn3Bn8DrFHW/4hmrRdwSCUmImFZaofeHe8f9ki5fgRio3+7EQZZzH45t3DDVePajSDnwVgPoq4aDg=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.3.12/DeskHelperPro-1.3.12-37-macOS.dmg" length="11796599" type="application/octet-stream" sparkle:edSignature="HzMu/ZRPaEHJG9pbF5wYztXnGFOnxQeOKISBs3ASZ51DfUfj2BVH8wlTCqIINEg3ysRwI2Nj4nuJdAzpRBStAg=="/>
         </item>
     </channel>
 </rss>
