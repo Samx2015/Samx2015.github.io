@@ -145,6 +145,75 @@
           grid-template-columns: 1fr;
         }
       }
+
+      /* The transplanted card section keeps its own heading: undo the
+         compact-page rule that hides the #what kicker/h2. */
+      .compact-page:has(.hero-subtitle) #what.pvw > .section-kicker,
+      .compact-page:has(.hero-subtitle) #what.pvw h2 {
+        display: block;
+      }
+
+      /* Showcase section transplanted from the redesign draft. */
+      #screenshots > .pvs-intro,
+      #screenshots > .screenshot-grid {
+        width: min(100%, var(--wide-max));
+        margin-inline: auto;
+      }
+      .pvs-intro {
+        margin: 0 0 28px;
+        color: var(--muted);
+        font-size: clamp(1.03rem, 1.4vw, 1.18rem);
+        line-height: 1.7;
+        max-width: 60rem;
+      }
+      .screenshot-grid {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 18px;
+      }
+      .screenshot-card {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: var(--panel);
+        box-shadow: var(--shadow);
+      }
+      .screenshot-card.large { grid-column: span 3; }
+      .screenshot-card.medium { grid-column: span 2; }
+      .screenshot-frame {
+        padding: 12px;
+        background: linear-gradient(135deg, rgba(21, 32, 51, 0.05), rgba(36, 107, 254, 0.07));
+        border-bottom: 1px solid var(--line);
+      }
+      .screenshot-frame img {
+        width: 100%;
+        height: 360px;
+        object-fit: contain;
+        border-radius: 16px;
+        background: #10131a;
+      }
+      .screenshot-card.medium .screenshot-frame img { height: 270px; }
+      .screenshot-caption { padding: 18px 18px 20px; }
+      .screenshot-caption h3 {
+        margin: 0 0 8px;
+        font-size: 1.15rem;
+        color: var(--ink);
+        font-weight: 500;
+      }
+      .screenshot-caption p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+      @media (max-width: 980px) {
+        .screenshot-card.large,
+        .screenshot-card.medium { grid-column: span 6; }
+        .screenshot-frame img,
+        .screenshot-card.medium .screenshot-frame img {
+          height: auto;
+          max-height: 520px;
+        }
+      }
     </style>
   </head>
   <body class="compact-page">
@@ -332,6 +401,97 @@
               <li>Plaintext, Safe passwords, encryption keys, pointer profiles, remap rules, and audio processing stay local.</li>
               <li>Optional permissions are explained clearly: Accessibility, Input Monitoring, System Audio Recording, Location, Finder Extension, and Full Disk Access.</li>
             </ul>
+          </article>
+        </div>
+      </section>
+
+
+      <section class="section compact-section" id="screenshots" aria-labelledby="screenshots-title">
+        <div class="section-kicker">See it in use</div>
+        <h2 id="screenshots-title">Focused menus and settings panels, not repeated feature lists.</h2>
+        <p class="pvs-intro">
+          The screenshots show where the features live. The captions stay short so the page does not explain the same tools twice.
+        </p>
+
+        <div class="screenshot-grid">
+          <article class="screenshot-card large">
+            <div class="screenshot-frame">
+              <img src="assets/deskhelperpro-menu.png?v=20260704" width="519" height="1000" loading="lazy" alt="DeskHelper Pro menu showing display controls, Audio Mixer, Active Window Highlight, Window Arrangement, Auto Wi-Fi Switch, Finder context menus, pointer settings, scrolling settings, and key/button remapping.">
+            </div>
+            <div class="screenshot-caption">
+              <h3>Main menu</h3>
+              <p>Display, window, audio, Wi-Fi, Finder, input, privacy, feedback, and update controls in one menu.</p>
+            </div>
+          </article>
+
+          <article class="screenshot-card large">
+            <div class="screenshot-frame">
+              <img src="assets/finder-context-menu.png?v=20260704" width="1000" height="948" loading="lazy" alt="Finder context menu showing DeskHelper Pro actions such as New File, New Folder, Paste, Move Here, Compress/Encrypt, Copy Path, and Open in Terminal, Codex, Claude, or Visual Studio Code.">
+            </div>
+            <div class="screenshot-caption">
+              <h3>Finder actions</h3>
+              <p>Create, move, open, copy paths, and encrypt selected Finder items from the context menu you already use.</p>
+            </div>
+          </article>
+
+          <article class="screenshot-card medium">
+            <div class="screenshot-frame">
+              <img src="assets/window-arrangement-submenu.png" width="809" height="1000" loading="lazy" alt="DeskHelper Pro Window Arrangement submenu with shortcuts for halves, corners, maximize, center, restore, display moves, and focus actions.">
+            </div>
+            <div class="screenshot-caption">
+              <h3>Window shortcuts</h3>
+              <p>Move, resize, restore, and refocus windows with global shortcuts.</p>
+            </div>
+          </article>
+
+          <article class="screenshot-card medium">
+            <div class="screenshot-frame">
+              <img src="assets/resolution-submenu.png" width="824" height="1000" loading="lazy" alt="DeskHelper Pro Change Resolution submenu listing native, scaled, and HiDPI display modes with refresh rates.">
+            </div>
+            <div class="screenshot-caption">
+              <h3>Display modes</h3>
+              <p>Switch supported resolutions, refresh rates, HiDPI presets, and custom sizes.</p>
+            </div>
+          </article>
+
+          <article class="screenshot-card medium">
+            <div class="screenshot-frame">
+              <img src="assets/highlight-settings.png" width="1000" height="1000" loading="lazy" alt="Active Window Highlight settings with color, border width, opacity, glow, and restore defaults controls.">
+            </div>
+            <div class="screenshot-caption">
+              <h3>Active-window highlight</h3>
+              <p>Show a click-through border around the focused normal app window.</p>
+            </div>
+          </article>
+
+          <article class="screenshot-card medium">
+            <div class="screenshot-frame">
+              <img src="assets/mouse-scroll-settings.png" width="832" height="1000" loading="lazy" alt="Mouse Sensitivity and Acceleration settings above Scroll Speed and Acceleration settings.">
+            </div>
+            <div class="screenshot-caption">
+              <h3>Pointer and scroll profiles</h3>
+              <p>Tune sensitivity, pointer acceleration, scroll speed, and scroll acceleration per device.</p>
+            </div>
+          </article>
+
+          <article class="screenshot-card medium">
+            <div class="screenshot-frame">
+              <img src="assets/key-button-remapping.png" width="1000" height="768" loading="lazy" alt="Key and Button Remapping settings with shortcut, dual-role key, and Hyper key options.">
+            </div>
+            <div class="screenshot-caption">
+              <h3>Key and button remapping</h3>
+              <p>Create local remap rules for keys, shortcuts, dual-role keys, and Hyper-style modifiers.</p>
+            </div>
+          </article>
+
+          <article class="screenshot-card medium">
+            <div class="screenshot-frame">
+              <img src="assets/finder-context-config.png" width="1000" height="1000" loading="lazy" alt="Finder Context Menus settings showing permissions, granted folders, menu items, privacy controls, default terminal, and default editor.">
+            </div>
+            <div class="screenshot-caption">
+              <h3>Finder permissions</h3>
+              <p>Configure menu items, folder access, editor and terminal choices, and privacy controls.</p>
+            </div>
           </article>
         </div>
       </section>
