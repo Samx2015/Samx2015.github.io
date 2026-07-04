@@ -1,1165 +1,331 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DeskHelper Pro for Mac | Display, Window, Finder, Input, and Audio Utilities</title>
-  <meta name="description" content="DeskHelper Pro is a private Mac menu-bar utility for display control, window shortcuts, Finder actions, local Safes, pointer and scroll profiles, key/button remapping, and per-app audio controls." />
-  <meta name="robots" content="noindex,nofollow" />
-  <link rel="canonical" href="https://xintechllc.com/DeskHelperPro/" />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="DeskHelper Pro for Mac" />
-  <meta property="og:description" content="A quiet Mac menu-bar utility for displays, windows, Finder actions, local Safes, input devices, and app audio." />
-  <meta property="og:image" content="https://xintechllc.com/DeskHelperPro/assets/hero-display.png" />
-  <meta property="og:url" content="https://xintechllc.com/DeskHelperPro/" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <style>
-    :root {
-      color-scheme: light;
-      --bg: #f7f8fb;
-      --bg-soft: #eef3f8;
-      --surface: rgba(255, 255, 255, 0.82);
-      --surface-strong: #ffffff;
-      --surface-muted: #f3f6fa;
-      --text: #162033;
-      --muted: #5d6b80;
-      --subtle: #7b8798;
-      --line: rgba(28, 42, 64, 0.12);
-      --line-strong: rgba(28, 42, 64, 0.18);
-      --accent: #246bfe;
-      --accent-strong: #0f4fd6;
-      --accent-soft: #e8f0ff;
-      --teal: #0f9f9a;
-      --teal-soft: #e5f7f6;
-      --purple: #7964e8;
-      --purple-soft: #f0edff;
-      --shadow-sm: 0 12px 30px rgba(21, 32, 51, 0.08);
-      --shadow-md: 0 22px 65px rgba(21, 32, 51, 0.13);
-      --radius-sm: 14px;
-      --radius-md: 22px;
-      --radius-lg: 32px;
-      --max: 1160px;
-      --header-h: 74px;
-      --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    }
-
-    * { box-sizing: border-box; }
-
-    html {
-      scroll-behavior: smooth;
-      background: var(--bg);
-    }
-
-    body {
-      margin: 0;
-      font-family: var(--font);
-      color: var(--text);
-      background:
-        radial-gradient(circle at 10% -10%, rgba(36, 107, 254, 0.14), transparent 34rem),
-        radial-gradient(circle at 88% 8%, rgba(15, 159, 154, 0.13), transparent 32rem),
-        linear-gradient(180deg, #fbfcff 0%, var(--bg) 44%, #f4f7fb 100%);
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    button,
-    input,
-    textarea,
-    select {
-      font: inherit;
-    }
-
-    .page-shell {
-      min-height: 100vh;
-      overflow: hidden;
-    }
-
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      height: var(--header-h);
-      border-bottom: 1px solid rgba(28, 42, 64, 0.08);
-      background: rgba(250, 252, 255, 0.82);
-      backdrop-filter: saturate(170%) blur(18px);
-    }
-
-    .nav {
-      width: min(var(--max), calc(100% - 40px));
-      height: 100%;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 650;
-      letter-spacing: -0.02em;
-      white-space: nowrap;
-    }
-
-    .brand-mark {
-      width: 34px;
-      height: 34px;
-      border-radius: 11px;
-      background:
-        linear-gradient(135deg, rgba(36, 107, 254, 0.95), rgba(15, 159, 154, 0.9)),
-        #246bfe;
-      box-shadow: 0 10px 25px rgba(36, 107, 254, 0.24);
-      position: relative;
-      flex: 0 0 auto;
-    }
-
-    .brand-mark::before,
-    .brand-mark::after {
-      content: "";
-      position: absolute;
-      inset: 9px 8px;
-      border-radius: 999px;
-      border: 2px solid rgba(255, 255, 255, 0.9);
-      transform: rotate(45deg);
-    }
-
-    .brand-mark::after {
-      transform: rotate(-45deg);
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 4px;
-      color: var(--muted);
-      font-size: 0.94rem;
-    }
-
-    .nav-links a {
-      padding: 9px 12px;
-      border-radius: 999px;
-    }
-
-    .nav-links a:hover,
-    .nav-links a:focus-visible {
-      color: var(--text);
-      background: rgba(36, 107, 254, 0.08);
-      outline: none;
-    }
-
-    .nav-actions {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .language-switcher {
-      position: relative;
-    }
-
-    .language-summary {
-      list-style: none;
-      cursor: pointer;
-      color: var(--muted);
-      padding: 9px 12px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.72);
-      user-select: none;
-      font-size: 0.92rem;
-    }
-
-    .language-summary::-webkit-details-marker { display: none; }
-
-    .language-menu {
-      position: absolute;
-      right: 0;
-      top: calc(100% + 10px);
-      width: min(430px, calc(100vw - 32px));
-      max-height: min(540px, calc(100vh - 110px));
-      overflow: auto;
-      padding: 14px;
-      border: 1px solid var(--line);
-      border-radius: 20px;
-      background: rgba(255, 255, 255, 0.96);
-      box-shadow: var(--shadow-md);
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 6px;
-    }
-
-    .language-menu a,
-    .language-menu span {
-      padding: 9px 10px;
-      border-radius: 12px;
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-
-    .language-menu a:hover,
-    .language-menu a:focus-visible,
-    .language-menu span {
-      color: var(--text);
-      background: var(--surface-muted);
-      outline: none;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      min-height: 42px;
-      padding: 0 18px;
-      border-radius: 999px;
-      border: 1px solid transparent;
-      font-weight: 650;
-      letter-spacing: -0.01em;
-      transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease, border-color 160ms ease;
-      white-space: nowrap;
-    }
-
-    .button:hover,
-    .button:focus-visible {
-      transform: translateY(-1px);
-      outline: none;
-    }
-
-    .button-primary {
-      color: #fff;
-      background: linear-gradient(135deg, var(--accent), var(--accent-strong));
-      box-shadow: 0 14px 28px rgba(36, 107, 254, 0.26);
-    }
-
-    .button-primary:hover,
-    .button-primary:focus-visible {
-      box-shadow: 0 18px 36px rgba(36, 107, 254, 0.33);
-    }
-
-    .button-secondary {
-      color: var(--text);
-      background: rgba(255, 255, 255, 0.76);
-      border-color: var(--line);
-      box-shadow: 0 10px 25px rgba(21, 32, 51, 0.06);
-    }
-
-    .button-secondary:hover,
-    .button-secondary:focus-visible {
-      border-color: rgba(36, 107, 254, 0.28);
-      box-shadow: 0 14px 34px rgba(21, 32, 51, 0.1);
-    }
-
-    .hero {
-      width: min(var(--max), calc(100% - 40px));
-      margin: 0 auto;
-      padding: 76px 0 56px;
-      display: grid;
-      grid-template-columns: minmax(0, 0.96fr) minmax(420px, 1.04fr);
-      align-items: center;
-      gap: 44px;
-    }
-
-    .eyebrow {
-      margin: 0 0 14px;
-      color: var(--accent-strong);
-      font-size: 0.78rem;
-      font-weight: 760;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-
-    h1,
-    h2,
-    h3,
-    p {
-      margin-top: 0;
-    }
-
-    h1 {
-      margin-bottom: 20px;
-      max-width: 780px;
-      font-size: clamp(2.75rem, 8vw, 5.75rem);
-      line-height: 0.92;
-      letter-spacing: -0.075em;
-      font-weight: 720;
-    }
-
-    .hero-lede {
-      margin: 0 0 24px;
-      max-width: 720px;
-      color: #3d4a5d;
-      font-size: clamp(1.1rem, 1.7vw, 1.35rem);
-      line-height: 1.55;
-      letter-spacing: -0.025em;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin: 26px 0 20px;
-    }
-
-    .hero-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      color: var(--muted);
-      font-size: 0.94rem;
-    }
-
-    .hero-meta span {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-    }
-
-    .hero-meta span::before {
-      content: "";
-      width: 6px;
-      height: 6px;
-      border-radius: 999px;
-      background: var(--teal);
-    }
-
-    .hero-card {
-      position: relative;
-      border-radius: var(--radius-lg);
-      padding: 12px;
-      background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.36)),
-        linear-gradient(135deg, rgba(36, 107, 254, 0.12), rgba(15, 159, 154, 0.12));
-      border: 1px solid rgba(255, 255, 255, 0.72);
-      box-shadow: var(--shadow-md);
-    }
-
-    .hero-card::before {
-      content: "";
-      position: absolute;
-      inset: auto 10% -32px;
-      height: 58px;
-      border-radius: 999px;
-      background: rgba(36, 107, 254, 0.18);
-      filter: blur(22px);
-      z-index: -1;
-    }
-
-    .hero-image {
-      width: 100%;
-      aspect-ratio: 16 / 10;
-      object-fit: cover;
-      border-radius: 24px;
-      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.45);
-    }
-
-    .hero-overlay {
-      position: absolute;
-      left: 28px;
-      bottom: 28px;
-      width: min(380px, calc(100% - 56px));
-      padding: 16px;
-      border: 1px solid rgba(255, 255, 255, 0.55);
-      border-radius: 20px;
-      background: rgba(10, 18, 30, 0.62);
-      color: #fff;
-      backdrop-filter: blur(16px) saturate(145%);
-      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
-    }
-
-    .overlay-title {
-      margin: 0 0 6px;
-      font-weight: 720;
-      letter-spacing: -0.02em;
-    }
-
-    .overlay-text {
-      margin: 0;
-      color: rgba(255, 255, 255, 0.78);
-      font-size: 0.94rem;
-      line-height: 1.45;
-    }
-
-    .chip-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 9px;
-      margin-top: 28px;
-    }
-
-    .chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      padding: 9px 12px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      color: #3d4a5d;
-      background: rgba(255, 255, 255, 0.68);
-      font-size: 0.92rem;
-      box-shadow: 0 6px 16px rgba(21, 32, 51, 0.04);
-    }
-
-    .chip::before {
-      content: "";
-      width: 7px;
-      height: 7px;
-      border-radius: 999px;
-      background: linear-gradient(135deg, var(--accent), var(--teal));
-    }
-
-    .section {
-      width: min(var(--max), calc(100% - 40px));
-      margin: 0 auto;
-      padding: 70px 0;
-    }
-
-    .section-header {
-      max-width: 780px;
-      margin-bottom: 28px;
-    }
-
-    .section-header.center {
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-    }
-
-    h2 {
-      margin-bottom: 14px;
-      font-size: clamp(2rem, 4.6vw, 3.65rem);
-      line-height: 1.02;
-      letter-spacing: -0.06em;
-      font-weight: 710;
-    }
-
-    .section-intro {
-      margin: 0;
-      color: var(--muted);
-      font-size: clamp(1.03rem, 1.4vw, 1.18rem);
-      line-height: 1.7;
-      letter-spacing: -0.018em;
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .feature-card,
-    .benefit-card,
-    .permission-card,
-    .install-card,
-    .screenshot-card {
-      border: 1px solid var(--line);
-      border-radius: var(--radius-md);
-      background: var(--surface);
-      box-shadow: var(--shadow-sm);
-      backdrop-filter: blur(12px);
-    }
-
-    .feature-card {
-      padding: 26px;
-      min-height: 320px;
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-    }
-
-    .feature-card.wide {
-      grid-column: 1 / -1;
-      min-height: 0;
-      display: grid;
-      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
-      align-items: start;
-      gap: 24px;
-    }
-
-    .feature-icon {
-      width: 42px;
-      height: 42px;
-      display: grid;
-      place-items: center;
-      border-radius: 15px;
-      background: var(--accent-soft);
-      color: var(--accent-strong);
-      font-size: 1.28rem;
-      box-shadow: inset 0 0 0 1px rgba(36, 107, 254, 0.08);
-    }
-
-    .feature-card:nth-child(2) .feature-icon { background: var(--teal-soft); color: #087975; }
-    .feature-card:nth-child(3) .feature-icon { background: var(--purple-soft); color: var(--purple); }
-    .feature-card:nth-child(4) .feature-icon { background: #fff2e4; color: #c36518; }
-    .feature-card:nth-child(5) .feature-icon { background: #eaf9ee; color: #15813b; }
-
-    .feature-card h3,
-    .benefit-card h3,
-    .permission-card h3,
-    .install-card h3,
-    .screenshot-card h3 {
-      margin: 0 0 8px;
-      font-size: 1.28rem;
-      line-height: 1.2;
-      letter-spacing: -0.035em;
-      font-weight: 680;
-    }
-
-    .feature-card p,
-    .benefit-card p,
-    .permission-card p,
-    .install-card p,
-    .screenshot-card p {
-      margin: 0;
-      color: var(--muted);
-      line-height: 1.62;
-      letter-spacing: -0.012em;
-    }
-
-    .feature-points {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: grid;
-      gap: 10px;
-    }
-
-    .feature-points li {
-      position: relative;
-      padding-left: 24px;
-      color: #39475a;
-      line-height: 1.52;
-    }
-
-    .feature-points li::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0.68em;
-      width: 8px;
-      height: 8px;
-      border-radius: 999px;
-      background: linear-gradient(135deg, var(--accent), var(--teal));
-    }
-
-    .feature-note {
-      margin-top: auto;
-      padding: 13px 14px;
-      border: 1px solid rgba(36, 107, 254, 0.12);
-      border-radius: 15px;
-      color: #315684;
-      background: rgba(232, 240, 255, 0.64);
-      font-size: 0.92rem;
-      line-height: 1.45;
-    }
-
-    .showcase {
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-      background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(238, 243, 248, 0.76)),
-        radial-gradient(circle at 20% 10%, rgba(36, 107, 254, 0.08), transparent 34rem);
-    }
-
-    .screenshot-grid {
-      display: grid;
-      grid-template-columns: repeat(6, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .screenshot-card {
-      overflow: hidden;
-      background: rgba(255, 255, 255, 0.86);
-    }
-
-    .screenshot-card.large {
-      grid-column: span 3;
-    }
-
-    .screenshot-card.medium {
-      grid-column: span 2;
-    }
-
-    .screenshot-frame {
-      padding: 12px;
-      background: linear-gradient(135deg, rgba(21, 32, 51, 0.05), rgba(36, 107, 254, 0.07));
-      border-bottom: 1px solid var(--line);
-    }
-
-    .screenshot-frame img {
-      width: 100%;
-      height: 360px;
-      object-fit: contain;
-      border-radius: 16px;
-      background: #10131a;
-    }
-
-    .screenshot-card.medium .screenshot-frame img {
-      height: 270px;
-    }
-
-    .screenshot-caption {
-      padding: 18px 18px 20px;
-    }
-
-    .benefit-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .benefit-card {
-      padding: 24px;
-    }
-
-    .benefit-number {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 34px;
-      height: 34px;
-      margin-bottom: 18px;
-      border-radius: 12px;
-      background: var(--text);
-      color: white;
-      font-weight: 700;
-      font-size: 0.92rem;
-    }
-
-    .split-section {
-      display: grid;
-      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-      gap: 28px;
-      align-items: start;
-    }
-
-    .privacy-panel {
-      border: 1px solid var(--line);
-      border-radius: var(--radius-lg);
-      padding: 30px;
-      background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.68)),
-        radial-gradient(circle at 10% 10%, rgba(15, 159, 154, 0.11), transparent 20rem);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .privacy-list {
-      display: grid;
-      gap: 12px;
-      margin: 22px 0 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .privacy-list li {
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-      color: #35445a;
-      line-height: 1.55;
-    }
-
-    .check {
-      flex: 0 0 auto;
-      width: 21px;
-      height: 21px;
-      margin-top: 1px;
-      display: inline-grid;
-      place-items: center;
-      border-radius: 999px;
-      color: #fff;
-      background: linear-gradient(135deg, var(--teal), var(--accent));
-      font-size: 0.78rem;
-      font-weight: 800;
-    }
-
-    .permission-grid {
-      display: grid;
-      gap: 14px;
-    }
-
-    .permission-card {
-      padding: 20px;
-      background: rgba(255, 255, 255, 0.78);
-    }
-
-    .permission-card h3 {
-      font-size: 1.08rem;
-    }
-
-    .get-section {
-      padding-bottom: 92px;
-    }
-
-    .download-panel {
-      border: 1px solid rgba(255, 255, 255, 0.72);
-      border-radius: var(--radius-lg);
-      padding: 34px;
-      background:
-        linear-gradient(135deg, rgba(21, 32, 51, 0.93), rgba(19, 45, 74, 0.9)),
-        radial-gradient(circle at 20% 20%, rgba(36, 107, 254, 0.42), transparent 28rem);
-      color: #fff;
-      box-shadow: var(--shadow-md);
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(280px, 0.52fr);
-      gap: 28px;
-      align-items: center;
-    }
-
-    .download-panel .eyebrow {
-      color: #a7d9ff;
-    }
-
-    .download-panel h2 {
-      color: #fff;
-      margin-bottom: 12px;
-    }
-
-    .download-panel p {
-      color: rgba(255, 255, 255, 0.74);
-    }
-
-    .download-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 24px;
-    }
-
-    .download-panel .button-secondary {
-      color: #fff;
-      background: rgba(255, 255, 255, 0.1);
-      border-color: rgba(255, 255, 255, 0.22);
-      box-shadow: none;
-    }
-
-    .install-card {
-      padding: 22px;
-      background: rgba(255, 255, 255, 0.1);
-      border-color: rgba(255, 255, 255, 0.16);
-      box-shadow: none;
-    }
-
-    .install-card h3 {
-      color: #fff;
-    }
-
-    .install-steps {
-      display: grid;
-      gap: 12px;
-      margin: 16px 0 0;
-      padding: 0;
-      list-style: none;
-      counter-reset: step;
-    }
-
-    .install-steps li {
-      counter-increment: step;
-      display: grid;
-      grid-template-columns: 30px minmax(0, 1fr);
-      gap: 10px;
-      color: rgba(255, 255, 255, 0.8);
-      line-height: 1.42;
-    }
-
-    .install-steps li::before {
-      content: counter(step);
-      width: 30px;
-      height: 30px;
-      display: inline-grid;
-      place-items: center;
-      border-radius: 10px;
-      color: #fff;
-      background: rgba(255, 255, 255, 0.16);
-      font-weight: 700;
-    }
-
-    .small-print {
-      margin-top: 18px;
-      color: rgba(255, 255, 255, 0.58);
-      font-size: 0.92rem;
-      line-height: 1.52;
-    }
-
-    .footer {
-      border-top: 1px solid var(--line);
-      background: rgba(255, 255, 255, 0.7);
-    }
-
-    .footer-inner {
-      width: min(var(--max), calc(100% - 40px));
-      margin: 0 auto;
-      padding: 28px 0;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      color: var(--muted);
-      font-size: 0.94rem;
-    }
-
-    .footer-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-
-    .footer a:hover,
-    .footer a:focus-visible {
-      color: var(--accent-strong);
-      outline: none;
-    }
-
-    .mobile-only {
-      display: none;
-    }
-
-    @media (max-width: 980px) {
-      .nav-links { display: none; }
-
-      .hero {
-        grid-template-columns: 1fr;
-        padding-top: 54px;
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DeskHelper Pro for Mac</title>
+    <meta
+      name="description"
+      content="DeskHelper Pro combines MacBook display controls, window shortcuts, Finder context menus, local Safes, pointer profiles, key/button remapping, and audio controls in one direct-download Mac utility."
+    >
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="canonical" href="https://xintechllc.com/DeskHelperPro/">
+    <meta name="google-site-verification" content="E7DLX6ZlccKL2RXTHrOx2P_Wzp35A1nDlLM3SkugHPE">
+    <link rel="alternate" hreflang="en" href="https://xintechllc.com/DeskHelperPro/">
+    <link rel="alternate" hreflang="es" href="https://xintechllc.com/DeskHelperPro/es/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://xintechllc.com/DeskHelperPro/zh-Hans/">
+    <link rel="alternate" hreflang="zh-Hant" href="https://xintechllc.com/DeskHelperPro/zh-Hant/">
+    <link rel="alternate" hreflang="ja" href="https://xintechllc.com/DeskHelperPro/ja/">
+    <link rel="alternate" hreflang="fr" href="https://xintechllc.com/DeskHelperPro/fr/">
+    <link rel="alternate" hreflang="de" href="https://xintechllc.com/DeskHelperPro/de/">
+    <link rel="alternate" hreflang="ko" href="https://xintechllc.com/DeskHelperPro/ko/">
+    <link rel="alternate" hreflang="pt-BR" href="https://xintechllc.com/DeskHelperPro/pt-BR/">
+    <link rel="alternate" hreflang="it" href="https://xintechllc.com/DeskHelperPro/it/">
+    <link rel="alternate" hreflang="nl" href="https://xintechllc.com/DeskHelperPro/nl/">
+    <link rel="alternate" hreflang="pl" href="https://xintechllc.com/DeskHelperPro/pl/">
+    <link rel="alternate" hreflang="tr" href="https://xintechllc.com/DeskHelperPro/tr/">
+    <link rel="alternate" hreflang="vi" href="https://xintechllc.com/DeskHelperPro/vi/">
+    <link rel="alternate" hreflang="ru" href="https://xintechllc.com/DeskHelperPro/ru/">
+    <link rel="alternate" hreflang="ar" href="https://xintechllc.com/DeskHelperPro/ar/">
+    <link rel="alternate" hreflang="hi" href="https://xintechllc.com/DeskHelperPro/hi/">
+    <link rel="alternate" hreflang="id" href="https://xintechllc.com/DeskHelperPro/id/">
+    <link rel="alternate" hreflang="cs" href="https://xintechllc.com/DeskHelperPro/cs/">
+    <link rel="alternate" hreflang="da" href="https://xintechllc.com/DeskHelperPro/da/">
+    <link rel="alternate" hreflang="fi" href="https://xintechllc.com/DeskHelperPro/fi/">
+    <link rel="alternate" hreflang="ms" href="https://xintechllc.com/DeskHelperPro/ms/">
+    <link rel="alternate" hreflang="nb" href="https://xintechllc.com/DeskHelperPro/nb/">
+    <link rel="alternate" hreflang="sv" href="https://xintechllc.com/DeskHelperPro/sv/">
+    <link rel="alternate" hreflang="th" href="https://xintechllc.com/DeskHelperPro/th/">
+    <link rel="alternate" hreflang="uk" href="https://xintechllc.com/DeskHelperPro/uk/">
+    <link rel="alternate" hreflang="x-default" href="https://xintechllc.com/DeskHelperPro/">
+    <link rel="icon" href="assets/app-icon.png" type="image/png">
+    <link rel="preload" href="assets/hero-display.png" as="image">
+    <link rel="stylesheet" href="styles.css?v=20260704-merged">
+    <style>
+      /* Preview-only: feature cards transplanted from the redesign draft,
+         namespaced (.pvw) so the shared styles.css stays untouched. */
+      .pvw > .pvw-header,
+      .pvw > .pvw-grid {
+        width: min(100%, var(--wide-max));
+        margin-inline: auto;
       }
-
-      .hero-card {
-        max-width: 760px;
-        margin: 0 auto;
+      .pvw-header { margin-bottom: 28px; max-width: 100%; }
+      .pvw-header h2 { margin-bottom: 14px; }
+      .pvw-intro {
+        margin: 0;
+        color: var(--muted);
+        font-size: clamp(1.03rem, 1.4vw, 1.18rem);
+        line-height: 1.7;
+        max-width: 60rem;
       }
-
-      .feature-grid,
-      .feature-card.wide,
-      .split-section,
-      .download-panel {
-        grid-template-columns: 1fr;
+      .pvw-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
       }
-
-      .benefit-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .screenshot-card.large,
-      .screenshot-card.medium {
-        grid-column: span 6;
-      }
-
-      .screenshot-frame img,
-      .screenshot-card.medium .screenshot-frame img {
-        height: auto;
-        max-height: 520px;
-      }
-    }
-
-    @media (max-width: 640px) {
-      :root { --header-h: auto; }
-
-      .site-header {
-        position: relative;
-        height: auto;
-      }
-
-      .nav {
-        width: min(100% - 28px, var(--max));
-        padding: 13px 0;
-        align-items: flex-start;
-      }
-
-      .brand-text { display: none; }
-
-      .nav-actions {
-        gap: 8px;
-      }
-
-      .language-summary {
-        padding: 9px 10px;
-      }
-
-      .language-menu {
-        grid-template-columns: 1fr;
-      }
-
-      .button {
-        min-height: 40px;
-        padding: 0 14px;
-      }
-
-      .nav-actions .button {
-        font-size: 0.9rem;
-      }
-
-      .hero,
-      .section,
-      .footer-inner {
-        width: min(100% - 28px, var(--max));
-      }
-
-      .hero {
-        padding: 42px 0 36px;
-        gap: 28px;
-      }
-
-      h1 {
-        font-size: clamp(2.6rem, 17vw, 4rem);
-      }
-
-      .hero-overlay {
-        position: static;
-        width: auto;
-        margin: 12px 0 0;
-        background: rgba(21, 32, 51, 0.86);
-      }
-
-      .section {
-        padding: 52px 0;
-      }
-
-      .feature-card,
-      .privacy-panel,
-      .download-panel {
-        padding: 22px;
-        border-radius: 24px;
-      }
-
-      .screenshot-grid {
-        gap: 14px;
-      }
-
-      .footer-inner {
-        align-items: flex-start;
+      .pvw-card {
+        padding: 26px;
+        display: flex;
         flex-direction: column;
+        gap: 18px;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: var(--panel);
+        box-shadow: var(--shadow);
       }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      *, *::before, *::after {
-        transition-duration: 0.01ms !important;
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
+      .pvw-card.pvw-wide {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+        align-items: start;
+        gap: 24px;
       }
-    }
-  </style>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "DeskHelper Pro",
-    "operatingSystem": "macOS 13.0 or later",
-    "applicationCategory": "UtilitiesApplication",
-    "description": "A private Mac menu-bar utility for display control, window shortcuts, Finder actions, local Safes, pointer and scroll profiles, key/button remapping, and per-app audio controls.",
-    "downloadUrl": "https://xintechllc.com/DeskHelperPro/download/DeskHelperPro-macOS.dmg",
-    "softwareVersion": "1.3.16",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Xintech LLC",
-      "url": "https://xintechllc.com/"
-    }
-  }
-  </script>
-</head>
-
-<body>
-  <div class="page-shell">
-    <header class="site-header" aria-label="Site header">
-      <nav class="nav" aria-label="Main navigation">
-        <a class="brand" href="/DeskHelperPro/" aria-label="DeskHelper Pro home">
-          <span class="brand-mark" aria-hidden="true"></span>
-          <span class="brand-text">DeskHelper Pro</span>
-        </a>
-
-        <div class="nav-links" aria-label="Page sections">
-          <a href="#features">Features</a>
-          <a href="#screenshots">Screenshots</a>
-          <a href="#privacy">Privacy</a>
-          <a href="#get">Get It</a>
-        </div>
-
-        <div class="nav-actions">
-          <details class="language-switcher">
-            <summary class="language-summary" aria-label="Choose language">English</summary>
-            <div class="language-menu" aria-label="Language options">
-              <span>English</span>
-              <a href="zh-Hans/">简体中文</a>
-              <a href="zh-Hant/">繁體中文</a>
-              <a href="ja/">日本語</a>
-              <a href="de/">Deutsch</a>
-              <a href="fr/">Français</a>
-              <a href="es/">Español</a>
-              <a href="ko/">한국어</a>
-              <a href="pt-BR/">Português (Brasil)</a>
-              <a href="ru/">Русский</a>
-              <a href="it/">Italiano</a>
-              <a href="nl/">Nederlands</a>
-              <a href="sv/">Svenska</a>
-              <a href="da/">Dansk</a>
-              <a href="nb/">Norsk bokmål</a>
-              <a href="fi/">Suomi</a>
-              <a href="pl/">Polski</a>
-              <a href="tr/">Türkçe</a>
-              <a href="ar/">العربية</a>
-              <a href="th/">ไทย</a>
-              <a href="vi/">Tiếng Việt</a>
-              <a href="id/">Bahasa Indonesia</a>
-              <a href="ms/">Bahasa Melayu</a>
-              <a href="hi/">हिन्दी</a>
-              <a href="cs/">Čeština</a>
-              <a href="uk/">Українська</a>
-            </div>
-          </details>
-          <a class="button button-primary" href="download/DeskHelperPro-macOS.dmg">Download for Mac</a>
-        </div>
+      .pvw-icon {
+        width: 42px;
+        height: 42px;
+        display: grid;
+        place-items: center;
+        border-radius: 15px;
+        background: #e8f0ff;
+        color: #0f4fd6;
+        font-size: 1.28rem;
+      }
+      .pvw-card:nth-child(2) .pvw-icon { background: #e5f7f6; color: #087975; }
+      .pvw-card:nth-child(3) .pvw-icon { background: #f0edff; color: #7964e8; }
+      .pvw-card:nth-child(4) .pvw-icon { background: #fff2e4; color: #c36518; }
+      .pvw-card:nth-child(5) .pvw-icon { background: #eaf9ee; color: #15813b; }
+      .pvw-card h3 {
+        margin: 0 0 8px;
+        font-size: 1.28rem;
+        line-height: 1.2;
+        color: var(--ink);
+        font-weight: 500;
+      }
+      .pvw-card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.62;
+      }
+      .pvw-points {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 10px;
+      }
+      .pvw-points li {
+        position: relative;
+        padding-left: 24px;
+        color: var(--muted);
+        line-height: 1.52;
+      }
+      .pvw-points li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.68em;
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #246bfe, #0f9f9a);
+      }
+      .pvw-note {
+        margin-top: auto;
+        padding: 13px 14px;
+        border: 1px solid rgba(36, 107, 254, 0.14);
+        border-radius: 15px;
+        color: #315684;
+        background: rgba(232, 240, 255, 0.6);
+        font-size: 0.92rem;
+        line-height: 1.45;
+      }
+      @media (max-width: 620px) {
+        .pvw-grid,
+        .pvw-card.pvw-wide {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body class="compact-page">
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="./" aria-label="DeskHelper Pro home">
+        <img src="assets/app-icon.png" alt="" width="34" height="34">
+        <span>DeskHelper Pro</span>
+      </a>
+      <nav class="site-nav" aria-label="Page sections">
+        <a href="#what">What It Is</a>
+        <a href="#why">Why It&#x27;s Good</a>
+        <a href="#release">Get It</a>
       </nav>
+      <div class="header-actions">
+        <a class="header-cta" href="https://xintechllc.com/DeskHelperPro/download/DeskHelperPro-macOS.dmg">
+          <span class="button-glyph" aria-hidden="true"></span>
+          Download for Mac
+        </a>
+        <details class="language-menu">
+          <summary>🌐 - 🇺🇸🇬🇧 English</summary>
+          <div class="language-menu-list" aria-label="Language">
+            <a href="./" lang="en" aria-current="page">🇺🇸🇬🇧 English</a>
+            <a href="zh-Hans/" lang="zh-Hans">🇨🇳 简体中文</a>
+            <a href="zh-Hant/" lang="zh-Hant">🇹🇼🇭🇰 繁體中文</a>
+            <a href="ja/" lang="ja">🇯🇵 日本語</a>
+            <a href="de/" lang="de">🇩🇪 Deutsch</a>
+            <a href="fr/" lang="fr">🇫🇷 Français</a>
+            <a href="es/" lang="es">🇪🇸🇲🇽 Español</a>
+            <a href="ko/" lang="ko">🇰🇷 한국어</a>
+            <a href="pt-BR/" lang="pt-BR">🇧🇷 Português (Brasil)</a>
+            <a href="ru/" lang="ru">🇷🇺 Русский</a>
+            <a href="it/" lang="it">🇮🇹 Italiano</a>
+            <a href="nl/" lang="nl">🇳🇱 Nederlands</a>
+            <a href="sv/" lang="sv">🇸🇪 Svenska</a>
+            <a href="da/" lang="da">🇩🇰 Dansk</a>
+            <a href="nb/" lang="nb">🇳🇴 Norsk bokmål</a>
+            <a href="fi/" lang="fi">🇫🇮 Suomi</a>
+            <a href="pl/" lang="pl">🇵🇱 Polski</a>
+            <a href="tr/" lang="tr">🇹🇷 Türkçe</a>
+            <a href="ar/" lang="ar">🇸🇦🇪🇬 العربية</a>
+            <a href="th/" lang="th">🇹🇭 ไทย</a>
+            <a href="vi/" lang="vi">🇻🇳 Tiếng Việt</a>
+            <a href="id/" lang="id">🇮🇩 Bahasa Indonesia</a>
+            <a href="ms/" lang="ms">🇲🇾 Bahasa Melayu</a>
+            <a href="hi/" lang="hi">🇮🇳 हिन्दी</a>
+            <a href="cs/" lang="cs">🇨🇿 Čeština</a>
+            <a href="uk/" lang="uk">🇺🇦 Українська</a>
+          </div>
+        </details>
+      </div>
     </header>
 
-    <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
+    <main id="top">
+      <section class="hero compact-hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/hero-display.png"
+          alt="Laptop with blacked-out built-in display in front of an active external monitor."
+        >
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
           <p class="eyebrow">Mac menu-bar utility suite</p>
           <h1 id="hero-title">DeskHelper Pro</h1>
-          <p class="hero-lede">
-            A quiet menu-bar utility for real Mac desk setups: control displays, arrange windows,
-            speed up Finder work, protect local files, tune input devices, and manage app audio —
-            without accounts, analytics, or cloud storage.
+          <p class="hero-subtitle">
+            A quiet menu-bar app for display control, window arrangement,
+            Finder actions, local Safes, pointer profiles, key/button remapping,
+            active-window highlighting, and audio controls.
           </p>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="download/DeskHelperPro-macOS.dmg">Download for Mac</a>
-            <a class="button button-secondary" href="#features">See features</a>
+          <div class="hero-summary" aria-label="DeskHelper Pro summary">
+            <div>
+              <strong>Display + windows</strong>
+              <span>Blackout, brightness, keyboard backlight, HiDPI modes, window layouts, and display moves.</span>
+            </div>
+            <div>
+              <strong>Finder + Safes</strong>
+              <span>Create, paste, move, open, encrypt, decrypt, and extract from the Finder context menu.</span>
+            </div>
+            <div>
+              <strong>Pointer + audio</strong>
+              <span>Pointer profiles, scroll speed, key/button remaps, active-window borders, and app volume controls.</span>
+            </div>
           </div>
-
-          <div class="hero-meta" aria-label="Compatibility and trial details">
+          <div class="trust-pills" aria-label="Highlights">
+            <span>No Dock window</span>
+            <span>Finder context menus</span>
+            <span>Local Safes</span>
+            <span>Window shortcuts</span>
+            <span>Pointer profiles</span>
+            <span>Audio Mixer</span>
+            <span>No Wi-Fi passwords</span>
             <span>14-day trial</span>
-            <span>macOS 13.0 or later</span>
-            <span>Apple Silicon + Intel</span>
-            <span>Developer signed and notarized</span>
-          </div>
-
-          <div class="chip-row" aria-label="Feature highlights">
-            <span class="chip">Display Control</span>
-            <span class="chip">Window Shortcuts</span>
-            <span class="chip">Finder Actions</span>
-            <span class="chip">Local Safes</span>
-            <span class="chip">Pointer Profiles</span>
-            <span class="chip">Key/Button Remapping</span>
-            <span class="chip">App Audio Mixer</span>
-            <span class="chip">Private by Design</span>
-          </div>
-        </div>
-
-        <div class="hero-card" aria-label="DeskHelper Pro display workflow preview">
-          <img class="hero-image" src="assets/hero-display.png" width="1000" height="563" alt="A MacBook with its built-in display blacked out while an external monitor remains active." />
-          <div class="hero-overlay">
-            <p class="overlay-title">Built for external-display desks.</p>
-            <p class="overlay-text">
-              Black out the MacBook screen when mirroring, keep controls one click away,
-              and leave your workspace calm.
-            </p>
+            <span>Localized in 26 languages</span>
           </div>
         </div>
       </section>
 
-      <section id="features" class="section" aria-labelledby="features-title">
-        <div class="section-header">
-          <p class="eyebrow">What it is</p>
-          <h2 id="features-title">The useful desk features, merged into one Mac utility.</h2>
-          <p class="section-intro">
+      <section class="section compact-section pvw" id="what" aria-labelledby="what-title">
+        <div class="section-kicker">What is it?</div>
+        <div class="pvw-header">
+          <h2 id="what-title">The useful desk features, merged into one Mac utility.</h2>
+          <p class="pvw-intro">
             DeskHelper Pro combines display control, window shortcuts, Finder actions, local file protection,
             input-device tuning, app audio control, and privacy-focused behavior into one focused menu-bar app.
           </p>
         </div>
 
-        <div class="feature-grid">
-          <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">⌘</div>
+        <div class="pvw-grid">
+          <article class="pvw-card">
+            <div class="pvw-icon" aria-hidden="true">&#8984;</div>
             <div>
               <h3>Display &amp; Window Control</h3>
               <p>Manage the visual workspace without jumping between System Settings, third-party window tools, and display menus.</p>
             </div>
-            <ul class="feature-points">
+            <ul class="pvw-points">
               <li>Black out the built-in MacBook display while mirroring to an external monitor.</li>
               <li>Switch mirroring, dim displays until key press, sleep, restart, shut down, and adjust brightness or contrast.</li>
               <li>Install and switch supported HiDPI/custom display modes.</li>
               <li>Move windows to halves, corners, center positions, full-screen layouts, other displays, or other desktops.</li>
               <li>Highlight the active window with a configurable click-through border.</li>
             </ul>
-            <div class="feature-note">Includes arranged-window focus and Rectangle/Rectangle Pro conflict guidance.</div>
+            <div class="pvw-note">Includes arranged-window focus and Rectangle/Rectangle Pro conflict guidance.</div>
           </article>
 
-          <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">▣</div>
+          <article class="pvw-card">
+            <div class="pvw-icon" aria-hidden="true">&#9635;</div>
             <div>
               <h3>Finder Actions &amp; Local Safes</h3>
               <p>Make Finder more useful while keeping selected files, passwords, and encrypted Safes on your Mac.</p>
             </div>
-            <ul class="feature-points">
+            <ul class="pvw-points">
               <li>Create new files and folders from Finder.</li>
               <li>Paste, move, copy paths, and open folders in Terminal, TextEdit, VS Code, Codex, Claude, or another supported app.</li>
               <li>Encrypt selected files or folders into local <code>.safe</code> files.</li>
               <li>Add files to an existing Safe or decrypt only selected contents.</li>
               <li>Work with supported <code>.7z</code>, <code>.zip</code>, and <code>.dmg</code> archive flows.</li>
             </ul>
-            <div class="feature-note">Finder and Safe actions run only after you choose a DeskHelper Pro context-menu action.</div>
+            <div class="pvw-note">Finder and Safe actions run only after you choose a DeskHelper Pro context-menu action.</div>
           </article>
 
-          <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">⌁</div>
+          <article class="pvw-card">
+            <div class="pvw-icon" aria-hidden="true">&#8961;</div>
             <div>
               <h3>Pointer, Scroll &amp; Input Profiles</h3>
               <p>Tune mice, pointing devices, keyboard behavior, and button mappings per device.</p>
             </div>
-            <ul class="feature-points">
+            <ul class="pvw-points">
               <li>Adjust pointer sensitivity and acceleration per mouse.</li>
               <li>Set scroll speed and scroll acceleration per pointing device.</li>
               <li>Use linear scrolling behavior with LinearMouse-compatible scaling.</li>
               <li>Remap keys or supported mouse buttons to keys, shortcuts, dual-role keys, or Hyper-style modifiers.</li>
               <li>Keep profiles and rules stored locally on this Mac.</li>
             </ul>
-            <div class="feature-note">Useful when one desk has multiple mice, keyboards, or workflow-specific shortcuts.</div>
+            <div class="pvw-note">Useful when one desk has multiple mice, keyboards, or workflow-specific shortcuts.</div>
           </article>
 
-          <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">♪</div>
+          <article class="pvw-card">
+            <div class="pvw-icon" aria-hidden="true">&#9834;</div>
             <div>
               <h3>App Audio &amp; Desk Utilities</h3>
               <p>Control the small desk details that interrupt work when they are scattered across separate apps.</p>
             </div>
-            <ul class="feature-points">
+            <ul class="pvw-points">
               <li>Set per-app volume from the menu bar.</li>
               <li>Boost quiet apps up to 200%.</li>
               <li>Mute individual apps.</li>
               <li>Let Auto Wi-Fi Switch move to a better known access point when signal drops.</li>
               <li>Run from the menu bar without adding a Dock window.</li>
             </ul>
-            <div class="feature-note">Audio Mixer requires macOS System Audio Recording permission on macOS 14.4 or later; audio is processed locally.</div>
+            <div class="pvw-note">Audio Mixer requires macOS System Audio Recording permission on macOS 14.4 or later; audio is processed locally.</div>
           </article>
 
-          <article class="feature-card wide">
+          <article class="pvw-card pvw-wide">
             <div>
-              <div class="feature-icon" aria-hidden="true">✓</div>
+              <div class="pvw-icon" aria-hidden="true">&#10003;</div>
               <h3>Private by Design</h3>
               <p>
                 DeskHelper Pro is built for local Mac workflows. It does not turn your desk utility into another account,
                 analytics stream, or cloud file service.
               </p>
             </div>
-            <ul class="feature-points">
+            <ul class="pvw-points">
               <li>No DeskHelper Pro account required.</li>
               <li>No analytics, advertising SDKs, usage telemetry, or session tracking.</li>
               <li>No Wi-Fi password collection and no Safe password logging.</li>
@@ -1170,223 +336,106 @@
         </div>
       </section>
 
-      <section id="screenshots" class="showcase" aria-labelledby="screenshots-title">
-        <div class="section">
-          <div class="section-header center">
-            <p class="eyebrow">See it in use</p>
-            <h2 id="screenshots-title">Focused menus and settings panels, not repeated feature lists.</h2>
-            <p class="section-intro">
-              The screenshots show where the features live. The captions stay short so the page does not explain the same tools twice.
-            </p>
-          </div>
-
-          <div class="screenshot-grid">
-            <article class="screenshot-card large">
-              <div class="screenshot-frame">
-                <img src="assets/deskhelperpro-menu.png?v=20260704" width="519" height="1000" loading="lazy" alt="DeskHelper Pro menu showing display controls, Audio Mixer, Active Window Highlight, Window Arrangement, Auto Wi-Fi Switch, Finder context menus, pointer settings, scrolling settings, and key/button remapping." />
-              </div>
-              <div class="screenshot-caption">
-                <h3>Main menu</h3>
-                <p>Display, window, audio, Wi-Fi, Finder, input, privacy, feedback, and update controls in one menu.</p>
-              </div>
-            </article>
-
-            <article class="screenshot-card large">
-              <div class="screenshot-frame">
-                <img src="assets/finder-context-menu.png?v=20260704" width="1000" height="948" loading="lazy" alt="Finder context menu showing DeskHelper Pro actions such as New File, New Folder, Paste, Move Here, Compress/Encrypt, Copy Path, and Open in Terminal, Codex, Claude, or Visual Studio Code." />
-              </div>
-              <div class="screenshot-caption">
-                <h3>Finder actions</h3>
-                <p>Create, move, open, copy paths, and encrypt selected Finder items from the context menu you already use.</p>
-              </div>
-            </article>
-
-            <article class="screenshot-card medium">
-              <div class="screenshot-frame">
-                <img src="assets/window-arrangement-submenu.png" width="809" height="1000" loading="lazy" alt="DeskHelper Pro Window Arrangement submenu with shortcuts for halves, corners, maximize, center, restore, display moves, and focus actions." />
-              </div>
-              <div class="screenshot-caption">
-                <h3>Window shortcuts</h3>
-                <p>Move, resize, restore, and refocus windows with global shortcuts.</p>
-              </div>
-            </article>
-
-            <article class="screenshot-card medium">
-              <div class="screenshot-frame">
-                <img src="assets/resolution-submenu.png" width="824" height="1000" loading="lazy" alt="DeskHelper Pro Change Resolution submenu listing native, scaled, and HiDPI display modes with refresh rates." />
-              </div>
-              <div class="screenshot-caption">
-                <h3>Display modes</h3>
-                <p>Switch supported resolutions, refresh rates, HiDPI presets, and custom sizes.</p>
-              </div>
-            </article>
-
-            <article class="screenshot-card medium">
-              <div class="screenshot-frame">
-                <img src="assets/highlight-settings.png" width="1000" height="1000" loading="lazy" alt="Active Window Highlight settings with color, border width, opacity, glow, and restore defaults controls." />
-              </div>
-              <div class="screenshot-caption">
-                <h3>Active-window highlight</h3>
-                <p>Show a click-through border around the focused normal app window.</p>
-              </div>
-            </article>
-
-            <article class="screenshot-card medium">
-              <div class="screenshot-frame">
-                <img src="assets/mouse-scroll-settings.png" width="832" height="1000" loading="lazy" alt="Mouse Sensitivity and Acceleration settings above Scroll Speed and Acceleration settings." />
-              </div>
-              <div class="screenshot-caption">
-                <h3>Pointer and scroll profiles</h3>
-                <p>Tune sensitivity, pointer acceleration, scroll speed, and scroll acceleration per device.</p>
-              </div>
-            </article>
-
-            <article class="screenshot-card medium">
-              <div class="screenshot-frame">
-                <img src="assets/key-button-remapping.png" width="1000" height="768" loading="lazy" alt="Key and Button Remapping settings with shortcut, dual-role key, and Hyper key options." />
-              </div>
-              <div class="screenshot-caption">
-                <h3>Key and button remapping</h3>
-                <p>Create local remap rules for keys, shortcuts, dual-role keys, and Hyper-style modifiers.</p>
-              </div>
-            </article>
-
-            <article class="screenshot-card medium">
-              <div class="screenshot-frame">
-                <img src="assets/finder-context-config.png" width="1000" height="1000" loading="lazy" alt="Finder Context Menus settings showing permissions, granted folders, menu items, privacy controls, default terminal, and default editor." />
-              </div>
-              <div class="screenshot-caption">
-                <h3>Finder permissions</h3>
-                <p>Configure menu items, folder access, editor and terminal choices, and privacy controls.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="why-title">
-        <div class="section-header">
-          <p class="eyebrow">Why it’s good</p>
-          <h2 id="why-title">Less fuss at your desk.</h2>
-          <p class="section-intro">
-            DeskHelper Pro is not trying to be a giant automation platform. It focuses on the practical actions that make a Mac desk setup easier to live with every day.
-          </p>
-        </div>
-
-        <div class="benefit-grid">
-          <article class="benefit-card">
-            <span class="benefit-number">1</span>
-            <h3>Built for external-display workflows</h3>
-            <p>
-              Black out the MacBook screen only when it should be dark, keep it normal when it is part of your workspace,
-              and keep display behavior one click away.
-            </p>
-          </article>
-
-          <article class="benefit-card">
-            <span class="benefit-number">2</span>
-            <h3>Faster everyday Mac actions</h3>
-            <p>
-              Arrange windows, open Finder paths, encrypt selected files, adjust input behavior, control app volume,
-              and switch Wi-Fi without digging through separate apps or settings.
-            </p>
-          </article>
-
-          <article class="benefit-card">
-            <span class="benefit-number">3</span>
-            <h3>Useful, not noisy</h3>
-            <p>
-              DeskHelper Pro runs from the menu bar, stays out of the Dock, avoids accounts and analytics,
-              and keeps sensitive settings and files local.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="privacy" class="section" aria-labelledby="privacy-title">
-        <div class="split-section">
-          <div class="privacy-panel">
-            <p class="eyebrow">Privacy</p>
-            <h2 id="privacy-title">Local tools, local files, local settings.</h2>
-            <p class="section-intro">
-              DeskHelper Pro asks for macOS permissions only when a feature needs them. The app explains what each permission is for and keeps its core workflows local.
-            </p>
-            <ul class="privacy-list">
-              <li><span class="check">✓</span><span>No account, no analytics, no ad SDKs, and no usage telemetry.</span></li>
-              <li><span class="check">✓</span><span>Finder selections are read only after you choose a DeskHelper Pro Finder action.</span></li>
-              <li><span class="check">✓</span><span>Safe passwords, encryption keys, and plaintext file contents are not uploaded or logged.</span></li>
-              <li><span class="check">✓</span><span>Audio Mixer uses local system audio processing and does not record, transcribe, or analyze audio content.</span></li>
-              <li><span class="check">✓</span><span>Feedback and bug reports open as reviewable email drafts before anything is sent.</span></li>
+      <section class="section compact-section" id="why" aria-labelledby="why-title">
+        <div class="section-kicker">What&#x27;s good about it?</div>
+        <div class="compact-split">
+          <div>
+            <h2 id="why-title">Less fuss at your desk.</h2>
+            <ul class="copy-points" aria-label="DeskHelper Pro benefits">
+              <li>
+                <strong>Only blacks out when it should</strong>
+                <span>dark when mirrored, normal when the MacBook screen is part of your workspace</span>
+              </li>
+              <li>
+                <strong>Fast everyday actions</strong>
+                <span>switch mirroring, dim until key press, sleep, arrange windows, open Finder paths, encrypt Safes, remap buttons, tune pointer behavior, and let Wi-Fi switch when needed</span>
+              </li>
+              <li>
+                <strong>Helpful, not noisy</strong>
+                <span>runs from the menu bar without a Dock window, account, or analytics</span>
+              </li>
             </ul>
           </div>
-
-          <div class="permission-grid" aria-label="Optional macOS permissions">
-            <article class="permission-card">
-              <h3>Accessibility</h3>
-              <p>Used for window shortcuts, focus actions, active-window behavior, and some input workflows.</p>
+          <div class="capability-list" aria-label="Key benefits">
+            <article>
+              <strong>For desk setups</strong>
+              <span>made for Macs that spend real time connected to external displays, keyboards, mice, speakers, and changing networks</span>
             </article>
-            <article class="permission-card">
-              <h3>Input Monitoring</h3>
-              <p>Used only for key/button remapping features you enable.</p>
+            <article>
+              <strong>For window speed</strong>
+              <span>global shortcuts handle layout, display moves, arranged-window focus, app focus, and Rectangle conflict resolution</span>
             </article>
-            <article class="permission-card">
-              <h3>System Audio Recording</h3>
-              <p>Used by Audio Mixer on macOS 14.4 or later for local per-app volume control.</p>
+            <article>
+              <strong>For Finder and private files</strong>
+              <span>create, paste, move, open, encrypt, decrypt, and extract selected items from the context menu you already use</span>
             </article>
-            <article class="permission-card">
-              <h3>Location</h3>
-              <p>May be required by macOS before apps can see Wi-Fi network names and access point details. DeskHelper Pro does not read Wi-Fi passwords.</p>
+            <article>
+              <strong>For pointer and input control</strong>
+              <span>per-device pointer and scroll settings plus key and mouse-button remapping for workflows that need a little more precision</span>
             </article>
-            <article class="permission-card">
-              <h3>Finder Extension / Full Disk Access</h3>
-              <p>Used for Finder context menu actions and protected macOS locations when you choose file operations there.</p>
+            <article>
+              <strong>For privacy</strong>
+              <span>no account, no analytics, no Wi-Fi passwords, no Safe password logging, local audio processing, and feedback opens as a reviewable email draft</span>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="get" class="section get-section" aria-labelledby="get-title">
-        <div class="download-panel">
+      <section class="section compact-section compact-release" id="release" aria-labelledby="release-title">
+        <div class="section-kicker">How to get it</div>
+        <div class="compact-split">
           <div>
-            <p class="eyebrow">How to get it</p>
-            <h2 id="get-title">Download and try it for 14 days.</h2>
-            <p class="section-intro">
-              One notarized Mac app for Apple Silicon and Intel Macs. Pro features are enabled during the trial.
-            </p>
-            <div class="download-actions">
-              <a class="button button-primary" href="download/DeskHelperPro-macOS.dmg">Download DMG</a>
-              <a class="button button-secondary" href="privacy.html">Privacy Policy</a>
-              <a class="button button-secondary" href="eula.html">EULA</a>
+            <h2 id="release-title">Download and try it for 14 days.</h2>
+            <ul class="copy-points" aria-label="Release summary">
+              <li>
+                <strong>Download</strong>
+                <span>one app for Apple Silicon and Intel Macs</span>
+              </li>
+              <li>
+                <strong>Install</strong>
+                <span>drag DeskHelper Pro to Applications</span>
+              </li>
+              <li>
+                <strong>Try it</strong>
+                <span>all Pro features are enabled during the trial</span>
+              </li>
+            </ul>
+            <div class="compatibility-list" aria-label="Compatibility">
+              <span>macOS 13.0 or later</span>
+              <span>arm64 + x86_64</span>
+              <span class="app-version">v1.3.16</span>
             </div>
-            <p class="small-print">
-              Requires macOS 13.0 or later. Universal build for arm64 and x86_64. Current version: 1.3.16.
-            </p>
           </div>
-
-          <article class="install-card">
-            <h3>Install in three steps</h3>
-            <ol class="install-steps">
-              <li>Download the DMG.</li>
-              <li>Drag DeskHelper Pro to Applications.</li>
-              <li>Launch it from Applications and enable only the permissions for features you use.</li>
-            </ol>
-            <p class="small-print">Developer signed and Apple notarized.</p>
-          </article>
+          <ol class="steps compact-steps">
+            <li>
+              <strong>1</strong>
+              <span>Download the DMG.</span>
+            </li>
+            <li>
+              <strong>2</strong>
+              <span>Drag the app to Applications.</span>
+            </li>
+            <li>
+              <strong>3</strong>
+              <span>Launch it from Applications.</span>
+            </li>
+          </ol>
+        </div>
+        <div class="download-card" aria-label="Download call to action">
+          <div>
+            <strong>Developer signed and Apple notarized.</strong>
+          </div>
+          <div class="download-actions">
+            <a class="button button-primary" href="https://xintechllc.com/DeskHelperPro/download/DeskHelperPro-macOS.dmg">
+              <span class="button-glyph" aria-hidden="true"></span>
+              Download DMG
+            </a>
+            <a class="text-link" href="privacy.html">Privacy</a>
+            <a class="text-link" href="eula.html">EULA</a>
+          </div>
         </div>
       </section>
     </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        <div>© 2026 Xintech LLC. DeskHelper Pro for Mac.</div>
-        <div class="footer-links" aria-label="Footer links">
-          <a href="download/DeskHelperPro-macOS.dmg">Download</a>
-          <a href="privacy.html">Privacy</a>
-          <a href="eula.html">EULA</a>
-          <a href="mailto:admin@xintechllc.com">Contact</a>
-        </div>
-      </div>
-    </footer>
-  </div>
-</body>
+    <script src="script.js?v=20260609-dropdown"></script>
+  </body>
 </html>
