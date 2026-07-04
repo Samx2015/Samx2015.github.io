@@ -1000,6 +1000,7 @@ body[data-demo-mode="disabled"] .status-dot {
 .feature-tour {
   display: grid;
   gap: clamp(2rem, 4vw, 3.2rem);
+  margin-top: clamp(2.5rem, 5vw, 4rem);
 }
 
 .feature-tour .tour-row {
