@@ -50,11 +50,14 @@
       }
       .compact-hero {
         min-height: 0;
-        padding-top: 2.1rem;
-        padding-bottom: 1.5rem;
+        padding-top: 1.3rem;
+        padding-bottom: 1rem;
       }
-      .compact-hero .eyebrow { margin-bottom: 0.5rem; }
-      .compact-hero .hero-subtitle { margin-bottom: 0; }
+      .compact-hero .eyebrow { margin-bottom: 0.35rem; }
+      .compact-hero .hero-subtitle {
+        margin-bottom: 0;
+        font-size: 1.12rem;
+      }
       .compact-hero .hero-content {
         display: grid;
         grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
@@ -64,21 +67,20 @@
         width: min(100%, var(--wide-max));
       }
       .compact-hero h1 {
-        font-size: clamp(2.1rem, 4vw, 2.9rem);
-        margin-bottom: 0.6rem;
+        font-size: clamp(1.9rem, 3.2vw, 2.4rem);
+        margin-bottom: 0.4rem;
       }
       .pvh-chips {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px 8px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 6px 8px;
         align-content: center;
-        justify-content: flex-end;
       }
       .pvh-chips span {
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        padding: 6px 13px 6px 11px;
+        padding: 5px 13px 5px 11px;
         border: 1px solid rgba(28, 42, 64, 0.1);
         border-radius: 999px;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.72));
@@ -110,10 +112,11 @@
         .compact-hero .hero-content { grid-template-columns: 1fr; }
       }
       .pvh-combines {
-        margin: 0.7rem 0 0;
+        margin: 0.5rem 0 0;
         max-width: 44rem;
         color: var(--muted);
-        line-height: 1.65;
+        font-size: 0.95rem;
+        line-height: 1.55;
       }
       .pvg-group {
         display: grid;
