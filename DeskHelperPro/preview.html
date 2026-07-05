@@ -42,10 +42,14 @@
     <link rel="preload" href="assets/hero-display.png" as="image">
     <link rel="stylesheet" href="styles.css?v=20260704-merged">
     <style>
-      /* Preview-only: feature cards transplanted from the redesign draft,
-         namespaced (.pvw) so the shared styles.css stays untouched. */
+      /* Preview-only: merged feature groups (redesign card copy + paired
+         screenshots), namespaced so the shared styles.css stays untouched. */
+      .compact-page:has(.hero-subtitle) #what.pvw > .section-kicker,
+      .compact-page:has(.hero-subtitle) #what.pvw h2 {
+        display: block;
+      }
       .pvw > .pvw-header,
-      .pvw > .pvw-grid {
+      .pvw > .pvg-group {
         width: min(100%, var(--wide-max));
         margin-inline: auto;
       }
@@ -58,27 +62,22 @@
         line-height: 1.7;
         max-width: 60rem;
       }
-      .pvw-grid {
+      .pvg-group {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 18px;
-      }
-      .pvw-card {
+        grid-template-columns: minmax(0, 0.44fr) minmax(0, 0.56fr);
+        gap: clamp(20px, 3vw, 34px);
+        align-items: start;
         padding: 26px;
-        display: flex;
-        flex-direction: column;
-        gap: 18px;
         border: 1px solid var(--line);
         border-radius: 22px;
         background: var(--panel);
         box-shadow: var(--shadow);
       }
-      .pvw-card.pvw-wide {
-        grid-column: 1 / -1;
-        display: grid;
-        grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
-        align-items: start;
-        gap: 24px;
+      .pvw > .pvg-group + .pvg-group { margin-top: 18px; }
+      .pvg-copy {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
       }
       .pvw-icon {
         width: 42px;
@@ -90,18 +89,18 @@
         color: #0f4fd6;
         font-size: 1.28rem;
       }
-      .pvw-card:nth-child(2) .pvw-icon { background: #e5f7f6; color: #087975; }
-      .pvw-card:nth-child(3) .pvw-icon { background: #f0edff; color: #7964e8; }
-      .pvw-card:nth-child(4) .pvw-icon { background: #fff2e4; color: #c36518; }
-      .pvw-card:nth-child(5) .pvw-icon { background: #eaf9ee; color: #15813b; }
-      .pvw-card h3 {
+      .pvg-finder .pvw-icon { background: #e5f7f6; color: #087975; }
+      .pvg-input .pvw-icon { background: #f0edff; color: #7964e8; }
+      .pvg-audio .pvw-icon { background: #fff2e4; color: #c36518; }
+      .pvg-privacy .pvw-icon { background: #eaf9ee; color: #15813b; }
+      .pvg-copy h3 {
         margin: 0 0 8px;
         font-size: 1.28rem;
         line-height: 1.2;
         color: var(--ink);
         font-weight: 500;
       }
-      .pvw-card p {
+      .pvg-copy p {
         margin: 0;
         color: var(--muted);
         line-height: 1.62;
@@ -139,80 +138,43 @@
         font-size: 0.92rem;
         line-height: 1.45;
       }
-      @media (max-width: 620px) {
-        .pvw-grid,
-        .pvw-card.pvw-wide {
-          grid-template-columns: 1fr;
-        }
-      }
-
-      /* The transplanted card section keeps its own heading: undo the
-         compact-page rule that hides the #what kicker/h2. */
-      .compact-page:has(.hero-subtitle) #what.pvw > .section-kicker,
-      .compact-page:has(.hero-subtitle) #what.pvw h2 {
-        display: block;
-      }
-
-      /* Showcase section transplanted from the redesign draft. */
-      #screenshots > .pvs-intro,
-      #screenshots > .screenshot-grid {
-        width: min(100%, var(--wide-max));
-        margin-inline: auto;
-      }
-      .pvs-intro {
-        margin: 0 0 28px;
-        color: var(--muted);
-        font-size: clamp(1.03rem, 1.4vw, 1.18rem);
-        line-height: 1.7;
-        max-width: 60rem;
-      }
-      .screenshot-grid {
+      .pvg-shots {
         display: grid;
-        grid-template-columns: repeat(6, minmax(0, 1fr));
-        gap: 18px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+        align-content: start;
       }
-      .screenshot-card {
-        overflow: hidden;
+      .pvg-shots.stack { grid-template-columns: 1fr; }
+      .pvg-shots figure {
+        margin: 0;
+        padding: 10px;
         border: 1px solid var(--line);
-        border-radius: 22px;
-        background: var(--panel);
-        box-shadow: var(--shadow);
-      }
-      .screenshot-card.large { grid-column: span 3; }
-      .screenshot-card.medium { grid-column: span 2; }
-      .screenshot-frame {
-        padding: 12px;
+        border-radius: 14px;
         background: linear-gradient(135deg, rgba(21, 32, 51, 0.05), rgba(36, 107, 254, 0.07));
-        border-bottom: 1px solid var(--line);
       }
-      .screenshot-frame img {
+      .pvg-shots img {
+        display: block;
         width: auto;
         max-width: 100%;
-        max-height: 460px;
+        max-height: 300px;
         height: auto;
         margin-inline: auto;
-        border-radius: 12px;
+        border-radius: 10px;
       }
-      .screenshot-card.medium .screenshot-frame img { max-height: 330px; }
-      .screenshot-caption { padding: 18px 18px 20px; }
-      .screenshot-caption h3 {
-        margin: 0 0 8px;
-        font-size: 1.15rem;
-        color: var(--ink);
-        font-weight: 500;
+      .pvg-shots.stack img {
+        width: 100%;
+        max-height: none;
       }
-      .screenshot-caption p {
-        margin: 0;
+      .pvg-shots figcaption {
+        margin-top: 8px;
         color: var(--muted);
-        line-height: 1.55;
+        font-size: 0.9rem;
+        text-align: center;
       }
       @media (max-width: 980px) {
-        .screenshot-card.large,
-        .screenshot-card.medium { grid-column: span 6; }
-        .screenshot-frame img,
-        .screenshot-card.medium .screenshot-frame img {
-          max-height: 520px;
-        }
+        .pvg-group { grid-template-columns: 1fr; }
+        .pvg-shots { grid-template-columns: 1fr; }
+        .pvg-shots img { max-height: 420px; }
       }
     </style>
   </head>
@@ -320,8 +282,8 @@
           </p>
         </div>
 
-        <div class="pvw-grid">
-          <article class="pvw-card">
+        <article class="pvg-group pvg-display">
+          <div class="pvg-copy">
             <div class="pvw-icon" aria-hidden="true">&#8984;</div>
             <div>
               <h3>Display &amp; Window Control</h3>
@@ -335,9 +297,29 @@
               <li>Highlight the active window with a configurable click-through border.</li>
             </ul>
             <div class="pvw-note">Includes arranged-window focus and Rectangle/Rectangle Pro conflict guidance.</div>
-          </article>
+          </div>
+          <div class="pvg-shots">
+            <figure>
+              <img src="assets/deskhelperpro-menu.png?v=20260704" width="1028" height="1980" loading="lazy" alt="Main menu">
+              <figcaption>Main menu</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/resolution-submenu.png" width="1650" height="1984" loading="lazy" alt="Display modes">
+              <figcaption>Display modes</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/window-arrangement-submenu.png" width="1828" height="2260" loading="lazy" alt="Window shortcuts">
+              <figcaption>Window shortcuts</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/highlight-settings.png" width="1240" height="1202" loading="lazy" alt="Active-window highlight">
+              <figcaption>Active-window highlight</figcaption>
+            </figure>
+          </div>
+        </article>
 
-          <article class="pvw-card">
+        <article class="pvg-group pvg-finder">
+          <div class="pvg-copy">
             <div class="pvw-icon" aria-hidden="true">&#9635;</div>
             <div>
               <h3>Finder Actions &amp; Local Safes</h3>
@@ -351,9 +333,21 @@
               <li>Work with supported <code>.7z</code>, <code>.zip</code>, and <code>.dmg</code> archive flows.</li>
             </ul>
             <div class="pvw-note">Finder and Safe actions run only after you choose a DeskHelper Pro context-menu action.</div>
-          </article>
+          </div>
+          <div class="pvg-shots">
+            <figure>
+              <img src="assets/finder-context-menu.png?v=20260704" width="1066" height="994" loading="lazy" alt="Finder actions">
+              <figcaption>Finder actions</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/finder-context-config.png" width="1986" height="1968" loading="lazy" alt="Finder permissions">
+              <figcaption>Finder permissions</figcaption>
+            </figure>
+          </div>
+        </article>
 
-          <article class="pvw-card">
+        <article class="pvg-group pvg-input">
+          <div class="pvg-copy">
             <div class="pvw-icon" aria-hidden="true">&#8961;</div>
             <div>
               <h3>Pointer, Scroll &amp; Input Profiles</h3>
@@ -367,9 +361,21 @@
               <li>Keep profiles and rules stored locally on this Mac.</li>
             </ul>
             <div class="pvw-note">Useful when one desk has multiple mice, keyboards, or workflow-specific shortcuts.</div>
-          </article>
+          </div>
+          <div class="pvg-shots">
+            <figure>
+              <img src="assets/mouse-scroll-settings.png" width="1296" height="1554" loading="lazy" alt="Pointer and scroll profiles">
+              <figcaption>Pointer and scroll profiles</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/key-button-remapping.png" width="1716" height="1408" loading="lazy" alt="Key and button remapping">
+              <figcaption>Key and button remapping</figcaption>
+            </figure>
+          </div>
+        </article>
 
-          <article class="pvw-card">
+        <article class="pvg-group pvg-audio">
+          <div class="pvg-copy">
             <div class="pvw-icon" aria-hidden="true">&#9834;</div>
             <div>
               <h3>App Audio &amp; Desk Utilities</h3>
@@ -383,16 +389,25 @@
               <li>Run from the menu bar without adding a Dock window.</li>
             </ul>
             <div class="pvw-note">Audio Mixer requires macOS System Audio Recording permission on macOS 14.4 or later; audio is processed locally.</div>
-          </article>
+          </div>
+          <div class="pvg-shots stack">
+            <figure>
+              <img src="assets/audio-mixer.png" width="1028" height="225" loading="lazy" alt="Per-app Audio Mixer in the menu">
+              <figcaption>Per-app Audio Mixer in the menu</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/wifi-switch.png" width="1028" height="200" loading="lazy" alt="Auto Wi-Fi Switch in the menu">
+              <figcaption>Auto Wi-Fi Switch in the menu</figcaption>
+            </figure>
+          </div>
+        </article>
 
-          <article class="pvw-card pvw-wide">
+        <article class="pvg-group pvg-privacy">
+          <div class="pvg-copy">
+            <div class="pvw-icon" aria-hidden="true">&#10003;</div>
             <div>
-              <div class="pvw-icon" aria-hidden="true">&#10003;</div>
               <h3>Private by Design</h3>
-              <p>
-                DeskHelper Pro is built for local Mac workflows. It does not turn your desk utility into another account,
-                analytics stream, or cloud file service.
-              </p>
+              <p>DeskHelper Pro is built for local Mac workflows. It does not turn your desk utility into another account, analytics stream, or cloud file service.</p>
             </div>
             <ul class="pvw-points">
               <li>No DeskHelper Pro account required.</li>
@@ -401,99 +416,14 @@
               <li>Plaintext, Safe passwords, encryption keys, pointer profiles, remap rules, and audio processing stay local.</li>
               <li>Optional permissions are explained clearly: Accessibility, Input Monitoring, System Audio Recording, Location, Finder Extension, and Full Disk Access.</li>
             </ul>
-          </article>
-        </div>
-      </section>
-
-
-      <section class="section compact-section" id="screenshots" aria-labelledby="screenshots-title">
-        <div class="section-kicker">See it in use</div>
-        <h2 id="screenshots-title">Focused menus and settings panels, not repeated feature lists.</h2>
-        <p class="pvs-intro">
-          The screenshots show where the features live. The captions stay short so the page does not explain the same tools twice.
-        </p>
-
-        <div class="screenshot-grid">
-          <article class="screenshot-card large">
-            <div class="screenshot-frame">
-              <img src="assets/deskhelperpro-menu.png?v=20260704" width="519" height="1000" loading="lazy" alt="DeskHelper Pro menu showing display controls, Audio Mixer, Active Window Highlight, Window Arrangement, Auto Wi-Fi Switch, Finder context menus, pointer settings, scrolling settings, and key/button remapping.">
-            </div>
-            <div class="screenshot-caption">
-              <h3>Main menu</h3>
-              <p>Display, window, audio, Wi-Fi, Finder, input, privacy, feedback, and update controls in one menu.</p>
-            </div>
-          </article>
-
-          <article class="screenshot-card large">
-            <div class="screenshot-frame">
-              <img src="assets/finder-context-menu.png?v=20260704" width="1000" height="948" loading="lazy" alt="Finder context menu showing DeskHelper Pro actions such as New File, New Folder, Paste, Move Here, Compress/Encrypt, Copy Path, and Open in Terminal, Codex, Claude, or Visual Studio Code.">
-            </div>
-            <div class="screenshot-caption">
-              <h3>Finder actions</h3>
-              <p>Create, move, open, copy paths, and encrypt selected Finder items from the context menu you already use.</p>
-            </div>
-          </article>
-
-          <article class="screenshot-card medium">
-            <div class="screenshot-frame">
-              <img src="assets/window-arrangement-submenu.png" width="809" height="1000" loading="lazy" alt="DeskHelper Pro Window Arrangement submenu with shortcuts for halves, corners, maximize, center, restore, display moves, and focus actions.">
-            </div>
-            <div class="screenshot-caption">
-              <h3>Window shortcuts</h3>
-              <p>Move, resize, restore, and refocus windows with global shortcuts.</p>
-            </div>
-          </article>
-
-          <article class="screenshot-card medium">
-            <div class="screenshot-frame">
-              <img src="assets/resolution-submenu.png" width="824" height="1000" loading="lazy" alt="DeskHelper Pro Change Resolution submenu listing native, scaled, and HiDPI display modes with refresh rates.">
-            </div>
-            <div class="screenshot-caption">
-              <h3>Display modes</h3>
-              <p>Switch supported resolutions, refresh rates, HiDPI presets, and custom sizes.</p>
-            </div>
-          </article>
-
-          <article class="screenshot-card medium">
-            <div class="screenshot-frame">
-              <img src="assets/highlight-settings.png" width="1000" height="1000" loading="lazy" alt="Active Window Highlight settings with color, border width, opacity, glow, and restore defaults controls.">
-            </div>
-            <div class="screenshot-caption">
-              <h3>Active-window highlight</h3>
-              <p>Show a click-through border around the focused normal app window.</p>
-            </div>
-          </article>
-
-          <article class="screenshot-card medium">
-            <div class="screenshot-frame">
-              <img src="assets/mouse-scroll-settings.png" width="832" height="1000" loading="lazy" alt="Mouse Sensitivity and Acceleration settings above Scroll Speed and Acceleration settings.">
-            </div>
-            <div class="screenshot-caption">
-              <h3>Pointer and scroll profiles</h3>
-              <p>Tune sensitivity, pointer acceleration, scroll speed, and scroll acceleration per device.</p>
-            </div>
-          </article>
-
-          <article class="screenshot-card medium">
-            <div class="screenshot-frame">
-              <img src="assets/key-button-remapping.png" width="1000" height="768" loading="lazy" alt="Key and Button Remapping settings with shortcut, dual-role key, and Hyper key options.">
-            </div>
-            <div class="screenshot-caption">
-              <h3>Key and button remapping</h3>
-              <p>Create local remap rules for keys, shortcuts, dual-role keys, and Hyper-style modifiers.</p>
-            </div>
-          </article>
-
-          <article class="screenshot-card medium">
-            <div class="screenshot-frame">
-              <img src="assets/finder-context-config.png" width="1000" height="1000" loading="lazy" alt="Finder Context Menus settings showing permissions, granted folders, menu items, privacy controls, default terminal, and default editor.">
-            </div>
-            <div class="screenshot-caption">
-              <h3>Finder permissions</h3>
-              <p>Configure menu items, folder access, editor and terminal choices, and privacy controls.</p>
-            </div>
-          </article>
-        </div>
+          </div>
+          <div class="pvg-shots stack">
+            <figure>
+              <img src="assets/permissions-overview.png" width="1664" height="2022" loading="lazy" alt="Permissions overview listing Accessibility, Finder Extension, Full Disk Access, Location, System Audio Recording, Display Resolution Helper, and Automation with live grant status.">
+              <figcaption>Permissions overview with live status</figcaption>
+            </figure>
+          </div>
+        </article>
       </section>
 
       <section class="section compact-section" id="why" aria-labelledby="why-title">
