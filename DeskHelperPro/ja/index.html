@@ -166,7 +166,13 @@
       }
       .pvg-head .pvw-icon {
         flex: 0 0 auto;
-        transform: translateY(-2px);
+        transform: translateY(-3px);
+      }
+      .pvg-privacy .pvg-head .pvw-icon {
+        transform: translateY(-4px);
+      }
+      .pvg-finder .pvg-head .pvw-icon {
+        transform: translateY(-4px);
       }
       .pvg-head h3 { margin: 0; }
       .pvg-copy h3 {
@@ -239,10 +245,6 @@
       .pvg-shots.stack { grid-template-columns: 1fr; }
       .pvg-shots figure {
         margin: 0;
-        padding: 6px;
-        border: 1px solid var(--line);
-        border-radius: 14px;
-        background: linear-gradient(135deg, rgba(21, 32, 51, 0.05), rgba(36, 107, 254, 0.07));
       }
       .pvg-shots img {
         display: block;
@@ -252,6 +254,7 @@
         height: auto;
         margin-inline: auto;
         border-radius: 10px;
+        box-shadow: 0 8px 22px rgba(21, 32, 51, 0.14);
       }
       .pvg-shots.stack img {
         width: 100%;
@@ -436,7 +439,7 @@
               <figcaption>ウインドウ配置</figcaption>
             </figure>
             <figure>
-              <img src="../assets/highlight-settings.png" width="1240" height="1202" loading="lazy" alt="アクティブウインドウのハイライト">
+              <img src="../assets/highlight-settings.png?v=3" width="1022" height="984" loading="lazy" alt="アクティブウインドウのハイライト">
               <figcaption>アクティブウインドウのハイライト</figcaption>
             </figure>
           </div>
@@ -470,7 +473,7 @@
               <figcaption>Finder アクション</figcaption>
             </figure>
             <figure>
-              <img src="../assets/finder-context-config.png" width="1986" height="1968" loading="lazy" alt="Finderのコンテキストメニュー">
+              <img src="../assets/finder-context-config.png?v=3" width="1768" height="1750" loading="lazy" alt="Finderのコンテキストメニュー">
               <figcaption>Finderのコンテキストメニュー</figcaption>
             </figure>
           </div>
@@ -481,7 +484,7 @@
             <div class="pvg-head">
               <div class="pvw-icon" aria-hidden="true">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation">
-                  <rect x="7" y="3.5" width="10" height="17" rx="5"></rect>
+                  <rect x="6" y="3.5" width="12" height="17" rx="6"></rect>
                   <path d="M12 7v3.5"></path>
                 </svg>
               </div>
@@ -503,7 +506,7 @@
               <figcaption>マウスの感度と加速 · スクロール速度と加速</figcaption>
             </figure>
             <figure>
-              <img src="../assets/key-button-remapping.png" width="1716" height="1408" loading="lazy" alt="キーとボタンのリマップ">
+              <img src="../assets/key-button-remapping.png?v=3" width="1498" height="1190" loading="lazy" alt="キーとボタンのリマップ">
               <figcaption>キーとボタンのリマップ</figcaption>
             </figure>
           </div>
