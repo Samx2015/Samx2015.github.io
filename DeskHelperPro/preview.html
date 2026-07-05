@@ -264,6 +264,27 @@
         width: 100%;
         max-height: none;
       }
+      .pvg-shots img { cursor: zoom-in; }
+      .pvl-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 999;
+        display: grid;
+        place-items: center;
+        padding: 3vmin;
+        background: rgba(10, 16, 26, 0.82);
+        backdrop-filter: blur(6px);
+        cursor: zoom-out;
+      }
+      .pvl-overlay[hidden] { display: none; }
+      .pvl-overlay img {
+        max-width: min(1500px, 96vw);
+        max-height: 93vh;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.5);
+      }
       .pvg-shots figcaption {
         margin-top: 6px;
         color: var(--muted);
@@ -363,8 +384,8 @@
             <span>Display Control</span>
             <span>Window Shortcuts</span>
             <span>Finder Actions</span>
-            <span>Local Safes</span>
-            <span>Pointer Profiles</span>
+            <span>Encrypt &amp; Zip (.safe/.7z/.zip/.dmg)</span>
+            <span>Mouse Sensitivity &amp; Scroll Speed</span>
             <span>Key/Button Remapping</span>
             <span>App Audio Mixer</span>
             <span>Private by Design</span>
@@ -607,5 +628,30 @@
       </section>
     </main>
     <script src="script.js?v=20260609-dropdown"></script>
+    <div class="pvl-overlay" id="pvl-overlay" hidden>
+      <img alt="">
+    </div>
+    <script>
+      (function () {
+        var overlay = document.getElementById("pvl-overlay");
+        var overlayImg = overlay.querySelector("img");
+        function close() {
+          overlay.hidden = true;
+          document.body.style.overflow = "";
+        }
+        document.querySelectorAll(".pvg-shots img").forEach(function (img) {
+          img.addEventListener("click", function () {
+            overlayImg.src = img.currentSrc || img.src;
+            overlayImg.alt = img.alt;
+            overlay.hidden = false;
+            document.body.style.overflow = "hidden";
+          });
+        });
+        overlay.addEventListener("click", close);
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape") close();
+        });
+      })();
+    </script>
   </body>
 </html>
