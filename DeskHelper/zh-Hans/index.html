@@ -1,188 +1,639 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hans">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>DeskHelper for Mac</title>
-<meta content="DeskHelper 是一个 Mac App Store 菜单栏实用程序，用于 MacBook 显示控件、Finder 上下文菜单操作和本地 Safe 加密。" name="description"/>
-<link href="https://xintechllc.com/DeskHelper/zh-Hans/" rel="canonical"/><link href="https://xintechllc.com/DeskHelper/" hreflang="en" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/zh-Hans/" hreflang="zh-Hans" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/zh-Hant/" hreflang="zh-Hant" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/ja/" hreflang="ja" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/fr/" hreflang="fr" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/de/" hreflang="de" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/es/" hreflang="es" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/ko/" hreflang="ko" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/pt-BR/" hreflang="pt-BR" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/it/" hreflang="it" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/nl/" hreflang="nl" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/pl/" hreflang="pl" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/tr/" hreflang="tr" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/vi/" hreflang="vi" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/ru/" hreflang="ru" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/ar/" hreflang="ar" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/hi/" hreflang="hi" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/id/" hreflang="id" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/cs/" hreflang="cs" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/da/" hreflang="da" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/fi/" hreflang="fi" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/ms/" hreflang="ms" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/nb/" hreflang="nb" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/sv/" hreflang="sv" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/th/" hreflang="th" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/uk/" hreflang="uk" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/" hreflang="x-default" rel="alternate"/><meta content="E7DLX6ZlccKL2RXTHrOx2P_Wzp35A1nDlLM3SkugHPE" name="google-site-verification"/>
-<link href="../assets/app-icon.png" rel="icon" type="image/png"/>
-<link as="image" href="../assets/hero-display.png" rel="preload"/>
-<link href="../styles.css?v=20260611-screens2" rel="stylesheet"/>
-</head>
-<body class="compact-page">
-<header aria-label="小学" class="site-header">
-<a aria-label="DeskHelper home" class="brand" href="./">
-<img alt="" height="34" src="../assets/app-icon.png" width="34"/>
-<span>DeskHelper</span>
-</a>
-<nav aria-label="页面部分" class="site-nav">
-<a href="#what">它是什么</a>
-<a href="#why">为什么它好</a>
-<a href="../#app-store">得到它</a>
-</nav>
-<div class="header-actions">
-<a class="header-cta" href="../#app-store">Mac App Store</a>
-<details class="language-menu"><summary>🌐 - 🇨🇳 简体中文</summary><div aria-label="Language" class="language-menu-list"><a href="../" lang="en">🇺🇸🇬🇧 English</a><a aria-current="page" href="./" lang="zh-Hans">🇨🇳 简体中文</a><a href="../zh-Hant/" lang="zh-Hant">🇹🇼🇭🇰 繁體中文</a><a href="../ja/" lang="ja">🇯🇵 日本語</a><a href="../fr/" lang="fr">🇫🇷 Français</a><a href="../de/" lang="de">🇩🇪 Deutsch</a><a href="../es/" lang="es">🇪🇸🇲🇽 Español</a><a href="../ko/" lang="ko">🇰🇷 한국어</a><a href="../pt-BR/" lang="pt-BR">🇧🇷 Português (Brasil)</a><a href="../it/" lang="it">🇮🇹 Italiano</a><a href="../nl/" lang="nl">🇳🇱 Nederlands</a><a href="../pl/" lang="pl">🇵🇱 Polski</a><a href="../tr/" lang="tr">🇹🇷 Türkçe</a><a href="../vi/" lang="vi">🇻🇳 Tiếng Việt</a><a href="../ru/" lang="ru">🇷🇺 Русский</a><a href="../ar/" lang="ar">🇸🇦🇪🇬 العربية</a><a href="../hi/" lang="hi">🇮🇳 हिन्दी</a><a href="../id/" lang="id">🇮🇩 Bahasa Indonesia</a><a href="../cs/" lang="cs">🇨🇿 Čeština</a><a href="../da/" lang="da">🇩🇰 Dansk</a><a href="../fi/" lang="fi">🇫🇮 Suomi</a><a href="../ms/" lang="ms">🇲🇾 Bahasa Melayu</a><a href="../nb/" lang="nb">🇳🇴 Norsk bokmål</a><a href="../sv/" lang="sv">🇸🇪 Svenska</a><a href="../th/" lang="th">🇹🇭 ไทย</a><a href="../uk/" lang="uk">🇺🇦 Українська</a></div></details>
-</div>
-</header>
-<main id="top">
-<section aria-labelledby="hero-title" class="hero compact-hero">
-<img alt="笔记本电脑的内置显示器在活动外部显示器前面呈黑色。" class="hero-image" src="../assets/hero-display.png"/>
-<div aria-hidden="true" class="hero-shade"></div>
-<div class="hero-content">
-<p class="eyebrow">Mac App Store 菜单栏实用程序</p>
-<h1 id="hero-title">DeskHelper</h1>
-<p class="hero-subtitle">
-            一个安静的菜单栏应用程序，用于 MacBook 显示控制、Finder 上下文
-            菜单操作和本地 Safe 加密。
-          </p>
-<div aria-label="DeskHelper 摘要" class="hero-summary">
-<div>
-<strong>停电</strong>
-<span>在镜像到外部显示器时，保持内置 MacBook 显示屏处于黑暗状态。</span>
-</div>
-<div>
-<strong>控制</strong>
-<span>镜像、调暗、睡眠、显示级别和菜单栏中的快捷方式。</span>
-</div>
-<div>
-<strong>发现者</strong>
-<span>创建文件和文件夹、粘贴复制的项目、复制路径、打开 Finder 选择以及加密或解密本地 Safes。</span>
-</div>
-</div>
-<div aria-label="亮点" class="trust-pills">
-<span>Mac App Store 版</span>
-<span>Finder 上下文菜单</span>
-<span>当地Safes</span>
-<span>没有账户</span>
-</div>
-</div>
-</section>
-<section aria-labelledby="what-title" class="section controls-section compact-section" id="what">
-<div class="section-kicker">它是什么？</div>
-<div class="controls-layout">
-<div>
-<h2 id="what-title">它所做的一切。</h2>
-<ul aria-label="DeskHelper 做什么" class="copy-points">
-<li>
-<strong>自动停电</strong>
-<span>在镜像外部显示器时，使内置 MacBook 显示器保持黑暗。</span>
-</li>
-<li>
-<strong>显示控制</strong>
-<span>切换镜像、调暗显示直至按下按键、休眠 Mac，以及从菜单栏调整显示亮度或对比度。</span>
-</li>
-<li>
-<strong>Finder 上下文菜单</strong>
-<span>使用新文件、新文件夹、粘贴、复制路径，并在 TextEdit、Terminal、Codex、Claude、VSCode 或 Finder 中的其他兼容应用程序中打开。</span>
-</li>
-<li>
-<strong>保险箱</strong>
-<span>将选定的本地文件或文件夹加密到单个 .safe 文件中，添加到现有的 Safe 中，或将 Safe 解密回文件夹中。</span>
-</li>
-<li>
-<strong>隐私基础知识</strong>
-<span>没有帐户，没有分析，没有 Dock 窗口，也没有上传 Finder 或 Safe 操作。</span>
-</li>
-</ul>
-</div>
-<div aria-label="DeskHelper 屏幕截图" class="product-screenshots">
-<figure class="menu-screenshot">
-<img alt="DeskHelper 菜单显示自动黑屏、镜像、显示控制、Finder 上下文菜单和退出。" decoding="async" height="1022" loading="lazy" src="../assets/deskhelper-menu-20260614-013640.png" width="948"/>
-</figure>
-<figure class="finder-context-screenshot">
-<img alt="Finder 上下文菜单突出显示 DeskHelper 操作，例如新文件、新文件夹、粘贴、复制路径、在应用程序中打开以及加密或解密 Safes。" decoding="async" height="1054" loading="lazy" src="../assets/finder-context-menu-20260614-013710.png" width="936"/>
-</figure>
-</div>
-</div>
-</section>
-<section aria-labelledby="why-title" class="section compact-section" id="why">
-<div class="section-kicker">它有什么好处呢？</div>
-<div class="compact-split">
-<div>
-<h2 id="why-title">减少显示器和文件方面的麻烦。</h2>
-<ul aria-label="DeskHelper 好处" class="copy-points">
-<li>
-<strong>只在该黑的时候黑</strong>
-<span>镜像时为黑色，当 MacBook 屏幕是工作区的一部分时为正常</span>
-</li>
-<li>
-<strong>快速的日常行动</strong>
-<span>切换镜像、调暗直到按下按键、睡眠、调整显示级别、创建文件和文件夹、粘贴复制的项目、复制路径、打开 Finder 选择以及从上下文菜单加密 Safes</span>
-</li>
-<li>
-<strong>默认情况下本地优先</strong>
-<span>设置保留在您的 Mac 上，反馈会作为可审阅的电子邮件草稿打开，并且没有分析 SDK</span>
-</li>
-</ul>
-</div>
-<div aria-label="主要优点" class="capability-list">
-<article>
-<strong>用于办公桌设置</strong>
-<span>专为实时连接到外部显示器的 MacBook 而设计</span>
-</article>
-<article>
-<strong>对于 Finder 工作</strong>
-<span>将当前 Finder 文件夹转换为您想要执行的新文件、新文件夹、粘贴、路径、编辑器、终端、Codex、Claude、VSCode 或 Safe 操作</span>
-</article>
-<article>
-<strong>为了简单起见</strong>
-<span>主要体验是菜单栏，只有在配置功能时才会出现焦点对话框</span>
-</article>
-</div>
-</div>
-</section>
-<section aria-label="Mac App Store 可用性" class="section compact-section compact-release" id="app-store">
-<div class="compact-split">
-<div>
-<ul aria-label="应用商店摘要" class="copy-points">
-<li>
-<strong>安装</strong>
-<span>列表可用后，从 Mac App Store 下载 DeskHelper</span>
-</li>
-<li>
-<strong>更新</strong>
-<span>通过 Mac App Store 接收更新</span>
-</li>
-<li>
-<strong>配置</strong>
-<span>如果您需要上下文菜单，请在 macOS 设置中启用 Finder 扩展；仅当 Finder 操作需要时才授予文件夹访问权限</span>
-</li>
-</ul>
-<div aria-label="兼容性" class="compatibility-list">
-<span>macOS 13.0 或更高版本</span>
-<span>苹果芯片 + 英特尔</span>
-</div>
-</div>
-<ol class="steps compact-steps">
-<li>
-<strong>1</strong>
-<span>打开 Mac App Store 列表。</span>
-</li>
-<li>
-<strong>2</strong>
-<span>安装 DeskHelper。</span>
-</li>
-<li>
-<strong>3</strong>
-<span>从应用程序启动它。</span>
-</li>
-</ol>
-</div>
-<div aria-label="Mac App Store 号召性用语" class="download-card">
-<div>
-<strong>列表准备就绪后，将会出现 Mac App Store 链接。</strong>
-</div>
-<div class="download-actions">
-<span aria-disabled="true" class="button button-primary is-disabled">Mac App Store 即将推出</span>
-<a class="text-link" href="support.html">支持</a>
-<a class="text-link" href="privacy.html">隐私</a>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DeskHelper Mac 版</title>
+    <meta name="description" content="DeskHelper 将显示器控制、窗口排列与快捷键、活跃窗口高亮、Finder 操作和本地文件加密整合进一个专注的菜单栏 App——沙盒化运行,并通过 Mac App Store 分发。">
+    <link rel="canonical" href="https://xintechllc.com/DeskHelper/zh-Hans/">
+    <meta name="google-site-verification" content="E7DLX6ZlccKL2RXTHrOx2P_Wzp35A1nDlLM3SkugHPE">
+    <link rel="alternate" hreflang="en" href="https://xintechllc.com/DeskHelper/">
+    <link rel="alternate" hreflang="es" href="https://xintechllc.com/DeskHelper/es/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://xintechllc.com/DeskHelper/zh-Hans/">
+    <link rel="alternate" hreflang="zh-Hant" href="https://xintechllc.com/DeskHelper/zh-Hant/">
+    <link rel="alternate" hreflang="ja" href="https://xintechllc.com/DeskHelper/ja/">
+    <link rel="alternate" hreflang="fr" href="https://xintechllc.com/DeskHelper/fr/">
+    <link rel="alternate" hreflang="de" href="https://xintechllc.com/DeskHelper/de/">
+    <link rel="alternate" hreflang="ko" href="https://xintechllc.com/DeskHelper/ko/">
+    <link rel="alternate" hreflang="pt-BR" href="https://xintechllc.com/DeskHelper/pt-BR/">
+    <link rel="alternate" hreflang="it" href="https://xintechllc.com/DeskHelper/it/">
+    <link rel="alternate" hreflang="nl" href="https://xintechllc.com/DeskHelper/nl/">
+    <link rel="alternate" hreflang="pl" href="https://xintechllc.com/DeskHelper/pl/">
+    <link rel="alternate" hreflang="tr" href="https://xintechllc.com/DeskHelper/tr/">
+    <link rel="alternate" hreflang="vi" href="https://xintechllc.com/DeskHelper/vi/">
+    <link rel="alternate" hreflang="ru" href="https://xintechllc.com/DeskHelper/ru/">
+    <link rel="alternate" hreflang="ar" href="https://xintechllc.com/DeskHelper/ar/">
+    <link rel="alternate" hreflang="hi" href="https://xintechllc.com/DeskHelper/hi/">
+    <link rel="alternate" hreflang="id" href="https://xintechllc.com/DeskHelper/id/">
+    <link rel="alternate" hreflang="cs" href="https://xintechllc.com/DeskHelper/cs/">
+    <link rel="alternate" hreflang="da" href="https://xintechllc.com/DeskHelper/da/">
+    <link rel="alternate" hreflang="fi" href="https://xintechllc.com/DeskHelper/fi/">
+    <link rel="alternate" hreflang="ms" href="https://xintechllc.com/DeskHelper/ms/">
+    <link rel="alternate" hreflang="nb" href="https://xintechllc.com/DeskHelper/nb/">
+    <link rel="alternate" hreflang="sv" href="https://xintechllc.com/DeskHelper/sv/">
+    <link rel="alternate" hreflang="th" href="https://xintechllc.com/DeskHelper/th/">
+    <link rel="alternate" hreflang="uk" href="https://xintechllc.com/DeskHelper/uk/">
+    <link rel="alternate" hreflang="x-default" href="https://xintechllc.com/DeskHelper/">
+    <link rel="icon" href="../assets/app-icon.png" type="image/png">
+    <link rel="preload" href="../assets/hero-display.png" as="image">
+    <link rel="stylesheet" href="../styles.css?v=20260705-groups">
+    <style>
+      /* Merged feature groups (Pro-page layout), namespaced so the shared
+         styles.css stays untouched. */
+      .pvw > .pvg-group {
+        width: min(100%, var(--wide-max));
+        margin-inline: auto;
+      }
+      .hero.compact-hero {
+        border-bottom: 0;
+      }
+      .compact-release::before {
+        display: none;
+      }
+      /* With the separators gone, close up the vertical gaps around them. */
+      #what.pvw.compact-section {
+        padding-top: 0.7rem;
+        padding-bottom: 1.1rem;
+      }
+      #release.compact-release.compact-section {
+        padding-top: 1.1rem;
+      }
+      .compact-hero {
+        min-height: 0;
+        padding-top: 1.3rem;
+        padding-bottom: 1rem;
+      }
+      .compact-hero .eyebrow { margin-bottom: 0.35rem; }
+      .compact-hero .hero-subtitle {
+        margin-bottom: 0;
+        font-size: 1.12rem;
+      }
+      .compact-hero .hero-content {
+        display: grid;
+        grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+        gap: clamp(1.5rem, 4vw, 3.5rem);
+        align-items: center;
+        padding-top: 0;
+        width: min(100%, var(--wide-max));
+      }
+      .compact-hero h1 {
+        font-size: clamp(1.9rem, 3.2vw, 2.4rem);
+        margin-bottom: 0.4rem;
+      }
+      .pvh-chips {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 6px 8px;
+        align-content: center;
+      }
+      .pvh-chips span {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px 13px 5px 11px;
+        border: 1px solid rgba(28, 42, 64, 0.1);
+        border-radius: 999px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.72));
+        color: #3d4a5d;
+        font-size: 0.88rem;
+        letter-spacing: 0.01em;
+        box-shadow:
+          0 1px 2px rgba(21, 32, 51, 0.05),
+          0 6px 18px rgba(21, 32, 51, 0.05);
+        backdrop-filter: blur(8px);
+      }
+      .pvh-chips span::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-radius: 999px;
+        background: var(--chip-dot, #246bfe);
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--chip-dot, #246bfe) 16%, transparent);
+      }
+      .pvh-chips span:nth-child(1) { --chip-dot: #246bfe; }
+      .pvh-chips span:nth-child(2) { --chip-dot: #4f8df9; }
+      .pvh-chips span:nth-child(3) { --chip-dot: #7964e8; }
+      .pvh-chips span:nth-child(4) { --chip-dot: #0f9f9a; }
+      .pvh-chips span:nth-child(5) { --chip-dot: #087975; }
+      .pvh-chips span:nth-child(6) { --chip-dot: #15813b; }
+      @media (max-width: 980px) {
+        .compact-hero .hero-content { grid-template-columns: 1fr; }
+      }
+      .pvh-combines {
+        margin: 0.5rem 0 0;
+        max-width: 44rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+        line-height: 1.55;
+      }
+      .pvg-group {
+        display: grid;
+        grid-template-columns: minmax(0, 0.44fr) minmax(0, 0.56fr);
+        gap: clamp(16px, 2.5vw, 28px);
+        align-items: center;
+        padding: 20px;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: var(--panel);
+        box-shadow: var(--shadow);
+      }
+      .pvw > .pvg-group + .pvg-group { margin-top: 18px; }
+      .pvg-copy {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+      .pvw-icon {
+        display: grid;
+        place-items: center;
+        color: #2f6bff;
+        font-size: 1.9rem;
+        line-height: 1;
+        filter: drop-shadow(0 2px 7px color-mix(in srgb, currentColor 55%, transparent));
+      }
+      .pvg-finder .pvw-icon { color: #0aa49e; }
+      .pvg-shortcuts .pvw-icon { color: #8b5cf6; }
+      .pvg-privacy .pvw-icon { color: #21a558; }
+      .pvg-head {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .pvg-head .pvw-icon {
+        flex: 0 0 auto;
+        transform: translateY(-3px);
+      }
+      .pvg-privacy .pvg-head .pvw-icon {
+        transform: translateY(-4px);
+      }
+      .pvg-finder .pvg-head .pvw-icon {
+        transform: translateY(-4px);
+      }
+      .pvg-head h3 { margin: 0; }
+      .pvg-copy h3 {
+        margin: 0 0 8px;
+        font-size: 1.28rem;
+        line-height: 1.2;
+        color: var(--ink);
+        font-weight: 500;
+      }
+      .pvg-copy p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.62;
+      }
+      .pvw-points {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 10px;
+      }
+      .pvw-points li {
+        position: relative;
+        padding-left: 24px;
+        color: var(--muted);
+        line-height: 1.52;
+      }
+      .pvw-points li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.68em;
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #246bfe, #0f9f9a);
+      }
+      .pvg-privacy .pvw-points li {
+        padding-left: 30px;
+      }
+      .pvg-privacy .pvw-points li::before {
+        content: "\2713";
+        top: 0.18em;
+        width: 19px;
+        height: 19px;
+        display: grid;
+        place-items: center;
+        color: #fff;
+        background: linear-gradient(135deg, #22a06b, #15813b);
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 1;
+      }
+      .pvw-note {
+        margin-top: auto;
+        padding: 13px 14px;
+        border: 1px solid rgba(36, 107, 254, 0.14);
+        border-radius: 15px;
+        color: #315684;
+        background: rgba(232, 240, 255, 0.6);
+        font-size: 0.92rem;
+        line-height: 1.45;
+      }
+      .pvg-shots {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        align-content: start;
+      }
+      .pvg-shots.stack { grid-template-columns: 1fr; }
+      .pvg-shots figure {
+        margin: 0;
+      }
+      .pvg-shots img {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        max-height: 360px;
+        height: auto;
+        margin-inline: auto;
+        border-radius: 10px;
+        box-shadow: 0 8px 22px rgba(21, 32, 51, 0.14);
+      }
+      .pvg-shots.stack img {
+        width: auto;
+        max-height: 460px;
+      }
+      .pvg-shots img { cursor: zoom-in; }
+      .pvl-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 999;
+        display: grid;
+        place-items: center;
+        padding: 3vmin;
+        background: rgba(10, 16, 26, 0.82);
+        backdrop-filter: blur(6px);
+        cursor: zoom-out;
+      }
+      .pvl-overlay[hidden] { display: none; }
+      .pvl-overlay img {
+        max-width: min(1500px, 96vw);
+        max-height: 93vh;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.5);
+      }
+      .pvg-shots figcaption {
+        margin-top: 6px;
+        color: var(--muted);
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      #release > .pvr-flow {
+        width: min(100%, var(--wide-max));
+        margin-inline: auto;
+      }
+      .pvr-steps {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+      .pvr-steps strong {
+        display: inline-grid;
+        place-items: center;
+        width: 26px;
+        height: 26px;
+        flex: 0 0 auto;
+        border-radius: 999px;
+        color: #fff;
+        background: var(--step-color, #246bfe);
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--step-color, #246bfe) 18%, transparent);
+        font-size: 0.88rem;
+        font-weight: 700;
+        line-height: 1;
+      }
+      .pvr-steps li:nth-child(1) strong { --step-color: #246bfe; }
+      .pvr-steps li:nth-child(2) strong { --step-color: #0f9f9a; }
+      .pvr-steps li:nth-child(3) strong { --step-color: #15813b; }
+      .pvr-flow .compatibility-list { margin-top: 18px; }
+      @media (max-width: 980px) {
+        .pvr-steps { grid-template-columns: 1fr; }
+        .pvg-group { grid-template-columns: 1fr; }
+        .pvg-shots { grid-template-columns: 1fr; }
+        .pvg-shots img { max-height: 420px; }
+      }
+      .download-card .dlc-brand { font-weight: 400; color: inherit; text-decoration: none; }
+    </style>
+  </head>
+  <body class="compact-page">
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="./" aria-label="DeskHelper home">
+        <img src="../assets/app-icon.png" alt="" width="34" height="34">
+        <span>DeskHelper</span>
+      </a>
+      <nav class="site-nav" aria-label="Page sections">
+        <a href="#what">功能</a>
+        <a href="#why">优势</a>
+        <a href="#release">获取</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-cta" href="https://apps.apple.com/us/app/deskhelper/id6781112576?mt=12">Mac App Store</a>
+        <details class="language-menu">
+          <summary>🌐 - 🇨🇳 简体中文</summary>
+          <div class="language-menu-list" aria-label="Language">
+            <a href="../" lang="en">🇺🇸🇬🇧 English</a>
+            <a href="./" lang="zh-Hans" aria-current="page">🇨🇳 简体中文</a>
+            <a href="../zh-Hant/" lang="zh-Hant">🇹🇼🇭🇰 繁體中文</a>
+            <a href="../ja/" lang="ja">🇯🇵 日本語</a>
+            <a href="../de/" lang="de">🇩🇪 Deutsch</a>
+            <a href="../fr/" lang="fr">🇫🇷 Français</a>
+            <a href="../es/" lang="es">🇪🇸🇲🇽 Español</a>
+            <a href="../ko/" lang="ko">🇰🇷 한국어</a>
+            <a href="../pt-BR/" lang="pt-BR">🇧🇷 Português (Brasil)</a>
+            <a href="../ru/" lang="ru">🇷🇺 Русский</a>
+            <a href="../it/" lang="it">🇮🇹 Italiano</a>
+            <a href="../nl/" lang="nl">🇳🇱 Nederlands</a>
+            <a href="../sv/" lang="sv">🇸🇪 Svenska</a>
+            <a href="../da/" lang="da">🇩🇰 Dansk</a>
+            <a href="../nb/" lang="nb">🇳🇴 Norsk bokmål</a>
+            <a href="../fi/" lang="fi">🇫🇮 Suomi</a>
+            <a href="../pl/" lang="pl">🇵🇱 Polski</a>
+            <a href="../tr/" lang="tr">🇹🇷 Türkçe</a>
+            <a href="../ar/" lang="ar">🇸🇦🇪🇬 العربية</a>
+            <a href="../th/" lang="th">🇹🇭 ไทย</a>
+            <a href="../vi/" lang="vi">🇻🇳 Tiếng Việt</a>
+            <a href="../id/" lang="id">🇮🇩 Bahasa Indonesia</a>
+            <a href="../ms/" lang="ms">🇲🇾 Bahasa Melayu</a>
+            <a href="../hi/" lang="hi">🇮🇳 हिन्दी</a>
+            <a href="../cs/" lang="cs">🇨🇿 Čeština</a>
+            <a href="../uk/" lang="uk">🇺🇦 Українська</a>
+          </div>
+        </details>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero compact-hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="../assets/hero-display.png"
+          alt="Laptop with blacked-out built-in display in front of an active external monitor."
+        >
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <div class="pvh-copy">
+            <p class="eyebrow">来自 Mac App Store 的菜单栏实用工具</p>
+            <h1 id="hero-title">DeskHelper</h1>
+            <p class="hero-subtitle">
+              实用的桌面功能，融合进一款 Mac 工具。
+            </p>
+            <p class="pvh-combines">
+              DeskHelper 将显示器控制、窗口排列与快捷键、活跃窗口高亮、Finder 操作和本地文件加密整合进一个专注的菜单栏 App——沙盒化运行,并通过 Mac App Store 分发。
+            </p>
+          </div>
+          <div class="pvh-chips" aria-label="Feature highlights">
+            <span>显示控制</span>
+            <span>窗口快捷操作</span>
+            <span>活动窗口高亮</span>
+            <span>Finder 操作</span>
+            <span>加密与压缩（.safe/.7z/.zip/.dmg）</span>
+            <span>隐私为本</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact-section pvw" id="what" aria-label="Features">
+        <article class="pvg-group pvg-display">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                  <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"></path>
+                </svg>
+              </div>
+              <h3>显示与窗口控制</h3>
+            </div>
+            <p class="pvg-lede">无需在系统设置、第三方窗口工具和显示菜单之间来回切换，即可管理你的可视工作区。</p>
+            <ul class="pvw-points">
+              <li>镜像到外接显示器时将 MacBook 内建屏幕熄黑。</li>
+              <li>切换镜像、按键前调暗显示器、睡眠、重启、关机，并调节亮度或对比度。</li>
+              <li>在显示器支持的模式(包括 HiDPI)之间快速切换。</li>
+              <li>将窗口移动到半屏、四角、居中位置、全屏布局、其他显示器或其他桌面。</li>
+              <li>用可自定义的点击穿透边框高亮当前窗口。</li>
+            </ul>
+            <div class="pvw-note">自定 HiDPI 分辨率预置属于 DeskHelper Pro;DeskHelper 在显示器已支持的模式之间切换。</div>
+          </div>
+          <div class="pvg-shots">
+            <figure>
+              <img src="../assets/deskhelper-menu-2026.png" width="990" height="1156" loading="lazy" alt="Main menu">
+              <figcaption>主菜单</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/resolution-submenu.png" width="1670" height="1886" loading="lazy" alt="Display modes">
+              <figcaption>更改分辨率</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/window-arrangement-submenu.png" width="1854" height="1938" loading="lazy" alt="Window arrangement">
+              <figcaption>窗口排列</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/highlight-settings.png" width="1016" height="978" loading="lazy" alt="Active-window highlight">
+              <figcaption>活动窗口高亮</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="pvg-group pvg-shortcuts">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                  <rect x="3" y="6" width="18" height="12" rx="2.5"></rect>
+                  <path d="M7 10h.01M11 10h.01M15 10h.01M17 14H7" stroke-width="1.9"></path>
+                </svg>
+              </div>
+              <h3>全局快捷键</h3>
+            </div>
+            <p class="pvg-lede">双手不离键盘:排列窗口、在显示器之间移动窗口、切换焦点,全程无需碰鼠标。</p>
+            <ul class="pvw-points">
+              <li>用可自定义的快捷键排列当前窗口,在任何 App 中都有效。</li>
+              <li>将当前窗口移到上一个或下一个显示器。</li>
+              <li>把焦点跳转到指定位置的窗口——左半屏、某个角落,或依次遍历四个象限。</li>
+              <li>用“聚焦 App”快捷键把常用 App 调到前台。</li>
+              <li>随时随地触发“变暗直到按键”和睡眠。</li>
+            </ul>
+            <div class="pvw-note">快捷键至少使用两个修饰键以避免冲突,并可随时恢复默认。</div>
+          </div>
+          <div class="pvg-shots stack">
+            <figure>
+              <img src="../assets/shortcuts-settings.png" width="1520" height="1584" loading="lazy" alt="Global Shortcuts configuration">
+              <figcaption>全局快捷键配置</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="pvg-group pvg-finder">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                  <path d="M3 7.5A2 2 0 0 1 5 5.5h4.2l1.8 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <rect x="10.4" y="12.6" width="5.6" height="4.4" rx="1" stroke-width="1.7"></rect>
+                  <path d="M11.9 12.6v-1.3a1.3 1.3 0 0 1 2.6 0v1.3" stroke-width="1.7"></path>
+                </svg>
+              </div>
+              <h3>Finder 操作与本地保险箱</h3>
+            </div>
+            <p class="pvg-lede">让 Finder 更好用，同时让所选文件、密码和加密保险箱都留在你的 Mac 上。</p>
+            <ul class="pvw-points">
+              <li>直接在 Finder 中新建文件和文件夹。</li>
+              <li>粘贴、移动、拷贝路径，并在 Terminal、TextEdit、VS Code、Codex、Claude 或其他受支持的应用中打开文件夹。</li>
+              <li>将所选文件或文件夹加密为本地 <code>.safe</code> 文件。</li>
+              <li>向现有保险箱添加文件，或只解密所选内容。</li>
+              <li>支持 .7z、.zip 和 .dmg 归档流程。</li>
+              <li>菜单标题可显示目标文件夹,每个操作都会落在你预期的位置。</li>
+            </ul>
+            <div class="pvw-note">只有当你在右键菜单中选择 DeskHelper 操作时，Finder 与保险箱操作才会运行。</div>
+          </div>
+          <div class="pvg-shots">
+            <figure>
+              <img src="../assets/finder-context-menu-20260614-013710.png" width="936" height="1054" loading="lazy" alt="Finder actions">
+              <figcaption>Finder 操作</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/finder-context-config.png" width="1762" height="1744" loading="lazy" alt="Finder configuration and permissions">
+              <figcaption>Finder 配置与权限</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="pvg-group pvg-privacy">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                <rect x="4" y="11" width="16" height="10" rx="2.5"></rect>
+                <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
+              </svg>
+            </div>
+              <h3>隐私为本</h3>
+            </div>
+            <p class="pvg-lede">DeskHelper 为本地 Mac 工作流而生。它不会把你的桌面工具变成又一个账户、分析数据流或云文件服务。</p>
+            <ul class="pvw-points">
+              <li>沙盒化的 Mac App Store App。</li>
+              <li>无需账户。</li>
+              <li>没有分析、广告 SDK、使用遥测或会话跟踪。</li>
+              <li>Safe 密码绝不存储、记录或传输;加密在本地运行。</li>
+              <li>只有两项可选权限,App 内配实时状态说明:辅助功能与 Finder 扩展。</li>
+            </ul>
+          </div>
+          <div class="pvg-shots stack">
+            <figure>
+              <img src="../assets/permissions-overview.png" width="1440" height="872" loading="lazy" alt="Permissions overview listing Accessibility and the Finder Extension with live grant status.">
+              <figcaption>权限总览（实时状态）</figcaption>
+            </figure>
+          </div>
+        </article>
+      </section>
+
+      <section class="section compact-section" id="why" aria-labelledby="why-title">
+        <div class="section-kicker">What&#x27;s good about it?</div>
+        <div class="compact-split">
+          <div>
+            <h2 id="why-title">Less fuss at your desk.</h2>
+            <ul class="copy-points" aria-label="DeskHelper benefits">
+              <li>
+                <strong>Only blacks out when it should</strong>
+                <span>dark when mirrored, normal when the MacBook screen is part of your workspace</span>
+              </li>
+              <li>
+                <strong>Fast everyday actions</strong>
+                <span>switch mirroring, dim until key press, sleep, arrange windows, highlight the active window, open Finder paths, and encrypt Safes</span>
+              </li>
+              <li>
+                <strong>Helpful, not noisy</strong>
+                <span>runs from the menu bar without a Dock window, account, or analytics</span>
+              </li>
+            </ul>
+          </div>
+          <div class="capability-list" aria-label="Key benefits">
+            <article>
+              <strong>For desk setups</strong>
+              <span>made for MacBooks that spend real time connected to an external display</span>
+            </article>
+            <article>
+              <strong>For window speed</strong>
+              <span>global shortcuts handle layout, display moves, arranged-window focus, and app focus</span>
+            </article>
+            <article>
+              <strong>For Finder and private files</strong>
+              <span>create, paste, move, open, encrypt, decrypt, and extract selected items from the context menu you already use</span>
+            </article>
+            <article>
+              <strong>For privacy</strong>
+              <span>no account, no analytics, no Safe password logging, and feedback opens as a reviewable email draft</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact-section compact-release" id="release" aria-labelledby="release-title">
+        <div class="section-kicker">How to get it</div>
+        <div class="pvr-flow">
+          <h2 id="release-title">Install it from the Mac App Store.</h2>
+          <ol class="steps compact-steps pvr-steps" aria-label="Install steps">
+            <li>
+              <strong>1</strong>
+              <span>在 Mac App Store 打开 DeskHelper 页面。</span>
+            </li>
+            <li>
+              <strong>2</strong>
+              <span>安装 DeskHelper,并从“应用程序”启动。</span>
+            </li>
+            <li>
+              <strong>3</strong>
+              <span>仅在使用相关功能时启用 Finder 扩展并授予辅助功能权限。</span>
+            </li>
+          </ol>
+          <div class="compatibility-list" aria-label="Compatibility">
+            <span>macOS 13.0 或更高版本</span>
+            <span>Apple Silicon + Intel</span>
+            <span>通过 App Store 更新</span>
+          </div>
+        </div>
+        <div class="download-card" aria-label="Mac App Store call to action">
+          <div>
+            <a class="dlc-brand" href="https://xintechllc.com/">Xintech LLC</a>
+          </div>
+          <div class="download-actions">
+            <a class="button button-primary" href="https://apps.apple.com/us/app/deskhelper/id6781112576?mt=12">
+              在 Mac App Store 查看
+            </a>
+            <a class="text-link" href="support.html">支持</a>
+            <a class="text-link" href="privacy.html">Privacy</a>
             <a class="text-link" href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a>
-</div>
-</div>
-</section>
-</main>
-<script src="../script.js?v=20260609-dropdown2"></script>
-</body>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../script.js?v=20260609-dropdown2"></script>
+    <div class="pvl-overlay" id="pvl-overlay" hidden>
+      <img alt="">
+    </div>
+    <script>
+      (function () {
+        var overlay = document.getElementById("pvl-overlay");
+        var overlayImg = overlay.querySelector("img");
+        function close() {
+          overlay.hidden = true;
+          document.body.style.overflow = "";
+        }
+        document.querySelectorAll(".pvg-shots img").forEach(function (img) {
+          img.addEventListener("click", function () {
+            overlayImg.src = img.currentSrc || img.src;
+            overlayImg.alt = img.alt;
+            overlay.hidden = false;
+            document.body.style.overflow = "hidden";
+          });
+        });
+        overlay.addEventListener("click", close);
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape") close();
+        });
+      })();
+    </script>
+  </body>
 </html>
