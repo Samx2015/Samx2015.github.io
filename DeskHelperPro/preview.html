@@ -44,23 +44,15 @@
     <style>
       /* Preview-only: merged feature groups (redesign card copy + paired
          screenshots), namespaced so the shared styles.css stays untouched. */
-      .compact-page:has(.hero-subtitle) #what.pvw > .section-kicker,
-      .compact-page:has(.hero-subtitle) #what.pvw h2 {
-        display: block;
-      }
-      .pvw > .pvw-header,
       .pvw > .pvg-group {
         width: min(100%, var(--wide-max));
         margin-inline: auto;
       }
-      .pvw-header { margin-bottom: 28px; max-width: 100%; }
-      .pvw-header h2 { margin-bottom: 14px; }
-      .pvw-intro {
-        margin: 0;
+      .pvh-combines {
+        margin: 0.9rem 0 0;
+        max-width: 44rem;
         color: var(--muted);
-        font-size: clamp(1.03rem, 1.4vw, 1.18rem);
-        line-height: 1.7;
-        max-width: 60rem;
+        line-height: 1.65;
       }
       .pvg-group {
         display: grid;
@@ -240,9 +232,12 @@
           <p class="eyebrow">Mac menu-bar utility suite</p>
           <h1 id="hero-title">DeskHelper Pro</h1>
           <p class="hero-subtitle">
-            A quiet menu-bar app for display control, window arrangement,
-            Finder actions, local Safes, pointer profiles, key/button remapping,
-            active-window highlighting, and audio controls.
+            The useful desk features, merged into one Mac utility.
+          </p>
+          <p class="pvh-combines">
+            DeskHelper Pro combines display control, window shortcuts, Finder actions,
+            local file protection, input-device tuning, app audio control, and
+            privacy-focused behavior into one focused menu-bar app.
           </p>
           <div class="hero-summary" aria-label="DeskHelper Pro summary">
             <div>
@@ -272,16 +267,7 @@
         </div>
       </section>
 
-      <section class="section compact-section pvw" id="what" aria-labelledby="what-title">
-        <div class="section-kicker">What is it?</div>
-        <div class="pvw-header">
-          <h2 id="what-title">The useful desk features, merged into one Mac utility.</h2>
-          <p class="pvw-intro">
-            DeskHelper Pro combines display control, window shortcuts, Finder actions, local file protection,
-            input-device tuning, app audio control, and privacy-focused behavior into one focused menu-bar app.
-          </p>
-        </div>
-
+      <section class="section compact-section pvw" id="what" aria-label="Features">
         <article class="pvg-group pvg-display">
           <div class="pvg-copy">
             <div class="pvw-icon" aria-hidden="true">&#8984;</div>
