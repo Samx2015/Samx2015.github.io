@@ -39,6 +39,290 @@
     <link rel="icon" href="../assets/app-icon.png" type="image/png">
     <link rel="preload" href="../assets/hero-display.png" as="image">
     <link rel="stylesheet" href="../styles.css?v=20260704-merged">
+    <style>
+      /* Preview-only: merged feature groups (redesign card copy + paired
+         screenshots), namespaced so the shared styles.css stays untouched. */
+      .pvw > .pvg-group {
+        width: min(100%, var(--wide-max));
+        margin-inline: auto;
+      }
+      .hero.compact-hero {
+        border-bottom: 0;
+      }
+      .compact-release::before {
+        display: none;
+      }
+      /* With the separators gone, close up the vertical gaps around them. */
+      #what.pvw.compact-section {
+        padding-top: 0.7rem;
+        padding-bottom: 1.1rem;
+      }
+      #release.compact-release.compact-section {
+        padding-top: 1.1rem;
+      }
+      .compact-hero {
+        min-height: 0;
+        padding-top: 1.3rem;
+        padding-bottom: 1rem;
+      }
+      .compact-hero .eyebrow { margin-bottom: 0.35rem; }
+      .compact-hero .hero-subtitle {
+        margin-bottom: 0;
+        font-size: 1.12rem;
+      }
+      .compact-hero .hero-content {
+        display: grid;
+        grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+        gap: clamp(1.5rem, 4vw, 3.5rem);
+        align-items: center;
+        padding-top: 0;
+        width: min(100%, var(--wide-max));
+      }
+      .compact-hero h1 {
+        font-size: clamp(1.9rem, 3.2vw, 2.4rem);
+        margin-bottom: 0.4rem;
+      }
+      .pvh-chips {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 6px 8px;
+        align-content: center;
+      }
+      .pvh-chips span {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px 13px 5px 11px;
+        border: 1px solid rgba(28, 42, 64, 0.1);
+        border-radius: 999px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.72));
+        color: #3d4a5d;
+        font-size: 0.88rem;
+        letter-spacing: 0.01em;
+        box-shadow:
+          0 1px 2px rgba(21, 32, 51, 0.05),
+          0 6px 18px rgba(21, 32, 51, 0.05);
+        backdrop-filter: blur(8px);
+      }
+      .pvh-chips span::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-radius: 999px;
+        background: var(--chip-dot, #246bfe);
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--chip-dot, #246bfe) 16%, transparent);
+      }
+      .pvh-chips span:nth-child(1) { --chip-dot: #246bfe; }
+      .pvh-chips span:nth-child(2) { --chip-dot: #4f8df9; }
+      .pvh-chips span:nth-child(3) { --chip-dot: #0f9f9a; }
+      .pvh-chips span:nth-child(4) { --chip-dot: #087975; }
+      .pvh-chips span:nth-child(5) { --chip-dot: #7964e8; }
+      .pvh-chips span:nth-child(6) { --chip-dot: #9a5fd6; }
+      .pvh-chips span:nth-child(7) { --chip-dot: #c36518; }
+      .pvh-chips span:nth-child(8) { --chip-dot: #15813b; }
+      @media (max-width: 980px) {
+        .compact-hero .hero-content { grid-template-columns: 1fr; }
+      }
+      .pvh-combines {
+        margin: 0.5rem 0 0;
+        max-width: 44rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+        line-height: 1.55;
+      }
+      .pvg-group {
+        display: grid;
+        grid-template-columns: minmax(0, 0.44fr) minmax(0, 0.56fr);
+        gap: clamp(16px, 2.5vw, 28px);
+        align-items: center;
+        padding: 20px;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: var(--panel);
+        box-shadow: var(--shadow);
+      }
+      .pvw > .pvg-group + .pvg-group { margin-top: 18px; }
+      .pvg-copy {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+      .pvw-icon {
+        width: 42px;
+        height: 42px;
+        display: grid;
+        place-items: center;
+        border-radius: 15px;
+        background: #e8f0ff;
+        color: #0f4fd6;
+        font-size: 1.28rem;
+      }
+      .pvg-finder .pvw-icon { background: #e5f7f6; color: #087975; }
+      .pvg-input .pvw-icon { background: #f0edff; color: #7964e8; }
+      .pvg-audio .pvw-icon { background: #fff2e4; color: #c36518; }
+      .pvg-privacy .pvw-icon { background: #eaf9ee; color: #15813b; }
+      .pvg-head {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .pvg-head .pvw-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 12px;
+        font-size: 1.1rem;
+        flex: 0 0 auto;
+      }
+      .pvg-head h3 { margin: 0; }
+      .pvg-copy h3 {
+        margin: 0 0 8px;
+        font-size: 1.28rem;
+        line-height: 1.2;
+        color: var(--ink);
+        font-weight: 500;
+      }
+      .pvg-copy p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.62;
+      }
+      .pvw-points {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 10px;
+      }
+      .pvw-points li {
+        position: relative;
+        padding-left: 24px;
+        color: var(--muted);
+        line-height: 1.52;
+      }
+      .pvw-points li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.68em;
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #246bfe, #0f9f9a);
+      }
+      .pvg-privacy .pvw-points li {
+        padding-left: 30px;
+      }
+      .pvg-privacy .pvw-points li::before {
+        content: "\2713";
+        top: 0.18em;
+        width: 19px;
+        height: 19px;
+        display: grid;
+        place-items: center;
+        color: #fff;
+        background: linear-gradient(135deg, #22a06b, #15813b);
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 1;
+      }
+      .pvw-note {
+        margin-top: auto;
+        padding: 13px 14px;
+        border: 1px solid rgba(36, 107, 254, 0.14);
+        border-radius: 15px;
+        color: #315684;
+        background: rgba(232, 240, 255, 0.6);
+        font-size: 0.92rem;
+        line-height: 1.45;
+      }
+      .pvg-shots {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        align-content: start;
+      }
+      .pvg-shots.stack { grid-template-columns: 1fr; }
+      .pvg-shots figure {
+        margin: 0;
+        padding: 6px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: linear-gradient(135deg, rgba(21, 32, 51, 0.05), rgba(36, 107, 254, 0.07));
+      }
+      .pvg-shots img {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        max-height: 360px;
+        height: auto;
+        margin-inline: auto;
+        border-radius: 10px;
+      }
+      .pvg-shots.stack img {
+        width: 100%;
+        max-height: none;
+      }
+      .pvg-shots img { cursor: zoom-in; }
+      .pvl-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 999;
+        display: grid;
+        place-items: center;
+        padding: 3vmin;
+        background: rgba(10, 16, 26, 0.82);
+        backdrop-filter: blur(6px);
+        cursor: zoom-out;
+      }
+      .pvl-overlay[hidden] { display: none; }
+      .pvl-overlay img {
+        max-width: min(1500px, 96vw);
+        max-height: 93vh;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.5);
+      }
+      .pvg-shots figcaption {
+        margin-top: 6px;
+        color: var(--muted);
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      #release > .pvr-flow {
+        width: min(100%, var(--wide-max));
+        margin-inline: auto;
+      }
+      .pvr-steps {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+      .pvr-steps strong {
+        display: inline-grid;
+        place-items: center;
+        width: 26px;
+        height: 26px;
+        flex: 0 0 auto;
+        border-radius: 999px;
+        color: #fff;
+        background: var(--step-color, #246bfe);
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--step-color, #246bfe) 18%, transparent);
+        font-size: 0.88rem;
+        font-weight: 700;
+        line-height: 1;
+      }
+      .pvr-steps li:nth-child(1) strong { --step-color: #246bfe; }
+      .pvr-steps li:nth-child(2) strong { --step-color: #0f9f9a; }
+      .pvr-steps li:nth-child(3) strong { --step-color: #15813b; }
+      .pvr-flow .compatibility-list { margin-top: 18px; }
+      @media (max-width: 980px) {
+        .pvr-steps { grid-template-columns: 1fr; }
+        .pvg-group { grid-template-columns: 1fr; }
+        .pvg-shots { grid-template-columns: 1fr; }
+        .pvg-shots img { max-height: 420px; }
+      }
+    </style>
   </head>
   <body class="compact-page">
     <header class="site-header" aria-label="मुख्य">
@@ -99,156 +383,188 @@
         >
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="hero-content">
-          <p class="eyebrow">Mac मेनू बार डिस्प्ले सहायक</p>
-          <h1 id="hero-title">DeskHelper Pro</h1>
-          <p class="hero-subtitle">
-            MacBook display control, keyboard backlight, Auto Wi-Fi Switch, Finder context menus, local Safes के लिए शांत menu bar app।
-          </p>
-          <div class="hero-summary" aria-label="DeskHelper Pro सारांश">
-            <div>
-              <strong>ब्लैकआउट</strong>
-              <span>बाहरी मॉनिटर पर मिरर करते समय MacBook की अंदरूनी स्क्रीन अंधेरी रखता है.</span>
-            </div>
-            <div>
-              <strong>नियंत्रण</strong>
-              <span>मिरर, डिम, स्लीप, ब्राइटनेस, कॉन्ट्रास्ट और शॉर्टकट मेनू बार से.</span>
-            </div>
-            <div>
-              <strong>Finder + Safes</strong>
-              <span>Files और folders बनाएँ, items paste करें, paths apps में खोलें, और local Safes को encrypt या decrypt करें।</span>
-            </div>
+          <div class="pvh-copy">
+            <p class="eyebrow">Mac मेनू बार डिस्प्ले सहायक</p>
+            <h1 id="hero-title">DeskHelper Pro</h1>
+            <p class="hero-subtitle">
+              डेस्क की काम की सुविधाएँ, एक ही Mac यूटिलिटी में।
+            </p>
+            <p class="pvh-combines">
+              DeskHelper Pro डिस्प्ले नियंत्रण, विंडो शॉर्टकट, Finder क्रियाएँ, स्थानीय फ़ाइल सुरक्षा, इनपुट डिवाइस ट्यूनिंग, ऐप ऑडियो नियंत्रण और निजता-केंद्रित डिज़ाइन को एक केंद्रित मेनू बार ऐप में समेटता है।
+            </p>
           </div>
-          <div class="trust-pills" aria-label="मुख्य बातें">
-            <span>Dock विंडो नहीं</span>
-            <span>Wi-Fi पासवर्ड नहीं</span>
-            <span>Local Safes</span>
-            <span>14 दिन ट्रायल</span><span>26 भाषाओं में उपलब्ध</span></div>
+          <div class="pvh-chips" aria-label="Highlights">
+            <span>डिस्प्ले नियंत्रण</span>
+            <span>विंडो शॉर्टकट</span>
+            <span>Finder क्रियाएँ</span>
+            <span>एन्क्रिप्ट व संपीड़न (.safe/.7z/.zip/.dmg)</span>
+            <span>माउस संवेदनशीलता व स्क्रॉल गति</span>
+            <span>कुंजी/बटन री-मैपिंग</span>
+            <span>ऐप ऑडियो मिक्सर</span>
+            <span>डिज़ाइन से निजी</span>
+          </div>
         </div>
       </section>
 
-      <section class="section controls-section compact-section" id="what" aria-labelledby="what-title">
-        <div class="section-kicker">यह क्या है?</div>
-        <div class="controls-layout">
-          <div>
-            <h2 id="what-title">यह सब क्या करता है।</h2>
-          <ul class="copy-points" aria-label="DeskHelper Pro सुविधाएँ">
-              <li><strong>बिल्ट-इन डिस्प्ले ब्लैकआउट करें</strong><span>बिल्ट-इन डिस्प्ले को बाहरी पर मिरर करता है, फिर उसे काला कर देता है।</span></li>
-              <li><strong>डिस्प्ले नियंत्रण</strong><span>मिररिंग बदलें, की दबाने तक डिस्प्ले मंद करें, Mac को सुलाएँ, और मेनू बार से चमक या कंट्रास्ट समायोजित करें।</span></li>
-              <li><strong>कीबोर्ड बैकलाइट</strong><span>स्लाइडर से MacBook के बिल्ट-इन कीबोर्ड की चमक समायोजित करें।</span></li>
-              <li><strong>Auto Wi-Fi Switch</strong><span>सक्षम होने पर, सहेजे गए Wi-Fi नेटवर्क देखता है और मौजूदा सिग्नल कम होने पर बेहतर ज्ञात एक्सेस पॉइंट पर स्विच करता है।</span></li>
-              <li><strong>Finder context menus</strong><span>Files और folders बनाएँ, copied items paste करें, paths copy करें, या Finder selections को TextEdit, Terminal, Codex, Claude, VSCode या किसी अन्य compatible app में खोलें।</span></li>
-              <li><strong>Safes</strong><span>Selected files या folders को एक local .safe file में encrypt करें, किसी existing Safe में जोड़ें, या Safe को वापस folder में decrypt करें।</span></li>
-              <li><strong>100% गोपनीय</strong><span>Google Drive, OneDrive, GitHub और अन्य general-purpose cloud या code सेवाओं के विपरीत, plaintext, passwords और encryption keys आपके Mac पर ही रहते हैं।</span></li>
-              <li><strong>गोपनीयता की मूल बातें</strong><span>कोई खाता नहीं, कोई एनालिटिक्स नहीं, कोई Wi-Fi पासवर्ड नहीं, और कोई Dock विंडो नहीं।</span></li>
-          </ul>
+      <section class="section compact-section pvw" id="what" aria-label="Features">
+        <article class="pvg-group pvg-display">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">&#8984;</div>
+              <h3>डिस्प्ले और विंडो नियंत्रण</h3>
+            </div>
+            <p class="pvg-lede">सिस्टम सेटिंग्स, तृतीय-पक्ष विंडो टूल और डिस्प्ले मेनू के बीच भटके बिना अपने दृश्य कार्यक्षेत्र को संभालें।</p>
+            <ul class="pvw-points">
+              <li>बाहरी मॉनिटर पर मिररिंग के दौरान MacBook की इनबिल्ट स्क्रीन को काला करें।</li>
+              <li>मिररिंग बदलें, कुंजी दबने तक डिस्प्ले मंद करें, स्लीप, रीस्टार्ट, शट डाउन करें और चमक या कंट्रास्ट समायोजित करें।</li>
+              <li>समर्थित HiDPI/कस्टम डिस्प्ले मोड इंस्टॉल करें और बदलें।</li>
+              <li>विंडो को आधे हिस्सों, कोनों, केंद्र, फ़ुल-स्क्रीन लेआउट, दूसरे डिस्प्ले या दूसरे डेस्कटॉप पर ले जाएँ।</li>
+              <li>सक्रिय विंडो को क्लिक-पार होने वाले अनुकूलनीय बॉर्डर से हाइलाइट करें।</li>
+            </ul>
+            <div class="pvw-note">व्यवस्थित विंडो पर फ़ोकस और Rectangle/Rectangle Pro टकराव मार्गदर्शन शामिल है।</div>
           </div>
-          <div class="product-screenshots" aria-label="DeskHelper Pro स्क्रीनशॉट">
-            <figure class="menu-screenshot main-menu-screenshot">
-              <img src="../assets/deskhelperpro-menu.png?v=20260704" alt="DeskHelper Pro menu: display, Wi-Fi, Finder, Safe, privacy, and updates." />
+          <div class="pvg-shots">
+            <figure>
+              <img src="../assets/deskhelperpro-menu.png?v=20260704" width="1028" height="1980" loading="lazy" alt="मुख्य मेनू">
+              <figcaption>मुख्य मेनू</figcaption>
             </figure>
-            <figure class="menu-screenshot finder-context-screenshot">
-              <img src="../assets/finder-context-menu.png?v=20260704" alt="Finder context menus: New File, New Folder, Paste, Open in apps, Safes." />
+            <figure>
+              <img src="../assets/resolution-submenu.png" width="1650" height="1984" loading="lazy" alt="रिज़ॉल्यूशन बदलें">
+              <figcaption>रिज़ॉल्यूशन बदलें</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/window-arrangement-submenu.png" width="1828" height="2260" loading="lazy" alt="विंडो व्यवस्था">
+              <figcaption>विंडो व्यवस्था</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/highlight-settings.png" width="1240" height="1202" loading="lazy" alt="सक्रिय विंडो हाइलाइट">
+              <figcaption>सक्रिय विंडो हाइलाइट</figcaption>
             </figure>
           </div>
-        </div>
-        <div class="feature-tour">
-          <article class="tour-row">
-            <figure>
-              <img
-                src="../assets/window-arrangement-submenu.png"
-                width="1828"
-                height="2260"
-                loading="lazy"
-                decoding="async"
-                alt="विंडो व्यवस्था"
-              >
-            </figure>
-            <div class="tour-copy">
-              <h3>विंडो व्यवस्था</h3>
-              <p>सक्रिय विंडो को आधे या चौथाई हिस्सों में स्नैप करें, बड़ा करें या केंद्र में रखें — हर क्रिया का अपना कीबोर्ड शॉर्टकट।</p>
+        </article>
+
+        <article class="pvg-group pvg-finder">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                  <path d="M3 7.5A2 2 0 0 1 5 5.5h4.2l1.8 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <rect x="10.4" y="12.6" width="5.6" height="4.4" rx="1" stroke-width="1.7"></rect>
+                  <path d="M11.9 12.6v-1.3a1.3 1.3 0 0 1 2.6 0v1.3" stroke-width="1.7"></path>
+                </svg>
+              </div>
+              <h3>Finder क्रियाएँ और स्थानीय तिजोरियाँ</h3>
             </div>
-          </article>
-          <article class="tour-row">
+            <p class="pvg-lede">Finder को और उपयोगी बनाएँ — चयनित फ़ाइलें, पासवर्ड और एन्क्रिप्टेड तिजोरियाँ आपके Mac पर ही रहती हैं।</p>
+            <ul class="pvw-points">
+              <li>Finder से ही नई फ़ाइलें और फ़ोल्डर बनाएँ।</li>
+              <li>पेस्ट करें, स्थानांतरित करें, पथ कॉपी करें और Terminal, TextEdit, VS Code, Codex, Claude या किसी अन्य समर्थित ऐप में फ़ोल्डर खोलें।</li>
+              <li>चयनित फ़ाइलों या फ़ोल्डरों को स्थानीय <code>.safe</code> फ़ाइलों में एन्क्रिप्ट करें।</li>
+              <li>मौजूदा तिजोरी में फ़ाइलें जोड़ें या केवल चयनित सामग्री डिक्रिप्ट करें।</li>
+              <li>समर्थित .7z, .zip और .dmg आर्काइव प्रवाहों के साथ काम करें।</li>
+            </ul>
+            <div class="pvw-note">Finder और तिजोरी क्रियाएँ तभी चलती हैं जब आप संदर्भ मेनू से DeskHelper Pro की कोई क्रिया चुनते हैं।</div>
+          </div>
+          <div class="pvg-shots">
             <figure>
-              <img
-                src="../assets/resolution-submenu.png"
-                width="1650"
-                height="1984"
-                loading="lazy"
-                decoding="async"
-                alt="रिज़ॉल्यूशन बदलें"
-              >
+              <img src="../assets/finder-context-menu.png?v=20260704" width="1066" height="994" loading="lazy" alt="Finder क्रियाएँ">
+              <figcaption>Finder क्रियाएँ</figcaption>
             </figure>
-            <div class="tour-copy">
-              <h3>रिज़ॉल्यूशन बदलें</h3>
-              <p>मेनू से ही रिज़ॉल्यूशन और रिफ़्रेश रेट बदलें — सभी उपयोगी मोड, HiDPI प्रीसेट और कस्टम आकार।</p>
-            </div>
-          </article>
-          <article class="tour-row">
             <figure>
-              <img
-                src="../assets/highlight-settings.png"
-                width="1240"
-                height="1202"
-                loading="lazy"
-                decoding="async"
-                alt="सक्रिय विंडो हाइलाइट"
-              >
+              <img src="../assets/finder-context-config.png" width="1986" height="1968" loading="lazy" alt="Finder संदर्भ मेनू">
+              <figcaption>Finder संदर्भ मेनू</figcaption>
             </figure>
-            <div class="tour-copy">
-              <h3>सक्रिय विंडो हाइलाइट</h3>
-              <p>फ़ोकस की गई सामान्य ऐप विंडो के चारों ओर क्लिक-पारदर्शी बॉर्डर बनाता है। DeskHelper Pro वास्तविक ऐप विंडो नहीं बदलता।</p>
+          </div>
+        </article>
+
+        <article class="pvg-group pvg-input">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                  <rect x="8" y="3" width="8" height="18" rx="4"></rect>
+                  <path d="M12 7v3.5"></path>
+                </svg>
+              </div>
+              <h3>पॉइंटर, स्क्रॉल और इनपुट प्रोफ़ाइल</h3>
             </div>
-          </article>
-          <article class="tour-row">
+            <p class="pvg-lede">हर डिवाइस के हिसाब से माउस, पॉइंटिंग डिवाइस, कीबोर्ड व्यवहार और बटन मैपिंग ट्यून करें।</p>
+            <ul class="pvw-points">
+              <li>हर माउस के लिए पॉइंटर संवेदनशीलता और त्वरण समायोजित करें।</li>
+              <li>हर पॉइंटिंग डिवाइस के लिए स्क्रॉल गति और त्वरण सेट करें।</li>
+              <li>LinearMouse-संगत स्केलिंग के साथ रैखिक स्क्रॉलिंग इस्तेमाल करें।</li>
+              <li>कुंजियों या समर्थित माउस बटनों को कुंजी, शॉर्टकट, दोहरी-भूमिका कुंजी या Hyper-शैली मॉडिफ़ायर में री-मैप करें।</li>
+              <li>प्रोफ़ाइल और नियम इसी Mac पर स्थानीय रूप से सहेजे जाते हैं।</li>
+            </ul>
+            <div class="pvw-note">तब उपयोगी जब एक डेस्क पर कई माउस, कीबोर्ड या वर्कफ़्लो-विशेष शॉर्टकट हों।</div>
+          </div>
+          <div class="pvg-shots">
             <figure>
-              <img
-                src="../assets/mouse-scroll-settings.png"
-                width="1296"
-                height="1554"
-                loading="lazy"
-                decoding="async"
-                alt="माउस संवेदनशीलता और त्वरण · स्क्रॉल गति और त्वरण"
-              >
+              <img src="../assets/mouse-scroll-settings.png" width="1296" height="1554" loading="lazy" alt="माउस संवेदनशीलता और त्वरण · स्क्रॉल गति और त्वरण">
+              <figcaption>माउस संवेदनशीलता और त्वरण · स्क्रॉल गति और त्वरण</figcaption>
             </figure>
-            <div class="tour-copy">
-              <h3>माउस संवेदनशीलता और त्वरण · स्क्रॉल गति और त्वरण</h3>
-              <p>हर माउस के लिए पॉइंटर संवेदनशीलता और त्वरण समायोजित करें। प्रोफ़ाइल इस Mac पर रहती हैं और कभी अपलोड नहीं होतीं।</p>
-            </div>
-          </article>
-          <article class="tour-row">
             <figure>
-              <img
-                src="../assets/key-button-remapping.png"
-                width="1716"
-                height="1408"
-                loading="lazy"
-                decoding="async"
-                alt="कुंजी और बटन रीमैपिंग"
-              >
+              <img src="../assets/key-button-remapping.png" width="1716" height="1408" loading="lazy" alt="कुंजी और बटन रीमैपिंग">
+              <figcaption>कुंजी और बटन रीमैपिंग</figcaption>
             </figure>
-            <div class="tour-copy">
-              <h3>कुंजी और बटन रीमैपिंग</h3>
-              <p>ऐसे नियम बनाएँ जो किसी कुंजी या समर्थित माउस बटन को कुंजी, शॉर्टकट, Dual-Role कुंजी या Hyper-शैली मॉडिफ़ायर पर रीमैप करें। नियम इसी Mac पर रहते हैं और कभी अपलोड नहीं होते।</p>
+          </div>
+        </article>
+
+        <article class="pvg-group pvg-audio">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">&#9834;</div>
+              <h3>ऐप ऑडियो और डेस्क यूटिलिटी</h3>
             </div>
-          </article>
-          <article class="tour-row">
+            <p class="pvg-lede">डेस्क की उन छोटी-छोटी चीज़ों को संभालें जो अलग-अलग ऐप्स में बिखरी होने पर काम में बाधा डालती हैं।</p>
+            <ul class="pvw-points">
+              <li>मेनू बार से हर ऐप का वॉल्यूम सेट करें।</li>
+              <li>धीमी आवाज़ वाले ऐप्स को 200% तक बढ़ाएँ।</li>
+              <li>ऐप्स को अलग-अलग म्यूट करें।</li>
+              <li>सिग्नल गिरने पर स्वचालित Wi-Fi स्विच को बेहतर ज्ञात एक्सेस पॉइंट पर जाने दें।</li>
+              <li>Dock में विंडो जोड़े बिना मेनू बार से चलाएँ।</li>
+            </ul>
+            <div class="pvw-note">macOS 14.4 या नए संस्करण पर ऑडियो मिक्सर को सिस्टम ऑडियो रिकॉर्डिंग अनुमति चाहिए; ऑडियो स्थानीय रूप से संसाधित होता है।</div>
+          </div>
+          <div class="pvg-shots stack">
             <figure>
-              <img
-                src="../assets/finder-context-config.png"
-                width="1986"
-                height="1968"
-                loading="lazy"
-                decoding="async"
-                alt="Finder संदर्भ मेनू"
-              >
+              <img src="../assets/audio-mixer.png" width="1028" height="225" loading="lazy" alt="मेनू में ऐप-वार ऑडियो मिक्सर">
+              <figcaption>मेनू में ऐप-वार ऑडियो मिक्सर</figcaption>
             </figure>
-            <div class="tour-copy">
-              <h3>Finder संदर्भ मेनू</h3>
-              <p>Finder क्रियाएँ, अनुमतियाँ, सहेजे गए फ़ोल्डर पहुंच और गोपनीयता नियंत्रण कॉन्फ़िगर करें।</p>
+            <figure>
+              <img src="../assets/wifi-switch.png" width="1028" height="200" loading="lazy" alt="मेनू में स्वचालित Wi-Fi स्विच">
+              <figcaption>मेनू में स्वचालित Wi-Fi स्विच</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="pvg-group pvg-privacy">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                <rect x="4" y="11" width="16" height="10" rx="2.5"></rect>
+                <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
+              </svg>
             </div>
-          </article>
-        </div>
+              <h3>डिज़ाइन से निजी</h3>
+            </div>
+            <p class="pvg-lede">DeskHelper Pro स्थानीय Mac वर्कफ़्लो के लिए बना है। यह आपकी डेस्क यूटिलिटी को एक और खाता, एनालिटिक्स स्ट्रीम या क्लाउड फ़ाइल सेवा नहीं बनाता।</p>
+            <ul class="pvw-points">
+              <li>किसी खाते की ज़रूरत नहीं।</li>
+              <li>कोई एनालिटिक्स, विज्ञापन SDK, उपयोग टेलीमेट्री या सत्र ट्रैकिंग नहीं।</li>
+              <li>न Wi-Fi पासवर्ड एकत्र किए जाते हैं, न तिजोरी पासवर्ड दर्ज होते हैं।</li>
+              <li>सादा पाठ, तिजोरी पासवर्ड, एन्क्रिप्शन कुंजियाँ, पॉइंटर प्रोफ़ाइल, री-मैपिंग नियम और ऑडियो प्रोसेसिंग स्थानीय ही रहते हैं।</li>
+              <li>वैकल्पिक अनुमतियाँ स्पष्ट रूप से समझाई जाती हैं: एक्सेसिबिलिटी, इनपुट मॉनिटरिंग, सिस्टम ऑडियो रिकॉर्डिंग, स्थान, Finder एक्सटेंशन और फ़ुल डिस्क एक्सेस।</li>
+            </ul>
+          </div>
+          <div class="pvg-shots stack">
+            <figure>
+              <img src="../assets/permissions-overview.png?v=2" width="1440" height="1798" loading="lazy" alt="अनुमतियों का सारांश, लाइव स्थिति सहित">
+              <figcaption>अनुमतियों का सारांश, लाइव स्थिति सहित</figcaption>
+            </figure>
+          </div>
+        </article>
       </section>
 
       <section class="section compact-section" id="why" aria-labelledby="why-title">
@@ -290,41 +606,25 @@
 
       <section class="section compact-section compact-release" id="release" aria-labelledby="release-title">
         <div class="section-kicker">कैसे पाएं</div>
-        <div class="compact-split">
-          <div>
-            <h2 id="release-title">डाउनलोड करें और 14 दिन आजमाएं.</h2>
-            <ul class="copy-points" aria-label="रिलीज सारांश">
-              <li>
-                <strong>डाउनलोड</strong>
-                <span>Apple Silicon और Intel Mac के लिए एक ऐप</span>
-              </li>
-              <li>
-                <strong>इंस्टॉल</strong>
-                <span>DeskHelper Pro को Applications फ़ोल्डर में खींचें</span>
-              </li>
-              <li>
-                <strong>आजमाएं</strong>
-                <span>trial में सभी Pro सुविधाएं सक्षम रहती हैं</span>
-              </li>
-            </ul>
-            <div class="compatibility-list" aria-label="संगतता">
-              <span>macOS 13.0 या बाद का</span>
-              <span>arm64 + x86_64</span><span class="app-version">v1.3.16</span></div>
-          </div>
-          <ol class="steps compact-steps">
+        <div class="pvr-flow">
+          <h2 id="release-title">डाउनलोड करें और 14 दिन आजमाएं.</h2>
+          <ol class="steps compact-steps pvr-steps" aria-label="Install steps">
             <li>
               <strong>1</strong>
-              <span>DMG डाउनलोड करें.</span>
+              <span>DMG डाउनलोड करें — Apple Silicon और Intel दोनों Mac के लिए एक ही ऐप।</span>
             </li>
             <li>
               <strong>2</strong>
-              <span>ऐप को Applications फ़ोल्डर में खींचें.</span>
+              <span>DeskHelper Pro को Applications में खींचें और चलाएँ।</span>
             </li>
             <li>
               <strong>3</strong>
-              <span>Applications फ़ोल्डर से शुरू करें.</span>
+              <span>सभी Pro सुविधाएँ 14 दिन मुफ़्त आज़माएँ।</span>
             </li>
           </ol>
+          <div class="compatibility-list" aria-label="संगतता">
+              <span>macOS 13.0 या बाद का</span>
+              <span>arm64 + x86_64</span><span class="app-version">v1.3.16</span></div>
         </div>
         <div class="download-card" aria-label="डाउनलोड कार्रवाई">
           <div>
@@ -342,5 +642,30 @@
       </section>
     </main>
     <script src="../script.js?v=20260609-dropdown"></script>
+    <div class="pvl-overlay" id="pvl-overlay" hidden>
+      <img alt="">
+    </div>
+    <script>
+      (function () {
+        var overlay = document.getElementById("pvl-overlay");
+        var overlayImg = overlay.querySelector("img");
+        function close() {
+          overlay.hidden = true;
+          document.body.style.overflow = "";
+        }
+        document.querySelectorAll(".pvg-shots img").forEach(function (img) {
+          img.addEventListener("click", function () {
+            overlayImg.src = img.currentSrc || img.src;
+            overlayImg.alt = img.alt;
+            overlay.hidden = false;
+            document.body.style.overflow = "hidden";
+          });
+        });
+        overlay.addEventListener("click", close);
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape") close();
+        });
+      })();
+    </script>
   </body>
 </html>

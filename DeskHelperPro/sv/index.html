@@ -39,6 +39,290 @@
     <link rel="icon" href="../assets/app-icon.png" type="image/png">
     <link rel="preload" href="../assets/hero-display.png" as="image">
     <link rel="stylesheet" href="../styles.css?v=20260704-merged">
+    <style>
+      /* Preview-only: merged feature groups (redesign card copy + paired
+         screenshots), namespaced so the shared styles.css stays untouched. */
+      .pvw > .pvg-group {
+        width: min(100%, var(--wide-max));
+        margin-inline: auto;
+      }
+      .hero.compact-hero {
+        border-bottom: 0;
+      }
+      .compact-release::before {
+        display: none;
+      }
+      /* With the separators gone, close up the vertical gaps around them. */
+      #what.pvw.compact-section {
+        padding-top: 0.7rem;
+        padding-bottom: 1.1rem;
+      }
+      #release.compact-release.compact-section {
+        padding-top: 1.1rem;
+      }
+      .compact-hero {
+        min-height: 0;
+        padding-top: 1.3rem;
+        padding-bottom: 1rem;
+      }
+      .compact-hero .eyebrow { margin-bottom: 0.35rem; }
+      .compact-hero .hero-subtitle {
+        margin-bottom: 0;
+        font-size: 1.12rem;
+      }
+      .compact-hero .hero-content {
+        display: grid;
+        grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+        gap: clamp(1.5rem, 4vw, 3.5rem);
+        align-items: center;
+        padding-top: 0;
+        width: min(100%, var(--wide-max));
+      }
+      .compact-hero h1 {
+        font-size: clamp(1.9rem, 3.2vw, 2.4rem);
+        margin-bottom: 0.4rem;
+      }
+      .pvh-chips {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 6px 8px;
+        align-content: center;
+      }
+      .pvh-chips span {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px 13px 5px 11px;
+        border: 1px solid rgba(28, 42, 64, 0.1);
+        border-radius: 999px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.72));
+        color: #3d4a5d;
+        font-size: 0.88rem;
+        letter-spacing: 0.01em;
+        box-shadow:
+          0 1px 2px rgba(21, 32, 51, 0.05),
+          0 6px 18px rgba(21, 32, 51, 0.05);
+        backdrop-filter: blur(8px);
+      }
+      .pvh-chips span::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-radius: 999px;
+        background: var(--chip-dot, #246bfe);
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--chip-dot, #246bfe) 16%, transparent);
+      }
+      .pvh-chips span:nth-child(1) { --chip-dot: #246bfe; }
+      .pvh-chips span:nth-child(2) { --chip-dot: #4f8df9; }
+      .pvh-chips span:nth-child(3) { --chip-dot: #0f9f9a; }
+      .pvh-chips span:nth-child(4) { --chip-dot: #087975; }
+      .pvh-chips span:nth-child(5) { --chip-dot: #7964e8; }
+      .pvh-chips span:nth-child(6) { --chip-dot: #9a5fd6; }
+      .pvh-chips span:nth-child(7) { --chip-dot: #c36518; }
+      .pvh-chips span:nth-child(8) { --chip-dot: #15813b; }
+      @media (max-width: 980px) {
+        .compact-hero .hero-content { grid-template-columns: 1fr; }
+      }
+      .pvh-combines {
+        margin: 0.5rem 0 0;
+        max-width: 44rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+        line-height: 1.55;
+      }
+      .pvg-group {
+        display: grid;
+        grid-template-columns: minmax(0, 0.44fr) minmax(0, 0.56fr);
+        gap: clamp(16px, 2.5vw, 28px);
+        align-items: center;
+        padding: 20px;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: var(--panel);
+        box-shadow: var(--shadow);
+      }
+      .pvw > .pvg-group + .pvg-group { margin-top: 18px; }
+      .pvg-copy {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+      .pvw-icon {
+        width: 42px;
+        height: 42px;
+        display: grid;
+        place-items: center;
+        border-radius: 15px;
+        background: #e8f0ff;
+        color: #0f4fd6;
+        font-size: 1.28rem;
+      }
+      .pvg-finder .pvw-icon { background: #e5f7f6; color: #087975; }
+      .pvg-input .pvw-icon { background: #f0edff; color: #7964e8; }
+      .pvg-audio .pvw-icon { background: #fff2e4; color: #c36518; }
+      .pvg-privacy .pvw-icon { background: #eaf9ee; color: #15813b; }
+      .pvg-head {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .pvg-head .pvw-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 12px;
+        font-size: 1.1rem;
+        flex: 0 0 auto;
+      }
+      .pvg-head h3 { margin: 0; }
+      .pvg-copy h3 {
+        margin: 0 0 8px;
+        font-size: 1.28rem;
+        line-height: 1.2;
+        color: var(--ink);
+        font-weight: 500;
+      }
+      .pvg-copy p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.62;
+      }
+      .pvw-points {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 10px;
+      }
+      .pvw-points li {
+        position: relative;
+        padding-left: 24px;
+        color: var(--muted);
+        line-height: 1.52;
+      }
+      .pvw-points li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.68em;
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #246bfe, #0f9f9a);
+      }
+      .pvg-privacy .pvw-points li {
+        padding-left: 30px;
+      }
+      .pvg-privacy .pvw-points li::before {
+        content: "\2713";
+        top: 0.18em;
+        width: 19px;
+        height: 19px;
+        display: grid;
+        place-items: center;
+        color: #fff;
+        background: linear-gradient(135deg, #22a06b, #15813b);
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 1;
+      }
+      .pvw-note {
+        margin-top: auto;
+        padding: 13px 14px;
+        border: 1px solid rgba(36, 107, 254, 0.14);
+        border-radius: 15px;
+        color: #315684;
+        background: rgba(232, 240, 255, 0.6);
+        font-size: 0.92rem;
+        line-height: 1.45;
+      }
+      .pvg-shots {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        align-content: start;
+      }
+      .pvg-shots.stack { grid-template-columns: 1fr; }
+      .pvg-shots figure {
+        margin: 0;
+        padding: 6px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: linear-gradient(135deg, rgba(21, 32, 51, 0.05), rgba(36, 107, 254, 0.07));
+      }
+      .pvg-shots img {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        max-height: 360px;
+        height: auto;
+        margin-inline: auto;
+        border-radius: 10px;
+      }
+      .pvg-shots.stack img {
+        width: 100%;
+        max-height: none;
+      }
+      .pvg-shots img { cursor: zoom-in; }
+      .pvl-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 999;
+        display: grid;
+        place-items: center;
+        padding: 3vmin;
+        background: rgba(10, 16, 26, 0.82);
+        backdrop-filter: blur(6px);
+        cursor: zoom-out;
+      }
+      .pvl-overlay[hidden] { display: none; }
+      .pvl-overlay img {
+        max-width: min(1500px, 96vw);
+        max-height: 93vh;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.5);
+      }
+      .pvg-shots figcaption {
+        margin-top: 6px;
+        color: var(--muted);
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      #release > .pvr-flow {
+        width: min(100%, var(--wide-max));
+        margin-inline: auto;
+      }
+      .pvr-steps {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+      .pvr-steps strong {
+        display: inline-grid;
+        place-items: center;
+        width: 26px;
+        height: 26px;
+        flex: 0 0 auto;
+        border-radius: 999px;
+        color: #fff;
+        background: var(--step-color, #246bfe);
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--step-color, #246bfe) 18%, transparent);
+        font-size: 0.88rem;
+        font-weight: 700;
+        line-height: 1;
+      }
+      .pvr-steps li:nth-child(1) strong { --step-color: #246bfe; }
+      .pvr-steps li:nth-child(2) strong { --step-color: #0f9f9a; }
+      .pvr-steps li:nth-child(3) strong { --step-color: #15813b; }
+      .pvr-flow .compatibility-list { margin-top: 18px; }
+      @media (max-width: 980px) {
+        .pvr-steps { grid-template-columns: 1fr; }
+        .pvg-group { grid-template-columns: 1fr; }
+        .pvg-shots { grid-template-columns: 1fr; }
+        .pvg-shots img { max-height: 420px; }
+      }
+    </style>
   </head>
   <body class="compact-page">
     <header class="site-header" aria-label="Primär">
@@ -99,156 +383,188 @@
         >
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="hero-content">
-          <p class="eyebrow">Mac-menyradshjälp för skärm</p>
-          <h1 id="hero-title">DeskHelper Pro</h1>
-          <p class="hero-subtitle">
-            En diskret menyradsapp för MacBook-skärmkontroll, tangentbordsbelysning, Auto Wi-Fi Switch, Finder-kontextmenyer, lokala Safes.
-          </p>
-          <div class="hero-summary" aria-label="DeskHelper Pro sammanfattning">
-            <div>
-              <strong>Blackout</strong>
-              <span>Håller MacBookens inbyggda skärm mörk vid dubblering till extern skärm.</span>
-            </div>
-            <div>
-              <strong>Kontroller</strong>
-              <span>Dubblera, dimma, vila, ljusstyrka, kontrast och genvägar från menyraden.</span>
-            </div>
-            <div>
-              <strong>Finder + Safes</strong>
-              <span>Skapa filer och mappar, klistra in objekt, öppna sökvägar i appar och kryptera eller dekryptera lokala Safes.</span>
-            </div>
+          <div class="pvh-copy">
+            <p class="eyebrow">Mac-menyradshjälp för skärm</p>
+            <h1 id="hero-title">DeskHelper Pro</h1>
+            <p class="hero-subtitle">
+              De användbara skrivbordsfunktionerna, samlade i ett Mac-verktyg.
+            </p>
+            <p class="pvh-combines">
+              DeskHelper Pro samlar skärmstyrning, fönstergenvägar, Finder-åtgärder, lokalt filskydd, finjustering av inmatningsenheter, appljudkontroll och integritetsfokuserad design i en fokuserad menyradsapp.
+            </p>
           </div>
-          <div class="trust-pills" aria-label="Höjdpunkter">
-            <span>Inget Dock-fönster</span>
-            <span>Inga Wi-Fi-lösenord</span>
-            <span>Lokala Safes</span>
-            <span>14 dagars prov</span><span>Lokaliserad till 26 språk</span></div>
+          <div class="pvh-chips" aria-label="Highlights">
+            <span>Skärmstyrning</span>
+            <span>Fönstergenvägar</span>
+            <span>Finder-åtgärder</span>
+            <span>Kryptera & packa (.safe/.7z/.zip/.dmg)</span>
+            <span>Muskänslighet & rullningshastighet</span>
+            <span>Ommappning av tangenter/knappar</span>
+            <span>Appljudmixer</span>
+            <span>Privat by design</span>
+          </div>
         </div>
       </section>
 
-      <section class="section controls-section compact-section" id="what" aria-labelledby="what-title">
-        <div class="section-kicker">Vad är det?</div>
-        <div class="controls-layout">
-          <div>
-            <h2 id="what-title">Allt den gör.</h2>
-          <ul class="copy-points" aria-label="DeskHelper Pro-funktioner">
-              <li><strong>Mörklägg inbyggd skärm</strong><span>Speglar den inbyggda skärmen till en extern och mörklägger den sedan.</span></li>
-              <li><strong>Skärmkontroller</strong><span>Växla spegling, tona ned skärmar tills en tangent trycks, försätt Macen i vila och justera ljusstyrka eller kontrast från menyraden.</span></li>
-              <li><strong>Tangentbordsbelysning</strong><span>Justera ljusstyrkan på MacBooks inbyggda tangentbord med ett reglage.</span></li>
-              <li><strong>Auto Wi-Fi Switch</strong><span>När det är aktiverat bevakar det sparade Wi-Fi-nätverk och byter till en bättre känd åtkomstpunkt när aktuell signal sjunker.</span></li>
-              <li><strong>Finder-kontextmenyer</strong><span>Skapa filer och mappar, klistra in kopierade objekt, kopiera sökvägar eller öppna Finder-markeringar i TextEdit, Terminal, Codex, Claude, VSCode eller en annan kompatibel app.</span></li>
-              <li><strong>Safes</strong><span>Kryptera valda filer eller mappar till en enda lokal .safe-fil, lägg till i en befintlig Safe eller dekryptera en Safe tillbaka till en mapp.</span></li>
-              <li><strong>100 % konfidentiellt</strong><span>Till skillnad från Google Drive, OneDrive, GitHub och andra allmänna moln- eller kodtjänster stannar klartext, lösenord och krypteringsnycklar på din Mac.</span></li>
-              <li><strong>Integritet</strong><span>Inget konto, ingen analys, inga Wi-Fi-lösenord och inget Dock-fönster.</span></li>
-          </ul>
+      <section class="section compact-section pvw" id="what" aria-label="Features">
+        <article class="pvg-group pvg-display">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">&#8984;</div>
+              <h3>Skärm- och fönsterstyrning</h3>
+            </div>
+            <p class="pvg-lede">Hantera din visuella arbetsyta utan att hoppa mellan Systeminställningar, fönsterverktyg från tredje part och skärmmenyer.</p>
+            <ul class="pvw-points">
+              <li>Släck MacBookens inbyggda skärm medan den speglas till en extern bildskärm.</li>
+              <li>Växla spegling, dimma skärmar tills en tangent trycks, försätt i vila, starta om, stäng av och justera ljusstyrka eller kontrast.</li>
+              <li>Installera och växla mellan HiDPI-/anpassade skärmlägen som stöds.</li>
+              <li>Flytta fönster till halvor, hörn, centrerade positioner, helskärmslayouter, andra skärmar eller andra skrivbord.</li>
+              <li>Markera det aktiva fönstret med en anpassningsbar ram som släpper igenom klick.</li>
+            </ul>
+            <div class="pvw-note">Innehåller fokus på ordnade fönster och konfliktvägledning för Rectangle/Rectangle Pro.</div>
           </div>
-          <div class="product-screenshots" aria-label="DeskHelper Pro-skärmbilder">
-            <figure class="menu-screenshot main-menu-screenshot">
-              <img src="../assets/deskhelperpro-menu.png?v=20260704" alt="DeskHelper Pro menu: display, Wi-Fi, Finder, Safe, privacy, and updates." />
+          <div class="pvg-shots">
+            <figure>
+              <img src="../assets/deskhelperpro-menu.png?v=20260704" width="1028" height="1980" loading="lazy" alt="Huvudmeny">
+              <figcaption>Huvudmeny</figcaption>
             </figure>
-            <figure class="menu-screenshot finder-context-screenshot">
-              <img src="../assets/finder-context-menu.png?v=20260704" alt="Finder-kontextmenyer: New File, New Folder, Paste, Open in apps, Safes." />
+            <figure>
+              <img src="../assets/resolution-submenu.png" width="1650" height="1984" loading="lazy" alt="Ändra upplösning">
+              <figcaption>Ändra upplösning</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/window-arrangement-submenu.png" width="1828" height="2260" loading="lazy" alt="Fönsterplacering">
+              <figcaption>Fönsterplacering</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/highlight-settings.png" width="1240" height="1202" loading="lazy" alt="Markera aktivt fönster">
+              <figcaption>Markera aktivt fönster</figcaption>
             </figure>
           </div>
-        </div>
-        <div class="feature-tour">
-          <article class="tour-row">
-            <figure>
-              <img
-                src="../assets/window-arrangement-submenu.png"
-                width="1828"
-                height="2260"
-                loading="lazy"
-                decoding="async"
-                alt="Fönsterplacering"
-              >
-            </figure>
-            <div class="tour-copy">
-              <h3>Fönsterplacering</h3>
-              <p>Fäst det aktiva fönstret vid halvor eller kvadranter, maximera eller centrera det — var och en med sitt eget tangentbordskortkommando.</p>
+        </article>
+
+        <article class="pvg-group pvg-finder">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                  <path d="M3 7.5A2 2 0 0 1 5 5.5h4.2l1.8 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <rect x="10.4" y="12.6" width="5.6" height="4.4" rx="1" stroke-width="1.7"></rect>
+                  <path d="M11.9 12.6v-1.3a1.3 1.3 0 0 1 2.6 0v1.3" stroke-width="1.7"></path>
+                </svg>
+              </div>
+              <h3>Finder-åtgärder & lokala kassaskåp</h3>
             </div>
-          </article>
-          <article class="tour-row">
+            <p class="pvg-lede">Gör Finder mer användbar medan valda filer, lösenord och krypterade kassaskåp stannar på din Mac.</p>
+            <ul class="pvw-points">
+              <li>Skapa nya filer och mappar direkt i Finder.</li>
+              <li>Klistra in, flytta, kopiera sökvägar och öppna mappar i Terminal, Textredigerare, VS Code, Codex, Claude eller en annan app som stöds.</li>
+              <li>Kryptera valda filer eller mappar till lokala <code>.safe</code>-filer.</li>
+              <li>Lägg till filer i ett befintligt kassaskåp eller dekryptera bara valt innehåll.</li>
+              <li>Arbeta med arkivflöden för .7z, .zip och .dmg som stöds.</li>
+            </ul>
+            <div class="pvw-note">Finder- och kassaskåpsåtgärder körs bara när du väljer en DeskHelper Pro-åtgärd i kontextmenyn.</div>
+          </div>
+          <div class="pvg-shots">
             <figure>
-              <img
-                src="../assets/resolution-submenu.png"
-                width="1650"
-                height="1984"
-                loading="lazy"
-                decoding="async"
-                alt="Ändra upplösning"
-              >
+              <img src="../assets/finder-context-menu.png?v=20260704" width="1066" height="994" loading="lazy" alt="Finder-åtgärder">
+              <figcaption>Finder-åtgärder</figcaption>
             </figure>
-            <div class="tour-copy">
-              <h3>Ändra upplösning</h3>
-              <p>Byt upplösning och uppdateringsfrekvens direkt från menyn — alla användbara lägen, HiDPI-förinställningar och anpassade storlekar.</p>
-            </div>
-          </article>
-          <article class="tour-row">
             <figure>
-              <img
-                src="../assets/highlight-settings.png"
-                width="1240"
-                height="1202"
-                loading="lazy"
-                decoding="async"
-                alt="Markera aktivt fönster"
-              >
+              <img src="../assets/finder-context-config.png" width="1986" height="1968" loading="lazy" alt="Finder-kontextmenyer">
+              <figcaption>Finder-kontextmenyer</figcaption>
             </figure>
-            <div class="tour-copy">
-              <h3>Markera aktivt fönster</h3>
-              <p>Ritar en klickgenomsläpplig ram runt det fokuserade appfönstret. DeskHelper Pro ändrar inte det riktiga appfönstret.</p>
+          </div>
+        </article>
+
+        <article class="pvg-group pvg-input">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                  <rect x="8" y="3" width="8" height="18" rx="4"></rect>
+                  <path d="M12 7v3.5"></path>
+                </svg>
+              </div>
+              <h3>Pekar-, rullnings- & inmatningsprofiler</h3>
             </div>
-          </article>
-          <article class="tour-row">
+            <p class="pvg-lede">Finjustera möss, pekdon, tangentbordsbeteende och knappmappningar per enhet.</p>
+            <ul class="pvw-points">
+              <li>Justera pekarkänslighet och acceleration per mus.</li>
+              <li>Ställ in rullningshastighet och rullningsacceleration per pekdon.</li>
+              <li>Använd linjär rullning med LinearMouse-kompatibel skalning.</li>
+              <li>Mappa om tangenter eller musknappar som stöds till tangenter, kortkommandon, dubbelrollstangenter eller Hyper-liknande modifierare.</li>
+              <li>Profiler och regler sparas lokalt på den här Macen.</li>
+            </ul>
+            <div class="pvw-note">Praktiskt när ett skrivbord har flera möss, tangentbord eller arbetsflödesspecifika kortkommandon.</div>
+          </div>
+          <div class="pvg-shots">
             <figure>
-              <img
-                src="../assets/mouse-scroll-settings.png"
-                width="1296"
-                height="1554"
-                loading="lazy"
-                decoding="async"
-                alt="Musens känslighet och acceleration · Rullningshastighet och -acceleration"
-              >
+              <img src="../assets/mouse-scroll-settings.png" width="1296" height="1554" loading="lazy" alt="Musens känslighet och acceleration · Rullningshastighet och -acceleration">
+              <figcaption>Musens känslighet och acceleration · Rullningshastighet och -acceleration</figcaption>
             </figure>
-            <div class="tour-copy">
-              <h3>Musens känslighet och acceleration · Rullningshastighet och -acceleration</h3>
-              <p>Justera pekarens känslighet och acceleration per mus. Profiler stannar på denna Mac och laddas aldrig upp.</p>
-            </div>
-          </article>
-          <article class="tour-row">
             <figure>
-              <img
-                src="../assets/key-button-remapping.png"
-                width="1716"
-                height="1408"
-                loading="lazy"
-                decoding="async"
-                alt="Ommappning av tangenter & knappar"
-              >
+              <img src="../assets/key-button-remapping.png" width="1716" height="1408" loading="lazy" alt="Ommappning av tangenter & knappar">
+              <figcaption>Ommappning av tangenter & knappar</figcaption>
             </figure>
-            <div class="tour-copy">
-              <h3>Ommappning av tangenter & knappar</h3>
-              <p>Skapa regler som mappar om en tangent eller musknapp som stöds till en tangent, ett kortkommando, en Dual-Role-tangent eller en Hyper-liknande modifierare. Regler stannar på den här datorn och laddas aldrig upp.</p>
+          </div>
+        </article>
+
+        <article class="pvg-group pvg-audio">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">&#9834;</div>
+              <h3>Appljud & skrivbordsverktyg</h3>
             </div>
-          </article>
-          <article class="tour-row">
+            <p class="pvg-lede">Styr de små skrivbordsdetaljerna som avbryter arbetet när de är utspridda i separata appar.</p>
+            <ul class="pvw-points">
+              <li>Ställ in volym per app från menyraden.</li>
+              <li>Förstärk tysta appar upp till 200 %.</li>
+              <li>Tysta enskilda appar.</li>
+              <li>Låt automatiskt wifi-byte gå över till en bättre känd accesspunkt när signalen sjunker.</li>
+              <li>Kör från menyraden utan att lägga till ett Dock-fönster.</li>
+            </ul>
+            <div class="pvw-note">Ljudmixern kräver behörigheten för systemljudinspelning på macOS 14.4 eller senare; ljudet bearbetas lokalt.</div>
+          </div>
+          <div class="pvg-shots stack">
             <figure>
-              <img
-                src="../assets/finder-context-config.png"
-                width="1986"
-                height="1968"
-                loading="lazy"
-                decoding="async"
-                alt="Finder-kontextmenyer"
-              >
+              <img src="../assets/audio-mixer.png" width="1028" height="225" loading="lazy" alt="Appljudmixer i menyn">
+              <figcaption>Appljudmixer i menyn</figcaption>
             </figure>
-            <div class="tour-copy">
-              <h3>Finder-kontextmenyer</h3>
-              <p>Konfigurera Finder-åtgärder, behörigheter, sparad mappåtkomst och integritetskontroller.</p>
+            <figure>
+              <img src="../assets/wifi-switch.png" width="1028" height="200" loading="lazy" alt="Automatiskt wifi-byte i menyn">
+              <figcaption>Automatiskt wifi-byte i menyn</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="pvg-group pvg-privacy">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                <rect x="4" y="11" width="16" height="10" rx="2.5"></rect>
+                <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
+              </svg>
             </div>
-          </article>
-        </div>
+              <h3>Privat by design</h3>
+            </div>
+            <p class="pvg-lede">DeskHelper Pro är byggt för lokala Mac-arbetsflöden. Det gör inte ditt skrivbordsverktyg till ännu ett konto, en analysström eller en molnfiltjänst.</p>
+            <ul class="pvw-points">
+              <li>Inget konto krävs.</li>
+              <li>Ingen analys, inga annons-SDK:er, ingen användningstelemetri eller sessionsspårning.</li>
+              <li>Ingen insamling av wifi-lösenord och ingen loggning av kassaskåpslösenord.</li>
+              <li>Klartext, kassaskåpslösenord, krypteringsnycklar, pekarprofiler, ommappningsregler och ljudbearbetning stannar lokalt.</li>
+              <li>Valfria behörigheter förklaras tydligt: Hjälpmedel, Inmatningsövervakning, Systemljudinspelning, Plats, Finder-tillägg och Full diskåtkomst.</li>
+            </ul>
+          </div>
+          <div class="pvg-shots stack">
+            <figure>
+              <img src="../assets/permissions-overview.png?v=2" width="1440" height="1798" loading="lazy" alt="Behörighetsöversikt med livestatus">
+              <figcaption>Behörighetsöversikt med livestatus</figcaption>
+            </figure>
+          </div>
+        </article>
       </section>
 
       <section class="section compact-section" id="why" aria-labelledby="why-title">
@@ -290,41 +606,25 @@
 
       <section class="section compact-section compact-release" id="release" aria-labelledby="release-title">
         <div class="section-kicker">Så får du den</div>
-        <div class="compact-split">
-          <div>
-            <h2 id="release-title">Ladda ner och prova i 14 dagar.</h2>
-            <ul class="copy-points" aria-label="Versionssammanfattning">
-              <li>
-                <strong>Ladda ner</strong>
-                <span>en app för Apple Silicon och Intel Mac</span>
-              </li>
-              <li>
-                <strong>Installera</strong>
-                <span>dra DeskHelper Pro till Program</span>
-              </li>
-              <li>
-                <strong>Prova</strong>
-                <span>alla Pro-funktioner är aktiva under provperioden</span>
-              </li>
-            </ul>
-            <div class="compatibility-list" aria-label="Kompatibilitet">
-              <span>macOS 13.0 eller senare</span>
-              <span>arm64 + x86_64</span><span class="app-version">v1.3.16</span></div>
-          </div>
-          <ol class="steps compact-steps">
+        <div class="pvr-flow">
+          <h2 id="release-title">Ladda ner och prova i 14 dagar.</h2>
+          <ol class="steps compact-steps pvr-steps" aria-label="Install steps">
             <li>
               <strong>1</strong>
-              <span>Ladda ner DMG.</span>
+              <span>Hämta DMG:n — en app för både Apple Silicon- och Intel-Macar.</span>
             </li>
             <li>
               <strong>2</strong>
-              <span>Dra appen till Program.</span>
+              <span>Dra DeskHelper Pro till Program och starta.</span>
             </li>
             <li>
               <strong>3</strong>
-              <span>Starta från Program.</span>
+              <span>Prova alla Pro-funktioner gratis i 14 dagar.</span>
             </li>
           </ol>
+          <div class="compatibility-list" aria-label="Kompatibilitet">
+              <span>macOS 13.0 eller senare</span>
+              <span>arm64 + x86_64</span><span class="app-version">v1.3.16</span></div>
         </div>
         <div class="download-card" aria-label="Nedladdningsåtgärd">
           <div>
@@ -342,5 +642,30 @@
       </section>
     </main>
     <script src="../script.js?v=20260609-dropdown"></script>
+    <div class="pvl-overlay" id="pvl-overlay" hidden>
+      <img alt="">
+    </div>
+    <script>
+      (function () {
+        var overlay = document.getElementById("pvl-overlay");
+        var overlayImg = overlay.querySelector("img");
+        function close() {
+          overlay.hidden = true;
+          document.body.style.overflow = "";
+        }
+        document.querySelectorAll(".pvg-shots img").forEach(function (img) {
+          img.addEventListener("click", function () {
+            overlayImg.src = img.currentSrc || img.src;
+            overlayImg.alt = img.alt;
+            overlay.hidden = false;
+            document.body.style.overflow = "hidden";
+          });
+        });
+        overlay.addEventListener("click", close);
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape") close();
+        });
+      })();
+    </script>
   </body>
 </html>

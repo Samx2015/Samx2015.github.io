@@ -39,6 +39,290 @@
     <link rel="icon" href="../assets/app-icon.png" type="image/png">
     <link rel="preload" href="../assets/hero-display.png" as="image">
     <link rel="stylesheet" href="../styles.css?v=20260704-merged">
+    <style>
+      /* Preview-only: merged feature groups (redesign card copy + paired
+         screenshots), namespaced so the shared styles.css stays untouched. */
+      .pvw > .pvg-group {
+        width: min(100%, var(--wide-max));
+        margin-inline: auto;
+      }
+      .hero.compact-hero {
+        border-bottom: 0;
+      }
+      .compact-release::before {
+        display: none;
+      }
+      /* With the separators gone, close up the vertical gaps around them. */
+      #what.pvw.compact-section {
+        padding-top: 0.7rem;
+        padding-bottom: 1.1rem;
+      }
+      #release.compact-release.compact-section {
+        padding-top: 1.1rem;
+      }
+      .compact-hero {
+        min-height: 0;
+        padding-top: 1.3rem;
+        padding-bottom: 1rem;
+      }
+      .compact-hero .eyebrow { margin-bottom: 0.35rem; }
+      .compact-hero .hero-subtitle {
+        margin-bottom: 0;
+        font-size: 1.12rem;
+      }
+      .compact-hero .hero-content {
+        display: grid;
+        grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+        gap: clamp(1.5rem, 4vw, 3.5rem);
+        align-items: center;
+        padding-top: 0;
+        width: min(100%, var(--wide-max));
+      }
+      .compact-hero h1 {
+        font-size: clamp(1.9rem, 3.2vw, 2.4rem);
+        margin-bottom: 0.4rem;
+      }
+      .pvh-chips {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 6px 8px;
+        align-content: center;
+      }
+      .pvh-chips span {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px 13px 5px 11px;
+        border: 1px solid rgba(28, 42, 64, 0.1);
+        border-radius: 999px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.72));
+        color: #3d4a5d;
+        font-size: 0.88rem;
+        letter-spacing: 0.01em;
+        box-shadow:
+          0 1px 2px rgba(21, 32, 51, 0.05),
+          0 6px 18px rgba(21, 32, 51, 0.05);
+        backdrop-filter: blur(8px);
+      }
+      .pvh-chips span::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-radius: 999px;
+        background: var(--chip-dot, #246bfe);
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--chip-dot, #246bfe) 16%, transparent);
+      }
+      .pvh-chips span:nth-child(1) { --chip-dot: #246bfe; }
+      .pvh-chips span:nth-child(2) { --chip-dot: #4f8df9; }
+      .pvh-chips span:nth-child(3) { --chip-dot: #0f9f9a; }
+      .pvh-chips span:nth-child(4) { --chip-dot: #087975; }
+      .pvh-chips span:nth-child(5) { --chip-dot: #7964e8; }
+      .pvh-chips span:nth-child(6) { --chip-dot: #9a5fd6; }
+      .pvh-chips span:nth-child(7) { --chip-dot: #c36518; }
+      .pvh-chips span:nth-child(8) { --chip-dot: #15813b; }
+      @media (max-width: 980px) {
+        .compact-hero .hero-content { grid-template-columns: 1fr; }
+      }
+      .pvh-combines {
+        margin: 0.5rem 0 0;
+        max-width: 44rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+        line-height: 1.55;
+      }
+      .pvg-group {
+        display: grid;
+        grid-template-columns: minmax(0, 0.44fr) minmax(0, 0.56fr);
+        gap: clamp(16px, 2.5vw, 28px);
+        align-items: center;
+        padding: 20px;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: var(--panel);
+        box-shadow: var(--shadow);
+      }
+      .pvw > .pvg-group + .pvg-group { margin-top: 18px; }
+      .pvg-copy {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+      .pvw-icon {
+        width: 42px;
+        height: 42px;
+        display: grid;
+        place-items: center;
+        border-radius: 15px;
+        background: #e8f0ff;
+        color: #0f4fd6;
+        font-size: 1.28rem;
+      }
+      .pvg-finder .pvw-icon { background: #e5f7f6; color: #087975; }
+      .pvg-input .pvw-icon { background: #f0edff; color: #7964e8; }
+      .pvg-audio .pvw-icon { background: #fff2e4; color: #c36518; }
+      .pvg-privacy .pvw-icon { background: #eaf9ee; color: #15813b; }
+      .pvg-head {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .pvg-head .pvw-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 12px;
+        font-size: 1.1rem;
+        flex: 0 0 auto;
+      }
+      .pvg-head h3 { margin: 0; }
+      .pvg-copy h3 {
+        margin: 0 0 8px;
+        font-size: 1.28rem;
+        line-height: 1.2;
+        color: var(--ink);
+        font-weight: 500;
+      }
+      .pvg-copy p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.62;
+      }
+      .pvw-points {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 10px;
+      }
+      .pvw-points li {
+        position: relative;
+        padding-left: 24px;
+        color: var(--muted);
+        line-height: 1.52;
+      }
+      .pvw-points li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.68em;
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #246bfe, #0f9f9a);
+      }
+      .pvg-privacy .pvw-points li {
+        padding-left: 30px;
+      }
+      .pvg-privacy .pvw-points li::before {
+        content: "\2713";
+        top: 0.18em;
+        width: 19px;
+        height: 19px;
+        display: grid;
+        place-items: center;
+        color: #fff;
+        background: linear-gradient(135deg, #22a06b, #15813b);
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 1;
+      }
+      .pvw-note {
+        margin-top: auto;
+        padding: 13px 14px;
+        border: 1px solid rgba(36, 107, 254, 0.14);
+        border-radius: 15px;
+        color: #315684;
+        background: rgba(232, 240, 255, 0.6);
+        font-size: 0.92rem;
+        line-height: 1.45;
+      }
+      .pvg-shots {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        align-content: start;
+      }
+      .pvg-shots.stack { grid-template-columns: 1fr; }
+      .pvg-shots figure {
+        margin: 0;
+        padding: 6px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: linear-gradient(135deg, rgba(21, 32, 51, 0.05), rgba(36, 107, 254, 0.07));
+      }
+      .pvg-shots img {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        max-height: 360px;
+        height: auto;
+        margin-inline: auto;
+        border-radius: 10px;
+      }
+      .pvg-shots.stack img {
+        width: 100%;
+        max-height: none;
+      }
+      .pvg-shots img { cursor: zoom-in; }
+      .pvl-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 999;
+        display: grid;
+        place-items: center;
+        padding: 3vmin;
+        background: rgba(10, 16, 26, 0.82);
+        backdrop-filter: blur(6px);
+        cursor: zoom-out;
+      }
+      .pvl-overlay[hidden] { display: none; }
+      .pvl-overlay img {
+        max-width: min(1500px, 96vw);
+        max-height: 93vh;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.5);
+      }
+      .pvg-shots figcaption {
+        margin-top: 6px;
+        color: var(--muted);
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      #release > .pvr-flow {
+        width: min(100%, var(--wide-max));
+        margin-inline: auto;
+      }
+      .pvr-steps {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+      .pvr-steps strong {
+        display: inline-grid;
+        place-items: center;
+        width: 26px;
+        height: 26px;
+        flex: 0 0 auto;
+        border-radius: 999px;
+        color: #fff;
+        background: var(--step-color, #246bfe);
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--step-color, #246bfe) 18%, transparent);
+        font-size: 0.88rem;
+        font-weight: 700;
+        line-height: 1;
+      }
+      .pvr-steps li:nth-child(1) strong { --step-color: #246bfe; }
+      .pvr-steps li:nth-child(2) strong { --step-color: #0f9f9a; }
+      .pvr-steps li:nth-child(3) strong { --step-color: #15813b; }
+      .pvr-flow .compatibility-list { margin-top: 18px; }
+      @media (max-width: 980px) {
+        .pvr-steps { grid-template-columns: 1fr; }
+        .pvg-group { grid-template-columns: 1fr; }
+        .pvg-shots { grid-template-columns: 1fr; }
+        .pvg-shots img { max-height: 420px; }
+      }
+    </style>
   </head>
   <body class="compact-page">
     <header class="site-header" aria-label="Ana">
@@ -99,156 +383,188 @@
         >
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="hero-content">
-          <p class="eyebrow">Mac menü çubuğu ekran yardımcısı</p>
-          <h1 id="hero-title">DeskHelper Pro</h1>
-          <p class="hero-subtitle">
-            MacBook ekran denetimi, klavye arka ışığı, Auto Wi-Fi Switch, Finder bağlam menüleri, yerel Safes için sade bir menü çubuğu uygulaması.
-          </p>
-          <div class="hero-summary" aria-label="DeskHelper Pro özeti">
-            <div>
-              <strong>Karartma</strong>
-              <span>Harici monitöre yansıtırken MacBook yerleşik ekranını karanlık tutar.</span>
-            </div>
-            <div>
-              <strong>Kontroller</strong>
-              <span>Yansıtma, karartma, uyku, parlaklık, kontrast ve kestirmeler menü çubuğunda.</span>
-            </div>
-            <div>
-              <strong>Finder + Safes</strong>
-              <span>Dosya ve klasör oluşturun, öğeleri yapıştırın, yolları uygulamalarda açın ve yerel Safes’i şifreleyin veya çözün.</span>
-            </div>
+          <div class="pvh-copy">
+            <p class="eyebrow">Mac menü çubuğu ekran yardımcısı</p>
+            <h1 id="hero-title">DeskHelper Pro</h1>
+            <p class="hero-subtitle">
+              İşe yarayan masa özellikleri, tek bir Mac aracında birleşti.
+            </p>
+            <p class="pvh-combines">
+              DeskHelper Pro; ekran denetimi, pencere kısayolları, Finder eylemleri, yerel dosya koruması, giriş aygıtı ayarı, uygulama ses denetimi ve gizlilik odaklı yaklaşımı tek bir menü çubuğu uygulamasında birleştirir.
+            </p>
           </div>
-          <div class="trust-pills" aria-label="Öne çıkanlar">
-            <span>Dock penceresi yok</span>
-            <span>Wi-Fi parolası yok</span>
-            <span>Yerel Safes</span>
-            <span>14 günlük deneme</span><span>26 dile yerelleştirildi</span></div>
+          <div class="pvh-chips" aria-label="Highlights">
+            <span>Ekran Denetimi</span>
+            <span>Pencere Kısayolları</span>
+            <span>Finder Eylemleri</span>
+            <span>Şifrele ve Sıkıştır (.safe/.7z/.zip/.dmg)</span>
+            <span>Fare Duyarlılığı ve Kaydırma Hızı</span>
+            <span>Tuş/Düğme Yeniden Atama</span>
+            <span>Uygulama Ses Karıştırıcısı</span>
+            <span>Tasarımda Gizlilik</span>
+          </div>
         </div>
       </section>
 
-      <section class="section controls-section compact-section" id="what" aria-labelledby="what-title">
-        <div class="section-kicker">Nedir?</div>
-        <div class="controls-layout">
-          <div>
-            <h2 id="what-title">Yaptığı her şey.</h2>
-          <ul class="copy-points" aria-label="DeskHelper Pro özellikleri">
-              <li><strong>Yerleşik ekranı karart</strong><span>Yerleşik ekranı harici bir ekrana yansıtır, sonra karartır.</span></li>
-              <li><strong>Ekran denetimleri</strong><span>Yansıtmayı değiştirin, tuşa basılana kadar ekranları karartın, Mac’i uyutun ve menü çubuğundan parlaklık veya kontrastı ayarlayın.</span></li>
-              <li><strong>Klavye arka ışığı</strong><span>MacBook’un yerleşik klavye parlaklığını bir sürgüyle ayarlayın.</span></li>
-              <li><strong>Auto Wi-Fi Switch</strong><span>Etkinleştirildiğinde kayıtlı Wi-Fi ağlarını izler ve mevcut sinyal düştüğünde daha iyi bilinen bir erişim noktasına geçer.</span></li>
-              <li><strong>Finder bağlam menüleri</strong><span>Dosya ve klasör oluşturun, kopyalanan öğeleri yapıştırın, yolları kopyalayın veya Finder seçimlerini TextEdit, Terminal, Codex, Claude, VSCode ya da uyumlu başka bir uygulamada açın.</span></li>
-              <li><strong>Safes</strong><span>Seçili dosya veya klasörleri tek bir yerel .safe dosyasına şifreleyin, mevcut bir Safe’e ekleyin veya Safe’i tekrar bir klasöre çözün.</span></li>
-              <li><strong>100% gizli</strong><span>Google Drive, OneDrive, GitHub ve diğer genel bulut veya kod hizmetlerinden farklı olarak düz metin, parolalar ve şifreleme anahtarları Mac’inizde kalır.</span></li>
-              <li><strong>Gizlilik temelleri</strong><span>Hesap yok, analiz yok, Wi-Fi parolası yok ve Dock penceresi yok.</span></li>
-          </ul>
+      <section class="section compact-section pvw" id="what" aria-label="Features">
+        <article class="pvg-group pvg-display">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">&#8984;</div>
+              <h3>Ekran ve Pencere Denetimi</h3>
+            </div>
+            <p class="pvg-lede">Sistem Ayarları, üçüncü taraf pencere araçları ve ekran menüleri arasında gezinmeden görsel çalışma alanınızı yönetin.</p>
+            <ul class="pvw-points">
+              <li>Harici bir monitöre yansıtırken MacBook'un dahili ekranını karartın.</li>
+              <li>Yansıtmayı değiştirin, tuşa basılana dek ekranları karartın, uyutun, yeniden başlatın, kapatın; parlaklık veya kontrastı ayarlayın.</li>
+              <li>Desteklenen HiDPI/özel ekran kiplerini yükleyin ve aralarında geçiş yapın.</li>
+              <li>Pencereleri yarımlara, köşelere, ortalanmış konumlara, tam ekran düzenlerine, başka ekranlara veya başka masaüstlerine taşıyın.</li>
+              <li>Etkin pencereyi, tıklamaları geçiren özelleştirilebilir bir çerçeveyle vurgulayın.</li>
+            </ul>
+            <div class="pvw-note">Düzenlenmiş pencerelere odaklanma ve Rectangle/Rectangle Pro çakışma yardımını içerir.</div>
           </div>
-          <div class="product-screenshots" aria-label="DeskHelper Pro ekran görüntüleri">
-            <figure class="menu-screenshot main-menu-screenshot">
-              <img src="../assets/deskhelperpro-menu.png?v=20260704" alt="DeskHelper Pro menu: display, Wi-Fi, Finder, Safe, privacy, and updates." />
+          <div class="pvg-shots">
+            <figure>
+              <img src="../assets/deskhelperpro-menu.png?v=20260704" width="1028" height="1980" loading="lazy" alt="Ana menü">
+              <figcaption>Ana menü</figcaption>
             </figure>
-            <figure class="menu-screenshot finder-context-screenshot">
-              <img src="../assets/finder-context-menu.png?v=20260704" alt="Finder bağlam menüleri: New File, New Folder, Paste, Open in apps, Safes." />
+            <figure>
+              <img src="../assets/resolution-submenu.png" width="1650" height="1984" loading="lazy" alt="Çözünürlüğü Değiştir">
+              <figcaption>Çözünürlüğü Değiştir</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/window-arrangement-submenu.png" width="1828" height="2260" loading="lazy" alt="Pencere Düzeni">
+              <figcaption>Pencere Düzeni</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/highlight-settings.png" width="1240" height="1202" loading="lazy" alt="Etkin pencere vurgusu">
+              <figcaption>Etkin pencere vurgusu</figcaption>
             </figure>
           </div>
-        </div>
-        <div class="feature-tour">
-          <article class="tour-row">
-            <figure>
-              <img
-                src="../assets/window-arrangement-submenu.png"
-                width="1828"
-                height="2260"
-                loading="lazy"
-                decoding="async"
-                alt="Pencere Düzeni"
-              >
-            </figure>
-            <div class="tour-copy">
-              <h3>Pencere Düzeni</h3>
-              <p>Etkin pencereyi yarımlara veya çeyreklere yaslayın, büyütün ya da ortalayın — her biri kendi klavye kısayoluyla.</p>
+        </article>
+
+        <article class="pvg-group pvg-finder">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                  <path d="M3 7.5A2 2 0 0 1 5 5.5h4.2l1.8 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <rect x="10.4" y="12.6" width="5.6" height="4.4" rx="1" stroke-width="1.7"></rect>
+                  <path d="M11.9 12.6v-1.3a1.3 1.3 0 0 1 2.6 0v1.3" stroke-width="1.7"></path>
+                </svg>
+              </div>
+              <h3>Finder Eylemleri ve Yerel Kasalar</h3>
             </div>
-          </article>
-          <article class="tour-row">
+            <p class="pvg-lede">Seçilen dosyalar, parolalar ve şifreli kasalar Mac'inizde kalırken Finder'ı daha kullanışlı hale getirin.</p>
+            <ul class="pvw-points">
+              <li>Finder'dan yeni dosya ve klasörler oluşturun.</li>
+              <li>Yapıştırın, taşıyın, yolları kopyalayın ve klasörleri Terminal, TextEdit, VS Code, Codex, Claude veya başka bir desteklenen uygulamada açın.</li>
+              <li>Seçilen dosya ya da klasörleri yerel <code>.safe</code> dosyalarına şifreleyin.</li>
+              <li>Var olan bir kasaya dosya ekleyin veya yalnızca seçilen içeriğin şifresini çözün.</li>
+              <li>Desteklenen .7z, .zip ve .dmg arşiv akışlarıyla çalışın.</li>
+            </ul>
+            <div class="pvw-note">Finder ve kasa eylemleri yalnızca bağlam menüsünden bir DeskHelper Pro eylemi seçtiğinizde çalışır.</div>
+          </div>
+          <div class="pvg-shots">
             <figure>
-              <img
-                src="../assets/resolution-submenu.png"
-                width="1650"
-                height="1984"
-                loading="lazy"
-                decoding="async"
-                alt="Çözünürlüğü Değiştir"
-              >
+              <img src="../assets/finder-context-menu.png?v=20260704" width="1066" height="994" loading="lazy" alt="Finder eylemleri">
+              <figcaption>Finder eylemleri</figcaption>
             </figure>
-            <div class="tour-copy">
-              <h3>Çözünürlüğü Değiştir</h3>
-              <p>Çözünürlüğü ve yenileme hızını doğrudan menüden değiştirin — kullanılabilir tüm modlar, HiDPI ön ayarları ve özel boyutlar.</p>
-            </div>
-          </article>
-          <article class="tour-row">
             <figure>
-              <img
-                src="../assets/highlight-settings.png"
-                width="1240"
-                height="1202"
-                loading="lazy"
-                decoding="async"
-                alt="Etkin pencere vurgusu"
-              >
+              <img src="../assets/finder-context-config.png" width="1986" height="1968" loading="lazy" alt="Finder bağlam menüleri">
+              <figcaption>Finder bağlam menüleri</figcaption>
             </figure>
-            <div class="tour-copy">
-              <h3>Etkin pencere vurgusu</h3>
-              <p>Odaklanılan normal uygulama penceresinin çevresine tıklamaları geçiren bir çerçeve çizer. DeskHelper Pro gerçek uygulama penceresini değiştirmez.</p>
+          </div>
+        </article>
+
+        <article class="pvg-group pvg-input">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                  <rect x="8" y="3" width="8" height="18" rx="4"></rect>
+                  <path d="M12 7v3.5"></path>
+                </svg>
+              </div>
+              <h3>İmleç, Kaydırma ve Giriş Profilleri</h3>
             </div>
-          </article>
-          <article class="tour-row">
+            <p class="pvg-lede">Fareleri, işaretleme aygıtlarını, klavye davranışını ve düğme atamalarını aygıt bazında ayarlayın.</p>
+            <ul class="pvw-points">
+              <li>Her fare için imleç duyarlılığını ve ivmesini ayarlayın.</li>
+              <li>Her işaretleme aygıtı için kaydırma hızını ve ivmesini belirleyin.</li>
+              <li>LinearMouse uyumlu ölçeklemeyle doğrusal kaydırma kullanın.</li>
+              <li>Tuşları veya desteklenen fare düğmelerini tuşlara, kısayollara, çift görevli tuşlara ya da Hyper tarzı değiştiricilere atayın.</li>
+              <li>Profiller ve kurallar bu Mac'te yerel olarak saklanır.</li>
+            </ul>
+            <div class="pvw-note">Bir masada birden çok fare, klavye veya iş akışına özgü kısayol olduğunda kullanışlıdır.</div>
+          </div>
+          <div class="pvg-shots">
             <figure>
-              <img
-                src="../assets/mouse-scroll-settings.png"
-                width="1296"
-                height="1554"
-                loading="lazy"
-                decoding="async"
-                alt="Fare Hassasiyeti ve İvmesi · Kaydırma hızı ve ivmesi"
-              >
+              <img src="../assets/mouse-scroll-settings.png" width="1296" height="1554" loading="lazy" alt="Fare Hassasiyeti ve İvmesi · Kaydırma hızı ve ivmesi">
+              <figcaption>Fare Hassasiyeti ve İvmesi · Kaydırma hızı ve ivmesi</figcaption>
             </figure>
-            <div class="tour-copy">
-              <h3>Fare Hassasiyeti ve İvmesi · Kaydırma hızı ve ivmesi</h3>
-              <p>Her fare için işaretçi hassasiyetini ve hızlanmasını ayarlayın. Profiller bu Mac’te kalır ve asla yüklenmez.</p>
-            </div>
-          </article>
-          <article class="tour-row">
             <figure>
-              <img
-                src="../assets/key-button-remapping.png"
-                width="1716"
-                height="1408"
-                loading="lazy"
-                decoding="async"
-                alt="Tuş ve Düğme Yeniden Eşleme"
-              >
+              <img src="../assets/key-button-remapping.png" width="1716" height="1408" loading="lazy" alt="Tuş ve Düğme Yeniden Eşleme">
+              <figcaption>Tuş ve Düğme Yeniden Eşleme</figcaption>
             </figure>
-            <div class="tour-copy">
-              <h3>Tuş ve Düğme Yeniden Eşleme</h3>
-              <p>Bir tuşu veya desteklenen fare düğmesini bir tuşa, kısayola, Dual-Role tuşuna ya da Hyper tarzı değiştiriciye eşleyen kurallar oluşturun. Kurallar bu Mac'te kalır ve asla yüklenmez.</p>
+          </div>
+        </article>
+
+        <article class="pvg-group pvg-audio">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">&#9834;</div>
+              <h3>Uygulama Sesi ve Masa Araçları</h3>
             </div>
-          </article>
-          <article class="tour-row">
+            <p class="pvg-lede">Ayrı uygulamalara dağıldığında işi bölen küçük masa ayrıntılarını tek yerden denetleyin.</p>
+            <ul class="pvw-points">
+              <li>Menü çubuğundan uygulama başına ses düzeyi ayarlayın.</li>
+              <li>Sessiz uygulamaları %200'e kadar güçlendirin.</li>
+              <li>Uygulamaları tek tek sessize alın.</li>
+              <li>Sinyal zayıfladığında Otomatik Wi-Fi Geçişi daha iyi bilinen bir erişim noktasına geçsin.</li>
+              <li>Dock'a pencere eklemeden menü çubuğundan çalışın.</li>
+            </ul>
+            <div class="pvw-note">Ses Karıştırıcısı, macOS 14.4 ve sonrasında Sistem Sesi Kaydı iznini gerektirir; ses yerel olarak işlenir.</div>
+          </div>
+          <div class="pvg-shots stack">
             <figure>
-              <img
-                src="../assets/finder-context-config.png"
-                width="1986"
-                height="1968"
-                loading="lazy"
-                decoding="async"
-                alt="Finder bağlam menüleri"
-              >
+              <img src="../assets/audio-mixer.png" width="1028" height="225" loading="lazy" alt="Menüdeki uygulama ses karıştırıcısı">
+              <figcaption>Menüdeki uygulama ses karıştırıcısı</figcaption>
             </figure>
-            <div class="tour-copy">
-              <h3>Finder bağlam menüleri</h3>
-              <p>Finder eylemlerini, izinleri, kayıtlı klasör erişimini ve gizlilik kontrollerini yapılandırın.</p>
+            <figure>
+              <img src="../assets/wifi-switch.png" width="1028" height="200" loading="lazy" alt="Menüdeki Otomatik Wi-Fi Geçişi">
+              <figcaption>Menüdeki Otomatik Wi-Fi Geçişi</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="pvg-group pvg-privacy">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                <rect x="4" y="11" width="16" height="10" rx="2.5"></rect>
+                <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
+              </svg>
             </div>
-          </article>
-        </div>
+              <h3>Tasarımda Gizlilik</h3>
+            </div>
+            <p class="pvg-lede">DeskHelper Pro yerel Mac iş akışları için üretildi. Masa aracınızı bir hesaba, analitik akışına veya bulut dosya hizmetine dönüştürmez.</p>
+            <ul class="pvw-points">
+              <li>Hesap gerekmez.</li>
+              <li>Analitik, reklam SDK'sı, kullanım telemetrisi veya oturum izleme yok.</li>
+              <li>Wi-Fi parolaları toplanmaz, kasa parolaları kaydedilmez.</li>
+              <li>Düz metin, kasa parolaları, şifreleme anahtarları, imleç profilleri, atama kuralları ve ses işleme yerelde kalır.</li>
+              <li>İsteğe bağlı izinler açıkça anlatılır: Erişilebilirlik, Giriş İzleme, Sistem Sesi Kaydı, Konum, Finder Eklentisi ve Tam Disk Erişimi.</li>
+            </ul>
+          </div>
+          <div class="pvg-shots stack">
+            <figure>
+              <img src="../assets/permissions-overview.png?v=2" width="1440" height="1798" loading="lazy" alt="Canlı durumlu izin özeti">
+              <figcaption>Canlı durumlu izin özeti</figcaption>
+            </figure>
+          </div>
+        </article>
       </section>
 
       <section class="section compact-section" id="why" aria-labelledby="why-title">
@@ -290,41 +606,25 @@
 
       <section class="section compact-section compact-release" id="release" aria-labelledby="release-title">
         <div class="section-kicker">Nasıl alınır</div>
-        <div class="compact-split">
-          <div>
-            <h2 id="release-title">İndirip 14 gün dene.</h2>
-            <ul class="copy-points" aria-label="Sürüm özeti">
-              <li>
-                <strong>İndir</strong>
-                <span>Apple Silicon ve Intel Mac’ler için tek uygulama</span>
-              </li>
-              <li>
-                <strong>Yükle</strong>
-                <span>DeskHelper Pro’yu Uygulamalar’a sürükle</span>
-              </li>
-              <li>
-                <strong>Dene</strong>
-                <span>deneme boyunca tüm Pro özellikleri açıktır</span>
-              </li>
-            </ul>
-            <div class="compatibility-list" aria-label="Uyumluluk">
-              <span>macOS 13.0 veya sonrası</span>
-              <span>arm64 + x86_64</span><span class="app-version">v1.3.16</span></div>
-          </div>
-          <ol class="steps compact-steps">
+        <div class="pvr-flow">
+          <h2 id="release-title">İndirip 14 gün dene.</h2>
+          <ol class="steps compact-steps pvr-steps" aria-label="Install steps">
             <li>
               <strong>1</strong>
-              <span>DMG’yi indir.</span>
+              <span>DMG'yi indirin — Apple Silicon ve Intel Mac'ler için tek uygulama.</span>
             </li>
             <li>
               <strong>2</strong>
-              <span>Uygulamayı Uygulamalar’a sürükle.</span>
+              <span>DeskHelper Pro'yu Uygulamalar'a sürükleyin ve açın.</span>
             </li>
             <li>
               <strong>3</strong>
-              <span>Uygulamalar’dan başlat.</span>
+              <span>Tüm Pro özelliklerini 14 gün ücretsiz deneyin.</span>
             </li>
           </ol>
+          <div class="compatibility-list" aria-label="Uyumluluk">
+              <span>macOS 13.0 veya sonrası</span>
+              <span>arm64 + x86_64</span><span class="app-version">v1.3.16</span></div>
         </div>
         <div class="download-card" aria-label="İndirme çağrısı">
           <div>
@@ -342,5 +642,30 @@
       </section>
     </main>
     <script src="../script.js?v=20260609-dropdown"></script>
+    <div class="pvl-overlay" id="pvl-overlay" hidden>
+      <img alt="">
+    </div>
+    <script>
+      (function () {
+        var overlay = document.getElementById("pvl-overlay");
+        var overlayImg = overlay.querySelector("img");
+        function close() {
+          overlay.hidden = true;
+          document.body.style.overflow = "";
+        }
+        document.querySelectorAll(".pvg-shots img").forEach(function (img) {
+          img.addEventListener("click", function () {
+            overlayImg.src = img.currentSrc || img.src;
+            overlayImg.alt = img.alt;
+            overlay.hidden = false;
+            document.body.style.overflow = "hidden";
+          });
+        });
+        overlay.addEventListener("click", close);
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape") close();
+        });
+      })();
+    </script>
   </body>
 </html>

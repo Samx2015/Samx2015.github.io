@@ -39,6 +39,290 @@
     <link rel="icon" href="../assets/app-icon.png" type="image/png">
     <link rel="preload" href="../assets/hero-display.png" as="image">
     <link rel="stylesheet" href="../styles.css?v=20260704-merged">
+    <style>
+      /* Preview-only: merged feature groups (redesign card copy + paired
+         screenshots), namespaced so the shared styles.css stays untouched. */
+      .pvw > .pvg-group {
+        width: min(100%, var(--wide-max));
+        margin-inline: auto;
+      }
+      .hero.compact-hero {
+        border-bottom: 0;
+      }
+      .compact-release::before {
+        display: none;
+      }
+      /* With the separators gone, close up the vertical gaps around them. */
+      #what.pvw.compact-section {
+        padding-top: 0.7rem;
+        padding-bottom: 1.1rem;
+      }
+      #release.compact-release.compact-section {
+        padding-top: 1.1rem;
+      }
+      .compact-hero {
+        min-height: 0;
+        padding-top: 1.3rem;
+        padding-bottom: 1rem;
+      }
+      .compact-hero .eyebrow { margin-bottom: 0.35rem; }
+      .compact-hero .hero-subtitle {
+        margin-bottom: 0;
+        font-size: 1.12rem;
+      }
+      .compact-hero .hero-content {
+        display: grid;
+        grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+        gap: clamp(1.5rem, 4vw, 3.5rem);
+        align-items: center;
+        padding-top: 0;
+        width: min(100%, var(--wide-max));
+      }
+      .compact-hero h1 {
+        font-size: clamp(1.9rem, 3.2vw, 2.4rem);
+        margin-bottom: 0.4rem;
+      }
+      .pvh-chips {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 6px 8px;
+        align-content: center;
+      }
+      .pvh-chips span {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px 13px 5px 11px;
+        border: 1px solid rgba(28, 42, 64, 0.1);
+        border-radius: 999px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.72));
+        color: #3d4a5d;
+        font-size: 0.88rem;
+        letter-spacing: 0.01em;
+        box-shadow:
+          0 1px 2px rgba(21, 32, 51, 0.05),
+          0 6px 18px rgba(21, 32, 51, 0.05);
+        backdrop-filter: blur(8px);
+      }
+      .pvh-chips span::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-radius: 999px;
+        background: var(--chip-dot, #246bfe);
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--chip-dot, #246bfe) 16%, transparent);
+      }
+      .pvh-chips span:nth-child(1) { --chip-dot: #246bfe; }
+      .pvh-chips span:nth-child(2) { --chip-dot: #4f8df9; }
+      .pvh-chips span:nth-child(3) { --chip-dot: #0f9f9a; }
+      .pvh-chips span:nth-child(4) { --chip-dot: #087975; }
+      .pvh-chips span:nth-child(5) { --chip-dot: #7964e8; }
+      .pvh-chips span:nth-child(6) { --chip-dot: #9a5fd6; }
+      .pvh-chips span:nth-child(7) { --chip-dot: #c36518; }
+      .pvh-chips span:nth-child(8) { --chip-dot: #15813b; }
+      @media (max-width: 980px) {
+        .compact-hero .hero-content { grid-template-columns: 1fr; }
+      }
+      .pvh-combines {
+        margin: 0.5rem 0 0;
+        max-width: 44rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+        line-height: 1.55;
+      }
+      .pvg-group {
+        display: grid;
+        grid-template-columns: minmax(0, 0.44fr) minmax(0, 0.56fr);
+        gap: clamp(16px, 2.5vw, 28px);
+        align-items: center;
+        padding: 20px;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: var(--panel);
+        box-shadow: var(--shadow);
+      }
+      .pvw > .pvg-group + .pvg-group { margin-top: 18px; }
+      .pvg-copy {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+      .pvw-icon {
+        width: 42px;
+        height: 42px;
+        display: grid;
+        place-items: center;
+        border-radius: 15px;
+        background: #e8f0ff;
+        color: #0f4fd6;
+        font-size: 1.28rem;
+      }
+      .pvg-finder .pvw-icon { background: #e5f7f6; color: #087975; }
+      .pvg-input .pvw-icon { background: #f0edff; color: #7964e8; }
+      .pvg-audio .pvw-icon { background: #fff2e4; color: #c36518; }
+      .pvg-privacy .pvw-icon { background: #eaf9ee; color: #15813b; }
+      .pvg-head {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .pvg-head .pvw-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 12px;
+        font-size: 1.1rem;
+        flex: 0 0 auto;
+      }
+      .pvg-head h3 { margin: 0; }
+      .pvg-copy h3 {
+        margin: 0 0 8px;
+        font-size: 1.28rem;
+        line-height: 1.2;
+        color: var(--ink);
+        font-weight: 500;
+      }
+      .pvg-copy p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.62;
+      }
+      .pvw-points {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 10px;
+      }
+      .pvw-points li {
+        position: relative;
+        padding-left: 24px;
+        color: var(--muted);
+        line-height: 1.52;
+      }
+      .pvw-points li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.68em;
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #246bfe, #0f9f9a);
+      }
+      .pvg-privacy .pvw-points li {
+        padding-left: 30px;
+      }
+      .pvg-privacy .pvw-points li::before {
+        content: "\2713";
+        top: 0.18em;
+        width: 19px;
+        height: 19px;
+        display: grid;
+        place-items: center;
+        color: #fff;
+        background: linear-gradient(135deg, #22a06b, #15813b);
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 1;
+      }
+      .pvw-note {
+        margin-top: auto;
+        padding: 13px 14px;
+        border: 1px solid rgba(36, 107, 254, 0.14);
+        border-radius: 15px;
+        color: #315684;
+        background: rgba(232, 240, 255, 0.6);
+        font-size: 0.92rem;
+        line-height: 1.45;
+      }
+      .pvg-shots {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        align-content: start;
+      }
+      .pvg-shots.stack { grid-template-columns: 1fr; }
+      .pvg-shots figure {
+        margin: 0;
+        padding: 6px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: linear-gradient(135deg, rgba(21, 32, 51, 0.05), rgba(36, 107, 254, 0.07));
+      }
+      .pvg-shots img {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        max-height: 360px;
+        height: auto;
+        margin-inline: auto;
+        border-radius: 10px;
+      }
+      .pvg-shots.stack img {
+        width: 100%;
+        max-height: none;
+      }
+      .pvg-shots img { cursor: zoom-in; }
+      .pvl-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 999;
+        display: grid;
+        place-items: center;
+        padding: 3vmin;
+        background: rgba(10, 16, 26, 0.82);
+        backdrop-filter: blur(6px);
+        cursor: zoom-out;
+      }
+      .pvl-overlay[hidden] { display: none; }
+      .pvl-overlay img {
+        max-width: min(1500px, 96vw);
+        max-height: 93vh;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.5);
+      }
+      .pvg-shots figcaption {
+        margin-top: 6px;
+        color: var(--muted);
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      #release > .pvr-flow {
+        width: min(100%, var(--wide-max));
+        margin-inline: auto;
+      }
+      .pvr-steps {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+      .pvr-steps strong {
+        display: inline-grid;
+        place-items: center;
+        width: 26px;
+        height: 26px;
+        flex: 0 0 auto;
+        border-radius: 999px;
+        color: #fff;
+        background: var(--step-color, #246bfe);
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--step-color, #246bfe) 18%, transparent);
+        font-size: 0.88rem;
+        font-weight: 700;
+        line-height: 1;
+      }
+      .pvr-steps li:nth-child(1) strong { --step-color: #246bfe; }
+      .pvr-steps li:nth-child(2) strong { --step-color: #0f9f9a; }
+      .pvr-steps li:nth-child(3) strong { --step-color: #15813b; }
+      .pvr-flow .compatibility-list { margin-top: 18px; }
+      @media (max-width: 980px) {
+        .pvr-steps { grid-template-columns: 1fr; }
+        .pvg-group { grid-template-columns: 1fr; }
+        .pvg-shots { grid-template-columns: 1fr; }
+        .pvg-shots img { max-height: 420px; }
+      }
+    </style>
   </head>
   <body class="compact-page">
     <header class="site-header" aria-label="Основное">
@@ -99,156 +383,188 @@
         >
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="hero-content">
-          <p class="eyebrow">Помощник дисплея в строке меню Mac</p>
-          <h1 id="hero-title">DeskHelper Pro</h1>
-          <p class="hero-subtitle">
-            Спокойное приложение в строке меню для управления дисплеем MacBook, подсветкой клавиатуры, Auto Wi-Fi Switch, контекстными меню Finder, локальными Safes.
-          </p>
-          <div class="hero-summary" aria-label="Кратко о DeskHelper Pro">
-            <div>
-              <strong>Затемнение</strong>
-              <span>Держит встроенный экран MacBook темным при зеркалировании на внешний монитор.</span>
-            </div>
-            <div>
-              <strong>Управление</strong>
-              <span>Зеркалирование, затемнение, сон, яркость, контраст и сочетания клавиш из строки меню.</span>
-            </div>
-            <div>
-              <strong>Finder + Safes</strong>
-              <span>Создавайте файлы и папки, вставляйте элементы, открывайте пути в приложениях и шифруйте или расшифровывайте локальные Safes.</span>
-            </div>
+          <div class="pvh-copy">
+            <p class="eyebrow">Помощник дисплея в строке меню Mac</p>
+            <h1 id="hero-title">DeskHelper Pro</h1>
+            <p class="hero-subtitle">
+              Полезные функции рабочего стола — в одной утилите для Mac.
+            </p>
+            <p class="pvh-combines">
+              DeskHelper Pro объединяет управление дисплеями, быстрые действия с окнами, действия Finder, локальную защиту файлов, настройку устройств ввода, управление громкостью приложений и ориентированный на приватность подход в одном приложении строки меню.
+            </p>
           </div>
-          <div class="trust-pills" aria-label="Особенности">
-            <span>Без окна в Dock</span>
-            <span>Без паролей Wi-Fi</span>
-            <span>Локальные Safes</span>
-            <span>14 дней пробно</span><span>Локализовано на 26 языков</span></div>
+          <div class="pvh-chips" aria-label="Highlights">
+            <span>Управление дисплеем</span>
+            <span>Быстрые действия с окнами</span>
+            <span>Действия Finder</span>
+            <span>Шифрование и архивы (.safe/.7z/.zip/.dmg)</span>
+            <span>Чувствительность мыши и скорость прокрутки</span>
+            <span>Переназначение клавиш/кнопок</span>
+            <span>Микшер громкости приложений</span>
+            <span>Приватность по умолчанию</span>
+          </div>
         </div>
       </section>
 
-      <section class="section controls-section compact-section" id="what" aria-labelledby="what-title">
-        <div class="section-kicker">Что это?</div>
-        <div class="controls-layout">
-          <div>
-            <h2 id="what-title">Все, что оно делает.</h2>
-          <ul class="copy-points" aria-label="Функции DeskHelper Pro">
-              <li><strong>Затемнить встроенный дисплей</strong><span>Зеркалирует встроенный дисплей на внешний, затем затемняет его.</span></li>
-              <li><strong>Управление дисплеем</strong><span>Переключайте зеркалирование, затемняйте дисплеи до нажатия клавиши, усыпляйте Mac и регулируйте яркость или контраст из строки меню.</span></li>
-              <li><strong>Подсветка клавиатуры</strong><span>Регулируйте яркость встроенной клавиатуры MacBook с помощью ползунка.</span></li>
-              <li><strong>Auto Wi-Fi Switch</strong><span>Когда включено, следит за сохраненными Wi-Fi сетями и переключает на лучшую известную точку доступа, когда текущий сигнал падает.</span></li>
-              <li><strong>Контекстные меню Finder</strong><span>Создавайте файлы и папки, вставляйте скопированные элементы, копируйте пути или открывайте выбранные элементы Finder в TextEdit, Terminal, Codex, Claude, VSCode или другом совместимом приложении.</span></li>
-              <li><strong>Safes</strong><span>Шифруйте выбранные файлы или папки в один локальный файл .safe, добавляйте их в существующий Safe или расшифровывайте Safe обратно в папку.</span></li>
-              <li><strong>100% конфиденциально</strong><span>В отличие от Google Drive, OneDrive, GitHub и других универсальных облачных или кодовых сервисов, открытый текст, пароли и ключи шифрования остаются на вашем Mac.</span></li>
-              <li><strong>Основы приватности</strong><span>Без аккаунта, без аналитики, без паролей Wi-Fi и без окна в Dock.</span></li>
-          </ul>
+      <section class="section compact-section pvw" id="what" aria-label="Features">
+        <article class="pvg-group pvg-display">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">&#8984;</div>
+              <h3>Управление дисплеем и окнами</h3>
+            </div>
+            <p class="pvg-lede">Управляйте визуальным рабочим пространством, не переключаясь между Системными настройками, сторонними оконными утилитами и меню дисплеев.</p>
+            <ul class="pvw-points">
+              <li>Гасить встроенный экран MacBook во время зеркалирования на внешний монитор.</li>
+              <li>Переключать зеркалирование, затемнять экраны до нажатия клавиши, переводить в сон, перезагружать, выключать, а также регулировать яркость и контраст.</li>
+              <li>Устанавливать и переключать поддерживаемые режимы HiDPI и пользовательские разрешения.</li>
+              <li>Перемещать окна на половины, в углы, по центру, в полноэкранные раскладки, на другие дисплеи и рабочие столы.</li>
+              <li>Подсвечивать активное окно настраиваемой рамкой, пропускающей клики.</li>
+            </ul>
+            <div class="pvw-note">Включает фокусировку упорядоченных окон и помощь при конфликте с Rectangle/Rectangle Pro.</div>
           </div>
-          <div class="product-screenshots" aria-label="Снимки экрана DeskHelper Pro">
-            <figure class="menu-screenshot main-menu-screenshot">
-              <img src="../assets/deskhelperpro-menu.png?v=20260704" alt="DeskHelper Pro menu: display, Wi-Fi, Finder, Safe, privacy, and updates." />
+          <div class="pvg-shots">
+            <figure>
+              <img src="../assets/deskhelperpro-menu.png?v=20260704" width="1028" height="1980" loading="lazy" alt="Главное меню">
+              <figcaption>Главное меню</figcaption>
             </figure>
-            <figure class="menu-screenshot finder-context-screenshot">
-              <img src="../assets/finder-context-menu.png?v=20260704" alt="Контекстные меню Finder: New File, New Folder, Paste, Open in apps, Safes." />
+            <figure>
+              <img src="../assets/resolution-submenu.png" width="1650" height="1984" loading="lazy" alt="Изменить разрешение">
+              <figcaption>Изменить разрешение</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/window-arrangement-submenu.png" width="1828" height="2260" loading="lazy" alt="Расположение окон">
+              <figcaption>Расположение окон</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/highlight-settings.png" width="1240" height="1202" loading="lazy" alt="Подсветка активного окна">
+              <figcaption>Подсветка активного окна</figcaption>
             </figure>
           </div>
-        </div>
-        <div class="feature-tour">
-          <article class="tour-row">
-            <figure>
-              <img
-                src="../assets/window-arrangement-submenu.png"
-                width="1828"
-                height="2260"
-                loading="lazy"
-                decoding="async"
-                alt="Расположение окон"
-              >
-            </figure>
-            <div class="tour-copy">
-              <h3>Расположение окон</h3>
-              <p>Прикрепляйте активное окно к половинам или четвертям экрана, разворачивайте или центрируйте — у каждого действия свое сочетание клавиш.</p>
+        </article>
+
+        <article class="pvg-group pvg-finder">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                  <path d="M3 7.5A2 2 0 0 1 5 5.5h4.2l1.8 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <rect x="10.4" y="12.6" width="5.6" height="4.4" rx="1" stroke-width="1.7"></rect>
+                  <path d="M11.9 12.6v-1.3a1.3 1.3 0 0 1 2.6 0v1.3" stroke-width="1.7"></path>
+                </svg>
+              </div>
+              <h3>Действия Finder и локальные сейфы</h3>
             </div>
-          </article>
-          <article class="tour-row">
+            <p class="pvg-lede">Сделайте Finder удобнее: выбранные файлы, пароли и зашифрованные сейфы остаются на вашем Mac.</p>
+            <ul class="pvw-points">
+              <li>Создавать новые файлы и папки прямо в Finder.</li>
+              <li>Вставлять, перемещать, копировать пути и открывать папки в Terminal, TextEdit, VS Code, Codex, Claude и других поддерживаемых приложениях.</li>
+              <li>Шифровать выбранные файлы и папки в локальные файлы <code>.safe</code>.</li>
+              <li>Добавлять файлы в существующий сейф или расшифровывать только выбранное.</li>
+              <li>Работать с поддерживаемыми архивами .7z, .zip и .dmg.</li>
+            </ul>
+            <div class="pvw-note">Действия Finder и сейфов выполняются только после выбора действия DeskHelper Pro в контекстном меню.</div>
+          </div>
+          <div class="pvg-shots">
             <figure>
-              <img
-                src="../assets/resolution-submenu.png"
-                width="1650"
-                height="1984"
-                loading="lazy"
-                decoding="async"
-                alt="Изменить разрешение"
-              >
+              <img src="../assets/finder-context-menu.png?v=20260704" width="1066" height="994" loading="lazy" alt="Действия Finder">
+              <figcaption>Действия Finder</figcaption>
             </figure>
-            <div class="tour-copy">
-              <h3>Изменить разрешение</h3>
-              <p>Переключайте разрешение и частоту обновления прямо из меню — все доступные режимы, пресеты HiDPI и пользовательские размеры.</p>
-            </div>
-          </article>
-          <article class="tour-row">
             <figure>
-              <img
-                src="../assets/highlight-settings.png"
-                width="1240"
-                height="1202"
-                loading="lazy"
-                decoding="async"
-                alt="Подсветка активного окна"
-              >
+              <img src="../assets/finder-context-config.png" width="1986" height="1968" loading="lazy" alt="Контекстные меню Finder">
+              <figcaption>Контекстные меню Finder</figcaption>
             </figure>
-            <div class="tour-copy">
-              <h3>Подсветка активного окна</h3>
-              <p>Рисует пропускающую клики рамку вокруг активного окна приложения. DeskHelper Pro не изменяет настоящее окно приложения.</p>
+          </div>
+        </article>
+
+        <article class="pvg-group pvg-input">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                  <rect x="8" y="3" width="8" height="18" rx="4"></rect>
+                  <path d="M12 7v3.5"></path>
+                </svg>
+              </div>
+              <h3>Профили указателя, прокрутки и ввода</h3>
             </div>
-          </article>
-          <article class="tour-row">
+            <p class="pvg-lede">Настраивайте мыши, указывающие устройства, поведение клавиатуры и назначение кнопок для каждого устройства.</p>
+            <ul class="pvw-points">
+              <li>Регулировать чувствительность и ускорение указателя для каждой мыши.</li>
+              <li>Задавать скорость и ускорение прокрутки для каждого указывающего устройства.</li>
+              <li>Использовать линейную прокрутку с масштабированием, совместимым с LinearMouse.</li>
+              <li>Переназначать клавиши и поддерживаемые кнопки мыши на клавиши, сочетания, клавиши двойной роли или модификаторы в стиле Hyper.</li>
+              <li>Хранить профили и правила локально на этом Mac.</li>
+            </ul>
+            <div class="pvw-note">Полезно, когда за одним столом несколько мышей, клавиатур или сочетаний под конкретный рабочий процесс.</div>
+          </div>
+          <div class="pvg-shots">
             <figure>
-              <img
-                src="../assets/mouse-scroll-settings.png"
-                width="1296"
-                height="1554"
-                loading="lazy"
-                decoding="async"
-                alt="Чувствительность и ускорение мыши · Скорость и ускорение прокрутки"
-              >
+              <img src="../assets/mouse-scroll-settings.png" width="1296" height="1554" loading="lazy" alt="Чувствительность и ускорение мыши · Скорость и ускорение прокрутки">
+              <figcaption>Чувствительность и ускорение мыши · Скорость и ускорение прокрутки</figcaption>
             </figure>
-            <div class="tour-copy">
-              <h3>Чувствительность и ускорение мыши · Скорость и ускорение прокрутки</h3>
-              <p>Настраивайте чувствительность и ускорение указателя для каждой мыши. Профили остаются на этом Mac и никогда не загружаются.</p>
-            </div>
-          </article>
-          <article class="tour-row">
             <figure>
-              <img
-                src="../assets/key-button-remapping.png"
-                width="1716"
-                height="1408"
-                loading="lazy"
-                decoding="async"
-                alt="Переназначение клавиш и кнопок"
-              >
+              <img src="../assets/key-button-remapping.png" width="1716" height="1408" loading="lazy" alt="Переназначение клавиш и кнопок">
+              <figcaption>Переназначение клавиш и кнопок</figcaption>
             </figure>
-            <div class="tour-copy">
-              <h3>Переназначение клавиш и кнопок</h3>
-              <p>Создавайте правила, переназначающие клавишу или поддерживаемую кнопку мыши на клавишу, сочетание, клавишу Dual-Role или модификатор в стиле Hyper. Правила остаются на этом Mac и никогда не выгружаются.</p>
+          </div>
+        </article>
+
+        <article class="pvg-group pvg-audio">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">&#9834;</div>
+              <h3>Звук приложений и настольные утилиты</h3>
             </div>
-          </article>
-          <article class="tour-row">
+            <p class="pvg-lede">Управляйте мелкими деталями рабочего места, которые отвлекают, когда разбросаны по разным приложениям.</p>
+            <ul class="pvw-points">
+              <li>Настраивать громкость каждого приложения из строки меню.</li>
+              <li>Усиливать тихие приложения до 200%.</li>
+              <li>Отключать звук отдельных приложений.</li>
+              <li>Позволить автопереключению Wi-Fi выбирать лучшую известную точку доступа при слабом сигнале.</li>
+              <li>Работать из строки меню, не добавляя окно в Dock.</li>
+            </ul>
+            <div class="pvw-note">Аудиомикшеру требуется разрешение на запись системного звука в macOS 14.4 и новее; звук обрабатывается локально.</div>
+          </div>
+          <div class="pvg-shots stack">
             <figure>
-              <img
-                src="../assets/finder-context-config.png"
-                width="1986"
-                height="1968"
-                loading="lazy"
-                decoding="async"
-                alt="Контекстные меню Finder"
-              >
+              <img src="../assets/audio-mixer.png" width="1028" height="225" loading="lazy" alt="Микшер громкости приложений в меню">
+              <figcaption>Микшер громкости приложений в меню</figcaption>
             </figure>
-            <div class="tour-copy">
-              <h3>Контекстные меню Finder</h3>
-              <p>Настройте действия Finder, разрешения, доступ к сохраненным папкам и элементы управления конфиденциальностью.</p>
+            <figure>
+              <img src="../assets/wifi-switch.png" width="1028" height="200" loading="lazy" alt="Автопереключение Wi-Fi в меню">
+              <figcaption>Автопереключение Wi-Fi в меню</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="pvg-group pvg-privacy">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                <rect x="4" y="11" width="16" height="10" rx="2.5"></rect>
+                <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
+              </svg>
             </div>
-          </article>
-        </div>
+              <h3>Приватность по умолчанию</h3>
+            </div>
+            <p class="pvg-lede">DeskHelper Pro создан для локальной работы на Mac. Он не превращает настольную утилиту в ещё один аккаунт, поток аналитики или облачный файловый сервис.</p>
+            <ul class="pvw-points">
+              <li>Аккаунт не требуется.</li>
+              <li>Никакой аналитики, рекламных SDK, телеметрии использования и отслеживания сессий.</li>
+              <li>Пароли Wi-Fi не собираются, пароли сейфов не записываются.</li>
+              <li>Открытый текст, пароли сейфов, ключи шифрования, профили указателя, правила переназначения и обработка звука остаются локально.</li>
+              <li>Необязательные разрешения объясняются понятно: Универсальный доступ, Мониторинг ввода, Запись системного звука, Геопозиция, Расширение Finder и Полный доступ к диску.</li>
+            </ul>
+          </div>
+          <div class="pvg-shots stack">
+            <figure>
+              <img src="../assets/permissions-overview.png?v=2" width="1440" height="1798" loading="lazy" alt="Обзор разрешений с текущим статусом">
+              <figcaption>Обзор разрешений с текущим статусом</figcaption>
+            </figure>
+          </div>
+        </article>
       </section>
 
       <section class="section compact-section" id="why" aria-labelledby="why-title">
@@ -290,41 +606,25 @@
 
       <section class="section compact-section compact-release" id="release" aria-labelledby="release-title">
         <div class="section-kicker">Как получить</div>
-        <div class="compact-split">
-          <div>
-            <h2 id="release-title">Скачайте и попробуйте 14 дней.</h2>
-            <ul class="copy-points" aria-label="Сводка релиза">
-              <li>
-                <strong>Скачать</strong>
-                <span>одно приложение для Apple Silicon и Intel Mac</span>
-              </li>
-              <li>
-                <strong>Установить</strong>
-                <span>перетащите DeskHelper Pro в Программы</span>
-              </li>
-              <li>
-                <strong>Попробовать</strong>
-                <span>все Pro-функции активны во время пробного периода</span>
-              </li>
-            </ul>
-            <div class="compatibility-list" aria-label="Совместимость">
-              <span>macOS 13.0 или новее</span>
-              <span>arm64 + x86_64</span><span class="app-version">v1.3.16</span></div>
-          </div>
-          <ol class="steps compact-steps">
+        <div class="pvr-flow">
+          <h2 id="release-title">Скачайте и попробуйте 14 дней.</h2>
+          <ol class="steps compact-steps pvr-steps" aria-label="Install steps">
             <li>
               <strong>1</strong>
-              <span>Скачайте DMG.</span>
+              <span>Скачайте DMG — одно приложение для Mac на Apple Silicon и Intel.</span>
             </li>
             <li>
               <strong>2</strong>
-              <span>Перетащите приложение в Программы.</span>
+              <span>Перетащите DeskHelper Pro в «Программы» и запустите.</span>
             </li>
             <li>
               <strong>3</strong>
-              <span>Запустите из Программ.</span>
+              <span>Пробуйте все функции Pro бесплатно 14 дней.</span>
             </li>
           </ol>
+          <div class="compatibility-list" aria-label="Совместимость">
+              <span>macOS 13.0 или новее</span>
+              <span>arm64 + x86_64</span><span class="app-version">v1.3.16</span></div>
         </div>
         <div class="download-card" aria-label="Призыв к скачиванию">
           <div>
@@ -342,5 +642,30 @@
       </section>
     </main>
     <script src="../script.js?v=20260609-dropdown"></script>
+    <div class="pvl-overlay" id="pvl-overlay" hidden>
+      <img alt="">
+    </div>
+    <script>
+      (function () {
+        var overlay = document.getElementById("pvl-overlay");
+        var overlayImg = overlay.querySelector("img");
+        function close() {
+          overlay.hidden = true;
+          document.body.style.overflow = "";
+        }
+        document.querySelectorAll(".pvg-shots img").forEach(function (img) {
+          img.addEventListener("click", function () {
+            overlayImg.src = img.currentSrc || img.src;
+            overlayImg.alt = img.alt;
+            overlay.hidden = false;
+            document.body.style.overflow = "hidden";
+          });
+        });
+        overlay.addEventListener("click", close);
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape") close();
+        });
+      })();
+    </script>
   </body>
 </html>
