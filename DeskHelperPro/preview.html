@@ -50,9 +50,11 @@
       }
       .compact-hero {
         min-height: 0;
-        padding-top: 3rem;
-        padding-bottom: 2.2rem;
+        padding-top: 2.1rem;
+        padding-bottom: 1.5rem;
       }
+      .compact-hero .eyebrow { margin-bottom: 0.5rem; }
+      .compact-hero .hero-subtitle { margin-bottom: 0; }
       .compact-hero .hero-content {
         display: grid;
         grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
@@ -68,43 +70,57 @@
       .pvh-chips {
         display: flex;
         flex-wrap: wrap;
-        gap: 9px;
+        gap: 8px 8px;
         align-content: center;
+        justify-content: flex-end;
       }
       .pvh-chips span {
         display: inline-flex;
         align-items: center;
-        gap: 7px;
-        padding: 8px 12px;
-        border: 1px solid var(--line);
+        gap: 8px;
+        padding: 6px 13px 6px 11px;
+        border: 1px solid rgba(28, 42, 64, 0.1);
         border-radius: 999px;
-        background: var(--panel);
-        color: var(--muted);
-        font-size: 0.92rem;
-        box-shadow: 0 6px 16px rgba(21, 32, 51, 0.04);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.72));
+        color: #3d4a5d;
+        font-size: 0.88rem;
+        letter-spacing: 0.01em;
+        box-shadow:
+          0 1px 2px rgba(21, 32, 51, 0.05),
+          0 6px 18px rgba(21, 32, 51, 0.05);
+        backdrop-filter: blur(8px);
       }
       .pvh-chips span::before {
         content: "";
         width: 7px;
         height: 7px;
         border-radius: 999px;
-        background: linear-gradient(135deg, #246bfe, #0f9f9a);
+        background: var(--chip-dot, #246bfe);
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--chip-dot, #246bfe) 16%, transparent);
       }
+      .pvh-chips span:nth-child(1) { --chip-dot: #246bfe; }
+      .pvh-chips span:nth-child(2) { --chip-dot: #4f8df9; }
+      .pvh-chips span:nth-child(3) { --chip-dot: #0f9f9a; }
+      .pvh-chips span:nth-child(4) { --chip-dot: #087975; }
+      .pvh-chips span:nth-child(5) { --chip-dot: #7964e8; }
+      .pvh-chips span:nth-child(6) { --chip-dot: #9a5fd6; }
+      .pvh-chips span:nth-child(7) { --chip-dot: #c36518; }
+      .pvh-chips span:nth-child(8) { --chip-dot: #15813b; }
       @media (max-width: 980px) {
         .compact-hero .hero-content { grid-template-columns: 1fr; }
       }
       .pvh-combines {
-        margin: 0.9rem 0 0;
+        margin: 0.7rem 0 0;
         max-width: 44rem;
         color: var(--muted);
         line-height: 1.65;
       }
       .pvg-group {
         display: grid;
-        grid-template-columns: minmax(0, 0.44fr) minmax(0, 0.56fr);
-        gap: clamp(20px, 3vw, 34px);
+        grid-template-columns: minmax(0, 0.4fr) minmax(0, 0.6fr);
+        gap: clamp(16px, 2.5vw, 28px);
         align-items: start;
-        padding: 26px;
+        padding: 20px;
         border: 1px solid var(--line);
         border-radius: 22px;
         background: var(--panel);
@@ -207,13 +223,13 @@
       .pvg-shots {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 14px;
+        gap: 10px;
         align-content: start;
       }
       .pvg-shots.stack { grid-template-columns: 1fr; }
       .pvg-shots figure {
         margin: 0;
-        padding: 10px;
+        padding: 6px;
         border: 1px solid var(--line);
         border-radius: 14px;
         background: linear-gradient(135deg, rgba(21, 32, 51, 0.05), rgba(36, 107, 254, 0.07));
@@ -222,7 +238,7 @@
         display: block;
         width: auto;
         max-width: 100%;
-        max-height: 300px;
+        max-height: 360px;
         height: auto;
         margin-inline: auto;
         border-radius: 10px;
@@ -232,7 +248,7 @@
         max-height: none;
       }
       .pvg-shots figcaption {
-        margin-top: 8px;
+        margin-top: 6px;
         color: var(--muted);
         font-size: 0.9rem;
         text-align: center;
