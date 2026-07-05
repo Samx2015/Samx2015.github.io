@@ -48,6 +48,51 @@
         width: min(100%, var(--wide-max));
         margin-inline: auto;
       }
+      .compact-hero {
+        min-height: 0;
+        padding-top: 3rem;
+        padding-bottom: 2.2rem;
+      }
+      .compact-hero .hero-content {
+        display: grid;
+        grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+        gap: clamp(1.5rem, 4vw, 3.5rem);
+        align-items: center;
+        padding-top: 0;
+        width: min(100%, var(--wide-max));
+      }
+      .compact-hero h1 {
+        font-size: clamp(2.1rem, 4vw, 2.9rem);
+        margin-bottom: 0.6rem;
+      }
+      .pvh-chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+        align-content: center;
+      }
+      .pvh-chips span {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        padding: 8px 12px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--panel);
+        color: var(--muted);
+        font-size: 0.92rem;
+        box-shadow: 0 6px 16px rgba(21, 32, 51, 0.04);
+      }
+      .pvh-chips span::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #246bfe, #0f9f9a);
+      }
+      @media (max-width: 980px) {
+        .compact-hero .hero-content { grid-template-columns: 1fr; }
+      }
       .pvh-combines {
         margin: 0.9rem 0 0;
         max-width: 44rem;
@@ -85,6 +130,19 @@
       .pvg-input .pvw-icon { background: #f0edff; color: #7964e8; }
       .pvg-audio .pvw-icon { background: #fff2e4; color: #c36518; }
       .pvg-privacy .pvw-icon { background: #eaf9ee; color: #15813b; }
+      .pvg-head {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .pvg-head .pvw-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 12px;
+        font-size: 1.1rem;
+        flex: 0 0 auto;
+      }
+      .pvg-head h3 { margin: 0; }
       .pvg-copy h3 {
         margin: 0 0 8px;
         font-size: 1.28rem;
@@ -119,6 +177,22 @@
         height: 8px;
         border-radius: 999px;
         background: linear-gradient(135deg, #246bfe, #0f9f9a);
+      }
+      .pvg-privacy .pvw-points li {
+        padding-left: 30px;
+      }
+      .pvg-privacy .pvw-points li::before {
+        content: "\2713";
+        top: 0.18em;
+        width: 19px;
+        height: 19px;
+        display: grid;
+        place-items: center;
+        color: #fff;
+        background: linear-gradient(135deg, #22a06b, #15813b);
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 1;
       }
       .pvw-note {
         margin-top: auto;
@@ -240,40 +314,27 @@
         >
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="hero-content">
-          <p class="eyebrow">Mac menu-bar utility suite</p>
-          <h1 id="hero-title">DeskHelper Pro</h1>
-          <p class="hero-subtitle">
-            The useful desk features, merged into one Mac utility.
-          </p>
-          <p class="pvh-combines">
-            DeskHelper Pro combines display control, window shortcuts, Finder actions,
-            local file protection, input-device tuning, app audio control, and
-            privacy-focused behavior into one focused menu-bar app.
-          </p>
-          <div class="hero-summary" aria-label="DeskHelper Pro summary">
-            <div>
-              <strong>Display + windows</strong>
-              <span>Blackout, brightness, keyboard backlight, HiDPI modes, window layouts, and display moves.</span>
-            </div>
-            <div>
-              <strong>Finder + Safes</strong>
-              <span>Create, paste, move, open, encrypt, decrypt, and extract from the Finder context menu.</span>
-            </div>
-            <div>
-              <strong>Pointer + audio</strong>
-              <span>Pointer profiles, scroll speed, key/button remaps, active-window borders, and app volume controls.</span>
-            </div>
+          <div class="pvh-copy">
+            <p class="eyebrow">Mac menu-bar utility suite</p>
+            <h1 id="hero-title">DeskHelper Pro</h1>
+            <p class="hero-subtitle">
+              The useful desk features, merged into one Mac utility.
+            </p>
+            <p class="pvh-combines">
+              DeskHelper Pro combines display control, window shortcuts, Finder actions,
+              local file protection, input-device tuning, app audio control, and
+              privacy-focused behavior into one focused menu-bar app.
+            </p>
           </div>
-          <div class="trust-pills" aria-label="Highlights">
-            <span>No Dock window</span>
-            <span>Finder context menus</span>
+          <div class="pvh-chips" aria-label="Feature highlights">
+            <span>Display Control</span>
+            <span>Window Shortcuts</span>
+            <span>Finder Actions</span>
             <span>Local Safes</span>
-            <span>Window shortcuts</span>
-            <span>Pointer profiles</span>
-            <span>Audio Mixer</span>
-            <span>No Wi-Fi passwords</span>
-            <span>14-day trial</span>
-            <span>Localized in 26 languages</span>
+            <span>Pointer Profiles</span>
+            <span>Key/Button Remapping</span>
+            <span>App Audio Mixer</span>
+            <span>Private by Design</span>
           </div>
         </div>
       </section>
@@ -281,11 +342,11 @@
       <section class="section compact-section pvw" id="what" aria-label="Features">
         <article class="pvg-group pvg-display">
           <div class="pvg-copy">
-            <div class="pvw-icon" aria-hidden="true">&#8984;</div>
-            <div>
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">&#8984;</div>
               <h3>Display &amp; Window Control</h3>
-              <p>Manage the visual workspace without jumping between System Settings, third-party window tools, and display menus.</p>
             </div>
+            <p class="pvg-lede">Manage the visual workspace without jumping between System Settings, third-party window tools, and display menus.</p>
             <ul class="pvw-points">
               <li>Black out the built-in MacBook display while mirroring to an external monitor.</li>
               <li>Switch mirroring, dim displays until key press, sleep, restart, shut down, and adjust brightness or contrast.</li>
@@ -317,11 +378,11 @@
 
         <article class="pvg-group pvg-finder">
           <div class="pvg-copy">
-            <div class="pvw-icon" aria-hidden="true">&#9635;</div>
-            <div>
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">&#9635;</div>
               <h3>Finder Actions &amp; Local Safes</h3>
-              <p>Make Finder more useful while keeping selected files, passwords, and encrypted Safes on your Mac.</p>
             </div>
+            <p class="pvg-lede">Make Finder more useful while keeping selected files, passwords, and encrypted Safes on your Mac.</p>
             <ul class="pvw-points">
               <li>Create new files and folders from Finder.</li>
               <li>Paste, move, copy paths, and open folders in Terminal, TextEdit, VS Code, Codex, Claude, or another supported app.</li>
@@ -345,11 +406,11 @@
 
         <article class="pvg-group pvg-input">
           <div class="pvg-copy">
-            <div class="pvw-icon" aria-hidden="true">&#8961;</div>
-            <div>
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">&#8961;</div>
               <h3>Pointer, Scroll &amp; Input Profiles</h3>
-              <p>Tune mice, pointing devices, keyboard behavior, and button mappings per device.</p>
             </div>
+            <p class="pvg-lede">Tune mice, pointing devices, keyboard behavior, and button mappings per device.</p>
             <ul class="pvw-points">
               <li>Adjust pointer sensitivity and acceleration per mouse.</li>
               <li>Set scroll speed and scroll acceleration per pointing device.</li>
@@ -373,11 +434,11 @@
 
         <article class="pvg-group pvg-audio">
           <div class="pvg-copy">
-            <div class="pvw-icon" aria-hidden="true">&#9834;</div>
-            <div>
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">&#9834;</div>
               <h3>App Audio &amp; Desk Utilities</h3>
-              <p>Control the small desk details that interrupt work when they are scattered across separate apps.</p>
             </div>
+            <p class="pvg-lede">Control the small desk details that interrupt work when they are scattered across separate apps.</p>
             <ul class="pvw-points">
               <li>Set per-app volume from the menu bar.</li>
               <li>Boost quiet apps up to 200%.</li>
@@ -401,11 +462,16 @@
 
         <article class="pvg-group pvg-privacy">
           <div class="pvg-copy">
-            <div class="pvw-icon" aria-hidden="true">&#10003;</div>
-            <div>
-              <h3>Private by Design</h3>
-              <p>DeskHelper Pro is built for local Mac workflows. It does not turn your desk utility into another account, analytics stream, or cloud file service.</p>
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                <rect x="4" y="11" width="16" height="10" rx="2.5"></rect>
+                <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
+              </svg>
             </div>
+              <h3>Private by Design</h3>
+            </div>
+            <p class="pvg-lede">DeskHelper Pro is built for local Mac workflows. It does not turn your desk utility into another account, analytics stream, or cloud file service.</p>
             <ul class="pvw-points">
               <li>No DeskHelper Pro account required.</li>
               <li>No analytics, advertising SDKs, usage telemetry, or session tracking.</li>
