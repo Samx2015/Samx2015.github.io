@@ -32,13 +32,6 @@
             <sparkle:version>41</sparkle:version>
             <sparkle:shortVersionString>1.3.16</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[
-## DeskHelper Pro 1.3.16
-
-**Fixed**
-- **Rock-steady menu layout** — the menu's buttons no longer shift to the right as the menu opens. The layout is final from the very first frame, on every open, including cold starts.
-
-]]></description>
             <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.3.16/DeskHelperPro-1.3.16-41-macOS.dmg" length="11868126" type="application/octet-stream" sparkle:edSignature="JFMxGGx2iUxIQFgM0vfirA0f0uwXEQQhG32saRBQear67/RWlB/AUnAbPw2luQ9RYB8JzKrce6Yj189UiidDAw=="/>
         </item>
     </channel>
