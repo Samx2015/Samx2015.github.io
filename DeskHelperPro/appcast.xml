@@ -3,6 +3,29 @@
     <channel>
         <title>DeskHelper Pro</title>
         <item>
+            <title>1.3.17</title>
+            <pubDate>Mon, 06 Jul 2026 23:09:31 -0700</pubDate>
+            <link>https://xintechllc.com/DeskHelperPro/</link>
+            <sparkle:version>42</sparkle:version>
+            <sparkle:shortVersionString>1.3.17</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[
+## DeskHelper Pro 1.3.17
+
+**Fixed**
+- **Finder menu** — "Open in Terminal" and other Finder actions no longer occasionally trigger the wrong menu item.
+- **Encrypt / Decrypt Safes** — creating a new encrypted file is more reliable, and the progress window no longer stretches off-screen when a file path is long.
+- **Blackout** — toggling is steadier while an external display finishes mirroring.
+- **Rectangle conflict** — when macOS blocks removing Rectangle's login item, DeskHelper now sends you straight to the right Automation setting.
+
+**Improved**
+- **Encrypt / Compress dialog** — a clearer split between password-protected encryption and no-password compression, the dialog now opens next to your pointer, and password checks happen inline without a separate pop-up.
+- **Localization** — more of the app's messages are fully translated.
+
+]]></description>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.3.17/DeskHelperPro-1.3.17-42-macOS.dmg" length="11990150" type="application/octet-stream" sparkle:edSignature="Z6ocFPWLQqA1Tu8TW/GzK5mPDO7M0qOno0uuEUwHhH162JfVM+Y6fJEJs7laQnCUVwfoNp0uU+OdNyezH47RBw=="/>
+        </item>
+        <item>
             <title>1.3.16</title>
             <pubDate>Fri, 03 Jul 2026 03:34:43 -0700</pubDate>
             <link>https://xintechllc.com/DeskHelperPro/</link>
