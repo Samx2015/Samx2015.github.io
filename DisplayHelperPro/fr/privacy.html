@@ -60,7 +60,26 @@
   .notice { padding: 14px 16px; margin: 0 0 24px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel-soft); }
   @media (max-width: 720px) { .summary { grid-template-columns: 1fr; } .summary div { min-height: 0; } }
 </style>
-  </head>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
   <body>
     <header>
       <h1>Politique de confidentialité de DisplayHelper Pro</h1>
@@ -241,6 +260,11 @@
       </section>
 
       <section>
+        <h2>Analyse du site web</h2>
+        <p>Ce site web utilise Umami Cloud, un service d’analyse sans cookies, pour compter les visites de pages et les actions de base du site, comme les clics vers l’App Store, les téléchargements, l’assistance, la confidentialité, les conditions et les liens e-mail. Ces mesures aident Xintech LLC à comprendre quelles pages sont utiles. Elles sont distinctes des apps elles-mêmes, qui n’incluent pas de SDK d’analyse et n’envoient pas de télémétrie d’utilisation de l’app à Xintech LLC.</p>
+      </section>
+
+      <section>
         <h2>Contact</h2>
         <p>
           Pour toute question de confidentialité ou de support, contactez Xintech LLC à
@@ -250,7 +274,6 @@
           Xintech LLC peut mettre à jour cette politique si le comportement de DisplayHelper Pro
           change. La date d’entrée en vigueur ci-dessus changera lorsque la politique sera modifiée.
         </p>
-      </section>
-    </main>
+      </section></main>
   </body>
 </html>

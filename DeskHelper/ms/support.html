@@ -7,6 +7,25 @@
 <meta content="Sokongan untuk DeskHelper." name="description"/>
 <link href="https://xintechllc.com/DeskHelper/ms/support.html" rel="canonical"/><link href="https://xintechllc.com/DeskHelper/support.html" hreflang="en" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/zh-Hans/support.html" hreflang="zh-Hans" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/zh-Hant/support.html" hreflang="zh-Hant" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/ja/support.html" hreflang="ja" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/fr/support.html" hreflang="fr" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/de/support.html" hreflang="de" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/es/support.html" hreflang="es" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/ko/support.html" hreflang="ko" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/pt-BR/support.html" hreflang="pt-BR" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/it/support.html" hreflang="it" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/nl/support.html" hreflang="nl" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/pl/support.html" hreflang="pl" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/tr/support.html" hreflang="tr" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/vi/support.html" hreflang="vi" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/ru/support.html" hreflang="ru" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/ar/support.html" hreflang="ar" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/hi/support.html" hreflang="hi" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/id/support.html" hreflang="id" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/cs/support.html" hreflang="cs" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/da/support.html" hreflang="da" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/fi/support.html" hreflang="fi" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/ms/support.html" hreflang="ms" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/nb/support.html" hreflang="nb" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/sv/support.html" hreflang="sv" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/th/support.html" hreflang="th" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/uk/support.html" hreflang="uk" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/support.html" hreflang="x-default" rel="alternate"/><link href="../assets/app-icon.png" rel="icon" type="image/png"/>
 <link href="../styles.css?v=20260616-deskhelper-support" rel="stylesheet"/>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
 </head>
 <body class="support-page app-store-page deskhelper-appstore-page">
 <header aria-label="utama" class="site-header">

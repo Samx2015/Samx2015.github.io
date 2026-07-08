@@ -36,7 +36,26 @@
     <link rel="icon" href="../assets/app-icon.png" type="image/png">
     <link rel="stylesheet" href="../styles.css?v=20260616-deskhelperpro-support">
     <script src="../script.js?v=20260609-dropdown2" defer></script>
-  </head>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
   <body class="support-page app-store-page deskhelper-appstore-page privacy-simple-page">
     <header class="site-header" aria-label="メイン">
       <a class="brand" href="./" aria-label="DeskHelper Pro ホーム">
@@ -216,6 +235,10 @@
                   </ul>
         </section>
 
+        <section class="support-section" id="website-analytics">
+          <h2>ウェブサイト分析</h2>
+          <p>このウェブサイトでは、Cookie を使わない分析サービス Umami Cloud を使用して、ページ閲覧数と、App Store、ダウンロード、サポート、プライバシー、規約、メールリンクのクリックなどの基本的なウェブサイト操作を数えます。これらのウェブサイト指標は、Xintech LLC が役立つページを理解するためのものです。アプリ本体とは別のものであり、アプリには分析 SDK は含まれず、アプリ利用状況のテレメトリを Xintech LLC に送信しません。</p>
+        </section>
         <section class="support-section" id="contact">
           <h2>お問い合わせ</h2>
                   <p>
@@ -226,7 +249,6 @@
                     Xintech LLC は、DeskHelper Pro の動作が変わった場合、このポリシーを更新することがあります。ポリシーが変更された場合、上記の施行日も変更されます。
                   </p>
         </section>
-      </div>
-    </main>
+      </div></main>
   </body>
 </html>

@@ -36,7 +36,26 @@
     <link rel="icon" href="../assets/app-icon.png" type="image/png">
     <link rel="stylesheet" href="../styles.css?v=20260616-deskhelperpro-support">
     <script src="../script.js?v=20260609-dropdown2" defer></script>
-  </head>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
   <body class="support-page app-store-page deskhelper-appstore-page privacy-simple-page">
     <header class="site-header" aria-label="Principale">
       <a class="brand" href="./" aria-label="Home di DeskHelper Pro">
@@ -200,6 +219,10 @@
                   </ul>
         </section>
 
+        <section class="support-section" id="website-analytics">
+          <h2>Analisi del sito web</h2>
+          <p>Questo sito web usa Umami Cloud, un servizio di analisi senza cookie, per contare le visite alle pagine e le azioni di base del sito, come clic su App Store, download, supporto, privacy, termini e link e-mail. Queste metriche aiutano Xintech LLC a capire quali pagine sono utili. Sono separate dalle app stesse, che non includono SDK di analisi e non inviano telemetria sull’uso dell’app a Xintech LLC.</p>
+        </section>
         <section class="support-section" id="contact">
           <h2>Contatto</h2>
                   <p>
@@ -210,7 +233,6 @@
                     Xintech LLC potrebbe aggiornare questa politica se il comportamento di DeskHelper Pro cambia. La data di entrata in vigore di cui sopra cambierà quando cambia la politica.
                   </p>
         </section>
-      </div>
-    </main>
+      </div></main>
   </body>
 </html>

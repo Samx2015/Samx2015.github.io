@@ -60,7 +60,26 @@
   .notice { padding: 14px 16px; margin: 0 0 24px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel-soft); }
   @media (max-width: 720px) { .summary { grid-template-columns: 1fr; } .summary div { min-height: 0; } }
 </style>
-  </head>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
   <body>
     <header>
       <h1>DisplayHelper Pro गोपनीयता नीति</h1>
@@ -183,6 +202,11 @@
       </section>
 
       <section>
+        <h2>वेबसाइट विश्लेषण</h2>
+        <p>यह वेबसाइट Umami Cloud का उपयोग करती है, जो कुकी-रहित विश्लेषण सेवा है, ताकि पेज विज़िट और App Store, डाउनलोड, सहायता, गोपनीयता, शर्तों और ईमेल लिंक क्लिक जैसी बुनियादी वेबसाइट कार्रवाइयों की गिनती की जा सके। ये वेबसाइट मेट्रिक्स Xintech LLC को यह समझने में मदद करते हैं कि कौन से पेज उपयोगी हैं। ये ऐप्स से अलग हैं; ऐप्स में analytics SDK शामिल नहीं हैं और वे ऐप उपयोग टेलीमेट्री Xintech LLC को नहीं भेजते।</p>
+      </section>
+
+      <section>
         <h2>संपर्क</h2>
         <p>
           गोपनीयता संबंधी प्रश्नों या सहायता के लिए, Xintech LLC पर संपर्क करें
@@ -191,7 +215,6 @@
         <p>
           यदि DisplayHelper Pro का व्यवहार बदलता है तो Xintech LLC इस नीति को अद्यतन कर सकता है। नीति बदलने पर उपरोक्त प्रभावी तिथि बदल जाएगी।
         </p>
-      </section>
-    </main>
+      </section></main>
   </body>
 </html>
