@@ -60,7 +60,26 @@
   .notice { padding: 14px 16px; margin: 0 0 24px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel-soft); }
   @media (max-width: 720px) { .summary { grid-template-columns: 1fr; } .summary div { min-height: 0; } }
 </style>
-  </head>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
   <body>
     <header>
       <h1>Политика конфиденциальности DisplayHelper Pro</h1>
@@ -183,6 +202,11 @@
       </section>
 
       <section>
+        <h2>Аналитика сайта</h2>
+        <p>Этот сайт использует Umami Cloud, сервис аналитики без cookie, чтобы подсчитывать просмотры страниц и базовые действия на сайте, такие как переходы в App Store, загрузки, ссылки поддержки, политики конфиденциальности, условий и электронной почты. Эти метрики помогают Xintech LLC понимать, какие страницы полезны. Они отделены от самих приложений: приложения не содержат SDK аналитики и не отправляют телеметрию использования приложения в Xintech LLC.</p>
+      </section>
+
+      <section>
         <h2>Контакт</h2>
         <p>
           По вопросам конфиденциальности или поддержки обращайтесь к Xintech LLC по адресу
@@ -191,7 +215,6 @@
         <p>
           Xintech LLC может обновить эту политику, если поведение DisplayHelper Pro изменится. Указанная выше дата вступления в силу изменится при изменении политики.
         </p>
-      </section>
-    </main>
+      </section></main>
   </body>
 </html>

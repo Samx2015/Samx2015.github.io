@@ -36,7 +36,26 @@
     <link rel="icon" href="../assets/app-icon.png" type="image/png">
     <link rel="stylesheet" href="../styles.css?v=20260616-deskhelperpro-support">
     <script src="../script.js?v=20260609-dropdown2" defer></script>
-  </head>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
   <body class="support-page app-store-page deskhelper-appstore-page privacy-simple-page">
     <header class="site-header" aria-label="Utama">
       <a class="brand" href="./" aria-label="Laman utama DeskHelper Pro">
@@ -193,6 +212,10 @@
                   </ul>
         </section>
 
+        <section class="support-section" id="website-analytics">
+          <h2>Analitik laman web</h2>
+          <p>Laman web ini menggunakan Umami Cloud, perkhidmatan analitik tanpa kuki, untuk mengira lawatan halaman dan tindakan asas laman web seperti klik App Store, muat turun, sokongan, privasi, terma dan pautan e-mel. Metrik laman web ini membantu Xintech LLC memahami halaman yang berguna. Ia berasingan daripada aplikasi itu sendiri; aplikasi tidak menyertakan SDK analitik dan tidak menghantar telemetri penggunaan aplikasi kepada Xintech LLC.</p>
+        </section>
         <section class="support-section" id="contact">
           <h2>Hubungi</h2>
                   <p>
@@ -203,7 +226,6 @@
                     Xintech LLC boleh mengemas kini dasar ini jika tingkah laku DeskHelper Pro berubah. Tarikh kuat kuasa di atas akan berubah apabila polisi berubah.
                   </p>
         </section>
-      </div>
-    </main>
+      </div></main>
   </body>
 </html>

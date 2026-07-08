@@ -8,6 +8,25 @@
 <link href="https://xintechllc.com/DeskHelper/nb/privacy.html" rel="canonical"/><link href="https://xintechllc.com/DeskHelper/privacy.html" hreflang="en" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/zh-Hans/privacy.html" hreflang="zh-Hans" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/zh-Hant/privacy.html" hreflang="zh-Hant" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/ja/privacy.html" hreflang="ja" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/fr/privacy.html" hreflang="fr" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/de/privacy.html" hreflang="de" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/es/privacy.html" hreflang="es" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/ko/privacy.html" hreflang="ko" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/pt-BR/privacy.html" hreflang="pt-BR" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/it/privacy.html" hreflang="it" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/nl/privacy.html" hreflang="nl" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/pl/privacy.html" hreflang="pl" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/tr/privacy.html" hreflang="tr" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/vi/privacy.html" hreflang="vi" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/ru/privacy.html" hreflang="ru" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/ar/privacy.html" hreflang="ar" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/hi/privacy.html" hreflang="hi" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/id/privacy.html" hreflang="id" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/cs/privacy.html" hreflang="cs" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/da/privacy.html" hreflang="da" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/fi/privacy.html" hreflang="fi" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/ms/privacy.html" hreflang="ms" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/nb/privacy.html" hreflang="nb" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/sv/privacy.html" hreflang="sv" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/th/privacy.html" hreflang="th" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/uk/privacy.html" hreflang="uk" rel="alternate"/><link href="https://xintechllc.com/DeskHelper/privacy.html" hreflang="x-default" rel="alternate"/><link href="../assets/app-icon.png" rel="icon" type="image/png"/>
 <link href="../styles.css?v=20260616-deskhelper-support" rel="stylesheet"/>
 <script defer="" src="../script.js?v=20260609-dropdown2"></script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
 </head>
 <body class="support-page app-store-page deskhelper-appstore-page privacy-simple-page">
 <header aria-label="Primær" class="site-header">
@@ -134,6 +153,10 @@
 <li>Du kan fjerne lokale apppreferanser og mappegodkjenninger ved å bruke vanlige macOS preferanseadministrasjonsverktøy.</li>
 </ul>
 </section>
+<section class="support-section" id="website-analytics">
+  <h2>Nettstedsanalyse</h2>
+  <p>Dette nettstedet bruker Umami Cloud, en analyse­tjeneste uten informasjonskapsler, til å telle sidebesøk og grunnleggende nettstedshandlinger som klikk på App Store, nedlasting, kundestøtte, personvern, vilkår og e-postlenker. Disse nettstedmålingene hjelper Xintech LLC med å forstå hvilke sider som er nyttige. De er atskilt fra selve appene, som ikke inneholder analyse-SDK-er og ikke sender telemetri om appbruk til Xintech LLC.</p>
+</section>
 <section class="support-section" id="contact">
 <h2>Kontakt</h2>
 <p>
@@ -144,8 +167,7 @@
               Xintech LLC kan oppdatere denne policyen hvis DeskHelper sin oppførsel
               endringer. Ikrafttredelsesdatoen ovenfor endres når policyen endres.
             </p>
-</section>
-</div>
+</section></div>
 </main>
 </body>
 </html>

@@ -60,7 +60,26 @@
   .notice { padding: 14px 16px; margin: 0 0 24px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel-soft); }
   @media (max-width: 720px) { .summary { grid-template-columns: 1fr; } .summary div { min-height: 0; } }
 </style>
-  </head>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
   <body>
     <header>
       <h1>Privacybeleid van DisplayHelper Pro</h1>
@@ -183,6 +202,11 @@
       </section>
 
       <section>
+        <h2>Websiteanalyse</h2>
+        <p>Deze website gebruikt Umami Cloud, een analysetool zonder cookies, om paginaweergaven en basisacties op de website te tellen, zoals klikken op App Store-, download-, support-, privacy-, voorwaarden- en e-maillinks. Deze websitemetingen helpen Xintech LLC te begrijpen welke pagina’s nuttig zijn. Ze staan los van de apps zelf; de apps bevatten geen analytics-SDK’s en sturen geen appgebruikstelemetrie naar Xintech LLC.</p>
+      </section>
+
+      <section>
         <h2>Contact</h2>
         <p>
           Neem voor privacyvragen of ondersteuning contact op met Xintech LLC op
@@ -191,7 +215,6 @@
         <p>
           Xintech LLC kan dit beleid bijwerken als het gedrag van DisplayHelper Pro verandert. De bovenstaande ingangsdatum verandert als het beleid verandert.
         </p>
-      </section>
-    </main>
+      </section></main>
   </body>
 </html>
