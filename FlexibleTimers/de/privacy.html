@@ -5,7 +5,26 @@
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Flexible Timers by Xintech LLC Datenschutzerklärung</title>
 <link href="../assets/flexible-timers/page.css" rel="stylesheet"/>
-<link href="https://xintechllc.com/FlexibleTimers/de/privacy.html" rel="canonical"/></head>
+<link href="https://xintechllc.com/FlexibleTimers/de/privacy.html" rel="canonical"/><script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
 <body>
 <main>
 <h1>Flexible Timers by Xintech LLC Datenschutzerklärung</h1><p class="quote translation-note">Diese Übersetzung wird der Einfachheit halber bereitgestellt. Die englische Version ist die maßgebliche Version. <a href="../privacy.html">English</a>.</p>
@@ -54,6 +73,8 @@
 <h2>Kontakt</h2>
 <p>Support erhalten Sie unter <a href="support.html">xintechllc.com/FlexibleTimers/de/support.html</a>.</p>
 <p>Letzte Aktualisierung: 15. Juni 2026.</p>
+<h2>Website-Analyse</h2>
+<p>Diese Website verwendet Umami Cloud, einen cookiefreien Analysedienst, um Seitenaufrufe und grundlegende Website-Aktionen wie Klicks auf App Store-, Download-, Support-, Datenschutz-, Bedingungen- und E-Mail-Links zu zählen. Diese Website-Metriken helfen Xintech LLC zu verstehen, welche Seiten nützlich sind. Sie sind von den Apps selbst getrennt; die Apps enthalten keine Analyse-SDKs und senden keine App-Nutzungstelemetrie an Xintech LLC.</p>
 <footer><div>© 2026 Xintech LLC.</div><div class="footer-links"><a href="index.html">Startseite</a><a href="support.html">Support</a><a href="privacy.html">Datenschutz</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a><a href="sms-terms.html">SMS-Bedingungen</a><a href="sms-opt-in.html">SMS-Einwilligung</a></div></footer></main>
 </body>
 </html>
