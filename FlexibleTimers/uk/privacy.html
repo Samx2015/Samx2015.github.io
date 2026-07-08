@@ -5,7 +5,26 @@
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Політика конфіденційності Flexible Timers by Xintech LLC</title>
 <link href="../assets/flexible-timers/page.css" rel="stylesheet"/>
-<link href="https://xintechllc.com/FlexibleTimers/uk/privacy.html" rel="canonical"/></head>
+<link href="https://xintechllc.com/FlexibleTimers/uk/privacy.html" rel="canonical"/><script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
 <body>
 <main>
 <h1>Політика конфіденційності Flexible Timers by Xintech LLC</h1><p class="quote translation-note">Цей переклад надано для зручності. Англійська версія є офіційною. <a href="../privacy.html">English</a>.</p>
@@ -55,6 +74,8 @@
 <h2>Контакт</h2>
 <p>Щоб отримати підтримку, див. <a href="support.html">xintechllc.com/FlexibleTimers/uk/support.html</a>.</p>
 <p>Востаннє оновлено: 15 червня 2026 р.</p>
+<h2>Аналітика вебсайту</h2>
+<p>Цей вебсайт використовує Umami Cloud, аналітичний сервіс без cookie, щоб рахувати перегляди сторінок і базові дії на сайті, як-от натискання посилань App Store, завантаження, підтримки, конфіденційності, умов та електронної пошти. Ці показники допомагають Xintech LLC зрозуміти, які сторінки корисні. Вони відокремлені від самих застосунків: застосунки не містять SDK аналітики й не надсилають телеметрію використання застосунку до Xintech LLC.</p>
 <footer><div>© 2026 Xintech LLC.</div><div class="footer-links"><a href="index.html">Головна</a><a href="support.html">Підтримка</a><a href="privacy.html">Конфіденційність</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a><a href="sms-terms.html">Умови SMS</a><a href="sms-opt-in.html">Згода на SMS</a></div></footer></main>
 </body>
 </html>
