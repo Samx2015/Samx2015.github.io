@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Prova del consenso SMS di Flexible Timers by Xintech LLC</title>
+<link href="../assets/flexible-timers/page.css" rel="stylesheet"/>
+<link href="https://xintechllc.com/FlexibleTimers/it/sms-opt-in.html" rel="canonical"/><script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
+<body>
+<main>
+<h1>Prova del consenso SMS di Flexible Timers by Xintech LLC</h1><p class="quote translation-note">Questa traduzione è fornita per comodità. La versione inglese è la versione autorevole. <a href="../sms-opt-in.html">English</a>.</p>
+<p>Questa pagina documenta il flusso di adesione SMS di Flexible Timers per la
+      verifica del numero verde su Twilio. Flexible Timers è gestito da Xintech LLC.
+      Il nome dell'attività mostrato agli utenti è Flexible Timers by Xintech LLC.
+      Flexible Timers SMS è limitato ai codici di verifica del numero di telefono
+      dell'account e agli SMS di timer/promemoria creati dall'utente, inviati
+      solo al numero di telefono del proprio account, verificato e con consenso
+      SMS attivo. Flexible Timers non consente agli utenti di inviare messaggi a
+      destinatari terzi qualsiasi, non invia messaggi di marketing e non fornisce chat
+      SMS bidirezionale.</p>
+<h2>Flusso di adesione</h2>
+<ol>
+<li>L'utente accede a Flexible Timers.</li>
+<li>L'utente apre Informazioni sull'account.</li>
+<li>L'utente apre Configura SMS.</li>
+<li>L'utente inserisce il proprio numero di telefono.</li>
+<li>La casella di controllo del consenso SMS non è preselezionata.</li>
+<li>L'utente seleziona esplicitamente la casella di controllo del consenso SMS.</li>
+<li>L'utente può aprire i link ai Termini SMS e all'Informativa sulla privacy dalla stessa schermata.</li>
+<li>L'utente fa clic su Continua per richiedere un codice di verifica monouso.</li>
+<li>Dopo che il telefono è stato verificato e il consenso SMS è attivo, l'utente può pianificare promemoria SMS
+        solo allo stesso numero di telefono dell'account verificato e con consenso attivo.</li>
+</ol>
+<h2>Testo del consenso</h2>
+<p class="quote">Accetto di ricevere da Flexible Timers by Xintech LLC, a questo
+      numero di telefono, codici di verifica SMS e messaggi di promemoria che
+      pianifico per me stesso. Potrebbero essere applicate tariffe standard per
+      messaggi e dati. Rispondi STOP per disiscriverti e HELP per ricevere
+      aiuto. La frequenza dei messaggi varia. Flexible Timers non invierà
+      messaggi di marketing. Il consenso non è una condizione di acquisto.</p>
+<h2>Schermata</h2>
+<p>La schermata di adesione mostra il campo del numero di telefono, una casella
+      di consenso esplicito non selezionata, il testo del consenso con il nome
+      Flexible Timers by Xintech LLC, il link ai Termini SMS, il link
+      all'Informativa sulla privacy, la dicitura STOP/HELP, le informazioni sulla
+      frequenza dei messaggi, l'avviso sulle tariffe per messaggi/dati e l'ambito
+      SMS limitato al telefono del titolare dell'account.</p>
+<img alt="Schermata di consenso SMS di Flexible Timers by Xintech LLC con inserimento del telefono, casella di consenso non selezionata, termini, privacy e diciture STOP e HELP" src="../assets/sms-consent.png"/>
+<h2>Messaggi di produzione di esempio</h2>
+<p class="quote">Codice di verifica Flexible Timers: 123456. Questo codice scade tra 10 minuti.
+      Rispondi STOP per disiscriverti, HELP per assistenza.</p>
+<p class="quote">Promemoria Flexible Timers: hai programmato questo promemoria SMS per le 16:00:
+      Andare a prendere il bambino per la lezione di pianoforte dopo la scuola.
+      Rispondi STOP per disiscriverti, HELP per assistenza.</p>
+<h2>Risposte con parole chiave</h2>
+<p>Le parole chiave in entrata vengono utilizzate solo per la conformità e per i
+      controlli dei messaggi al numero di telefono dell'account. Flexible Timers
+      non accetta conversazioni SMS generali.</p>
+<p class="quote">Risposta STOP: hai disattivato Flexible Timers SMS. Non verranno inviati
+      altri messaggi. Rispondi START per aderire di nuovo.</p>
+<p class="quote">Risposta HELP: Flexible Timers invia codici di verifica dell'account e
+      promemoria SMS che pianifichi per te stesso. Aiuto:
+      https://xintechllc.com/FlexibleTimers/support.html. Rispondi STOP per disiscriverti.</p>
+<p class="quote">Risposta START: hai riattivato i messaggi SMS di Flexible Timers.
+      La frequenza dei messaggi varia. Rispondi STOP per disiscriverti, HELP per ricevere aiuto.</p>
+<h2>Supporto e politiche</h2>
+<div class="links">
+<a href="sms-terms.html">Termini SMS</a>
+<a href="privacy.html">Informativa sulla privacy</a>
+<a href="support.html">Supporto</a>
+</div>
+<p>Ultimo aggiornamento: 15 giugno 2026.</p>
+<footer><div>© 2026 Xintech LLC.</div><div class="footer-links"><a href="index.html">Home</a><a href="support.html">Supporto</a><a href="privacy.html">Privacy</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a><a href="sms-terms.html">Termini SMS</a><a href="sms-opt-in.html">Consenso SMS</a></div></footer></main>
+</body>
+</html>

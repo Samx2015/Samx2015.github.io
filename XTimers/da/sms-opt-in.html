@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Dokumentation af SMS-samtykke for Flexible Timers by Xintech LLC</title>
+<link href="../assets/flexible-timers/page.css" rel="stylesheet"/>
+<link href="https://xintechllc.com/FlexibleTimers/da/sms-opt-in.html" rel="canonical"/><script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
+<body>
+<main>
+<h1>Dokumentation af SMS-samtykke for Flexible Timers by Xintech LLC</h1><p class="quote translation-note">Denne oversættelse leveres for nemheds skyld. Den engelske version er den autoritative version. <a href="../sms-opt-in.html">English</a>.</p>
+<p>Denne side dokumenterer Flexible Timers SMS-samtykkeflow for
+      Twilio-verificering af et gratisnummer. Flexible Timers drives af Xintech
+      LLC. Firmanavnet, der vises for brugere, er Flexible Timers by Xintech LLC.
+      Flexible Timers SMS er begrænset til bekræftelseskoder for
+      kontotelefonnummeret og brugeroprettede timer- eller påmindelses-SMS'er,
+      der kun sendes til den indloggede brugers eget bekræftede og tilmeldte
+      kontotelefonnummer. Flexible Timers lader ikke brugere sende beskeder til
+      vilkårlige tredjeparter, sender ikke marketingbeskeder og tilbyder ikke
+      tovejs-SMS-chat.</p>
+<h2>Samtykkeforløb</h2>
+<ol>
+<li>Brugeren logger ind på Flexible Timers.</li>
+<li>Brugeren åbner kontooplysninger.</li>
+<li>Brugeren åbner Konfigurer SMS.</li>
+<li>Brugeren indtaster sit eget telefonnummer.</li>
+<li>Afkrydsningsfeltet for SMS-samtykke er ikke forudvalgt.</li>
+<li>Brugeren markerer aktivt afkrydsningsfeltet for SMS-samtykke.</li>
+<li>Brugeren kan åbne links til SMS-vilkår og privatlivspolitik fra samme skærm.</li>
+<li>Brugeren klikker på Fortsæt for at anmode om en engangsbekræftelseskode.</li>
+<li>Efter at telefonen er bekræftet og tilmeldt, kan brugeren planlægge SMS-påmindelser
+        kun til det samme bekræftede og tilmeldte kontotelefonnummer.</li>
+</ol>
+<h2>Samtykketekst</h2>
+<p class="quote">Jeg accepterer at modtage SMS-bekræftelseskoder og
+      påmindelsesbeskeder fra Flexible Timers by Xintech LLC, som jeg planlægger
+      for mig selv på dette telefonnummer. Standardtakster for beskeder og data
+      kan gælde. Svar STOP for at fravælge og HELP for at få hjælp.
+      Beskedfrekvensen varierer. Flexible Timers sender ikke marketingbeskeder.
+      Samtykke er ikke en betingelse for køb.</p>
+<h2>Skærmbillede</h2>
+<p>Samtykkeskærmen viser telefonnummerfeltet, et ikke-forudvalgt felt for aktivt
+      samtykke, samtykketekst med navnet Flexible Timers by Xintech LLC, et link
+      til SMS-vilkår, et link til privatlivspolitikken, STOP/HELP-tekst,
+      oplysninger om beskedfrekvens, oplysninger om besked-/datatakster og
+      SMS-omfanget, der er begrænset til kontoejerens telefon.</p>
+<img alt="SMS-samtykkeskærm for Flexible Timers by Xintech LLC med telefonfelt, ikke-forudvalgt samtykkefelt, vilkår, privatliv og STOP- og HELP-tekst" src="../assets/sms-consent.png"/>
+<h2>Eksempel på produktionsmeddelelser</h2>
+<p class="quote">Flexible Timers verifikationskode: 123456. Denne kode udløber om 10 minutter.
+      Svar STOP for at fravælge, HELP for at få hjælp.</p>
+<p class="quote">Flexible Timers-påmindelse: Du har planlagt denne SMS-påmindelse til kl. 16:00:
+      Hent barn til klavertime efter skole. Svar STOP for at fravælge,
+      HELP for at få hjælp.</p>
+<h2>Søgeordssvar</h2>
+<p>Indgående søgeord bruges kun til overholdelse og til kontroller af beskeder
+      til kontotelefonnummeret. Flexible Timers accepterer ikke generelle
+      SMS-samtaler.</p>
+<p class="quote">STOP-svar: Du har fravalgt Flexible Timers SMS. Der sendes ikke flere
+      beskeder. Svar START for at tilmelde dig igen.</p>
+<p class="quote">HELP-svar: Flexible Timers sender kontobekræftelseskoder og
+      SMS-påmindelser, som du planlægger for dig selv. Hjælp:
+      https://xintechllc.com/FlexibleTimers/support.html. Svar STOP for at fravælge.</p>
+<p class="quote">START-svar: Du har tilmeldt dig Flexible Timers SMS-beskeder igen.
+      Beskedfrekvensen varierer. Svar STOP for at fravælge, HELP for at få hjælp.</p>
+<h2>Support og politikker</h2>
+<div class="links">
+<a href="sms-terms.html">SMS-vilkår</a>
+<a href="privacy.html">Privatlivspolitik</a>
+<a href="support.html">Support</a>
+</div>
+<p>Sidst opdateret: 15. juni 2026.</p>
+<footer><div>© 2026 Xintech LLC.</div><div class="footer-links"><a href="index.html">Startside</a><a href="support.html">Support</a><a href="privacy.html">Privatliv</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a><a href="sms-terms.html">SMS-vilkår</a><a href="sms-opt-in.html">SMS-tilmelding</a></div></footer></main>
+</body>
+</html>

@@ -232,8 +232,8 @@ check "Sitemap is reachable" url_ok "/sitemap.xml"
 
 check "Homepage describes account email reporting" \
   page_has "/" "account email"
-check "Homepage names operator" \
-  page_has "/" "Operated by Xintech LLC"
+check "Homepage names operator (footer)" \
+  page_has "/" "Xintech LLC"
 check "Homepage describes Apple platforms" \
   page_text_has "/" "Mac, iPhone, and iPad"
 check "Homepage links support page" \
