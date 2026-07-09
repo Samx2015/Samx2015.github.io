@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Flexible Timers by Xintech LLC SMS 选择加入证据</title>
+<link href="../assets/flexible-timers/page.css" rel="stylesheet"/>
+<link href="https://xintechllc.com/FlexibleTimers/zh-Hans/sms-opt-in.html" rel="canonical"/><script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
+<body>
+<main>
+<h1>Flexible Timers by Xintech LLC SMS 选择加入证据</h1><p class="quote translation-note">本翻译仅为方便阅读提供。英文版本为权威版本。 <a href="../sms-opt-in.html">English</a>.</p>
+<p>本页面记录 Flexible Timers SMS 为 Twilio 免费电话号码验证提供的
+      选择加入流程。Flexible Timers 由 Xintech LLC 运营；向用户显示的
+      业务名称为 Flexible Timers by Xintech LLC。Flexible Timers SMS 仅限
+      账户电话验证码，以及用户创建的计时器/提醒 SMS，且只发送到登录用户
+      自己已验证并选择加入的账户电话号码。Flexible Timers 不允许用户向
+      任意第三方发送消息，不发送营销短信，也不提供双向 SMS 聊天。</p>
+<h2>选择加入流程</h2>
+<ol>
+<li>用户登录 Flexible Timers。</li>
+<li>用户打开帐户信息。</li>
+<li>用户打开设置 SMS。</li>
+<li>用户输入自己的电话号码。</li>
+<li>未预先选择 SMS 同意复选框。</li>
+<li>用户肯定地选中 SMS 同意复选框。</li>
+<li>用户可以从同一屏幕打开 SMS 条款和隐私政策链接。</li>
+<li>用户单击“继续”以请求一次性验证码。</li>
+<li>电话验证并选择加入后，用户只能为同一个已验证、已选择加入的
+        账户电话号码安排提醒 SMS。</li>
+</ol>
+<h2>同意语言</h2>
+<p class="quote">我同意接收来自 Flexible Timers by Xintech LLC 的 SMS 验证码，
+      以及我在此电话号码上为自己安排的提醒消息。可能适用标准消息和
+      数据费率。回复 STOP 选择退出，回复 HELP 获取帮助。消息频率各不相同。
+      Flexible Timers 不会发送营销短信。同意不是购买条件。</p>
+<h2>截屏</h2>
+<p>选择加入屏幕会显示电话号码字段、默认未勾选的主动同意复选框、
+      提及 Flexible Timers by Xintech LLC 的同意文字、SMS 条款链接、
+      隐私政策链接、STOP/HELP 说明、消息频率披露、消息/数据费率披露，
+      以及仅限账户所有者电话的 SMS 范围。</p>
+<img alt="Flexible Timers by Xintech LLC SMS consent screen showing phone entry, an unchecked consent checkbox, terms, privacy, STOP and HELP language" src="../assets/sms-consent.png"/>
+<h2>生产消息示例</h2>
+<p class="quote">Flexible Timers 验证码：123456。该代码将在 10 分钟后过期。
+      回复 STOP 选择退出，回复 HELP 获取帮助。</p>
+<p class="quote">Flexible Timers 提醒：您将此 SMS 提醒安排在下午 4:00：
+      接孩子参加课后钢琴课。回复 STOP 选择退出，回复 HELP 获取帮助。</p>
+<h2>关键词响应</h2>
+<p>入站关键词仅用于合规处理和账户电话消息控制。Flexible Timers
+      不接受一般 SMS 对话。</p>
+<p class="quote">STOP 回复：您已选择退出 Flexible Timers SMS。不会再发送更多消息。
+      回复 START 以再次选择加入。</p>
+<p class="quote">HELP 回复：Flexible Timers 会发送账户验证码，以及您为自己安排的
+      SMS 提醒。帮助：
+      https://xintechllc.com/FlexibleTimers/support.html。回复 STOP 选择退出。</p>
+<p class="quote">START 回复：您已重新选择加入 Flexible Timers SMS 消息。
+      消息频率各不相同。回复 STOP 选择退出，回复 HELP 获取帮助。</p>
+<h2>支持和政策</h2>
+<div class="links">
+<a href="sms-terms.html">SMS 条款</a>
+<a href="privacy.html">隐私政策</a>
+<a href="support.html">支持</a>
+</div>
+<p>最后更新时间：2026 年 6 月 15 日。</p>
+<footer><div>© 2026 Xintech LLC.</div><div class="footer-links"><a href="index.html">首页</a><a href="support.html">支持</a><a href="privacy.html">隐私</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a><a href="sms-terms.html">SMS 条款</a><a href="sms-opt-in.html">SMS 选择加入</a></div></footer></main>
+</body>
+</html>

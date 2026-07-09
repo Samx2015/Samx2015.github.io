@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexible Timers by Xintech LLC SMS Terms</title>
+  <link rel="stylesheet" href="assets/flexible-timers/page.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
+<body>
+  <main>
+    <h1>Flexible Timers by Xintech LLC SMS Terms</h1>
+
+    <p>
+      Flexible Timers is operated by Xintech LLC. Flexible Timers may send SMS
+      messages only to a phone number that a signed-in user adds, verifies, and
+      opts into as their own account phone number. The current SMS program is
+      limited to account phone verification codes and user-created timer/reminder
+      SMS that the user schedules for themselves. Flexible Timers does not send
+      marketing text messages and does not allow users to send SMS to arbitrary
+      third-party recipients. Flexible Timers SMS is not a two-way chat or
+      conversation service; inbound keywords are used only for STOP, HELP, START,
+      and YES compliance handling.
+    </p>
+
+    <h2>Opt-In</h2>
+    <p>
+      Users opt in inside the Flexible Timers app by entering their phone number
+      and affirmatively checking a box that is not pre-selected. The checkbox
+      says: "I agree to receive SMS verification codes and reminder messages
+      from Flexible Timers by Xintech LLC that I schedule for myself at this
+      phone number." The opt-in screen also displays these SMS Terms, the
+      Privacy Policy, standard message and data rate disclosure, STOP and HELP
+      instructions, message frequency information, and no-marketing language.
+      Consent is not a condition of purchase.
+      See the opt-in evidence page at
+      <a href="sms-opt-in.html">xintechllc.com/FlexibleTimers/sms-opt-in.html</a>.
+    </p>
+
+    <h2>Message Frequency</h2>
+    <p>
+      Message frequency varies. Flexible Timers sends verification messages when
+      a user requests verification of their own account phone number. Flexible
+      Timers sends reminder SMS only when the verified account owner creates and
+      schedules that SMS reminder for themselves. Users cannot send chat replies
+      or user-authored messages to Flexible Timers by SMS.
+    </p>
+
+    <h2>Fees</h2>
+    <p>
+      Standard message and data rates may apply. Message and data rates are
+      charged by your mobile carrier and are your responsibility.
+    </p>
+
+    <h2>Opt-Out</h2>
+    <p>
+      Reply STOP to opt out of SMS messages from Flexible Timers. After you send
+      STOP, Flexible Timers will stop sending SMS messages to that phone number
+      unless you opt in again.
+    </p>
+
+    <h2>Help</h2>
+    <p>
+      Reply HELP for help. You can also contact Flexible Timers support at
+      <a href="support.html">xintechllc.com/FlexibleTimers/support.html</a>.
+    </p>
+
+    <h2>SMS Keywords and Responses</h2>
+    <p>
+      STOP opts the phone number out of Flexible Timers SMS. The expected STOP
+      response is: "You are opted out of Flexible Timers SMS. No more messages
+      will be sent. Reply START to opt in again."
+    </p>
+    <p>
+      HELP requests support information. The expected HELP response is:
+      "Flexible Timers sends account verification codes and reminder SMS you
+      schedule for yourself. Help: https://xintechllc.com/FlexibleTimers/support.html. Reply
+      STOP to opt out."
+    </p>
+    <p>
+      START or YES opts a previously opted-out phone number back in after the
+      user has already provided app consent for that account phone. The expected START
+      response is:
+      "You have opted back in to Flexible Timers SMS messages. Message frequency
+      varies. Reply STOP to opt out, HELP for help."
+    </p>
+
+    <h2>Carrier Liability</h2>
+    <p>
+      Wireless carriers are not liable for delayed or undelivered messages.
+    </p>
+
+    <h2>Privacy</h2>
+    <p>
+      See the Flexible Timers Privacy Policy at
+      <a href="privacy.html">xintechllc.com/FlexibleTimers/privacy.html</a>.
+    </p>
+
+    <p>Last updated: June 15, 2026.</p>
+    <footer>
+      <div>© 2026 Xintech LLC. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a>
+        <a href="sms-terms.html">SMS Terms</a>
+        <a href="sms-opt-in.html">SMS Opt-In</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XTimers Activity Extension Privacy Policy</title>
+  <link rel="stylesheet" href="assets/flexible-timers/page.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
+<body>
+  <main>
+    <h1>XTimers Activity Extension Privacy Policy</h1>
+
+    <p>
+      This policy covers the <strong>XTimers Activity</strong> browser
+      extension and its companion native-messaging host, which work with the
+      XTimers Pro desktop app by Xintech LLC.
+    </p>
+
+    <h2>What the extension does</h2>
+    <p>
+      When a supported browser is the frontmost application, the extension reads
+      the <strong>active tab's URL and title</strong> and sends it to the
+      XTimers Pro app running on the <strong>same device</strong>, so the
+      app can rank how much time you spend on each website.
+    </p>
+
+    <h2>What is collected</h2>
+    <p>
+      The <strong>URL and title of the active tab only</strong>, and only while a
+      browser is in focus. The extension does not read, store, or modify the
+      content of any web page; does not access tabs other than the active one;
+      does not keep a browsing history of its own; and collects no personal
+      information, credentials, form data, or analytics. There are no ads and no
+      third-party trackers.
+    </p>
+
+    <h2>Where the data goes</h2>
+    <p>
+      The active-tab report is delivered <strong>only</strong> to the Flexible
+      Timers Pro app running on your own computer &mdash; either through the app's
+      local native-messaging host or a loopback (<code>127.0.0.1</code>)
+      connection to the app on the same machine. <strong>Nothing is transmitted
+      over the internet by the extension</strong>: there are no remote hosts in
+      the extension, and the data is never sent to the developer or any third
+      party.
+    </p>
+
+    <h2>How the data is stored</h2>
+    <p>
+      The XTimers Pro app keeps activity data <strong>on your device</strong>
+      only. It is not uploaded to any server and is not synced to your other
+      devices. You can clear it at any time in the app (Automatic Activity
+      Tracking &rarr; Reset tracked data), and disabling tracking removes the
+      integration.
+    </p>
+
+    <h2>Your control</h2>
+    <p>
+      The integration is off by default and opt-in. It only works while the
+      XTimers Pro app is installed with website tracking enabled.
+      Removing the extension, or turning off tracking in the app, stops all
+      collection. Uninstalling the app removes the stored data.
+    </p>
+
+    <h2>Data sharing and sale</h2>
+    <p>
+      Xintech LLC does not sell, rent, or share this data with anyone. It does
+      not leave your device through the extension.
+    </p>
+
+    <h2>Children</h2>
+    <p>
+      The extension is not directed at children and collects no personal data.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      For support, see
+      <a href="support.html">xintechllc.com/FlexibleTimers/support.html</a>.
+    </p>
+
+    <p>Last updated: June 23, 2026.</p>
+    <footer>
+      <div>© 2026 Xintech LLC. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a>
+        <a href="sms-terms.html">SMS Terms</a>
+        <a href="sms-opt-in.html">SMS Opt-In</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
