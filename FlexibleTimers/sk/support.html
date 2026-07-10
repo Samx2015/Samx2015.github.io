@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Podpora XTimers</title>
+  <link rel="stylesheet" href="assets/flexible-timers/page.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
+<body>
+  <main>
+    <h1>Podpora XTimers</h1>
+
+    <p>
+      Aplikáciu XTimers prevádzkuje spoločnosť Xintech LLC. V prípade otázok
+      k produktu, hlásení chýb, otázok k účtu alebo pomoci s SMS nám napíšte na
+      <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>.
+    </p>
+
+    <h2>Kontakt na podporu</h2>
+    <p>
+      <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>
+    </p>
+
+    <h2>Pomoc so správami</h2>
+    <p>
+      SMS služba XTimers od Xintech LLC je obmedzená na overovacie kódy
+      telefónu účtu a používateľom vytvorené pripomienkové SMS odosielané iba
+      na vlastné overené telefónne číslo účtu prihláseného používateľa, ktoré
+      udelilo súhlas. Odpoveďou STOP zrušíte odber SMS správ. Odpoveďou HELP
+      získate pomoc. Odpoveďou START alebo YES sa po udelení súhlasu v
+      aplikácii znova prihlásite k odberu. SMS nie je obojsmerný chat.
+    </p>
+
+    <p>
+      E-mailové prehľady a e-mailové správy XTimers sú momentálne obmedzené na
+      vlastnú e-mailovú adresu účtu prihláseného používateľa.
+    </p>
+
+    <p>
+      Pozrite si <a href="terms.html">Podmienky</a>,
+      <a href="privacy.html">Zásady ochrany súkromia</a> a
+      <a href="sms-terms.html">Podmienky SMS</a>.
+    </p>
+
+    <footer>
+      <div>© 2026 Xintech LLC. Všetky práva vyhradené.</div>
+      <div class="footer-links">
+        <a href="index.html">Domov</a>
+        <a href="support.html">Podpora</a>
+        <a href="privacy.html">Súkromie</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a>
+        <a href="sms-terms.html">Podmienky SMS</a>
+        <a href="sms-opt-in.html">Súhlas s SMS</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

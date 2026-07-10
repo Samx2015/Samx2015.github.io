@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Υποστήριξη XTimers</title>
+  <link rel="stylesheet" href="assets/flexible-timers/page.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
+<body>
+  <main>
+    <h1>Υποστήριξη XTimers</h1>
+
+    <p>
+      Το XTimers λειτουργεί από την Xintech LLC. Για υποστήριξη προϊόντος, αναφορές
+      σφαλμάτων, ερωτήσεις λογαριασμού ή βοήθεια σχετικά με τα SMS, στείλτε μας email στο
+      <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>.
+    </p>
+
+    <h2>Επικοινωνία υποστήριξης</h2>
+    <p>
+      <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>
+    </p>
+
+    <h2>Βοήθεια για μηνύματα</h2>
+    <p>
+      Τα SMS του XTimers από την Xintech LLC περιορίζονται σε κωδικούς επαλήθευσης
+      τηλεφώνου λογαριασμού και σε SMS υπενθύμισης που δημιουργεί ο χρήστης, τα οποία
+      αποστέλλονται μόνο στον δικό του επαληθευμένο αριθμό τηλεφώνου λογαριασμού με
+      συγκατάθεση, ενώ είναι συνδεδεμένος. Απαντήστε STOP για να εξαιρεθείτε από τα
+      μηνύματα SMS. Απαντήστε HELP για βοήθεια. Απαντήστε START ή YES για να εγγραφείτε
+      ξανά, αφού έχετε δώσει συγκατάθεση στην εφαρμογή. Τα SMS δεν είναι υπηρεσία
+      αμφίδρομης συνομιλίας.
+    </p>
+
+    <p>
+      Οι αναφορές email και τα μηνύματα email του XTimers περιορίζονται προς το παρόν
+      στη διεύθυνση email του λογαριασμού του συνδεδεμένου χρήστη.
+    </p>
+
+    <p>
+      Δείτε τους <a href="terms.html">Όρους</a>, την
+      <a href="privacy.html">Πολιτική απορρήτου</a> και τους
+      <a href="sms-terms.html">Όρους SMS</a>.
+    </p>
+
+    <footer>
+      <div>© 2026 Xintech LLC. Με την επιφύλαξη παντός δικαιώματος.</div>
+      <div class="footer-links">
+        <a href="index.html">Αρχική</a>
+        <a href="support.html">Υποστήριξη</a>
+        <a href="privacy.html">Απόρρητο</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a>
+        <a href="sms-terms.html">Όροι SMS</a>
+        <a href="sms-opt-in.html">Συγκατάθεση SMS</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

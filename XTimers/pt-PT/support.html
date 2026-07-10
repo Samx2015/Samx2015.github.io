@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Suporte XTimers</title>
+<link href="../assets/flexible-timers/page.css" rel="stylesheet"/>
+<link href="https://xintechllc.com/XTimers/pt-BR/support.html" rel="canonical"/><script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
+<body>
+<main>
+<h1>Suporte XTimers</h1><p class="quote translation-note">Esta tradução é fornecida por conveniência. A versão em inglês é a versão oficial. <a href="../support.html">English</a>.</p>
+<p>XTimers é operado por Xintech LLC. Para suporte ao produto,
+      relatórios de bugs, perguntas sobre a conta ou ajuda com SMS, envie-nos um
+      e-mail para <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>.</p>
+<h2>Contacto de suporte</h2>
+<p>
+<a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>
+</p>
+<h2>Ajuda com mensagens</h2>
+<p>XTimers by Xintech LLC SMS é limitado a códigos de verificação do
+      número de telefone da conta e a lembretes SMS criados pelo utilizador,
+      enviados apenas para o número de telefone da própria conta do utilizador
+      com sessão iniciada, verificado e com consentimento SMS ativo. Responda STOP para
+      deixar de receber mensagens SMS. Responda HELP para obter ajuda.
+      Responda START ou YES para autorizar novamente após dar consentimento na
+      aplicação. SMS não é um serviço de conversa bidirecional.</p>
+<p>Os relatórios por e-mail e mensagens por e-mail do XTimers estão
+      atualmente limitados ao endereço de e-mail da própria conta do utilizador com sessão iniciada.</p>
+<p>Consulte os <a href="../terms.html">Termos</a>, a <a href="privacy.html">Política de Privacidade</a> e os <a href="sms-terms.html">Termos de SMS</a>.</p>
+<footer><div>© 2026 Xintech LLC.</div><div class="footer-links"><a href="index.html">Início</a><a href="support.html">Suporte</a><a href="privacy.html">Privacidade</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a><a href="sms-terms.html">Termos SMS</a><a href="sms-opt-in.html">Ativação SMS</a></div></footer>
+</main>
+</body>
+</html>

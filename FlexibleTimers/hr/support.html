@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XTimers podrška</title>
+  <link rel="stylesheet" href="assets/flexible-timers/page.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
+<body>
+  <main>
+    <h1>XTimers podrška</h1>
+
+    <p>
+      Aplikacijom XTimers upravlja Xintech LLC. Za podršku za proizvod, prijave
+      grešaka, pitanja o računu ili pomoć oko SMS-a, pišite nam na
+      <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>.
+    </p>
+
+    <h2>Kontakt za podršku</h2>
+    <p>
+      <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>
+    </p>
+
+    <h2>Pomoć oko poruka</h2>
+    <p>
+      XTimers SMS tvrtke Xintech LLC ograničen je na verifikacijske kodove za
+      telefon računa i SMS podsjetnike koje korisnik sam stvara, a šalju se samo
+      na vlastiti potvrđeni telefonski broj računa prijavljenog korisnika koji je
+      dao privolu. Odgovorite STOP za odjavu od SMS poruka. Odgovorite HELP za
+      pomoć. Odgovorite START ili YES za ponovnu prijavu nakon davanja privole u
+      aplikaciji. SMS nije usluga dvosmjernog dopisivanja.
+    </p>
+
+    <p>
+      XTimers izvještaji e-poštom i poruke e-poštom trenutačno su ograničeni na
+      vlastitu adresu e-pošte računa prijavljenog korisnika.
+    </p>
+
+    <p>
+      Pogledajte <a href="terms.html">Uvjete</a>,
+      <a href="privacy.html">Pravila privatnosti</a> i
+      <a href="sms-terms.html">SMS uvjete</a>.
+    </p>
+
+    <footer>
+      <div>© 2026 Xintech LLC. Sva prava pridržana.</div>
+      <div class="footer-links">
+        <a href="index.html">Početna</a>
+        <a href="support.html">Podrška</a>
+        <a href="privacy.html">Privatnost</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a>
+        <a href="sms-terms.html">SMS uvjeti</a>
+        <a href="sms-opt-in.html">SMS privola</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

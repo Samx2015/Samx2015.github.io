@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>התמיכה של XTimers</title>
+  <link rel="stylesheet" href="assets/flexible-timers/page.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
+<body>
+  <main>
+    <h1>התמיכה של XTimers</h1>
+
+    <p>
+      XTimers מופעל על ידי Xintech LLC. לתמיכה במוצר, דיווח על באגים,
+      שאלות בנושא חשבון או עזרה בנושא SMS, כתבו לנו בדוא״ל לכתובת
+      <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>.
+    </p>
+
+    <h2>יצירת קשר עם התמיכה</h2>
+    <p>
+      <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>
+    </p>
+
+    <h2>עזרה בנושא הודעות</h2>
+    <p>
+      שירות ה־SMS של XTimers מאת Xintech LLC מוגבל לקודי אימות של טלפון
+      החשבון ולתזכורות SMS שיוצר המשתמש, הנשלחות אך ורק למספר הטלפון
+      המאומת של החשבון של המשתמש המחובר, שנתן את הסכמתו. השיבו STOP
+      כדי לבטל את ההסכמה להודעות SMS. השיבו HELP לקבלת עזרה. השיבו START או YES
+      כדי לחזור ולהצטרף לאחר מתן הסכמה באפליקציה. SMS אינו שירות צ׳אט
+      דו־כיווני.
+    </p>
+
+    <p>
+      דוחות הדוא״ל והודעות הדוא״ל של XTimers מוגבלים כרגע לכתובת
+      הדוא״ל של החשבון של המשתמש המחובר בלבד.
+    </p>
+
+    <p>
+      ראו את <a href="terms.html">התנאים</a>,
+      <a href="privacy.html">מדיניות הפרטיות</a>
+      ו<a href="sms-terms.html">תנאי ה־SMS</a>.
+    </p>
+
+    <footer>
+      <div>© 2026 Xintech LLC. כל הזכויות שמורות.</div>
+      <div class="footer-links">
+        <a href="index.html">דף הבית</a>
+        <a href="support.html">תמיכה</a>
+        <a href="privacy.html">פרטיות</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a>
+        <a href="sms-terms.html">תנאי SMS</a>
+        <a href="sms-opt-in.html">הסכמה ל־SMS</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

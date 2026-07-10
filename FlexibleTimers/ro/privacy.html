@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Politica de confidențialitate XTimers de la Xintech LLC</title>
+  <link rel="stylesheet" href="assets/flexible-timers/page.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
+<body>
+  <main>
+    <h1>Politica de confidențialitate XTimers de la Xintech LLC</h1>
+
+    <p>
+      XTimers este operat de Xintech LLC. XTimers folosește informațiile
+      contului pentru a oferi funcțiile de cronometru, memento, cont,
+      sincronizare, raportare și mesaje. XTimers trimite în prezent rapoarte
+      prin email și mesaje email doar la adresa de email de cont proprie a
+      utilizatorului conectat. Această politică descrie și termenii de
+      confidențialitate SMS pentru verificarea telefonului contului și pentru
+      mementourile SMS create de utilizator, trimise doar la numărul de telefon
+      de cont propriu al utilizatorului, verificat și înscris.
+    </p>
+
+    <h2>Informații colectate pentru email</h2>
+    <p>
+      Când un utilizator conectat solicită o verificare, un raport, feedback sau
+      un memento prin email, XTimers poate prelucra adresa de email a contului
+      utilizatorului, conținutul mesajului, datele de cronometru/raport necesare
+      solicitării și metadatele de livrare necesare pentru operarea, depanarea
+      și securizarea serviciului.
+    </p>
+
+    <h2>Informații colectate pentru SMS</h2>
+    <p>
+      Când un utilizator conectat își adaugă propriul număr de telefon de cont
+      pentru SMS, XTimers poate stoca numărul de telefon, starea
+      consimțământului, sursa consimțământului, versiunea textului de
+      consimțământ, formularea consimțământului, URL-ul Termenilor SMS, URL-ul
+      Politicii de confidențialitate, marcajul de timp, starea verificării,
+      conținutul mesajelor memento create de utilizator, ora programată a
+      mementoului și metadatele de livrare a mesajelor necesare pentru operarea
+      și auditarea programului SMS.
+    </p>
+
+    <h2>Cum sunt folosite informațiile SMS</h2>
+    <p>
+      Informațiile SMS sunt folosite pentru a verifica numărul de telefon de
+      cont propriu al utilizatorului, a trimite SMS-uri memento pe care
+      utilizatorul și le programează singur, a menține evidențele de înscriere
+      și de renunțare, a preveni abuzurile, a depana livrarea și a respecta
+      cerințele operatorilor de telefonie și cerințele legale.
+    </p>
+
+    <h2>Fără vânzare sau partajare în scopuri de marketing</h2>
+    <p>
+      XTimers nu vinde datele de înscriere SMS. XTimers nu partajează datele de
+      înscriere SMS, numerele de telefon sau consimțământul pentru mesaje text
+      cu terți sau afiliați în scopuri de marketing sau promoționale.
+    </p>
+
+    <h2>Furnizori de servicii</h2>
+    <p>
+      XTimers poate folosi furnizori de servicii, inclusiv furnizori de SMS,
+      pentru a livra mesaje de verificare, a livra SMS-uri memento programate de
+      utilizator și a opera serviciul. Acești furnizori pot prelucra
+      informațiile SMS doar în măsura necesară furnizării serviciului de
+      mesagerie.
+    </p>
+
+    <h2>Renunțare</h2>
+    <p>
+      Utilizatorii pot răspunde STOP pentru a renunța la mesajele SMS.
+      Utilizatorii pot răspunde HELP pentru ajutor.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Pentru asistență, consultați
+      <a href="support.html">xintechllc.com/FlexibleTimers/support.html</a>.
+    </p>
+
+    <p>Ultima actualizare: 15 iunie 2026.</p>
+    <h2>Statistici despre site</h2>
+<p>Acest site web folosește Umami Cloud, un serviciu de statistici fără cookie-uri, pentru a număra vizitele paginilor și acțiunile de bază de pe site, precum clicurile pe App Store, pe descărcări, pe asistență, pe confidențialitate, pe termeni și pe linkurile de email. Aceste statistici ale site-ului ajută Xintech LLC să înțeleagă ce pagini sunt utile. Ele sunt separate de aplicațiile în sine, care nu includ SDK-uri de analiză și nu trimit telemetrie despre utilizarea aplicației către Xintech LLC.</p>
+<footer>
+      <div>© 2026 Xintech LLC. Toate drepturile rezervate.</div>
+      <div class="footer-links">
+        <a href="index.html">Acasă</a>
+        <a href="support.html">Asistență</a>
+        <a href="privacy.html">Confidențialitate</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a>
+        <a href="sms-terms.html">Termeni SMS</a>
+        <a href="sms-opt-in.html">Înscriere SMS</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

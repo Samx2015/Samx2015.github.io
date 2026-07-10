@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pravila privatnosti aplikacije XTimers tvrtke Xintech LLC</title>
+  <link rel="stylesheet" href="assets/flexible-timers/page.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
+<body>
+  <main>
+    <h1>Pravila privatnosti aplikacije XTimers tvrtke Xintech LLC</h1>
+
+    <p>
+      Aplikacijom XTimers upravlja Xintech LLC. XTimers koristi podatke o računu
+      za pružanje značajki tajmera, podsjetnika, računa, sinkronizacije,
+      izvještaja i poruka. XTimers trenutačno šalje izvještaje e-poštom i poruke
+      e-poštom samo na vlastitu adresu e-pošte računa prijavljenog korisnika.
+      Ova pravila također opisuju uvjete SMS privatnosti za verifikaciju telefona
+      računa i SMS podsjetnike koje korisnik sam stvara, a šalju se samo na
+      korisnikov vlastiti potvrđeni telefonski broj računa za koji je dana privola.
+    </p>
+
+    <h2>Podaci prikupljeni za e-poštu</h2>
+    <p>
+      Kada prijavljeni korisnik zatraži verifikaciju, izvještaj, povratne
+      informacije ili podsjetnik e-poštom, XTimers može obraditi adresu e-pošte
+      korisnikova računa, sadržaj poruke, podatke tajmera/izvještaja potrebne za
+      zahtjev i metapodatke isporuke potrebne za rad, otklanjanje poteškoća i
+      zaštitu usluge.
+    </p>
+
+    <h2>Podaci prikupljeni za SMS</h2>
+    <p>
+      Kada prijavljeni korisnik doda vlastiti telefonski broj računa za SMS,
+      XTimers može pohraniti telefonski broj, status privole, izvor privole,
+      verziju teksta privole, formulaciju privole, URL SMS uvjeta, URL Pravila
+      privatnosti, vremensku oznaku, status verifikacije, sadržaj poruke
+      podsjetnika koji je korisnik stvorio, zakazano vrijeme podsjetnika i
+      metapodatke isporuke poruka potrebne za rad i reviziju SMS programa.
+    </p>
+
+    <h2>Kako se SMS podaci koriste</h2>
+    <p>
+      SMS podaci koriste se za verifikaciju korisnikova vlastitog telefonskog
+      broja računa, slanje SMS podsjetnika koje korisnik zakazuje za sebe,
+      vođenje evidencije o prijavama i odjavama, sprječavanje zlouporabe,
+      otklanjanje poteškoća s isporukom i usklađenost sa zahtjevima operatera i
+      zakonskim zahtjevima.
+    </p>
+
+    <h2>Bez prodaje ili dijeljenja u marketinške svrhe</h2>
+    <p>
+      XTimers ne prodaje podatke o SMS privolama. XTimers ne dijeli podatke o
+      SMS privolama, telefonske brojeve ni privole za tekstualne poruke s trećim
+      stranama ili povezanim društvima u marketinške ili promotivne svrhe.
+    </p>
+
+    <h2>Pružatelji usluga</h2>
+    <p>
+      XTimers može koristiti pružatelje usluga, uključujući pružatelje SMS
+      usluga, za isporuku verifikacijskih poruka, isporuku SMS podsjetnika koje
+      korisnik zakazuje i rad usluge. Ti pružatelji mogu obrađivati SMS podatke
+      samo u mjeri potrebnoj za pružanje usluge slanja poruka.
+    </p>
+
+    <h2>Odjava</h2>
+    <p>
+      Korisnici mogu odgovoriti STOP za odjavu od SMS poruka. Korisnici mogu
+      odgovoriti HELP za pomoć.
+    </p>
+
+    <h2>Kontakt</h2>
+    <p>
+      Za podršku pogledajte
+      <a href="support.html">xintechllc.com/FlexibleTimers/support.html</a>.
+    </p>
+
+    <p>Zadnje ažuriranje: 15. lipnja 2026.</p>
+    <h2>Analitika web-stranice</h2>
+<p>Ova web-stranica koristi Umami Cloud, analitičku uslugu bez kolačića, za brojanje posjeta stranicama i osnovnih radnji na web-stranici kao što su klikovi na App Store, preuzimanje, podršku, privatnost, uvjete i poveznice e-pošte. Ove mjerne vrijednosti web-stranice pomažu tvrtki Xintech LLC razumjeti koje su stranice korisne. Odvojene su od samih aplikacija, koje ne uključuju analitičke SDK-ove i ne šalju telemetriju o korištenju aplikacija tvrtki Xintech LLC.</p>
+<footer>
+      <div>© 2026 Xintech LLC. Sva prava pridržana.</div>
+      <div class="footer-links">
+        <a href="index.html">Početna</a>
+        <a href="support.html">Podrška</a>
+        <a href="privacy.html">Privatnost</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a>
+        <a href="sms-terms.html">SMS uvjeti</a>
+        <a href="sms-opt-in.html">SMS privola</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

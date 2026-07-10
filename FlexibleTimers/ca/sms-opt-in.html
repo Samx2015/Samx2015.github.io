@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evidència de l'alta d'SMS de Flexible Timers de Xintech LLC</title>
+  <link rel="stylesheet" href="assets/flexible-timers/page.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
+<body>
+  <main>
+    <h1>Evidència de l'alta d'SMS de Flexible Timers de Xintech LLC</h1>
+
+    <p>
+      Aquesta pàgina documenta el flux d'alta d'SMS de Flexible Timers per a la
+      verificació de números gratuïts de Twilio. Flexible Timers és operat per
+      Xintech LLC. El negoci final que es mostra als usuaris és Flexible Timers
+      de Xintech LLC. Els SMS de Flexible Timers es limiten a codis de
+      verificació del telèfon del compte i a SMS de temporitzador o recordatori
+      creats per l'usuari, enviats només al número de telèfon del compte de
+      l'usuari amb sessió iniciada, verificat i donat d'alta. Flexible Timers
+      no permet que els usuaris enviïn missatges a tercers arbitraris, no envia
+      missatges de text de màrqueting i no ofereix xat bidireccional per SMS.
+    </p>
+
+    <h2>Flux d'alta</h2>
+    <ol>
+      <li>L'usuari inicia la sessió a Flexible Timers.</li>
+      <li>L'usuari obre Informació del compte.</li>
+      <li>L'usuari obre Configura els SMS.</li>
+      <li>L'usuari introdueix el seu propi número de telèfon.</li>
+      <li>La casella de consentiment d'SMS no està preseleccionada.</li>
+      <li>L'usuari marca afirmativament la casella de consentiment d'SMS.</li>
+      <li>L'usuari pot obrir els enllaços de les Condicions dels SMS i de la Política de privadesa des de la mateixa pantalla.</li>
+      <li>L'usuari fa clic a Continua per sol·licitar un codi de verificació d'un sol ús.</li>
+      <li>
+        Un cop el telèfon està verificat i donat d'alta, l'usuari pot programar SMS de recordatori
+        només a aquest mateix número de telèfon del compte, verificat i donat d'alta.
+      </li>
+    </ol>
+
+    <h2>Text de consentiment</h2>
+    <p class="quote">
+      I agree to receive SMS verification codes and reminder messages I schedule
+      for myself from Flexible Timers by Xintech LLC at this phone number.
+      Standard message and data rates may apply. Reply STOP to opt out and HELP
+      for help. Message frequency varies. Flexible Timers will not send
+      marketing texts. Consent is not a condition of purchase.
+    </p>
+
+    <h2>Captura de pantalla</h2>
+    <p>
+      La pantalla d'alta mostra el camp del número de telèfon, una casella
+      afirmativa sense marcar, el text de consentiment que anomena Flexible
+      Timers de Xintech LLC, l'enllaç de les Condicions dels SMS, l'enllaç de
+      la Política de privadesa, el text de STOP/HELP, l'avís sobre la
+      freqüència dels missatges, l'avís sobre les tarifes de missatges i dades,
+      i l'abast dels SMS limitat al telèfon del titular.
+    </p>
+    <img
+      src="assets/sms-consent.png"
+      alt="Pantalla de consentiment d'SMS de Flexible Timers de Xintech LLC amb el camp del telèfon, una casella de consentiment sense marcar, les condicions, la privadesa i el text de STOP i HELP">
+
+    <h2>Exemples de missatges de producció</h2>
+    <p class="quote">
+      Flexible Timers verification code: 123456. This code expires in 10
+      minutes. Reply STOP to opt out, HELP for help.
+    </p>
+    <p class="quote">
+      Flexible Timers reminder: You scheduled this SMS reminder for 4:00 PM:
+      Pick up child for after-school piano class. Reply STOP to opt out, HELP
+      for help.
+    </p>
+
+    <h2>Respostes a paraules clau</h2>
+    <p>
+      Les paraules clau entrants s'utilitzen només per al compliment i per als
+      controls de missatgeria del telèfon del compte. Flexible Timers no accepta
+      converses generals per SMS.
+    </p>
+    <p class="quote">
+      STOP response: You are opted out of Flexible Timers SMS. No more messages
+      will be sent. Reply START to opt in again.
+    </p>
+    <p class="quote">
+      HELP response: Flexible Timers sends account verification codes and
+      reminder SMS you schedule for yourself. Help:
+      https://xintechllc.com/FlexibleTimers/support.html. Reply STOP to opt out.
+    </p>
+    <p class="quote">
+      START response: You have opted back in to Flexible Timers SMS messages.
+      Message frequency varies. Reply STOP to opt out, HELP for help.
+    </p>
+
+    <h2>Assistència i polítiques</h2>
+    <div class="links">
+      <a href="sms-terms.html">Condicions dels SMS</a>
+      <a href="privacy.html">Política de privadesa</a>
+      <a href="support.html">Assistència</a>
+    </div>
+
+    <p>Última actualització: 15 de juny de 2026.</p>
+    <footer>
+      <div>© 2026 Xintech LLC. Tots els drets reservats.</div>
+      <div class="footer-links">
+        <a href="index.html">Inici</a>
+        <a href="support.html">Assistència</a>
+        <a href="privacy.html">Privadesa</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a>
+        <a href="sms-terms.html">Condicions dels SMS</a>
+        <a href="sms-opt-in.html">Alta d'SMS</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

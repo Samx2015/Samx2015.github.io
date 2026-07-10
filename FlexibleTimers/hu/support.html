@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XTimers támogatás</title>
+  <link rel="stylesheet" href="assets/flexible-timers/page.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
+<body>
+  <main>
+    <h1>XTimers támogatás</h1>
+
+    <p>
+      Az XTimers üzemeltetője az Xintech LLC. Terméktámogatással, hibabejelentéssel,
+      fiókkal kapcsolatos kérdésekkel vagy SMS-segítséggel kapcsolatban írjon nekünk
+      az <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a> címre.
+    </p>
+
+    <h2>Támogatási kapcsolat</h2>
+    <p>
+      <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>
+    </p>
+
+    <h2>Üzenetküldési segítség</h2>
+    <p>
+      Az Xintech LLC XTimers SMS-szolgáltatása a fiók telefonszámának ellenőrző
+      kódjaira és a felhasználó által létrehozott emlékeztető SMS-ekre korlátozódik,
+      amelyeket kizárólag a bejelentkezett felhasználó saját, ellenőrzött és
+      hozzájárulással megadott fiók-telefonszámára küldünk. Az SMS-üzenetekről való
+      leiratkozáshoz válaszoljon STOP üzenettel. Segítségért válaszoljon HELP
+      üzenettel. Az alkalmazásban adott hozzájárulás után a START vagy YES válasszal
+      iratkozhat vissza. Az SMS nem kétirányú csevegőszolgáltatás.
+    </p>
+
+    <p>
+      Az XTimers e-mail-jelentései és e-mail-üzenetei jelenleg a bejelentkezett
+      felhasználó saját fiók-e-mail-címére korlátozódnak.
+    </p>
+
+    <p>
+      Lásd a <a href="terms.html">Feltételeket</a>,
+      az <a href="privacy.html">Adatvédelmi irányelveket</a> és
+      az <a href="sms-terms.html">SMS-feltételeket</a>.
+    </p>
+
+    <footer>
+      <div>© 2026 Xintech LLC. Minden jog fenntartva.</div>
+      <div class="footer-links">
+        <a href="index.html">Kezdőlap</a>
+        <a href="support.html">Támogatás</a>
+        <a href="privacy.html">Adatvédelem</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a>
+        <a href="sms-terms.html">SMS-feltételek</a>
+        <a href="sms-opt-in.html">SMS-hozzájárulás</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
