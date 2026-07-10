@@ -190,7 +190,7 @@ require_command sed
 require_command sort
 require_command tr
 
-echo "Checking Flexible Timers public compliance pages"
+echo "Checking XTimers (legacy Flexible Timers) public SMS compliance pages"
 echo "Base URL: $BASE_URL"
 echo "Local root: $LOCAL_ROOT"
 echo "Pages root: $PAGES_ROOT"
@@ -208,7 +208,7 @@ else
   echo "SKIP Pages deploy subtree matches source (Pages root not found)"
 fi
 
-check "Localized Flexible Timers pages exist" \
+check "Localized legacy-brand compliance pages exist" \
   localized_flexible_timers_pages_exist
 check "Localized Flexible Timers pages declare matching languages" \
   localized_flexible_timers_pages_declare_language
