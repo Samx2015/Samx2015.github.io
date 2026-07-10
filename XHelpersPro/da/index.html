@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XHelpers Pro til Mac</title>
+    <meta
+      name="description"
+      content="XHelpers Pro samler MacBook-skærmkontrol, Auto Wi-Fi Switch, Finder-kontekstmenuer, lokale Safes."
+    >
+    <link rel="canonical" href="https://xintechllc.com/XHelpersPro/da/">
+    <link rel="alternate" hreflang="en" href="https://xintechllc.com/XHelpersPro/">
+    <link rel="alternate" hreflang="es" href="https://xintechllc.com/XHelpersPro/es/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://xintechllc.com/XHelpersPro/zh-Hans/">
+    <link rel="alternate" hreflang="zh-Hant" href="https://xintechllc.com/XHelpersPro/zh-Hant/">
+    <link rel="alternate" hreflang="ja" href="https://xintechllc.com/XHelpersPro/ja/">
+    <link rel="alternate" hreflang="fr" href="https://xintechllc.com/XHelpersPro/fr/">
+    <link rel="alternate" hreflang="de" href="https://xintechllc.com/XHelpersPro/de/">
+    <link rel="alternate" hreflang="ko" href="https://xintechllc.com/XHelpersPro/ko/">
+    <link rel="alternate" hreflang="pt-BR" href="https://xintechllc.com/XHelpersPro/pt-BR/">
+    <link rel="alternate" hreflang="it" href="https://xintechllc.com/XHelpersPro/it/">
+    <link rel="alternate" hreflang="nl" href="https://xintechllc.com/XHelpersPro/nl/">
+    <link rel="alternate" hreflang="pl" href="https://xintechllc.com/XHelpersPro/pl/">
+    <link rel="alternate" hreflang="tr" href="https://xintechllc.com/XHelpersPro/tr/">
+    <link rel="alternate" hreflang="vi" href="https://xintechllc.com/XHelpersPro/vi/">
+    <link rel="alternate" hreflang="ru" href="https://xintechllc.com/XHelpersPro/ru/">
+    <link rel="alternate" hreflang="ar" href="https://xintechllc.com/XHelpersPro/ar/">
+    <link rel="alternate" hreflang="hi" href="https://xintechllc.com/XHelpersPro/hi/">
+    <link rel="alternate" hreflang="id" href="https://xintechllc.com/XHelpersPro/id/">
+    <link rel="alternate" hreflang="cs" href="https://xintechllc.com/XHelpersPro/cs/">
+    <link rel="alternate" hreflang="da" href="https://xintechllc.com/XHelpersPro/da/">
+    <link rel="alternate" hreflang="fi" href="https://xintechllc.com/XHelpersPro/fi/">
+    <link rel="alternate" hreflang="ms" href="https://xintechllc.com/XHelpersPro/ms/">
+    <link rel="alternate" hreflang="nb" href="https://xintechllc.com/XHelpersPro/nb/">
+    <link rel="alternate" hreflang="sv" href="https://xintechllc.com/XHelpersPro/sv/">
+    <link rel="alternate" hreflang="th" href="https://xintechllc.com/XHelpersPro/th/">
+    <link rel="alternate" hreflang="uk" href="https://xintechllc.com/XHelpersPro/uk/">
+    <link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XHelpersPro/">
+    <link rel="icon" href="../assets/app-icon.png" type="image/png">
+    <link rel="preload" href="../assets/hero-display.png" as="image">
+    <link rel="stylesheet" href="../styles.css?v=20260704-merged">
+    <style>
+      /* Preview-only: merged feature groups (redesign card copy + paired
+         screenshots), namespaced so the shared styles.css stays untouched. */
+      .pvw > .pvg-group {
+        width: min(100%, var(--wide-max));
+        margin-inline: auto;
+      }
+      .hero.compact-hero {
+        border-bottom: 0;
+      }
+      .compact-release::before {
+        display: none;
+      }
+      /* With the separators gone, close up the vertical gaps around them. */
+      #what.pvw.compact-section {
+        padding-top: 0.7rem;
+        padding-bottom: 1.1rem;
+      }
+      #release.compact-release.compact-section {
+        padding-top: 1.1rem;
+      }
+      .compact-hero {
+        min-height: 0;
+        padding-top: 1.3rem;
+        padding-bottom: 1rem;
+      }
+      .compact-hero .eyebrow { margin-bottom: 0.35rem; }
+      .compact-hero .hero-subtitle {
+        margin-bottom: 0;
+        font-size: 1.12rem;
+      }
+      .compact-hero .hero-content {
+        display: grid;
+        grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+        gap: clamp(1.5rem, 4vw, 3.5rem);
+        align-items: center;
+        padding-top: 0;
+        width: min(100%, var(--wide-max));
+      }
+      .compact-hero h1 {
+        font-size: clamp(1.9rem, 3.2vw, 2.4rem);
+        margin-bottom: 0.4rem;
+      }
+      .pvh-chips {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 6px 8px;
+        align-content: center;
+      }
+      .pvh-chips span {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px 13px 5px 11px;
+        border: 1px solid rgba(28, 42, 64, 0.1);
+        border-radius: 999px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.72));
+        color: #3d4a5d;
+        font-size: 0.88rem;
+        letter-spacing: 0.01em;
+        box-shadow:
+          0 1px 2px rgba(21, 32, 51, 0.05),
+          0 6px 18px rgba(21, 32, 51, 0.05);
+        backdrop-filter: blur(8px);
+      }
+      .pvh-chips span::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-radius: 999px;
+        background: var(--chip-dot, #246bfe);
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--chip-dot, #246bfe) 16%, transparent);
+      }
+      .pvh-chips span:nth-child(1) { --chip-dot: #246bfe; }
+      .pvh-chips span:nth-child(2) { --chip-dot: #4f8df9; }
+      .pvh-chips span:nth-child(3) { --chip-dot: #0f9f9a; }
+      .pvh-chips span:nth-child(4) { --chip-dot: #087975; }
+      .pvh-chips span:nth-child(5) { --chip-dot: #7964e8; }
+      .pvh-chips span:nth-child(6) { --chip-dot: #9a5fd6; }
+      .pvh-chips span:nth-child(7) { --chip-dot: #c36518; }
+      .pvh-chips span:nth-child(8) { --chip-dot: #15813b; }
+      @media (max-width: 980px) {
+        .compact-hero .hero-content { grid-template-columns: 1fr; }
+      }
+      .pvh-combines {
+        margin: 0.5rem 0 0;
+        max-width: 44rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+        line-height: 1.55;
+      }
+      .pvg-group {
+        display: grid;
+        grid-template-columns: minmax(0, 0.44fr) minmax(0, 0.56fr);
+        gap: clamp(16px, 2.5vw, 28px);
+        align-items: center;
+        padding: 20px;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: var(--panel);
+        box-shadow: var(--shadow);
+      }
+      .pvw > .pvg-group + .pvg-group { margin-top: 18px; }
+      .pvg-copy {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+      .pvw-icon {
+        display: grid;
+        place-items: center;
+        color: #2f6bff;
+        font-size: 1.9rem;
+        line-height: 1;
+        filter: drop-shadow(0 2px 7px color-mix(in srgb, currentColor 55%, transparent));
+      }
+      .pvg-finder .pvw-icon { color: #0aa49e; }
+      .pvg-input .pvw-icon { color: #8b5cf6; }
+      .pvg-audio .pvw-icon { color: #f59e0b; }
+      .pvg-privacy .pvw-icon { color: #21a558; }
+      .pvg-head {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .pvg-head .pvw-icon {
+        flex: 0 0 auto;
+        transform: translateY(-3px);
+      }
+      .pvg-privacy .pvg-head .pvw-icon {
+        transform: translateY(-4px);
+      }
+      .pvg-finder .pvg-head .pvw-icon {
+        transform: translateY(-4px);
+      }
+      .pvg-head h3 { margin: 0; }
+      .pvg-copy h3 {
+        margin: 0 0 8px;
+        font-size: 1.28rem;
+        line-height: 1.2;
+        color: var(--ink);
+        font-weight: 500;
+      }
+      .pvg-copy p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.62;
+      }
+      .pvw-points {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 10px;
+      }
+      .pvw-points li {
+        position: relative;
+        padding-left: 24px;
+        color: var(--muted);
+        line-height: 1.52;
+      }
+      .pvw-points li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.68em;
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #246bfe, #0f9f9a);
+      }
+      .pvg-privacy .pvw-points li {
+        padding-left: 30px;
+      }
+      .pvg-privacy .pvw-points li::before {
+        content: "\2713";
+        top: 0.18em;
+        width: 19px;
+        height: 19px;
+        display: grid;
+        place-items: center;
+        color: #fff;
+        background: linear-gradient(135deg, #22a06b, #15813b);
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 1;
+      }
+      .pvw-note {
+        margin-top: auto;
+        padding: 13px 14px;
+        border: 1px solid rgba(36, 107, 254, 0.14);
+        border-radius: 15px;
+        color: #315684;
+        background: rgba(232, 240, 255, 0.6);
+        font-size: 0.92rem;
+        line-height: 1.45;
+      }
+      .pvg-shots {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        align-content: start;
+      }
+      .pvg-shots.stack { grid-template-columns: 1fr; }
+      .pvg-shots figure {
+        margin: 0;
+      }
+      .pvg-shots img {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        max-height: 360px;
+        height: auto;
+        margin-inline: auto;
+        border-radius: 10px;
+        box-shadow: 0 8px 22px rgba(21, 32, 51, 0.14);
+      }
+      .pvg-shots.stack img {
+        width: 100%;
+        max-height: none;
+      }
+      .pvg-shots img { cursor: zoom-in; }
+      .pvl-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 999;
+        display: grid;
+        place-items: center;
+        padding: 3vmin;
+        background: rgba(10, 16, 26, 0.82);
+        backdrop-filter: blur(6px);
+        cursor: zoom-out;
+      }
+      .pvl-overlay[hidden] { display: none; }
+      .pvl-overlay img {
+        max-width: min(1500px, 96vw);
+        max-height: 93vh;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.5);
+      }
+      .pvg-shots figcaption {
+        margin-top: 6px;
+        color: var(--muted);
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      #release > .pvr-flow {
+        width: min(100%, var(--wide-max));
+        margin-inline: auto;
+      }
+      .pvr-steps {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+      .pvr-steps strong {
+        display: inline-grid;
+        place-items: center;
+        width: 26px;
+        height: 26px;
+        flex: 0 0 auto;
+        border-radius: 999px;
+        color: #fff;
+        background: var(--step-color, #246bfe);
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--step-color, #246bfe) 18%, transparent);
+        font-size: 0.88rem;
+        font-weight: 700;
+        line-height: 1;
+      }
+      .pvr-steps li:nth-child(1) strong { --step-color: #246bfe; }
+      .pvr-steps li:nth-child(2) strong { --step-color: #0f9f9a; }
+      .pvr-steps li:nth-child(3) strong { --step-color: #15813b; }
+      .pvr-flow .compatibility-list { margin-top: 18px; }
+      @media (max-width: 980px) {
+        .pvr-steps { grid-template-columns: 1fr; }
+        .pvg-group { grid-template-columns: 1fr; }
+        .pvg-shots { grid-template-columns: 1fr; }
+        .pvg-shots img { max-height: 420px; }
+      }
+    </style>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
+  <body class="compact-page">
+    <header class="site-header" aria-label="Primær">
+      <a class="brand" href="./" aria-label="XHelpers Pro hjem">
+        <img src="../assets/app-icon.png" alt="" width="34" height="34">
+        <span>XHelpers Pro</span>
+      </a>
+      <nav class="site-nav" aria-label="Sidesektioner">
+        <a href="#what">Hvad det er</a>
+        <a href="#why">Fordele</a>
+        <a href="#release">Hent</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-cta" href="https://xintechllc.com/XHelpersPro/download/XHelpersPro-macOS.dmg">
+          <span class="button-glyph" aria-hidden="true"></span>
+          Hent til Mac
+        </a>
+        <details class="language-menu">
+          <summary>🌐 - 🇩🇰 Dansk</summary>
+          <div class="language-menu-list" aria-label="Sprog">
+            <a href="../" lang="en">🇺🇸🇬🇧 English</a>
+            <a href="../zh-Hans/" lang="zh-Hans">🇨🇳 简体中文</a>
+            <a href="../zh-Hant/" lang="zh-Hant">🇹🇼🇭🇰 繁體中文</a>
+            <a href="../ja/" lang="ja">🇯🇵 日本語</a>
+            <a href="../de/" lang="de">🇩🇪 Deutsch</a>
+            <a href="../fr/" lang="fr">🇫🇷 Français</a>
+            <a href="../es/" lang="es">🇪🇸🇲🇽 Español</a>
+            <a href="../ko/" lang="ko">🇰🇷 한국어</a>
+            <a href="../pt-BR/" lang="pt-BR">🇧🇷 Português (Brasil)</a>
+            <a href="../ru/" lang="ru">🇷🇺 Русский</a>
+            <a href="../it/" lang="it">🇮🇹 Italiano</a>
+            <a href="../nl/" lang="nl">🇳🇱 Nederlands</a>
+            <a href="../sv/" lang="sv">🇸🇪 Svenska</a>
+            <a href="./" lang="da" aria-current="page">🇩🇰 Dansk</a>
+            <a href="../nb/" lang="nb">🇳🇴 Norsk bokmål</a>
+            <a href="../fi/" lang="fi">🇫🇮 Suomi</a>
+            <a href="../pl/" lang="pl">🇵🇱 Polski</a>
+            <a href="../tr/" lang="tr">🇹🇷 Türkçe</a>
+            <a href="../ar/" lang="ar">🇸🇦🇪🇬 العربية</a>
+            <a href="../th/" lang="th">🇹🇭 ไทย</a>
+            <a href="../vi/" lang="vi">🇻🇳 Tiếng Việt</a>
+            <a href="../id/" lang="id">🇮🇩 Bahasa Indonesia</a>
+            <a href="../ms/" lang="ms">🇲🇾 Bahasa Melayu</a>
+            <a href="../hi/" lang="hi">🇮🇳 हिन्दी</a>
+            <a href="../cs/" lang="cs">🇨🇿 Čeština</a>
+            <a href="../uk/" lang="uk">🇺🇦 Українська</a>
+          </div>
+        </details>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero compact-hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="../assets/hero-display.png"
+          alt="Bærbar med mørklagt indbygget skærm foran en aktiv ekstern skærm."
+        >
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <div class="pvh-copy">
+            <p class="eyebrow">Mac-menulinjehjælp til skærm</p>
+            <h1 id="hero-title">XHelpers Pro</h1>
+            <p class="hero-subtitle">
+              De nyttige skrivebordsfunktioner, samlet i ét Mac-værktøj.
+            </p>
+            <p class="pvh-combines">
+              XHelpers Pro samler skærmstyring, vinduesgenveje, Finder-handlinger, lokal filbeskyttelse, finjustering af inputenheder, app-lydstyring og et privatlivsfokuseret design i én fokuseret menulinjeapp.
+            </p>
+          </div>
+          <div class="pvh-chips" aria-label="Highlights">
+            <span>Skærmstyring</span>
+            <span>Vinduesgenveje</span>
+            <span>Finder-handlinger</span>
+            <span>Kryptér & pak (.safe/.7z/.zip/.dmg)</span>
+            <span>Musefølsomhed & rullehastighed</span>
+            <span>Omlægning af taster/knapper</span>
+            <span>App-lydmixer</span>
+            <span>Privat by design</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact-section pvw" id="what" aria-label="Features">
+        <article class="pvg-group pvg-display">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                  <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"></path>
+                </svg>
+              </div>
+              <h3>Skærm- og vinduesstyring</h3>
+            </div>
+            <p class="pvg-lede">Administrér dit visuelle arbejdsområde uden at springe mellem Systemindstillinger, tredjeparts vinduesværktøjer og skærmmenuer.</p>
+            <ul class="pvw-points">
+              <li>Sluk MacBookens indbyggede skærm, mens der dubleres til en ekstern skærm.</li>
+              <li>Skift dublering, dæmp skærme indtil et tastetryk, sæt på vågeblus, genstart, luk ned, og justér lysstyrke eller kontrast.</li>
+              <li>Installér og skift mellem understøttede HiDPI-/brugerdefinerede skærmtilstande.</li>
+              <li>Flyt vinduer til halvdele, hjørner, centrerede positioner, fuldskærmslayouts, andre skærme eller andre skriveborde.</li>
+              <li>Fremhæv det aktive vindue med en justerbar kant, som klik går igennem.</li>
+            </ul>
+            <div class="pvw-note">Indeholder fokus på ordnede vinduer og konfliktvejledning til Rectangle/Rectangle Pro.</div>
+          </div>
+          <div class="pvg-shots">
+            <figure>
+              <img src="../assets/deskhelperpro-menu.png?v=20260704" width="1028" height="1980" loading="lazy" alt="Hovedmenu">
+              <figcaption>Hovedmenu</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/resolution-submenu.png" width="1650" height="1984" loading="lazy" alt="Skift opløsning">
+              <figcaption>Skift opløsning</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/window-arrangement-submenu.png" width="1828" height="2260" loading="lazy" alt="Vinduesplacering">
+              <figcaption>Vinduesplacering</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/highlight-settings.png?v=3" width="1022" height="984" loading="lazy" alt="Fremhæv aktivt vindue">
+              <figcaption>Fremhæv aktivt vindue</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="pvg-group pvg-finder">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                  <path d="M3 7.5A2 2 0 0 1 5 5.5h4.2l1.8 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <rect x="10.4" y="12.6" width="5.6" height="4.4" rx="1" stroke-width="1.7"></rect>
+                  <path d="M11.9 12.6v-1.3a1.3 1.3 0 0 1 2.6 0v1.3" stroke-width="1.7"></path>
+                </svg>
+              </div>
+              <h3>Finder-handlinger & lokale bokse</h3>
+            </div>
+            <p class="pvg-lede">Gør Finder mere nyttig, mens valgte filer, adgangskoder og krypterede bokse bliver på din Mac.</p>
+            <ul class="pvw-points">
+              <li>Opret nye filer og mapper direkte fra Finder.</li>
+              <li>Sæt ind, flyt, kopiér stier, og åbn mapper i Terminal, TextEdit, VS Code, Codex, Claude eller en anden understøttet app.</li>
+              <li>Kryptér valgte filer eller mapper til lokale <code>.safe</code>-filer.</li>
+              <li>Føj filer til en eksisterende boks, eller dekryptér kun det valgte indhold.</li>
+              <li>Arbejd med understøttede .7z-, .zip- og .dmg-arkivforløb.</li>
+            </ul>
+            <div class="pvw-note">Finder- og bokshandlinger kører kun, når du vælger en XHelpers Pro-handling i genvejsmenuen.</div>
+          </div>
+          <div class="pvg-shots">
+            <figure>
+              <img src="../assets/finder-context-menu.png?v=20260704" width="1066" height="994" loading="lazy" alt="Finder-handlinger">
+              <figcaption>Finder-handlinger</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/finder-context-config.png?v=3" width="1768" height="1750" loading="lazy" alt="Finder-kontekstmenuer">
+              <figcaption>Finder-kontekstmenuer</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="pvg-group pvg-input">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                  <rect x="6" y="3.5" width="12" height="17" rx="6"></rect>
+                  <path d="M12 7v3.5"></path>
+                </svg>
+              </div>
+              <h3>Markør-, rulle- & inputprofiler</h3>
+            </div>
+            <p class="pvg-lede">Finjustér mus, pegeredskaber, tastaturadfærd og knaptilknytninger pr. enhed.</p>
+            <ul class="pvw-points">
+              <li>Justér markørfølsomhed og -acceleration pr. mus.</li>
+              <li>Indstil rullehastighed og rulleacceleration pr. pegeredskab.</li>
+              <li>Brug lineær rulning med LinearMouse-kompatibel skalering.</li>
+              <li>Omlæg taster eller understøttede museknapper til taster, genveje, taster med dobbeltrolle eller Hyper-lignende modifikatorer.</li>
+              <li>Profiler og regler gemmes lokalt på denne Mac.</li>
+            </ul>
+            <div class="pvw-note">Praktisk, når ét skrivebord har flere mus, tastaturer eller arbejdsgangsspecifikke genveje.</div>
+          </div>
+          <div class="pvg-shots">
+            <figure>
+              <img src="../assets/mouse-scroll-settings.png" width="1296" height="1554" loading="lazy" alt="Musens følsomhed og acceleration · Rullehastighed og -acceleration">
+              <figcaption>Musens følsomhed og acceleration · Rullehastighed og -acceleration</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/key-button-remapping.png?v=3" width="1498" height="1190" loading="lazy" alt="Omlægning af taster & knapper">
+              <figcaption>Omlægning af taster & knapper</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="pvg-group pvg-audio">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                  <path d="M9 18V5l12-2v13"></path>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <circle cx="18" cy="16" r="3"></circle>
+                </svg>
+              </div>
+              <h3>App-lyd & skrivebordsværktøjer</h3>
+            </div>
+            <p class="pvg-lede">Styr de små skrivebordsdetaljer, der afbryder arbejdet, når de er spredt over separate apps.</p>
+            <ul class="pvw-points">
+              <li>Indstil lydstyrke pr. app fra menulinjen.</li>
+              <li>Forstærk stille apps op til 200 %.</li>
+              <li>Slå lyden fra for enkelte apps.</li>
+              <li>Lad automatisk wi-fi-skift gå til et bedre kendt adgangspunkt, når signalet falder.</li>
+              <li>Kør fra menulinjen uden at tilføje et Dock-vindue.</li>
+            </ul>
+            <div class="pvw-note">Lydmixeren kræver tilladelsen til systemlydoptagelse på macOS 14.4 eller nyere; lyden behandles lokalt.</div>
+          </div>
+          <div class="pvg-shots stack">
+            <figure>
+              <img src="../assets/audio-mixer.png" width="1028" height="225" loading="lazy" alt="App-lydmixer i menuen">
+              <figcaption>App-lydmixer i menuen</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/wifi-switch.png" width="1028" height="200" loading="lazy" alt="Automatisk wi-fi-skift i menuen">
+              <figcaption>Automatisk wi-fi-skift i menuen</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="pvg-group pvg-privacy">
+          <div class="pvg-copy">
+            <div class="pvg-head">
+              <div class="pvw-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                <rect x="4" y="11" width="16" height="10" rx="2.5"></rect>
+                <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
+              </svg>
+            </div>
+              <h3>Privat by design</h3>
+            </div>
+            <p class="pvg-lede">XHelpers Pro er bygget til lokale Mac-arbejdsgange. Det gør ikke dit skrivebordsværktøj til endnu en konto, analysestrøm eller skyfiltjeneste.</p>
+            <ul class="pvw-points">
+              <li>Ingen konto påkrævet.</li>
+              <li>Ingen analyser, reklame-SDK'er, brugstelemetri eller sessionssporing.</li>
+              <li>Ingen indsamling af wi-fi-adgangskoder og ingen logning af boksadgangskoder.</li>
+              <li>Klartekst, boksadgangskoder, krypteringsnøgler, markørprofiler, omlægningsregler og lydbehandling forbliver lokalt.</li>
+              <li>Valgfrie tilladelser forklares tydeligt: Tilgængelighed, Inputovervågning, Systemlydoptagelse, Lokalitet, Finder-udvidelse og Fuld diskadgang.</li>
+            </ul>
+          </div>
+          <div class="pvg-shots stack">
+            <figure>
+              <img src="../assets/permissions-overview.png?v=2" width="1440" height="1798" loading="lazy" alt="Tilladelsesoversigt med livestatus">
+              <figcaption>Tilladelsesoversigt med livestatus</figcaption>
+            </figure>
+          </div>
+        </article>
+      </section>
+
+      <section class="section compact-section" id="why" aria-labelledby="why-title">
+        <div class="section-kicker">Hvad er godt ved det?</div>
+        <div class="compact-split">
+          <div>
+            <h2 id="why-title">Mindre bøvl ved skrivebordet.</h2>
+            <ul class="copy-points" aria-label="Fordele ved XHelpers Pro">
+              <li>
+                <strong>Mørklægger kun når det skal</strong>
+                <span>mørk ved dublering, normal når MacBook-skærmen er en del af arbejdsområdet</span>
+              </li>
+              <li>
+                <strong>Hurtige daglige handlinger</strong>
+                <span>skift dublering, dæmp indtil tastetryk, sæt i vågeblus, juster skærmniveauer og lad Wi-Fi skifte efter behov</span>
+              </li>
+              <li>
+                <strong>Nyttig, ikke støjende</strong>
+                <span>kører fra menulinjen uden Dock-vindue, konto eller analytics</span>
+              </li>
+            </ul>
+          </div>
+          <div class="capability-list" aria-label="Vigtige fordele">
+            <article>
+              <strong>Til skriveborde</strong>
+              <span>lavet til MacBooks, der ofte er tilsluttet ekstern skærm</span>
+            </article>
+            <article>
+              <strong>Til hurtig kontrol</strong>
+              <span>menuen er appen; intet ekstra vindue</span>
+            </article>
+            <article>
+              <strong>Til privatliv</strong>
+              <span>ingen konto, analytics eller Wi-Fi-adgangskoder; feedback åbnes som en mailkladde du kan gennemgå</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact-section compact-release" id="release" aria-labelledby="release-title">
+        <div class="section-kicker">Sådan får du det</div>
+        <div class="pvr-flow">
+          <h2 id="release-title">Hent og prøv i 14 dage.</h2>
+          <ol class="steps compact-steps pvr-steps" aria-label="Install steps">
+            <li>
+              <strong>1</strong>
+              <span>Hent DMG'en — én app til både Apple Silicon- og Intel-Macs.</span>
+            </li>
+            <li>
+              <strong>2</strong>
+              <span>Træk XHelpers Pro til Programmer, og start den.</span>
+            </li>
+            <li>
+              <strong>3</strong>
+              <span>Prøv alle Pro-funktioner gratis i 14 dage.</span>
+            </li>
+          </ol>
+          <div class="compatibility-list" aria-label="Kompatibilitet">
+              <span>macOS 13.0 eller nyere</span>
+              <span>arm64 + x86_64</span><span class="app-version">v1.0.0</span></div>
+        </div>
+        <div class="download-card" aria-label="Downloadhandling">
+          <div>
+            <strong>Udviklersigneret og notariseret af Apple.</strong>
+          </div>
+          <div class="download-actions">
+            <a class="button button-primary" href="https://xintechllc.com/XHelpersPro/download/XHelpersPro-macOS.dmg">
+              <span class="button-glyph" aria-hidden="true"></span>
+              Hent DMG
+            </a>
+            <a class="text-link" href="privacy.html">Anonymitetspolitik</a>
+            <a class="text-link" href="eula.html">EULA</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../script.js?v=20260609-dropdown"></script>
+    <div class="pvl-overlay" id="pvl-overlay" hidden>
+      <img alt="">
+    </div>
+    <script>
+      (function () {
+        var overlay = document.getElementById("pvl-overlay");
+        var overlayImg = overlay.querySelector("img");
+        function close() {
+          overlay.hidden = true;
+          document.body.style.overflow = "";
+        }
+        document.querySelectorAll(".pvg-shots img").forEach(function (img) {
+          img.addEventListener("click", function () {
+            overlayImg.src = img.currentSrc || img.src;
+            overlayImg.alt = img.alt;
+            overlay.hidden = false;
+            document.body.style.overflow = "hidden";
+          });
+        });
+        overlay.addEventListener("click", close);
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape") close();
+        });
+      })();
+    </script>
+  </body>
+</html>
