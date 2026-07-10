@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Az Xintech LLC Flexible Timers SMS-feliratkozási bizonyítéka</title>
+  <link rel="stylesheet" href="assets/flexible-timers/page.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
+<body>
+  <main>
+    <h1>Az Xintech LLC Flexible Timers SMS-feliratkozási bizonyítéka</h1>
+
+    <p>
+      Ez az oldal a Flexible Timers SMS-feliratkozási folyamatát dokumentálja a
+      Twilio díjmentes számos ellenőrzéséhez. A Flexible Timers üzemeltetője az
+      Xintech LLC. A felhasználóknak megjelenített végső vállalkozás az Xintech
+      LLC Flexible Timers terméke. A Flexible Timers SMS a fiók telefonszámának
+      ellenőrző kódjaira és a felhasználó által létrehozott időzítő-/emlékeztető
+      SMS-ekre korlátozódik, amelyeket kizárólag a bejelentkezett felhasználó
+      saját, ellenőrzött és hozzájárulással megadott fiók-telefonszámára
+      küldünk. A Flexible Timers nem engedi, hogy a felhasználók tetszőleges
+      harmadik feleknek üzenjenek, nem küld marketingcélú szöveges üzeneteket,
+      és nem biztosít kétirányú SMS-csevegést.
+    </p>
+
+    <h2>Feliratkozási folyamat</h2>
+    <ol>
+      <li>A felhasználó bejelentkezik a Flexible Timersbe.</li>
+      <li>A felhasználó megnyitja a Fiókadatokat.</li>
+      <li>A felhasználó megnyitja az SMS beállítását.</li>
+      <li>A felhasználó megadja a saját telefonszámát.</li>
+      <li>Az SMS-hozzájárulási jelölőnégyzet nincs előre bejelölve.</li>
+      <li>A felhasználó kifejezetten bejelöli az SMS-hozzájárulási jelölőnégyzetet.</li>
+      <li>A felhasználó ugyanarról a képernyőről megnyithatja az SMS-feltételek és az adatvédelmi irányelvek hivatkozásait.</li>
+      <li>A felhasználó a Folytatás gombra kattintva egyszeri ellenőrző kódot kér.</li>
+      <li>
+        A telefonszám ellenőrzése és a feliratkozás után a felhasználó kizárólag
+        ugyanarra az ellenőrzött, hozzájárulással megadott fiók-telefonszámra
+        ütemezhet emlékeztető SMS-eket.
+      </li>
+    </ol>
+
+    <h2>Hozzájárulási szöveg</h2>
+    <p class="quote">
+      I agree to receive SMS verification codes and reminder messages I schedule
+      for myself from Flexible Timers by Xintech LLC at this phone number.
+      Standard message and data rates may apply. Reply STOP to opt out and HELP
+      for help. Message frequency varies. Flexible Timers will not send
+      marketing texts. Consent is not a condition of purchase.
+    </p>
+
+    <h2>Képernyőkép</h2>
+    <p>
+      A feliratkozási képernyőn látható a telefonszámmező, a be nem jelölt,
+      kifejezett hozzájárulási jelölőnégyzet, az Xintech LLC Flexible Timers
+      termékét megnevező hozzájárulási szöveg, az SMS-feltételek hivatkozása, az
+      adatvédelmi irányelvek hivatkozása, a STOP/HELP megfogalmazás, az
+      üzenetgyakorisági tájékoztatás, az üzenet-/adatdíjakra vonatkozó
+      tájékoztatás, valamint a kizárólag a tulajdonos telefonszámára korlátozott
+      SMS-hatókör.
+    </p>
+    <img
+      src="assets/sms-consent.png"
+      alt="Az Xintech LLC Flexible Timers SMS-hozzájárulási képernyője a telefonszám megadásával, be nem jelölt hozzájárulási jelölőnégyzettel, a feltételekkel, az adatvédelemmel, valamint a STOP és HELP szöveggel">
+
+    <h2>Minta éles üzenetek</h2>
+    <p class="quote">
+      Flexible Timers verification code: 123456. This code expires in 10
+      minutes. Reply STOP to opt out, HELP for help.
+    </p>
+    <p class="quote">
+      Flexible Timers reminder: You scheduled this SMS reminder for 4:00 PM:
+      Pick up child for after-school piano class. Reply STOP to opt out, HELP
+      for help.
+    </p>
+
+    <h2>Kulcsszóválaszok</h2>
+    <p>
+      A bejövő kulcsszavak kizárólag a megfelelőségi és a fiók-telefonszámhoz
+      kötött üzenetkezelési vezérlésre szolgálnak. A Flexible Timers nem fogad
+      általános SMS-beszélgetéseket.
+    </p>
+    <p class="quote">
+      STOP response: You are opted out of Flexible Timers SMS. No more messages
+      will be sent. Reply START to opt in again.
+    </p>
+    <p class="quote">
+      HELP response: Flexible Timers sends account verification codes and
+      reminder SMS you schedule for yourself. Help:
+      https://xintechllc.com/FlexibleTimers/support.html. Reply STOP to opt out.
+    </p>
+    <p class="quote">
+      START response: You have opted back in to Flexible Timers SMS messages.
+      Message frequency varies. Reply STOP to opt out, HELP for help.
+    </p>
+
+    <h2>Támogatás és szabályzatok</h2>
+    <div class="links">
+      <a href="sms-terms.html">SMS-feltételek</a>
+      <a href="privacy.html">Adatvédelmi irányelvek</a>
+      <a href="support.html">Támogatás</a>
+    </div>
+
+    <p>Utolsó frissítés: 2026. június 15.</p>
+    <footer>
+      <div>© 2026 Xintech LLC. Minden jog fenntartva.</div>
+      <div class="footer-links">
+        <a href="index.html">Kezdőlap</a>
+        <a href="support.html">Támogatás</a>
+        <a href="privacy.html">Adatvédelem</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a>
+        <a href="sms-terms.html">SMS-feltételek</a>
+        <a href="sms-opt-in.html">SMS-hozzájárulás</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

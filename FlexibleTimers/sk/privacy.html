@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zásady ochrany súkromia aplikácie XTimers od Xintech LLC</title>
+  <link rel="stylesheet" href="assets/flexible-timers/page.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+</head>
+<body>
+  <main>
+    <h1>Zásady ochrany súkromia aplikácie XTimers od Xintech LLC</h1>
+
+    <p>
+      Aplikáciu XTimers prevádzkuje spoločnosť Xintech LLC. XTimers používa
+      informácie o účte na poskytovanie funkcií časovačov, pripomienok, účtu,
+      synchronizácie, prehľadov a správ. XTimers momentálne odosiela e-mailové
+      prehľady a e-mailové správy iba na vlastnú e-mailovú adresu účtu
+      prihláseného používateľa. Tieto zásady opisujú aj podmienky ochrany
+      súkromia pri SMS na overovanie telefónu účtu a používateľom vytvorené
+      SMS pripomienky odosielané iba na používateľovo vlastné overené
+      telefónne číslo účtu, ktoré udelilo súhlas.
+    </p>
+
+    <h2>Informácie zhromažďované pre e-mail</h2>
+    <p>
+      Keď prihlásený používateľ požiada o overenie, prehľad, spätnú väzbu
+      alebo e-mailovú pripomienku, XTimers môže spracúvať e-mailovú adresu
+      účtu používateľa, obsah správy, dáta časovačov/prehľadov potrebné pre
+      danú požiadavku a metadáta o doručení potrebné na prevádzku, riešenie
+      problémov a zabezpečenie služby.
+    </p>
+
+    <h2>Informácie zhromažďované pre SMS</h2>
+    <p>
+      Keď si prihlásený používateľ pridá vlastné telefónne číslo účtu pre SMS,
+      XTimers môže uchovávať telefónne číslo, stav súhlasu, zdroj súhlasu,
+      verziu textu súhlasu, znenie súhlasu, URL podmienok SMS, URL zásad
+      ochrany súkromia, časovú pečiatku, stav overenia, obsah používateľom
+      vytvorenej pripomienkovej správy, naplánovaný čas pripomienky a metadáta
+      o doručení správ potrebné na prevádzku a audit SMS programu.
+    </p>
+
+    <h2>Ako sa SMS informácie používajú</h2>
+    <p>
+      SMS informácie sa používajú na overenie používateľovho vlastného
+      telefónneho čísla účtu, odosielanie pripomienkových SMS, ktoré si
+      používateľ naplánuje sám pre seba, vedenie záznamov o udelení a zrušení
+      súhlasu, predchádzanie zneužitiu, riešenie problémov s doručovaním a
+      dodržiavanie požiadaviek operátorov a právnych predpisov.
+    </p>
+
+    <h2>Žiadny predaj ani zdieľanie na marketing</h2>
+    <p>
+      XTimers nepredáva dáta o súhlase s odberom SMS. XTimers nezdieľa dáta o
+      súhlase s odberom SMS, telefónne čísla ani súhlas s textovými správami s
+      tretími stranami ani pridruženými spoločnosťami na marketingové alebo
+      propagačné účely.
+    </p>
+
+    <h2>Poskytovatelia služieb</h2>
+    <p>
+      XTimers môže využívať poskytovateľov služieb vrátane poskytovateľov SMS
+      na doručovanie overovacích správ, doručovanie používateľom naplánovaných
+      pripomienkových SMS a prevádzku služby. Títo poskytovatelia môžu
+      spracúvať SMS informácie iba v rozsahu potrebnom na poskytovanie služby
+      zasielania správ.
+    </p>
+
+    <h2>Zrušenie odberu</h2>
+    <p>
+      Používatelia môžu odpoveďou STOP zrušiť odber SMS správ. Odpoveďou HELP
+      môžu získať pomoc.
+    </p>
+
+    <h2>Kontakt</h2>
+    <p>
+      Podporu nájdete na
+      <a href="support.html">xintechllc.com/FlexibleTimers/support.html</a>.
+    </p>
+
+    <p>Posledná aktualizácia: 15. júna 2026.</p>
+    <h2>Analytika webovej stránky</h2>
+<p>Táto webová stránka používa Umami Cloud, analytickú službu bez cookies, na počítanie návštev stránok a základných akcií na webe, ako sú kliknutia na App Store, stiahnutie, podporu, súkromie, podmienky a e-mailové odkazy. Tieto webové metriky pomáhajú spoločnosti Xintech LLC pochopiť, ktoré stránky sú užitočné. Sú oddelené od samotných aplikácií, ktoré neobsahujú analytické SDK a neodosielajú spoločnosti Xintech LLC telemetriu o používaní aplikácií.</p>
+<footer>
+      <div>© 2026 Xintech LLC. Všetky práva vyhradené.</div>
+      <div class="footer-links">
+        <a href="index.html">Domov</a>
+        <a href="support.html">Podpora</a>
+        <a href="privacy.html">Súkromie</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a>
+        <a href="sms-terms.html">Podmienky SMS</a>
+        <a href="sms-opt-in.html">Súhlas s SMS</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
