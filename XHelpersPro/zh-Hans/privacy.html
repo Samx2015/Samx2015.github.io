@@ -104,7 +104,7 @@
       <div class="support-main">
         <section class="support-section" id="overview">
           <h1>XHelpers Pro 隐私政策</h1>
-          <p class="effective-date">生效日期：2026 年 6 月 13 日</p>
+          <p class="effective-date">生效日期：2026 年 7 月 11 日</p>
           <p>
         XHelpers Pro 是一款本地优先的 macOS 菜单栏工具，用于在 Mac 镜像设置中控制内建显示屏，
         并可选择帮助 Mac 切换到信号更强的已保存 Wi-Fi。
@@ -114,127 +114,21 @@
       </p>
         </section>
 
-        <section class="support-section" id="collection">
-          <h2>数据收集</h2>
-                  <p>
-                    XHelpers Pro 不会通过显示管理功能收集、存储、出售、分享或传输个人信息。除非你主动通过
-                    支持邮件发送信息或激活许可证，否则 Xintech LLC 不会从 App 收到关于你的显示器、设置、使用情况或设备的信息。
-                  </p>
-                  <ul>
-                    <li>无需 XHelpers Pro 账号。</li>
-                    <li>不包含分析、跟踪、广告或崩溃报告 SDK。</li>
-                    <li>不会向 Xintech LLC 发送后台遥测。</li>
-                  </ul>
+        <section class="support-section" id="current-policy-summary">
+          <h2>当前政策摘要</h2>
+          <p>XHelpers Pro 会在 Mac 本地处理显示器、窗口与 App 快捷键、Finder 路径和书签、指针设备、Wi-Fi SSID/BSSID 与信号、许可证资料和有限诊断日志；本地处理不等于向 Xintech LLC 传输。App 不含分析、广告或崩溃报告 SDK，也不发送使用遥测。</p>
+          <p>Finder 打开上下文菜单时，扩展会取得目标 URL、路径和基本元数据；对支持的 ZIP/7z 可能读取小型文件头。文件内容操作只在你选择命令后进行。其他 App 的后续处理受其隐私政策约束。当前公开版的 Safe 完全在本地运行，不提供 Xintech 托管的传输或链接共享。</p>
+          <p>本地日志最多 800 条、每条 4,096 字符、总计约 8 MB，可能记录 App/显示器/亮度/DDC/电源/Wi-Fi 状态和错误，但不应含文件内容、密码、输入文字或音频。错误报告草稿通常使用最近 20 分钟、必要时最多 24 小时的摘录，上限 180 行和 16,000 字符；只有你发送邮件才会传出。</p>
+          <p>Sparkle 可自动检查更新并传送普通请求及 App/系统资料。Lemon Squeezy 用于许可证激活、停用和自动验证；保存密钥后通常在启动后及约每 12 小时验证，可能传送密钥、产品、实例标识/名称、IP 和时间。所需的 macOS 权限可在系统设置撤销。网站的 Umami Cloud 可能处理页面、设备、活动参数、由 IP 推断的大致区域和点击事件；它声明不使用分析 Cookie、不存储 IP，目前资料最长保留六个月。适用的数据权利请求请联系 admin@xintechllc.com。英文政策为权威版本。</p>
         </section>
 
-        <section class="support-section" id="local-data">
-          <h2>本地数据</h2>
-                  <p>
-                    XHelpers Pro 可能会在你的 Mac 上保存少量本地偏好设置和有限的本地诊断日志。这些数据仅用于让
-                    App 在多次启动之间保持一致行为，并在你选择报告问题时准备错误报告草稿。
-                  </p>
-                  <p>本地偏好设置可能包括：</p>
-                  <ul>
-                    <li>自动黑屏是否开启。</li>
-                    <li>启动时是否启用内建屏幕镜像。</li>
-                    <li>XHelpers Pro 菜单操作的自定义键盘快捷键。</li>
-                    <li>Auto Wi-Fi Switch 是否开启及其信号强度阈值。</li>
-                    <li>用于记住镜像首选外接显示器的本地显示器标识符。</li>
-                    <li>用于错误报告草稿的一小段 XHelpers Pro 诊断消息日志。</li>
-                    <li>用于管理试用权限的试用开始和试用到期标记，保存在本地和钥匙串中。</li>
-                    <li>如果你激活许可证，许可证密钥和 Lemon Squeezy 许可证实例标识符会保存在 Mac 钥匙串中。</li>
-                    <li>非秘密的许可证时间戳，例如上次成功验证时间，用于离线宽限行为。</li>
-                  </ul>
-                  <p>
-                    App 使用 macOS 显示 API 检查显示器布局、检测镜像、调整内建显示屏亮度、在你选择“调暗显示器直到按键”时临时调暗活动显示器、
-                    在你启用时管理登录时启动，并在需要时恢复固定的安全亮度值。对于临时调暗，XHelpers Pro 只检查是否有按键按下，以便恢复显示器；
-                    它不会记录按键名称、输入的文本或键盘历史。XHelpers Pro 不会保存你之前的亮度。
-                  </p>
-        </section>
 
-        <section class="support-section" id="finder">
-          <h2>Finder 上下文菜单和 Safes</h2>
-                  <p>Finder 操作只会在你主动选择后运行。XHelpers Pro 可以新建文件和文件夹、粘贴、复制路径、用本地应用打开所选项目、将所选项目加密为 .safe 文件、添加到现有 Safe，或将 Safe 解密到你选择的文件夹。</p>
-                  <p>Safe 加密和解密只会读取该操作所选的本地文件或 .safe 归档。密码绝不会被保存、记录、上传或发送给 Xintech LLC。</p>
-        </section>
 
-        <section class="support-section" id="wifi">
-          <h2>Wi-Fi 状态和位置权限</h2>
-                  <p>
-                    Auto Wi-Fi Switch 是可选功能。启用后，XHelpers Pro 使用公开的 macOS CoreWLAN API 读取当前
-                    Wi-Fi 名称、接入点地址、信号强度和频段，并扫描可能作为更好替代的已保存自动加入网络。
-                  </p>
-                  <p>
-                    macOS 可能要求位置权限，App 才能查看 Wi-Fi 网络名称和接入点地址。XHelpers Pro 仅将该权限用于菜单和
-                    Auto Wi-Fi Switch 所需的 Wi-Fi 详情。App 不收集位置历史，不向 Xintech LLC 发送 Wi-Fi 详情，也不读取、存储或传输 Wi-Fi 密码。
-                  </p>
-        </section>
 
-        <section class="support-section" id="network">
-          <h2>网络活动</h2>
-                  <p>
-                    XHelpers Pro 的常规显示控制不需要网络连接。当自动更新检查开启，或你从菜单选择“检查更新...”时，
-                    App 可能会访问公开的 Sparkle 更新 feed。
-                  </p>
-                  <p>
-                    更新检查仅用于了解是否有新版本。它不会用于广告、分析、账号跟踪或使用情况跟踪。
-                  </p>
-                  <p>
-                    如果你选择“激活许可证...”，XHelpers Pro 会联系 Lemon Squeezy 来激活、验证或停用许可证。
-                    许可证请求会发送你的许可证密钥，以及基于 Mac 本地电脑名称的实例名称，例如“XHelpers Pro on Sam's Mac”，以便你以后识别并停用该 Mac。
-                  </p>
-                  <p>
-                    Lemon Squeezy 可能返回验证许可证所需的许可证、产品、订单和客户元数据。XHelpers Pro 只存储许可证密钥、本地许可证实例标识符、
-                    本地试用标记和本地验证时间戳。许可证请求不会用于分析、广告或使用情况跟踪。
-                  </p>
-        </section>
 
-        <section class="support-section" id="feedback">
-          <h2>错误报告、功能建议和反馈</h2>
-                  <p>
-                    “报告问题...”、“建议功能...”和“发送反馈...”菜单项会在你的默认邮件 App 中打开一封发给 Xintech LLC 的草稿。
-                    App 不会自动发送邮件。发送前你可以查看、编辑或删除草稿。
-                  </p>
-                  <p>
-                    草稿可能包含简短的诊断摘要，以便支持人员理解上下文：App 版本、macOS 版本、处理器架构、Auto Blackout 状态、内建镜像状态和当前 App 状态。
-                    只有当你发送邮件时，Xintech LLC 才能看到你的邮件地址。
-                  </p>
-                  <p>
-                    错误报告草稿还会包含 XHelpers Pro 最近诊断日志的有限摘录。这些日志可能包括本地显示状态、App 状态详情、Wi-Fi 网络名称、接入点地址、
-                    信号强度和 Auto Wi-Fi Switch 决策。功能建议和一般反馈草稿不包含日志。
-                  </p>
-        </section>
 
-        <section class="support-section" id="diagnostics">
-          <h2>诊断和日志</h2>
-                  <p>
-                    XHelpers Pro 会向 Apple 本地统一日志系统写入诊断消息，并保留一小段 App 本地诊断日志。这些日志存储在你的 Mac 本地。
-                    选择“报告问题...”会从 App 本地日志中收集仅限 XHelpers Pro 的有限摘录，并插入邮件草稿。
-                  </p>
-                  <p>
-                    日志摘录会在可用时使用最近 20 分钟的 XHelpers Pro 日志。如果近期条目太少，App 可能回看最多 24 小时，并包含最近的
-                    XHelpers Pro 条目，最多 180 行和 16,000 个字符。除非你选择发送，否则不会发送任何内容，并且你可以先删除日志摘录。
-                  </p>
-        </section>
 
-        <section class="support-section" id="choices">
-          <h2>你的选择</h2>
-                  <ul>
-                    <li>你可以不发送反馈草稿，也可以编辑草稿或删除诊断详情。</li>
-                    <li>发送错误报告前，你可以删除诊断摘要或日志摘录。</li>
-                    <li>你可以在 Sparkle 更新偏好设置中关闭自动更新检查。</li>
-                    <li>你可以从 XHelpers Pro 菜单开启或关闭 Auto Wi-Fi Switch。</li>
-                    <li>你可以在 macOS 系统设置中授予、拒绝或撤销 Wi-Fi 详情所需的位置权限。</li>
-                    <li>你可以在试用期间不激活许可证而使用 Pro 显示控制。</li>
-                    <li>你可以从许可证窗口停用这台 Mac。</li>
-                    <li>你可以使用 macOS 常规偏好设置管理工具移除本地 App 偏好设置。</li>
-                  </ul>
-        </section>
 
-        <section class="support-section" id="website-analytics">
-          <h2>网站分析</h2>
-          <p>本网站使用 Umami Cloud（一项不使用 Cookie 的分析服务）统计页面访问量，以及 App Store、下载、支持、隐私、条款和电子邮件链接点击等基本网站操作。这些网站指标帮助 Xintech LLC 了解哪些页面有用。它们与应用本身相互独立；应用不包含分析 SDK，也不会向 Xintech LLC 发送应用使用遥测。</p>
-        </section>
         <section class="support-section" id="contact">
           <h2>联系</h2>
                   <p>

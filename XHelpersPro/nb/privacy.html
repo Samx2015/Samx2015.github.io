@@ -57,7 +57,7 @@
 </script>
 </head>
   <body class="support-page app-store-page deskhelper-appstore-page privacy-simple-page">
-    <header class="site-header" aria-label="Primær">
+    <header class="site-header" aria-label="Hovednavigasjon">
       <a class="brand" href="./" aria-label="XHelpers Pro hjem">
         <img src="../assets/app-icon.png" alt="" width="34" height="34">
         <span>XHelpers Pro</span>
@@ -104,118 +104,20 @@
       <div class="support-main">
         <section class="support-section" id="overview">
           <h1>Personvernerklæring for XHelpers Pro</h1>
-          <p class="effective-date">Ikrafttredelsesdato: 13. juni 2026</p>
+          <p class="effective-date">Ikrafttredelsesdato: 11. juli 2026</p>
           <p>XHelpers Pro er et lokalt macOS-menylinjeverktøy for å styre den innebygde skjermen i speilede Mac-oppsett og valgfritt hjelpe Macen med å bytte til sterkere lagret Wi‑Fi.</p>
           <p class="notice">Oversatte versjoner tilbys for enkelhets skyld. <a href="../privacy.html" hreflang="en">Den engelske versjonen</a> er den autoritative versjonen av denne erklæringen.</p>
         </section>
 
-        <section class="support-section" id="collection">
-          <h2>Datainnsamling</h2>
-                  <p>
-                    XHelpers Pro samler ikke inn, lagrer, selger, deler eller overfører personlig informasjon gjennom skjermstyringsfunksjonene. Xintech LLC mottar ikke informasjon om skjermene, innstillingene, bruken eller enheten din fra appen med mindre du med vilje sender den via e-poststøtte eller aktiverer en lisens.
-                  </p>
-                  <ul>
-                    <li>Ingen XHelpers Pro-konto kreves.</li>
-                    <li>Ingen analyse-, sporings-SDK-er, annonserings-SDK-er eller krasjrapporterende SDK-er er inkludert.</li>
-                    <li>Ingen bakgrunnstelemetri sendes til Xintech LLC.</li>
-                  </ul>
-        </section>
+        <section class="support-section" id="current-policy-summary"><h2>Sammendrag av gjeldende policy</h2><p>XHelpers Pro behandler lokalt data om skjermer, vindu/app-snarveier, Finder-stier og bokmerker, pekeenheter, Wi-Fi SSID/BSSID og signal, lisens og begrenset diagnostikk. Lokal behandling er ikke overføring til Xintech LLC. Appen har ingen analyse-, reklame- eller krasj-SDK-er og sender ingen brukstelemetri.</p><p>Når Finders kontekstmeny åpnes, mottar utvidelsen URL-er, stier og grunnmetadata og kan lese et lite filhode i støttede ZIP/7z. Innhold behandles først etter at en kommando er valgt. Deretter gjelder den andre appens policy. Safe forblir lokal i offentlig versjon; Xintech tilbyr ingen overføring driftet av Xintech eller lenkedeling.</p><p>Den lokale loggen er begrenset til 800 oppføringer, 4 096 tegn hver og ca. 8 MB. Den kan inneholde app-, skjerm-, lysstyrke/DDC-, strøm-, Wi-Fi- og feildata, men ikke innhold, passord, skrevet tekst eller lyd. Feilrapporter bruker normalt 20 minutter, ved behov 24 timer, maks 180 linjer/16 000 tegn og forlater bare Mac-en når e-post sendes.</p><p>Sparkle kan automatisk sende normale forespørsels- og app/systemdata for oppdatering. Lemon Squeezy håndterer aktivering, deaktivering og automatisk validering; etter lagring kontrolleres ved oppstart og ca. hver 12. time og kan sende nøkkel, produkt, instans-ID/-navn, IP og tid. macOS-tillatelser kan trekkes tilbake. Umami Cloud kan behandle side, enhet, kampanje, omtrentlig region og klikk; tjenesten oppgir at analysecookies ikke brukes og IP ikke lagres. Nåværende oppbevaring: opptil seks måneder. Rettigheter: admin@xintechllc.com. Engelsk gjelder.</p></section>
 
-        <section class="support-section" id="local-data">
-          <h2>Lokale data</h2>
-                  <p>
-                    XHelpers Pro kan lagre en liten mengde lokale preferansedata og en avgrenset lokal diagnoselogg på Mac-en. Dette brukes kun for å få appen til å oppføre seg konsekvent mellom lanseringer og for å forberede utkast til feilrapporter når du velger å rapportere en feil.
-                  </p>
-                  <p>Lokale preferanser kan omfatte:</p>
-                  <ul>
-                    <li>Om automatisk blackout er aktivert eller deaktivert.</li>
-                    <li>Om innebygd speiling skal være aktivert ved lansering.</li>
-                    <li>Egendefinerte tastatursnarveier for XHelpers Pro menyhandlinger.</li>
-                    <li>Om Auto Wi-Fi Switch er aktivert og dens signalstyrketerskel.</li>
-                    <li>En lokal skjermidentifikator som brukes til å huske den foretrukne eksterne skjermen for speiling.</li>
-                    <li>En liten avgrenset logg over XHelpers Pro diagnostiske meldinger brukt for feilrapportutkast.</li>
-                    <li>Markører for prøvestart og utløpt prøvetid lagret lokalt og i Keychain for å administrere prøvetilgang.</li>
-                    <li>En lisensnøkkel og Lemon Squeezy lisensforekomstidentifikator lagret i Mac-en din Keychain hvis du aktiverer en lisens.</li>
-                    <li>Ikke-hemmelige lisenstidsstempler, for eksempel siste vellykkede valideringstidspunkt, brukt for frakoblet fristoppførsel.</li>
-                  </ul>
-                  <p>
-                    Appen bruker macOS skjerm-APIer for å inspisere skjermoppsett, oppdage speiling, justere innebygd skjermlysstyrke, midlertidig dimme aktive skjermer når du velger "Dim Displays Until Key Press," administrere Start at Login når du aktiverer det, og gjenopprette en fast sikker lysstyrkeverdi når det er nødvendig. For midlertidig dimming, kontrollerer XHelpers Pro om en tast bare trykkes inn slik at den kan gjenopprette visningene; den registrerer ikke nøkkelnavn, skrevet tekst eller tastaturhistorikk. XHelpers Pro lagrer ikke din tidligere lysstyrke.
-                  </p>
-        </section>
 
-        <section class="support-section" id="finder">
-          <h2>Finder-kontekstmenyer og Safes</h2>
-                  <p>Finder-handlinger kjører bare etter at du velger dem. XHelpers Pro kan opprette filer og mapper, lime inn, kopiere baner, åpne valg i lokale apper, kryptere valgte elementer til .safe-filer, legge til i en eksisterende Safe eller dekryptere en Safe til en mappe du velger.</p>
-                  <p>Safe-kryptering og -dekryptering leser bare de valgte lokale filene eller .safe-arkivet for den handlingen. Passord lagres, logges, lastes opp eller sendes aldri til Xintech LLC.</p>
-        </section>
 
-        <section class="support-section" id="wifi">
-          <h2>Wi-Fi-status og posisjonstillatelse</h2>
-                  <p>
-                    Auto Wi-Fi Switch er valgfritt. Når den er aktivert, bruker XHelpers Pro offentlige macOS CoreWLAN API-er for å lese gjeldende Wi-Fi-navn, tilgangspunktadresse, signalstyrke og bånd, og for å skanne etter lagrede auto-join-nettverk som kan være bedre alternativer.
-                  </p>
-                  <p>
-                    macOS kan kreve posisjonstillatelse før apper kan se Wi-Fi nettverksnavn og tilgangspunktadresser. XHelpers Pro bruker denne tillatelsen kun for Wi-Fi detaljer som brukes av menyen og Auto Wi-Fi Switch. Appen samler ikke inn posisjonshistorikk, sender ikke Wi-Fi detaljer til Xintech LLC, og leser, lagrer eller overfører ikke Wi-Fi passord.
-                  </p>
-        </section>
 
-        <section class="support-section" id="network">
-          <h2>Nettverksaktivitet</h2>
-                  <p>
-                    XHelpers Pros normale skjermkontroller krever ikke en nettverkstilkobling. Appen kan kontakte den offentlige Sparkle oppdateringsstrømmen når automatiske oppdateringskontroller er aktivert eller når du velger "Check for Updates..." fra menyen.
-                  </p>
-                  <p>
-                    Oppdateringssjekker brukes kun for å finne ut om en nyere versjon er tilgjengelig. De brukes ikke til annonsering, analyser, kontosporing eller brukssporing.
-                  </p>
-                  <p>
-                    Hvis du velger "Activate License...", kontakter XHelpers Pro Lemon Squeezy for å aktivere, validere eller deaktivere lisensen din. Lisensforespørsler sender lisensnøkkelen din og et forekomstnavn basert på Macens lokale datamaskinnavn, for eksempel «XHelpers Pro på Sams Mac», slik at du kan gjenkjenne og deaktivere den Mac-en senere.
-                  </p>
-                  <p>
-                    Lemon Squeezy kan returnere lisens-, produkt-, bestillings- og kundemetadata som er nødvendige for å bekrefte lisensen. XHelpers Pro lagrer bare lisensnøkkelen, den lokale lisensforekomstidentifikatoren, lokale prøvemarkører og lokale valideringstidsstempler. Lisensforespørsler brukes ikke til analyser, annonsering eller brukssporing.
-                  </p>
-        </section>
 
-        <section class="support-section" id="feedback">
-          <h2>Feilrapporter, funksjonsforespørsler og tilbakemelding</h2>
-                  <p>
-                    Menyelementene "Rapporter en feil...", "Foreslå en funksjon..." og "Send tilbakemelding..." åpner et utkast i standard e-postapp adressert til Xintech LLC. Appen sender ikke e-post automatisk. Du kan se gjennom, redigere eller slette utkastet før du sender det.
-                  </p>
-                  <p>
-                    Utkastet kan inneholde et kort diagnostisk sammendrag slik at brukerstøtten kan forstå konteksten: appversjon, macOS-versjon, prosessorarkitektur, Auto Blackout-tilstand, innebygd speiltilstand og gjeldende appstatus. E-postadressen din er kun synlig for Xintech LLC hvis du sender e-posten.
-                  </p>
-                  <p>
-                    Feilrapportutkast inkluderer også et avgrenset utdrag av nylige XHelpers Pro diagnostiske logger. Disse loggene kan inkludere lokal visningsstatus, appstatusdetaljer, Wi-Fi nettverksnavn, tilgangspunktadresser, signalstyrke og Auto Wi-Fi Switch beslutninger. Funksjonsforespørsel og generelle tilbakemeldingsutkast inkluderer ikke logger.
-                  </p>
-        </section>
 
-        <section class="support-section" id="diagnostics">
-          <h2>Diagnostikk og logger</h2>
-                  <p>
-                    XHelpers Pro skriver diagnostiske meldinger til Apples lokale enhetlige loggingssystem og fører en liten avgrenset app-lokal diagnoselogg. Disse loggene lagres lokalt på din Mac. Hvis du velger "Rapporter en feil...", samles et avgrenset XHelpers Pro-utdrag fra den lokale apploggen og settes inn i e-postutkastet.
-                  </p>
-                  <p>
-                    Loggutdraget bruker de siste 20 minuttene med XHelpers Pro-logger når det er tilgjengelig. Hvis det er for få nylige oppføringer, kan appen se tilbake opptil 24 timer og inkludere de siste XHelpers Pro-oppføringene, begrenset til 180 linjer og 16 000 tegn. Ingenting sendes med mindre du velger Send, og du kan slette loggutdraget først.
-                  </p>
-        </section>
 
-        <section class="support-section" id="choices">
-          <h2>Dine valg</h2>
-                  <ul>
-                    <li>Du kan la tilbakemeldingsutkast være usendt, redigere dem eller slette diagnostiske detaljer.</li>
-                    <li>Du kan slette diagnostiske sammendrag eller logge utdrag før du sender feilrapporter.</li>
-                    <li>Du kan deaktivere automatiske oppdateringskontroller i Sparkle oppdateringsinnstillingene.</li>
-                    <li>Du kan slå Auto Wi-Fi Switch på eller av fra XHelpers Pro-menyen.</li>
-                    <li>Du kan gi, avslå eller tilbakekalle plasseringstillatelse for Wi-Fi detaljer i macOS systeminnstillinger.</li>
-                    <li>Du kan bruke Pro-skjermkontroller under prøveversjonen uten å aktivere en lisens.</li>
-                    <li>Du kan deaktivere denne Mac-en fra lisensvinduet.</li>
-                    <li>Du kan fjerne lokale apppreferanser ved å bruke vanlige macOS preferanseadministrasjonsverktøy.</li>
-                  </ul>
-        </section>
 
-        <section class="support-section" id="website-analytics">
-          <h2>Nettstedsanalyse</h2>
-          <p>Dette nettstedet bruker Umami Cloud, en analyse­tjeneste uten informasjonskapsler, til å telle sidebesøk og grunnleggende nettstedshandlinger som klikk på App Store, nedlasting, kundestøtte, personvern, vilkår og e-postlenker. Disse nettstedmålingene hjelper Xintech LLC med å forstå hvilke sider som er nyttige. De er atskilt fra selve appene, som ikke inneholder analyse-SDK-er og ikke sender telemetri om appbruk til Xintech LLC.</p>
-        </section>
         <section class="support-section" id="contact">
           <h2>Kontakt</h2>
                   <p>
