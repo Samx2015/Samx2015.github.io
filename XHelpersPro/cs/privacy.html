@@ -57,7 +57,7 @@
 </script>
 </head>
   <body class="support-page app-store-page deskhelper-appstore-page privacy-simple-page">
-    <header class="site-header" aria-label="Hlavní">
+    <header class="site-header" aria-label="Hlavní navigace">
       <a class="brand" href="./" aria-label="Domů XHelpers Pro">
         <img src="../assets/app-icon.png" alt="" width="34" height="34">
         <span>XHelpers Pro</span>
@@ -104,118 +104,20 @@
       <div class="support-main">
         <section class="support-section" id="overview">
           <h1>Zásady ochrany soukromí XHelpers Pro</h1>
-          <p class="effective-date">Datum účinnosti: 13. června 2026</p>
+          <p class="effective-date">Datum účinnosti: 11. července 2026</p>
           <p>XHelpers Pro je místní utilita v řádku nabídek macOS pro ovládání vestavěného displeje v zrcadlených sestavách Macu a volitelnou pomoc Macu s přepnutím na silnější uloženou Wi‑Fi.</p>
           <p class="notice">Překlady jsou poskytovány pro pohodlí. <a href="../privacy.html" hreflang="en">Anglická verze</a> je závaznou verzí těchto zásad.</p>
         </section>
 
-        <section class="support-section" id="collection">
-          <h2>Sběr dat</h2>
-                  <p>
-                    XHelpers Pro neshromažďuje, neukládá, neprodává, nesdílí ani nepřenáší osobní údaje prostřednictvím svých funkcí pro správu zobrazení. Xintech LLC neobdrží z aplikace informace o vašich displejích, nastaveních, použití nebo zařízení, pokud je záměrně neodešlete prostřednictvím e-mailové podpory nebo neaktivujete licenci.
-                  </p>
-                  <ul>
-                    <li>Není vyžadován žádný účet XHelpers Pro.</li>
-                    <li>Nejsou zahrnuty žádné sady SDK pro analýzu, sledování, reklamní sady SDK ani sady SDK pro hlášení selhání.</li>
-                    <li>Do Xintech LLC se neodesílá žádná telemetrie na pozadí.</li>
-                  </ul>
-        </section>
+        <section class="support-section" id="current-policy-summary"><h2>Shrnutí aktuálních zásad</h2><p>XHelpers Pro místně zpracovává data o displejích, zkratkách oken/aplikací, cestách a záložkách Finderu, ukazovacích zařízeních, SSID/BSSID a signálu Wi-Fi, licenci a omezené diagnostice. Místní zpracování není přenos společnosti Xintech LLC. Aplikace neobsahuje SDK pro analytiku, reklamu ani hlášení pádů a neodesílá telemetrii používání.</p><p>Při otevření kontextové nabídky Finderu rozšíření obdrží URL, cesty a základní metadata a může přečíst malou hlavičku podporovaného ZIP/7z. Obsah se zpracuje až po volbě příkazu. Poté platí zásady druhé aplikace. Safe zůstává v aktuální veřejné verzi místní; Xintech nenabízí hostovaný přenos ani sdílení odkazů.</p><p>Místní protokol je omezen na 800 záznamů, 4 096 znaků každý a asi 8 MB. Může obsahovat stav aplikace, displeje, jas/DDC, napájení, Wi-Fi a chyby, ne obsah, hesla, zadaný text ani zvuk. Hlášení běžně používá 20 minut, podle potřeby 24 hodin, nejvýše 180 řádků/16 000 znaků a opustí Mac jen po odeslání e-mailu.</p><p>Sparkle může automaticky odeslat běžná data požadavku a aplikace/systému pro aktualizaci. Lemon Squeezy spravuje aktivaci, deaktivaci a automatické ověření; po uložení se kontroluje při startu a asi každých 12 hodin a může odeslat klíč, produkt, ID/název instance, IP a čas. Oprávnění macOS lze odvolat. Umami Cloud může zpracovat stránku, zařízení, kampaň, přibližný region a kliknutí; uvádí, že nepoužívá analytické cookies a neukládá IP. Aktuální uchování: až šest měsíců. Práva: admin@xintechllc.com. Rozhodující je angličtina.</p></section>
 
-        <section class="support-section" id="local-data">
-          <h2>Místní data</h2>
-                  <p>
-                    XHelpers Pro může na vašem Macu ukládat malé množství dat místních preferencí a ohraničený místní diagnostický protokol. To se používá pouze k tomu, aby se aplikace chovala konzistentně mezi spuštěními a k ​​přípravě konceptů hlášení chyb, když se rozhodnete nahlásit chybu.
-                  </p>
-                  <p>Místní preference mohou zahrnovat:</p>
-                  <ul>
-                    <li>Zda je automatické zatemnění povoleno nebo zakázáno.</li>
-                    <li>Zda má být při spuštění povoleno vestavěné zrcadlení.</li>
-                    <li>Vlastní klávesové zkratky pro akce nabídky XHelpers Pro.</li>
-                    <li>Zda je povolen Auto Wi-Fi Switch a jeho práh síly signálu.</li>
-                    <li>Identifikátor místního displeje používaný k zapamatování preferovaného externího displeje pro zrcadlení.</li>
-                    <li>Malý ohraničený protokol XHelpers Pro diagnostických zpráv používaný pro návrhy hlášení chyb.</li>
-                    <li>Spuštění zkušební verze a značky s vypršenou zkušební dobou uložené lokálně a v Keychain pro správu zkušebního přístupu.</li>
-                    <li>Licenční klíč a Lemon Squeezy identifikátor instance licence uložené v Keychain vašeho Macu, pokud aktivujete licenci.</li>
-                    <li>Netajná časová razítka licence, jako je čas posledního úspěšného ověření, používaná pro chování offline.</li>
-                  </ul>
-                  <p>
-                    Aplikace používá rozhraní API pro zobrazení macOS ke kontrole rozvržení displeje, detekci zrcadlení, úpravě jasu vestavěného displeje, dočasnému ztlumení aktivních displejů, když zvolíte "Dim Displays Until Key Press,", správě Start at Login, když jej povolíte, a v případě potřeby k obnovení pevné bezpečné hodnoty jasu. Pro dočasné ztlumení XHelpers Pro zkontroluje, zda byla stisknuta pouze klávesa, aby bylo možné obnovit zobrazení; nezaznamenává názvy kláves, napsaný text ani historii klávesnice. XHelpers Pro neukládá váš předchozí jas.
-                  </p>
-        </section>
 
-        <section class="support-section" id="finder">
-          <h2>Kontextové nabídky Finderu a Safes</h2>
-                  <p>Akce Finderu se spouštějí pouze po vašem výběru. XHelpers Pro může vytvářet soubory a složky, vkládat, kopírovat cesty, otevírat výběry v místních aplikacích, šifrovat vybrané položky do souborů .safe, přidávat do existujícího Safe nebo dešifrovat Safe do složky, kterou zvolíte.</p>
-                  <p>Šifrování a dešifrování Safe čte pouze vybrané místní soubory nebo archiv .safe pro danou akci. Hesla se nikdy neukládají, nezapisují do logů, nenahrávají ani neposílají společnosti Xintech LLC.</p>
-        </section>
 
-        <section class="support-section" id="wifi">
-          <h2>Stav Wi-Fi a oprávnění k poloze</h2>
-                  <p>
-                    Auto Wi-Fi Switch je nepovinné. Když je povoleno, XHelpers Pro používá veřejná macOS CoreWLAN API ke čtení aktuálního názvu Wi-Fi, adresy přístupového bodu, síly signálu a pásma a ke skenování uložených sítí automatického připojení, které mohou být lepší alternativou.
-                  </p>
-                  <p>
-                    macOS může vyžadovat oprávnění k poloze, než aplikace uvidí Wi-Fi názvy sítí a adresy přístupových bodů. XHelpers Pro používá toto oprávnění pouze pro podrobnosti Wi-Fi používané v nabídce a Auto Wi-Fi Switch. Aplikace neshromažďuje historii polohy, neodesílá podrobnosti Wi-Fi do Xintech LLC a nečte, neukládá ani nepřenáší hesla Wi-Fi.
-                  </p>
-        </section>
 
-        <section class="support-section" id="network">
-          <h2>Síťová aktivita</h2>
-                  <p>
-                    Normální ovládací prvky displeje XHelpers Pro nevyžadují síťové připojení. Aplikace může kontaktovat veřejný zdroj aktualizací Sparkle, když jsou povoleny automatické kontroly aktualizací nebo když v nabídce vyberete "Check for Updates...".
-                  </p>
-                  <p>
-                    Kontroly aktualizací se používají pouze ke zjištění, zda je k dispozici novější verze. Nepoužívají se pro reklamu, analýzu, sledování účtu nebo sledování používání.
-                  </p>
-                  <p>
-                    Pokud zvolíte "Activate License...", XHelpers Pro kontaktuje Lemon Squeezy pro aktivaci, ověření nebo deaktivaci vaší licence. Žádosti o licence odesílají váš licenční klíč a název instance na základě názvu místního počítače Mac, například „XHelpers Pro na Samově Macu“, abyste mohli tento Mac později rozpoznat a deaktivovat.
-                  </p>
-                  <p>
-                    Lemon Squeezy může vrátit licenci, produkt, objednávku a metadata zákazníka potřebná k ověření licence. XHelpers Pro ukládá pouze licenční klíč, identifikátor místní instance licence, značky místní zkušební verze a místní časová razítka ověření. Žádosti o licence se nepoužívají pro analýzu, reklamu nebo sledování využití.
-                  </p>
-        </section>
 
-        <section class="support-section" id="feedback">
-          <h2>Hlášení chyb, požadavky na funkce a zpětná vazba</h2>
-                  <p>
-                    Položky nabídky "Nahlásit chybu...", "Navrhnout funkci..." a "Odeslat zpětnou vazbu..." otevírají koncept ve vaší výchozí e-mailové aplikaci s adresou Xintech LLC. Aplikace neposílá e-maily automaticky. Před odesláním můžete koncept zkontrolovat, upravit nebo odstranit.
-                  </p>
-                  <p>
-                    Návrh může obsahovat krátké diagnostické shrnutí, aby podpora porozuměla kontextu: verze aplikace, verze macOS, architektura procesoru, stav Auto Blackout, stav vestavěného zrcadlení a aktuální stav aplikace. Vaše e-mailová adresa je viditelná pro Xintech LLC pouze v případě, že e-mail odešlete.
-                  </p>
-                  <p>
-                    Koncepty zpráv o chybách také obsahují omezený výňatek z posledních diagnostických protokolů XHelpers Pro. Tyto protokoly mohou zahrnovat stav místního zobrazení, podrobnosti o stavu aplikace, názvy sítí Wi-Fi, adresy přístupových bodů, sílu signálu a Auto Wi-Fi Switch rozhodnutí. Návrhy požadavků na funkce a obecné zpětné vazby neobsahují protokoly.
-                  </p>
-        </section>
 
-        <section class="support-section" id="diagnostics">
-          <h2>Diagnostika a protokoly</h2>
-                  <p>
-                    XHelpers Pro zapisuje diagnostické zprávy do místního systému jednotného protokolování společnosti Apple a uchovává malý omezený protokol diagnostiky místní aplikace. Tyto protokoly jsou uloženy lokálně na vašem Macu. Výběrem "Nahlásit chybu..." se shromáždí omezený XHelpers Pro-pouze výňatek z místního protokolu aplikace a vloží se do konceptu e-mailu.
-                  </p>
-                  <p>
-                    Výňatek z protokolu používá posledních 20 minut protokolů XHelpers Pro, pokud jsou k dispozici. Pokud je nedávných záznamů příliš málo, aplikace se může podívat zpět až za 24 hodin a obsahovat nejnovější záznamy XHelpers Pro s omezením na 180 řádků a 16 000 znaků. Pokud nezvolíte Odeslat, nic se neodešle a můžete nejprve odstranit úryvek protokolu.
-                  </p>
-        </section>
 
-        <section class="support-section" id="choices">
-          <h2>Vaše volby</h2>
-                  <ul>
-                    <li>Koncepty zpětné vazby můžete nechat neodeslané, upravit je nebo smazat diagnostické podrobnosti.</li>
-                    <li>Před odesláním hlášení o chybách můžete smazat diagnostické souhrny nebo výňatky z protokolu.</li>
-                    <li>Automatické kontroly aktualizací můžete zakázat v předvolbách aktualizací Sparkle.</li>
-                    <li>Auto Wi-Fi Switch můžete zapnout nebo vypnout v nabídce XHelpers Pro.</li>
-                    <li>V macOS Nastavení systému můžete udělit, odepřít nebo zrušit oprávnění k poloze pro podrobnosti Wi-Fi.</li>
-                    <li>Během zkušební verze můžete používat ovládací prvky zobrazení Pro bez aktivace licence.</li>
-                    <li>Tento Mac můžete deaktivovat z okna licence.</li>
-                    <li>Předvolby místní aplikace můžete odebrat pomocí běžných nástrojů pro správu předvoleb macOS.</li>
-                  </ul>
-        </section>
 
-        <section class="support-section" id="website-analytics">
-          <h2>Analytika webu</h2>
-          <p>Tento web používá Umami Cloud, analytickou službu bez cookies, k počítání návštěv stránek a základních akcí na webu, jako jsou kliknutí na App Store, stažení, podporu, soukromí, podmínky a e-mailové odkazy. Tyto metriky pomáhají Xintech LLC pochopit, které stránky jsou užitečné. Jsou oddělené od samotných aplikací; aplikace neobsahují analytické SDK a neposílají telemetrii používání aplikace společnosti Xintech LLC.</p>
-        </section>
         <section class="support-section" id="contact">
           <h2>Kontakt</h2>
                   <p>

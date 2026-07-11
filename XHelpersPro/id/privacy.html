@@ -57,7 +57,7 @@
 </script>
 </head>
   <body class="support-page app-store-page deskhelper-appstore-page privacy-simple-page">
-    <header class="site-header" aria-label="Utama">
+    <header class="site-header" aria-label="Navigasi utama">
       <a class="brand" href="./" aria-label="Beranda XHelpers Pro">
         <img src="../assets/app-icon.png" alt="" width="34" height="34">
         <span>XHelpers Pro</span>
@@ -104,118 +104,20 @@
       <div class="support-main">
         <section class="support-section" id="overview">
           <h1>Kebijakan Privasi XHelpers Pro</h1>
-          <p class="effective-date">Tanggal berlaku: 13 Juni 2026</p>
+          <p class="effective-date">Tanggal berlaku: 11 Juli 2026</p>
           <p>XHelpers Pro adalah utilitas bilah menu macOS yang mengutamakan data lokal untuk mengontrol layar bawaan dalam pengaturan Mac yang dicerminkan dan secara opsional membantu Mac beralih ke Wi‑Fi tersimpan yang lebih kuat.</p>
           <p class="notice">Versi terjemahan disediakan untuk kemudahan. <a href="../privacy.html" hreflang="en">Versi bahasa Inggris</a> adalah versi yang berwenang dari kebijakan ini.</p>
         </section>
 
-        <section class="support-section" id="collection">
-          <h2>Pengumpulan Data</h2>
-                  <p>
-                    XHelpers Pro tidak mengumpulkan, menyimpan, menjual, membagikan, atau mengirimkan informasi pribadi melalui fitur manajemen tampilannya. Xintech LLC tidak menerima informasi tentang tampilan, pengaturan, penggunaan, atau perangkat Anda dari aplikasi kecuali Anda sengaja mengirimkannya melalui dukungan email atau mengaktifkan lisensi.
-                  </p>
-                  <ul>
-                    <li>Tidak diperlukan akun XHelpers Pro.</li>
-                    <li>Tidak ada analisis, SDK pelacakan, SDK periklanan, atau SDK pelaporan kerusakan yang disertakan.</li>
-                    <li>Tidak ada telemetri latar belakang yang dikirim ke Xintech LLC.</li>
-                  </ul>
-        </section>
+        <section class="support-section" id="current-policy-summary"><h2>Ringkasan kebijakan saat ini</h2><p>XHelpers Pro memproses secara lokal data layar, pintasan jendela/aplikasi, jalur dan bookmark Finder, perangkat penunjuk, SSID/BSSID dan sinyal Wi-Fi, lisensi, serta diagnostik terbatas. Pemrosesan lokal bukan pengiriman ke Xintech LLC. Aplikasi tidak memiliki SDK analitik, iklan, atau laporan crash dan tidak mengirim telemetri penggunaan.</p><p>Saat menu konteks Finder dibuka, ekstensi menerima URL, jalur, dan metadata dasar serta dapat membaca header kecil ZIP/7z yang didukung. Konten diproses hanya setelah perintah dipilih. Setelah itu kebijakan aplikasi lain berlaku. Safe tetap lokal pada versi publik saat ini; Xintech tidak menyediakan transfer atau berbagi tautan yang dihosting.</p><p>Log lokal dibatasi 800 entri, 4.096 karakter per entri, sekitar 8 MB. Isinya dapat mencakup status aplikasi, layar, kecerahan/DDC, daya, Wi-Fi, dan galat, bukan isi, kata sandi, teks ketikan, atau audio. Laporan biasanya memakai 20 menit, bila perlu 24 jam, maksimal 180 baris/16.000 karakter, dan hanya keluar jika email dikirim.</p><p>Sparkle dapat otomatis mengirim data permintaan dan aplikasi/sistem normal untuk pembaruan. Lemon Squeezy menangani aktivasi, penonaktifan, dan validasi otomatis; setelah kunci disimpan, pemeriksaan saat mulai dan sekitar tiap 12 jam dapat mengirim kunci, produk, ID/nama instans, IP, dan waktu. Izin macOS dapat dicabut. Umami Cloud dapat memproses halaman, perangkat, kampanye, wilayah perkiraan, dan klik; layanan menyatakan tidak memakai cookie analitik dan tidak menyimpan IP. Retensi saat ini: hingga enam bulan. Hak: admin@xintechllc.com. Versi bahasa Inggris berlaku jika terdapat perbedaan.</p></section>
 
-        <section class="support-section" id="local-data">
-          <h2>Data Lokal</h2>
-                  <p>
-                    XHelpers Pro mungkin menyimpan sejumlah kecil data preferensi lokal dan log diagnostik lokal terbatas di Mac Anda. Ini hanya digunakan untuk membuat aplikasi berperilaku konsisten di antara peluncuran dan untuk menyiapkan draf laporan bug saat Anda memilih untuk melaporkan bug.
-                  </p>
-                  <p>Preferensi lokal mungkin termasuk:</p>
-                  <ul>
-                    <li>Apakah pemadaman otomatis diaktifkan atau dinonaktifkan.</li>
-                    <li>Apakah pencerminan internal harus diaktifkan saat peluncuran.</li>
-                    <li>Pintasan keyboard khusus untuk tindakan menu XHelpers Pro.</li>
-                    <li>Apakah Auto Wi-Fi Switch diaktifkan dan ambang batas kekuatan sinyalnya.</li>
-                    <li>Pengidentifikasi tampilan lokal yang digunakan untuk mengingat tampilan eksternal pilihan untuk pencerminan.</li>
-                    <li>Log kecil berisi pesan diagnostik XHelpers Pro yang digunakan untuk draf laporan bug.</li>
-                    <li>Penanda mulai uji coba dan berakhirnya uji coba disimpan secara lokal dan di Keychain untuk mengelola akses uji coba.</li>
-                    <li>Kunci lisensi dan pengidentifikasi instans lisensi Lemon Squeezy disimpan di Keychain Mac Anda jika Anda mengaktifkan lisensi.</li>
-                    <li>Stempel waktu lisensi non-rahasia, seperti waktu validasi terakhir yang berhasil, digunakan untuk perilaku tenggang offline.</li>
-                  </ul>
-                  <p>
-                    Aplikasi ini menggunakan macOS API tampilan untuk memeriksa tata letak tampilan, mendeteksi pencerminan, menyesuaikan kecerahan layar bawaan, meredupkan sementara tampilan aktif saat Anda memilih "Dim Displays Until Key Press," kelola Start at Login saat Anda mengaktifkannya, dan memulihkan nilai kecerahan aman tetap bila diperlukan. Untuk peredupan sementara, XHelpers Pro memeriksa apakah tombol ditekan saja sehingga dapat mengembalikan tampilan; itu tidak mencatat nama kunci, teks yang diketik, atau riwayat keyboard. XHelpers Pro tidak menyimpan kecerahan Anda sebelumnya.
-                  </p>
-        </section>
 
-        <section class="support-section" id="finder">
-          <h2>Menu konteks Finder dan Safe</h2>
-                  <p>Tindakan Finder berjalan hanya setelah Anda memilihnya. XHelpers Pro dapat membuat file dan folder, menempel, menyalin path, membuka pilihan di app lokal, mengenkripsi item terpilih menjadi file .safe, menambahkan ke Safe yang ada, atau mendekripsi Safe ke folder yang Anda pilih.</p>
-                  <p>Enkripsi dan dekripsi Safe hanya membaca file lokal terpilih atau arsip .safe untuk tindakan itu. Kata sandi tidak pernah disimpan, dicatat, diunggah, atau dikirim ke Xintech LLC.</p>
-        </section>
 
-        <section class="support-section" id="wifi">
-          <h2>Status Wi-Fi dan Izin Lokasi</h2>
-                  <p>
-                    Auto Wi-Fi Switch bersifat opsional. Jika diaktifkan, XHelpers Pro menggunakan API macOS CoreWLAN publik untuk membaca nama Wi-Fi saat ini, alamat titik akses, kekuatan sinyal, dan pita, serta untuk memindai jaringan gabung otomatis tersimpan yang mungkin merupakan alternatif yang lebih baik.
-                  </p>
-                  <p>
-                    macOS mungkin memerlukan izin Lokasi sebelum aplikasi dapat melihat Wi-Fi nama jaringan dan alamat titik akses. XHelpers Pro menggunakan izin itu hanya untuk detail Wi-Fi yang digunakan oleh menu dan Auto Wi-Fi Switch. Aplikasi tidak mengumpulkan riwayat lokasi, tidak mengirimkan detail Wi-Fi ke Xintech LLC, dan tidak membaca, menyimpan, atau mengirimkan kata sandi Wi-Fi.
-                  </p>
-        </section>
 
-        <section class="support-section" id="network">
-          <h2>Aktivitas Jaringan</h2>
-                  <p>
-                    Kontrol tampilan normal XHelpers Pro tidak memerlukan koneksi jaringan. Aplikasi dapat menghubungi umpan pembaruan Sparkle publik ketika pemeriksaan pembaruan otomatis diaktifkan atau ketika Anda memilih "Check for Updates..." dari menu.
-                  </p>
-                  <p>
-                    Pemeriksaan pembaruan hanya digunakan untuk mengetahui apakah versi yang lebih baru tersedia. Mereka tidak digunakan untuk periklanan, analitik, pelacakan akun, atau pelacakan penggunaan.
-                  </p>
-                  <p>
-                    Jika Anda memilih "Activate License...", XHelpers Pro menghubungi Lemon Squeezy untuk mengaktifkan, memvalidasi, atau menonaktifkan lisensi Anda. Permintaan lisensi mengirimkan kunci lisensi dan nama instans Anda berdasarkan nama komputer lokal Mac Anda, seperti "XHelpers Pro di Sam's Mac", sehingga Anda dapat mengenali dan menonaktifkan Mac tersebut nanti.
-                  </p>
-                  <p>
-                    Lemon Squeezy dapat mengembalikan lisensi, produk, pesanan, dan metadata pelanggan yang diperlukan untuk memverifikasi lisensi. XHelpers Pro hanya menyimpan kunci lisensi, pengidentifikasi instance lisensi lokal, penanda uji coba lokal, dan stempel waktu validasi lokal. Permintaan lisensi tidak digunakan untuk analisis, periklanan, atau pelacakan penggunaan.
-                  </p>
-        </section>
 
-        <section class="support-section" id="feedback">
-          <h2>Laporan Bug, Permintaan Fitur, dan Masukan</h2>
-                  <p>
-                    Item menu "Laporkan Bug...", "Sarankan Fitur...", dan "Kirim Masukan..." membuka draf di aplikasi email default Anda yang ditujukan ke Xintech LLC. Aplikasi tidak mengirim email secara otomatis. Anda dapat meninjau, mengedit, atau menghapus draf sebelum mengirimkannya.
-                  </p>
-                  <p>
-                    Draf tersebut mungkin berisi ringkasan diagnostik singkat sehingga dukungan dapat memahami konteksnya: versi aplikasi, versi macOS, arsitektur prosesor, status Auto Blackout, status pencerminan bawaan, dan status aplikasi saat ini. Alamat email Anda hanya dapat dilihat oleh Xintech LLC jika Anda mengirim email tersebut.
-                  </p>
-                  <p>
-                    Draf laporan bug juga menyertakan kutipan terbatas dari log diagnostik XHelpers Pro terbaru. Log ini mungkin mencakup status tampilan lokal, detail status aplikasi, nama jaringan Wi-Fi, alamat titik akses, kekuatan sinyal, dan keputusan Auto Wi-Fi Switch. Permintaan fitur dan draf masukan umum tidak menyertakan log.
-                  </p>
-        </section>
 
-        <section class="support-section" id="diagnostics">
-          <h2>Diagnostik dan Log</h2>
-                  <p>
-                    XHelpers Pro menulis pesan diagnostik ke sistem pencatatan log terpadu lokal Apple dan menyimpan log diagnostik lokal aplikasi kecil yang dibatasi. Log ini disimpan secara lokal di Mac Anda. Memilih "Laporkan Bug..." mengumpulkan kutipan terbatas XHelpers Pro saja dari log lokal aplikasi dan memasukkannya ke dalam draf email.
-                  </p>
-                  <p>
-                    Kutipan log menggunakan 20 menit terakhir dari XHelpers Pro log jika tersedia. Jika entri terbaru terlalu sedikit, aplikasi dapat melihat kembali hingga 24 jam dan menyertakan entri XHelpers Pro terbaru, dibatasi hingga 180 baris dan 16.000 karakter. Tidak ada yang dikirim kecuali Anda memilih Kirim, dan Anda dapat menghapus kutipan log terlebih dahulu.
-                  </p>
-        </section>
 
-        <section class="support-section" id="choices">
-          <h2>Pilihan Anda</h2>
-                  <ul>
-                    <li>Anda dapat membiarkan draf masukan tidak terkirim, mengeditnya, atau menghapus detail diagnostik.</li>
-                    <li>Anda dapat menghapus ringkasan diagnostik atau kutipan log sebelum mengirim laporan bug.</li>
-                    <li>Anda dapat menonaktifkan pemeriksaan pembaruan otomatis di preferensi pembaruan Sparkle.</li>
-                    <li>Anda dapat mengaktifkan atau menonaktifkan Auto Wi-Fi Switch dari menu XHelpers Pro.</li>
-                    <li>Anda dapat memberikan, menolak, atau mencabut izin Lokasi untuk detail Wi-Fi di macOS Pengaturan Sistem.</li>
-                    <li>Anda dapat menggunakan kontrol tampilan Pro selama uji coba tanpa mengaktifkan lisensi.</li>
-                    <li>Anda dapat menonaktifkan Mac ini dari jendela lisensi.</li>
-                    <li>Anda dapat menghapus preferensi aplikasi lokal menggunakan alat manajemen preferensi macOS biasa.</li>
-                  </ul>
-        </section>
 
-        <section class="support-section" id="website-analytics">
-          <h2>Analitik situs web</h2>
-          <p>Situs web ini menggunakan Umami Cloud, layanan analitik tanpa cookie, untuk menghitung kunjungan halaman dan tindakan dasar situs seperti klik App Store, unduhan, dukungan, privasi, ketentuan, dan tautan email. Metrik situs web ini membantu Xintech LLC memahami halaman mana yang berguna. Ini terpisah dari aplikasi itu sendiri; aplikasi tidak menyertakan SDK analitik dan tidak mengirim telemetri penggunaan aplikasi ke Xintech LLC.</p>
-        </section>
         <section class="support-section" id="contact">
           <h2>Kontak</h2>
                   <p>

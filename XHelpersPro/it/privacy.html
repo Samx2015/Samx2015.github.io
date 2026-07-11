@@ -57,7 +57,7 @@
 </script>
 </head>
   <body class="support-page app-store-page deskhelper-appstore-page privacy-simple-page">
-    <header class="site-header" aria-label="Principale">
+    <header class="site-header" aria-label="Navigazione principale">
       <a class="brand" href="./" aria-label="Home di XHelpers Pro">
         <img src="../assets/app-icon.png" alt="" width="34" height="34">
         <span>XHelpers Pro</span>
@@ -104,7 +104,7 @@
       <div class="support-main">
         <section class="support-section" id="overview">
           <h1>Informativa sulla privacy di XHelpers Pro</h1>
-          <p class="effective-date">Data di entrata in vigore: 13 giugno 2026</p>
+          <p class="effective-date">Data di entrata in vigore: 11 luglio 2026</p>
           <p>
         XHelpers Pro è un’utilità macOS da barra dei menu, pensata per funzionare localmente,
         che controlla il display integrato nei Mac in duplicazione e può aiutare il Mac a passare a
@@ -116,113 +116,21 @@
       </p>
         </section>
 
-        <section class="support-section" id="collection">
-          <h2>Raccolta dati</h2>
-                  <p>
-                    XHelpers Pro non raccoglie, archivia, vende, condivide o trasmette informazioni personali attraverso le sue funzionalità di gestione della visualizzazione. Xintech LLC non riceve informazioni su display, impostazioni, utilizzo o dispositivo dall'app a meno che tu non le invii intenzionalmente tramite il supporto via email o attivi una licenza.
-                  </p>
-                  <ul>
-                    <li>Non è richiesto alcun account XHelpers Pro.</li>
-                    <li>Non sono inclusi analisi, SDK di monitoraggio, SDK pubblicitari o SDK di segnalazione degli arresti anomali.</li>
-                    <li>Non viene inviata alcuna telemetria in background a Xintech LLC.</li>
-                  </ul>
+        <section class="support-section" id="current-policy-summary">
+          <h2>Riepilogo dell’informativa attuale</h2>
+          <p>XHelpers Pro elabora localmente dati su schermi, scorciatoie di finestre/app, percorsi e segnalibri Finder, dispositivi di puntamento, SSID/BSSID e segnale Wi-Fi, licenza e diagnostica limitata. L’elaborazione locale non è trasmissione a Xintech LLC. L’app non contiene SDK di analisi, pubblicità o crash e non invia telemetria d’uso.</p>
+          <p>Quando Finder apre il menu contestuale, l’estensione riceve URL, percorsi e metadati di base e può leggere una piccola intestazione ZIP/7z supportata. Il contenuto viene elaborato solo dopo la scelta di un comando. Poi vale la politica dell’altra app. Safe resta locale nella versione pubblica attuale; Xintech non offre trasferimenti o link ospitati.</p>
+          <p>Il log locale è limitato a 800 voci, 4.096 caratteri ciascuna e circa 8 MB. Può includere stato app, schermo, luminosità/DDC, alimentazione, Wi-Fi ed errori, non contenuti, password, testo digitato o audio. I report usano normalmente 20 minuti, fino a 24 ore se necessario, massimo 180 righe/16.000 caratteri, e sono trasmessi solo inviando l’e-mail.</p>
+          <p>Sparkle può inviare automaticamente normali dati di richiesta e app/sistema per gli aggiornamenti. Lemon Squeezy gestisce attivazione, disattivazione e convalida automatica; dopo il salvataggio verifica all’avvio e circa ogni 12 ore, potendo inviare chiave, prodotto, ID/nome istanza, IP e ora. I permessi macOS sono revocabili. Umami Cloud può elaborare pagina, dispositivo, campagna, area approssimativa e clic; dichiara di non usare cookie analitici né conservare IP. Conservazione attuale: fino a sei mesi. Diritti: admin@xintechllc.com. Prevale l’inglese.</p>
         </section>
 
-        <section class="support-section" id="local-data">
-          <h2>Dati locali</h2>
-                  <p>
-                    XHelpers Pro potrebbe memorizzare una piccola quantità di dati sulle preferenze locali e un registro diagnostico locale limitato sul tuo Mac. Viene utilizzato solo per far sì che l'app si comporti in modo coerente tra i lanci e per preparare bozze di segnalazioni di bug quando si sceglie di segnalare un bug.
-                  </p>
-                  <p>Le preferenze locali possono includere:</p>
-                  <ul>
-                    <li>Se il blackout automatico è abilitato o disabilitato.</li>
-                    <li>Indica se il mirroring integrato deve essere abilitato all'avvio.</li>
-                    <li>Scorciatoie da tastiera personalizzate per le azioni del menu XHelpers Pro.</li>
-                    <li>Se Auto Wi-Fi Switch è abilitato e la relativa soglia di potenza del segnale.</li>
-                    <li>Un identificatore del display locale utilizzato per ricordare il display esterno preferito per il mirroring.</li>
-                    <li>Un piccolo registro limitato di XHelpers Pro messaggi diagnostici utilizzati per le bozze delle segnalazioni di bug.</li>
-                    <li>Indicatori di inizio prova e scadenza prova memorizzati localmente e in Keychain per gestire l'accesso alla prova.</li>
-                    <li>Una chiave di licenza e un identificatore dell'istanza di licenza Lemon Squeezy archiviati nel Keychain del tuo Mac se attivi una licenza.</li>
-                    <li>Timestamp della licenza non segreta, ad esempio l'ora dell'ultima convalida riuscita, utilizzata per il comportamento di tolleranza offline.</li>
-                  </ul>
-                  <p>
-                    L'app utilizza le API di visualizzazione macOS per ispezionare il layout del display, rilevare il mirroring, regolare la luminosità del display integrata, oscurare temporaneamente i display attivi quando scegli "Dim Displays Until Key Press," gestire Start at Login quando lo abiliti e ripristinare un valore di luminosità sicuro fisso quando necessario. Per l'oscuramento temporaneo, XHelpers Pro controlla se viene premuto un tasto solo per poter ripristinare i display; non registra i nomi dei tasti, il testo digitato o la cronologia della tastiera. XHelpers Pro non memorizza la luminosità precedente.
-                  </p>
-        </section>
 
-        <section class="support-section" id="finder">
-          <h2>Menu contestuali Finder e Safes</h2>
-                  <p>Le azioni Finder vengono eseguite solo dopo che le scegli. XHelpers Pro può creare file e cartelle, incollare, copiare percorsi, aprire selezioni in app locali, cifrare gli elementi selezionati in file .safe, aggiungerli a un Safe esistente o decifrare un Safe nella cartella che scegli.</p>
-                  <p>La cifratura e decifratura dei Safe leggono solo i file locali selezionati o l’archivio .safe scelto per quell’azione. Le password non vengono mai salvate, registrate, caricate o inviate a Xintech LLC.</p>
-        </section>
 
-        <section class="support-section" id="wifi">
-          <h2>Stato Wi-Fi e autorizzazione alla posizione</h2>
-                  <p>
-                    Auto Wi-Fi Switch è facoltativo. Se abilitato, XHelpers Pro utilizza le API pubbliche macOS CoreWLAN per leggere il nome Wi-Fi corrente, l'indirizzo del punto di accesso, la potenza del segnale e la banda e per cercare reti salvate con accesso automatico che potrebbero essere alternative migliori.
-                  </p>
-                  <p>
-                    macOS potrebbe richiedere l'autorizzazione alla posizione prima che le app possano vedere i nomi delle reti Wi-Fi e gli indirizzi dei punti di accesso. XHelpers Pro utilizza tale autorizzazione solo per i dettagli Wi-Fi utilizzati dal menu e Auto Wi-Fi Switch. L'app non raccoglie la cronologia delle posizioni, non invia i dettagli Wi-Fi a Xintech LLC e non legge, memorizza o trasmette le password Wi-Fi.
-                  </p>
-        </section>
 
-        <section class="support-section" id="network">
-          <h2>Attività di rete</h2>
-                  <p>
-                    I normali controlli di visualizzazione di XHelpers Pro non richiedono una connessione di rete. L'app potrebbe contattare il feed di aggiornamento pubblico Sparkle quando i controlli automatici degli aggiornamenti sono abilitati o quando scegli "Check for Updates..." dal menu.
-                  </p>
-                  <p>
-                    I controlli degli aggiornamenti vengono utilizzati solo per verificare se è disponibile una versione più recente. Non vengono utilizzati per pubblicità, analisi, monitoraggio dell'account o monitoraggio dell'utilizzo.
-                  </p>
-                  <p>
-                    Se scegli "Activate License...", XHelpers Pro contatta Lemon Squeezy per attivare, convalidare o disattivare la tua licenza. Le richieste di licenza inviano la chiave di licenza e un nome di istanza in base al nome del computer locale del tuo Mac, ad esempio "XHelpers Pro sul Mac di Sam", in modo da poter riconoscere e disattivare il Mac in un secondo momento.
-                  </p>
-                  <p>
-                    Lemon Squeezy può restituire metadati di licenza, prodotto, ordine e cliente necessari per verificare la licenza. XHelpers Pro memorizza solo la chiave di licenza, l'identificatore dell'istanza di licenza locale, gli indicatori di prova locali e i timestamp di convalida locale. Le richieste di licenza non vengono utilizzate per analisi, pubblicità o monitoraggio dell'utilizzo.
-                  </p>
-        </section>
 
-        <section class="support-section" id="feedback">
-          <h2>Segnalazioni di bug, richieste di funzionalità e feedback</h2>
-                  <p>
-                    Le voci di menu "Segnala un problema...", "Suggerisci una funzione..." e "Invia feedback..." aprono una bozza nell'app di posta elettronica predefinita indirizzata a Xintech LLC. L'app non invia e-mail automaticamente. Puoi rivedere, modificare o eliminare la bozza prima di inviarla.
-                  </p>
-                  <p>
-                    La bozza può includere un breve riepilogo diagnostico in modo che il supporto possa comprendere il contesto: versione dell'app, versione macOS, architettura del processore, stato Auto Blackout, stato di mirroring integrato e stato corrente dell'app. Il tuo indirizzo email è visibile a Xintech LLC solo se invii l'email.
-                  </p>
-                  <p>
-                    Le bozze delle segnalazioni di bug includono anche un estratto ristretto dei recenti log diagnostici XHelpers Pro. Questi registri possono includere stato di visualizzazione locale, dettagli sullo stato delle app, nomi di rete Wi-Fi, indirizzi di punti di accesso, potenza del segnale e decisioni Auto Wi-Fi Switch. Le bozze delle richieste di funzionalità e dei feedback generali non includono i log.
-                  </p>
-        </section>
 
-        <section class="support-section" id="diagnostics">
-          <h2>Diagnostica e registri</h2>
-                  <p>
-                    XHelpers Pro scrive messaggi diagnostici nel sistema di registrazione unificato locale di Apple e conserva un piccolo registro diagnostico locale dell'app limitato. Questi registri vengono archiviati localmente sul tuo Mac. Scegliendo "Segnala un problema..." viene raccolto un estratto limitato di soli XHelpers Pro dal registro locale dell'app e lo inserisce nella bozza dell'e-mail.
-                  </p>
-                  <p>
-                    L'estratto del log utilizza gli ultimi 20 minuti dei log XHelpers Pro quando disponibili. Se sono presenti troppo poche voci recenti, l'app potrebbe tornare indietro fino a 24 ore e includere le voci XHelpers Pro più recenti, con un limite di 180 righe e 16.000 caratteri. Non viene inviato nulla a meno che non si scelga Invia ed è possibile eliminare prima l'estratto di registro.
-                  </p>
-        </section>
 
-        <section class="support-section" id="choices">
-          <h2>Le tue scelte</h2>
-                  <ul>
-                    <li>Puoi lasciare le bozze di feedback non inviate, modificarle o eliminare i dettagli diagnostici.</li>
-                    <li>È possibile eliminare riepiloghi diagnostici o estratti di log prima di inviare segnalazioni di bug.</li>
-                    <li>Puoi disattivare i controlli automatici degli aggiornamenti nelle preferenze di aggiornamento di Sparkle.</li>
-                    <li>Puoi attivare o disattivare Auto Wi-Fi Switch dal menu XHelpers Pro.</li>
-                    <li>Puoi concedere, negare o revocare l'autorizzazione alla posizione per i dettagli Wi-Fi nelle Impostazioni di sistema macOS.</li>
-                    <li>Puoi utilizzare i controlli display Pro durante il periodo di prova senza attivare una licenza.</li>
-                    <li>Puoi disattivare questo Mac dalla finestra della licenza.</li>
-                    <li>Puoi rimuovere le preferenze dell'app locale utilizzando i normali strumenti di gestione delle preferenze macOS.</li>
-                  </ul>
-        </section>
 
-        <section class="support-section" id="website-analytics">
-          <h2>Analisi del sito web</h2>
-          <p>Questo sito web usa Umami Cloud, un servizio di analisi senza cookie, per contare le visite alle pagine e le azioni di base del sito, come clic su App Store, download, supporto, privacy, termini e link e-mail. Queste metriche aiutano Xintech LLC a capire quali pagine sono utili. Sono separate dalle app stesse, che non includono SDK di analisi e non inviano telemetria sull’uso dell’app a Xintech LLC.</p>
-        </section>
         <section class="support-section" id="contact">
           <h2>Contatto</h2>
                   <p>
