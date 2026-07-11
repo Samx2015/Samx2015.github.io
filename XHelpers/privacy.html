@@ -43,7 +43,7 @@
 <div class="support-main">
 <section class="support-section" id="overview">
 <h1>Privacy Policy</h1>
-<p>Effective date: July 6, 2026.</p>
+<p>Effective date: July 11, 2026.</p>
 <p>
             XHelpers is a local-first macOS menu-bar utility for display
             controls, keyboard shortcuts, Finder context menu actions, and
@@ -51,106 +51,142 @@
           </p>
 <ul>
 <li>No XHelpers sign-in, subscription account, or user profile.</li>
-<li>No event tracking, session tracking, advertising pixels, or usage telemetry.</li>
-<li>Display, Finder, Safe, and feedback actions run locally unless you choose to send email support.</li>
+<li>The XHelpers app contains no analytics, advertising, or crash-reporting SDKs and sends no app-usage telemetry to Xintech LLC.</li>
+<li>Display, Finder, and Safe actions run locally unless you deliberately hand an item to another app or send a support email.</li>
 </ul>
 </section>
-<section class="support-section" id="collection">
-<h2>Data Collection</h2>
+<section class="support-section" id="scope">
+<h2>Scope and Controller</h2>
 <p>
-            XHelpers does not collect, store, sell, share, or transmit personal
-            information through its display-management, Finder action, or Safe
-            encryption features. Xintech LLC does not receive information about
-            your displays, files, settings, usage, or device from the app unless
-            you intentionally send it through email support.
+            This policy covers the XHelpers macOS app, its Finder extension,
+            support communications, and the XHelpers pages on xintechllc.com.
+            Xintech LLC is responsible for the information it receives through
+            support and website analytics. Data that remains only on your Mac is
+            processed locally and is not thereby received by Xintech LLC.
           </p>
-<ul>
-<li>No XHelpers account is required.</li>
-<li>No analytics, tracking SDKs, advertising SDKs, or crash-reporting SDKs are included.</li>
-<li>No background telemetry is sent to Xintech LLC.</li>
-</ul>
 </section>
 <section class="support-section" id="local-data">
 <h2>Local Data</h2>
-<p>
-            XHelpers may store a small amount of local preference data and
-            bounded local diagnostic logs on your Mac. This is used to make the
-            app behave consistently between launches and to prepare bug-report
-            drafts when you choose to report a bug.
-          </p>
-<p>Local preferences may include:</p>
+<p>XHelpers may keep the following information locally so enabled features work between launches:</p>
 <ul>
-<li>Menu settings such as auto blackout, mirroring, display adjustment, keyboard shortcut, and start-at-login preferences.</li>
-<li>Finder context menu preferences, including which actions are enabled and which editor, terminal, or compatible app you selected.</li>
-<li>Folder access bookmarks, Safe workflow preferences, and bounded local diagnostic messages. XHelpers never stores Safe passwords.</li>
+<li>Display identifiers and topology, brightness and mirroring behavior, keyboard shortcuts, menu choices, and start-at-login preferences.</li>
+<li>Finder action settings, selected editor, terminal, or compatible apps, file and folder paths needed for an action, and security-scoped bookmarks for folders you approve.</li>
+<li>Safe workflow and destination choices, plus bounded diagnostic messages. Safe passwords and derived encryption keys are used only while an operation is running and are not stored.</li>
 </ul>
 <p>
-            XHelpers uses macOS display APIs for display controls and macOS
-            Finder extension APIs for Finder context menu actions. Finder and
-            Safe operations read local selections only when you choose a
-            XHelpers action, and XHelpers does not upload Finder paths, file
-            contents, Safe contents, or Safe passwords to Xintech LLC.
+            Local preferences, bookmarks, and logs remain on your Mac unless you
+            choose an external action described below. XHelpers does not sell
+            personal information or send background app telemetry to Xintech LLC.
           </p>
 </section>
-<section class="support-section" id="network">
-<h2>Network Activity</h2>
+<section class="support-section" id="finder-safe">
+<h2>Finder Context Menus and Safes</h2>
 <p>
-            XHelpers's normal display controls, Finder context menus, and Safe
-            encryption features do not require a network connection. Updates are
-            handled through the Mac App Store.
+            When Finder prepares an XHelpers context menu, the extension receives
+            the selected or target file URLs and may inspect paths and basic file
+            metadata to decide which commands apply. For supported ZIP or 7z
+            archives, it may inspect a small, bounded header. This menu-building
+            step does not upload the paths or file contents to Xintech LLC.
           </p>
 <p>
-            Feedback menu items open a draft in your default email app. The app
-            does not send email automatically, and nothing is sent unless you
-            choose Send.
+            XHelpers reads or changes file contents only after you choose a command
+            that requires it, such as creating, moving, pasting, encrypting, or
+            decrypting. Safe encryption and decryption run locally. Passwords and
+            derived keys are not logged or stored, and the current public Safe
+            feature does not provide Xintech-hosted transfer or link sharing.
+          </p>
+<p>
+            If you choose to open or hand an item to another app, that app receives
+            the item or path and may use its own network services. Its subsequent
+            handling is governed by its own privacy policy, not this policy.
           </p>
 </section>
-<section class="support-section" id="feedback">
-<h2>Bug Reports, Feature Requests, and Feedback</h2>
-<p>
-              The "Report a Bug...", "Suggest a Feature...", and "Send Feedback..."
-              menu items open a draft in your default email app addressed to
-              Xintech LLC. The app does not send email automatically. You can
-              review, edit, or delete the draft before sending it.
-            </p>
-<p>
-              The draft may include a short diagnostic summary so support can
-              understand the context: app version, macOS version, processor
-              architecture, display state, Finder extension state, enabled
-              actions, and current app status. Your email address is visible to
-              Xintech LLC only if you send the email.
-            </p>
-<p>
-              Bug report drafts may include a bounded excerpt of recent
-              XHelpers diagnostic logs. Feature request and general feedback
-              drafts do not include logs.
-            </p>
-</section>
-<section class="support-section" id="logs">
+<section class="support-section" id="diagnostics">
 <h2>Diagnostics and Logs</h2>
 <p>
-              XHelpers writes diagnostic messages to Apple's local unified
-              logging system and keeps a small bounded app-local diagnostic log.
-              These logs are stored locally on your Mac. Choosing "Report a Bug..."
-              may collect a bounded XHelpers-only excerpt from the app-local
-              log and insert it into the email draft.
-            </p>
+            XHelpers writes diagnostic messages to Apple's local unified logging
+            system and keeps a bounded app-local log. Entries may describe app and
+            macOS versions, app state, display identifiers and topology, brightness
+            or power operations, Finder-extension and action results, and errors.
+            The app is designed not to log file contents, Safe passwords, derived
+            keys, typed text, or audio content.
+          </p>
 <p>
-              Nothing is sent unless you choose Send, and you can delete the
-              diagnostic summary or log excerpt before sending bug reports.
-            </p>
+            The app-local log is limited to 800 entries, 4,096 characters per
+            message, and approximately 8 MB. It rolls over as limits are reached
+            and remains on the Mac until removed with the app's local data or by
+            normal system log retention.
+          </p>
+<p>
+            "Report a Bug..." prepares an editable email draft with a diagnostic
+            summary and, when available, a bounded XHelpers log excerpt. It
+            normally uses relevant entries from the preceding 20 minutes and may
+            look back up to 24 hours if needed, with a maximum of 180 lines and
+            16,000 characters. Feature-request and general-feedback drafts do not
+            include logs. Nothing is sent unless you send the email.
+          </p>
+</section>
+<section class="support-section" id="network-support">
+<h2>Network Activity and Support</h2>
+<p>
+            XHelpers display, Finder, and Safe features do not require an XHelpers
+            service or account. App installation and updates are handled by the
+            Mac App Store under Apple's terms and privacy policy.
+          </p>
+<p>
+            "Report a Bug...", "Suggest a Feature...", and "Send Feedback..."
+            open an editable draft in your default email app. XHelpers does not
+            send it automatically. If you send it, Xintech LLC receives your email
+            address, message, attachments, and any diagnostic text you leave in
+            the draft.
+          </p>
 </section>
 <section class="support-section" id="choices">
 <h2>Your Choices</h2>
 <ul>
-<li>You can leave feedback drafts unsent, edit them, or delete diagnostic details.</li>
-<li>You can enable or disable the Finder extension in macOS settings.</li>
-<li>You can remove local app preferences and folder approvals using normal macOS preference-management tools.</li>
+<li>Enable or disable the Finder extension in macOS settings.</li>
+<li>Approve folder access when requested and remove saved app data or approvals using macOS tools.</li>
+<li>Review, edit, or discard every support draft and remove diagnostic text before sending.</li>
+<li>Choose whether to hand files or paths to third-party apps.</li>
 </ul>
 </section>
 <section class="support-section" id="website-analytics">
-  <h2>Website Analytics</h2>
-  <p>This website uses Umami Cloud, a cookie-free analytics service, to count page visits and basic website actions such as App Store, download, support, privacy, terms, and email-link clicks. These website metrics help Xintech LLC understand which pages are useful. They are separate from the apps themselves, which do not include analytics SDKs or send app usage telemetry to Xintech LLC.</p>
+<h2>Website Analytics</h2>
+<p>
+            The XHelpers website uses Umami Cloud, provided by Umami Software,
+            Inc., to count page visits and actions such as App Store, support,
+            privacy, terms, and email-link clicks. Umami may process page path and
+            search, referrer, browser, operating system, device type, screen size,
+            language, campaign parameters, event target, and approximate location
+            derived from the network address.
+          </p>
+<p>
+            Umami states that its analytics do not use cookies or conventional
+            cross-site fingerprinting and that visitors' IP addresses are not
+            stored. Website analytics are currently retained for up to six months.
+            These website metrics are separate from the XHelpers app, which does
+            not contain the Umami script or an analytics SDK. See
+            <a class="text-link" href="https://umami.is/privacy">Umami's Privacy Policy</a>.
+          </p>
+</section>
+<section class="support-section" id="retention-rights">
+<h2>Retention, Legal Bases, and Your Rights</h2>
+<p>
+            Local preferences, bookmarks, and app-local logs remain on your Mac
+            until you remove them or macOS removes them. Support emails are kept
+            only as reasonably needed to answer the request, maintain support
+            records, resolve disputes, protect the service, or comply with law.
+            Website analytics follow the retention described above.
+          </p>
+<p>
+            Where applicable, Xintech LLC processes support communications to
+            respond to your request and website analytics for its legitimate
+            interest in understanding and improving its public pages. Depending on
+            your location, you may have rights to request access, correction,
+            deletion, restriction, objection, or portability, and to complain to
+            a competent data-protection authority. Some rights are limited where
+            Xintech LLC does not possess or cannot reasonably identify the data.
+          </p>
 </section>
 <section class="support-section" id="contact">
 <h2>Contact</h2>
