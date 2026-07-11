@@ -3,20 +3,20 @@
     <channel>
         <title>XHelpers Pro</title>
         <item>
-            <title>1.0.1</title>
-            <pubDate>Sat, 11 Jul 2026 00:58:33 -0700</pubDate>
+            <title>1.0.2</title>
+            <pubDate>Sat, 11 Jul 2026 15:37:53 -0700</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>2</sparkle:version>
-            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-## XHelpers Pro 1.0.1
+# XHelpers Pro 1.0.2
 
-**Changed**
-- **Licensing** — activation now validates against the XHelpers Pro store product. License keys issued earlier continue to work unchanged.
+**Fixed**
+- **Mouse** — "Disable pointer acceleration" now behaves exactly like setting the acceleration slider to 0. Previously the pointer could keep its earlier tracking gain and feel faster than expected while the checkbox was on.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.1/XHelpersPro-1.0.1-2-macOS.dmg" length="9570295" type="application/octet-stream" sparkle:edSignature="gjA6DhH2ILd7RY+IQZoeu3ViHXsrqiUa9NMlBsMJUIs6YR4MNuOGnOWDmKVWN+x2G1oqu2n5EKjHzRGBCEu+DA=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.2/XHelpersPro-1.0.2-3-macOS.dmg" length="9571453" type="application/octet-stream" sparkle:edSignature="yrFWZD2RuLzQoRa1yA0Pj/mZtbzUQK8udpXw4dKLp56vv4jv1DT3KuZvri/U/CAuT9Hk6ATjMYeDS7bdLUS/BQ=="/>
         </item>
     </channel>
 </rss>
