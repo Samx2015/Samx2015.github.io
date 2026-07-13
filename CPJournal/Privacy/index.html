@@ -79,7 +79,7 @@
 <body>
   <main>
     <h1>CPJournal Privacy Policy</h1>
-    <p class="updated">Effective date: July 10, 2026.</p>
+    <p class="updated">Effective date: July 13, 2026.</p>
 
     <p>
       CPJournal is a competitive-programming progress journal operated by
@@ -102,15 +102,17 @@
       <li>Authentication information needed to access your CPJournal account, such as a CPJournal bearer token stored by the extension or app.</li>
       <li>Contest, problem, submission, verdict, language, score, test-result, timestamp, note, and progress metadata.</li>
       <li>Supported-site page URLs and visible page content needed to identify contests, problems, submissions, profile ownership, and result details.</li>
-      <li>Import status, sync status, retry queues, and diagnostic metadata needed to operate and troubleshoot imports.</li>
+      <li>Privacy-sanitized operational telemetry such as event identifiers, timestamps, extension version and installation identifier, supported-site account identifiers, submission counts, import stages, and short status or error messages needed to operate and troubleshoot imports.</li>
     </ul>
 
     <h2>Information CPJournal Does Not Collect</h2>
     <p>
       CPJournal Importer does not upload website cookies, website passwords,
       website session tokens, source code, raw page HTML, hidden page data, or
-      full problem statements. It is intended to import normalized progress
-      metadata from supported pages.
+      full problem statements. Operational telemetry does not contain bearer
+      tokens, cookies, URLs, raw HTML, source code, problem statements, or
+      import payload bodies. The extension is intended to import normalized
+      progress metadata from supported pages.
     </p>
 
     <h2>How Information Is Used</h2>
@@ -125,9 +127,12 @@
     <h2>Browser Extension Storage</h2>
     <p>
       The CPJournal Importer extension may store its CPJournal configuration,
-      bearer token, user settings, and queued normalized import batches in the
-      browser's local extension storage. Queued batches are used when an upload
-      cannot be completed immediately.
+      bearer token, user settings, queued normalized import batches, and a
+      bounded queue of privacy-sanitized telemetry awaiting server
+      acknowledgement in the browser's local extension storage. Queued data is
+      used when an upload cannot be completed immediately and is removed after
+      the server acknowledges it. The extension does not display an
+      operational log.
     </p>
 
     <h2>Where Information Is Sent</h2>
