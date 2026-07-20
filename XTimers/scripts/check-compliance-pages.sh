@@ -221,6 +221,7 @@ check "Homepage is reachable" url_ok "/"
 check "Support page is reachable" url_ok "/support.html"
 check "Terms page is reachable" url_ok "/terms.html"
 check "Privacy page is reachable" url_ok "/privacy.html"
+check "Privacy choices page is reachable" url_ok "/privacy-choices.html"
 check "SMS Terms page is reachable" url_ok "/sms-terms.html"
 check "SMS opt-in evidence page is reachable" url_ok "/sms-opt-in.html"
 check "Compliance page is reachable" url_ok "/compliance.html"
@@ -277,7 +278,11 @@ check "Privacy says SMS opt-in data is not sold" \
 check "Privacy says SMS opt-in data is not shared for marketing" \
   page_text_has "/privacy.html" "does not share SMS opt-in data"
 check "Privacy links support page" \
-  page_has "/privacy.html" "xintechllc.com/FlexibleTimers/support.html"
+  page_has "/privacy.html" "xintechllc.com/(FlexibleTimers|XTimers)/support.html"
+check "Privacy links privacy choices" \
+  page_has "/privacy.html" "href=\"privacy-choices.html\""
+check "Privacy choices documents in-app account deletion" \
+  page_text_has "/privacy-choices.html" "Delete Account"
 check "Opt-in page includes consent wording" \
   page_text_has "/sms-opt-in.html" "I agree to receive SMS verification codes and reminder messages I schedule for myself from Flexible Timers by Xintech LLC at this phone number"
 check "Opt-in page says checkbox is not pre-selected" \
@@ -328,6 +333,8 @@ check "Sitemap includes Terms page" \
   page_has "/sitemap.xml" "terms.html"
 check "Sitemap includes Privacy page" \
   page_has "/sitemap.xml" "privacy.html"
+check "Sitemap includes Privacy Choices page" \
+  page_has "/sitemap.xml" "privacy-choices.html"
 check "Sitemap includes SMS Terms page" \
   page_has "/sitemap.xml" "sms-terms.html"
 check "Sitemap includes SMS opt-in page" \
