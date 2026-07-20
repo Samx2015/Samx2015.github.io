@@ -274,7 +274,7 @@ check "SMS Terms includes exact HELP response" \
 check "SMS Terms includes exact START response" \
   page_text_has "/sms-terms.html" "You have opted back in to Flexible Timers SMS messages\\. Message frequency varies\\. Reply STOP to opt out, HELP for help\\."
 check "Privacy says SMS opt-in data is not sold" \
-  page_has "/privacy.html" "does not sell SMS opt-in data"
+  page_text_has "/privacy.html" "does not sell SMS opt-in data"
 check "Privacy says SMS opt-in data is not shared for marketing" \
   page_text_has "/privacy.html" "does not share SMS opt-in data"
 check "Privacy links support page" \
