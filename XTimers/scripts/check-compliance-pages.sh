@@ -2,6 +2,7 @@
 set -euo pipefail
 
 BASE_URL="${BASE_URL:-https://xintechllc.com/FlexibleTimers}"
+PUBLIC_BASE_URL="${PUBLIC_BASE_URL:-https://xintechllc.com/XTimers}"
 PAGES_ROOT="${PAGES_ROOT:-/Users/sam/GitHub/Samx2015.github.io/FlexibleTimers}"
 
 require_command() {
@@ -83,7 +84,11 @@ pages_deploy_tree_matches_source() {
     -x .git
     -x .gitignore
     -x .nojekyll
+    -x __pycache__
+    -x '*.pyc'
+    -x generated
     -x README.md
+    -x requirements-localization.txt
     -x publish.sh)
   if [[ ! -d "$LOCAL_ROOT/download" ]]; then
     diff_args+=(-x download)
@@ -105,7 +110,7 @@ localized_flexible_timers_pages_exist() {
         failed=1
       fi
     done
-  done < <(find "$LOCAL_ROOT" -mindepth 1 -maxdepth 1 -type d ! -name '.*' ! -name assets ! -name scripts | sort)
+  done < <(find "$LOCAL_ROOT" -mindepth 1 -maxdepth 1 -type d ! -name '.*' ! -name assets ! -name generated ! -name scripts | sort)
 
   return "$failed"
 }
@@ -123,7 +128,7 @@ localized_flexible_timers_pages_declare_language() {
         failed=1
       fi
     done
-  done < <(find "$LOCAL_ROOT" -mindepth 1 -maxdepth 1 -type d ! -name '.*' ! -name assets ! -name scripts | sort)
+  done < <(find "$LOCAL_ROOT" -mindepth 1 -maxdepth 1 -type d ! -name '.*' ! -name assets ! -name generated ! -name scripts | sort)
 
   return "$failed"
 }
@@ -138,7 +143,9 @@ localized_flexible_timers_pages_have_canonicals() {
     for page in index.html support.html privacy.html sms-terms.html sms-opt-in.html; do
       local canonical
       if [[ "$page" == "index.html" ]]; then
-        canonical="$BASE_URL/$locale/"
+        canonical="$PUBLIC_BASE_URL/$locale/"
+      elif [[ "$page" == "support.html" ]]; then
+        canonical="$PUBLIC_BASE_URL/$locale/$page"
       else
         canonical="$BASE_URL/$locale/$page"
       fi
@@ -148,7 +155,7 @@ localized_flexible_timers_pages_have_canonicals() {
         failed=1
       fi
     done
-  done < <(find "$LOCAL_ROOT" -mindepth 1 -maxdepth 1 -type d ! -name '.*' ! -name assets ! -name scripts | sort)
+  done < <(find "$LOCAL_ROOT" -mindepth 1 -maxdepth 1 -type d ! -name '.*' ! -name assets ! -name generated ! -name scripts | sort)
 
   return "$failed"
 }
@@ -176,7 +183,7 @@ localized_flexible_timers_pages_have_footer_links() {
         fi
       done
     done
-  done < <(find "$LOCAL_ROOT" -mindepth 1 -maxdepth 1 -type d ! -name '.*' ! -name assets ! -name scripts | sort)
+  done < <(find "$LOCAL_ROOT" -mindepth 1 -maxdepth 1 -type d ! -name '.*' ! -name assets ! -name generated ! -name scripts | sort)
 
   return "$failed"
 }
@@ -277,8 +284,8 @@ check "Privacy says SMS opt-in data is not sold" \
   page_text_has "/privacy.html" "does not sell SMS opt-in data"
 check "Privacy says SMS opt-in data is not shared for marketing" \
   page_text_has "/privacy.html" "does not share SMS opt-in data"
-check "Privacy links exact Twilio support URL" \
-  page_has "/privacy.html" "href=\"https://xintechllc.com/FlexibleTimers/support.html\">xintechllc.com/FlexibleTimers/support.html</a>"
+check "Privacy links support page" \
+  page_has "/privacy.html" "xintechllc.com/(FlexibleTimers|XTimers)/support.html"
 check "Privacy links privacy choices" \
   page_has "/privacy.html" "href=\"privacy-choices.html\""
 check "Privacy choices documents in-app account deletion" \

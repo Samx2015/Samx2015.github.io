@@ -4,79 +4,136 @@
     <loc>https://xintechllc.com/XTimers/</loc>
   </url>
   <url>
-    <loc>https://xintechllc.com/XTimers/zh-Hans/</loc>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/XTimers/zh-Hant/</loc>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/XTimers/ja/</loc>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/XTimers/de/</loc>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/XTimers/fr/</loc>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/XTimers/es/</loc>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/XTimers/ko/</loc>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/XTimers/pt-BR/</loc>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/XTimers/ru/</loc>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/XTimers/it/</loc>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/XTimers/nl/</loc>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/XTimers/sv/</loc>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/XTimers/da/</loc>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/XTimers/nb/</loc>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/XTimers/fi/</loc>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/XTimers/pl/</loc>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/XTimers/tr/</loc>
-  </url>
-  <url>
     <loc>https://xintechllc.com/XTimers/ar/</loc>
   </url>
   <url>
-    <loc>https://xintechllc.com/XTimers/th/</loc>
+    <loc>https://xintechllc.com/XTimers/bn/</loc>
   </url>
   <url>
-    <loc>https://xintechllc.com/XTimers/vi/</loc>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/XTimers/id/</loc>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/XTimers/ms/</loc>
-  </url>
-  <url>
-    <loc>https://xintechllc.com/XTimers/hi/</loc>
+    <loc>https://xintechllc.com/XTimers/ca/</loc>
   </url>
   <url>
     <loc>https://xintechllc.com/XTimers/cs/</loc>
   </url>
   <url>
+    <loc>https://xintechllc.com/XTimers/da/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/de/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/el/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/es/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/fi/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/fr/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/gu/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/he/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/hi/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/hr/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/hu/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/id/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/it/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/ja/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/kn/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/ko/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/ml/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/mr/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/ms/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/nb/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/nl/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/or/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/pa/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/pl/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/pt-BR/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/pt-PT/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/ro/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/ru/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/sk/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/sl/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/sv/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/ta/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/te/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/th/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/tr/</loc>
+  </url>
+  <url>
     <loc>https://xintechllc.com/XTimers/uk/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/ur/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/vi/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/zh-Hans/</loc>
+  </url>
+  <url>
+    <loc>https://xintechllc.com/XTimers/zh-Hant/</loc>
   </url>
   <url>
     <loc>https://xintechllc.com/XTimers/flexible-timers.html</loc>
@@ -105,12 +162,4 @@
   <url>
     <loc>https://xintechllc.com/FlexibleTimers/compliance.html</loc>
   </url>
-  <url><loc>https://xintechllc.com/XTimers/pt-PT/</loc></url>
-  <url><loc>https://xintechllc.com/XTimers/ro/</loc></url>
-  <url><loc>https://xintechllc.com/XTimers/he/</loc></url>
-  <url><loc>https://xintechllc.com/XTimers/el/</loc></url>
-  <url><loc>https://xintechllc.com/XTimers/hu/</loc></url>
-  <url><loc>https://xintechllc.com/XTimers/sk/</loc></url>
-  <url><loc>https://xintechllc.com/XTimers/hr/</loc></url>
-  <url><loc>https://xintechllc.com/XTimers/ca/</loc></url>
 </urlset>
