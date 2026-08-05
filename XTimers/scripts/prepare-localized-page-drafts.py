@@ -17,7 +17,7 @@ import sys
 from pathlib import Path
 
 try:
-    from bs4 import BeautifulSoup, Comment, NavigableString, Tag
+    from bs4 import BeautifulSoup, Comment, Doctype, NavigableString, Tag
 except ImportError as error:  # pragma: no cover - authoring environment guard
     raise SystemExit("BeautifulSoup 4 is required to prepare website drafts") from error
 
@@ -363,7 +363,7 @@ def import_existing_locale(root: Path, locale: str, output: Path) -> None:
 
 def replace_copy(soup: BeautifulSoup, translations: dict[str, str]) -> None:
     for node in list(soup.find_all(string=True)):
-        if excluded_text_node(node):
+        if isinstance(node, Doctype) or excluded_text_node(node):
             continue
         original = str(node)
         stripped = original.strip()
