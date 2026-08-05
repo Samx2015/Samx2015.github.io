@@ -155,6 +155,31 @@ class WebsiteLocalizationScriptsTests(unittest.TestCase):
             soup.find(string="External").parent["href"], "https://example.com/"
         )
 
+    def test_localized_copy_preserves_the_html_doctype(self) -> None:
+        soup = authoring.BeautifulSoup(
+            "<!doctype html><html><body><p>Hello</p></body></html>",
+            "html.parser",
+        )
+        authoring.replace_copy(soup, {"html": "visible artifact", "Hello": "Bonjour"})
+        document = str(soup)
+        self.assertTrue(document.startswith("<!DOCTYPE html>"))
+        self.assertNotIn("visible artifact", document)
+        self.assertIn("<p>Bonjour</p>", document)
+
+    def test_landing_page_footer_does_not_repeat_the_final_section_divider(self) -> None:
+        stylesheet = (ROOT / "assets" / "flexible-timers" / "site.css").read_text(
+            encoding="utf-8"
+        )
+        footer_rule = stylesheet.split("    footer {", 1)[1].split("    }", 1)[0]
+        self.assertNotIn("border-top", footer_rule)
+
+    def test_website_checker_rejects_content_before_the_doctype(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "localized.html"
+            path.write_text("html\n<html lang=\"fr\"></html>", encoding="utf-8")
+            with self.assertRaisesRegex(RuntimeError, "doctype missing"):
+                checker.parsed_page(path)
+
     def test_website_checker_rejects_empty_translation_values(self) -> None:
         with self.assertRaisesRegex(RuntimeError, "1 empty values for fr"):
             checker.validate_translation_values(

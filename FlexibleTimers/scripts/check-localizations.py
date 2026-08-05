@@ -118,6 +118,8 @@ def is_relative(value: str) -> bool:
 def parsed_page(path: Path) -> PageParser:
     parser = PageParser()
     document = path.read_text(encoding="utf-8")
+    if not document.lower().startswith("<!doctype html>"):
+        raise RuntimeError(f"HTML doctype missing or preceded by visible content in {path}")
     if "XQZTIMERS" in document:
         raise RuntimeError(f"Internal translation sentinel leaked into {path}")
     parser.feed(document)
