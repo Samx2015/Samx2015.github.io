@@ -235,6 +235,10 @@ class WebsiteLocalizationScriptsTests(unittest.TestCase):
             publisher.index('"$LOCALIZATION_RELEASE_GATE" --release'),
             publisher.index('publish_to "$DEST_DIR_NEW"'),
         )
+        compliance_check = (ROOT / "scripts" / "check-compliance-pages.sh").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("-x .DS_Store", compliance_check)
 
 
 if __name__ == "__main__":

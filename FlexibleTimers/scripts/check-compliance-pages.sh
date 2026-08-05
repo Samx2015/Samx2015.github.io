@@ -82,6 +82,7 @@ pages_deploy_tree_matches_source() {
   pages_root="$(cd "$PAGES_ROOT" && pwd)"
   local diff_args=(-qr
     -x .git
+    -x .DS_Store
     -x .gitignore
     -x .nojekyll
     -x __pycache__
