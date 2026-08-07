@@ -285,8 +285,8 @@ check "Privacy says SMS opt-in data is not sold" \
   page_text_has "/privacy.html" "does not sell SMS opt-in data"
 check "Privacy says SMS opt-in data is not shared for marketing" \
   page_text_has "/privacy.html" "does not share SMS opt-in data"
-check "Privacy links support page" \
-  page_has "/privacy.html" "xintechllc.com/(FlexibleTimers|XTimers)/support.html"
+check "Privacy links exact Twilio support URL" \
+  page_has "/privacy.html" "href=\"https://xintechllc.com/XTimers/support.html\">xintechllc.com/XTimers/support.html</a>"
 check "Privacy links privacy choices" \
   page_has "/privacy.html" "href=\"privacy-choices.html\""
 check "Privacy choices documents in-app account deletion" \
