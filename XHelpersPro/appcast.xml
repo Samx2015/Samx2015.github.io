@@ -4,25 +4,28 @@
         <title>XHelpers Pro</title>
         <item>
             <title>1.0.2</title>
-            <pubDate>Sat, 08 Aug 2026 22:23:36 -0700</pubDate>
+            <pubDate>Mon, 10 Aug 2026 10:08:48 -0700</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>9</sparkle:version>
+            <sparkle:version>10</sparkle:version>
             <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
 # XHelpers Pro 1.0.2
 
 **Added**
-- **Custom Quadrants** — Adjust the shared left/right split and each column's top/bottom split. The four regions always cover the usable screen without gaps or overlaps.
-- **Reposition Quadrant Windows** — Move currently registered quadrant windows into their newly configured regions directly from the quadrant editor.
+- **Screen Shelf** — Keep screenshots and images in a floating shelf, add images from Finder, the clipboard, file promises, or Screen Pin, then drag them into other apps, preview them, copy them, or save permanent copies. Shelf items expire automatically after 24 hours.
+- **Expanded Screen Tools** — Capture and act on recognized text, scan QR codes and barcodes, translate or read selected text aloud, pin a region, measure a region, and pick a screen color from one Screen Tools menu.
 
 **Improved**
-- **Window Focus** — Half-focus shortcuts now target only half-screen windows, even when an extreme custom quadrant falls within the normal registration margin.
-- **Shortcuts** — Quadrant actions are grouped more clearly, the quadrant editor is easier to find, and the Shortcuts dialog now opens at the top and accepts scrolling immediately.
-- **Permissions** — Access states that need attention now use an orange warning color for easier scanning.
+- **Screen Shelf Interaction** — An image can begin dragging on the first click even when the shelf belongs to an inactive app, and compact, minimal, and collapsed layouts make the shelf easier to keep nearby.
+- **Screen Tool Presentation** — Tool windows reliably move to the foreground after they are opened from the menu bar.
+- **Screen Pin Controls** — Hover controls adapt to narrow pins without clipping the image or overflowing the panel.
+
+**Fixed**
+- **Screen Pin Stability** — Prevents a SwiftUI/AppKit constraint-update loop that could make XHelpers Pro quit after pinning a screen region.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.2/XHelpersPro-1.0.2-9-macOS.dmg" length="25840131" type="application/octet-stream" sparkle:edSignature="8ooi3Ahe79zk0cKgb7wyiiqZzgZOkMNWtD21pya42DgX/unzDiNY2VOalPzV1TJFNPkTuvy8KNf7K9fTKnDLAw=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.2/XHelpersPro-1.0.2-10-macOS.dmg" length="26812422" type="application/octet-stream" sparkle:edSignature="r0AnU2Uyy+BOIN73f0wh6qHVRV3b6CcWU0G/03JORdn468Zg41yygqOEuN6tetJtQQq8CIKXDXy47rKOybWODQ=="/>
         </item>
     </channel>
 </rss>
