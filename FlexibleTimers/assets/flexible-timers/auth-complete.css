@@ -1,0 +1,221 @@
+:root {
+  color-scheme: light dark;
+  --background: #f4f7fb;
+  --surface: rgba(255, 255, 255, 0.92);
+  --ink: #131720;
+  --muted: #606979;
+  --line: rgba(24, 35, 54, 0.12);
+  --accent: #1677ff;
+  --accent-hover: #0668e8;
+  --success: #2c9b6f;
+  --shadow: 0 28px 80px rgba(32, 49, 78, 0.16);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 18% 14%, rgba(22, 119, 255, 0.15), transparent 34rem),
+    radial-gradient(circle at 82% 86%, rgba(255, 128, 55, 0.13), transparent 32rem),
+    var(--background);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+.auth-shell {
+  width: min(100% - 32px, 560px);
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  gap: 18px;
+  padding: 48px 0;
+}
+
+.auth-card {
+  text-align: center;
+  padding: clamp(34px, 7vw, 54px);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(24px) saturate(150%);
+}
+
+.app-icon {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 22px;
+  border-radius: 22px;
+  box-shadow: 0 16px 32px rgba(32, 49, 78, 0.2);
+}
+
+.eyebrow {
+  margin: 0 0 26px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.status-mark {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--success) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--success) 32%, transparent);
+}
+
+.status-mark span {
+  width: 19px;
+  height: 10px;
+  border-left: 3px solid var(--success);
+  border-bottom: 3px solid var(--success);
+  transform: translateY(-2px) rotate(-45deg);
+}
+
+body.invalid .status-mark {
+  background: color-mix(in srgb, #d45454 13%, transparent);
+  border-color: color-mix(in srgb, #d45454 32%, transparent);
+}
+
+body.invalid .status-mark span {
+  width: 18px;
+  height: 18px;
+  border: 0;
+  position: relative;
+  transform: none;
+}
+
+body.invalid .status-mark span::before,
+body.invalid .status-mark span::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 18px;
+  height: 3px;
+  border-radius: 2px;
+  background: #d45454;
+}
+
+body.invalid .status-mark span::before {
+  transform: rotate(45deg);
+}
+
+body.invalid .status-mark span::after {
+  transform: rotate(-45deg);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(28px, 6vw, 38px);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+}
+
+.message {
+  margin: 18px auto 0;
+  max-width: 390px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.open-app {
+  min-height: 50px;
+  margin-top: 28px;
+  padding: 0 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 650;
+  text-decoration: none;
+  box-shadow: 0 12px 28px rgba(22, 119, 255, 0.26);
+  transition: background 150ms ease, transform 150ms ease;
+}
+
+.open-app[hidden] {
+  display: none;
+}
+
+.open-app:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+.open-app:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent) 38%, transparent);
+  outline-offset: 4px;
+}
+
+.help {
+  margin: 20px auto 0;
+  max-width: 390px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.privacy-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0b0d12;
+    --surface: rgba(22, 25, 33, 0.9);
+    --ink: #f4f7fb;
+    --muted: #aab2c0;
+    --line: rgba(255, 255, 255, 0.12);
+    --accent: #3388ff;
+    --accent-hover: #5a9fff;
+    --success: #57c995;
+    --shadow: 0 30px 90px rgba(0, 0, 0, 0.38);
+  }
+
+  body {
+    background:
+      radial-gradient(circle at 18% 14%, rgba(40, 119, 255, 0.18), transparent 34rem),
+      radial-gradient(circle at 82% 86%, rgba(255, 111, 46, 0.12), transparent 32rem),
+      var(--background);
+  }
+}
+
+@media (max-width: 520px) {
+  .auth-shell {
+    width: min(100% - 24px, 560px);
+    padding: 24px 0;
+  }
+
+  .auth-card {
+    border-radius: 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .open-app {
+    transition: none;
+  }
+}

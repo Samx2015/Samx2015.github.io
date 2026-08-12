@@ -1,0 +1,75 @@
+(function (root) {
+  "use strict";
+
+  var allowedCallbacks = Object.freeze([
+    "xtimers-auth://auth/callback",
+    "xtimers-pro-auth://auth/callback"
+  ]);
+
+  function hasOAuthResponse(url) {
+    var query = url.searchParams;
+    var fragment = new URLSearchParams(url.hash.replace(/^#/, ""));
+    var responseKeys = [
+      "code",
+      "error",
+      "error_code",
+      "error_description",
+      "access_token"
+    ];
+    return responseKeys.some(function (key) {
+      return query.has(key) || fragment.has(key);
+    });
+  }
+
+  function buildReturnURL(pageURL, callbackBoundary) {
+    if (allowedCallbacks.indexOf(callbackBoundary) === -1) return null;
+    var source = new URL(pageURL);
+    if (!hasOAuthResponse(source)) return null;
+    return callbackBoundary + source.search + source.hash;
+  }
+
+  var api = Object.freeze({ buildReturnURL: buildReturnURL });
+  if (typeof module !== "undefined" && module.exports) {
+    module.exports = api;
+  }
+
+  if (!root.document) return;
+
+  function start() {
+    var body = root.document.body;
+    var title = root.document.getElementById("auth-title");
+    var message = root.document.getElementById("auth-message");
+    var openApp = root.document.getElementById("open-app");
+    var callbackBoundary = body.getAttribute("data-callback-url") || "";
+    var appName = body.getAttribute("data-app-name") || "XTimers";
+    var returnURL = buildReturnURL(root.location.href, callbackBoundary);
+
+    if (!returnURL) {
+      body.classList.add("invalid");
+      title.textContent = "This sign-in link is incomplete";
+      message.textContent = "Return to " + appName + " and start sign-in again.";
+      return;
+    }
+
+    // Keep the one-time OAuth response out of browser history and screenshots.
+    root.history.replaceState(null, root.document.title, root.location.pathname);
+    openApp.href = returnURL;
+    openApp.hidden = false;
+
+    function returnToApp(event) {
+      if (event) event.preventDefault();
+      title.textContent = "Continue in " + appName;
+      message.textContent = "The browser step is complete. " + appName + " is finishing your sign-in. You can close this tab after the app opens.";
+      root.location.assign(returnURL);
+    }
+
+    openApp.addEventListener("click", returnToApp);
+    root.setTimeout(returnToApp, 250);
+  }
+
+  if (root.document.readyState === "loading") {
+    root.document.addEventListener("DOMContentLoaded", start, { once: true });
+  } else {
+    start();
+  }
+}(typeof window !== "undefined" ? window : globalThis));
