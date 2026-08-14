@@ -65,19 +65,23 @@
     // whole handoff is that one click. A gesture-driven navigation is also
     // the one form browsers never swallow.
     var help = root.document.getElementById("auth-help");
+    var retry = root.document.getElementById("retry-open");
 
     function returnToApp(event) {
       if (event) event.preventDefault();
-      // Post-click the page's job is over: say DONE and hand the spotlight
-      // to closing the tab, keeping the button only as the quiet retry the
-      // help line points at.
+      // Post-click the page's job is over: say DONE, retire the primary
+      // button entirely (a big call-to-action makes "done" read as "open
+      // the app"), and keep recovery as the help line's quiet text link —
+      // the stripped one-time response means a reload could not retry.
       title.textContent = "Done — you can close this tab";
       message.textContent = appName + " is finishing your sign-in in the app.";
+      openApp.hidden = true;
       if (help) help.hidden = false;
       root.location.assign(returnURL);
     }
 
     openApp.addEventListener("click", returnToApp);
+    if (retry) retry.addEventListener("click", returnToApp);
     openApp.hidden = false;
   }
 
