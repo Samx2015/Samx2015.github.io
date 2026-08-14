@@ -68,7 +68,11 @@
 
     function returnToApp(event) {
       if (event) event.preventDefault();
-      message.textContent = "The browser step is complete. " + appName + " is finishing your sign-in. You can close this tab after the app opens.";
+      // Post-click the page's job is over: say DONE and hand the spotlight
+      // to closing the tab, keeping the button only as the quiet retry the
+      // help line points at.
+      title.textContent = "Done — you can close this tab";
+      message.textContent = appName + " is finishing your sign-in in the app.";
       if (help) help.hidden = false;
       root.location.assign(returnURL);
     }
