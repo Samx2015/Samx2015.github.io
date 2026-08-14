@@ -166,6 +166,12 @@ h1 {
   outline-offset: 4px;
 }
 
+.help a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .help[hidden] {
   display: none;
 }
