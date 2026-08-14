@@ -166,6 +166,10 @@ h1 {
   outline-offset: 4px;
 }
 
+.help[hidden] {
+  display: none;
+}
+
 .help {
   margin: 20px auto 0;
   max-width: 390px;

@@ -54,7 +54,6 @@
     // Keep the one-time OAuth response out of browser history and screenshots.
     root.history.replaceState(null, root.document.title, root.location.pathname);
     openApp.href = returnURL;
-    openApp.hidden = false;
 
     function returnToApp(event) {
       if (event) event.preventDefault();
@@ -63,8 +62,32 @@
       root.location.assign(returnURL);
     }
 
+    // Quiet handoff: the redirect below makes the browser show its own
+    // "Open <app>?" confirmation, and rendering the fallback button beside
+    // it read as two prompts for one action. The button and its help line
+    // appear only once the handoff has visibly NOT completed — this tab
+    // still frontmost two seconds later, or the customer returning to a tab
+    // that never left.
+    var help = root.document.getElementById("auth-help");
+    function revealFallback() {
+      openApp.hidden = false;
+      if (help) help.hidden = false;
+    }
+    function revealFallbackWhenVisible() {
+      if (!root.document.hidden) {
+        revealFallback();
+        return;
+      }
+      root.document.addEventListener("visibilitychange", function onVisible() {
+        if (root.document.hidden) return;
+        root.document.removeEventListener("visibilitychange", onVisible);
+        revealFallback();
+      });
+    }
+
     openApp.addEventListener("click", returnToApp);
     root.setTimeout(returnToApp, 250);
+    root.setTimeout(revealFallbackWhenVisible, 2000);
   }
 
   if (root.document.readyState === "loading") {
