@@ -3,29 +3,35 @@
     <channel>
         <title>XHelpers Pro</title>
         <item>
-            <title>1.0.2</title>
-            <pubDate>Mon, 10 Aug 2026 10:08:48 -0700</pubDate>
+            <title>1.0.3</title>
+            <pubDate>Thu, 20 Aug 2026 10:05:39 -0700</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>10</sparkle:version>
-            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:version>11</sparkle:version>
+            <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-# XHelpers Pro 1.0.2
+# XHelpers Pro 1.0.3
 
 **Added**
-- **Screen Shelf** — Keep screenshots and images in a floating shelf, add images from Finder, the clipboard, file promises, or Screen Pin, then drag them into other apps, preview them, copy them, or save permanent copies. Shelf items expire automatically after 24 hours.
-- **Expanded Screen Tools** — Capture and act on recognized text, scan QR codes and barcodes, translate or read selected text aloud, pin a region, measure a region, and pick a screen color from one Screen Tools menu.
+- **Startup & Background Inspector** — Review login items and background agents in one place, with clear links to the matching System Settings controls.
+- **Memory Health Monitor** — Watch memory pressure and swap activity locally, identify apps using the most memory, and optionally receive sustained-pressure alerts.
+- **Text Tools and Text Editor** — Transform and review text, edit plain-text and Markdown documents, use split and preview layouts, apply bounded syntax highlighting, and adjust text size.
+- **Live Translated Subtitles** — Create private, on-device subtitles and translations for a selected browser, with speaker-aware cues and fullscreen-window tracking. Requires macOS 26.4 or later.
+- **Expanded File and Markdown Viewing** — Open multiple Markdown windows and inspect large text, binary, and hexadecimal files with persistent text-size controls.
 
 **Improved**
-- **Screen Shelf Interaction** — An image can begin dragging on the first click even when the shelf belongs to an inactive app, and compact, minimal, and collapsed layouts make the shelf easier to keep nearby.
-- **Screen Tool Presentation** — Tool windows reliably move to the foreground after they are opened from the menu bar.
-- **Screen Pin Controls** — Hover controls adapt to narrow pins without clipping the image or overflowing the panel.
+- **Menu Bar Organization** — A compact two-column menu keeps utilities, screen tools, settings, and actions easier to scan, with keyboard access to its submenus.
+- **Window Recall and Arrangement** — More reliable window activation, focus verification, snapshot shortcuts, and live Snap & Arrange state.
+- **Live Subtitle Placement** — Subtitles follow the selected video window across fullscreen Spaces and keep speaker colors and translated lines stable.
 
 **Fixed**
-- **Screen Pin Stability** — Prevents a SwiftUI/AppKit constraint-update loop that could make XHelpers Pro quit after pinning a screen region.
+- **Snap & Arrange Stability** — The submenu now refreshes in place, opens from the keyboard, and avoids the ownership crash that could occur after rebuilding its contents.
+- **Editor and Viewer Reliability** — Fixes first-open layouts, narrow panes, search presentation, large-file rendering, and accidental-quit protection for open documents.
+
+Requires macOS 14.0 or later.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.2/XHelpersPro-1.0.2-10-macOS.dmg" length="26812422" type="application/octet-stream" sparkle:edSignature="r0AnU2Uyy+BOIN73f0wh6qHVRV3b6CcWU0G/03JORdn468Zg41yygqOEuN6tetJtQQq8CIKXDXy47rKOybWODQ=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.3/XHelpersPro-1.0.3-11-macOS.dmg" length="76573295" type="application/octet-stream" sparkle:edSignature="nB9usHWLFACat278AVfdfOtscOSkNy7jchW/v3biRSU/W/DUf9QKoHjz9fnX+Nm6gjFs94851ny6/VQghAkNDQ=="/>
         </item>
     </channel>
 </rss>

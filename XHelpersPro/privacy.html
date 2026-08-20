@@ -6,7 +6,7 @@
     <title>XHelpers Pro Privacy Policy</title>
     <meta
       name="description"
-      content="XHelpers Pro's privacy policy for local display controls, window shortcuts, optional Wi-Fi switching, Finder context menus, Safes, pointer profiles, key/button remapping, Audio Mixer, update checks, diagnostics, licensing, and support contact."
+      content="XHelpers Pro's privacy policy for local display controls, window shortcuts, memory health monitoring, optional Wi-Fi switching, Finder context menus, Safes, pointer profiles, key/button remapping, Audio Mixer, private live translated subtitles, update checks, diagnostics, licensing, and support contact."
     >
     <link rel="canonical" href="https://xintechllc.com/XHelpersPro/privacy.html">
     <link rel="alternate" hreflang="en" href="https://xintechllc.com/XHelpersPro/privacy.html">
@@ -107,18 +107,18 @@
       <div class="support-main">
         <section class="support-section" id="overview">
           <h1>Privacy Policy</h1>
-          <p>Effective date: July 11, 2026.</p>
+          <p>Effective date: August 12, 2026.</p>
           <p>
             XHelpers Pro is a local-first macOS menu-bar utility for display
-            controls, window shortcuts, optional Wi-Fi switching, Finder context
+            controls, window shortcuts, optional memory health and Wi-Fi monitoring, Finder context
             menu actions, local Safes, pointer profiles, key/button remapping,
-            and audio controls.
+            audio controls, and private live translated subtitles.
           </p>
           <ul>
             <li>No XHelpers Pro sign-in or user profile.</li>
             <li>No event tracking, session tracking, advertising pixels, or usage telemetry.</li>
-            <li>Core display, window, Finder, Safe, pointer, remapping, and audio features process data on your Mac.</li>
-            <li>Limited network requests occur for software updates, licensing, website analytics, and communications that you choose to send.</li>
+            <li>Core display, window, memory health, Finder, Safe, pointer, remapping, audio, and live subtitle features process content on your Mac.</li>
+            <li>Limited network requests occur for software updates, licensing, an explicit AI provider test, website analytics, and communications that you choose to send.</li>
           </ul>
         </section>
 
@@ -153,20 +153,92 @@
             <li>Window arrangement and focus shortcuts, app bundle identifiers or paths, arranged-window state, Active Window Highlight appearance, and conflict-helper preferences.</li>
             <li>Finder action settings, selected editor, terminal, and compatible apps, plus file or folder paths and security-scoped bookmarks that macOS requires to remember access you granted.</li>
             <li>Safe workflow preferences and local folder choices. Safe passwords and derived encryption keys are kept only for the operation in progress and are not stored or logged.</li>
-            <li>Pointer-device identifiers and profiles, scrolling settings, key/button remapping rules, and Audio Mixer preferences. XHelpers Pro does not build a history of typed text, pointer events, or audio content.</li>
+            <li>Pointer-device identifiers and profiles, scrolling settings, key/button remapping rules, Audio Mixer preferences, and Live Translated Subtitles language, browser, appearance, subtitle display-duration, translation-timing, and speaker-separation preferences. XHelpers Pro does not build a history of typed text, pointer events, audio, transcripts, translations, browser URLs, page titles, or subtitle cues.</li>
+            <li>When Memory Health Monitor is enabled, documented system memory counters, local process identifiers, app identity, physical-memory footprint, and local threshold, ignore, notification, and snooze preferences.</li>
             <li>Wi-Fi network names (SSIDs), access-point identifiers (BSSIDs), signal and band information, and short-lived scan or roaming state when Auto Wi-Fi Switch is enabled. XHelpers Pro does not read or store Wi-Fi passwords.</li>
             <li>Trial markers, license validation timestamps, and, after activation, the license key and license-instance identifier in your Mac's Keychain.</li>
+            <li>Optional AI provider profiles, selected model identifiers, readiness status, and the default-profile identifier in local preferences. Provider API keys are stored separately in This-Device-Only Keychain items.</li>
             <li>Bounded diagnostic messages described in the Diagnostics and Logs section.</li>
           </ul>
           <p>
             XHelpers Pro uses macOS display APIs for display controls, CoreWLAN
             APIs for optional Wi-Fi switching, macOS Accessibility APIs for
             window control, local input APIs for pointer and remapping features,
-            system audio APIs for Audio Mixer after permission, and macOS Finder
+            system audio APIs for Audio Mixer and Live Translated Subtitles after permission, on-device Speech and Translation frameworks for live subtitles, and macOS Finder
             extension APIs for Finder context menu actions. These APIs process
             local system and device information to provide the requested feature.
             XHelpers Pro does not upload display details, Finder paths, file or
             Safe contents, input events, audio, or passwords to Xintech LLC.
+          </p>
+        </section>
+
+        <section class="support-section" id="memory-health">
+          <h2>Memory Health Monitor</h2>
+          <p>
+            Memory Health Monitor is off by default. When you enable it,
+            XHelpers Pro periodically reads documented macOS system memory
+            counters and measurable local process identifiers, app identity,
+            and physical-memory footprint. It uses that information on your Mac
+            to assess sustained memory pressure and app thresholds and to show
+            active swap rates as context. The initial release does not use a
+            numeric swap-rate threshold to create or escalate an alert.
+          </p>
+          <p>
+            XHelpers Pro keeps only a bounded 15-minute system trend and the
+            latest app measurement in memory. It clears those samples when
+            monitoring stops and does not persist or upload continuous memory or
+            process samples. Threshold, ignored-app, notification, and snooze
+            preferences remain in local app preferences. macOS Notification
+            Center may retain delivered alert text according to your system
+            notification settings.
+          </p>
+        </section>
+
+        <section class="support-section" id="bring-your-own-ai">
+          <h2>Bring Your Own AI</h2>
+          <p>
+            Bring Your Own AI is optional and supports only OpenAI Codex SDK,
+            Anthropic Claude Agent SDK, Grok Build over its local Agent Client
+            Protocol runtime, and the OpenAI Responses API. A local agent runtime
+            is a local harness; it does not mean the model runs offline or on
+            your Mac.
+          </p>
+          <p>
+            XHelpers Pro does not distribute or download the Codex SDK, Claude
+            Agent SDK, or either SDK's CLI. Those two options are enabled only
+            when XHelpers validates the exact reviewed SDK and vendor-signed
+            executable already installed in a supported global npm location on
+            this Mac. OpenAI Responses is separate and does not require local
+            ChatGPT, Codex, or an agent SDK.
+          </p>
+          <p>
+            XHelpers Pro stores an API key you enter in a separate
+            This-Device-Only Keychain item and does not place it in preferences,
+            app resources, diagnostics, or command arguments. If you select
+            Grok's runtime-managed sign-in, an explicit test may read your
+            protected Grok authentication file and copy it only into that test's
+            short-lived private runtime directory. The copy is removed when the
+            process exits.
+          </p>
+          <p>
+            Test AI runs only when you choose it. It sends a fixed minimal
+            instruction and selected model identifier to the selected provider
+            to check authentication and model access, so provider usage or
+            charges may apply. It does not send files, Finder selections, a
+            workspace, free-form text, diagnostics, or XHelpers product data;
+            agent tools and local product actions are disabled. XHelpers Pro
+            stores only bounded readiness metadata, not the response or a
+            transcript.
+          </p>
+          <p>
+            OpenAI, Anthropic, or xAI receives the applicable credential or
+            runtime authentication, the fixed instruction, and ordinary network
+            metadata such as IP address and time. That provider controls its
+            processing, retention, billing, and account terms. Xintech LLC does
+            not receive the provider request or response. Selecting a default AI
+            grants no permission to read files, run commands, or control XHelpers
+            features, and the initial release has no general chat or background
+            AI task.
           </p>
         </section>
 
@@ -195,12 +267,14 @@
         </section>
 
         <section class="support-section" id="window-input-audio">
-          <h2>Window, Pointer, Remapping, and Audio Tools</h2>
+          <h2>Window, Pointer, Remapping, Audio, and Live Subtitle Tools</h2>
           <ul>
             <li>Window arrangement, arranged-window focus, app-focus shortcuts, move-to-display actions, and Active Window Highlight act on local windows only after you enable or trigger those features.</li>
             <li>Pointer profiles and scrolling settings store local device identifiers and preference values so XHelpers Pro can apply settings to the intended mouse or pointing device.</li>
             <li>Key & Button Remapping uses local keyboard or mouse events to perform the mappings you configure. It does not store typed text or build a history of keys you press.</li>
-            <li>Audio Mixer uses macOS system audio capture permission to adjust per-app volume locally. XHelpers Pro does not record, save, upload, transcribe, or analyze your audio content.</li>
+            <li>Audio Mixer uses macOS system audio capture permission to adjust per-app volume locally. It does not record, save, upload, or send your audio content.</li>
+            <li>Live Translated Subtitles runs only after you explicitly start a session. It captures the selected browser application's audio, uses Apple's on-device speech and translation models for finalized phrases and optional tentative previews, and displays cues in a click-through overlay. Audio, transcripts, translations, browser URLs, page titles, and cues are never saved, uploaded, logged, copied, or sent to Xintech LLC or an AI provider, and are cleared when the session stops. Browser selection is application-wide, so simultaneous tabs may be mixed.</li>
+            <li>The optional Try to Separate Different Speakers setting estimates anonymous speaker changes using a bounded recent-audio window and session-only acoustic clustering inside XHelpers Pro. It does not identify people. Temporary acoustic signatures and speaker identifiers remain in memory, are never saved, logged, or transmitted, and are cleared when the subtitle session stops. Results are best effort and may be inaccurate for overlapping voices, music, or short phrases.</li>
           </ul>
         </section>
 
@@ -213,7 +287,14 @@
             brightness and DDC results, power and wake events, Wi-Fi SSID, BSSID,
             signal and roaming decisions, and errors from features you use. They
             are not intended to include file contents, Safe passwords, typed text,
-            or audio content.
+            or audio, transcript, translation, browser URL, page-title,
+            subtitle-cue, acoustic speaker signature, or speaker identifier content.
+          </p>
+          <p>
+            Memory-health release messages use bounded reason and coverage codes.
+            They are not intended to include app or process names, bundle
+            identifiers, executable paths, notification text, or per-app memory
+            measurements.
           </p>
           <p>
             The app-local log is limited to 800 entries, 4,096 characters per
@@ -235,9 +316,19 @@
           <h2>Network Activity</h2>
           <p>
             XHelpers Pro's normal display controls, window shortcuts, Finder
-            context menus, Safes, pointer profiles, remapping, and Audio Mixer
-            do not require a
-            network connection.
+            context menus, Safes, pointer profiles, remapping, Audio Mixer, and
+            an active Live Translated Subtitles session with installed language
+            models do not require a network connection.
+          </p>
+          <p>
+            Before a Live Translated Subtitles session starts, macOS may download
+            a selected speech or translation language model from Apple. Model
+            downloads contain no browser audio, transcript, translation, URL,
+            title, cue, or acoustic speaker signature. Speaker separation uses
+            no network model. Once installed, XHelpers Pro sends no subtitle
+            content over the network. Apple may process non-content operational
+            metadata from its system frameworks under Apple's terms; XHelpers Pro
+            does not author or receive that telemetry.
           </p>
           <p>
             Sparkle may automatically contact XHelpers Pro's public HTTPS update
@@ -262,6 +353,11 @@
             The current public XHelpers Pro release does not upload Safe archives
             or offer a Xintech-hosted Safe transfer or link-sharing service. Safe
             creation, update, inspection, and extraction remain local.
+          </p>
+          <p>
+            When you explicitly choose Test AI, XHelpers Pro contacts the
+            selected OpenAI, Anthropic, or xAI service as described in Bring
+            Your Own AI above. It does not test providers in the background.
           </p>
         </section>
 
@@ -310,11 +406,12 @@
             <li>You can disable automatic update checks in Sparkle update preferences.</li>
             <li>You can turn Auto Wi-Fi Switch on or off from the XHelpers Pro menu.</li>
             <li>You can grant, deny, or revoke Location permission for Wi-Fi details in macOS System Settings.</li>
-            <li>You can grant, deny, or revoke Accessibility, Input Monitoring, System Audio Recording, Location, Automation, and Full Disk Access in macOS System Settings.</li>
-            <li>You can disable Pointer Profiles, Scroll Speed & Acceleration, Key & Button Remapping, Active Window Highlight, and Audio Mixer from the XHelpers Pro menu or their settings windows.</li>
+            <li>You can grant, deny, or revoke Accessibility, Input Monitoring, System Audio Recording, Speech Recognition, Location, Automation, and Full Disk Access in macOS System Settings.</li>
+            <li>You can disable Pointer Profiles, Scroll Speed & Acceleration, Key & Button Remapping, Active Window Highlight, Audio Mixer, and Live Translated Subtitles from the XHelpers Pro menu or their settings windows.</li>
             <li>You can enable or disable the Finder extension in macOS settings.</li>
             <li>You can open Full Disk Access settings from XHelpers Pro if Finder actions need protected macOS locations.</li>
             <li>You can deactivate this Mac from the license window.</li>
+            <li>You can clear the default AI, remove an AI profile, and request deletion of its Keychain credential from AI Settings.</li>
             <li>You can remove local preferences, bookmarks, diagnostics, and Keychain items using the app's controls where available or normal macOS data-management tools.</li>
           </ul>
         </section>
@@ -346,8 +443,10 @@
           <h2>Retention, Legal Bases, and Your Rights</h2>
           <p>
             Local preferences remain until you change or remove them. Keychain
-            license data remains until it is removed or the related app data is
-            cleared. Xintech LLC retains support correspondence only as reasonably
+            license and AI credential data remain until removed or the related
+            app data is cleared. Removing an AI profile makes its credential
+            reference unreachable and requests deletion of the corresponding
+            Keychain item. Xintech LLC retains support correspondence only as reasonably
             needed to answer the request, maintain business records, prevent abuse,
             and comply with law. Service providers retain information according to
             their terms and the settings described above.
@@ -361,6 +460,12 @@
             complain to a competent data-protection authority. Some rights are
             subject to legal exceptions. Because most app data never leaves your
             Mac, Xintech LLC may not possess data responsive to an app-data request.
+          </p>
+          <p>
+            Memory Health Monitor's in-memory trend and current app samples are
+            cleared when monitoring stops or XHelpers Pro quits. Delivered
+            notifications are retained by macOS according to the notification
+            settings you control.
           </p>
         </section>
         <section class="support-section" id="contact">
