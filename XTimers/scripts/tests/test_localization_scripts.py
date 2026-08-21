@@ -235,10 +235,29 @@ class WebsiteLocalizationScriptsTests(unittest.TestCase):
             publisher.index('"$LOCALIZATION_RELEASE_GATE" --release'),
             publisher.index('publish_to "$DEST_DIR_NEW"'),
         )
+        self.assertIn('node "$CALLBACK_CHECK"', publisher)
+        self.assertIn("validate_staged_mirrors", publisher)
+        self.assertLess(
+            publisher.index("validate_staged_mirrors\n"),
+            publisher.index('publish_to "$DEST_DIR_NEW"'),
+        )
+        self.assertIn('"$COMPLIANCE_CHECK" --no-live', publisher)
+        self.assertIn('LIVE_BASE_URL="$PUBLIC_BASE_URL"', publisher)
+        self.assertIn('LIVE_BASE_URL="$LEGACY_BASE_URL"', publisher)
+        self.assertIn(
+            '"[skip ci] Publish XTimers website (canonical + legacy mirror)"',
+            publisher,
+        )
         compliance_check = (ROOT / "scripts" / "check-compliance-pages.sh").read_text(
             encoding="utf-8"
         )
         self.assertIn("-x .DS_Store", compliance_check)
+        self.assertIn("CANONICAL_PAGES_ROOT", compliance_check)
+        self.assertIn("LEGACY_PAGES_ROOT", compliance_check)
+        self.assertIn("reconciled_privacy_and_callback_semantics", compliance_check)
+        self.assertIn("Personal Calendar Overlay", compliance_check)
+        self.assertIn("local data area.*system Keychain", compliance_check)
+        self.assertIn("setTimeout\\(returnToApp", compliance_check)
 
 
 if __name__ == "__main__":

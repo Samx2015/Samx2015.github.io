@@ -46,8 +46,9 @@
 
     if (!returnURL) {
       body.classList.add("invalid");
-      title.textContent = "This sign-in link is incomplete";
-      message.textContent = "Return to " + appName + " and start sign-in again.";
+      title.textContent = "This Xin Account sign-in link is incomplete";
+      message.textContent = "Return to " + appName
+        + " and start Xin Account sign-in again.";
       return;
     }
 
@@ -73,8 +74,9 @@
       // button entirely (a big call-to-action makes "done" read as "open
       // the app"), and keep recovery as the help line's quiet text link —
       // the stripped one-time response means a reload could not retry.
-      title.textContent = "Done — you can close this tab";
-      message.textContent = appName + " is finishing your sign-in in the app.";
+      title.textContent = "Signed in with your Xin Account";
+      message.textContent = appName
+        + " is finishing your Xin Account sign-in in the app.";
       openApp.hidden = true;
       if (help) help.hidden = false;
       root.location.assign(returnURL);
