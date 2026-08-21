@@ -123,20 +123,18 @@
 <main>
 <h1>A Xintech LLC XTimers adatvédelmi irányelvei</h1><p class="quote translation-note">Ez a fordítás a kényelem érdekében készült. Az eredeti angol változat a hivatalos. <a href="../privacy.html">English</a></p>
 <p>
-      Az XTimers üzemeltetője a Xintech LLC. Ez a szabályzat ismerteti az XTimers
-      által az időzítők, visszaszámlálók, tevékenységkövetés, fiókok,
-      szinkronizálás, jelentések, egyéni hangok, emlékeztetők, támogatás és
-      üzenetküldési funkciók biztosítása során kezelt adatokat.
+      Az XTimers üzemeltetője a Xintech LLC, és az alkalmazás a Xin Account-ot használja a közös bejelentkezéshez. Ez a szabályzat ismerteti a Xin Account-identitásszolgáltatásokhoz, valamint az XTimers időzítő-, visszaszámlálási, tevékenységkövetési, szinkronizálási, jelentési, egyéni hang-, emlékeztető-, támogatási és üzenetküldési funkcióihoz kezelt adatokat.
     </p>
-<h2>Fiók- és kapcsolattartási adatok</h2>
+<h2 id="xin-account">Xin Account-identitás és -bejelentkezés</h2>
 <p>
-      Ha a felhasználó fiókot hoz létre, az XTimers kezeli a fiókazonosítót, az
-      e-mail-címet, a hitelesítési adatokat, a fiókbeállításokat, továbbá az
-      SMS-funkciók engedélyezésekor az ellenőrzött telefonszámot és az
-      SMS-hozzájárulási adatokat. Az XTimers ezeket az adatokat a felhasználó
-      hitelesítésére, a fiókadatok szinkronizálására, a kért üzenetek
-      kézbesítésére, a visszaélések megelőzésére és fióktámogatás nyújtására
-      használja.
+      Az XTimers Xin Account használatával azonosítja és hitelesíti a felhasználót. A Xin Account az XTimers és a fiókvezérlőkben felsorolt minden más csatlakoztatott termék közös identitási rétege; nem XTimers-termékfiók, és nem tartalmaz XTimers-időzítőket, -jelentéseket, -hangokat vagy SMS-adatokat.
+    </p>
+<p>
+      A Xin Account fiókazonosítót, e-mail-címet, hitelesítési és munkamenet-rekordokat, kapcsolt bejelentkezési szolgáltatók rekordjait, helyreállítási és biztonsági rekordokat, fiókéletciklus-rekordokat, valamint a Xin Account és az egyes csatlakoztatott termékfiókok közötti társítást kezeli. A Xintech LLC ezeket az adatokat a felhasználó hitelesítésére, a fiók védelmére és helyreállítására, a munkamenetek és kapcsolt szolgáltatók kezelésére, a csatlakoztatott termékek elérésének engedélyezésére, a visszaélések megelőzésére és identitástámogatás nyújtására használja.
+    </p>
+<h2>XTimers-termék- és kapcsolattartási adatok</h2>
+<p>
+      Amikor a felhasználó az XTimers alkalmazást egy Xin Account-hoz csatlakoztatja, az XTimers külön XTimers-fiókazonosítót, annak Xin Account-társítását, a termékbeállításokat és a kért XTimers-üzenetekhez használt kapcsolattartási e-mail-címet kezeli. Amikor a felhasználó engedélyezi az SMS-funkciókat, az XTimers egy ellenőrzött telefonszámot és SMS-hozzájárulási rekordokat is kezel. Az XTimers ezeket a termékinformációkat az XTimers-adatok szinkronizálására, a kért üzenetek kézbesítésére, a visszaélések megelőzésére és XTimers-terméktámogatás nyújtására használja.
     </p>
 <h2>Időzítő, feladat és jelentés tartalma</h2>
 <p>
@@ -150,15 +148,12 @@
       A közzétett jelentéshivatkozások 1, 7, 30, 90 vagy 365 nap utáni lejáratra
       állíthatók.
     </p>
+<p>
+      Az eszközeire szinkronizált időzítőtartalom az alkalmazás helyi adatterületén tárolódik, és alkalmazásszintű titkosítás helyett az eszköz saját biztonsági megoldásai (például a FileVault és az Ön bejelentkezési jelszava) védik. A bejelentkezési hitelesítő adatok és a védett szinkronizálás kulcsai a rendszer Keychain szolgáltatásában tárolódnak.
+    </p>
 <h2>E-mail és SMS információk</h2>
 <p>
-      Az XTimers jelenleg csak a bejelentkezett felhasználó saját fiókhoz tartozó
-      e-mail-címére küld e-mail-jelentéseket, ellenőrző üzeneteket és a felhasználó
-      által létrehozott emlékeztetőket. SMS-t csak a felhasználó saját,
-      ellenőrzött és hozzájárulással megadott fiók-telefonszámára küld. Az
-      XTimers az üzenetek kézbesítéséhez és hibaelhárításához kezelheti az üzenet
-      tartalmát, a kézbesítés állapotát, az ütemezett időpontot és a szolgáltató
-      válaszának metaadatait.
+      Az XTimers jelenleg csak a bejelentkezett felhasználó saját Xin Account e-mail-címére küld e-mail-jelentéseket, ellenőrző üzeneteket és a felhasználó által létrehozott emlékeztetőket. SMS-t csak a felhasználó saját, ellenőrzött és engedélyezett fióktelefonszámára küld. Az XTimers az üzenetek kézbesítése és a hibák elhárítása érdekében kezelheti az üzenet tartalmát, kézbesítési állapotát, ütemezett idejét és a szolgáltató válaszának metaadatait.
     </p>
 <p>
       SMS használata esetén az XTimers tárolhatja a telefonszámot, a hozzájárulás
@@ -188,6 +183,22 @@
       megjelenő alkalmazásnevekkel és az XTimers Pro esetén a webhelyek
       állomásnevével — a kért művelet végrehajtásához az XTimers szolgáltatásába
       kerül.
+    </p>
+<h2>Személyes naptár átfedése</h2>
+<p>
+      Amikor a felhasználó bekapcsolja a Személyes naptár átfedése funkciót, és
+      engedélyt ad, az XTimers beolvassa a felhasználó által a Naptár appban
+      kijelölt naptárak eseményeit, beleértve az ott már beállított iCloud-,
+      Google-, Outlook- és előfizetett naptárakat. Az XTimers nem kapcsolódik
+      közvetlenül ezekhez a naptárszolgáltatókhoz, és soha nem kéri el a
+      felhasználó e szolgáltatóknál lévő fiókjainak hitelesítő adatait; a Naptár
+      app továbbra is a felhasználó saját beállításai szerint szinkronizálja
+      ezeket. Az események részleteit a megjelenítésükhöz az eszközön olvassa be,
+      és nem tölti fel az XTimers szolgáltatásába. Az XTimers csak a felhasználó
+      be- vagy kikapcsolási választását, az adott telepítésben kijelölt naptárak
+      azonosítóit és annak nyilvántartását tárolja, hogy a felhasználó az
+      adatvédelmi magyarázat mely verzióját tudomásul vette. Az XTimers soha nem
+      hoz létre, nem szerkeszt és nem töröl eseményeket a felhasználó naptáraiban.
     </p>
 <h2>Visszajelzés és ügyfélszolgálat</h2>
 <p>
@@ -222,7 +233,8 @@
     </p>
 <h2>Az információ felhasználása</h2>
 <ul>
-<li>Fiókok hitelesítése és a felhasználó által kiválasztott tartalom szinkronizálása.</li>
+<li>Xin Account-identitások hitelesítése és csatlakoztatott XTimers-fiókok engedélyezése.</li>
+<li>A felhasználó által kiválasztott XTimers-tartalom szinkronizálása az eszközök között.</li>
 <li>Időzítők, jelentések, emlékeztetők, üzenetküldés, egyéni hangok és megosztás működtetése.</li>
 <li>Push-értesítések kézbesítése és a felhasználó eszközeinek szinkronban tartása.</li>
 <li>Ügyfélszolgálat biztosítása és a bejelentett problémák kivizsgálása.</li>
@@ -232,13 +244,7 @@
 </ul>
 <h2>Szolgáltatók</h2>
 <p>
-      A Xintech LLC szolgáltatókat vesz igénybe felhőtárhelyhez és -tároláshoz,
-      e-mail- és SMS-kézbesítéshez, pushértesítésekhez, diagnosztikához és
-      webhelyelemzéshez. E szolgáltatók csak a Xintech LLC részére végzett
-      szolgáltatásokhoz szükséges mértékben, a rájuk vonatkozó feltételek és
-      adatvédelmi biztosítékok szerint kezelhetik az adatokat. Az e-mail- és
-      SMS-szolgáltatók megkapják a címzettet, a kért üzenettartalmat és az üzenet
-      elküldéséhez szükséges kézbesítési metaadatokat.
+      A Xintech LLC szolgáltatókat vesz igénybe az identitás és hitelesítés, a felhőalapú tárhely és tárolás, az e-mail- és SMS-kézbesítés, a push-értesítések, a diagnosztika és a webhelyelemzés céljából. E szolgáltatók csak a Xintech LLC részére nyújtott szolgáltatásokhoz szükséges mértékben kezelhetik az adatokat, a vonatkozó feltételeik és adatvédelmi biztosítékaik szerint. Az e-mail- és SMS-szolgáltatók megkapják a címzettet, a kért üzenet tartalmát és a felhasználó üzenetének elküldéséhez szükséges kézbesítési metaadatokat.
     </p>
 <h2>Nincs hirdetésfigyelés, eladás vagy marketing tevékenység.</h2>
 <p>
@@ -250,32 +256,28 @@
       SMS-hozzájárulási adatokat, telefonszámokat vagy szövegesüzenet-küldési
       hozzájárulást.
     </p>
-<h2>Adatmegőrzés és fióktörlés</h2>
+<h2>Megőrzés és törlés</h2>
 <p>
-      A fiókadatokat addig őrizzük meg, amíg azok a fiók és a kért funkciók
-      biztosításához szükségesek. A közzétett jelentés tartalma a kiválasztott
-      lejárat után elérhetetlenné válik, majd a szolgáltatás karbantartása
-      eltávolítja. Az üzenet- és hozzájárulási adatokat a kézbesítéshez,
-      hibaelhárításhoz, visszaélés-megelőzéshez, illetve szolgáltatói vagy jogi
-      megfeleléshez szükséges ideig megőrizhetjük.
+      A Xin Account-identitásadatokat addig őrizzük meg, amíg szükségesek a közös identitás és a csatlakoztatott terméktársítások biztosításához. Az XTimers-termékadatokat addig őrizzük meg, amíg szükségesek a csatlakoztatott XTimers-fiók és kért funkciói biztosításához. A közzétett jelentéstartalom a kiválasztott lejárat után elérhetetlenné válik, és a szolgáltatás tisztítása eltávolítja. Az üzenet- és hozzájárulási rekordok a kézbesítéshez, hibaelhárításhoz, visszaélés-megelőzéshez, valamint a szolgáltatói vagy jogi megfeleléshez szükséges ideig megőrizhetők.
+    </p>
+<h3>Kijelentkezés és eltávolítás egy eszközről</h3>
+<p>
+      A kijelentkezés megszünteti az XTimers elérését az adott eszközön, és szünetelteti a hitelesített szinkronizálást. Az XTimers vagy helyi fiókadatainak eltávolítása egy eszközről csak az adott eszközön lévő másolatokat távolítja el. Egyik lehetőség sem törli a Xin Account-ot vagy a csatlakoztatott XTimers-adatok kiszolgálón tárolt másolatait.
+    </p>
+<h3>XTimers-adatok törlése</h3>
+<p>
+      A bejelentkezett felhasználó törölhet egy csatlakoztatott XTimers-fiókot. Ezzel az adott fiók aktív időzítője, pillanatfelvétele, hangja, visszajelzése, emlékeztetője, üzenete, SMS-beállítása és push-regisztrációs adatai törlődnek az XTimers szolgáltatásból. A Xin Account, a közös bejelentkezési identitás és minden más csatlakoztatott termékfiók elérhető marad.
+    </p>
+<h3>Xin Account törlése</h3>
+<p>
+      A felhasználó külön törölheti a globális Xin Account-ot. A megerősítés azonosít minden törlendő csatlakoztatott terméket. A Xintech LLC először befejezi e csatlakoztatott termékfiókok törlését, beleértve az XTimers-adatokat is, majd törli a közös Xin Account-identitást, a hitelesítési és munkamenet-rekordokat, a kapcsolt szolgáltatók rekordjait és az aktív helyreállítási rekordokat. A befejezetlen vagy termék nélküli Xin Account-identitás az XTimers-adatok törlése nélkül is törölhető, mert nincs hozzá csatlakoztatva XTimers-fiók.
     </p>
 <p>
-      A bejelentkezett felhasználó az XTimers alkalmazásban a Fiók törlése
-      lehetőséget választhatja. A fiók törlése eltávolítja az aktív szolgáltatásból
-      a fiókbejegyzést, valamint a fiókhoz tartozó személyazonossági, időzítő-,
-      pillanatkép-, hang-, visszajelzés-, emlékeztető-, üzenet- és
-      pushregisztrációs adatokat. A külön vezetett kérési naplók, IP-adatok,
-      biztonsági nyilvántartások és diagnosztikai beküldések a fiók törlése után
-      is megmaradhatnak, ha ez biztonsági, hibaelhárítási, jogszabályi
-      megfelelési vagy szolgáltatásüzemeltetési célból szükséges. A Xintech LLC
-      törli vagy személyazonosításra alkalmatlanná teszi ezeket az adatokat,
-      amikor e célokhoz már észszerűen nincs rájuk szükség.
+      A külön kezelt kérésnaplók, IP-adatok, biztonsági rekordok, törlési bizonylatok és diagnosztikai beküldések bármelyik törlési kör után megmaradhatnak, ha a biztonság, a hibaelhárítás, a jogszabályi megfelelés, a csalás vagy visszaélés megelőzése, illetve a szolgáltatás kezelése ezt szükségessé teszi. A Xintech LLC törli vagy személyazonosításra alkalmatlanná teszi ezeket a rekordokat, amikor már észszerűen nincs rájuk szükség e célokhoz.
     </p>
 <h2>Adatvédelmi beállítások</h2>
 <p>
-      A felhasználók az alkalmazásban kezelhetik a szinkronizálási és
-      tevékenységkövetési funkciókat, a fiókvezérlőkkel törölhetik fiókjukat, és
-      STOP válasszal leiratkozhatnak az SMS-ekről. Lásd a
+      A felhasználók kezelhetik az alkalmazás szinkronizálási és tevékenységkövetési funkcióit, kijelentkezhetnek, eltávolíthatják a helyi adatokat egy eszközről, törölhetik az XTimers-adatokat a Xin Account megtartásával, törölhetik a globális Xin Account-ot és minden felsorolt terméket, valamint a STOP válasszal leiratkozhatnak az SMS-ről. Lásd:
       <a href="../privacy-choices.html">XTimers adatvédelmi beállítások</a> oldalt a részletekért.
     </p>
 <h2>Biztonság</h2>
@@ -295,9 +297,9 @@
 <h2>Kapcsolat</h2>
 <p>
       Kérdések és kérelmek esetén tekintse meg a következőt:
-      <a href="support.html">xintechllc.com/XTimers/support.html</a>.
+      <a href="https://xintechllc.com/XTimers/support.html">xintechllc.com/XTimers/support.html</a>.
     </p>
-<p>Utolsó frissítés: 2026. július 19.</p>
+<p>Legutóbbi frissítés: 2026. augusztus 21.</p>
 <footer>
 <div>© 2026 Xintech LLC. Minden jog fenntartva.</div>
 <div class="footer-links">

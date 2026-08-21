@@ -291,7 +291,11 @@ def main() -> int:
     descriptors = {item["identifier"]: item for item in inventory}
     validate_sitemap(ROOT / "sitemap.xml", inventory)
 
-    ignored_directories = {"assets", "generated", "scripts"}
+    # `auth` holds the branded OAuth completion pages, which are a fixed
+    # endpoint the provider redirects to rather than product content: they are
+    # not localized routes, and treating every top-level directory as a locale
+    # made this check fail on them.
+    ignored_directories = {"assets", "generated", "scripts", "auth"}
     actual_directories = {
         path.name
         for path in ROOT.iterdir()
