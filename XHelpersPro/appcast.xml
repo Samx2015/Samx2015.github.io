@@ -3,22 +3,23 @@
     <channel>
         <title>XHelpers Pro</title>
         <item>
-            <title>1.0.5</title>
-            <pubDate>Fri, 04 Sep 2026 18:32:10 -0700</pubDate>
+            <title>1.0.6</title>
+            <pubDate>Fri, 04 Sep 2026 19:31:48 -0700</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>13</sparkle:version>
-            <sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
+            <sparkle:version>14</sparkle:version>
+            <sparkle:shortVersionString>1.0.6</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-# XHelpers Pro 1.0.5
+# XHelpers Pro 1.0.6
 
-> Candidate notes for 1.0.5 (13). This version has not completed signed,
-> Apple-account, accessibility/localization-presentation, performance, or
-> owner-only release approval and has not been published. 1.0.4 (12) was
-> never published, so its changes are listed here.
+> Notes for 1.0.6 (14). 1.0.6 replaces 1.0.5 (13) with a crash fix; 1.0.4 (12)
+> was never published, so its changes are listed here.
 
 ## What's New
 
+- Fixes a crash when choosing Account… or other menu actions on macOS 14 and
+  later, and the same crash in Clipboard History capture: a main-thread
+  isolation check inside a timer callback failed inside the Swift runtime.
 - Adds an optional Xin account. Sign in with an email address and password,
   an emailed sign-in code, Google, or Sign in with Apple, then enroll the
   account in XHelpers, link your local Pro license to it, and manage the
@@ -179,7 +180,7 @@ updates.
 Requires macOS 14.0 or later.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.5/XHelpersPro-1.0.5-13-macOS.dmg" length="84590445" type="application/octet-stream" sparkle:edSignature="0Im2ceVKsJOd9iWoLGWb6+gSDnZLww5jr9aZPb5g2DYPwSO8pI89S4y5+WKxtEBl6pA7l4Qm6bu+cze+UCXaAA=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.6/XHelpersPro-1.0.6-14-macOS.dmg" length="84595018" type="application/octet-stream" sparkle:edSignature="okZLOj9lQdcf8XJ9ESk/LjbSnjTmtu7VL16wy2I2xQy8dhC8V1/4yd85Elxxu7SUMsdFq1Y2l/HF0si2IHZuDw=="/>
         </item>
     </channel>
 </rss>
