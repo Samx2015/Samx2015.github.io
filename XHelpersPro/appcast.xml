@@ -3,35 +3,183 @@
     <channel>
         <title>XHelpers Pro</title>
         <item>
-            <title>1.0.3</title>
-            <pubDate>Thu, 20 Aug 2026 10:05:39 -0700</pubDate>
+            <title>1.0.5</title>
+            <pubDate>Fri, 04 Sep 2026 18:32:10 -0700</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>11</sparkle:version>
-            <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+            <sparkle:version>13</sparkle:version>
+            <sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-# XHelpers Pro 1.0.3
+# XHelpers Pro 1.0.5
 
-**Added**
-- **Startup & Background Inspector** — Review login items and background agents in one place, with clear links to the matching System Settings controls.
-- **Memory Health Monitor** — Watch memory pressure and swap activity locally, identify apps using the most memory, and optionally receive sustained-pressure alerts.
-- **Text Tools and Text Editor** — Transform and review text, edit plain-text and Markdown documents, use split and preview layouts, apply bounded syntax highlighting, and adjust text size.
-- **Live Translated Subtitles** — Create private, on-device subtitles and translations for a selected browser, with speaker-aware cues and fullscreen-window tracking. Requires macOS 26.4 or later.
-- **Expanded File and Markdown Viewing** — Open multiple Markdown windows and inspect large text, binary, and hexadecimal files with persistent text-size controls.
+> Candidate notes for 1.0.5 (13). This version has not completed signed,
+> Apple-account, accessibility/localization-presentation, performance, or
+> owner-only release approval and has not been published. 1.0.4 (12) was
+> never published, so its changes are listed here.
 
-**Improved**
-- **Menu Bar Organization** — A compact two-column menu keeps utilities, screen tools, settings, and actions easier to scan, with keyboard access to its submenus.
-- **Window Recall and Arrangement** — More reliable window activation, focus verification, snapshot shortcuts, and live Snap & Arrange state.
-- **Live Subtitle Placement** — Subtitles follow the selected video window across fullscreen Spaces and keep speaker colors and translated lines stable.
+## What's New
 
-**Fixed**
-- **Snap & Arrange Stability** — The submenu now refreshes in place, opens from the keyboard, and avoids the ownership crash that could occur after rebuilding its contents.
-- **Editor and Viewer Reliability** — Fixes first-open layouts, narrow panes, search presentation, large-file rendering, and accidental-quit protection for open documents.
+- Adds an optional Xin account. Sign in with an email address and password,
+  an emailed sign-in code, Google, or Sign in with Apple, then enroll the
+  account in XHelpers, link your local Pro license to it, and manage the
+  linked sign-in methods from the Account window. Every local tool and local
+  Pro activation keeps working signed out and offline; the account is never
+  required. The Account window can delete XHelpers data, the whole Xin
+  account, or just the sign-in identity, each with a fresh sign-in and each
+  resumable if interrupted. Session and recovery state stay in this Mac's
+  Keychain, and XHelpers Pro never stores a Google or Apple password. The
+  privacy policy and license agreement describe exactly what the account
+  service keeps.
+- Live Subtitles can now show captions in the spoken language without
+  translating. Switch between Translate and Captions only at the top of the
+  Configure window's Languages section, or flip the Captions Only row in the
+  status menu, which restarts a listening session in the new mode. The
+  status-menu row, shortcut, and Configure window are now titled Live
+  Subtitles.
+- Adds Quick Audio, a fast local player for user-supplied MP3, M4A (AAC or
+  ALAC), AAC/ADTS, WAVE/BWF, AIFF, AIFF-C, FLAC, and CAF files, with an
+  ephemeral queue that is discarded when the player closes.
+- Makes the supported formats available in Open With without taking over
+  defaults; Audio Player Settings provides a separate opt-in action and can
+  restore the previous default handlers while XHelpers Pro still owns them.
+- Adds Music & Playlists for browsing and playing songs made available through
+  Apple Music and for creating private playlists owned by XHelpers Pro. Apple
+  Music access is requested only after you choose Connect, never at launch, and
+  the feature does not create or change playlists in Music.app. Provider-safe
+  live queues can be extended, replaced, or explicitly saved as a new XHelpers
+  Pro playlist.
+- Adds Local Audio playlists and a private on-Mac index for only the files and
+  folders you select, with source reauthorization, missing-file repair, and
+  separate delete/reset controls that never change the original audio files.
+- Adds Local Video to Music & Playlists: a private on-Mac index of only the
+  video files and folders you select, with its own sources, missing-video
+  repair, source reauthorization, and a separate delete control. It obeys the
+  same source-authorization and deletion rules as Local Audio and never changes
+  the original video files. Choosing a video plays it in Quick Video, and a
+  Quick Video queue can be saved as a Local Video playlist.
+- Stores Music & Playlists data in XHelpers Pro's private, size-bounded local
+  SQLite database with up to three daily recovery snapshots. Successful
+  provider-data deletion or full reset clears all Music & Playlists recovery
+  snapshots and database recovery/journal files. The app declares
+  file-timestamp access for user-selected files and directories under Apple's
+  required privacy-manifest reason 3B52.1.
+- Adds Extract Audio for pulling the soundtrack out of videos into new M4A
+  (AAC or Apple Lossless), MP3, or WAV files, or copying AAC, Apple Lossless,
+  and PCM tracks without re-encoding. Videos are never modified and outputs
+  never overwrite existing files. MP3 output uses the bundled LAME encoder
+  library, disclosed in the third-party notices.
+- Adds Quick Video, a small floating player for the formats QuickTime plays
+  (MP4, MOV, M4V, 3GP), with speed, loop, always-on-top, frame stepping, and
+  Picture in Picture. Any frame can be opened in Image Tools, added to the
+  Screen Shelf, or copied, and the file can be sent straight to Extract
+  Audio. Live Subtitles can run on the video being played, taken from the
+  player's own audio and pinned to the player window. Video types
+  are offered in Open With without taking over defaults; unsupported files
+  are handed to your default video app.
+- Gives Quick Video a playback queue in the same list Quick Audio uses.
+  Dropping files, Open Video…, and Open With add to the queue of the player
+  you are already using instead of opening one window per file; rows can be
+  reordered, played next, or removed, loop is now off, one, or all, and New
+  Player Window starts a second, independent queue. The queue exists only
+  while that window is open and is never saved.
+- Gives Quick Video the Audio Player's audio effects. Audio Effects… in the
+  player's options menu opens the same panel, over the same settings kept per
+  output device, so adjusting the chain in either place applies to both. A
+  video's audio is processed as it plays, and Live Subtitles hear what you
+  hear.
+- Gives both players the same queue controls: Shuffle, Repeat off, one, or
+  all, and Play Next, which moves the rows you picked directly behind the one
+  that is playing. Shuffle deals a fresh order each time you turn it on and
+  skips a row it cannot play, exactly as the queue does.
+- Brings the Audio Player's features out of the ⋯ menu. Shuffle, Repeat,
+  Audio Effects, Live Subtitles, and Add to Queue are now buttons under the
+  transport, each showing its own state: shuffle and repeat light up while they
+  are on, repeat says whether it is the whole queue or one song, Audio Effects
+  lights up while the output you are listening on has effects applied, and Live
+  Subtitles lights up while it is running for the player. The row stays in
+  place with an empty queue, so adding files, shuffle, repeat, and the effects
+  chain are still one click away, and the window is no taller than before. The
+  ⋯ menu keeps the rarer things: Play Audio…, Audio Player Settings…, Reveal
+  Current File in Finder, and Clear Queue.
+- Lets a live queue hold local audio and local video together. Songs play in
+  Quick Audio and videos in Quick Video, so a mixed list keeps the music where
+  it belongs and opens the picture where you can see it. Apple Music and
+  YouTube still keep a queue of their own, and Music & Playlists now says so
+  on Add to Queue before you press it rather than in a sheet afterwards.
+  Saved playlists still hold one kind of item.
+- Offers the same media actions wherever an item appears. Extract Audio, Open
+  Frame in Image Tools, Add Frame to Screen Shelf, Copy Frame, and Live
+  Subtitles are decided in one place and shown by both player toolbars, the
+  queue rows, and the Music & Playlists rows, each offering only what that item
+  can really do: no Extract Audio for a song, no frame actions for a row that
+  is not on screen, and Live Subtitles only for what is playing.
+- Runs Live Subtitles for a video on the player's own audio inside XHelpers
+  Pro instead of tapping this app's audio process, so a video from your own
+  library can be subtitled with nothing else listened to. Browser audio still
+  uses the process capture it always did, and the subtitles overlay is still
+  pinned to the player window. Subtitle text, captured frames, and queues are
+  still never saved.
+- Adds Image Tools for straightforward resize, crop, rotate, flip, markup,
+  redaction, format conversion, metadata choices, and bounded batch output.
+- Adds Capture to Clipboard and Capture & Mark Up to the existing Screen Tools
+  selector, keeping captures in memory until an explicit destination is chosen.
+- Expands local health guidance into Why Is My Mac Slow?, combining plain-
+  language CPU, memory, startup-volume, and thermal evidence with safe actions.
+- Adds PDF Quick Actions for combining PDFs, organizing pages, extracting or
+  splitting pages, and creating PDFs from images, with a PDF-only Finder action.
+- Adds Startup & Background Inspector for reviewing login items and background
+  agents with direct System Settings guidance.
+- Retains the existing opt-in memory monitoring engine as part of Mac Health's
+  broader local slowdown evidence.
+- Adds Text Tools and a first-class Text Editor for plain text and Markdown,
+  including split/preview layouts, syntax highlighting, and text-size controls.
+- Adds private, on-device Live Translated Subtitles for selected browser audio,
+  with speaker-aware cues and fullscreen tracking on macOS 26.4 or later.
+- Expands file and Markdown viewing with multiple windows, large-text, binary,
+  hexadecimal, and persistent text-size support.
+- Reorganizes the menu bar into a compact two-column layout with keyboard
+  access to its submenus and clearer utility and screen-tool groups.
+- Improves Window Recall activation/focus verification and keeps Snap & Arrange
+  state current, keyboard-accessible, and stable after submenu refreshes.
+- Improves subtitle placement across fullscreen Spaces and stabilizes speaker
+  colors, source lines, and translated cues.
+
+## Initial 1.0.0 Highlights
+
+- Introduces XHelpers Pro as the direct-download flagship Mac utility app.
+- Includes display tools for mirrored MacBook display blackout, brightness,
+  contrast, dim-until-key-press, and keyboard backlight control.
+- Adds optional Auto Wi-Fi Switch for saved Wi-Fi networks, with signal
+  threshold controls and local-only Wi-Fi scanning.
+- Adds Finder context menu actions for creating files and folders, pasting
+  copied items, copying paths, and opening Finder selections in configured apps
+  such as TextEdit, Terminal, Codex, Claude, or VSCode.
+- Adds local Safe archive actions for encrypting selected files or folders into
+  a `.safe` file, adding items to an existing Safe, and decrypting Safes back to
+  local folders.
+- Lets users configure the default terminal, default editor, enabled Finder
+  menu items, saved folder grants, Full Disk Access guidance, and copy-path
+  escaping.
+- Ships with a new XHelpers Pro icon and Sparkle update support.
+
+## Install
+
+1. Open the DMG.
+2. Drag `XHelpers Pro.app` onto `Applications`.
+3. Open XHelpers Pro from Applications.
+
+The app appears in the macOS menu bar.
+
+## Compatibility
+
+Compatibility note: this direct-download app uses macOS capabilities that may
+not be suitable for a Mac App Store build and may change in future macOS
+updates.
 
 Requires macOS 14.0 or later.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.3/XHelpersPro-1.0.3-11-macOS.dmg" length="76573295" type="application/octet-stream" sparkle:edSignature="nB9usHWLFACat278AVfdfOtscOSkNy7jchW/v3biRSU/W/DUf9QKoHjz9fnX+Nm6gjFs94851ny6/VQghAkNDQ=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.5/XHelpersPro-1.0.5-13-macOS.dmg" length="84590445" type="application/octet-stream" sparkle:edSignature="0Im2ceVKsJOd9iWoLGWb6+gSDnZLww5jr9aZPb5g2DYPwSO8pI89S4y5+WKxtEBl6pA7l4Qm6bu+cze+UCXaAA=="/>
         </item>
     </channel>
 </rss>
