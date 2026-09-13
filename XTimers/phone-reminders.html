@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XTimers by Xintech LLC Phone Reminder Terms</title>
+  <link rel="stylesheet" href="assets/flexible-timers/page.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+<script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script>
+  <link rel="canonical" href="https://xintechllc.com/XTimers/phone-reminders.html">
+</head>
+<body>
+  <main>
+    <h1>XTimers by Xintech LLC Phone Reminder Terms</h1>
+
+    <p>
+      These terms cover automated phone reminders provided by XTimers,
+      operated by Xintech LLC. The feature requires a compatible app, an
+      available service, and your own verified XTimers phone contact. Xin
+      Account sign-up requires an email address. Adding a phone contact does
+      not create a phone-only account or enable phone sign-in. XTimers does not
+      make marketing calls or let users place reminder calls to arbitrary
+      third-party recipients. Consent is not a condition of purchase.
+    </p>
+
+    <h2>Your Verified Contact and Independent Permissions</h2>
+    <p>
+      XTimers uses one verified phone contact for your phone reminders. You
+      explicitly request an SMS verification code to establish control of that
+      number. Requesting or completing verification does not grant permission
+      for automated SMS reminders or calls. Each reminder channel has its own
+      permission control, which is not pre-selected, and its own disclosure.
+      Enabling SMS reminders does not enable calls, and enabling calls does not
+      enable SMS reminders. A valid existing SMS grant for the same verified
+      contact remains an SMS grant only.
+    </p>
+
+    <h2>Call Destinations and Caller Number</h2>
+    <p>
+      Reminder calls are limited to supported personal phone numbers in the
+      USA and Canada that you own and can verify by SMS. A +1 prefix alone does
+      not establish eligibility. XTimers checks destination support and may
+      decline unsupported or unavailable destinations. Calls originate only
+      from <a href="tel:+18888856365">+1 (888) 885-6365</a>. SMS destination
+      support is determined separately; the call region restriction does not
+      expand or narrow SMS availability.
+    </p>
+
+    <h2 id="call-consent">Call Reminder Consent</h2>
+    <p>
+      Before enabling calls, the app shows the call disclosure and links to
+      these terms and the <a href="privacy.html">Privacy Policy</a>. The
+      English disclosure for policy version
+      <code>call-reminders-2026-09-13</code> is:
+    </p>
+    <p class="quote">
+      I agree to receive automated reminder calls from XTimers by Xintech LLC
+      at this verified phone number for reminders I schedule for myself. Calls
+      use an automated voice to read my reminder text after I press 1. My
+      reminder text is shared with the call provider for delivery. Press 9 to
+      stop phone reminders. Consent is not a condition of purchase. XTimers
+      does not make marketing calls.
+    </p>
+    <p>
+      XTimers may display a localized disclosure and records the exact wording
+      you accepted. SMS reminder consent is described in the
+      <a href="sms-terms.html">SMS Terms</a>. Ordinary carrier charges may apply.
+    </p>
+
+    <h2>What Happens During a Call</h2>
+    <p>
+      A call first identifies XTimers and asks you to press 1 before it reads
+      your reminder. The initial greeting does not contain your private
+      reminder text. If nobody presses 1, XTimers does not read the reminder
+      into voicemail. Pressing a key is a privacy step, not identity
+      authentication: anyone who answers your phone and presses 1 can hear
+      the reminder.
+    </p>
+    <p>
+      After the reminder, press 1 to acknowledge it, press 2 for one repeat
+      within the same call, or press 9 to stop automated phone reminders.
+      Pressing 9 is also available before the reminder is read. XTimers does
+      not record or transcribe your call audio. The call provider processes
+      your phone number and reminder text to place the call and generate the
+      automated voice, and returns delivery and keypad-action metadata.
+    </p>
+
+    <h2>One Attempt and Timely Delivery</h2>
+    <p>
+      Each scheduled reminder occurrence allows at most one outbound call
+      attempt. XTimers does not automatically redial a busy or unanswered call
+      or use SMS as an automatic fallback. A call that cannot start within two
+      minutes of its scheduled time expires as missed. Enabling calls later,
+      restoring service, or reconnecting a phone does not replay expired,
+      canceled, or previously attempted occurrences. If you want another
+      attempt, deliberately schedule a new reminder.
+    </p>
+    <p>
+      Calls depend on service, network, carrier, and destination availability.
+      A call already submitted to the provider may still arrive after a
+      reminder is canceled, a permission is revoked, or a phone is removed.
+      XTimers applies later changes to any remaining call interaction where
+      possible; it cannot guarantee recall of an attempt already in progress.
+    </p>
+
+    <h2>Change or Remove Your Phone</h2>
+    <p>
+      Turning off one reminder permission in the app revokes that channel only;
+      the verified contact and your other permission remain. Starting a phone
+      replacement keeps the existing contact and permissions until the new
+      number is successfully verified and the replacement is confirmed.
+      Canceling verification or a requested sign-in check does not remove the
+      working contact. Selecting the same verified number leaves it unchanged.
+    </p>
+    <p>
+      Removing or replacing the contact revokes both reminder permissions and
+      invalidates pending reminders tied to the previous contact. Re-adding
+      the same number requires verification and new reminder grants. Re-enabling
+      a permission does not restore old reminders. Contact changes do not erase
+      provider suppression or the retained record of prior consent and opt-out.
+    </p>
+
+    <h2>Stop Both Automated Phone Reminder Channels</h2>
+    <p>
+      Press 9 during an XTimers reminder call, or reply STOP to an XTimers SMS,
+      to stop both automated calls and SMS reminders for the contact. This
+      external opt-out applies to both channels even though the app's channel
+      controls are independent. SMS STOP may also cause the provider to block
+      requested verification codes. Removing or re-adding the phone does not
+      bypass the block.
+    </p>
+    <p>
+      For the toll-free SMS number, reply START or UNSTOP to request removal of
+      a provider SMS block. A provider confirmation does not grant XTimers
+      reminder permission. Review and explicitly enable each desired channel
+      in the app after availability is restored. Old reminders remain canceled
+      or missed. Reply HELP for SMS help or visit
+      <a href="support.html">XTimers Support</a> if availability remains blocked.
+    </p>
+
+    <h2>Consent and Delivery Records</h2>
+    <p>
+      XTimers retains verification evidence and separate SMS and call consent
+      records, including the purpose, exact displayed disclosure, policy
+      version, terms and privacy links, app source, timestamps, and contact
+      version to which a grant applied. Revocations, contact changes, provider
+      opt-outs, scheduled occurrences, and call attempt outcomes may also be
+      retained for operation, troubleshooting, abuse prevention, and compliance.
+      Removing a phone does not delete this historical evidence. XTimers does
+      not sell or share phone numbers or reminder consent for third-party
+      marketing. See the <a href="privacy.html">Privacy Policy</a> for
+      processing, retention, and deletion details.
+    </p>
+
+    <p>Last updated: September 13, 2026.</p>
+    <footer>
+      <div>© 2026 Xintech LLC. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a>
+        <a href="sms-terms.html">SMS Terms</a>
+        <a href="sms-opt-in.html">Phone Verification and Consent</a>
+        <a href="phone-reminders.html">Phone Reminders</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
