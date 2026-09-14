@@ -104,7 +104,7 @@
       <div class="support-main">
         <section class="support-section" id="overview">
           <h1>XHelpers Pro 隱私政策</h1>
-          <p class="effective-date">生效日期：2026-09-04</p>
+          <p class="effective-date">生效日期：2026-09-13</p>
           <p>XHelpers Pro 是一款以本機處理為優先的 macOS 選單列工具。本政策的網頁版本可在 <a class="text-link" href="../privacy.html">https://xintechllc.com/XHelpersPro/privacy.html</a> 查看。</p>
           <p class="notice" data-legal-translation="full-v1">本譯文僅為方便閱讀而提供。僅在適用法律允許的範圍內，以<a class="text-link" href="../privacy.html" hreflang="en">英文版本</a>為準；強制性的當地消費者權利不受影響。</p>
         </section>
@@ -182,7 +182,14 @@
           <p>「音樂與播放列表」是由使用者開啟的獨立功能。開啟此功能或啟動 XHelpers Pro 都不會提示取得 Apple Music 存取權。只有在您明確選擇「連接 Apple Music 資料庫」後，XHelpers Pro 才會要求該權限。如果您授權存取，Apple 的 MusicKit 可讓 App 瀏覽 Apple 在您的資料庫中提供的歌曲、解析所選歌曲，並透過 MusicKit 播放服務進行播放。MusicKit 和 Apple 可能會依照 Apple 的條款處理網路或帳號資料；XHelpers Pro 不會將您的 Apple Music 資料庫或聆聽活動傳送給 Xintech LLC。</p>
           <p>在「音樂與播放列表」中建立的播放列表屬於 XHelpers Pro，並儲存在這部 Mac 上的私密 SQLite 資料庫中。此資料庫儲存播放列表名稱和順序、Apple Music 媒體識別碼和參照，以及有限快取的標題、藝人、專輯、持續時間、解析度和可用性中繼資料。XHelpers Pro 不會在「音樂」App 中建立、重新命名、重新排序、修改或刪除播放列表，也不會以其他方式變更您的 Apple Music 資料庫。</p>
           <p>在一般使用期間，私密儲存空間最多保留三個每日 SQLite 復原快照。在這些快照輪替或清除之前，其中可能暫時保留先前的播放列表、書籤、路徑、媒體識別碼和參照，以及快取或已建立索引的中繼資料。</p>
-          <p>音訊播放器的即時佇列在同一時間只包含 Apple Music 或只包含本機音訊，並在該播放器工作階段期間保留於記憶體中。播放器關閉或 App 結束時會捨棄佇列，除非您明確選擇「將佇列儲存為播放列表」。儲存操作會建立一個屬於 XHelpers Pro 的新播放列表，並將所選媒體參照持久儲存在私密 SQLite 資料庫中；「音樂」App、您的 Apple Music 資料庫和原始音訊檔案仍不會被變更。</p>
+          <p>音訊播放器佇列可以混合不同來源的內容。佇列保留在記憶體中，直到播放器關閉或 App 結束。儲存播放列表會將名稱、順序及媒體參照存入 XHelpers Pro 的私有資料庫，不會更改原始檔案或供應商的資料庫。</p>
+          <p>YouTube 項目將影片 ID 與有限的中繼資料存入 App 的私有資料庫。設定好的 YouTube Data API 存取用於取得中繼資料及匯入公開播放列表；快取的供應商中繼資料會在 30 天內更新或刪除。App 內播放使用可見的 YouTube 嵌入式播放器及非持續性網頁資料儲存空間。Chrome 播放使用下文所述的擴充功能。兩種方式都會連線至 YouTube/Google，並遵循其條款與隱私權政策。App 不會下載影片或擷取音訊。刪除 YouTube 資料會移除 App 儲存的參照與中繼資料，不會刪除 YouTube 上的內容。</p>
+          <p>XHelpers Pro Browser Bridge 由 Xintech LLC 提供，用於將 Mac App 中 Music &amp; Playlists 的佇列連接到 Chrome 中的 YouTube。</p>
+          <p>擴充功能會處理其管理的影片 ID 與 URL、分頁與視窗 ID、播放位置、長度、音量、靜音狀態、播放狀態、可見性及廣告狀態訊號。指令、播放狀態及工作階段識別碼在 Chrome 與 Mac App 內建的輔助程式之間於本機傳遞。擴充功能不會讀取密碼、Cookie 或完整瀏覽紀錄，也不會控制無關分頁。</p>
+          <p>播放工作階段資料保留在 Chrome 的工作階段儲存空間中，直到工作階段結束或 Chrome 重新啟動。播放器視窗的大小與位置保留在擴充功能的本機儲存空間中，直到您解除安裝擴充功能。Mac App 會短暫記住先前使用中的 App，以便還原焦點；這項識別資訊不會傳送給 Chrome。</p>
+          <p>擴充功能不含分析工具、廣告追蹤器或由發布者託管的中繼伺服器，也不販售資料。播放影片會直接連線至 YouTube/Google，其各自的帳戶、Cookie、廣告及隱私權處理方式隨之適用。</p>
+          <p>關閉 Chrome 播放器會結束其播放工作階段。您可以為接下來的 YouTube 影片選擇在 App 內播放。解除安裝擴充功能會清除其儲存空間，但不會刪除 App 播放列表、Chrome 歷史紀錄或 YouTube 帳戶資料。請透過 XHelpers Pro 中的刪除 YouTube 資料功能，另行管理已儲存的 YouTube 資料。</p>
+          <p>擴充功能僅將資料用於已揭露的瀏覽器連線及播放功能。其對使用者資料的使用與傳輸遵守 Chrome Web Store User Data Policy，包括 Limited Use 要求。</p>
           <p>本機音訊只會建立您明確選取之個別音訊檔案和資料夾的索引；不會掃描您的整個個人專屬資料夾、整個已裝載卷宗或 Apple Music 資料庫。私密 SQLite 資料庫會儲存所選來源的書籤和最後已知路徑、檔案參照和名稱、格式、大小、內容修改時間、已建立索引的標籤、來源和可用性狀態，以及屬於 XHelpers Pro 的本機播放列表。系統只會讀取您所選檔案和目錄的檔案時間，以便 App 建立索引、重新整理和修復這些來源；此用途已在 App 隱私權資訊清單中按 Apple 要求的原因 3B52.1 進行聲明。檔案提供者或已裝載卷宗的擷取仍可能由 macOS 管理。XHelpers Pro 絕不會刪除或變更原始音訊檔案。</p>
           <p>Local Video 只索引你明確選擇的個別影片檔案和資料夾，並完全遵循上文 Local Audio 的規則：它絕不會掃描整個個人專屬資料夾或整個已掛載的卷宗，私人 SQLite 資料庫只儲存所選來源的書籤和最後已知路徑、檔案參照、一次檢查從每個檔案讀取的資訊（畫面尺寸、影格速率、編解碼器、是否有音軌），以及歸 XHelpers Pro 所有的影片播放列表。選擇某部影片會在 Quick Video 中開啟它，其佇列保留在記憶體中並隨視窗一起捨棄，除非你明確將其儲存為播放列表；儲存時會將所選檔案作為 Local Video 來源匯入，讓播放列表持續可用，該佇列中的其他內容一概不會寫入。「刪除 Local Video 資料」會移除 XHelpers Pro 的影片播放列表、來源書籤、已建立索引的中繼資料和檔案參照，而不會刪除或更改原始影片檔案。</p>
           <p>「中斷 Apple Music 資料庫連線」會停止連線，但不會刪除 XHelpers Pro 儲存的播放列表。「刪除 Apple Music 資料」會移除 XHelpers Pro 中的 Apple Music 播放列表、項目、參照和快取中繼資料，而不會從「音樂」App 或您的 Apple Music 資料庫中刪除歌曲或播放列表。「刪除本機音訊資料」會移除 XHelpers Pro 的本機播放列表、來源書籤、已建立索引的中繼資料和檔案參照，而不會觸碰原始檔案。「重設音樂與播放列表」會執行上述兩項刪除操作，並中斷 Apple Music 連線。這些控制項位於「音樂與播放列表」選項中。上述任何刪除或重設操作成功完成後，XHelpers Pro 會移除所有「音樂與播放列表」復原快照，包括含有另一提供者資料的快照，並清除 SQLite 復原檔案和日誌檔案、壓縮可重複使用的儲存空間。</p>
