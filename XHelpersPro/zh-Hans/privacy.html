@@ -104,7 +104,7 @@
       <div class="support-main">
         <section class="support-section" id="overview">
           <h1>XHelpers Pro 隐私政策</h1>
-          <p class="effective-date">生效日期：2026-09-04</p>
+          <p class="effective-date">生效日期：2026-09-13</p>
           <p>XHelpers Pro 是一款以本地处理为优先的 macOS 菜单栏实用工具。本政策的网页版本可在 <a class="text-link" href="../privacy.html">https://xintechllc.com/XHelpersPro/privacy.html</a> 查看。</p>
           <p class="notice" data-legal-translation="full-v1">本译文仅为方便阅读而提供。仅在适用法律允许的范围内，以<a class="text-link" href="../privacy.html" hreflang="en">英文版本</a>为准；强制性的当地消费者权利不受影响。</p>
         </section>
@@ -182,7 +182,14 @@
           <p>“音乐与播放列表”是一项由用户打开的独立功能。打开该功能或启动 XHelpers Pro 都不会提示获取 Apple Music 访问权限。只有当您明确选择“连接 Apple Music 资料库”后，XHelpers Pro 才会请求该权限。如果您授权访问，Apple 的 MusicKit 可让 App 浏览 Apple 在您的资料库中提供的歌曲、解析所选歌曲，并通过 MusicKit 播放服务进行播放。MusicKit 和 Apple 可能会依据 Apple 的条款处理网络或帐户数据；XHelpers Pro 不会将您的 Apple Music 资料库或收听活动发送给 Xintech LLC。</p>
           <p>在“音乐与播放列表”中创建的播放列表归 XHelpers Pro 所有，并存储在这台 Mac 上的私密 SQLite 数据库中。该数据库存储播放列表名称和顺序、Apple Music 媒体标识符和引用，以及有限缓存的标题、艺人、专辑、时长、分辨率和可用性元数据。XHelpers Pro 不会在“音乐”App 中创建、重命名、重新排序、修改或删除播放列表，也不会以其他方式更改您的 Apple Music 资料库。</p>
           <p>在正常使用期间，私密存储最多保留三个每日 SQLite 恢复快照。在这些快照轮换或清除之前，其中可能暂时保留先前的播放列表、书签、路径、媒体标识符和引用，以及缓存或已索引的元数据。</p>
-          <p>音频播放器的实时队列在同一时间只包含 Apple Music 或只包含本地音频，并在该播放器会话期间保留在内存中。播放器关闭或 App 退出时会丢弃队列，除非您明确选择“将队列存储为播放列表”。存储操作会创建一个归 XHelpers Pro 所有的新播放列表，并将所选媒体引用持久保存在私密 SQLite 数据库中；“音乐”App、您的 Apple Music 资料库和原始音频文件仍不会发生更改。</p>
+          <p>音频播放器队列可以混合不同来源的内容。队列保留在内存中，直到播放器关闭或应用退出。保存播放列表会将名称、顺序和媒体引用存入 XHelpers Pro 的私有数据库，不会更改原始文件或提供商的资料库。</p>
+          <p>YouTube 条目将视频 ID 和有限的元数据存入应用的私有数据库。配置好的 YouTube Data API 访问用于获取元数据和导入公开播放列表；缓存的提供商元数据会在 30 天内更新或删除。应用内播放使用可见的 YouTube 嵌入式播放器及非持久性网页数据存储。Chrome 播放使用下文所述的扩展。两种方式都会连接 YouTube/Google，并遵循其条款和隐私政策。应用不会下载视频或提取音频。删除 YouTube 数据会移除应用保存的引用和元数据，不会删除 YouTube 上的内容。</p>
+          <p>XHelpers Pro Browser Bridge 由 Xintech LLC 提供，用于将 Mac 应用中 Music &amp; Playlists 的队列连接到 Chrome 中的 YouTube。</p>
+          <p>扩展会处理受其管理的视频 ID 和 URL、标签页与窗口 ID、播放位置、时长、音量、静音状态、播放状态、可见性及广告状态信号。命令、播放状态及会话标识符在 Chrome 与 Mac 应用内置的辅助程序之间本地传递。扩展不会读取密码、Cookie 或完整浏览记录，也不会控制无关标签页。</p>
+          <p>播放会话数据保留在 Chrome 的会话存储中，直到会话结束或 Chrome 重新启动。播放器窗口的大小和位置保留在扩展的本地存储中，直到您卸载扩展。Mac 应用会短暂记住之前处于活动状态的应用，以便恢复焦点；此标识信息不会发送给 Chrome。</p>
+          <p>扩展不含分析工具、广告跟踪器或由发布者托管的中继服务器，也不出售数据。播放视频会直接连接 YouTube/Google，其各自的账户、Cookie、广告及隐私处理方式随之适用。</p>
+          <p>关闭 Chrome 播放器会结束其播放会话。您可以为后续 YouTube 视频选择在应用内播放。卸载扩展会清除其存储，但不会删除应用播放列表、Chrome 历史记录或 YouTube 账户数据。请通过 XHelpers Pro 中的删除 YouTube 数据功能，单独管理已保存的 YouTube 数据。</p>
+          <p>扩展仅将数据用于已披露的浏览器连接和播放功能。其对用户数据的使用和传输遵守 Chrome Web Store User Data Policy，包括 Limited Use 要求。</p>
           <p>本地音频只会索引您明确选择的单个音频文件和文件夹；不会扫描您的整个个人文件夹、整个已装载的卷或 Apple Music 资料库。私密 SQLite 数据库存储所选来源的书签和最后已知路径、文件引用和名称、格式、大小、内容修改时间、已索引标签、来源和可用性状态，以及归 XHelpers Pro 所有的本地播放列表。系统只会读取您所选文件和目录的文件时间，以便 App 索引、刷新和修复这些来源；此用途已在 App 隐私清单中按 Apple 要求的原因 3B52.1 进行声明。文件提供程序或已装载卷的检索仍可能由 macOS 管理。XHelpers Pro 绝不会删除或更改原始音频文件。</p>
           <p>Local Video 只索引你明确选择的单个视频文件和文件夹，并完全遵循上文 Local Audio 的规则：它绝不会扫描整个个人文件夹或整个已挂载的宗卷，私有 SQLite 数据库只存储所选来源的书签和最后已知路径、文件引用、一次检查从每个文件读取的信息（画面尺寸、帧率、编解码器、是否有音轨），以及归 XHelpers Pro 所有的视频播放列表。选择某个视频会在 Quick Video 中打开它，其队列保留在内存中并随窗口一起丢弃，除非你明确将其存储为播放列表；存储时会将所选文件作为 Local Video 来源导入，以便播放列表持续可用，该队列中的其他内容一概不会写入。“删除 Local Video 数据”会移除 XHelpers Pro 的视频播放列表、来源书签、已索引的元数据和文件引用，而不会删除或更改原始视频文件。</p>
           <p>“断开 Apple Music 资料库连接”会停止连接，但不会删除 XHelpers Pro 存储的播放列表。“删除 Apple Music 数据”会移除 XHelpers Pro 中的 Apple Music 播放列表、项目、引用和缓存元数据，而不会从“音乐”App 或您的 Apple Music 资料库中删除歌曲或播放列表。“删除本地音频数据”会移除 XHelpers Pro 的本地播放列表、来源书签、已索引元数据和文件引用，而不会触碰原始文件。“重置音乐与播放列表”会执行上述两项删除操作，并断开 Apple Music 连接。这些控制项位于“音乐与播放列表”选项中。上述任一删除或重置操作成功完成后，XHelpers Pro 会移除所有“音乐与播放列表”恢复快照，包括含有另一提供方数据的快照，并清除 SQLite 恢复文件和日志文件、压缩可重复使用的存储。</p>
