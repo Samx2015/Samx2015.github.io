@@ -190,6 +190,7 @@
   .pvg-input .pvg-shots figure { min-width: 0; }
   .pvg-input .nx-input-remapping { grid-column: 1 / -1; }
   .pvg-group.pvg-finder, .pvg-group.pvg-audio, .pvg-group.pvg-screen, .pvg-group.pvg-health { align-items: start; }
+  .pvg-audio .nx-audio-mixer-menu { grid-column: 1 / -1; }
   .pvg-screen .pvg-shots figure { min-width: 0; }
   .pvg-health .pvg-shots figure:last-child { grid-column: 1 / -1; }
   /* How to get it: one panel, the pitch and the button beside three compact steps. */
@@ -1004,6 +1005,24 @@
         </ul>
       </div>
       <div class="pvg-shots stack">
+        <figure class="nx-audio-mixer-menu">
+          <button class="nx-shot-button" type="button" aria-label="Enlarge: Per-app Audio Mixer" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <source type="image/webp" srcset="assets/refresh/shot-audio-mixer-menu.webp?v=20260917-0423">
+              <img src="assets/refresh/shot-audio-mixer-menu.png?v=20260917-0423" width="1588" height="142" loading="lazy" alt="Audio Mixer menu rows for XHelpers Pro, Google Chrome, Firefox and Music, with individual volume, audio effects and mute controls">
+            </picture>
+          </button>
+          <figcaption class="nx-shot-caption">Adjust volume and mute for each app from the menu bar.</figcaption>
+        </figure>
+        <figure>
+          <button class="nx-shot-button" type="button" aria-label="Enlarge: Per-app Audio Effects" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <source type="image/webp" srcset="assets/refresh/shot-audio-effects.webp?v=20260917-0423">
+              <img src="assets/refresh/shot-audio-effects.png?v=20260917-0423" width="944" height="1038" loading="lazy" alt="Audio Effects for Google Chrome with output selection, a Full &amp; Wide preset, bass, treble, stereo width, punch and loudness compensation">
+            </picture>
+          </button>
+          <figcaption class="nx-shot-caption">Tune bass, treble, stereo width, and punch for each app.</figcaption>
+        </figure>
         <figure>
           <button class="nx-shot-button" type="button" aria-label="Enlarge: Audio Mixer Settings" aria-haspopup="dialog" aria-controls="pvl-viewer">
             <picture>
