@@ -98,7 +98,7 @@
   .compact-hero .hero-subtitle { margin-bottom: 0; font-size: 1.12rem; }
   .compact-hero .hero-content {
     display: grid;
-    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); /* the menu shot takes 55%: owner direction 2026-09-16 */
     gap: clamp(1.5rem, 4vw, 3.5rem);
     align-items: center;
     padding-top: 0;
@@ -198,6 +198,20 @@
   .pvr-steps li:nth-child(3) strong { --step-color: #15813b; }
   .pvr-flow .compatibility-list { margin-top: 18px; }
 
+  /* Why it's good: three pillars over six audience tiles, one width with the cards. */
+  .nx-why-inner { width: min(100%, var(--wide-max)); margin-inline: auto; }
+  .nx-why h2, #release h2 { margin: 0 0 8px; font-size: clamp(1.6rem, 2.8vw, 2.2rem); font-weight: 500; color: var(--ink); text-wrap: balance; }
+  .nx-why-lede, .nx-release-lede { margin: 0 0 20px; max-width: 62ch; color: var(--muted); line-height: 1.6; }
+  .nx-pillars { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 0 0 14px; padding: 0; list-style: none; }
+  .nx-pillars li { padding: 18px 18px 16px; border: 1px solid var(--line); border-radius: 18px; background: var(--panel); box-shadow: var(--shadow); }
+  .nx-pillar-icon { display: inline-grid; place-items: center; width: 40px; height: 40px; margin-bottom: 10px; border-radius: 12px; color: var(--tint, var(--teal)); background: color-mix(in srgb, var(--tint, var(--teal)) 12%, transparent); }
+  .nx-pillars h3 { margin: 0 0 6px; font-size: 1.05rem; font-weight: 600; color: var(--ink); }
+  .nx-pillars p { margin: 0; font-size: 0.95rem; line-height: 1.55; color: var(--muted); }
+  .nx-benefits { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 0; padding: 0; list-style: none; }
+  .nx-benefits li { padding: 12px 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel-soft); font-size: 0.92rem; line-height: 1.45; color: var(--muted); }
+  .nx-benefits b { display: block; margin-bottom: 3px; font-weight: 600; color: var(--ink); }
+  .pvr-steps span b { font-weight: 600; color: var(--ink); }
+
   /* ---- nx layer: new for the refresh ---- */
   .nx-hero-shot { position: relative; margin: 0; }
   .nx-hero-frame {
@@ -296,6 +310,8 @@
   @media (max-width: 980px) {
     .compact-hero .hero-content { grid-template-columns: 1fr; }
     .pvr-steps { grid-template-columns: 1fr; }
+    .nx-pillars { grid-template-columns: 1fr; }
+    .nx-benefits { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .pvg-group { grid-template-columns: 1fr; }
     .pvg-group.nx-flip .pvg-copy { order: 0; }
     .pvg-shots { grid-template-columns: 1fr; }
@@ -309,6 +325,7 @@
     .pvh-chips { grid-template-columns: 1fr; }
     .nx-band-map { grid-template-columns: 1fr; }
     .nx-numbers-inner { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .nx-benefits { grid-template-columns: 1fr; }
     .nx-index-lists, .nx-index-wide .nx-index-lists { columns: 1; }
   }
   @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
@@ -828,78 +845,63 @@
     </div>
   </section>
 
-  <section class="section compact-section" id="why" aria-labelledby="why-title">
-    <div class="section-kicker">What's good about it?</div>
-    <div class="compact-split">
-      <div>
-        <h2 id="why-title">Less fuss at your desk.</h2>
-        <ul class="copy-points" aria-label="XHelpers Pro benefits">
-          <li>
-            <strong>One app instead of a dozen</strong>
-            <span>display, windows, Finder, input, audio, subtitles, screen capture, cleanup and document tools share one menu, one Permissions window and one update.</span>
-          </li>
-          <li>
-            <strong>Shows its work</strong>
-            <span>cleanup lists files before removing them, permissions show live status, and every tweak shows the setting that is saved right now.</span>
-          </li>
-          <li>
-            <strong>Helpful, not noisy</strong>
-            <span>runs from the menu bar without a Dock window, a required account, or analytics.</span>
-          </li>
-        </ul>
-      </div>
-      <div class="capability-list" aria-label="Key benefits">
-        <article>
-          <strong>For desk setups</strong>
-          <span>made for Macs that spend real time on external displays, keyboards, mice, speakers and changing networks</span>
-        </article>
-        <article>
-          <strong>For window speed</strong>
-          <span>global shortcuts handle layout, display moves, saved layouts, app focus and Rectangle conflict resolution</span>
-        </article>
-        <article>
-          <strong>For Finder and private files</strong>
-          <span>create, open, encrypt, decrypt and extract from the context menu you already use</span>
-        </article>
-        <article>
-          <strong>For a Mac that stays fast</strong>
-          <span>a verdict on slowness, a treemap of the disk, guided reclaim, and uninstalls that find every leftover</span>
-        </article>
-        <article>
-          <strong>For anything on screen or on disk</strong>
-          <span>text, codes, colors and pinned regions from a single drag; clipboard, Markdown, images and PDFs without five more apps</span>
-        </article>
-        <article>
-          <strong>For privacy</strong>
-          <span>no required account, no analytics, local processing for audio, subtitles and clipboard, and feedback that opens as a reviewable email draft</span>
-        </article>
-      </div>
+  <section class="section compact-section nx-why" id="why" aria-labelledby="why-title">
+    <div class="nx-why-inner">
+      <div class="section-kicker">Why it&rsquo;s good</div>
+      <h2 id="why-title">Less fuss at your desk.</h2>
+      <p class="nx-why-lede">One menu replaces a dozen small utilities, and every tool shows what it is about to do before it does it.</p>
+      <ul class="nx-pillars" aria-label="Three reasons">
+        <li>
+          <span class="nx-pillar-icon" style="--tint: #246bfe" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect></svg></span>
+          <h3>One app instead of a dozen</h3>
+          <p>Display, windows, Finder, input, audio, subtitles, screen capture, cleanup and document tools share one menu, one Permissions window and one update.</p>
+        </li>
+        <li>
+          <span class="nx-pillar-icon" style="--tint: #0f9f9a" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M10 6h11M10 12h11M10 18h11"></path><path d="M3 6l1.6 1.6L7.5 4.6"></path><path d="M3 12l1.6 1.6L7.5 10.6"></path><path d="M3 18l1.6 1.6L7.5 16.6"></path></svg></span>
+          <h3>Shows its work</h3>
+          <p>Cleanup lists files before removing them, permissions show their live status, and every tweak shows the setting that is saved right now.</p>
+        </li>
+        <li>
+          <span class="nx-pillar-icon" style="--tint: #7964e8" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M6.3 8.2A6 6 0 0 1 18 8c0 7 3 9 3 9H8"></path><path d="M6 8c0 5-1.2 7.3-2.2 8.5"></path><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"></path><path d="M3 3l18 18"></path></svg></span>
+          <h3>Helpful, not noisy</h3>
+          <p>It runs from the menu bar: no Dock window, no required account, no analytics.</p>
+        </li>
+      </ul>
+      <ul class="nx-benefits" aria-label="Who it is for">
+        <li><b>For desk setups</b><span>Made for Macs that spend real time on external displays, keyboards, mice, speakers and changing networks.</span></li>
+        <li><b>For window speed</b><span>Global shortcuts handle layouts, display moves, saved positions and app focus, with Rectangle conflicts resolved for you.</span></li>
+        <li><b>For Finder and private files</b><span>Create, open, encrypt, decrypt and extract from the context menu you already use.</span></li>
+        <li><b>For a Mac that stays fast</b><span>A verdict on slowness, a treemap of the disk, guided reclaim, and uninstalls that show every file they found.</span></li>
+        <li><b>For anything on screen or on disk</b><span>Text, codes, colors and pinned regions from a single drag; clipboard, Markdown, images and PDFs without five more apps.</span></li>
+        <li><b>For privacy</b><span>No required account, no analytics, local processing for audio, subtitles and clipboard, and feedback that opens as an email draft you read first.</span></li>
+      </ul>
     </div>
   </section>
 
   <section class="section compact-section compact-release" id="release" aria-labelledby="release-title">
-    <div class="section-kicker">How to get it</div>
     <div class="pvr-flow">
+      <div class="section-kicker">How to get it</div>
       <h2 id="release-title">Download it. It&rsquo;s free.</h2>
+      <p class="nx-release-lede">A direct download, developer signed and Apple notarized. Nothing to sign up for.</p>
       <ol class="steps compact-steps pvr-steps" aria-label="Install steps">
         <li>
           <strong>1</strong>
-          <span>Download the DMG &mdash; one app for Apple Silicon and Intel Macs.</span>
+          <span><b>Download the DMG.</b> One build runs on Apple silicon and Intel Macs.</span>
         </li>
         <li>
           <strong>2</strong>
-          <span>Drag XHelpers Pro to Applications and launch it. The Permissions window explains what each feature needs.</span>
+          <span><b>Drag it to Applications and launch it.</b> The Permissions window explains what each feature needs; grant only what you will use.</span>
         </li>
         <li>
           <strong>3</strong>
-          <span>Use every tool. XHelpers Pro is free for now: a free license activates it on this Mac. No account required.</span>
+          <span><b>Use every tool.</b> XHelpers Pro is free for now: a free license activates it on this Mac, and no account is required.</span>
         </li>
       </ol>
       <div class="compatibility-list" aria-label="Compatibility">
         <span>macOS 14.0 or later</span>
-        <span>arm64 + x86_64</span>
+        <span>Apple silicon + Intel</span>
         <span class="app-version">v1.0.7</span>
-        <span>Updates via Sparkle</span>
+        <span>Automatic updates</span>
       </div>
     </div>
     <div class="download-card" aria-label="Download call to action">
