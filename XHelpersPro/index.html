@@ -223,11 +223,13 @@
   .nx-hero-shot { position: relative; margin: 0; max-width: none; }
   .nx-hero-frame img { display: block; width: 100%; height: auto; }
   .nx-hero-stats { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-  .nx-hero-stats span {
+  .nx-hero-stats > span {
     display: inline-flex; align-items: baseline; gap: 6px; padding: 5px 11px; border-radius: 999px;
-    border: 1px solid var(--line); background: var(--panel-soft); color: var(--muted); font-size: 0.85rem;
+    border: 1px solid #d6e1f3; background: #f0f5fd; color: #486081; font-size: 0.82rem;
   }
-  .nx-hero-stats b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+  .nx-hero-stats b { color: #315991; font-weight: 650; font-variant-numeric: tabular-nums; }
+  .nx-hero-stats > .nx-hero-offer { border-color: #bfdfd5; background: #e9f6ef; color: #466e60; }
+  .nx-hero-offer b { color: #176a4c; }
 
   /* By the numbers: six exact counts from the app, each cited in the plan (4.8). */
   .nx-numbers { margin: 8px 0; padding: 0 var(--page-gutter); }
@@ -338,20 +340,37 @@
   #top:focus { outline: none; }
   .site-header { display: flex; gap: 18px; min-height: 85px; padding-block: 14px; }
   .site-header .brand, .site-header .header-actions { transform: none; }
-  .site-header .brand { flex: 0 0 auto; font-weight: 600; }
-  .site-header .brand img { width: 2.5rem; height: 2.5rem; }
+  .site-header .brand { flex: 0 0 auto; gap: 0.8rem; font-size: 1.25rem; font-weight: 650; letter-spacing: -0.025em; }
+  .site-header .brand img { width: 3rem; height: 3rem; }
+  .site-header .brand-platform { color: #14766f; font-weight: 550; }
   .site-header .header-actions { margin-left: auto; gap: 10px; }
   .site-header .header-cta { white-space: nowrap; min-height: 44px; }
   .language-menu summary { min-height: 44px; min-width: 44px; }
   .language-menu-list a { min-height: 44px; }
   .compact-hero { padding-block: 30px; }
   .compact-hero h1 { font-size: clamp(2.5rem, 3.7vw, 3rem); font-weight: 600; line-height: 1.08; letter-spacing: -0.035em; margin: 12px 0 20px; }
-  .compact-hero .hero-subtitle { max-width: 36ch; font-size: 1.15rem; line-height: 1.6; }
-
-
-
-
-  .nx-hero-note { margin: 18px 0 0; font-size: 0.86rem; color: var(--muted); }
+  .compact-hero .hero-subtitle {
+    display: grid; gap: 5px; max-width: 36ch; margin: 0;
+    font-size: clamp(1.2rem, 2vw, 1.3rem); font-weight: 600; line-height: 1.35; letter-spacing: -0.02em;
+  }
+  .pvh-benefit-power { color: #315dc3; }
+  .pvh-benefit-ease { color: #14766f; }
+  .pvh-benefit-yours {
+    margin-top: 3px; color: #765090;
+    font-family: ui-serif, Georgia, "Times New Roman", serif; font-style: italic; font-weight: 500;
+    font-size: clamp(1.45rem, 2.4vw, 1.65rem); line-height: 1.4; letter-spacing: -0.025em;
+  }
+  .pvh-benefit-yours em {
+    position: relative; display: inline-block; font-style: inherit; isolation: isolate;
+  }
+  .pvh-benefit-yours em::after {
+    content: ""; position: absolute; z-index: -1; left: -2px; right: -3px; bottom: 0.11em;
+    height: 0.19em; border-radius: 55% 35% 45% 30%; background: #ccece2; transform: rotate(-2deg);
+  }
+  .nx-hero-details { margin-top: 22px; padding-top: 15px; border-top: 1px solid #dce4e3; max-width: 25rem; }
+  .nx-hero-note { display: flex; flex-wrap: wrap; gap: 7px 16px; margin: 0; font-size: 0.82rem; color: #526968; }
+  .nx-hero-note > span { display: inline-flex; align-items: center; gap: 7px; }
+  .nx-hero-note svg { width: 15px; height: 15px; flex: 0 0 15px; color: #327c79; }
   .nx-numbers-inner { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .nx-feature-intro { width: min(100%, var(--wide-max)); margin: 28px auto 24px; }
   .nx-feature-intro h2 { margin: 6px 0 10px; font-size: clamp(1.65rem, 3vw, 2.3rem); font-weight: 500; color: var(--ink); }
@@ -445,8 +464,8 @@
 <a class="nx-skip" href="#top">Skip to content</a>
 <header class="site-header" aria-label="Primary">
   <a class="brand" href="#top" aria-label="XHelpers Pro for Mac home">
-    <img src="assets/refresh/app-icon.png?v=20260917-0423" alt="" width="40" height="40">
-    <span>XHelpers Pro for Mac</span>
+    <img src="assets/refresh/app-icon.png?v=20260917-0423" alt="" width="48" height="48">
+    <span>XHelpers Pro <span class="brand-platform">for Mac</span></span>
   </a>
   <div class="header-actions">
     <a class="header-cta" href="https://xintechdownloads.blob.core.windows.net/xhelperspro/XHelpersPro-macOS.dmg">
@@ -494,11 +513,20 @@
     <div class="hero-content">
       <div class="pvh-copy">
         <h1 id="hero-title">60+ Mac tools.<br>One menu bar.</h1>
-        <p class="hero-subtitle">Powerful tools. Everyday convenience. Your Mac, your way.</p>
-        <p class="nx-hero-note">Apple silicon + Intel · Signed and notarized</p>
-        <div class="nx-hero-stats" aria-label="At a glance">
-          <span><b>macOS 14</b> or later</span>
-          <span><b>Free</b> for a limited time</span>
+        <p class="hero-subtitle">
+          <span class="pvh-benefit-power">Powerful tools.</span>
+          <span class="pvh-benefit-ease">Everyday convenience.</span>
+          <span class="pvh-benefit-yours">Your Mac, <em>your way.</em></span>
+        </p>
+        <div class="nx-hero-details">
+          <p class="nx-hero-note">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="5" width="14" height="14" rx="3"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 2v3m6-3v3M9 19v3m6-3v3M2 9h3m-3 6h3m14-6h3m-3 6h3"/></svg>Apple silicon + Intel</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 8 3v6c0 4-5 7-8 9-3-2-8-5-8-9V6l8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>Signed and notarized</span>
+          </p>
+          <div class="nx-hero-stats" aria-label="At a glance">
+            <span><b>macOS 14</b> or later</span>
+            <span class="nx-hero-offer"><b>Free</b> for a limited time</span>
+          </div>
         </div>
       </div>
       <figure class="nx-hero-shot">
@@ -668,9 +696,7 @@
 
   <section class="section compact-section pvw" id="what" aria-labelledby="features-title">
     <div class="nx-feature-intro">
-      <p class="section-kicker">A few everyday favorites</p>
-      <h2 id="features-title">Start with what you need.</h2>
-      <p>Arrange your workspace, work with text and files, or keep an eye on your AI accounts.</p>
+      <h2 id="features-title">See what you can do.</h2>
       <nav class="pvh-chips" aria-label="Feature categories">
           <a href="#display-windows">Display &amp; Windows</a>
           <a href="#finder-safes-archives">Finder, Safes &amp; Archives</a>
