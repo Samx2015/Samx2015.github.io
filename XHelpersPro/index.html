@@ -76,16 +76,8 @@
 }
     </script>
 <style>
-  /* ------------------------------------------------------------------
-     Design study for the refreshed https://xintechllc.com/XHelpersPro/
-     homepage. It links a snapshot of the live site's styles.css and
-     carries the same inline "pv" layer the live index.html uses, plus a
-     small "nx" layer for the new sections. Every screenshot is a
-     placeholder from an older capture set (August 2026, single-column
-     menu era) or an empty-state draft; each one is ribboned. Empty
-     dashed boxes are shot slots with the content brief for the later
-     capture session. See Docs/XHelpersPro-Website-Refresh-Audit-And-Plan.md.
-     ------------------------------------------------------------------ */
+  /* Canonical English homepage source. The generator supplies release metadata
+     and asset paths. Keep unfinished captures in the design plan, not this page. */
 
   /* ---- pv layer (verbatim from the live index.html, chips widened) ---- */
   .pvw > .pvg-group { width: min(100%, var(--wide-max)); margin-inline: auto; }
@@ -184,12 +176,6 @@
   }
   .pvg-shots.stack img { width: 100%; max-height: none; }
   .pvg-shots figcaption { margin-top: 6px; color: var(--muted); font-size: 0.9rem; text-align: center; }
-  .pvl-overlay {
-    position: fixed; inset: 0; z-index: 999; display: grid; place-items: center; padding: 3vmin;
-    background: rgba(10, 16, 26, 0.82); backdrop-filter: blur(6px); cursor: zoom-out;
-  }
-  .pvl-overlay[hidden] { display: none; }
-  .pvl-overlay img { max-width: min(1500px, 96vw); max-height: 93vh; width: auto; height: auto; border-radius: 10px; box-shadow: 0 30px 90px rgba(0, 0, 0, 0.5); }
   /* How to get it: one panel, the pitch and the button beside three compact steps. */
   .nx-get-inner {
     width: min(100%, var(--wide-max)); margin-inline: auto; padding: 24px;
@@ -215,25 +201,7 @@
   .nx-get-steps li:nth-child(3) strong { --step-color: #15813b; }
   .nx-get-steps b { color: var(--ink); font-weight: 600; }
 
-  /* What to expect: three pillar cards washed with their icon's color, and six
-     audience tiles with icons, on the page background like every other section. */
-  .nx-why.section { padding-top: 2.4rem; padding-bottom: 2.6rem; }
-  .nx-why-inner { width: min(100%, var(--wide-max)); margin-inline: auto; }
-  .nx-why h2, #release h2 { margin: 0 0 8px; font-size: clamp(1.6rem, 2.8vw, 2.2rem); font-weight: 500; color: var(--ink); text-wrap: balance; }
-  .nx-why-lede { margin: 0 0 22px; max-width: 62ch; color: var(--muted); line-height: 1.6; }
-  .nx-pillars { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 0 0 14px; padding: 0; list-style: none; }
-  .nx-pillars li {
-    padding: 20px 20px 18px; border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow);
-    background: linear-gradient(180deg, color-mix(in srgb, var(--tint, var(--teal)) 9%, #fff), #fff 62%);
-  }
-  .nx-pillar-icon { display: inline-grid; place-items: center; width: 44px; height: 44px; margin-bottom: 12px; border-radius: 13px; color: #fff; background: var(--tint, var(--teal)); box-shadow: 0 6px 16px color-mix(in srgb, var(--tint, var(--teal)) 35%, transparent); }
-  .nx-pillars h3 { margin: 0 0 6px; font-size: 1.12rem; font-weight: 650; color: var(--ink); }
-  .nx-pillars p { margin: 0; font-size: 0.96rem; line-height: 1.55; color: var(--muted); }
-  .nx-benefits { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
-  .nx-benefits li { display: flex; gap: 12px; align-items: flex-start; padding: 14px 16px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); font-size: 0.93rem; line-height: 1.45; color: var(--muted); }
-  .nx-benefit-icon { display: inline-grid; place-items: center; flex: 0 0 auto; width: 36px; height: 36px; border-radius: 999px; color: var(--tint, var(--teal)); background: color-mix(in srgb, var(--tint, var(--teal)) 12%, transparent); }
-  .nx-benefits b { display: block; margin-bottom: 3px; font-weight: 600; color: var(--ink); }
-  .nx-benefits li > div > span { display: block; }
+  #release h2 { margin: 0 0 8px; font-size: clamp(1.6rem, 2.8vw, 2.2rem); font-weight: 500; color: var(--ink); text-wrap: balance; }
 
   /* ---- nx layer: new for the refresh ---- */
   .nx-hero-shot { position: relative; margin: 0; }
@@ -262,32 +230,6 @@
   .nx-numbers b { display: block; font-size: clamp(1.7rem, 2.8vw, 2.3rem); font-weight: 650; line-height: 1; color: var(--teal-dark); font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
   .nx-numbers span { display: block; margin-top: 7px; color: var(--muted); font-size: 0.86rem; line-height: 1.3; }
 
-  /* The menu-map card: the same white panel as the feature cards below it. */
-  .nx-band { margin: 8px 0; padding: 0 var(--page-gutter); color: var(--ink); }
-  .nx-band-inner {
-    width: min(100%, var(--wide-max)); margin-inline: auto; padding: 20px;
-    display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(20px, 3vw, 40px); align-items: center;
-    border: 1px solid var(--line); border-radius: 22px; background: var(--panel); box-shadow: var(--shadow);
-  }
-  .nx-band h2 { margin: 0 0 12px; font-size: clamp(1.5rem, 2.6vw, 2rem); font-weight: 500; color: var(--ink); text-wrap: balance; }
-  .nx-band p { margin: 0 0 16px; color: var(--muted); line-height: 1.6; }
-  .nx-band-map { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin: 0; padding: 0; list-style: none; }
-  .nx-band-map li { padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel-soft); font-size: 0.9rem; line-height: 1.4; color: var(--ink); }
-  .nx-band-map li b { display: block; color: var(--teal-dark); font-weight: 600; font-size: 0.8rem; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 3px; }
-
-  figure.nx-placeholder::after {
-    content: attr(data-note); position: absolute; top: 8px; left: 8px; z-index: 2;
-    padding: 3px 8px; border-radius: 6px; background: rgba(240, 200, 107, 0.95); color: #3b2f0b;
-    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; pointer-events: none;
-  }
-  .nx-slot {
-    display: grid; place-content: center; gap: 6px; min-height: 220px; padding: 16px; text-align: center;
-    border: 2px dashed color-mix(in srgb, var(--teal) 45%, var(--line)); border-radius: 10px;
-    background: repeating-linear-gradient(135deg, transparent 0 14px, rgba(11, 127, 124, 0.05) 14px 16px), var(--panel-soft);
-    color: var(--muted); font-size: 0.88rem; line-height: 1.45;
-  }
-  .nx-slot b { color: var(--teal-dark); font-weight: 700; letter-spacing: 0.06em; font-size: 0.75rem; text-transform: uppercase; }
-  .nx-slot span { max-width: 26ch; margin-inline: auto; }
   .pvg-group.nx-flip .pvg-copy { order: 2; }
   /* A full-width card for dense screenshots (owner: as clear as possible): copy on
      top with the bullets in two columns, the wide shot at the card's full width,
@@ -308,7 +250,6 @@
   .pvw-points li.nx-iconed::before, .pvg-privacy .pvw-points li.nx-iconed::before { display: none; }
   .pvw-points li b { font-weight: 600; color: var(--ink); }
   .pvw-points li .nx-ic-bullet { position: absolute; left: 0; top: -0.05em; width: 28px; height: 26px; object-fit: contain; }
-  .nx-band-map li b .nx-ic { width: 1.2em; height: 1.05em; vertical-align: -0.16em; }
 
   .nx-index { width: min(100%, var(--wide-max)); margin-inline: auto; }
   .nx-index h2 { margin: 0 0 6px; font-size: clamp(1.4rem, 2.4vw, 1.85rem); font-weight: 500; color: var(--ink); text-wrap: balance; }
@@ -319,7 +260,6 @@
   .nx-index-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
   .nx-index-group { padding: 16px 18px 12px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }
   .nx-index-group.nx-index-wide { grid-column: 1 / -1; }
-  .nx-index-group h4 { margin: 0 0 10px; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--teal-dark); }
   .nx-index-lists { columns: 2; column-gap: 22px; }
   .nx-index-wide .nx-index-lists { columns: 4; }
   .nx-index-group ul { margin: 0; padding: 0; list-style: none; }
@@ -345,13 +285,10 @@
     .compact-hero .hero-content { grid-template-columns: 1fr; }
     .nx-get-inner { grid-template-columns: 1fr; }
     .nx-wide .pvw-points { grid-template-columns: 1fr; }
-    .nx-pillars { grid-template-columns: 1fr; }
-    .nx-benefits { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .pvg-group { grid-template-columns: 1fr; }
     .pvg-group.nx-flip .pvg-copy { order: 0; }
     .pvg-shots { grid-template-columns: 1fr; }
     .pvg-shots img { max-height: 420px; }
-    .nx-band-inner { grid-template-columns: 1fr; }
     .nx-numbers-inner { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .nx-index-grid { grid-template-columns: 1fr; }
     .nx-index-wide .nx-index-lists { columns: 2; }
@@ -362,12 +299,133 @@
   }
   @media (max-width: 560px) {
     .pvh-chips { grid-template-columns: 1fr; }
-    .nx-band-map { grid-template-columns: 1fr; }
     .nx-numbers-inner { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .nx-benefits { grid-template-columns: 1fr; }
     .nx-index-lists, .nx-index-wide .nx-index-lists { columns: 1; }
   }
   @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+
+  /* Homepage navigation and disclosures: stable geometry before first paint. */
+  :root { --nx-header-height: 85px; }
+  html { scroll-padding-top: calc(var(--nx-header-height) + 18px); scrollbar-gutter: stable; }
+  [hidden] { display: none !important; }
+  .nx-skip { position: fixed; left: 16px; top: 12px; z-index: 1000; padding: 12px 18px; border-radius: 8px; color: #fff; background: var(--teal-dark); transform: translateY(-160%); }
+  .nx-skip:focus { transform: none; }
+  #top:focus { outline: none; }
+  .site-header { display: flex; gap: 18px; min-height: 85px; padding-block: 14px; }
+  .site-header .brand, .site-header .header-actions { transform: none; }
+  .site-header .brand { flex: 0 0 auto; }
+  .site-header .site-nav { margin-inline: auto; }
+  .site-header .header-actions { margin-left: auto; gap: 10px; }
+  .site-header .header-cta { white-space: nowrap; min-height: 44px; }
+  .language-menu summary { min-height: 44px; min-width: 44px; }
+  .language-menu-list a { min-height: 44px; }
+  .nx-explore { display: none; position: relative; }
+  .nx-explore > summary { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 12px; list-style: none; cursor: pointer; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); color: var(--ink); font-size: 0.9rem; }
+  .nx-explore > summary::-webkit-details-marker { display: none; }
+  .nx-explore-list { position: absolute; top: calc(100% + 8px); right: 0; display: grid; width: min(340px, calc(100vw - 32px)); max-height: calc(100dvh - 110px); overflow: auto; overscroll-behavior: contain; padding: 8px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); box-shadow: var(--shadow); }
+  .nx-explore-list a { display: flex; align-items: center; min-height: 44px; padding: 8px 12px; border-radius: 7px; color: var(--ink); font-size: 0.9rem; }
+  .nx-explore-list a:hover, .nx-explore-list a:focus-visible { background: var(--panel-muted); }
+  .compact-hero { padding-block: 30px; }
+  .compact-hero h1 { font-size: clamp(2.5rem, 4.5vw, 3.7rem); font-weight: 600; line-height: 1.08; letter-spacing: -0.035em; margin: 12px 0 20px; }
+  .compact-hero .hero-subtitle { max-width: 36ch; font-size: 1.15rem; line-height: 1.6; }
+  .nx-hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0 14px; }
+  .nx-hero-actions .button { min-height: 48px; }
+  .nx-secondary { color: var(--teal-dark); background: var(--panel); border: 1px solid var(--line); box-shadow: none; }
+  .nx-secondary:hover { background: var(--panel-muted); }
+  .nx-hero-note { margin: 0; font-size: 0.86rem; color: var(--muted); }
+  .nx-numbers-inner { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .nx-feature-intro { width: min(100%, var(--wide-max)); margin: 28px auto 24px; }
+  .nx-feature-intro h2 { margin: 6px 0 10px; font-size: clamp(1.65rem, 3vw, 2.3rem); font-weight: 500; color: var(--ink); }
+  .nx-feature-intro > p:not(.section-kicker) { max-width: 65ch; color: var(--muted); line-height: 1.6; }
+  .nx-feature-intro .pvh-chips { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-top: 22px; }
+  .pvh-chips > a { min-height: 44px; padding: 9px 12px; font-size: 0.84rem; line-height: 1.4; border-radius: 12px; box-shadow: none; }
+  .pvh-chips > a::before { flex: 0 0 7px; }
+  .pvg-shots.nx-single-shot { grid-template-columns: 1fr; }
+  .pvg-shots.nx-single-shot img { max-height: 460px; }
+  .pvg-group.nx-text-only { grid-template-columns: 1fr; }
+  .nx-text-only .pvw-points { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 28px; }
+  .nx-more-features { width: min(100%, var(--wide-max)); margin: 18px auto; border: 1px solid var(--line); border-radius: 18px; background: var(--panel-soft); }
+  .nx-more-features > summary { min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 18px 22px; list-style: none; cursor: pointer; font-size: 1.05rem; font-weight: 550; color: var(--teal-dark); }
+  .nx-more-features > summary::-webkit-details-marker { display: none; }
+  .nx-more-features > summary span { font-size: 1.5rem; }
+  .nx-more-features[open] > summary span { transform: rotate(45deg); }
+  .nx-more-content { padding: 0 12px 12px; }
+  .nx-more-content > article + article { margin-top: 18px; }
+  .nx-shot-button { position: relative; display: block; width: 100%; padding: 0; border: 1px solid var(--line); border-radius: 12px; background: var(--panel-soft); color: var(--ink); cursor: zoom-in; overflow: hidden; text-align: left; }
+  .nx-shot-button picture { display: block; }
+  .nx-shot-button img { border-radius: 0; box-shadow: none; }
+  .nx-shot-button:hover { border-color: var(--teal); }
+  .nx-shot-label { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 44px; padding: 10px 14px; border-top: 1px solid var(--line); background: var(--panel); color: var(--teal-dark); font-size: 0.82rem; font-weight: 550; }
+  .nx-shot-label > span { font-size: 1.1rem; }
+  .nx-hero-frame { box-shadow: 0 18px 44px rgba(27, 38, 40, 0.16); }
+  .nx-index-grid { align-items: start; }
+  .nx-index-group { padding: 0; }
+  .nx-index-group > summary:focus-visible { outline-offset: -4px; border-radius: 14px; }
+  .nx-index-group > summary { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 20px; min-height: 64px; list-style: none; cursor: pointer; color: var(--teal-dark); font-weight: 550; }
+  .nx-index-group > summary::-webkit-details-marker { display: none; }
+  .nx-index-group > summary::after { content: "+"; font-size: 1.35rem; font-weight: 400; }
+  .nx-index-group[open] > summary::after { content: "−"; }
+  .nx-index-lists { padding: 0 20px 16px; }
+  .nx-catalog-controls { margin: 20px 0; }
+  .nx-catalog-controls label { display: block; margin-bottom: 8px; color: var(--ink); font-weight: 550; }
+  .nx-search-row { display: flex; gap: 10px; max-width: 640px; }
+  .nx-search-row input { min-width: 0; width: 100%; padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); color: var(--ink); font-size: 1rem; }
+  .nx-search-row button { min-height: 48px; padding: 10px 16px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); color: var(--teal-dark); cursor: pointer; }
+  #tool-results { min-height: 1.5em; margin: 10px 0 0; color: var(--muted); font-size: 0.9rem; }
+  .nx-get-cta p.nx-license-note { margin-top: 14px; font-size: 0.88rem; line-height: 1.6; }
+  .nx-license-note a { color: var(--teal-dark); text-decoration: underline; text-underline-offset: 0.15em; }
+  html.nx-viewer-open { overflow: hidden; }
+  .pvl-viewer { position: fixed; inset: 0; margin: auto; width: min(1440px, calc(100vw - 24px)); height: calc(100dvh - 24px); max-width: none; max-height: none; padding: 16px; border: 1px solid #475569; border-radius: 16px; background: #142126; color: #fff; box-shadow: 0 24px 100px rgba(0, 0, 0, 0.4); }
+  .pvl-viewer:not([open]) { display: none; }
+  .pvl-viewer[open] { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: 14px; }
+  .pvl-viewer::backdrop { background: rgba(10, 16, 26, 0.82); backdrop-filter: blur(5px); }
+  .pvl-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .pvl-toolbar h2 { margin: 0; font-size: 1rem; font-weight: 550; color: #fff; }
+  .pvl-actions { display: flex; gap: 8px; }
+  .pvl-actions button { min-height: 44px; padding: 8px 14px; border: 1px solid #71818a; border-radius: 8px; background: #24383f; color: #fff; cursor: pointer; font-size: 0.9rem; }
+  .pvl-actions button:hover { background: #34515a; }
+  .pvl-canvas { min-height: 0; overflow: auto; overscroll-behavior: contain; scrollbar-gutter: stable; display: flex; align-items: center; justify-content: center; border-radius: 8px; background: #0c1519; }
+  .pvl-canvas img { display: block; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+  .pvl-canvas.is-zoomed { display: block; }
+  .pvl-canvas.is-zoomed img { width: var(--pvl-zoom-width); max-width: none; max-height: none; margin: auto; }
+  #pvl-caption { margin: 0; line-height: 1.45; color: #d1dce0; font-size: 0.85rem; }
+  @media (max-width: 1190px) {
+    .site-header .site-nav { display: none; }
+    .nx-explore { display: block; }
+    .nx-feature-intro .pvh-chips { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 720px) {
+    :root { --nx-header-height: 73px; }
+    .site-header { min-height: 73px; gap: 10px; padding-block: 12px; }
+    .site-header .brand span, .nx-wide-label, .nx-language-label { display: none; }
+    .site-header .header-actions { gap: 8px; }
+    .site-header .header-cta { padding-inline: 12px; }
+    .site-header .button-glyph { display: none; }
+    .language-menu summary { padding-inline: 8px; max-width: none; }
+    .nx-explore-list { position: fixed; top: var(--nx-header-height); left: 16px; right: 16px; width: auto; }
+    .language-menu-list { position: fixed; top: var(--nx-header-height); right: 16px; max-height: calc(100dvh - var(--nx-header-height) - 16px); }
+    .compact-hero h1 { font-size: clamp(2.4rem, 8vw, 3.2rem); }
+    .nx-text-only .pvw-points { grid-template-columns: 1fr; }
+    .nx-more-features > summary { padding-inline: 16px; }
+  }
+  @media (max-width: 560px) {
+    .compact-hero { padding-block: 24px; }
+    .compact-hero .hero-content { gap: 24px; }
+    .nx-hero-actions { gap: 10px; }
+    .nx-hero-actions .button { padding-inline: 16px; }
+    .nx-hero-stats { margin-top: 10px; }
+    .nx-hero-frame picture { height: 260px; overflow: hidden; }
+    .nx-hero-frame img { width: 200%; max-width: none; height: auto; }
+    .nx-feature-intro .pvh-chips { grid-template-columns: 1fr; }
+    .nx-numbers-inner { padding: 8px; gap: 6px; }
+    .nx-numbers li { padding-inline: 4px; }
+    .nx-numbers span { font-size: 0.75rem; }
+    .nx-more-content { padding-inline: 6px; }
+    .pvl-viewer { padding: 12px; }
+    .pvl-toolbar h2 { font-size: 0.9rem; }
+    .pvl-actions { gap: 6px; }
+    .pvl-actions button { padding-inline: 10px; }
+  }
 </style>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
     <script>
@@ -389,6 +447,7 @@
     </script>
   </head>
   <body>
+<a class="nx-skip" href="#top">Skip to content</a>
 <header class="site-header" aria-label="Primary">
   <a class="brand" href="#top" aria-label="XHelpers Pro home">
     <img src="assets/refresh/app-icon.png?v=20260916" alt="" width="34" height="34">
@@ -397,62 +456,111 @@
   <nav class="site-nav" aria-label="Page sections">
     <a href="#what">Features</a>
     <a href="#every-tool">Every Tool</a>
-    <a href="#why">What to Expect</a>
+    <a href="#private-by-design">Privacy</a>
     <a href="#release">Get It</a>
   </nav>
   <div class="header-actions">
+    <details class="nx-explore">
+      <summary>Explore <span aria-hidden="true">⌄</span></summary>
+      <nav class="nx-explore-list" aria-label="Explore tools">
+        <a href="#what">Featured tools</a>
+        <a href="#display-windows">Display &amp; Windows</a>
+        <a href="#screen-text-files">Screen, Text &amp; Files</a>
+        <a href="#ai-usage">AI Usage</a>
+        <a href="#finder-safes-archives">Finder, Safes &amp; Archives</a>
+        <a href="#pointer-keyboard">Pointer &amp; Keyboard</a>
+        <a href="#audio-music-subtitles">Audio, Music &amp; Subtitles</a>
+        <a href="#mac-health-storage-apps">Mac Health, Storage &amp; Apps</a>
+        <a href="#every-tool">Every tool</a>
+        <a href="#private-by-design">Privacy</a>
+        <a href="#release">Download &amp; installation</a>
+      </nav>
+    </details>
     <a class="header-cta" href="https://xintechdownloads.blob.core.windows.net/xhelperspro/XHelpersPro-1.0.8-16-macOS.dmg">
       <span class="button-glyph" aria-hidden="true"></span>
-      Download for Mac
+      <span class="nx-download-label">Download<span class="nx-wide-label"> for Mac</span></span>
     </a>
     <details class="language-menu">
-      <summary>🌐 - 🇺🇸🇬🇧 English</summary>
+      <summary aria-label="Choose language, English selected"><span aria-hidden="true">🌐</span><span class="nx-language-label">English</span></summary>
       <div class="language-menu-list" aria-label="Language">
-        <a href="#" lang="en" aria-current="page">🇺🇸🇬🇧 English</a>
-        <a href="#" lang="zh-Hans">🇨🇳 简体中文</a>
-        <a href="#" lang="zh-Hant">🇹🇼🇭🇰 繁體中文</a>
-        <a href="#" lang="ja">🇯🇵 日本語</a>
-        <a href="#" lang="de">🇩🇪 Deutsch</a>
-        <a href="#" lang="fr">🇫🇷 Français</a>
-        <a href="#" lang="es">🇪🇸🇲🇽 Español</a>
-        <a href="#" lang="ko">🇰🇷 한국어</a>
-        <a href="#" lang="pt-BR">🇧🇷 Português (Brasil)</a>
-        <a href="#" lang="ru">🇷🇺 Русский</a>
-        <a href="#" lang="it">🇮🇹 Italiano</a>
-        <a href="#" lang="nl">🇳🇱 Nederlands</a>
-        <a href="#" lang="sv">🇸🇪 Svenska</a>
-        <a href="#" lang="da">🇩🇰 Dansk</a>
-        <a href="#" lang="nb">🇳🇴 Norsk bokmål</a>
-        <a href="#" lang="fi">🇫🇮 Suomi</a>
-        <a href="#" lang="pl">🇵🇱 Polski</a>
-        <a href="#" lang="tr">🇹🇷 Türkçe</a>
-        <a href="#" lang="ar">🇸🇦🇪🇬 العربية</a>
-        <a href="#" lang="th">🇹🇭 ไทย</a>
-        <a href="#" lang="vi">🇻🇳 Tiếng Việt</a>
-        <a href="#" lang="id">🇮🇩 Bahasa Indonesia</a>
-        <a href="#" lang="ms">🇲🇾 Bahasa Melayu</a>
-        <a href="#" lang="hi">🇮🇳 हिन्दी</a>
-        <a href="#" lang="cs">🇨🇿 Čeština</a>
-        <a href="#" lang="uk">🇺🇦 Українська</a>
+        <a href="https://xintechllc.com/XHelpersPro/" lang="en" aria-current="page">🇺🇸🇬🇧 English</a>
+        <a href="https://xintechllc.com/XHelpersPro/zh-Hans/" lang="zh-Hans">🇨🇳 简体中文</a>
+        <a href="https://xintechllc.com/XHelpersPro/zh-Hant/" lang="zh-Hant">🇹🇼🇭🇰 繁體中文</a>
+        <a href="https://xintechllc.com/XHelpersPro/ja/" lang="ja">🇯🇵 日本語</a>
+        <a href="https://xintechllc.com/XHelpersPro/de/" lang="de">🇩🇪 Deutsch</a>
+        <a href="https://xintechllc.com/XHelpersPro/fr/" lang="fr">🇫🇷 Français</a>
+        <a href="https://xintechllc.com/XHelpersPro/es/" lang="es">🇪🇸🇲🇽 Español</a>
+        <a href="https://xintechllc.com/XHelpersPro/ko/" lang="ko">🇰🇷 한국어</a>
+        <a href="https://xintechllc.com/XHelpersPro/pt-BR/" lang="pt-BR">🇧🇷 Português (Brasil)</a>
+        <a href="https://xintechllc.com/XHelpersPro/ru/" lang="ru">🇷🇺 Русский</a>
+        <a href="https://xintechllc.com/XHelpersPro/it/" lang="it">🇮🇹 Italiano</a>
+        <a href="https://xintechllc.com/XHelpersPro/nl/" lang="nl">🇳🇱 Nederlands</a>
+        <a href="https://xintechllc.com/XHelpersPro/sv/" lang="sv">🇸🇪 Svenska</a>
+        <a href="https://xintechllc.com/XHelpersPro/da/" lang="da">🇩🇰 Dansk</a>
+        <a href="https://xintechllc.com/XHelpersPro/nb/" lang="nb">🇳🇴 Norsk bokmål</a>
+        <a href="https://xintechllc.com/XHelpersPro/fi/" lang="fi">🇫🇮 Suomi</a>
+        <a href="https://xintechllc.com/XHelpersPro/pl/" lang="pl">🇵🇱 Polski</a>
+        <a href="https://xintechllc.com/XHelpersPro/tr/" lang="tr">🇹🇷 Türkçe</a>
+        <a href="https://xintechllc.com/XHelpersPro/ar/" lang="ar">🇸🇦🇪🇬 العربية</a>
+        <a href="https://xintechllc.com/XHelpersPro/th/" lang="th">🇹🇭 ไทย</a>
+        <a href="https://xintechllc.com/XHelpersPro/vi/" lang="vi">🇻🇳 Tiếng Việt</a>
+        <a href="https://xintechllc.com/XHelpersPro/id/" lang="id">🇮🇩 Bahasa Indonesia</a>
+        <a href="https://xintechllc.com/XHelpersPro/ms/" lang="ms">🇲🇾 Bahasa Melayu</a>
+        <a href="https://xintechllc.com/XHelpersPro/hi/" lang="hi">🇮🇳 हिन्दी</a>
+        <a href="https://xintechllc.com/XHelpersPro/cs/" lang="cs">🇨🇿 Čeština</a>
+        <a href="https://xintechllc.com/XHelpersPro/uk/" lang="uk">🇺🇦 Українська</a>
       </div>
     </details>
   </div>
 </header>
 
-<main id="top">
+<main id="top" tabindex="-1">
   <section class="hero compact-hero" aria-labelledby="hero-title">
     <img class="hero-image" src="assets/refresh/site-hero-display.jpg?v=20260916" alt="">
     <div class="hero-shade" aria-hidden="true"></div>
     <div class="hero-content">
       <div class="pvh-copy">
-        <p class="eyebrow">Mac menu-bar utility suite</p>
-        <h1 id="hero-title">XHelpers Pro</h1>
-        <p class="hero-subtitle">The useful desk features, merged into one Mac utility.</p>
-        <p class="pvh-combines">
-          Pick a category below, or <a href="#every-tool">scroll for every tool</a>. Everything runs locally
-          from one menu-bar menu.
-        </p>
-        <nav class="pvh-chips" aria-label="Feature categories">
+        <p class="eyebrow">XHelpers Pro for Mac</p>
+        <h1 id="hero-title">60+ Mac tools.<br>One menu bar.</h1>
+        <p class="hero-subtitle">Manage windows, audio, files and AI usage from one place.</p>
+        <div class="nx-hero-actions">
+          <a class="button button-primary" href="https://xintechdownloads.blob.core.windows.net/xhelperspro/XHelpersPro-1.0.8-16-macOS.dmg">Download for Mac</a>
+          <a class="button nx-secondary" href="#what">Explore tools <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="nx-hero-note">Apple silicon + Intel · Signed and notarized</p>
+        <div class="nx-hero-stats" aria-label="At a glance">
+          <span><b>macOS 14</b> or later</span>
+          <span><b>Free</b> for a limited time</span>
+        </div>
+      </div>
+      <figure class="nx-hero-shot">
+
+          <button class="nx-shot-button nx-hero-frame" type="button" aria-label="Enlarge: Your everyday tools, one click from the menu bar." aria-haspopup="dialog" aria-controls="pvl-viewer">
+          <picture>
+            <source type="image/webp" srcset="assets/refresh/menu-two-column.webp?v=20260916">
+            <img src="assets/refresh/menu-two-column.png?v=20260916" width="1632" height="1380" alt="The XHelpers Pro menu in dark appearance: Display and Windows &amp; Input in the top band, Audio &amp; Subtitles and Network below them with per-app volume rows, then Tools and Settings &amp; Support">
+          </picture>
+          <span class="nx-shot-label" aria-hidden="true">Enlarge screenshot <span>↗</span></span>
+        </button>
+        <figcaption>Your everyday tools, one click from the menu bar.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="nx-numbers" aria-label="XHelpers Pro by the numbers">
+    <ul class="nx-numbers-inner">
+      <li><b>60+</b><span>tools in one menu</span></li>
+      <li><b>67</b><span>global shortcuts to bind</span></li>
+      <li><b>200%</b><span>per-app volume boost</span></li>
+    </ul>
+  </section>
+
+  <section class="section compact-section pvw" id="what" aria-labelledby="features-title">
+    <div class="nx-feature-intro">
+      <p class="section-kicker">A few everyday favorites</p>
+      <h2 id="features-title">Start with what you need.</h2>
+      <p>Arrange your workspace, work with text and files, or keep an eye on your AI accounts.</p>
+      <nav class="pvh-chips" aria-label="Feature categories">
           <a href="#display-windows">Display &amp; Windows</a>
           <a href="#finder-safes-archives">Finder, Safes &amp; Archives</a>
           <a href="#pointer-keyboard">Pointer &amp; Keyboard</a>
@@ -462,55 +570,7 @@
           <a href="#private-by-design">Private by Design</a>
           <a href="#ai-usage">AI Usage</a>
         </nav>
-        <div class="nx-hero-stats" aria-label="At a glance">
-          <span><b>macOS 14</b> or later</span>
-          <span><b>Free</b> for a limited time</span>
-        </div>
-      </div>
-      <figure class="nx-hero-shot">
-        <div class="nx-hero-frame">
-          <picture>
-            <source type="image/webp" srcset="assets/refresh/menu-two-column.webp?v=20260916">
-            <img src="assets/refresh/menu-two-column.png?v=20260916" width="1632" height="1380" alt="The XHelpers Pro menu in dark appearance: Display and Windows &amp; Input in the top band, Audio &amp; Subtitles and Network below them with per-app volume rows, then Tools and Settings &amp; Support">
-          </picture>
-        </div>
-      </figure>
     </div>
-  </section>
-
-  <section class="nx-numbers" aria-label="XHelpers Pro by the numbers">
-    <ul class="nx-numbers-inner">
-      <li><b>60+</b><span>tools in one menu</span></li>
-      <li><b>26</b><span>languages</span></li>
-      <li><b>67</b><span>global shortcuts to bind</span></li>
-      <li><b>14</b><span>window arrangements</span></li>
-      <li><b>40+</b><span>apps in Finder&rsquo;s Open in</span></li>
-      <li><b>200%</b><span>per-app volume boost</span></li>
-    </ul>
-  </section>
-
-  <section class="nx-band" id="menu" aria-labelledby="menu-title">
-    <div class="nx-band-inner">
-      <div>
-        <div class="section-kicker">One menu, six sections</div>
-        <h2 id="menu-title">Everything lives one click away in the menu bar.</h2>
-        <p>
-          The menu is laid out in two columns so the whole suite fits on one screen: quick controls at the
-          top, tools and settings paired below. No Dock window, no separate apps to open.
-        </p>
-      </div>
-      <ul class="nx-band-map" aria-label="Menu sections">
-        <li><b>Display</b>Blackout, dim until key press, brightness, contrast, keyboard backlight</li>
-        <li><b>Windows &amp; Input</b>Active-window highlight, Finder context menus, pointer, scroll, remapping</li>
-        <li><b>Audio &amp; Subtitles</b>Music &amp; Playlists, per-app Audio Mixer, Live Subtitles</li>
-        <li><b>Network</b>Auto Wi-Fi Switch, Network Quality</li>
-        <li><b>Tools</b>Keep Mac Awake, Change Resolution, Snap &amp; Arrange Windows, Screen Tools, Utilities</li>
-        <li><b>Settings &amp; Support</b>Settings, Account, Permissions, Help &amp; Feedback, About, Quit</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section compact-section pvw" id="what" aria-label="Features">
 
     <article class="pvg-group pvg-display" id="display-windows">
       <div class="pvg-copy">
@@ -531,112 +591,24 @@
       </div>
       <div class="pvg-shots">
         <figure>
+          <button class="nx-shot-button" type="button" aria-label="Enlarge: Display Tools: Resolution — HiDPI modes for an external display, plus custom presets" aria-haspopup="dialog" aria-controls="pvl-viewer">
           <picture>
             <source type="image/webp" srcset="assets/refresh/shot-display-resolution.webp?v=20260916">
             <img src="assets/refresh/shot-display-resolution.png?v=20260916" width="2964" height="1828" loading="lazy" alt="Display Tools: Resolution window listing HiDPI modes for an external display, each with a refresh rate and an Apply button, and a Create Custom HiDPI Preset form">
           </picture>
+          <span class="nx-shot-label" aria-hidden="true">Enlarge screenshot <span>↗</span></span>
+        </button>
           <figcaption>Display Tools: Resolution &mdash; HiDPI modes for an external display, plus custom presets</figcaption>
         </figure>
         <figure>
+          <button class="nx-shot-button" type="button" aria-label="Enlarge: Snap &amp; Arrange Windows — every arrangement has a shortcut" aria-haspopup="dialog" aria-controls="pvl-viewer">
           <picture>
             <source type="image/webp" srcset="assets/refresh/shot-snap-arrange-submenu.webp?v=20260916">
             <img src="assets/refresh/shot-snap-arrange-submenu.png?v=20260916" width="905" height="1687" loading="lazy" alt="Snap &amp; Arrange Windows submenu: halves, quadrants, center, maximize, restore, move to the previous or next display, save and restore window positions, focus actions, each with its shortcut">
           </picture>
+          <span class="nx-shot-label" aria-hidden="true">Enlarge screenshot <span>↗</span></span>
+        </button>
           <figcaption>Snap &amp; Arrange Windows &mdash; every arrangement has a shortcut</figcaption>
-        </figure>
-      </div>
-    </article>
-
-    <article class="pvg-group pvg-finder nx-flip" id="finder-safes-archives">
-      <div class="pvg-copy">
-        <div class="pvg-head">
-          <div class="pvw-icon" aria-hidden="true">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><path d="M12 11v5M9.5 13.5h5"></path></svg>
-          </div>
-          <h3>Finder, Safes &amp; Archives</h3>
-        </div>
-        <p class="pvg-lede">The file jobs you do ten times a day, done from the right-click menu you already use.</p>
-        <ul class="pvw-points">
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-new-file.png?v=20260916" width="16" height="16" alt=""><b>Skip the detours</b>: create a file or folder where you are, copy a path, paste or move a selection, and open anything in any of 40+ apps, from Terminal and VS Code to Codex and Claude.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-secure-archive.png?v=20260916" width="16" height="16" alt=""><b>Lock private files in seconds</b>: a selection becomes an encrypted Safe, 7z, ZIP or DMG from one dialog, with a password only you hold.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-secure-archive.png?v=20260916" width="16" height="16" alt=""><b>Keep a Safe growing</b> without repacking it, and take out only the items you need.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-extract-archive.png?v=20260916" width="16" height="14" alt=""><b>Open any archive someone sends you</b>, zip to rar and password-protected ones included, without installing another unarchiver.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-uninstall-clean-up.png?v=20260916" width="14" height="16" alt=""><b>Read Markdown with a spacebar tap</b> in Finder, and <b>start a clean uninstall</b> from the same right-click menu.</li>
-        </ul>
-      </div>
-      <div class="pvg-shots">
-        <figure class="nx-placeholder" data-note="Placeholder · Jul 2026 site asset">
-          <img src="assets/refresh/site-finder-context-menu.jpg?v=20260916" alt="Finder context menu with XHelpers Pro actions">
-          <figcaption>S06 · Finder context menu</figcaption>
-        </figure>
-        <figure>
-          <div class="nx-slot"><b>Shot S07</b><span>“Compress / Encrypt” dialog over a Finder selection of three demo files.</span></div>
-          <figcaption>S07 · Compress / Encrypt</figcaption>
-        </figure>
-      </div>
-    </article>
-
-    <article class="pvg-group pvg-input" id="pointer-keyboard">
-      <div class="pvg-copy">
-        <div class="pvg-head">
-          <div class="pvw-icon" aria-hidden="true">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M5 3l14 8-6 2-2 6z"></path></svg>
-          </div>
-          <h3>Pointer &amp; Keyboard</h3>
-        </div>
-        <p class="pvg-lede">Make every mouse, trackpad and keyboard feel exactly right, and keep it that way.</p>
-        <ul class="pvw-points">
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-mouse-sensitivity.png?v=20260916" width="14" height="18" alt=""><b>Aim like you mean it</b>: sensitivity and acceleration tuned per device, with acceleration off entirely for raw, predictable movement.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-scroll-speed.png?v=20260916" width="17" height="17" alt=""><b>Scroll the way each device should</b>, with speed, acceleration and direction set per mouse or trackpad, so a wheel and a trackpad stop fighting each other.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-remap-keys-buttons.png?v=20260916" width="22" height="14" alt=""><b>Turn a spare key or mouse button into the shortcut you reach for most</b>, make Caps Lock do two jobs, or add a Hyper key that never clashes with an app.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-global-shortcuts.png?v=20260916" width="16" height="14" alt=""><b>Run the whole suite from the keyboard</b>: 67 actions ready to bind in one Global Shortcuts window.</li>
-        </ul>
-      </div>
-      <div class="pvg-shots">
-        <figure>
-          <picture>
-            <source type="image/webp" srcset="assets/refresh/shot-remap.webp?v=20260916">
-            <img src="assets/refresh/shot-remap.png?v=20260916" width="1492" height="1184" loading="lazy" alt="Key &amp; Button Remapping window with a rule that sends Control-backtick when the middle mouse button is pressed, and buttons to add shortcut, dual-role and Hyper key rules">
-          </picture>
-          <figcaption>Key &amp; Button Remapping &mdash; shortcut, dual-role and Hyper key rules</figcaption>
-        </figure>
-        <figure>
-          <picture>
-            <source type="image/webp" srcset="assets/refresh/shot-mouse.webp?v=20260916">
-            <img src="assets/refresh/shot-mouse.png?v=20260916" width="1240" height="746" loading="lazy" alt="Mouse Sensitivity &amp; Acceleration window with a USB mouse selected and sliders for sensitivity and acceleration">
-          </picture>
-          <figcaption>Mouse Sensitivity &amp; Acceleration &mdash; a profile per device</figcaption>
-        </figure>
-      </div>
-    </article>
-
-    <article class="pvg-group pvg-audio nx-flip" id="audio-music-subtitles">
-      <div class="pvg-copy">
-        <div class="pvg-head">
-          <div class="pvw-icon" aria-hidden="true">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M4 10v4h4l5 4V6L8 10z"></path><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"></path></svg>
-          </div>
-          <h3>Audio, Music &amp; Subtitles</h3>
-        </div>
-        <p class="pvg-lede">Control what each app sounds like, keep every source in one place, and read what any app is saying.</p>
-        <ul class="pvw-points">
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-audio-mixer.png?v=20260916" width="17" height="16" alt=""><b>Stop reaching for the volume every time a call starts</b>: give each app its own level and mute, boost quiet apps up to 200%, and shape them with per-app Audio Effects.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-music-playlists.png?v=20260916" width="16" height="15" alt=""><b>One library for everything you play</b>: Apple Music alongside local audio and video folders, with playlists and saved filters that cut across all of them.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-audio-player.png?v=20260916" width="18" height="14" alt=""><b>A lightweight player for the file you just downloaded</b>: a shared queue, Quick Video with speed, loop and always-on-top, and the audio pulled out of any video in a click.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-live-subtitles.png?v=20260916" width="19" height="18" alt=""><b>Follow any meeting, stream or video in your language</b>: Live Subtitles transcribe and translate one app&rsquo;s audio on device, with a captions-only mode and per-speaker colors (macOS 26.4 or later).</li>
-        </ul>
-      </div>
-      <div class="pvg-shots">
-        <figure class="nx-placeholder" data-note="Draft · empty state, restage with a library">
-          <img src="assets/refresh/sep-music-and-playlists.jpg?v=20260916" alt="Music and Playlists window">
-          <figcaption>S15 · Music &amp; Playlists Library with three sources</figcaption>
-        </figure>
-        <figure>
-          <picture>
-            <source type="image/webp" srcset="assets/refresh/shot-live-subtitles.webp?v=20260916">
-            <img src="assets/refresh/shot-live-subtitles.png?v=20260916" width="1300" height="1944" loading="lazy" alt="Live Subtitles window: choose the app, spoken language and translation language, timing and speaker options, a preview of the subtitle style, and a privacy note that audio stays on this Mac">
-          </picture>
-          <figcaption>Live Subtitles &mdash; on-device transcription and translation for one app</figcaption>
         </figure>
       </div>
     </article>
@@ -658,49 +630,16 @@
           <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-image-tools.png?v=20260916" width="18" height="14" alt=""><b>Handle images and PDFs without opening five apps</b>: resize, mark up and export in batches; combine, reorder, unlock or build PDFs; and open huge text or binary files other editors choke on.</li>
         </ul>
       </div>
-      <div class="pvg-shots">
+      <div class="pvg-shots nx-single-shot">
         <figure>
-          <div class="nx-slot"><b>Shot S18</b><span>Recognized-text result panel after capturing a paragraph with a link and a phone number.</span></div>
-          <figcaption>S18 · Capture Text from Screen</figcaption>
-        </figure>
-        <figure>
+          <button class="nx-shot-button" type="button" aria-label="Enlarge: PDF Quick Actions — combine, organize, split, or build a PDF from images" aria-haspopup="dialog" aria-controls="pvl-viewer">
           <picture>
             <source type="image/webp" srcset="assets/refresh/shot-pdf-quick-actions.webp?v=20260916">
             <img src="assets/refresh/shot-pdf-quick-actions.png?v=20260916" width="1560" height="1184" loading="lazy" alt="PDF Quick Actions window with four actions: Combine PDFs, Organize Pages, Extract or Split Pages, Create PDF from Images">
           </picture>
+          <span class="nx-shot-label" aria-hidden="true">Enlarge screenshot <span>↗</span></span>
+        </button>
           <figcaption>PDF Quick Actions &mdash; combine, organize, split, or build a PDF from images</figcaption>
-        </figure>
-      </div>
-    </article>
-
-    <article class="pvg-group pvg-health nx-flip" id="mac-health-storage-apps">
-      <div class="pvg-copy">
-        <div class="pvg-head">
-          <div class="pvw-icon" aria-hidden="true">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M3 12h4l2-5 4 10 2-5h6"></path></svg>
-          </div>
-          <h3>Mac Health, Storage &amp; Apps</h3>
-        </div>
-        <p class="pvg-lede">Find out why the Mac is slow or full, then fix it with evidence on screen and nothing deleted behind your back.</p>
-        <ul class="pvw-points">
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-mac-health.png?v=20260916" width="17" height="14" alt=""><b>Get a straight answer to &ldquo;why is my Mac slow?&rdquo;</b>: a verdict with the causes behind it, and a Memory Health Monitor that watches pressure and swap before things grind.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-startup-inspector.png?v=20260916" width="20" height="16" alt=""><b>See everything that starts with your Mac</b>, with signatures, and switch off only what is yours; <b>browse dozens of macOS settings as cards</b> that show what is saved right now.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-reclaim-disk-space.png?v=20260916" width="18" height="13" alt=""><b>Win back space with confidence</b>: guided reclaim actions and a storage map, a treemap of where the disk went, and duplicates found by Redundancy &amp; Clutter.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-uninstall.png?v=20260916" width="14" height="16" alt=""><b>Remove an app properly</b>: a reviewed file list before anything moves, leftovers found for apps you deleted long ago, and cleanup reports you can export; set a new Mac up with Install Apps &amp; Dev Tools and Manage Fonts.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-network-quality.png?v=20260916" width="17" height="18" alt=""><b>Know whether it is the Wi-Fi or the site</b>: Network Quality measures the connection you are on, and Auto Wi-Fi Switch moves to a stronger saved network when the signal drops.</li>
-        </ul>
-      </div>
-      <div class="pvg-shots">
-        <figure>
-          <picture>
-            <source type="image/webp" srcset="assets/refresh/shot-system-tweaks.webp?v=20260916">
-            <img src="assets/refresh/shot-system-tweaks.png?v=20260916" width="2968" height="1810" loading="lazy" alt="Maintenance &amp; System Tweaks window showing tweak cards grouped as faster, fancier, tidier and quieter, each with its saved setting">
-          </picture>
-          <figcaption>Maintenance &amp; System Tweaks, one card per setting</figcaption>
-        </figure>
-        <figure>
-          <div class="nx-slot"><b>Shot S22</b><span>Where Did My Space Go? scanning a staged demo folder, treemap and folder table visible.</span></div>
-          <figcaption>S22 · Where Did My Space Go?</figcaption>
         </figure>
       </div>
     </article>
@@ -724,21 +663,152 @@
       </div>
       <div class="pvg-shots">
         <figure>
+          <button class="nx-shot-button" type="button" aria-label="Enlarge: AI Usage — seven connected accounts, weekly quotas and resets side by side" aria-haspopup="dialog" aria-controls="pvl-viewer">
           <picture>
             <source type="image/webp" srcset="assets/refresh/shot-ai-usage.webp?v=20260916">
             <img src="assets/refresh/shot-ai-usage.png?v=20260916" width="3244" height="2594" loading="lazy" alt="AI Usage window showing seven connected Codex and Claude accounts as cards with weekly quota remaining, reset times and available limit resets">
           </picture>
+          <span class="nx-shot-label" aria-hidden="true">Enlarge screenshot <span>↗</span></span>
+        </button>
           <figcaption>AI Usage &mdash; seven connected accounts, weekly quotas and resets side by side</figcaption>
         </figure>
         <figure class="nx-tall">
+          <button class="nx-shot-button" type="button" aria-label="Enlarge: The AI meter’s hover card, straight from the menu" aria-haspopup="dialog" aria-controls="pvl-viewer">
           <picture>
             <source type="image/webp" srcset="assets/refresh/shot-ai-usage-card.webp?v=20260916">
             <img src="assets/refresh/shot-ai-usage-card.png?v=20260916" width="1080" height="1930" loading="lazy" alt="The AI meter's hover card listing every account with its weekly quota bar, reset time and available resets">
           </picture>
+          <span class="nx-shot-label" aria-hidden="true">Enlarge screenshot <span>↗</span></span>
+        </button>
           <figcaption>The AI meter&rsquo;s hover card, straight from the menu</figcaption>
         </figure>
       </div>
     </article>
+
+    <details class="nx-more-features" id="more-features">
+      <summary>More tools for files, input, audio and Mac health <span aria-hidden="true">+</span></summary>
+      <div class="nx-more-content">
+    <article class="pvg-group pvg-finder nx-text-only" id="finder-safes-archives">
+      <div class="pvg-copy">
+        <div class="pvg-head">
+          <div class="pvw-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><path d="M12 11v5M9.5 13.5h5"></path></svg>
+          </div>
+          <h3>Finder, Safes &amp; Archives</h3>
+        </div>
+        <p class="pvg-lede">The file jobs you do ten times a day, done from the right-click menu you already use.</p>
+        <ul class="pvw-points">
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-new-file.png?v=20260916" width="16" height="16" alt=""><b>Skip the detours</b>: create a file or folder where you are, copy a path, paste or move a selection, and open anything in any of 40+ apps, from Terminal and VS Code to Codex and Claude.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-secure-archive.png?v=20260916" width="16" height="16" alt=""><b>Lock private files in seconds</b>: a selection becomes an encrypted Safe, 7z, ZIP or DMG from one dialog, with a password only you hold.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-secure-archive.png?v=20260916" width="16" height="16" alt=""><b>Keep a Safe growing</b> without repacking it, and take out only the items you need.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-extract-archive.png?v=20260916" width="16" height="14" alt=""><b>Open any archive someone sends you</b>, zip to rar and password-protected ones included, without installing another unarchiver.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-uninstall-clean-up.png?v=20260916" width="14" height="16" alt=""><b>Read Markdown with a spacebar tap</b> in Finder, and <b>start a clean uninstall</b> from the same right-click menu.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="pvg-group pvg-input" id="pointer-keyboard">
+      <div class="pvg-copy">
+        <div class="pvg-head">
+          <div class="pvw-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M5 3l14 8-6 2-2 6z"></path></svg>
+          </div>
+          <h3>Pointer &amp; Keyboard</h3>
+        </div>
+        <p class="pvg-lede">Make every mouse, trackpad and keyboard feel exactly right, and keep it that way.</p>
+        <ul class="pvw-points">
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-mouse-sensitivity.png?v=20260916" width="14" height="18" alt=""><b>Aim like you mean it</b>: sensitivity and acceleration tuned per device, with acceleration off entirely for raw, predictable movement.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-scroll-speed.png?v=20260916" width="17" height="17" alt=""><b>Scroll the way each device should</b>, with speed, acceleration and direction set per mouse or trackpad, so a wheel and a trackpad stop fighting each other.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-remap-keys-buttons.png?v=20260916" width="22" height="14" alt=""><b>Turn a spare key or mouse button into the shortcut you reach for most</b>, make Caps Lock do two jobs, or add a Hyper key that never clashes with an app.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-global-shortcuts.png?v=20260916" width="16" height="14" alt=""><b>Run the whole suite from the keyboard</b>: 67 actions ready to bind in one Global Shortcuts window.</li>
+        </ul>
+      </div>
+      <div class="pvg-shots">
+        <figure>
+          <button class="nx-shot-button" type="button" aria-label="Enlarge: Key &amp; Button Remapping — shortcut, dual-role and Hyper key rules" aria-haspopup="dialog" aria-controls="pvl-viewer">
+          <picture>
+            <source type="image/webp" srcset="assets/refresh/shot-remap.webp?v=20260916">
+            <img src="assets/refresh/shot-remap.png?v=20260916" width="1492" height="1184" loading="lazy" alt="Key &amp; Button Remapping window with a rule that sends Control-backtick when the middle mouse button is pressed, and buttons to add shortcut, dual-role and Hyper key rules">
+          </picture>
+          <span class="nx-shot-label" aria-hidden="true">Enlarge screenshot <span>↗</span></span>
+        </button>
+          <figcaption>Key &amp; Button Remapping &mdash; shortcut, dual-role and Hyper key rules</figcaption>
+        </figure>
+        <figure>
+          <button class="nx-shot-button" type="button" aria-label="Enlarge: Mouse Sensitivity &amp; Acceleration — a profile per device" aria-haspopup="dialog" aria-controls="pvl-viewer">
+          <picture>
+            <source type="image/webp" srcset="assets/refresh/shot-mouse.webp?v=20260916">
+            <img src="assets/refresh/shot-mouse.png?v=20260916" width="1240" height="746" loading="lazy" alt="Mouse Sensitivity &amp; Acceleration window with a USB mouse selected and sliders for sensitivity and acceleration">
+          </picture>
+          <span class="nx-shot-label" aria-hidden="true">Enlarge screenshot <span>↗</span></span>
+        </button>
+          <figcaption>Mouse Sensitivity &amp; Acceleration &mdash; a profile per device</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="pvg-group pvg-audio nx-flip" id="audio-music-subtitles">
+      <div class="pvg-copy">
+        <div class="pvg-head">
+          <div class="pvw-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M4 10v4h4l5 4V6L8 10z"></path><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"></path></svg>
+          </div>
+          <h3>Audio, Music &amp; Subtitles</h3>
+        </div>
+        <p class="pvg-lede">Control what each app sounds like, keep every source in one place, and read what any app is saying.</p>
+        <ul class="pvw-points">
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-audio-mixer.png?v=20260916" width="17" height="16" alt=""><b>Stop reaching for the volume every time a call starts</b>: give each app its own level and mute, boost quiet apps up to 200%, and shape them with per-app Audio Effects.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-music-playlists.png?v=20260916" width="16" height="15" alt=""><b>One library for everything you play</b>: Apple Music alongside local audio and video folders, with playlists and saved filters that cut across all of them.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-audio-player.png?v=20260916" width="18" height="14" alt=""><b>A lightweight player for the file you just downloaded</b>: a shared queue, Quick Video with speed, loop and always-on-top, and the audio pulled out of any video in a click.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-live-subtitles.png?v=20260916" width="19" height="18" alt=""><b>Follow any meeting, stream or video in your language</b>: Live Subtitles transcribe and translate one app&rsquo;s audio on device, with a captions-only mode and per-speaker colors (macOS 26.4 or later).</li>
+        </ul>
+      </div>
+      <div class="pvg-shots nx-single-shot">
+        <figure>
+          <button class="nx-shot-button" type="button" aria-label="Enlarge: Live Subtitles — on-device transcription and translation for one app" aria-haspopup="dialog" aria-controls="pvl-viewer">
+          <picture>
+            <source type="image/webp" srcset="assets/refresh/shot-live-subtitles.webp?v=20260916">
+            <img src="assets/refresh/shot-live-subtitles.png?v=20260916" width="1300" height="1944" loading="lazy" alt="Live Subtitles window: choose the app, spoken language and translation language, timing and speaker options, a preview of the subtitle style, and a privacy note that audio stays on this Mac">
+          </picture>
+          <span class="nx-shot-label" aria-hidden="true">Enlarge screenshot <span>↗</span></span>
+        </button>
+          <figcaption>Live Subtitles &mdash; on-device transcription and translation for one app</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="pvg-group pvg-health nx-flip" id="mac-health-storage-apps">
+      <div class="pvg-copy">
+        <div class="pvg-head">
+          <div class="pvw-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M3 12h4l2-5 4 10 2-5h6"></path></svg>
+          </div>
+          <h3>Mac Health, Storage &amp; Apps</h3>
+        </div>
+        <p class="pvg-lede">Find out why the Mac is slow or full, then fix it with evidence on screen and nothing deleted behind your back.</p>
+        <ul class="pvw-points">
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-mac-health.png?v=20260916" width="17" height="14" alt=""><b>Get a straight answer to &ldquo;why is my Mac slow?&rdquo;</b>: a verdict with the causes behind it, and a Memory Health Monitor that watches pressure and swap before things grind.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-startup-inspector.png?v=20260916" width="20" height="16" alt=""><b>See everything that starts with your Mac</b>, with signatures, and switch off only what is yours; <b>browse dozens of macOS settings as cards</b> that show what is saved right now.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-reclaim-disk-space.png?v=20260916" width="18" height="13" alt=""><b>Win back space with confidence</b>: guided reclaim actions and a storage map, a treemap of where the disk went, and duplicates found by Redundancy &amp; Clutter.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-uninstall.png?v=20260916" width="14" height="16" alt=""><b>Remove an app properly</b>: a reviewed file list before anything moves, leftovers found for apps you deleted long ago, and cleanup reports you can export; set a new Mac up with Install Apps &amp; Dev Tools and Manage Fonts.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-network-quality.png?v=20260916" width="17" height="18" alt=""><b>Know whether it is the Wi-Fi or the site</b>: Network Quality measures the connection you are on, and Auto Wi-Fi Switch moves to a stronger saved network when the signal drops.</li>
+        </ul>
+      </div>
+      <div class="pvg-shots nx-single-shot">
+        <figure>
+          <button class="nx-shot-button" type="button" aria-label="Enlarge: Maintenance &amp; System Tweaks, one card per setting" aria-haspopup="dialog" aria-controls="pvl-viewer">
+          <picture>
+            <source type="image/webp" srcset="assets/refresh/shot-system-tweaks.webp?v=20260916">
+            <img src="assets/refresh/shot-system-tweaks.png?v=20260916" width="2968" height="1810" loading="lazy" alt="Maintenance &amp; System Tweaks window showing tweak cards grouped as faster, fancier, tidier and quieter, each with its saved setting">
+          </picture>
+          <span class="nx-shot-label" aria-hidden="true">Enlarge screenshot <span>↗</span></span>
+        </button>
+          <figcaption>Maintenance &amp; System Tweaks, one card per setting</figcaption>
+        </figure>
+      </div>
+    </article>
+      </div>
+    </details>
 
     <article class="pvg-group pvg-privacy nx-flip" id="private-by-design">
       <div class="pvg-copy">
@@ -760,24 +830,63 @@
       </div>
       <div class="pvg-shots stack">
         <figure>
+          <button class="nx-shot-button" type="button" aria-label="Enlarge: The Permissions window, with live status" aria-haspopup="dialog" aria-controls="pvl-viewer">
           <picture>
             <source type="image/webp" srcset="assets/refresh/shot-permissions.webp?v=20260916">
             <img src="assets/refresh/shot-permissions.png?v=20260916" width="1440" height="2098" loading="lazy" alt="Permissions window listing nine macOS permissions in three tiers with what each unlocks and its live status">
           </picture>
+          <span class="nx-shot-label" aria-hidden="true">Enlarge screenshot <span>↗</span></span>
+        </button>
           <figcaption>The Permissions window, with live status</figcaption>
         </figure>
       </div>
     </article>
   </section>
 
+  <section class="section compact-section compact-release nx-get" id="release" aria-labelledby="release-title">
+    <div class="nx-get-inner">
+      <div class="nx-get-cta">
+        <div class="section-kicker">How to get it</div>
+        <h2 id="release-title">Download it. It&rsquo;s free.</h2>
+        <p>Signed and notarized, direct from us. Free for a limited time. A license is required for each Mac; no Xin account is needed.</p>
+        <div class="download-actions">
+          <a class="button button-primary" href="https://xintechdownloads.blob.core.windows.net/xhelperspro/XHelpersPro-1.0.8-16-macOS.dmg">
+            <span class="button-glyph" aria-hidden="true"></span>
+            Download DMG
+          </a>
+        </div>
+        <p class="nx-license-note">Before activation, the app runs as a 14-day trial. <a href="https://xintechllc.com/XHelpersPro/support.html#license">License and activation details</a>.</p>
+        <p class="nx-get-facts" aria-label="Compatibility">
+          <span>macOS 14.0 or later</span>
+          <span>Apple silicon + Intel</span>
+          <span class="app-version">v1.0.8</span>
+          <span>Automatic updates</span>
+        </p>
+      </div>
+      <ol class="nx-get-steps" aria-label="Install steps">
+        <li><strong>1</strong><span><b>Download the DMG.</b></span></li>
+        <li><strong>2</strong><span><b>Drag XHelpers Pro to Applications and launch it.</b></span></li>
+        <li><strong>3</strong><span><b>Activate your license in Manage License.</b> Grant permissions only for the tools you use.</span></li>
+      </ol>
+    </div>
+  </section>
+
   <section class="section compact-section" id="every-tool" aria-labelledby="index-title">
     <div class="nx-index">
       <div class="section-kicker">Every tool</div>
-      <h2 id="index-title">The whole menu, as a list.</h2>
-      <p>The same categories as above, complete. Items marked with a dot need a permission you grant once in the Permissions window.</p>
-      <div class="nx-index-grid">
-        <div class="nx-index-group">
-          <h4>Display &amp; Windows</h4>
+      <h2 id="index-title">Find your next favorite tool.</h2>
+      <p>Browse by category or search the full menu. Permission notes show what a tool needs on your Mac.</p>
+      <div class="nx-catalog-controls" id="catalog-controls" hidden>
+        <label for="tool-search">Find a tool</label>
+        <div class="nx-search-row">
+          <input id="tool-search" type="search" placeholder="Try PDF, audio or windows" autocomplete="off" aria-controls="tool-categories" aria-describedby="tool-results">
+          <button type="button" id="clear-search">Clear</button>
+        </div>
+        <p id="tool-results" role="status" aria-live="polite">Choose a category below to see its tools.</p>
+      </div>
+      <div class="nx-index-grid" id="tool-categories">
+        <details class="nx-index-group">
+          <summary>Display &amp; Windows</summary>
           <div class="nx-index-lists">
             <ul>
               <li><img class="nx-ic" src="assets/refresh/ic-blackout.png?v=20260916" width="23" height="18" alt="">Blackout Built-in Display</li>
@@ -802,9 +911,9 @@
               <li><img class="nx-ic" src="assets/refresh/ic-macos-settings-shortcuts.png?v=20260916" width="16" height="16" alt="">macOS Settings Shortcuts</li>
             </ul>
           </div>
-        </div>
-        <div class="nx-index-group">
-          <h4>Finder, Safes &amp; Archives</h4>
+        </details>
+        <details class="nx-index-group">
+          <summary>Finder, Safes &amp; Archives</summary>
           <div class="nx-index-lists">
             <ul>
               <li><img class="nx-ic" src="assets/refresh/ic-finder-context-menus.png?v=20260916" width="20" height="16" alt="">Finder Context Menus <small>· extension</small></li>
@@ -824,9 +933,9 @@
               <li>Quick Look for Markdown</li>
             </ul>
           </div>
-        </div>
-        <div class="nx-index-group">
-          <h4>Pointer &amp; Keyboard</h4>
+        </details>
+        <details class="nx-index-group">
+          <summary>Pointer &amp; Keyboard</summary>
           <div class="nx-index-lists">
             <ul>
               <li><img class="nx-ic" src="assets/refresh/ic-mouse-sensitivity.png?v=20260916" width="14" height="18" alt="">Mouse Sensitivity &amp; Acceleration <small>· Accessibility</small></li>
@@ -836,9 +945,9 @@
               <li>Hyper key</li>
             </ul>
           </div>
-        </div>
-        <div class="nx-index-group">
-          <h4>Audio, Music &amp; Subtitles</h4>
+        </details>
+        <details class="nx-index-group">
+          <summary>Audio, Music &amp; Subtitles</summary>
           <div class="nx-index-lists">
             <ul>
               <li><img class="nx-ic" src="assets/refresh/ic-audio-mixer.png?v=20260916" width="17" height="16" alt="">Audio Mixer <small>· System Audio Recording</small></li>
@@ -851,9 +960,9 @@
               <li><img class="nx-ic" src="assets/refresh/ic-captions-only.png?v=20260916" width="19" height="18" alt="">Captions Only</li>
             </ul>
           </div>
-        </div>
-        <div class="nx-index-group">
-          <h4>Screen, Text &amp; Files</h4>
+        </details>
+        <details class="nx-index-group">
+          <summary>Screen, Text &amp; Files</summary>
           <div class="nx-index-lists">
             <ul class="nx-index-subgroup">
               <li class="nx-index-sub"><img class="nx-ic" src="assets/refresh/ic-screen-tools.png?v=20260916" width="21" height="16" alt="">Screen Tools</li>
@@ -881,9 +990,9 @@
               <li><img class="nx-ic" src="assets/refresh/ic-pdf-quick-actions.png?v=20260916" width="14" height="16" alt="">PDF Quick Actions</li>
             </ul>
           </div>
-        </div>
-        <div class="nx-index-group">
-          <h4>Mac Health, Storage &amp; Apps</h4>
+        </details>
+        <details class="nx-index-group">
+          <summary>Mac Health, Storage &amp; Apps</summary>
           <div class="nx-index-lists">
             <ul class="nx-index-subgroup">
               <li class="nx-index-sub">Health</li>
@@ -908,9 +1017,9 @@
               <li><img class="nx-ic" src="assets/refresh/ic-auto-wifi-switch.png?v=20260916" width="19" height="14" alt="">Auto Wi-Fi Switch <small>· Location</small></li>
             </ul>
           </div>
-        </div>
-        <div class="nx-index-group nx-index-wide">
-          <h4>Settings &amp; Support</h4>
+        </details>
+        <details class="nx-index-group nx-index-wide">
+          <summary>Settings &amp; Support</summary>
           <div class="nx-index-lists">
             <ul>
               <li><img class="nx-ic" src="assets/refresh/ic-settings.png?v=20260916" width="18" height="18" alt="">Settings</li>
@@ -925,86 +1034,8 @@
               <li>Check for Updates</li>
             </ul>
           </div>
-        </div>
+        </details>
       </div>
-    </div>
-  </section>
-
-  <section class="section compact-section nx-why" id="why" aria-labelledby="why-title">
-    <div class="nx-why-inner">
-      <div class="section-kicker">What to expect</div>
-      <h2 id="why-title">Less fuss at your desk.</h2>
-      <p class="nx-why-lede">Three habits every tool follows.</p>
-      <ul class="nx-pillars" aria-label="Three habits">
-        <li style="--tint: #246bfe">
-          <span class="nx-pillar-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect></svg></span>
-          <h3>One app instead of a dozen</h3>
-          <p>Sixty-plus tools, one menu, one Permissions window, one update. Nothing else to install or keep current.</p>
-        </li>
-        <li style="--tint: #0f9f9a">
-          <span class="nx-pillar-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M10 6h11M10 12h11M10 18h11"></path><path d="M3 6l1.6 1.6L7.5 4.6"></path><path d="M3 12l1.6 1.6L7.5 10.6"></path><path d="M3 18l1.6 1.6L7.5 16.6"></path></svg></span>
-          <h3>Shows its work</h3>
-          <p>Cleanup lists every file before it moves one. Settings changes show what will change and how to undo it.</p>
-        </li>
-        <li style="--tint: #7964e8">
-          <span class="nx-pillar-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M6.3 8.2A6 6 0 0 1 18 8c0 7 3 9 3 9H8"></path><path d="M6 8c0 5-1.2 7.3-2.2 8.5"></path><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"></path><path d="M3 3l18 18"></path></svg></span>
-          <h3>Helpful, not noisy</h3>
-          <p>Lives in the menu bar, opens a window only when you ask, and never nags.</p>
-        </li>
-      </ul>
-      <ul class="nx-benefits" aria-label="Who it is for">
-        <li style="--tint: #246bfe">
-          <span class="nx-benefit-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><rect x="2" y="4" width="20" height="13" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg></span>
-          <div><b>For desk setups</b><span>External displays, a favorite mouse, real speakers and a network that changes during the day, all handled from one place.</span></div>
-        </li>
-        <li style="--tint: #7964e8">
-          <span class="nx-benefit-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><rect x="2" y="6" width="20" height="12" rx="2"></rect><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8"></path></svg></span>
-          <div><b>For window speed</b><span>Keyboard-first window management that respects the Rectangle shortcuts you already know.</span></div>
-        </li>
-        <li style="--tint: #0f9f9a">
-          <span class="nx-benefit-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><rect x="10" y="12.5" width="6" height="4" rx="1"></rect><path d="M11 12.5V11a2 2 0 0 1 4 0v1.5"></path></svg></span>
-          <div><b>For Finder and private files</b><span>Right-click, done. Encrypted Safes included.</span></div>
-        </li>
-        <li style="--tint: #b8235a">
-          <span class="nx-benefit-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M4 17a8 8 0 1 1 16 0"></path><path d="M12 17l3.5-4"></path><circle cx="12" cy="17" r="1"></circle></svg></span>
-          <div><b>For a Mac that stays fast</b><span>Diagnose first, delete last.</span></div>
-        </li>
-        <li style="--tint: #d9482b">
-          <span class="nx-benefit-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"></path><path d="M7 12h10"></path></svg></span>
-          <div><b>For anything on screen or on disk</b><span>One drag to capture, one menu to convert.</span></div>
-        </li>
-        <li style="--tint: #087975">
-          <span class="nx-benefit-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg></span>
-          <div><b>For privacy</b><span>Local by default. Connect an AI provider only if you want one.</span></div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section compact-section compact-release nx-get" id="release" aria-labelledby="release-title">
-    <div class="nx-get-inner">
-      <div class="nx-get-cta">
-        <div class="section-kicker">How to get it</div>
-        <h2 id="release-title">Download it. It&rsquo;s free.</h2>
-        <p>Signed and notarized, direct from us. Free for a limited time, with a free license and nothing to sign up for.</p>
-        <div class="download-actions">
-          <a class="button button-primary" href="https://xintechdownloads.blob.core.windows.net/xhelperspro/XHelpersPro-1.0.8-16-macOS.dmg">
-            <span class="button-glyph" aria-hidden="true"></span>
-            Download DMG
-          </a>
-        </div>
-        <p class="nx-get-facts" aria-label="Compatibility">
-          <span>macOS 14.0 or later</span>
-          <span>Apple silicon + Intel</span>
-          <span class="app-version">v1.0.8</span>
-          <span>Automatic updates</span>
-        </p>
-      </div>
-      <ol class="nx-get-steps" aria-label="Install steps">
-        <li><strong>1</strong><span><b>Download the DMG.</b></span></li>
-        <li><strong>2</strong><span><b>Drag XHelpers Pro to Applications and launch it.</b></span></li>
-        <li><strong>3</strong><span><b>Grant only what you will use.</b> The Permissions window explains what each feature needs.</span></li>
-      </ol>
     </div>
   </section>
 
@@ -1018,40 +1049,171 @@
   </footer>
 </main>
 
-<div class="pvl-overlay" id="pvl-overlay" hidden>
-  <img id="pvl-image" alt="">
-</div>
+<dialog class="pvl-viewer" id="pvl-viewer" aria-labelledby="pvl-title" aria-describedby="pvl-caption">
+  <div class="pvl-toolbar">
+    <h2 id="pvl-title">Screenshot preview</h2>
+    <div class="pvl-actions">
+      <button type="button" id="pvl-zoom" aria-pressed="false">Zoom in</button>
+      <button type="button" id="pvl-close" autofocus>Close <span aria-hidden="true">×</span></button>
+    </div>
+  </div>
+  <div class="pvl-canvas" id="pvl-canvas" tabindex="0" role="region" aria-label="Screenshot. Use arrow keys to pan when zoomed."><img id="pvl-image" alt=""></div>
+  <p id="pvl-caption"></p>
+</dialog>
 
 <script>
   (function () {
-    var overlay = document.getElementById("pvl-overlay");
-    var image = document.getElementById("pvl-image");
-    if (!overlay || !image) { return; }
-    var openers = document.querySelectorAll(".pvg-shots img");
-    Array.prototype.forEach.call(openers, function (img) {
-      img.addEventListener("click", function () {
-        image.src = img.currentSrc || img.src;
-        image.alt = img.alt;
-        overlay.hidden = false;
-        document.body.style.overflow = "hidden";
-      });
-    });
-    function close() {
-      overlay.hidden = true;
-      image.removeAttribute("src");
-      document.body.style.overflow = "";
+    "use strict";
+    var header = document.querySelector(".site-header");
+    function measureHeader() {
+      document.documentElement.style.setProperty("--nx-header-height", Math.ceil(header.getBoundingClientRect().height) + "px");
     }
-    overlay.addEventListener("click", close);
-    document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape" && !overlay.hidden) { close(); }
-      if (event.key !== "Escape") { return; }
-      Array.prototype.forEach.call(document.querySelectorAll(".language-menu"), function (menu) { menu.removeAttribute("open"); });
+    measureHeader();
+    if ("ResizeObserver" in window) { new ResizeObserver(measureHeader).observe(header); }
+
+    var menus = Array.from(document.querySelectorAll(".language-menu, .nx-explore"));
+    menus.forEach(function (menu) {
+      menu.addEventListener("toggle", function () {
+        if (menu.open) { menus.forEach(function (other) { if (other !== menu) { other.open = false; } }); }
+      });
+      menu.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () { menu.open = false; });
+      });
     });
     document.addEventListener("pointerdown", function (event) {
-      Array.prototype.forEach.call(document.querySelectorAll(".language-menu"), function (menu) {
-        if (event.target instanceof Node && menu.contains(event.target)) { return; }
-        menu.removeAttribute("open");
+      menus.forEach(function (menu) { if (!menu.contains(event.target)) { menu.open = false; } });
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key !== "Escape") { return; }
+      menus.forEach(function (menu) {
+        if (menu.open) { menu.open = false; menu.querySelector("summary").focus(); }
       });
+    });
+
+    // Open containing disclosures before navigating, including direct deep links.
+    function revealTarget(hash, scroll) {
+      var id;
+      try { id = decodeURIComponent(hash.slice(1)); } catch (error) { return; }
+      var target = document.getElementById(id);
+      if (!target) { return; }
+      for (var parent = target.parentElement; parent; parent = parent.parentElement) {
+        if (parent.tagName === "DETAILS") { parent.open = true; }
+      }
+      if (scroll) { target.scrollIntoView({ block: "start", behavior: "instant" }); }
+    }
+    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+      link.addEventListener("click", function () { revealTarget(link.hash, false); });
+    });
+    window.addEventListener("hashchange", function () { revealTarget(location.hash, true); });
+    if (location.hash) { revealTarget(location.hash, true); }
+
+    // Progressive enhancement: the native category disclosures work without JS.
+    var search = document.getElementById("tool-search");
+    var groups = Array.from(document.querySelectorAll(".nx-index-group"));
+    var result = document.getElementById("tool-results");
+    var savedOpen = [];
+    var filtering = false;
+    function normalize(value) {
+      return value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    }
+    function filterTools() {
+      var query = normalize(search.value.trim());
+      var words = query.split(/\s+/).filter(Boolean);
+      if (query && !filtering) { savedOpen = groups.map(function (group) { return group.open; }); }
+      var total = 0;
+      groups.forEach(function (group, index) {
+        var heading = normalize(group.querySelector("summary").textContent);
+        var count = 0;
+        group.querySelectorAll("li:not(.nx-index-sub)").forEach(function (item) {
+          var text = heading + " " + normalize(item.textContent);
+          var match = words.every(function (word) { return text.indexOf(word) !== -1; });
+          item.hidden = !match;
+          if (match) { count += 1; }
+        });
+        group.querySelectorAll("ul").forEach(function (list) {
+          var hasMatch = Array.from(list.querySelectorAll("li:not(.nx-index-sub)")).some(function (item) { return !item.hidden; });
+          list.hidden = !hasMatch;
+        });
+        group.hidden = count === 0;
+        if (query) { group.open = count > 0; }
+        else if (filtering) { group.open = savedOpen[index]; }
+        total += count;
+      });
+      filtering = Boolean(query);
+      result.textContent = query
+        ? (total ? total + (total === 1 ? " matching tool." : " matching tools.") : "No tools found. Try a different word or clear your search.")
+        : "Choose a category below to see its tools.";
+    }
+    document.getElementById("catalog-controls").hidden = false;
+    search.addEventListener("input", filterTools);
+    document.getElementById("clear-search").addEventListener("click", function () {
+      search.value = "";
+      filterTools();
+      search.focus();
+    });
+
+    // Native modal behavior makes the background inert and contains keyboard focus.
+    var viewer = document.getElementById("pvl-viewer");
+    var image = document.getElementById("pvl-image");
+    var canvas = document.getElementById("pvl-canvas");
+    var zoom = document.getElementById("pvl-zoom");
+    var opener = null;
+    function resetZoom() {
+      canvas.classList.remove("is-zoomed");
+      canvas.scrollTop = 0;
+      canvas.scrollLeft = 0;
+      zoom.textContent = "Zoom in";
+      zoom.setAttribute("aria-pressed", "false");
+    }
+    document.querySelectorAll(".nx-shot-button").forEach(function (button) {
+      button.addEventListener("click", function () {
+        var preview = button.querySelector("img");
+        opener = button;
+        resetZoom();
+        // Establish the image extent before showing the dialog; no delayed fitting.
+        image.width = preview.naturalWidth || Number(preview.getAttribute("width"));
+        image.height = preview.naturalHeight || Number(preview.getAttribute("height"));
+        image.src = preview.currentSrc || preview.src;
+        image.alt = preview.alt;
+        image.style.setProperty("--pvl-zoom-width", Math.max(image.naturalWidth / 2, canvas.clientWidth) + "px");
+        var caption = button.closest("figure").querySelector("figcaption");
+        document.getElementById("pvl-caption").textContent = caption ? caption.textContent : preview.alt;
+        document.documentElement.classList.add("nx-viewer-open");
+        viewer.showModal();
+        document.getElementById("pvl-close").focus();
+      });
+    });
+    zoom.addEventListener("click", function () {
+      var zoomed = canvas.classList.toggle("is-zoomed");
+      image.style.setProperty("--pvl-zoom-width", Math.max(image.naturalWidth / 2, canvas.clientWidth * 1.5) + "px");
+      zoom.textContent = zoomed ? "Fit to window" : "Zoom in";
+      zoom.setAttribute("aria-pressed", String(zoomed));
+      if (!zoomed) { canvas.scrollTop = 0; canvas.scrollLeft = 0; }
+    });
+    document.getElementById("pvl-close").addEventListener("click", function () { viewer.close(); });
+    viewer.addEventListener("keydown", function (event) {
+      if (event.key !== "Tab") { return; }
+      var first = zoom;
+      var last = canvas;
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    });
+    viewer.addEventListener("click", function (event) {
+      if (event.target !== viewer) { return; }
+      var rect = viewer.getBoundingClientRect();
+      if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) { viewer.close(); }
+    });
+    viewer.addEventListener("close", function () {
+      document.documentElement.classList.remove("nx-viewer-open");
+      resetZoom();
+      image.removeAttribute("src");
+      if (opener && opener.isConnected) { opener.focus({ preventScroll: true }); }
+      opener = null;
     });
   })();
 </script>
