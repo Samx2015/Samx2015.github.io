@@ -127,7 +127,8 @@
   .pvh-chips > :nth-child(4) { --chip-dot: #c36518; }
   .pvh-chips > :nth-child(5) { --chip-dot: #d9482b; }
   .pvh-chips > :nth-child(6) { --chip-dot: #4f8df9; }
-  .pvh-chips > :nth-child(7) { --chip-dot: #087975; grid-column: 1 / -1; justify-self: start; }
+  .pvh-chips > :nth-child(7) { --chip-dot: #087975; }
+  .pvh-chips > :nth-child(8) { --chip-dot: #4f8df9; }
   .pvh-chips > :nth-child(9) { --chip-dot: #9a5fd6; }
   .pvh-chips > :nth-child(10) { --chip-dot: #15813b; }
   .pvh-chips a:hover { border-color: color-mix(in srgb, var(--chip-dot, #246bfe) 45%, transparent); box-shadow: 0 1px 2px rgba(21, 32, 51, 0.08), 0 8px 22px rgba(21, 32, 51, 0.1); }
@@ -152,6 +153,7 @@
   .pvg-docs .pvw-icon { color: #087975; }
   .pvg-ai .pvw-icon { color: #9a5fd6; }
   .pvg-privacy .pvw-icon { color: #21a558; }
+  .pvg-ai .pvw-icon { color: #4f8df9; }
   .pvg-head { display: flex; align-items: center; gap: 12px; }
   .pvg-head .pvw-icon { flex: 0 0 auto; transform: translateY(-3px); }
   .pvg-head h3 { margin: 0; }
@@ -286,6 +288,15 @@
   .nx-slot b { color: var(--teal-dark); font-weight: 700; letter-spacing: 0.06em; font-size: 0.75rem; text-transform: uppercase; }
   .nx-slot span { max-width: 26ch; margin-inline: auto; }
   .pvg-group.nx-flip .pvg-copy { order: 2; }
+  /* A full-width card for dense screenshots (owner: as clear as possible): copy on
+     top with the bullets in two columns, the wide shot at the card's full width,
+     a tall shot below at its natural size. The lightbox still opens them full-size. */
+  .pvg-group.nx-wide { grid-template-columns: 1fr; }
+  .nx-wide .pvw-points { display: block; columns: 2; column-gap: 28px; }
+  .nx-wide .pvw-points li { break-inside: avoid; margin-bottom: 10px; }
+  .nx-wide .pvg-shots { grid-template-columns: 1fr; gap: 18px; }
+  .nx-wide .pvg-shots img { width: 100%; max-height: none; }
+  .nx-wide .pvg-shots figure.nx-tall img { width: auto; max-width: min(100%, 560px); margin-inline: auto; }
 
   /* App icons: the menu's own glyphs (SF Symbols with the app's tints), rendered
      to PNG by scripts/build_xhelperspro_site_icons.py from icons.json. An index
@@ -331,6 +342,7 @@
   @media (max-width: 980px) {
     .compact-hero .hero-content { grid-template-columns: 1fr; }
     .nx-get-inner { grid-template-columns: 1fr; }
+    .nx-wide .pvw-points { columns: 1; }
     .nx-pillars { grid-template-columns: 1fr; }
     .nx-benefits { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .pvg-group { grid-template-columns: 1fr; }
@@ -442,6 +454,7 @@
           <a href="#screen-text-files">Screen, Text &amp; Files</a>
           <a href="#mac-health-storage-apps">Mac Health, Storage &amp; Apps</a>
           <a href="#private-by-design">Private by Design</a>
+          <a href="#ai-usage">AI Usage</a>
         </nav>
         <div class="nx-hero-stats" aria-label="At a glance">
           <span><b>macOS 14</b> or later</span>
@@ -686,7 +699,41 @@
       </div>
     </article>
 
-    <article class="pvg-group pvg-privacy" id="private-by-design">
+    <article class="pvg-group pvg-ai nx-wide" id="ai-usage">
+      <div class="pvg-copy">
+        <div class="pvg-head">
+          <div class="pvw-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M5 20V11M11 20V5M17 20v-8M2 20h20"></path></svg>
+          </div>
+          <h3>AI Usage</h3>
+        </div>
+        <p class="pvg-lede">Every AI subscription&rsquo;s remaining quota in one place, before you hit the wall.</p>
+        <ul class="pvw-points">
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-ai-usage.png?v=20260916" width="20" height="16" alt=""><b>See every account at a glance</b>: weekly quota remaining, the next reset and the limit resets still available, for each connected Codex and Claude account side by side.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-ai-usage.png?v=20260916" width="20" height="16" alt=""><b>Check without opening a window</b>: hover the AI meter in the menu for a card of every account, or pin the one you use most to the menu bar.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-ai-settings.png?v=20260916" width="14" height="17" alt=""><b>Eleven services, one dashboard</b>: Codex, Claude, Grok, the OpenAI, Anthropic and xAI APIs, Gemini, GitHub Copilot, Cursor, OpenRouter and DeepSeek.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-privacy-lock.png?v=20260916" width="14" height="16" alt=""><b>Readings stay yours</b>: usage is collected on this Mac through the bundled CodexBar, and every reading keeps its source timestamp.</li>
+        </ul>
+      </div>
+      <div class="pvg-shots">
+        <figure>
+          <picture>
+            <source type="image/webp" srcset="assets/refresh/shot-ai-usage.webp?v=20260916">
+            <img src="assets/refresh/shot-ai-usage.png?v=20260916" width="3244" height="2594" loading="lazy" alt="AI Usage window showing seven connected Codex and Claude accounts as cards with weekly quota remaining, reset times and available limit resets">
+          </picture>
+          <figcaption>AI Usage &mdash; seven connected accounts, weekly quotas and resets side by side</figcaption>
+        </figure>
+        <figure class="nx-tall">
+          <picture>
+            <source type="image/webp" srcset="assets/refresh/shot-ai-usage-card.webp?v=20260916">
+            <img src="assets/refresh/shot-ai-usage-card.png?v=20260916" width="1080" height="1930" loading="lazy" alt="The AI meter's hover card listing every account with its weekly quota bar, reset time and available resets">
+          </picture>
+          <figcaption>The AI meter&rsquo;s hover card, straight from the menu</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="pvg-group pvg-privacy nx-flip" id="private-by-design">
       <div class="pvg-copy">
         <div class="pvg-head">
           <div class="pvw-icon" aria-hidden="true">
@@ -720,7 +767,7 @@
     <div class="nx-index">
       <div class="section-kicker">Every tool</div>
       <h2 id="index-title">The whole menu, as a list.</h2>
-      <p>The same six categories as above, complete. Items marked with a dot need a permission you grant once in the Permissions window.</p>
+      <p>The same categories as above, complete. Items marked with a dot need a permission you grant once in the Permissions window.</p>
       <div class="nx-index-grid">
         <div class="nx-index-group">
           <h4>Display &amp; Windows</h4>
@@ -863,6 +910,7 @@
               <li><img class="nx-ic" src="assets/refresh/ic-start-at-login.png?v=20260916" width="19" height="20" alt="">Start at Login</li>
               <li><img class="nx-ic" src="assets/refresh/ic-language.png?v=20260916" width="17" height="17" alt="">Language</li>
               <li><img class="nx-ic" src="assets/refresh/ic-ai-settings.png?v=20260916" width="14" height="17" alt="">AI Settings <small>· optional</small></li>
+              <li><img class="nx-ic" src="assets/refresh/ic-ai-usage.png?v=20260916" width="20" height="16" alt="">AI Usage</li>
               <li><img class="nx-ic" src="assets/refresh/ic-account.png?v=20260916" width="17" height="17" alt="">Account (optional Xin account)</li>
               <li><img class="nx-ic" src="assets/refresh/ic-manage-license.png?v=20260916" width="17" height="17" alt="">Manage License</li>
               <li><img class="nx-ic" src="assets/refresh/ic-permissions.png?v=20260916" width="15" height="16" alt="">Permissions</li>
