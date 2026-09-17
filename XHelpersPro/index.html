@@ -494,7 +494,7 @@
     <div class="hero-content">
       <div class="pvh-copy">
         <h1 id="hero-title">60+ Mac tools.<br>One menu bar.</h1>
-        <p class="hero-subtitle">Control your Mac, work with files and media, and track AI usage—all in one place.</p>
+        <p class="hero-subtitle">Powerful tools. Everyday convenience. Your Mac, your way.</p>
         <p class="nx-hero-note">Apple silicon + Intel · Signed and notarized</p>
         <div class="nx-hero-stats" aria-label="At a glance">
           <span><b>macOS 14</b> or later</span>
@@ -1207,7 +1207,10 @@
       link.addEventListener("click", function () { revealTarget(link.hash, false); });
     });
     window.addEventListener("hashchange", function () { revealTarget(location.hash, true); });
-    if (location.hash) { revealTarget(location.hash, true); }
+    // Reveal closed disclosures before the browser resolves a direct fragment.
+    // Initial navigation and history/reload restoration own the scroll position;
+    // forcing the fragment here first flashes it over a restored manual position.
+    if (location.hash) { revealTarget(location.hash, false); }
 
     // Native modal behavior makes the background inert and contains keyboard focus.
     var viewer = document.getElementById("pvl-viewer");
