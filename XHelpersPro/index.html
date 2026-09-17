@@ -393,10 +393,10 @@
   .nx-shot-button picture { display: block; }
   .nx-shot-button img { border-radius: 0; box-shadow: none; }
   html.nx-viewer-open { overflow: hidden; }
-  .pvl-viewer { position: fixed; inset: 0; margin: auto; width: min(1440px, calc(100vw - 24px)); height: calc(100dvh - 24px); max-width: none; max-height: none; padding: 0; border: 0; border-radius: 0; background: transparent; color: #fff; }
+  .pvl-viewer { position: fixed; inset: 0; margin: auto; width: min(1440px, calc(100vw - 24px)); height: calc(100dvh - 24px); max-width: none; max-height: none; padding: 0; border: 0; border-radius: 0; background: #000; color: #fff; }
   .pvl-viewer:not([open]) { display: none; }
   .pvl-viewer[open] { display: grid; grid-template-rows: auto minmax(0, 1fr); gap: 14px; }
-  .pvl-viewer::backdrop { background: rgba(10, 16, 26, 0.82); backdrop-filter: blur(5px); }
+  .pvl-viewer::backdrop { background: #000; }
   .pvl-toolbar { display: flex; justify-content: flex-end; }
 
   .pvl-actions { display: flex; gap: 8px; }
