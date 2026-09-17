@@ -3,20 +3,19 @@
     <channel>
         <title>XHelpers Pro</title>
         <item>
-            <title>1.0.8</title>
-            <pubDate>Wed, 16 Sep 2026 22:42:52 -0700</pubDate>
+            <title>1.0.9</title>
+            <pubDate>Thu, 17 Sep 2026 00:24:07 -0700</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>16</sparkle:version>
-            <sparkle:shortVersionString>1.0.8</sparkle:shortVersionString>
+            <sparkle:version>17</sparkle:version>
+            <sparkle:shortVersionString>1.0.9</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-# XHelpers Pro 1.0.8
+# XHelpers Pro 1.0.9
 
-> Notes for 1.0.8 (16). 1.0.8 adds AI Usage, the YouTube connection and mixed
-> queues in Music & Playlists, guided uninstall sessions, Network Quality, and
-> the redesigned Account window; 1.0.7 (15) made that window appear; 1.0.6 (14)
-> fixed a crash; 1.0.4 (12) was never published, so its changes are listed
-> here.
+> Notes for 1.0.9 (17). 1.0.9 is a maintenance build that carries the latest
+> Music & Playlists work and verifies in-app updates from 1.0.8 (16), whose
+> changes are listed below; 1.0.7 (15) made the Account window appear;
+> 1.0.6 (14) fixed a crash; 1.0.4 (12) was never published.
 
 ## What's New
 
@@ -364,7 +363,7 @@ updates.
 Requires macOS 14.0 or later.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.8/XHelpersPro-1.0.8-16-macOS.dmg" length="132468248" type="application/octet-stream" sparkle:edSignature="12O0pu+5jYUyzdt14tZzThX6afysKEpohy0WU/0ChwoCx/djm3Ph9pDSnrdhp0ZmH/KLHJBwwV3nF8Pn2W8ECw=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.9/XHelpersPro-1.0.9-17-macOS.dmg" length="132499851" type="application/octet-stream" sparkle:edSignature="Lh87XVAyPCCPHnHQg3629n2/49sf/HAIvKwmAN47XFcj+eF418ZRUuz292Lvw3SO54wZOA5oDt7y5CHaLO01Cw=="/>
         </item>
     </channel>
 </rss>
