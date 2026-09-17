@@ -175,7 +175,6 @@
     border-radius: 10px; box-shadow: 0 8px 22px rgba(21, 32, 51, 0.14); cursor: zoom-in;
   }
   .pvg-shots.stack img { width: 100%; max-height: none; }
-  .pvg-shots figcaption { margin-top: 6px; color: var(--muted); font-size: 0.9rem; text-align: center; }
   /* How to get it: one panel, the pitch and the button beside three compact steps. */
   .nx-get-inner {
     width: min(100%, var(--wide-max)); margin-inline: auto; padding: 24px;
@@ -205,13 +204,7 @@
 
   /* ---- nx layer: new for the refresh ---- */
   .nx-hero-shot { position: relative; margin: 0; }
-  .nx-hero-frame {
-    position: relative; overflow: hidden; border-radius: 16px;
-    box-shadow: 0 18px 44px rgba(27, 38, 40, 0.16);
-  }
   .nx-hero-frame img { display: block; width: 100%; height: auto; }
-  .nx-hero-shot figcaption { margin-top: 8px; text-align: center; color: var(--muted); font-size: 0.9rem; }
-  .nx-hero-shot figcaption a { color: var(--teal); }
   .nx-hero-stats { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
   .nx-hero-stats span {
     display: inline-flex; align-items: baseline; gap: 6px; padding: 5px 11px; border-radius: 999px;
@@ -363,30 +356,26 @@
 
 
 
-  .nx-shot-button { position: relative; display: block; width: 100%; padding: 0; border: 1px solid var(--line); border-radius: 12px; background: var(--panel-soft); color: var(--ink); cursor: zoom-in; overflow: hidden; text-align: left; }
+  .nx-shot-button { appearance: none; display: block; width: 100%; padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; color: var(--ink); cursor: zoom-in; text-align: left; }
   .nx-shot-button picture { display: block; }
   .nx-shot-button img { border-radius: 0; box-shadow: none; }
-  .nx-shot-button:hover { border-color: var(--teal); }
-  .nx-shot-label { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 44px; padding: 10px 14px; border-top: 1px solid var(--line); background: var(--panel); color: var(--teal-dark); font-size: 0.82rem; font-weight: 550; }
-  .nx-shot-label > span { font-size: 1.1rem; }
-  .nx-hero-frame { box-shadow: 0 18px 44px rgba(27, 38, 40, 0.16); }
   .nx-get-cta p.nx-license-note { margin-top: 14px; font-size: 0.88rem; line-height: 1.6; }
   .nx-license-note a { color: var(--teal-dark); text-decoration: underline; text-underline-offset: 0.15em; }
   html.nx-viewer-open { overflow: hidden; }
-  .pvl-viewer { position: fixed; inset: 0; margin: auto; width: min(1440px, calc(100vw - 24px)); height: calc(100dvh - 24px); max-width: none; max-height: none; padding: 16px; border: 1px solid #475569; border-radius: 16px; background: #142126; color: #fff; box-shadow: 0 24px 100px rgba(0, 0, 0, 0.4); }
+  .pvl-viewer { position: fixed; inset: 0; margin: auto; width: min(1440px, calc(100vw - 24px)); height: calc(100dvh - 24px); max-width: none; max-height: none; padding: 0; border: 0; border-radius: 0; background: transparent; color: #fff; }
   .pvl-viewer:not([open]) { display: none; }
-  .pvl-viewer[open] { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: 14px; }
+  .pvl-viewer[open] { display: grid; grid-template-rows: auto minmax(0, 1fr); gap: 14px; }
   .pvl-viewer::backdrop { background: rgba(10, 16, 26, 0.82); backdrop-filter: blur(5px); }
-  .pvl-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-  .pvl-toolbar h2 { margin: 0; font-size: 1rem; font-weight: 550; color: #fff; }
+  .pvl-toolbar { display: flex; justify-content: flex-end; }
+
   .pvl-actions { display: flex; gap: 8px; }
   .pvl-actions button { min-height: 44px; padding: 8px 14px; border: 1px solid #71818a; border-radius: 8px; background: #24383f; color: #fff; cursor: pointer; font-size: 0.9rem; }
   .pvl-actions button:hover { background: #34515a; }
-  .pvl-canvas { min-height: 0; overflow: auto; overscroll-behavior: contain; scrollbar-gutter: stable; display: flex; align-items: center; justify-content: center; border-radius: 8px; background: #0c1519; }
+  .pvl-canvas { min-height: 0; overflow: auto; overscroll-behavior: contain; scrollbar-gutter: stable; display: flex; align-items: center; justify-content: center; }
   .pvl-canvas img { display: block; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
   .pvl-canvas.is-zoomed { display: block; }
   .pvl-canvas.is-zoomed img { width: var(--pvl-zoom-width); max-width: none; max-height: none; margin: auto; }
-  #pvl-caption { margin: 0; line-height: 1.45; color: #d1dce0; font-size: 0.85rem; }
+
   @media (max-width: 1190px) {
     .site-header .site-nav { display: none; }
     .nx-explore { display: block; }
@@ -419,8 +408,8 @@
     .nx-numbers li { padding-inline: 4px; }
     .nx-numbers span { font-size: 0.75rem; }
 
-    .pvl-viewer { padding: 12px; }
-    .pvl-toolbar h2 { font-size: 0.9rem; }
+
+
     .pvl-actions { gap: 6px; }
     .pvl-actions button { padding-inline: 10px; }
   }
@@ -538,9 +527,9 @@
             <source type="image/webp" srcset="assets/refresh/menu-two-column.webp?v=20260916">
             <img src="assets/refresh/menu-two-column.png?v=20260916" width="1632" height="1380" alt="The XHelpers Pro menu in dark appearance: Display and Windows &amp; Input in the top band, Audio &amp; Subtitles and Network below them with per-app volume rows, then Tools and Settings &amp; Support">
           </picture>
-          <span class="nx-shot-label" aria-hidden="true">Enlarge screenshot <span>↗</span></span>
+
         </button>
-        <figcaption>Your everyday tools, one click from the menu bar.</figcaption>
+
       </figure>
     </div>
   </section>
@@ -752,9 +741,9 @@
             <source type="image/webp" srcset="assets/refresh/shot-display-resolution.webp?v=20260916">
             <img src="assets/refresh/shot-display-resolution.png?v=20260916" width="2964" height="1828" loading="lazy" alt="Display Tools: Resolution window listing HiDPI modes for an external display, each with a refresh rate and an Apply button, and a Create Custom HiDPI Preset form">
           </picture>
-          <span class="nx-shot-label" aria-hidden="true">Enlarge screenshot <span>↗</span></span>
+
         </button>
-          <figcaption>Display Tools: Resolution &mdash; HiDPI modes for an external display, plus custom presets</figcaption>
+
         </figure>
         <figure>
           <button class="nx-shot-button" type="button" aria-label="Enlarge: Snap &amp; Arrange Windows — every arrangement has a shortcut" aria-haspopup="dialog" aria-controls="pvl-viewer">
@@ -762,9 +751,9 @@
             <source type="image/webp" srcset="assets/refresh/shot-snap-arrange-submenu.webp?v=20260916">
             <img src="assets/refresh/shot-snap-arrange-submenu.png?v=20260916" width="905" height="1687" loading="lazy" alt="Snap &amp; Arrange Windows submenu: halves, quadrants, center, maximize, restore, move to the previous or next display, save and restore window positions, focus actions, each with its shortcut">
           </picture>
-          <span class="nx-shot-label" aria-hidden="true">Enlarge screenshot <span>↗</span></span>
+
         </button>
-          <figcaption>Snap &amp; Arrange Windows &mdash; every arrangement has a shortcut</figcaption>
+
         </figure>
       </div>
     </article>
@@ -793,9 +782,9 @@
             <source type="image/webp" srcset="assets/refresh/shot-pdf-quick-actions.webp?v=20260916">
             <img src="assets/refresh/shot-pdf-quick-actions.png?v=20260916" width="1560" height="1184" loading="lazy" alt="PDF Quick Actions window with four actions: Combine PDFs, Organize Pages, Extract or Split Pages, Create PDF from Images">
           </picture>
-          <span class="nx-shot-label" aria-hidden="true">Enlarge screenshot <span>↗</span></span>
+
         </button>
-          <figcaption>PDF Quick Actions &mdash; combine, organize, split, or build a PDF from images</figcaption>
+
         </figure>
       </div>
     </article>
@@ -824,9 +813,9 @@
             <source type="image/webp" srcset="assets/refresh/shot-ai-usage.webp?v=20260916">
             <img src="assets/refresh/shot-ai-usage.png?v=20260916" width="3244" height="2594" loading="lazy" alt="AI Usage window showing seven connected Codex and Claude accounts as cards with weekly quota remaining, reset times and available limit resets">
           </picture>
-          <span class="nx-shot-label" aria-hidden="true">Enlarge screenshot <span>↗</span></span>
+
         </button>
-          <figcaption>AI Usage &mdash; seven connected accounts, weekly quotas and resets side by side</figcaption>
+
         </figure>
         <figure class="nx-tall">
           <button class="nx-shot-button" type="button" aria-label="Enlarge: The AI meter’s hover card, straight from the menu" aria-haspopup="dialog" aria-controls="pvl-viewer">
@@ -834,9 +823,9 @@
             <source type="image/webp" srcset="assets/refresh/shot-ai-usage-card.webp?v=20260916">
             <img src="assets/refresh/shot-ai-usage-card.png?v=20260916" width="1080" height="1930" loading="lazy" alt="The AI meter's hover card listing every account with its weekly quota bar, reset time and available resets">
           </picture>
-          <span class="nx-shot-label" aria-hidden="true">Enlarge screenshot <span>↗</span></span>
+
         </button>
-          <figcaption>The AI meter&rsquo;s hover card, straight from the menu</figcaption>
+
         </figure>
       </div>
     </article>
@@ -883,9 +872,9 @@
             <source type="image/webp" srcset="assets/refresh/shot-remap.webp?v=20260916">
             <img src="assets/refresh/shot-remap.png?v=20260916" width="1492" height="1184" loading="lazy" alt="Key &amp; Button Remapping window with a rule that sends Control-backtick when the middle mouse button is pressed, and buttons to add shortcut, dual-role and Hyper key rules">
           </picture>
-          <span class="nx-shot-label" aria-hidden="true">Enlarge screenshot <span>↗</span></span>
+
         </button>
-          <figcaption>Key &amp; Button Remapping &mdash; shortcut, dual-role and Hyper key rules</figcaption>
+
         </figure>
         <figure>
           <button class="nx-shot-button" type="button" aria-label="Enlarge: Mouse Sensitivity &amp; Acceleration — a profile per device" aria-haspopup="dialog" aria-controls="pvl-viewer">
@@ -893,9 +882,9 @@
             <source type="image/webp" srcset="assets/refresh/shot-mouse.webp?v=20260916">
             <img src="assets/refresh/shot-mouse.png?v=20260916" width="1240" height="746" loading="lazy" alt="Mouse Sensitivity &amp; Acceleration window with a USB mouse selected and sliders for sensitivity and acceleration">
           </picture>
-          <span class="nx-shot-label" aria-hidden="true">Enlarge screenshot <span>↗</span></span>
+
         </button>
-          <figcaption>Mouse Sensitivity &amp; Acceleration &mdash; a profile per device</figcaption>
+
         </figure>
       </div>
     </article>
@@ -923,9 +912,9 @@
             <source type="image/webp" srcset="assets/refresh/shot-live-subtitles.webp?v=20260916">
             <img src="assets/refresh/shot-live-subtitles.png?v=20260916" width="1300" height="1944" loading="lazy" alt="Live Subtitles window: choose the app, spoken language and translation language, timing and speaker options, a preview of the subtitle style, and a privacy note that audio stays on this Mac">
           </picture>
-          <span class="nx-shot-label" aria-hidden="true">Enlarge screenshot <span>↗</span></span>
+
         </button>
-          <figcaption>Live Subtitles &mdash; on-device transcription and translation for one app</figcaption>
+
         </figure>
       </div>
     </article>
@@ -954,9 +943,9 @@
             <source type="image/webp" srcset="assets/refresh/shot-system-tweaks.webp?v=20260916">
             <img src="assets/refresh/shot-system-tweaks.png?v=20260916" width="2968" height="1810" loading="lazy" alt="Maintenance &amp; System Tweaks window showing tweak cards grouped as faster, fancier, tidier and quieter, each with its saved setting">
           </picture>
-          <span class="nx-shot-label" aria-hidden="true">Enlarge screenshot <span>↗</span></span>
+
         </button>
-          <figcaption>Maintenance &amp; System Tweaks, one card per setting</figcaption>
+
         </figure>
       </div>
     </article>
@@ -986,9 +975,9 @@
             <source type="image/webp" srcset="assets/refresh/shot-permissions.webp?v=20260916">
             <img src="assets/refresh/shot-permissions.png?v=20260916" width="1440" height="2098" loading="lazy" alt="Permissions window listing nine macOS permissions in three tiers with what each unlocks and its live status">
           </picture>
-          <span class="nx-shot-label" aria-hidden="true">Enlarge screenshot <span>↗</span></span>
+
         </button>
-          <figcaption>The Permissions window, with live status</figcaption>
+
         </figure>
       </div>
     </article>
@@ -1033,16 +1022,14 @@
   </footer>
 </main>
 
-<dialog class="pvl-viewer" id="pvl-viewer" aria-labelledby="pvl-title" aria-describedby="pvl-caption">
+<dialog class="pvl-viewer" id="pvl-viewer" aria-label="Screenshot">
   <div class="pvl-toolbar">
-    <h2 id="pvl-title">Screenshot preview</h2>
     <div class="pvl-actions">
       <button type="button" id="pvl-zoom" aria-pressed="false">Zoom in</button>
       <button type="button" id="pvl-close" autofocus>Close <span aria-hidden="true">×</span></button>
     </div>
   </div>
   <div class="pvl-canvas" id="pvl-canvas" tabindex="0" role="region" aria-label="Screenshot. Use arrow keys to pan when zoomed."><img id="pvl-image" alt=""></div>
-  <p id="pvl-caption"></p>
 </dialog>
 
 <script>
@@ -1115,8 +1102,6 @@
         image.src = preview.currentSrc || preview.src;
         image.alt = preview.alt;
         image.style.setProperty("--pvl-zoom-width", Math.max(image.naturalWidth / 2, canvas.clientWidth) + "px");
-        var caption = button.closest("figure").querySelector("figcaption");
-        document.getElementById("pvl-caption").textContent = caption ? caption.textContent : preview.alt;
         document.documentElement.classList.add("nx-viewer-open");
         viewer.showModal();
         document.getElementById("pvl-close").focus();
