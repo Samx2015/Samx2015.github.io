@@ -252,9 +252,9 @@
      to PNG by scripts/build_xhelperspro_site_icons.py from icons.json. An index
      entry carries its icon inline; a card bullet uses its tool's icon as the marker. */
   .nx-ic { display: inline-block; width: 1.15em; height: 1em; object-fit: contain; vertical-align: -0.12em; margin-right: 0.3em; }
-  .pvw-points li.nx-iconed { padding-left: 27px; }
+  .pvw-points li.nx-iconed { padding-left: 38px; min-height: 26px; }
   .pvw-points li.nx-iconed::before, .pvg-privacy .pvw-points li.nx-iconed::before { display: none; }
-  .pvw-points li .nx-ic-bullet { position: absolute; left: 0; top: 0.2em; width: 19px; height: 19px; object-fit: contain; }
+  .pvw-points li .nx-ic-bullet { position: absolute; left: 0; top: -0.05em; width: 28px; height: 26px; object-fit: contain; }
   .nx-band-map li b .nx-ic { width: 1.2em; height: 1.05em; vertical-align: -0.16em; }
 
   .nx-index { width: min(100%, var(--wide-max)); margin-inline: auto; }
@@ -272,8 +272,11 @@
   .nx-index-group ul { margin: 0; padding: 0; list-style: none; }
   .nx-index-group ul.nx-index-subgroup { break-inside: avoid; }
   .nx-index-group ul + ul { margin-top: 10px; }
-  .nx-index-group li { position: relative; margin: 0 0 6px; padding-left: 1.5em; font-size: 0.9rem; color: var(--ink); line-height: 1.4; break-inside: avoid; }
-  .nx-index-group li > .nx-ic { position: absolute; left: 0; top: 0.2em; margin: 0; }
+  /* The icon floats into the entry's left padding. Not absolutely positioned:
+     Chromium's column balancing collapses to one column when an avoid-break
+     item holds an absolutely positioned child. */
+  .nx-index-group li { margin: 0 0 8px; padding-left: 36px; min-height: 24px; font-size: 0.92rem; color: var(--ink); line-height: 1.4; break-inside: avoid; }
+  .nx-index-group li > .nx-ic { float: left; width: 28px; height: 24px; margin: -2px 0 0 -36px; }
   .nx-index-group li small { color: var(--muted); }
   .nx-index-group li.nx-index-sub { margin: 0 0 6px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
 
