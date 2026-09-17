@@ -1030,6 +1030,11 @@ body[data-demo-mode="disabled"] .status-dot {
   box-shadow: var(--shadow);
 }
 
+/* Offset the Audio Effects capture's transparent bottom padding in its preview. */
+.pvg-audio .nx-shot-button img[src*="/shot-audio-effects."] {
+  margin-bottom: -8%;
+}
+
 .feature-tour h3 {
   margin: 0 0 0.6rem;
   font-size: 1.25rem;
