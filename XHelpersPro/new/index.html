@@ -1,0 +1,818 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>XHelpers Pro for Mac — preview of the refreshed page</title>
+    <meta name="description" content="Preview of the refreshed XHelpers Pro homepage. Screenshots are placeholders; the live page is at https://xintechllc.com/XHelpersPro/.">
+    <link rel="icon" href="../assets/app-icon.png" type="image/png">
+<link rel="stylesheet" href="xhelperspro-website-refresh-assets/styles.css">
+<style>
+  /* ------------------------------------------------------------------
+     Design study for the refreshed https://xintechllc.com/XHelpersPro/
+     homepage. It links a snapshot of the live site's styles.css and
+     carries the same inline "pv" layer the live index.html uses, plus a
+     small "nx" layer for the new sections. Every screenshot is a
+     placeholder from an older capture set (August 2026, single-column
+     menu era) or an empty-state draft; each one is ribboned. Empty
+     dashed boxes are shot slots with the content brief for the later
+     capture session. See Docs/XHelpersPro-Website-Refresh-Audit-And-Plan.md.
+     ------------------------------------------------------------------ */
+
+  /* ---- pv layer (verbatim from the live index.html, chips widened) ---- */
+  .pvw > .pvg-group { width: min(100%, var(--wide-max)); margin-inline: auto; }
+  .hero.compact-hero { border-bottom: 0; }
+  .compact-release::before { display: none; }
+  #what.pvw.compact-section { padding-top: 0.7rem; padding-bottom: 1.1rem; }
+  #release.compact-release.compact-section { padding-top: 1.1rem; }
+  .compact-hero { min-height: 0; padding-top: 1.3rem; padding-bottom: 1rem; }
+  .compact-hero .eyebrow { margin-bottom: 0.35rem; }
+  .compact-hero .hero-subtitle { margin-bottom: 0; font-size: 1.12rem; }
+  .compact-hero .hero-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: clamp(1.5rem, 4vw, 3.5rem);
+    align-items: center;
+    padding-top: 0;
+    width: min(100%, var(--wide-max));
+  }
+  .compact-hero h1 { font-size: clamp(1.9rem, 3.2vw, 2.4rem); margin-bottom: 0.4rem; }
+  .pvh-chips { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 8px; align-content: center; }
+  .pvh-chips span {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 5px 13px 5px 11px;
+    border: 1px solid rgba(28, 42, 64, 0.1); border-radius: 999px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.72));
+    color: #3d4a5d; font-size: 0.88rem; letter-spacing: 0.01em;
+    box-shadow: 0 1px 2px rgba(21, 32, 51, 0.05), 0 6px 18px rgba(21, 32, 51, 0.05);
+    backdrop-filter: blur(8px);
+  }
+  .pvh-chips span::before {
+    content: ""; width: 7px; height: 7px; border-radius: 999px;
+    background: var(--chip-dot, #246bfe);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--chip-dot, #246bfe) 16%, transparent);
+  }
+  .pvh-chips span:nth-child(1) { --chip-dot: #246bfe; }
+  .pvh-chips span:nth-child(2) { --chip-dot: #0f9f9a; }
+  .pvh-chips span:nth-child(3) { --chip-dot: #7964e8; }
+  .pvh-chips span:nth-child(4) { --chip-dot: #c36518; }
+  .pvh-chips span:nth-child(5) { --chip-dot: #d9482b; }
+  .pvh-chips span:nth-child(6) { --chip-dot: #4f8df9; }
+  .pvh-chips span:nth-child(7) { --chip-dot: #b8235a; }
+  .pvh-chips span:nth-child(8) { --chip-dot: #087975; }
+  .pvh-chips span:nth-child(9) { --chip-dot: #9a5fd6; }
+  .pvh-chips span:nth-child(10) { --chip-dot: #15813b; }
+  .pvh-combines { margin: 0.5rem 0 0; max-width: 44rem; color: var(--muted); font-size: 0.95rem; line-height: 1.55; }
+  .pvg-group {
+    display: grid; grid-template-columns: minmax(0, 0.44fr) minmax(0, 0.56fr);
+    gap: clamp(16px, 2.5vw, 28px); align-items: center; padding: 20px;
+    border: 1px solid var(--line); border-radius: 22px; background: var(--panel); box-shadow: var(--shadow);
+  }
+  .pvw > .pvg-group + .pvg-group { margin-top: 18px; }
+  .pvg-copy { display: flex; flex-direction: column; gap: 18px; }
+  .pvw-icon {
+    display: grid; place-items: center; color: #2f6bff; font-size: 1.9rem; line-height: 1;
+    filter: drop-shadow(0 2px 7px color-mix(in srgb, currentColor 55%, transparent));
+  }
+  .pvg-finder .pvw-icon { color: #0aa49e; }
+  .pvg-input .pvw-icon { color: #8b5cf6; }
+  .pvg-audio .pvw-icon { color: #f59e0b; }
+  .pvg-screen .pvw-icon { color: #d9482b; }
+  .pvg-health .pvw-icon { color: #b8235a; }
+  .pvg-docs .pvw-icon { color: #087975; }
+  .pvg-ai .pvw-icon { color: #9a5fd6; }
+  .pvg-privacy .pvw-icon { color: #21a558; }
+  .pvg-head { display: flex; align-items: center; gap: 12px; }
+  .pvg-head .pvw-icon { flex: 0 0 auto; transform: translateY(-3px); }
+  .pvg-head h3 { margin: 0; }
+  .pvg-copy h3 { margin: 0 0 8px; font-size: 1.28rem; line-height: 1.2; color: var(--ink); font-weight: 500; }
+  .pvg-copy p { margin: 0; color: var(--muted); line-height: 1.62; }
+  .pvw-points { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+  .pvw-points li { position: relative; padding-left: 24px; color: var(--muted); line-height: 1.52; }
+  .pvw-points li::before {
+    content: ""; position: absolute; left: 0; top: 0.68em; width: 8px; height: 8px; border-radius: 999px;
+    background: linear-gradient(135deg, #246bfe, #0f9f9a);
+  }
+  .pvg-privacy .pvw-points li { padding-left: 30px; }
+  .pvg-privacy .pvw-points li::before {
+    content: "\2713"; top: 0.18em; width: 19px; height: 19px; display: grid; place-items: center;
+    color: #fff; background: linear-gradient(135deg, #22a06b, #15813b); font-size: 11px; font-weight: 800; line-height: 1;
+  }
+  .pvw-note {
+    margin-top: auto; padding: 13px 14px; border: 1px solid rgba(36, 107, 254, 0.14); border-radius: 15px;
+    color: #315684; background: rgba(232, 240, 255, 0.6); font-size: 0.92rem; line-height: 1.45;
+  }
+  .pvg-shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; align-content: start; }
+  .pvg-shots.stack { grid-template-columns: 1fr; }
+  .pvg-shots figure { margin: 0; position: relative; }
+  .pvg-shots img {
+    display: block; width: auto; max-width: 100%; max-height: 360px; height: auto; margin-inline: auto;
+    border-radius: 10px; box-shadow: 0 8px 22px rgba(21, 32, 51, 0.14); cursor: zoom-in;
+  }
+  .pvg-shots.stack img { width: 100%; max-height: none; }
+  .pvg-shots figcaption { margin-top: 6px; color: var(--muted); font-size: 0.9rem; text-align: center; }
+  .pvl-overlay {
+    position: fixed; inset: 0; z-index: 999; display: grid; place-items: center; padding: 3vmin;
+    background: rgba(10, 16, 26, 0.82); backdrop-filter: blur(6px); cursor: zoom-out;
+  }
+  .pvl-overlay[hidden] { display: none; }
+  .pvl-overlay img { max-width: min(1500px, 96vw); max-height: 93vh; width: auto; height: auto; border-radius: 10px; box-shadow: 0 30px 90px rgba(0, 0, 0, 0.5); }
+  #release > .pvr-flow { width: min(100%, var(--wide-max)); margin-inline: auto; }
+  .pvr-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+  .pvr-steps strong {
+    display: inline-grid; place-items: center; width: 26px; height: 26px; flex: 0 0 auto; border-radius: 999px;
+    color: #fff; background: var(--step-color, #246bfe);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--step-color, #246bfe) 18%, transparent);
+    font-size: 0.88rem; font-weight: 700; line-height: 1;
+  }
+  .pvr-steps li:nth-child(1) strong { --step-color: #246bfe; }
+  .pvr-steps li:nth-child(2) strong { --step-color: #0f9f9a; }
+  .pvr-steps li:nth-child(3) strong { --step-color: #15813b; }
+  .pvr-flow .compatibility-list { margin-top: 18px; }
+
+  /* ---- nx layer: new for the refresh ---- */
+  .nx-study-note {
+    position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50;
+    display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; justify-content: center;
+    padding: 7px var(--page-gutter); background: #f0c86b; color: #3b2f0b; font-size: 0.82rem; letter-spacing: 0.01em;
+  }
+  .nx-study-note strong { font-weight: 700; }
+  .nx-hero-shot { position: relative; margin: 0; }
+  .nx-hero-frame {
+    position: relative; max-height: 520px; overflow: hidden; border-radius: 16px;
+    box-shadow: 0 18px 44px rgba(27, 38, 40, 0.16);
+    -webkit-mask-image: linear-gradient(180deg, #000 78%, transparent 100%);
+    mask-image: linear-gradient(180deg, #000 78%, transparent 100%);
+  }
+  .nx-hero-frame img { display: block; width: 100%; height: auto; }
+  .nx-hero-shot figcaption { margin-top: 8px; text-align: center; color: var(--muted); font-size: 0.9rem; }
+  .nx-hero-shot figcaption a { color: var(--teal); }
+  .nx-hero-stats { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .nx-hero-stats span {
+    display: inline-flex; align-items: baseline; gap: 6px; padding: 5px 11px; border-radius: 999px;
+    border: 1px solid var(--line); background: var(--panel-soft); color: var(--muted); font-size: 0.85rem;
+  }
+  .nx-hero-stats b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+  .nx-band {
+    margin: 26px 0 8px; padding: clamp(26px, 4vw, 44px) 0; color: #f5f7f4;
+    background: linear-gradient(180deg, #1f2b2d, #16201f);
+  }
+  .nx-band-inner {
+    width: min(100%, var(--wide-max)); margin-inline: auto; padding-inline: var(--page-gutter);
+    display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(20px, 3vw, 40px); align-items: center;
+  }
+  .nx-band .section-kicker { color: #80f2ea; }
+  .nx-band h2 { margin: 0 0 12px; font-size: clamp(1.5rem, 2.6vw, 2rem); font-weight: 500; color: #f5f7f4; text-wrap: balance; }
+  .nx-band p { margin: 0 0 16px; color: #aab6b0; line-height: 1.6; }
+  .nx-band-map { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin: 0; padding: 0; list-style: none; }
+  .nx-band-map li { padding: 10px 12px; border: 1px solid #2a3436; border-radius: 12px; background: rgba(255, 255, 255, 0.03); font-size: 0.9rem; line-height: 1.4; color: #dfe6e4; }
+  .nx-band-map li b { display: block; color: #80f2ea; font-weight: 600; font-size: 0.8rem; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 3px; }
+  .nx-band figure { margin: 0; position: relative; }
+  .nx-band figure img { display: block; width: 100%; max-height: 640px; object-fit: contain; object-position: top; border-radius: 12px; cursor: zoom-in; }
+  .nx-band figcaption { margin-top: 8px; color: #aab6b0; font-size: 0.9rem; text-align: center; }
+
+  figure.nx-placeholder::after,
+  .nx-band figure.nx-placeholder::after {
+    content: attr(data-note); position: absolute; top: 8px; left: 8px; z-index: 2;
+    padding: 3px 8px; border-radius: 6px; background: rgba(240, 200, 107, 0.95); color: #3b2f0b;
+    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; pointer-events: none;
+  }
+  .nx-slot {
+    display: grid; place-content: center; gap: 6px; min-height: 220px; padding: 16px; text-align: center;
+    border: 2px dashed color-mix(in srgb, var(--teal) 45%, var(--line)); border-radius: 10px;
+    background: repeating-linear-gradient(135deg, transparent 0 14px, rgba(11, 127, 124, 0.05) 14px 16px), var(--panel-soft);
+    color: var(--muted); font-size: 0.88rem; line-height: 1.45;
+  }
+  .nx-slot b { color: var(--teal-dark); font-weight: 700; letter-spacing: 0.06em; font-size: 0.75rem; text-transform: uppercase; }
+  .nx-slot span { max-width: 26ch; margin-inline: auto; }
+  .pvg-group.nx-flip .pvg-copy { order: 2; }
+
+  .nx-index { width: min(100%, var(--wide-max)); margin-inline: auto; }
+  .nx-index h2 { margin: 0 0 6px; font-size: clamp(1.4rem, 2.4vw, 1.85rem); font-weight: 500; color: var(--ink); text-wrap: balance; }
+  .nx-index > p { margin: 0 0 18px; color: var(--muted); max-width: 60ch; line-height: 1.6; }
+  .nx-index-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
+  .nx-index-group { padding: 14px 14px 12px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }
+  .nx-index-group h4 { margin: 0 0 8px; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--teal-dark); }
+  .nx-index-group ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 4px; }
+  .nx-index-group li { font-size: 0.88rem; color: var(--ink); line-height: 1.35; }
+  .nx-index-group li small { color: var(--muted); }
+  .nx-index-group li.nx-index-sub { margin-top: 6px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+  .nx-index-group li.nx-index-sub:first-child { margin-top: 0; }
+
+  .nx-footer {
+    width: min(100%, var(--wide-max)); margin: 8px auto 28px; padding: 18px var(--page-gutter) 0; border-top: 1px solid var(--line);
+    display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; justify-content: space-between; color: var(--muted); font-size: 0.88rem;
+  }
+  .nx-footer nav { display: flex; flex-wrap: wrap; gap: 14px; }
+  .nx-footer a { color: var(--teal-dark); text-decoration: none; }
+  .nx-footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 980px) {
+    .compact-hero .hero-content { grid-template-columns: 1fr; }
+    .pvr-steps { grid-template-columns: 1fr; }
+    .pvg-group { grid-template-columns: 1fr; }
+    .pvg-group.nx-flip .pvg-copy { order: 0; }
+    .pvg-shots { grid-template-columns: 1fr; }
+    .pvg-shots img { max-height: 420px; }
+    .nx-band-inner { grid-template-columns: 1fr; }
+    .nx-hero-frame { max-height: 380px; }
+  }
+  @media (max-width: 560px) {
+    .pvh-chips { grid-template-columns: 1fr; }
+    .nx-band-map { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+</style>
+
+  </head>
+  <body>
+<div class="nx-study-note" role="note">
+  <strong>Design study, 2026-09-16.</strong>
+  <span>Same style system as the live page. Yellow ribbons mark placeholder screenshots; dashed boxes are shot slots to be captured with staged content.</span>
+</div>
+
+<header class="site-header" aria-label="Primary">
+  <a class="brand" href="#top" aria-label="XHelpers Pro home">
+    <img src="xhelperspro-website-refresh-assets/app-icon.png" alt="" width="34" height="34">
+    <span>XHelpers Pro</span>
+  </a>
+  <nav class="site-nav" aria-label="Page sections">
+    <a href="#what">Features</a>
+    <a href="#every-tool">Every Tool</a>
+    <a href="#why">Why It's Good</a>
+    <a href="#release">Get It</a>
+  </nav>
+  <div class="header-actions">
+    <a class="header-cta" href="https://xintechllc.com/XHelpersPro/download/XHelpersPro-macOS.dmg">
+      <span class="button-glyph" aria-hidden="true"></span>
+      Download for Mac
+    </a>
+    <details class="language-menu">
+      <summary>🌐 - 🇺🇸🇬🇧 English</summary>
+      <div class="language-menu-list" aria-label="Language">
+        <a href="#" lang="en" aria-current="page">🇺🇸🇬🇧 English</a>
+        <a href="#" lang="zh-Hans">🇨🇳 简体中文</a>
+        <a href="#" lang="zh-Hant">🇹🇼🇭🇰 繁體中文</a>
+        <a href="#" lang="ja">🇯🇵 日本語</a>
+        <a href="#" lang="de">🇩🇪 Deutsch</a>
+        <a href="#" lang="fr">🇫🇷 Français</a>
+        <a href="#" lang="es">🇪🇸🇲🇽 Español</a>
+        <a href="#" lang="ko">🇰🇷 한국어</a>
+        <a href="#" lang="pt-BR">🇧🇷 Português (Brasil)</a>
+        <a href="#" lang="ru">🇷🇺 Русский</a>
+        <a href="#" lang="it">🇮🇹 Italiano</a>
+        <a href="#" lang="nl">🇳🇱 Nederlands</a>
+        <a href="#" lang="sv">🇸🇪 Svenska</a>
+        <a href="#" lang="da">🇩🇰 Dansk</a>
+        <a href="#" lang="nb">🇳🇴 Norsk bokmål</a>
+        <a href="#" lang="fi">🇫🇮 Suomi</a>
+        <a href="#" lang="pl">🇵🇱 Polski</a>
+        <a href="#" lang="tr">🇹🇷 Türkçe</a>
+        <a href="#" lang="ar">🇸🇦🇪🇬 العربية</a>
+        <a href="#" lang="th">🇹🇭 ไทย</a>
+        <a href="#" lang="vi">🇻🇳 Tiếng Việt</a>
+        <a href="#" lang="id">🇮🇩 Bahasa Indonesia</a>
+        <a href="#" lang="ms">🇲🇾 Bahasa Melayu</a>
+        <a href="#" lang="hi">🇮🇳 हिन्दी</a>
+        <a href="#" lang="cs">🇨🇿 Čeština</a>
+        <a href="#" lang="uk">🇺🇦 Українська</a>
+      </div>
+    </details>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero compact-hero" aria-labelledby="hero-title">
+    <img class="hero-image" src="xhelperspro-website-refresh-assets/site-hero-display.jpg" alt="">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="pvh-copy">
+        <p class="eyebrow">Mac menu-bar utility suite</p>
+        <h1 id="hero-title">XHelpers Pro</h1>
+        <p class="hero-subtitle">The useful desk features, merged into one Mac utility.</p>
+        <p class="pvh-combines">
+          Display and window control, Finder actions and local Safes, pointer and keyboard tuning,
+          per-app audio, music and live subtitles, screen, text and file tools, and Mac health,
+          storage and app cleanup — all in one two-column menu-bar menu. Local-first, no account
+          required.
+        </p>
+        <div class="pvh-chips" aria-label="Feature highlights">
+          <span>Display &amp; Windows</span>
+          <span>Finder, Safes &amp; Archives</span>
+          <span>Pointer &amp; Keyboard</span>
+          <span>Audio, Music &amp; Subtitles</span>
+          <span>Screen, Text &amp; Files</span>
+          <span>Mac Health, Storage &amp; Apps</span>
+          <span>Live Subtitles</span>
+          <span>Private by Design</span>
+        </div>
+        <div class="nx-hero-stats" aria-label="At a glance">
+          <span><b>60+</b> tools</span>
+          <span><b>26</b> languages</span>
+          <span><b>macOS 14</b> or later</span>
+          <span><b>14-day</b> free trial</span>
+        </div>
+      </div>
+      <figure class="nx-hero-shot nx-placeholder" data-note="Placeholder · Aug 2026 single-column menu">
+        <div class="nx-hero-frame">
+          <img src="xhelperspro-website-refresh-assets/aug-01-main-popover-cropped.jpg" width="1000" height="2380" alt="The XHelpers Pro menu-bar menu">
+        </div>
+        <figcaption>Shot S01 replaces this: the current two-column menu, dark appearance, Wi-Fi and audio rows populated. <a href="#menu">See the whole menu</a></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="nx-band" id="menu" aria-labelledby="menu-title">
+    <div class="nx-band-inner">
+      <div>
+        <div class="section-kicker">One menu, six sections</div>
+        <h2 id="menu-title">Everything lives one click away in the menu bar.</h2>
+        <p>
+          The menu is laid out in two columns so the whole suite fits on one screen: quick controls at the
+          top, tools and settings paired below. No Dock window, no separate apps to open.
+        </p>
+        <ul class="nx-band-map" aria-label="Menu sections">
+          <li><b>Display</b>Blackout, dim until key press, brightness, contrast, keyboard backlight</li>
+          <li><b>Windows &amp; Input</b>Active-window highlight, Finder context menus, pointer, scroll, remapping</li>
+          <li><b>Audio &amp; Subtitles</b>Music &amp; Playlists, per-app Audio Mixer, Live Subtitles</li>
+          <li><b>Network</b>Auto Wi-Fi Switch, Network Quality</li>
+          <li><b>Tools</b>Keep Mac Awake, Change Resolution, Snap &amp; Arrange Windows, Screen Tools, Utilities</li>
+          <li><b>Settings &amp; Support</b>Settings, Account, Permissions, Help &amp; Feedback, About, Quit</li>
+        </ul>
+      </div>
+      <figure class="nx-placeholder" data-note="Placeholder · Aug 2026 layout">
+        <img src="xhelperspro-website-refresh-assets/aug-01-main-popover-cropped.jpg" width="1000" height="2380" alt="Full XHelpers Pro menu">
+        <figcaption>Shot S01 (full height) — the two-column menu with the Audio Mixer rows showing two playing apps.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section compact-section pvw" id="what" aria-label="Features">
+
+    <article class="pvg-group pvg-display">
+      <div class="pvg-copy">
+        <div class="pvg-head">
+          <div class="pvw-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><rect x="2" y="4" width="20" height="13" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg>
+          </div>
+          <h3>Display &amp; Windows</h3>
+        </div>
+        <p class="pvg-lede">Run the visual side of your desk without opening System Settings or a second window manager.</p>
+        <ul class="pvw-points">
+          <li>Black out the built-in MacBook display while it mirrors an external monitor; dim displays until a key press.</li>
+          <li>Brightness, contrast and keyboard-backlight sliders right in the menu, plus sleep, restart, shut down and macOS theme.</li>
+          <li>Install HiDPI presets and custom resolutions, with a keep-or-revert safety timer after every switch.</li>
+          <li>Snap &amp; Arrange Windows to halves, quadrants you can customize, maximize or center, or the next display; save and restore window positions.</li>
+          <li>Highlight the active window with a click-through border; Keep Mac Awake for 30 minutes, hours, on power, or while an app runs.</li>
+        </ul>
+        <div class="pvw-note">Global keyboard shortcuts cover arrangement, display moves and app focus, with built-in Rectangle conflict resolution.</div>
+      </div>
+      <div class="pvg-shots">
+        <figure class="nx-placeholder" data-note="Placeholder · Aug 2026">
+          <img src="xhelperspro-website-refresh-assets/aug-15-change-resolution-submenu-cropped.jpg" alt="Change Resolution submenu with HiDPI modes">
+          <figcaption>S03 · Display Tools: Resolution (HiDPI presets)</figcaption>
+        </figure>
+        <figure class="nx-placeholder" data-note="Placeholder · Aug 2026">
+          <img src="xhelperspro-website-refresh-assets/aug-16-snap-arrange-windows-submenu-cropped.jpg" alt="Snap and Arrange Windows submenu">
+          <figcaption>S02 · Snap &amp; Arrange Windows</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="pvg-group pvg-finder nx-flip">
+      <div class="pvg-copy">
+        <div class="pvg-head">
+          <div class="pvw-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><path d="M12 11v5M9.5 13.5h5"></path></svg>
+          </div>
+          <h3>Finder, Safes &amp; Archives</h3>
+        </div>
+        <p class="pvg-lede">Make Finder do more, and keep selected files, passwords and encrypted Safes on your Mac.</p>
+        <ul class="pvw-points">
+          <li>New file or folder, copy path, paste or move, and open in Terminal, iTerm, VS Code, Cursor, Zed, Xcode, Codex, Claude and about thirty more, or any app you add.</li>
+          <li>Compress / Encrypt a selection into a local Safe, 7z, ZIP or DMG from one dialog, with or without a password.</li>
+          <li>Add files to an existing Safe, or decrypt only the items you choose.</li>
+          <li>Extract Archive opens zip, 7z, tar, gz, bz2, xz and rar, including password-protected ones, and stops before very large ones.</li>
+          <li>Quick Look renders Markdown right in Finder; Uninstall &amp; Clean Up starts from the context menu.</li>
+        </ul>
+        <div class="pvw-note">Finder and Safe actions run only after you choose an XHelpers Pro context-menu action; Full Disk Access is optional and explained.</div>
+      </div>
+      <div class="pvg-shots">
+        <figure class="nx-placeholder" data-note="Placeholder · Jul 2026 site asset">
+          <img src="xhelperspro-website-refresh-assets/site-finder-context-menu.jpg" alt="Finder context menu with XHelpers Pro actions">
+          <figcaption>S06 · Finder context menu</figcaption>
+        </figure>
+        <figure>
+          <div class="nx-slot"><b>Shot S07</b><span>“Compress / Encrypt” dialog over a Finder selection of three demo files.</span></div>
+          <figcaption>S07 · Compress / Encrypt</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="pvg-group pvg-input">
+      <div class="pvg-copy">
+        <div class="pvg-head">
+          <div class="pvw-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M5 3l14 8-6 2-2 6z"></path></svg>
+          </div>
+          <h3>Pointer &amp; Keyboard</h3>
+        </div>
+        <p class="pvg-lede">Tune every mouse, trackpad and keyboard on the desk separately, and keep the rules on this Mac.</p>
+        <ul class="pvw-points">
+          <li>Pointer sensitivity and acceleration per device, with acceleration off when you want raw movement.</li>
+          <li>Scroll speed, scroll acceleration and reverse direction per pointing device, LinearMouse-compatible.</li>
+          <li>Remap keys and mouse buttons to keys or shortcuts, make dual-role keys, or add a Hyper key.</li>
+          <li>One Global Shortcuts window for display, window and utility hotkeys.</li>
+        </ul>
+        <div class="pvw-note">Profiles follow the device, so a travel mouse and a desk mouse each keep their own feel.</div>
+      </div>
+      <div class="pvg-shots">
+        <figure class="nx-placeholder" data-note="Placeholder · Aug 2026">
+          <img src="xhelperspro-website-refresh-assets/aug-08-remap-keys-buttons-config-cropped.jpg" alt="Key and Button Remapping window">
+          <figcaption>S12 · Key &amp; Button Remapping with three example rules</figcaption>
+        </figure>
+        <figure class="nx-placeholder" data-note="Placeholder · Aug 2026">
+          <img src="xhelperspro-website-refresh-assets/aug-06-mouse-sensitivity-config-cropped.jpg" alt="Mouse Sensitivity and Acceleration window">
+          <figcaption>S10 · Mouse Sensitivity &amp; Acceleration</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="pvg-group pvg-audio nx-flip">
+      <div class="pvg-copy">
+        <div class="pvg-head">
+          <div class="pvw-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M4 10v4h4l5 4V6L8 10z"></path><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"></path></svg>
+          </div>
+          <h3>Audio, Music &amp; Subtitles</h3>
+        </div>
+        <p class="pvg-lede">Control what each app sounds like, keep your music in one library, and read what any app is saying.</p>
+        <ul class="pvw-points">
+          <li>Audio Mixer: per-app volume and mute in the menu, boost quiet apps up to 200%, and per-app Audio Effects (bass, treble, width, punch, loudness, spatial).</li>
+          <li>Music &amp; Playlists: your Apple Music library plus local audio and video folders in one library, with playlists and saved filters that span sources.</li>
+          <li>Audio Player with a shared queue, Quick Video with speed, loop and always-on-top, and Extract Audio from video files.</li>
+          <li>Live Subtitles: on-device transcription and translation of one app's audio, with a captions-only mode and per-speaker colors (macOS 26.4 or later).</li>
+        </ul>
+        <div class="pvw-note">Audio Mixer and Live Subtitles use macOS System Audio Recording (macOS 14.4 or later). Audio, transcripts and translations are processed on this Mac and never saved or sent.</div>
+      </div>
+      <div class="pvg-shots">
+        <figure class="nx-placeholder" data-note="Draft · empty state, restage with a library">
+          <img src="xhelperspro-website-refresh-assets/sep-music-and-playlists.jpg" alt="Music and Playlists window">
+          <figcaption>S15 · Music &amp; Playlists Library with three sources</figcaption>
+        </figure>
+        <figure>
+          <div class="nx-slot"><b>Shot S16</b><span>Live Subtitles settings window with its built-in “Live subtitles look like this.” preview.</span></div>
+          <figcaption>S16 · Live Subtitles</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="pvg-group pvg-screen">
+      <div class="pvg-copy">
+        <div class="pvg-head">
+          <div class="pvw-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3"></path><path d="M8 12h8M12 8v8"></path></svg>
+          </div>
+          <h3>Screen, Text &amp; Files</h3>
+        </div>
+        <p class="pvg-lede">Anything on screen becomes text, a link, a color or a measurement in one drag; anything on disk gets the small editor or converter it needs.</p>
+        <ul class="pvw-points">
+          <li>Capture Text from Screen and act on it: copy, open links, translate (macOS 15 or later) or read it aloud; scan QR codes and barcodes straight off the screen.</li>
+          <li>Pin a screen region so it floats above everything, keep captures on the Screen Shelf, measure a region, pick a color, or capture and mark up an image.</li>
+          <li>Clipboard History with search and pins; Text Editor with a file browser, code syntax and a Markdown preview that renders Mermaid diagrams.</li>
+          <li>Text Tools tidy whitespace, repair garbled characters, decode HTML, URLs and Base64, format JSON, redact contact details and convert to tables, on Apple's on-device models.</li>
+          <li>Image Tools and Batch Image Tools for markup, resize and export; PDF Quick Actions to combine, reorder, unlock and build PDFs from images; Large Text and Binary viewers for files other editors choke on.</li>
+        </ul>
+        <div class="pvw-note">Screen Tools use macOS Screen Recording only for the capture you start; color picking and measurement do not need it. Clipboard history and documents stay in local files you can inspect and delete.</div>
+      </div>
+      <div class="pvg-shots">
+        <figure>
+          <div class="nx-slot"><b>Shot S18</b><span>Recognized-text result panel after capturing a paragraph with a link and a phone number.</span></div>
+          <figcaption>S18 · Capture Text from Screen</figcaption>
+        </figure>
+        <figure>
+          <div class="nx-slot"><b>Shot S28</b><span>PDF Quick Actions with two PDFs and three images queued, “Create 9-page PDF…” button.</span></div>
+          <figcaption>S28 · PDF Quick Actions</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="pvg-group pvg-health nx-flip">
+      <div class="pvg-copy">
+        <div class="pvg-head">
+          <div class="pvw-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M3 12h4l2-5 4 10 2-5h6"></path></svg>
+          </div>
+          <h3>Mac Health, Storage &amp; Apps</h3>
+        </div>
+        <p class="pvg-lede">Find out why the Mac is slow or full, then fix it with evidence on screen and nothing deleted behind your back.</p>
+        <ul class="pvw-points">
+          <li>Why Is My Mac Slow? gives a verdict with the contributing causes; Memory Health Monitor watches pressure and swap.</li>
+          <li>Startup &amp; Background Inspector lists everything that runs at login, with signatures, and disables only your own items; Maintenance &amp; System Tweaks shows dozens of macOS settings as cards, each with what is saved right now.</li>
+          <li>Reclaim Disk Space with guided actions and a storage map; Where Did My Space Go? draws your disk as a treemap; Redundancy &amp; Clutter finds duplicates.</li>
+          <li>Uninstall an App with a reviewed file list, Find App Leftovers, and cleanup reports you can export; Install Apps &amp; Dev Tools and Manage Fonts set a new Mac up.</li>
+          <li>Network Quality measures the connection you are on; Auto Wi-Fi Switch moves to a stronger saved network when the signal drops.</li>
+        </ul>
+        <div class="pvw-note">Cleanup moves items to the Trash and shows the list first. Locked, system-managed and important-to-review storage is never added to the total.</div>
+      </div>
+      <div class="pvg-shots">
+        <figure class="nx-placeholder" data-note="Draft · Sep 2026, keep or restage">
+          <img src="xhelperspro-website-refresh-assets/sep-system-tweaks.jpg" alt="Maintenance and System Tweaks window">
+          <figcaption>S20 · Maintenance &amp; System Tweaks</figcaption>
+        </figure>
+        <figure>
+          <div class="nx-slot"><b>Shot S22</b><span>Where Did My Space Go? scanning a staged demo folder, treemap and folder table visible.</span></div>
+          <figcaption>S22 · Where Did My Space Go?</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="pvg-group pvg-privacy">
+      <div class="pvg-copy">
+        <div class="pvg-head">
+          <div class="pvw-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg>
+          </div>
+          <h3>Private by Design</h3>
+        </div>
+        <p class="pvg-lede">XHelpers Pro is built for local Mac workflows. It is not an analytics stream or a cloud file service, and its tools work signed out.</p>
+        <ul class="pvw-points">
+          <li>No account required for any tool; the Xin account is optional.</li>
+          <li>No analytics, advertising SDKs, usage telemetry or session tracking in the app.</li>
+          <li>Safe passwords, encryption keys, pointer profiles, remap rules, clipboard history, transcripts and audio processing stay on this Mac.</li>
+          <li>Nine optional permissions, each explained with what it unlocks and shown with its live status: Accessibility, Finder Extension, Full Disk Access, Location, Screen Recording, System Audio Recording, Speech Recognition, Display Resolution Helper, Automation.</li>
+          <li>Bring your own AI, or none: AI Settings picks OpenAI Codex, Anthropic Claude, xAI Grok, the OpenAI Responses API or Apple's on-device model for the features that can use one. Nothing leaves the Mac unless you connect a provider.</li>
+          <li>Feedback opens as an email draft you can read before sending.</li>
+        </ul>
+      </div>
+      <div class="pvg-shots stack">
+        <figure class="nx-placeholder" data-note="Draft · Sep 2026, current">
+          <img src="xhelperspro-website-refresh-assets/sep-permissions.jpg" alt="Permissions window listing nine permissions with live status">
+          <figcaption>S31 · Permissions overview with live status</figcaption>
+        </figure>
+      </div>
+    </article>
+  </section>
+
+  <section class="section compact-section" id="every-tool" aria-labelledby="index-title">
+    <div class="nx-index">
+      <div class="section-kicker">Every tool</div>
+      <h2 id="index-title">The whole menu, as a list.</h2>
+      <p>The same six categories as above, complete. Items marked with a dot need a permission you grant once in the Permissions window.</p>
+      <div class="nx-index-grid">
+        <div class="nx-index-group">
+          <h4>Display &amp; Windows</h4>
+          <ul>
+            <li>Blackout Built-in Display</li>
+            <li>Dim Displays Until Key Press</li>
+            <li>Brightness · Contrast · Keyboard Brightness</li>
+            <li>Change Resolution &amp; HiDPI presets</li>
+            <li>Change macOS Theme · Displays · Notifications</li>
+            <li>Sleep · Restart · Shut Down</li>
+            <li>Keep Mac Awake</li>
+            <li>Snap &amp; Arrange Windows <small>· Accessibility</small></li>
+            <li>Customize Quadrants</li>
+            <li>Save &amp; Restore Window Positions</li>
+            <li>Move to Previous / Next Display</li>
+            <li>Active Window Highlight <small>· Accessibility</small></li>
+            <li>Global Shortcuts</li>
+            <li>macOS Settings Shortcuts</li>
+          </ul>
+        </div>
+        <div class="nx-index-group">
+          <h4>Finder, Safes &amp; Archives</h4>
+          <ul>
+            <li>Finder Context Menus <small>· extension</small></li>
+            <li>New File · New Folder · Copy Path</li>
+            <li>Paste · Move Here</li>
+            <li>Open in Terminal, VS Code, Codex, Claude…</li>
+            <li>Compress / Encrypt (Safe, 7z, ZIP, DMG)</li>
+            <li>Add to Existing File · Extract · Decrypt</li>
+            <li>Open in PDF Quick Actions</li>
+            <li>Uninstall &amp; Clean Up</li>
+            <li>Extract Archive</li>
+            <li>Quick Look for Markdown</li>
+          </ul>
+        </div>
+        <div class="nx-index-group">
+          <h4>Pointer &amp; Keyboard</h4>
+          <ul>
+            <li>Mouse Sensitivity &amp; Acceleration <small>· Accessibility</small></li>
+            <li>Scroll Speed &amp; Acceleration</li>
+            <li>Remap Keys &amp; Buttons</li>
+            <li>Dual-role keys · Hyper key</li>
+          </ul>
+        </div>
+        <div class="nx-index-group">
+          <h4>Audio, Music &amp; Subtitles</h4>
+          <ul>
+            <li>Audio Mixer <small>· System Audio Recording</small></li>
+            <li>Audio Effects per app</li>
+            <li>Music &amp; Playlists</li>
+            <li>Audio Player &amp; Queue</li>
+            <li>Quick Video</li>
+            <li>Extract Audio</li>
+            <li>Live Subtitles <small>· Speech Recognition, macOS 26.4+</small></li>
+            <li>Captions Only</li>
+          </ul>
+        </div>
+        <div class="nx-index-group">
+          <h4>Screen, Text &amp; Files</h4>
+          <ul>
+            <li class="nx-index-sub">Screen Tools</li>
+            <li>Capture Text from Screen <small>· Screen Recording</small></li>
+            <li>Capture &amp; Act on Text</li>
+            <li>Capture to Clipboard · Capture &amp; Mark Up</li>
+            <li>Scan QR or Barcode</li>
+            <li>Translate Text from Screen <small>· macOS 15+</small></li>
+            <li>Read Screen Text Aloud</li>
+            <li>Pin Screen Region</li>
+            <li>Screen Shelf</li>
+            <li>Measure Screen Region · Pick Screen Color</li>
+            <li class="nx-index-sub">Text &amp; files</li>
+            <li>Clipboard History</li>
+            <li>Text Editor &amp; Markdown preview</li>
+            <li>Text Tools</li>
+            <li>Large Text Viewer · Binary Viewer</li>
+            <li>Image Tools · Batch Image Tools</li>
+            <li>PDF Quick Actions</li>
+          </ul>
+        </div>
+        <div class="nx-index-group">
+          <h4>Mac Health, Storage &amp; Apps</h4>
+          <ul>
+            <li class="nx-index-sub">Health</li>
+            <li>Why Is My Mac Slow?</li>
+            <li>Memory Health Monitor</li>
+            <li>Startup &amp; Background Inspector</li>
+            <li>Maintenance &amp; System Tweaks</li>
+            <li class="nx-index-sub">Storage</li>
+            <li>Where Did My Space Go?</li>
+            <li>Reclaim Disk Space</li>
+            <li>Redundancy &amp; Clutter</li>
+            <li class="nx-index-sub">Apps &amp; network</li>
+            <li>Uninstall an App · Find App Leftovers</li>
+            <li>Install Apps &amp; Dev Tools</li>
+            <li>Manage Fonts</li>
+            <li>Network Quality</li>
+            <li>Auto Wi-Fi Switch <small>· Location</small></li>
+          </ul>
+        </div>
+        <div class="nx-index-group">
+          <h4>Settings &amp; Support</h4>
+          <ul>
+            <li>Settings · Start at Login · Language</li>
+            <li>AI Settings <small>· optional</small></li>
+            <li>Account (optional Xin account)</li>
+            <li>Manage License</li>
+            <li>Permissions</li>
+            <li>Help &amp; Feedback</li>
+            <li>Check for Updates</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section compact-section" id="why" aria-labelledby="why-title">
+    <div class="section-kicker">What's good about it?</div>
+    <div class="compact-split">
+      <div>
+        <h2 id="why-title">Less fuss at your desk.</h2>
+        <ul class="copy-points" aria-label="XHelpers Pro benefits">
+          <li>
+            <strong>One app instead of a dozen</strong>
+            <span>display, windows, Finder, input, audio, subtitles, screen capture, cleanup and document tools share one menu, one Permissions window and one update.</span>
+          </li>
+          <li>
+            <strong>Shows its work</strong>
+            <span>cleanup lists files before removing them, permissions show live status, and every tweak shows the setting that is saved right now.</span>
+          </li>
+          <li>
+            <strong>Helpful, not noisy</strong>
+            <span>runs from the menu bar without a Dock window, a required account, or analytics.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="capability-list" aria-label="Key benefits">
+        <article>
+          <strong>For desk setups</strong>
+          <span>made for Macs that spend real time on external displays, keyboards, mice, speakers and changing networks</span>
+        </article>
+        <article>
+          <strong>For window speed</strong>
+          <span>global shortcuts handle layout, display moves, saved layouts, app focus and Rectangle conflict resolution</span>
+        </article>
+        <article>
+          <strong>For Finder and private files</strong>
+          <span>create, open, encrypt, decrypt and extract from the context menu you already use</span>
+        </article>
+        <article>
+          <strong>For a Mac that stays fast</strong>
+          <span>a verdict on slowness, a treemap of the disk, guided reclaim, and uninstalls that find every leftover</span>
+        </article>
+        <article>
+          <strong>For anything on screen or on disk</strong>
+          <span>text, codes, colors and pinned regions from a single drag; clipboard, Markdown, images and PDFs without five more apps</span>
+        </article>
+        <article>
+          <strong>For privacy</strong>
+          <span>no required account, no analytics, local processing for audio, subtitles and clipboard, and feedback that opens as a reviewable email draft</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section compact-section compact-release" id="release" aria-labelledby="release-title">
+    <div class="section-kicker">How to get it</div>
+    <div class="pvr-flow">
+      <h2 id="release-title">Download and try it for 14 days.</h2>
+      <ol class="steps compact-steps pvr-steps" aria-label="Install steps">
+        <li>
+          <strong>1</strong>
+          <span>Download the DMG &mdash; one app for Apple Silicon and Intel Macs.</span>
+        </li>
+        <li>
+          <strong>2</strong>
+          <span>Drag XHelpers Pro to Applications and launch it. The Permissions window explains what each feature needs.</span>
+        </li>
+        <li>
+          <strong>3</strong>
+          <span>Try every Pro feature free for 14 days, then activate a license on this Mac. No account needed.</span>
+        </li>
+      </ol>
+      <div class="compatibility-list" aria-label="Compatibility">
+        <span>macOS 14.0 or later</span>
+        <span>arm64 + x86_64</span>
+        <span class="app-version">v1.0.7</span>
+        <span>Updates via Sparkle</span>
+      </div>
+    </div>
+    <div class="download-card" aria-label="Download call to action">
+      <div>
+        <strong>Developer signed and Apple notarized.</strong>
+      </div>
+      <div class="download-actions">
+        <a class="button button-primary" href="https://xintechllc.com/XHelpersPro/download/XHelpersPro-macOS.dmg">
+          <span class="button-glyph" aria-hidden="true"></span>
+          Download DMG
+        </a>
+        <a class="text-link" href="https://xintechllc.com/XHelpersPro/support.html">Support</a>
+        <a class="text-link" href="https://xintechllc.com/XHelpersPro/privacy.html">Privacy</a>
+        <a class="text-link" href="https://xintechllc.com/XHelpersPro/eula.html">EULA</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="nx-footer">
+    <span>© 2026 Xintech LLC · XHelpers Pro for Mac</span>
+    <nav aria-label="Footer">
+      <a href="https://xintechllc.com/XHelpersPro/support.html">Support</a>
+      <a href="https://xintechllc.com/XHelpersPro/privacy.html">Privacy</a>
+      <a href="https://xintechllc.com/XHelpersPro/eula.html">EULA</a>
+      <a href="https://xintechllc.com/XHelpers/">XHelpers on the App Store</a>
+    </nav>
+  </footer>
+</main>
+
+<div class="pvl-overlay" id="pvl-overlay" hidden>
+  <img id="pvl-image" alt="">
+</div>
+
+<script>
+  (function () {
+    var overlay = document.getElementById("pvl-overlay");
+    var image = document.getElementById("pvl-image");
+    if (!overlay || !image) { return; }
+    var openers = document.querySelectorAll(".pvg-shots img, .nx-band figure img");
+    Array.prototype.forEach.call(openers, function (img) {
+      img.addEventListener("click", function () {
+        image.src = img.currentSrc || img.src;
+        image.alt = img.alt;
+        overlay.hidden = false;
+        document.body.style.overflow = "hidden";
+      });
+    });
+    function close() {
+      overlay.hidden = true;
+      image.removeAttribute("src");
+      document.body.style.overflow = "";
+    }
+    overlay.addEventListener("click", close);
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && !overlay.hidden) { close(); }
+      if (event.key !== "Escape") { return; }
+      Array.prototype.forEach.call(document.querySelectorAll(".language-menu"), function (menu) { menu.removeAttribute("open"); });
+    });
+    document.addEventListener("pointerdown", function (event) {
+      Array.prototype.forEach.call(document.querySelectorAll(".language-menu"), function (menu) {
+        if (event.target instanceof Node && menu.contains(event.target)) { return; }
+        menu.removeAttribute("open");
+      });
+    });
+  })();
+</script>
+  </body>
+</html>
