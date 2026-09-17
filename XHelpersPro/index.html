@@ -292,8 +292,7 @@
      top with the bullets in two columns, the wide shot at the card's full width,
      a tall shot below at its natural size. The lightbox still opens them full-size. */
   .pvg-group.nx-wide { grid-template-columns: 1fr; }
-  .nx-wide .pvw-points { display: block; columns: 2; column-gap: 28px; }
-  .nx-wide .pvw-points li { break-inside: avoid; margin-bottom: 10px; }
+  .nx-wide .pvw-points { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 28px; }
   .nx-wide .pvg-shots { grid-template-columns: 1fr; gap: 18px; }
   .nx-wide .pvg-shots img { width: 100%; max-height: none; }
   .nx-wide .pvg-shots figure.nx-tall img { width: auto; max-width: min(100%, 560px); margin-inline: auto; }
@@ -342,7 +341,7 @@
   @media (max-width: 980px) {
     .compact-hero .hero-content { grid-template-columns: 1fr; }
     .nx-get-inner { grid-template-columns: 1fr; }
-    .nx-wide .pvw-points { columns: 1; }
+    .nx-wide .pvw-points { grid-template-columns: 1fr; }
     .nx-pillars { grid-template-columns: 1fr; }
     .nx-benefits { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .pvg-group { grid-template-columns: 1fr; }
