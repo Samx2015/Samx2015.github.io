@@ -175,10 +175,11 @@
     border-radius: 10px; box-shadow: 0 8px 22px rgba(21, 32, 51, 0.14); cursor: zoom-in;
   }
   .pvg-shots.stack img { width: 100%; max-height: none; }
-  .pvg-group.pvg-display { grid-template-columns: 1fr; }
+  .pvg-group.pvg-display { grid-template-columns: minmax(0, 0.42fr) minmax(0, 0.58fr); align-items: start; }
   .pvg-display .pvg-copy { gap: 10px; }
-  .pvg-display .pvw-points { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 28px; }
-  .pvg-display .pvg-shots { gap: clamp(20px, 3vw, 36px); }
+  .pvg-display .pvw-points { grid-template-columns: 1fr; gap: 14px; }
+  .nx-display-gallery { display: grid; gap: 20px; min-width: 0; }
+  .pvg-display .pvg-shots { gap: 16px; }
   .pvg-display .pvg-shots figure { min-width: 0; }
   .pvg-display .pvg-shots img { width: 100%; height: auto; max-height: none; }
   .pvg-display .nx-display-overview { grid-template-columns: minmax(0, 1.62fr) minmax(0, 1fr); align-items: center; }
@@ -301,7 +302,7 @@
     .compact-hero .hero-content { grid-template-columns: 1fr; }
     .nx-get-inner { grid-template-columns: 1fr; }
     .nx-wide .pvw-points { grid-template-columns: 1fr; }
-    .pvg-group { grid-template-columns: 1fr; }
+    .pvg-group, .pvg-group.pvg-display { grid-template-columns: 1fr; }
     .pvg-group.nx-flip .pvg-copy { order: 0; }
     .pvg-shots { grid-template-columns: 1fr; }
     .pvg-shots img { max-height: 420px; }
@@ -711,49 +712,51 @@
           <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-active-window-highlight.png?v=20260916" width="20" height="16" alt=""><b>Never lose the active window</b> on a wide desk, and <b>keep the Mac awake</b> exactly as long as a download or a talk needs.</li>
         </ul>
       </div>
-      <div class="pvg-shots nx-display-overview">
-        <figure>
-          <button class="nx-shot-button" type="button" aria-label="Enlarge: Display controls" aria-haspopup="dialog" aria-controls="pvl-viewer">
-            <picture>
-              <source type="image/webp" srcset="assets/refresh/shot-display-controls.webp?v=20260916">
-              <img src="assets/refresh/shot-display-controls.png?v=20260916" width="770" height="460" loading="lazy" alt="Display menu with blackout, dimming, brightness, contrast and keyboard backlight controls">
-            </picture>
-          </button>
-        </figure>
-        <figure>
-          <button class="nx-shot-button" type="button" aria-label="Enlarge: Active Window Highlight" aria-haspopup="dialog" aria-controls="pvl-viewer">
-            <picture>
-              <source type="image/webp" srcset="assets/refresh/shot-active-window-highlight.webp?v=20260916">
-              <img src="assets/refresh/shot-active-window-highlight.png?v=20260916" width="1240" height="1202" loading="lazy" alt="Active Window Highlight settings with a cyan border preview and controls for color, border width, opacity and glow">
-            </picture>
-          </button>
-        </figure>
-      </div>
-      <div class="pvg-shots nx-display-details">
-        <figure>
-          <button class="nx-shot-button" type="button" aria-label="Enlarge: Resolution menu" aria-haspopup="dialog" aria-controls="pvl-viewer">
-            <picture>
-              <source type="image/webp" srcset="assets/refresh/shot-display-resolution-menu.webp?v=20260916">
-              <img src="assets/refresh/shot-display-resolution-menu.png?v=20260916" width="604" height="1818" loading="lazy" alt="Resolution menu listing native, HiDPI and scaled resolutions with aspect ratios and refresh rates up to 144 Hz">
-            </picture>
-          </button>
-        </figure>
-        <figure>
-          <button class="nx-shot-button" type="button" aria-label="Enlarge: Custom HiDPI presets" aria-haspopup="dialog" aria-controls="pvl-viewer">
-            <picture>
-              <source type="image/webp" srcset="assets/refresh/shot-display-hidpi-presets.webp?v=20260916">
-              <img src="assets/refresh/shot-display-hidpi-presets.png?v=20260916" width="1846" height="3618" loading="lazy" alt="Display Tools: Resolution showing refresh rates, a custom HiDPI preset form, recommended and advanced presets, and installed custom presets">
-            </picture>
-          </button>
-        </figure>
-        <figure>
-          <button class="nx-shot-button" type="button" aria-label="Enlarge: Snap &amp; Arrange Windows" aria-haspopup="dialog" aria-controls="pvl-viewer">
-            <picture>
-              <source type="image/webp" srcset="assets/refresh/shot-window-arrangements.webp?v=20260916">
-              <img src="assets/refresh/shot-window-arrangements.png?v=20260916" width="908" height="1642" loading="lazy" alt="Snap &amp; Arrange Windows menu with halves, custom quadrants, display switching, saved window positions, focus actions and keyboard shortcuts">
-            </picture>
-          </button>
-        </figure>
+      <div class="nx-display-gallery">
+        <div class="pvg-shots nx-display-overview">
+          <figure>
+            <button class="nx-shot-button" type="button" aria-label="Enlarge: Display controls" aria-haspopup="dialog" aria-controls="pvl-viewer">
+              <picture>
+                <source type="image/webp" srcset="assets/refresh/shot-display-controls.webp?v=20260916">
+                <img src="assets/refresh/shot-display-controls.png?v=20260916" width="770" height="460" loading="lazy" alt="Display menu with blackout, dimming, brightness, contrast and keyboard backlight controls">
+              </picture>
+            </button>
+          </figure>
+          <figure>
+            <button class="nx-shot-button" type="button" aria-label="Enlarge: Active Window Highlight" aria-haspopup="dialog" aria-controls="pvl-viewer">
+              <picture>
+                <source type="image/webp" srcset="assets/refresh/shot-active-window-highlight.webp?v=20260916">
+                <img src="assets/refresh/shot-active-window-highlight.png?v=20260916" width="1240" height="1202" loading="lazy" alt="Active Window Highlight settings with a cyan border preview and controls for color, border width, opacity and glow">
+              </picture>
+            </button>
+          </figure>
+        </div>
+        <div class="pvg-shots nx-display-details">
+          <figure>
+            <button class="nx-shot-button" type="button" aria-label="Enlarge: Resolution menu" aria-haspopup="dialog" aria-controls="pvl-viewer">
+              <picture>
+                <source type="image/webp" srcset="assets/refresh/shot-display-resolution-menu.webp?v=20260916">
+                <img src="assets/refresh/shot-display-resolution-menu.png?v=20260916" width="604" height="1818" loading="lazy" alt="Resolution menu listing native, HiDPI and scaled resolutions with aspect ratios and refresh rates up to 144 Hz">
+              </picture>
+            </button>
+          </figure>
+          <figure>
+            <button class="nx-shot-button" type="button" aria-label="Enlarge: Custom HiDPI presets" aria-haspopup="dialog" aria-controls="pvl-viewer">
+              <picture>
+                <source type="image/webp" srcset="assets/refresh/shot-display-hidpi-presets.webp?v=20260916">
+                <img src="assets/refresh/shot-display-hidpi-presets.png?v=20260916" width="1846" height="3618" loading="lazy" alt="Display Tools: Resolution showing refresh rates, a custom HiDPI preset form, recommended and advanced presets, and installed custom presets">
+              </picture>
+            </button>
+          </figure>
+          <figure>
+            <button class="nx-shot-button" type="button" aria-label="Enlarge: Snap &amp; Arrange Windows" aria-haspopup="dialog" aria-controls="pvl-viewer">
+              <picture>
+                <source type="image/webp" srcset="assets/refresh/shot-window-arrangements.webp?v=20260916">
+                <img src="assets/refresh/shot-window-arrangements.png?v=20260916" width="908" height="1642" loading="lazy" alt="Snap &amp; Arrange Windows menu with halves, custom quadrants, display switching, saved window positions, focus actions and keyboard shortcuts">
+              </picture>
+            </button>
+          </figure>
+        </div>
       </div>
     </article>
 
