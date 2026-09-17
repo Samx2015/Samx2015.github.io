@@ -261,10 +261,11 @@
     border: 2px solid transparent; border-radius: 16px; box-shadow: 0 5px 16px rgba(70, 81, 170, 0.12);
     background: linear-gradient(110deg, #e5edff, #f6e7ff 50%, #dcf8ef) padding-box, linear-gradient(110deg, #4877f4, #b34dde 50%, #0ba58f) border-box;
     color: #2457ce; font-size: clamp(1.1rem, 2vw, 1.25rem); font-weight: 400;
+    transition: box-shadow 160ms ease;
   }
   .nx-index > summary::-webkit-details-marker { display: none; }
+  /* Keep both gradients steady on hover; replacing them causes a color flash. */
   .nx-index > summary:hover {
-    background: linear-gradient(110deg, #d9e5ff, #f0d8fc 50%, #caf3e6) padding-box, linear-gradient(110deg, #3569ef, #a531d1 50%, #008f7a) border-box;
     box-shadow: 0 7px 20px rgba(70, 81, 170, 0.18);
   }
   .nx-index > summary:focus-visible { outline: 3px solid var(--teal-dark); outline-offset: 3px; }
@@ -282,9 +283,7 @@
      Health, ...) are kept whole so a sub-heading never ends a column. */
   .nx-index-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
   .nx-index-group { padding: 16px 18px 12px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }
-  .nx-index-group.nx-index-wide { grid-column: 1 / -1; }
   .nx-index-lists { columns: 2; column-gap: 22px; }
-  .nx-index-wide .nx-index-lists { columns: 4; }
   .nx-index-group ul { margin: 0; padding: 0; list-style: none; }
   .nx-index-group ul.nx-index-subgroup { break-inside: avoid; }
   .nx-index-group ul + ul { margin-top: 10px; }
@@ -312,7 +311,6 @@
     .pvg-group.nx-flip .pvg-copy { order: 0; }
     .nx-numbers-inner { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .nx-index-grid { grid-template-columns: 1fr; }
-    .nx-index-wide .nx-index-lists { columns: 2; }
   }
   @media (max-width: 720px) {
     .pvg-display .pvw-points { grid-template-columns: 1fr; }
@@ -321,9 +319,12 @@
   @media (max-width: 560px) {
     .pvh-chips { grid-template-columns: 1fr; }
     .nx-numbers-inner { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .nx-index-lists, .nx-index-wide .nx-index-lists { columns: 1; }
+    .nx-index-lists { columns: 1; }
   }
-  @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+  @media (prefers-reduced-motion: reduce) {
+    * { scroll-behavior: auto !important; }
+    .nx-index > summary { transition: none; }
+  }
 
   /* Homepage navigation and disclosures: stable geometry before first paint. */
   :root { --nx-header-height: 85px; }
@@ -648,30 +649,14 @@
               <li><img class="nx-ic" src="assets/refresh/ic-redundancy-clutter.png?v=20260917-0404" width="16" height="18" alt="">Redundancy &amp; Clutter</li>
             </ul>
             <ul class="nx-index-subgroup">
-              <li class="nx-index-sub">Apps &amp; network</li>
+              <li class="nx-index-sub">Apps, network &amp; AI</li>
               <li><img class="nx-ic" src="assets/refresh/ic-uninstall.png?v=20260917-0404" width="14" height="16" alt="">Uninstall an App</li>
               <li><img class="nx-ic" src="assets/refresh/ic-app-leftovers.png?v=20260917-0404" width="14" height="18" alt="">Find App Leftovers</li>
               <li><img class="nx-ic" src="assets/refresh/ic-app-installer.png?v=20260917-0404" width="15" height="14" alt="">Install Apps &amp; Dev Tools</li>
               <li><img class="nx-ic" src="assets/refresh/ic-fonts.png?v=20260917-0404" width="18" height="12" alt="">Manage Fonts</li>
               <li><img class="nx-ic" src="assets/refresh/ic-network-quality.png?v=20260917-0404" width="17" height="18" alt="">Network Quality</li>
               <li><img class="nx-ic" src="assets/refresh/ic-auto-wifi-switch.png?v=20260917-0404" width="19" height="14" alt="">Auto Wi-Fi Switch <small>· Location</small></li>
-            </ul>
-          </div>
-        </section>
-        <section class="nx-index-group nx-index-wide">
-          <h3>Settings &amp; Support</h3>
-          <div class="nx-index-lists">
-            <ul>
-              <li><img class="nx-ic" src="assets/refresh/ic-settings.png?v=20260917-0404" width="18" height="18" alt="">Settings</li>
-              <li><img class="nx-ic" src="assets/refresh/ic-start-at-login.png?v=20260917-0404" width="19" height="20" alt="">Start at Login</li>
-              <li><img class="nx-ic" src="assets/refresh/ic-language.png?v=20260917-0404" width="17" height="17" alt="">Language</li>
-              <li><img class="nx-ic" src="assets/refresh/ic-ai-settings.png?v=20260917-0404" width="14" height="17" alt="">AI Settings <small>· optional</small></li>
               <li><img class="nx-ic" src="assets/refresh/ic-ai-usage.png?v=20260917-0404" width="20" height="16" alt="">AI Usage</li>
-              <li><img class="nx-ic" src="assets/refresh/ic-account.png?v=20260917-0404" width="17" height="17" alt="">Account (optional Xin account)</li>
-              <li><img class="nx-ic" src="assets/refresh/ic-manage-license.png?v=20260917-0404" width="17" height="17" alt="">Manage License</li>
-              <li><img class="nx-ic" src="assets/refresh/ic-permissions.png?v=20260917-0404" width="15" height="16" alt="">Permissions</li>
-              <li><img class="nx-ic" src="assets/refresh/ic-help-feedback.png?v=20260917-0404" width="17" height="17" alt="">Help &amp; Feedback</li>
-              <li>Check for Updates</li>
             </ul>
           </div>
         </section>
