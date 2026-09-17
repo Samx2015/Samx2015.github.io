@@ -90,7 +90,7 @@
   .compact-hero .hero-subtitle { margin-bottom: 0; font-size: 1.12rem; }
   .compact-hero .hero-content {
     display: grid;
-    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); /* Give the flagship screenshot 60% of the hero columns. */
+    grid-template-columns: minmax(320px, 0.6fr) minmax(0, 1.4fr); /* Give the flagship screenshot 70%, with readable space for the copy. */
     gap: clamp(1.5rem, 4vw, 3.5rem);
     align-items: center;
     padding-top: 0;
@@ -217,7 +217,7 @@
   #release h2 { margin: 0 0 8px; font-size: clamp(1.6rem, 2.8vw, 2.2rem); font-weight: 500; color: var(--ink); text-wrap: balance; }
 
   /* ---- nx layer: new for the refresh ---- */
-  .nx-hero-shot { position: relative; margin: 0; }
+  .nx-hero-shot { position: relative; margin: 0; max-width: none; }
   .nx-hero-frame img { display: block; width: 100%; height: auto; }
   .nx-hero-stats { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
   .nx-hero-stats span {
@@ -341,7 +341,7 @@
   .language-menu summary { min-height: 44px; min-width: 44px; }
   .language-menu-list a { min-height: 44px; }
   .compact-hero { padding-block: 30px; }
-  .compact-hero h1 { font-size: clamp(2.5rem, 4.5vw, 3.7rem); font-weight: 600; line-height: 1.08; letter-spacing: -0.035em; margin: 12px 0 20px; }
+  .compact-hero h1 { font-size: clamp(2.5rem, 3.7vw, 3rem); font-weight: 600; line-height: 1.08; letter-spacing: -0.035em; margin: 12px 0 20px; }
   .compact-hero .hero-subtitle { max-width: 36ch; font-size: 1.15rem; line-height: 1.6; }
 
 
