@@ -293,9 +293,11 @@
      a tall shot below at its natural size. The lightbox still opens them full-size. */
   .pvg-group.nx-wide { grid-template-columns: 1fr; }
   .nx-wide .pvw-points { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 28px; }
-  .nx-wide .pvg-shots { grid-template-columns: 1fr; gap: 18px; }
+  /* Both shots in one row at the same height: flex-grow in the ratio of the aspect ratios (3244x2594 : 1080x1930). */
+  .nx-wide .pvg-shots { display: flex; gap: 18px; align-items: flex-start; }
+  .nx-wide .pvg-shots figure { flex: 1 1 0; min-width: 0; }
+  .nx-wide .pvg-shots figure.nx-tall { flex: 0.4475 1 0; }
   .nx-wide .pvg-shots img { width: 100%; max-height: none; }
-  .nx-wide .pvg-shots figure.nx-tall img { width: auto; max-width: min(100%, 560px); margin-inline: auto; }
 
   /* App icons: the menu's own glyphs (SF Symbols with the app's tints), rendered
      to PNG by scripts/build_xhelperspro_site_icons.py from icons.json. An index
@@ -352,6 +354,10 @@
     .nx-numbers-inner { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .nx-index-grid { grid-template-columns: 1fr; }
     .nx-index-wide .nx-index-lists { columns: 2; }
+  }
+  @media (max-width: 720px) {
+    .nx-wide .pvg-shots { flex-direction: column; }
+    .nx-wide .pvg-shots figure.nx-tall img { width: auto; max-width: min(100%, 420px); margin-inline: auto; }
   }
   @media (max-width: 560px) {
     .pvh-chips { grid-template-columns: 1fr; }
