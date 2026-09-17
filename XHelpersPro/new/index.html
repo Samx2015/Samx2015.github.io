@@ -155,23 +155,21 @@
   }
   .nx-hero-stats b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
 
-  .nx-band {
-    margin: 26px 0 8px; padding: clamp(26px, 4vw, 44px) 0; color: #f5f7f4;
-    background: linear-gradient(180deg, #1f2b2d, #16201f);
-  }
+  /* The menu-map card: the same white panel as the feature cards below it. */
+  .nx-band { margin: 8px 0; padding: 0 var(--page-gutter); color: var(--ink); }
   .nx-band-inner {
-    width: min(100%, var(--wide-max)); margin-inline: auto; padding-inline: var(--page-gutter);
+    width: min(100%, var(--wide-max)); margin-inline: auto; padding: 20px;
     display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(20px, 3vw, 40px); align-items: center;
+    border: 1px solid var(--line); border-radius: 22px; background: var(--panel); box-shadow: var(--shadow);
   }
-  .nx-band .section-kicker { color: #80f2ea; }
-  .nx-band h2 { margin: 0 0 12px; font-size: clamp(1.5rem, 2.6vw, 2rem); font-weight: 500; color: #f5f7f4; text-wrap: balance; }
-  .nx-band p { margin: 0 0 16px; color: #aab6b0; line-height: 1.6; }
+  .nx-band h2 { margin: 0 0 12px; font-size: clamp(1.5rem, 2.6vw, 2rem); font-weight: 500; color: var(--ink); text-wrap: balance; }
+  .nx-band p { margin: 0 0 16px; color: var(--muted); line-height: 1.6; }
   .nx-band-map { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin: 0; padding: 0; list-style: none; }
-  .nx-band-map li { padding: 10px 12px; border: 1px solid #2a3436; border-radius: 12px; background: rgba(255, 255, 255, 0.03); font-size: 0.9rem; line-height: 1.4; color: #dfe6e4; }
-  .nx-band-map li b { display: block; color: #80f2ea; font-weight: 600; font-size: 0.8rem; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 3px; }
+  .nx-band-map li { padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel-soft); font-size: 0.9rem; line-height: 1.4; color: var(--ink); }
+  .nx-band-map li b { display: block; color: var(--teal-dark); font-weight: 600; font-size: 0.8rem; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 3px; }
   .nx-band figure { margin: 0; position: relative; }
-  .nx-band figure img { display: block; width: 100%; max-height: 640px; object-fit: contain; object-position: top; border-radius: 12px; cursor: zoom-in; }
-  .nx-band figcaption { margin-top: 8px; color: #aab6b0; font-size: 0.9rem; text-align: center; }
+  .nx-band figure img { display: block; width: 100%; max-height: 640px; object-fit: contain; object-position: top; border-radius: 12px; box-shadow: 0 8px 22px rgba(21, 32, 51, 0.14); cursor: zoom-in; }
+  .nx-band figcaption { margin-top: 8px; color: var(--muted); font-size: 0.9rem; text-align: center; }
 
   figure.nx-placeholder::after,
   .nx-band figure.nx-placeholder::after {
@@ -188,6 +186,15 @@
   .nx-slot b { color: var(--teal-dark); font-weight: 700; letter-spacing: 0.06em; font-size: 0.75rem; text-transform: uppercase; }
   .nx-slot span { max-width: 26ch; margin-inline: auto; }
   .pvg-group.nx-flip .pvg-copy { order: 2; }
+
+  /* App icons: the menu's own glyphs (SF Symbols with the app's tints), rendered
+     to PNG by scripts/build_xhelperspro_site_icons.py from icons.json. An index
+     entry carries its icon inline; a card bullet uses its tool's icon as the marker. */
+  .nx-ic { display: inline-block; width: 1.15em; height: 1em; object-fit: contain; vertical-align: -0.12em; margin-right: 0.3em; }
+  .pvw-points li.nx-iconed { padding-left: 27px; }
+  .pvw-points li.nx-iconed::before, .pvg-privacy .pvw-points li.nx-iconed::before { display: none; }
+  .pvw-points li .nx-ic-bullet { position: absolute; left: 0; top: 0.2em; width: 19px; height: 19px; object-fit: contain; }
+  .nx-band-map li b .nx-ic { width: 1.2em; height: 1.05em; vertical-align: -0.16em; }
 
   .nx-index { width: min(100%, var(--wide-max)); margin-inline: auto; }
   .nx-index h2 { margin: 0 0 6px; font-size: clamp(1.4rem, 2.4vw, 1.85rem); font-weight: 500; color: var(--ink); text-wrap: balance; }
@@ -361,11 +368,11 @@
         </div>
         <p class="pvg-lede">Run the visual side of your desk without opening System Settings or a second window manager.</p>
         <ul class="pvw-points">
-          <li>Black out the built-in MacBook display while it mirrors an external monitor; dim displays until a key press.</li>
-          <li>Brightness, contrast and keyboard-backlight sliders right in the menu, plus sleep, restart, shut down and macOS theme.</li>
-          <li>Install HiDPI presets and custom resolutions, with a keep-or-revert safety timer after every switch.</li>
-          <li>Snap &amp; Arrange Windows to halves, quadrants you can customize, maximize or center, or the next display; save and restore window positions.</li>
-          <li>Highlight the active window with a click-through border; Keep Mac Awake for 30 minutes, hours, on power, or while an app runs.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-blackout.png" width="23" height="18" alt="">Black out the built-in MacBook display while it mirrors an external monitor; dim displays until a key press.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-brightness.png" width="19" height="19" alt="">Brightness, contrast and keyboard-backlight sliders right in the menu, plus sleep, restart, shut down and macOS theme.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-change-resolution.png" width="20" height="16" alt="">Install HiDPI presets and custom resolutions, with a keep-or-revert safety timer after every switch.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-snap-arrange-windows.png" width="20" height="16" alt="">Snap &amp; Arrange Windows to halves, quadrants you can customize, maximize or center, or the next display; save and restore window positions.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-active-window-highlight.png" width="20" height="16" alt="">Highlight the active window with a click-through border; Keep Mac Awake for 30 minutes, hours, on power, or while an app runs.</li>
         </ul>
         <div class="pvw-note">Global keyboard shortcuts cover arrangement, display moves and app focus, with built-in Rectangle conflict resolution.</div>
       </div>
@@ -391,11 +398,11 @@
         </div>
         <p class="pvg-lede">Make Finder do more, and keep selected files, passwords and encrypted Safes on your Mac.</p>
         <ul class="pvw-points">
-          <li>New file or folder, copy path, paste or move, and open in Terminal, iTerm, VS Code, Cursor, Zed, Xcode, Codex, Claude and about thirty more, or any app you add.</li>
-          <li>Compress / Encrypt a selection into a local Safe, 7z, ZIP or DMG from one dialog, with or without a password.</li>
-          <li>Add files to an existing Safe, or decrypt only the items you choose.</li>
-          <li>Extract Archive opens zip, 7z, tar, gz, bz2, xz and rar, including password-protected ones, and stops before very large ones.</li>
-          <li>Quick Look renders Markdown right in Finder; Uninstall &amp; Clean Up starts from the context menu.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-new-file.png" width="16" height="16" alt="">New file or folder, copy path, paste or move, and open in Terminal, iTerm, VS Code, Cursor, Zed, Xcode, Codex, Claude and about thirty more, or any app you add.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-secure-archive.png" width="16" height="16" alt="">Compress / Encrypt a selection into a local Safe, 7z, ZIP or DMG from one dialog, with or without a password.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-secure-archive.png" width="16" height="16" alt="">Add files to an existing Safe, or decrypt only the items you choose.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-extract-archive.png" width="16" height="14" alt="">Extract Archive opens zip, 7z, tar, gz, bz2, xz and rar, including password-protected ones, and stops before very large ones.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-uninstall-clean-up.png" width="14" height="16" alt="">Quick Look renders Markdown right in Finder; Uninstall &amp; Clean Up starts from the context menu.</li>
         </ul>
         <div class="pvw-note">Finder and Safe actions run only after you choose an XHelpers Pro context-menu action; Full Disk Access is optional and explained.</div>
       </div>
@@ -421,10 +428,10 @@
         </div>
         <p class="pvg-lede">Tune every mouse, trackpad and keyboard on the desk separately, and keep the rules on this Mac.</p>
         <ul class="pvw-points">
-          <li>Pointer sensitivity and acceleration per device, with acceleration off when you want raw movement.</li>
-          <li>Scroll speed, scroll acceleration and reverse direction per pointing device, LinearMouse-compatible.</li>
-          <li>Remap keys and mouse buttons to keys or shortcuts, make dual-role keys, or add a Hyper key.</li>
-          <li>One Global Shortcuts window for display, window and utility hotkeys.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-mouse-sensitivity.png" width="14" height="18" alt="">Pointer sensitivity and acceleration per device, with acceleration off when you want raw movement.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-scroll-speed.png" width="17" height="17" alt="">Scroll speed, scroll acceleration and reverse direction per pointing device, LinearMouse-compatible.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-remap-keys-buttons.png" width="22" height="14" alt="">Remap keys and mouse buttons to keys or shortcuts, make dual-role keys, or add a Hyper key.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-global-shortcuts.png" width="16" height="14" alt="">One Global Shortcuts window for display, window and utility hotkeys.</li>
         </ul>
         <div class="pvw-note">Profiles follow the device, so a travel mouse and a desk mouse each keep their own feel.</div>
       </div>
@@ -450,10 +457,10 @@
         </div>
         <p class="pvg-lede">Control what each app sounds like, keep your music in one library, and read what any app is saying.</p>
         <ul class="pvw-points">
-          <li>Audio Mixer: per-app volume and mute in the menu, boost quiet apps up to 200%, and per-app Audio Effects (bass, treble, width, punch, loudness, spatial).</li>
-          <li>Music &amp; Playlists: your Apple Music library plus local audio and video folders in one library, with playlists and saved filters that span sources.</li>
-          <li>Audio Player with a shared queue, Quick Video with speed, loop and always-on-top, and Extract Audio from video files.</li>
-          <li>Live Subtitles: on-device transcription and translation of one app's audio, with a captions-only mode and per-speaker colors (macOS 26.4 or later).</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-audio-mixer.png" width="17" height="16" alt="">Audio Mixer: per-app volume and mute in the menu, boost quiet apps up to 200%, and per-app Audio Effects (bass, treble, width, punch, loudness, spatial).</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-music-playlists.png" width="16" height="15" alt="">Music &amp; Playlists: your Apple Music library plus local audio and video folders in one library, with playlists and saved filters that span sources.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-audio-player.png" width="18" height="14" alt="">Audio Player with a shared queue, Quick Video with speed, loop and always-on-top, and Extract Audio from video files.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-live-subtitles.png" width="19" height="18" alt="">Live Subtitles: on-device transcription and translation of one app's audio, with a captions-only mode and per-speaker colors (macOS 26.4 or later).</li>
         </ul>
         <div class="pvw-note">Audio Mixer and Live Subtitles use macOS System Audio Recording (macOS 14.4 or later). Audio, transcripts and translations are processed on this Mac and never saved or sent.</div>
       </div>
@@ -479,11 +486,11 @@
         </div>
         <p class="pvg-lede">Anything on screen becomes text, a link, a color or a measurement in one drag; anything on disk gets the small editor or converter it needs.</p>
         <ul class="pvw-points">
-          <li>Capture Text from Screen and act on it: copy, open links, translate (macOS 15 or later) or read it aloud; scan QR codes and barcodes straight off the screen.</li>
-          <li>Pin a screen region so it floats above everything, keep captures on the Screen Shelf, measure a region, pick a color, or capture and mark up an image.</li>
-          <li>Clipboard History with search and pins; Text Editor with a file browser, code syntax and a Markdown preview that renders Mermaid diagrams.</li>
-          <li>Text Tools tidy whitespace, repair garbled characters, decode HTML, URLs and Base64, format JSON, redact contact details and convert to tables, on Apple's on-device models.</li>
-          <li>Image Tools and Batch Image Tools for markup, resize and export; PDF Quick Actions to combine, reorder, unlock and build PDFs from images; Large Text and Binary viewers for files other editors choke on.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-capture-text.png" width="16" height="15" alt="">Capture Text from Screen and act on it: copy, open links, translate (macOS 15 or later) or read it aloud; scan QR codes and barcodes straight off the screen.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-pin-region.png" width="15" height="17" alt="">Pin a screen region so it floats above everything, keep captures on the Screen Shelf, measure a region, pick a color, or capture and mark up an image.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-clipboard-history.png" width="16" height="18" alt="">Clipboard History with search and pins; Text Editor with a file browser, code syntax and a Markdown preview that renders Mermaid diagrams.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-text-tools.png" width="24" height="12" alt="">Text Tools tidy whitespace, repair garbled characters, decode HTML, URLs and Base64, format JSON, redact contact details and convert to tables, on Apple's on-device models.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-image-tools.png" width="18" height="14" alt="">Image Tools and Batch Image Tools for markup, resize and export; PDF Quick Actions to combine, reorder, unlock and build PDFs from images; Large Text and Binary viewers for files other editors choke on.</li>
         </ul>
         <div class="pvw-note">Screen Tools use macOS Screen Recording only for the capture you start; color picking and measurement do not need it. Clipboard history and documents stay in local files you can inspect and delete.</div>
       </div>
@@ -509,11 +516,11 @@
         </div>
         <p class="pvg-lede">Find out why the Mac is slow or full, then fix it with evidence on screen and nothing deleted behind your back.</p>
         <ul class="pvw-points">
-          <li>Why Is My Mac Slow? gives a verdict with the contributing causes; Memory Health Monitor watches pressure and swap.</li>
-          <li>Startup &amp; Background Inspector lists everything that runs at login, with signatures, and disables only your own items; Maintenance &amp; System Tweaks shows dozens of macOS settings as cards, each with what is saved right now.</li>
-          <li>Reclaim Disk Space with guided actions and a storage map; Where Did My Space Go? draws your disk as a treemap; Redundancy &amp; Clutter finds duplicates.</li>
-          <li>Uninstall an App with a reviewed file list, Find App Leftovers, and cleanup reports you can export; Install Apps &amp; Dev Tools and Manage Fonts set a new Mac up.</li>
-          <li>Network Quality measures the connection you are on; Auto Wi-Fi Switch moves to a stronger saved network when the signal drops.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-mac-health.png" width="17" height="14" alt="">Why Is My Mac Slow? gives a verdict with the contributing causes; Memory Health Monitor watches pressure and swap.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-startup-inspector.png" width="20" height="16" alt="">Startup &amp; Background Inspector lists everything that runs at login, with signatures, and disables only your own items; Maintenance &amp; System Tweaks shows dozens of macOS settings as cards, each with what is saved right now.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-reclaim-disk-space.png" width="18" height="13" alt="">Reclaim Disk Space with guided actions and a storage map; Where Did My Space Go? draws your disk as a treemap; Redundancy &amp; Clutter finds duplicates.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-uninstall.png" width="14" height="16" alt="">Uninstall an App with a reviewed file list, Find App Leftovers, and cleanup reports you can export; Install Apps &amp; Dev Tools and Manage Fonts set a new Mac up.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-network-quality.png" width="17" height="18" alt="">Network Quality measures the connection you are on; Auto Wi-Fi Switch moves to a stronger saved network when the signal drops.</li>
         </ul>
         <div class="pvw-note">Cleanup moves items to the Trash and shows the list first. Locked, system-managed and important-to-review storage is never added to the total.</div>
       </div>
@@ -539,12 +546,12 @@
         </div>
         <p class="pvg-lede">XHelpers Pro is built for local Mac workflows. It is not an analytics stream or a cloud file service, and its tools work signed out.</p>
         <ul class="pvw-points">
-          <li>No account required for any tool; the Xin account is optional.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-account.png" width="17" height="17" alt="">No account required for any tool; the Xin account is optional.</li>
           <li>No analytics, advertising SDKs, usage telemetry or session tracking in the app.</li>
-          <li>Safe passwords, encryption keys, pointer profiles, remap rules, clipboard history, transcripts and audio processing stay on this Mac.</li>
-          <li>Nine optional permissions, each explained with what it unlocks and shown with its live status: Accessibility, Finder Extension, Full Disk Access, Location, Screen Recording, System Audio Recording, Speech Recognition, Display Resolution Helper, Automation.</li>
-          <li>Bring your own AI, or none: AI Settings picks OpenAI Codex, Anthropic Claude, xAI Grok, the OpenAI Responses API or Apple's on-device model for the features that can use one. Nothing leaves the Mac unless you connect a provider.</li>
-          <li>Feedback opens as an email draft you can read before sending.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-privacy-lock.png" width="14" height="16" alt="">Safe passwords, encryption keys, pointer profiles, remap rules, clipboard history, transcripts and audio processing stay on this Mac.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-permissions.png" width="15" height="16" alt="">Nine optional permissions, each explained with what it unlocks and shown with its live status: Accessibility, Finder Extension, Full Disk Access, Location, Screen Recording, System Audio Recording, Speech Recognition, Display Resolution Helper, Automation.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-ai-settings.png" width="14" height="17" alt="">Bring your own AI, or none: AI Settings picks OpenAI Codex, Anthropic Claude, xAI Grok, the OpenAI Responses API or Apple's on-device model for the features that can use one. Nothing leaves the Mac unless you connect a provider.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="xhelperspro-website-refresh-assets/ic-feedback.png" width="20" height="18" alt="">Feedback opens as an email draft you can read before sending.</li>
         </ul>
       </div>
       <div class="pvg-shots stack">
@@ -565,110 +572,110 @@
         <div class="nx-index-group">
           <h4>Display &amp; Windows</h4>
           <ul>
-            <li>Blackout Built-in Display</li>
-            <li>Dim Displays Until Key Press</li>
-            <li>Brightness · Contrast · Keyboard Brightness</li>
-            <li>Change Resolution &amp; HiDPI presets</li>
-            <li>Change macOS Theme · Displays · Notifications</li>
-            <li>Sleep · Restart · Shut Down</li>
-            <li>Keep Mac Awake</li>
-            <li>Snap &amp; Arrange Windows <small>· Accessibility</small></li>
-            <li>Customize Quadrants</li>
-            <li>Save &amp; Restore Window Positions</li>
-            <li>Move to Previous / Next Display</li>
-            <li>Active Window Highlight <small>· Accessibility</small></li>
-            <li>Global Shortcuts</li>
-            <li>macOS Settings Shortcuts</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-blackout.png" width="23" height="18" alt="">Blackout Built-in Display</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-dim-displays.png" width="17" height="17" alt="">Dim Displays Until Key Press</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-brightness.png" width="19" height="19" alt="">Brightness · <img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-contrast.png" width="18" height="18" alt="">Contrast · <img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-keyboard-brightness.png" width="23" height="15" alt="">Keyboard Brightness</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-change-resolution.png" width="20" height="16" alt="">Change Resolution &amp; HiDPI presets</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-change-macos-theme.png" width="20" height="14" alt="">Change macOS Theme · <img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-displays.png" width="19" height="16" alt="">Displays · <img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-notifications.png" width="15" height="16" alt="">Notifications</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-sleep.png" width="15" height="16" alt="">Sleep · <img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-restart.png" width="14" height="16" alt="">Restart · <img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-shut-down.png" width="16" height="16" alt="">Shut Down</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-keep-mac-awake.png" width="22" height="17" alt="">Keep Mac Awake</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-snap-arrange-windows.png" width="20" height="16" alt="">Snap &amp; Arrange Windows <small>· Accessibility</small></li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-customize-quadrants.png" width="15" height="14" alt="">Customize Quadrants</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-save-restore-window-positions.png" width="15" height="17" alt="">Save &amp; Restore Window Positions</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-move-display.png" width="15" height="12" alt="">Move to Previous / Next Display</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-active-window-highlight.png" width="20" height="16" alt="">Active Window Highlight <small>· Accessibility</small></li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-global-shortcuts.png" width="16" height="14" alt="">Global Shortcuts</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-macos-settings-shortcuts.png" width="16" height="16" alt="">macOS Settings Shortcuts</li>
           </ul>
         </div>
         <div class="nx-index-group">
           <h4>Finder, Safes &amp; Archives</h4>
           <ul>
-            <li>Finder Context Menus <small>· extension</small></li>
-            <li>New File · New Folder · Copy Path</li>
-            <li>Paste · Move Here</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-finder-context-menus.png" width="20" height="16" alt="">Finder Context Menus <small>· extension</small></li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-new-file.png" width="16" height="16" alt="">New File · <img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-new-folder.png" width="16" height="16" alt="">New Folder · <img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-copy-path.png" width="16" height="16" alt="">Copy Path</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-paste.png" width="16" height="16" alt="">Paste · <img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-move-here.png" width="16" height="16" alt="">Move Here</li>
             <li>Open in Terminal, VS Code, Codex, Claude…</li>
-            <li>Compress / Encrypt (Safe, 7z, ZIP, DMG)</li>
-            <li>Add to Existing File · Extract · Decrypt</li>
-            <li>Open in PDF Quick Actions</li>
-            <li>Uninstall &amp; Clean Up</li>
-            <li>Extract Archive</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-secure-archive.png" width="16" height="16" alt="">Compress / Encrypt (Safe, 7z, ZIP, DMG)</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-secure-archive.png" width="16" height="16" alt="">Add to Existing File · <img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-secure-archive.png" width="16" height="16" alt="">Extract · <img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-secure-archive.png" width="16" height="16" alt="">Decrypt</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-open-in-pdf-quick-actions.png" width="14" height="16" alt="">Open in PDF Quick Actions</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-uninstall-clean-up.png" width="14" height="16" alt="">Uninstall &amp; Clean Up</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-extract-archive.png" width="16" height="14" alt="">Extract Archive</li>
             <li>Quick Look for Markdown</li>
           </ul>
         </div>
         <div class="nx-index-group">
           <h4>Pointer &amp; Keyboard</h4>
           <ul>
-            <li>Mouse Sensitivity &amp; Acceleration <small>· Accessibility</small></li>
-            <li>Scroll Speed &amp; Acceleration</li>
-            <li>Remap Keys &amp; Buttons</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-mouse-sensitivity.png" width="14" height="18" alt="">Mouse Sensitivity &amp; Acceleration <small>· Accessibility</small></li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-scroll-speed.png" width="17" height="17" alt="">Scroll Speed &amp; Acceleration</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-remap-keys-buttons.png" width="22" height="14" alt="">Remap Keys &amp; Buttons</li>
             <li>Dual-role keys · Hyper key</li>
           </ul>
         </div>
         <div class="nx-index-group">
           <h4>Audio, Music &amp; Subtitles</h4>
           <ul>
-            <li>Audio Mixer <small>· System Audio Recording</small></li>
-            <li>Audio Effects per app</li>
-            <li>Music &amp; Playlists</li>
-            <li>Audio Player &amp; Queue</li>
-            <li>Quick Video</li>
-            <li>Extract Audio</li>
-            <li>Live Subtitles <small>· Speech Recognition, macOS 26.4+</small></li>
-            <li>Captions Only</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-audio-mixer.png" width="17" height="16" alt="">Audio Mixer <small>· System Audio Recording</small></li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-audio-effects.png" width="16" height="13" alt="">Audio Effects per app</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-music-playlists.png" width="16" height="15" alt="">Music &amp; Playlists</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-audio-player.png" width="18" height="14" alt="">Audio Player &amp; Queue</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-quick-video.png" width="18" height="14" alt="">Quick Video</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-extract-audio.png" width="15" height="16" alt="">Extract Audio</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-live-subtitles.png" width="19" height="18" alt="">Live Subtitles <small>· Speech Recognition, macOS 26.4+</small></li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-captions-only.png" width="19" height="18" alt="">Captions Only</li>
           </ul>
         </div>
         <div class="nx-index-group">
           <h4>Screen, Text &amp; Files</h4>
           <ul>
-            <li class="nx-index-sub">Screen Tools</li>
-            <li>Capture Text from Screen <small>· Screen Recording</small></li>
-            <li>Capture &amp; Act on Text</li>
-            <li>Capture to Clipboard · Capture &amp; Mark Up</li>
-            <li>Scan QR or Barcode</li>
-            <li>Translate Text from Screen <small>· macOS 15+</small></li>
-            <li>Read Screen Text Aloud</li>
-            <li>Pin Screen Region</li>
-            <li>Screen Shelf</li>
-            <li>Measure Screen Region · Pick Screen Color</li>
+            <li class="nx-index-sub"><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-screen-tools.png" width="21" height="16" alt="">Screen Tools</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-capture-text.png" width="16" height="15" alt="">Capture Text from Screen <small>· Screen Recording</small></li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-capture-act.png" width="16" height="15" alt="">Capture &amp; Act on Text</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-capture-clipboard.png" width="16" height="18" alt="">Capture to Clipboard · <img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-capture-mark-up.png" width="16" height="16" alt="">Capture &amp; Mark Up</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-scan-barcode.png" width="16" height="15" alt="">Scan QR or Barcode</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-translate-screen.png" width="17" height="16" alt="">Translate Text from Screen <small>· macOS 15+</small></li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-read-aloud.png" width="18" height="14" alt="">Read Screen Text Aloud</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-pin-region.png" width="15" height="17" alt="">Pin Screen Region</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-screen-shelf.png" width="18" height="13" alt="">Screen Shelf</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-measure-region.png" width="19" height="9" alt="">Measure Screen Region · <img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-pick-color.png" width="16" height="16" alt="">Pick Screen Color</li>
             <li class="nx-index-sub">Text &amp; files</li>
-            <li>Clipboard History</li>
-            <li>Text Editor &amp; Markdown preview</li>
-            <li>Text Tools</li>
-            <li>Large Text Viewer · Binary Viewer</li>
-            <li>Image Tools · Batch Image Tools</li>
-            <li>PDF Quick Actions</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-clipboard-history.png" width="16" height="18" alt="">Clipboard History</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-text-editor.png" width="16" height="16" alt="">Text Editor &amp; Markdown preview</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-text-tools.png" width="24" height="12" alt="">Text Tools</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-large-text-viewer.png" width="14" height="18" alt="">Large Text Viewer · <img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-binary-viewer.png" width="15" height="15" alt="">Binary Viewer</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-image-tools.png" width="18" height="14" alt="">Image Tools · <img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-batch-image-tools.png" width="17" height="18" alt="">Batch Image Tools</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-pdf-quick-actions.png" width="14" height="16" alt="">PDF Quick Actions</li>
           </ul>
         </div>
         <div class="nx-index-group">
           <h4>Mac Health, Storage &amp; Apps</h4>
           <ul>
             <li class="nx-index-sub">Health</li>
-            <li>Why Is My Mac Slow?</li>
-            <li>Memory Health Monitor</li>
-            <li>Startup &amp; Background Inspector</li>
-            <li>Maintenance &amp; System Tweaks</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-mac-health.png" width="17" height="14" alt="">Why Is My Mac Slow?</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-mac-health.png" width="17" height="14" alt="">Memory Health Monitor</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-startup-inspector.png" width="20" height="16" alt="">Startup &amp; Background Inspector</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-system-tweaks.png" width="18" height="18" alt="">Maintenance &amp; System Tweaks</li>
             <li class="nx-index-sub">Storage</li>
-            <li>Where Did My Space Go?</li>
-            <li>Reclaim Disk Space</li>
-            <li>Redundancy &amp; Clutter</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-disk-treemap.png" width="15" height="15" alt="">Where Did My Space Go?</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-reclaim-disk-space.png" width="18" height="13" alt="">Reclaim Disk Space</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-redundancy-clutter.png" width="16" height="18" alt="">Redundancy &amp; Clutter</li>
             <li class="nx-index-sub">Apps &amp; network</li>
-            <li>Uninstall an App · Find App Leftovers</li>
-            <li>Install Apps &amp; Dev Tools</li>
-            <li>Manage Fonts</li>
-            <li>Network Quality</li>
-            <li>Auto Wi-Fi Switch <small>· Location</small></li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-uninstall.png" width="14" height="16" alt="">Uninstall an App · <img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-app-leftovers.png" width="14" height="18" alt="">Find App Leftovers</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-app-installer.png" width="15" height="14" alt="">Install Apps &amp; Dev Tools</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-fonts.png" width="18" height="12" alt="">Manage Fonts</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-network-quality.png" width="17" height="18" alt="">Network Quality</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-auto-wifi-switch.png" width="19" height="14" alt="">Auto Wi-Fi Switch <small>· Location</small></li>
           </ul>
         </div>
         <div class="nx-index-group">
           <h4>Settings &amp; Support</h4>
           <ul>
-            <li>Settings · Start at Login · Language</li>
-            <li>AI Settings <small>· optional</small></li>
-            <li>Account (optional Xin account)</li>
-            <li>Manage License</li>
-            <li>Permissions</li>
-            <li>Help &amp; Feedback</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-settings.png" width="18" height="18" alt="">Settings · <img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-start-at-login.png" width="19" height="20" alt="">Start at Login · <img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-language.png" width="17" height="17" alt="">Language</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-ai-settings.png" width="14" height="17" alt="">AI Settings <small>· optional</small></li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-account.png" width="17" height="17" alt="">Account (optional Xin account)</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-manage-license.png" width="17" height="17" alt="">Manage License</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-permissions.png" width="15" height="16" alt="">Permissions</li>
+            <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-help-feedback.png" width="17" height="17" alt="">Help &amp; Feedback</li>
             <li>Check for Updates</li>
           </ul>
         </div>
