@@ -184,7 +184,8 @@
   .pvg-display .pvg-shots img { width: 100%; height: auto; max-height: none; }
   .pvg-display .nx-display-overview { grid-template-columns: minmax(0, 1.62fr) minmax(0, 1fr); align-items: center; }
   /* Match the tall screenshots' heights without cropping their contents. */
-  .pvg-display .nx-display-details { grid-template-columns: minmax(0, 0.332fr) minmax(0, 0.51fr) minmax(0, 0.553fr); }
+  .pvg-display .nx-display-details { grid-template-columns: minmax(0, 1fr) minmax(0, 1.536fr); }
+  .pvg-display .nx-window-details { grid-template-columns: minmax(0, 0.553fr) minmax(0, 0.986fr); }
   /* How to get it: one panel, the pitch and the button beside three compact steps. */
   .nx-get-inner {
     width: min(100%, var(--wide-max)); margin-inline: auto; padding: 24px;
@@ -313,7 +314,7 @@
   @media (max-width: 720px) {
     .nx-wide .pvg-shots { flex-direction: column; }
     .nx-wide .pvg-shots figure.nx-tall img { width: auto; max-width: min(100%, 420px); margin-inline: auto; }
-    .pvg-display .pvw-points, .pvg-display .nx-display-overview, .pvg-display .nx-display-details { grid-template-columns: 1fr; }
+    .pvg-display .pvw-points, .pvg-display .nx-display-overview, .pvg-display .nx-display-details, .pvg-display .nx-window-details { grid-template-columns: 1fr; }
     .pvg-display .pvg-shots figure { width: 100%; max-width: 520px; margin-inline: auto; }
   }
   @media (max-width: 560px) {
@@ -748,11 +749,21 @@
               </picture>
             </button>
           </figure>
+        </div>
+        <div class="pvg-shots nx-window-details">
           <figure>
             <button class="nx-shot-button" type="button" aria-label="Enlarge: Snap &amp; Arrange Windows" aria-haspopup="dialog" aria-controls="pvl-viewer">
               <picture>
                 <source type="image/webp" srcset="assets/refresh/shot-window-arrangements.webp?v=20260916">
                 <img src="assets/refresh/shot-window-arrangements.png?v=20260916" width="908" height="1642" loading="lazy" alt="Snap &amp; Arrange Windows menu with halves, custom quadrants, display switching, saved window positions, focus actions and keyboard shortcuts">
+              </picture>
+            </button>
+          </figure>
+          <figure>
+            <button class="nx-shot-button" type="button" aria-label="Enlarge: Customize Quadrants" aria-haspopup="dialog" aria-controls="pvl-viewer">
+              <picture>
+                <source type="image/webp" srcset="assets/refresh/shot-customize-quadrants.webp?v=20260916">
+                <img src="assets/refresh/shot-customize-quadrants.png?v=20260916" width="1360" height="1380" loading="lazy" alt="Customize Quadrants with colored window regions, draggable dividers, split percentages and saved layouts">
               </picture>
             </button>
           </figure>
@@ -832,7 +843,7 @@
       </div>
     </article>
 
-    <article class="pvg-group pvg-finder nx-text-only" id="finder-safes-archives">
+    <article class="pvg-group pvg-finder" id="finder-safes-archives">
       <div class="pvg-copy">
         <div class="pvg-head">
           <div class="pvw-icon" aria-hidden="true">
@@ -848,6 +859,16 @@
           <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-extract-archive.png?v=20260916" width="16" height="14" alt=""><b>Open any archive someone sends you</b>, zip to rar and password-protected ones included, without installing another unarchiver.</li>
           <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-uninstall-clean-up.png?v=20260916" width="14" height="16" alt=""><b>Read Markdown with a spacebar tap</b> in Finder, and <b>start a clean uninstall</b> from the same right-click menu.</li>
         </ul>
+      </div>
+      <div class="pvg-shots stack">
+        <figure>
+          <button class="nx-shot-button" type="button" aria-label="Enlarge: Finder context menu" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <source type="image/webp" srcset="assets/refresh/shot-finder-context-menu.webp?v=20260916">
+              <img src="assets/refresh/shot-finder-context-menu.png?v=20260916" width="1066" height="994" loading="lazy" alt="Finder context menu with file and folder actions, a Compress / Encrypt submenu, Copy Path and shortcuts to Terminal, Codex, Claude and Visual Studio Code">
+            </picture>
+          </button>
+        </figure>
       </div>
     </article>
 
