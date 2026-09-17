@@ -147,18 +147,17 @@
   .pvg-privacy .pvw-icon { color: #21a558; }
   .pvg-ai .pvw-icon { color: #4f8df9; }
   .pvg-head { display: flex; align-items: center; gap: 12px; }
-  .pvg-head .pvw-icon { flex: 0 0 auto; transform: translateY(-3px); }
-  .pvg-head h3 { margin: 0; }
-  .pvg-copy h3 { margin: 0 0 8px; font-size: 1.28rem; line-height: 1.2; color: var(--ink); font-weight: 500; }
+  .pvg-head .pvw-icon { flex: 0 0 auto; }
+  .pvg-copy h3 { margin: 0; font-size: 1.28rem; line-height: 1.2; color: var(--ink); font-weight: 500; }
   .pvg-copy p { margin: 0; color: var(--muted); line-height: 1.62; }
   .pvg-credit a { color: var(--teal-dark); text-decoration: underline; text-underline-offset: 0.15em; }
   .pvw-points { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
-  .pvw-points li { position: relative; padding-left: 24px; color: var(--muted); line-height: 1.52; }
+  /* Image icons and CSS markers share the same text gutter. */
+  .pvw-points li { position: relative; padding-left: 38px; min-height: 26px; color: var(--muted); line-height: 1.52; }
   .pvw-points li::before {
     content: ""; position: absolute; left: 0; top: 0.68em; width: 8px; height: 8px; border-radius: 999px;
     background: linear-gradient(135deg, #246bfe, #0f9f9a);
   }
-  .pvg-privacy .pvw-points li { padding-left: 30px; }
   .pvg-privacy .pvw-points li::before {
     content: "\2713"; top: 0.18em; width: 19px; height: 19px; display: grid; place-items: center;
     color: #fff; background: linear-gradient(135deg, #22a06b, #15813b); font-size: 11px; font-weight: 800; line-height: 1;
@@ -248,11 +247,11 @@
   /* App icons: the menu's own glyphs (SF Symbols with the app's tints), rendered
      to PNG by scripts/build_xhelperspro_site_icons.py from icons.json. An index
      entry carries its icon inline; a card bullet uses its tool's icon as the marker. */
-  .nx-ic { display: inline-block; width: 1.15em; height: 1em; object-fit: contain; vertical-align: -0.12em; margin-right: 0.3em; }
-  .pvw-points li.nx-iconed { padding-left: 38px; min-height: 26px; }
+  /* Keep narrow glyphs at the left edge of their reserved icon column. */
+  .nx-ic { display: inline-block; width: 1.15em; height: 1em; object-fit: contain; object-position: left center; vertical-align: -0.12em; margin-right: 0.3em; }
   .pvw-points li.nx-iconed::before, .pvg-privacy .pvw-points li.nx-iconed::before { display: none; }
   .pvw-points li b { font-weight: 600; color: var(--ink); }
-  .pvw-points li .nx-ic-bullet { position: absolute; left: 0; top: -0.05em; width: 28px; height: 26px; object-fit: contain; }
+  .pvw-points li .nx-ic-bullet { position: absolute; left: 0; top: -0.05em; width: 28px; height: 26px; object-fit: contain; object-position: left center; }
 
   .nx-index { width: min(100%, var(--wide-max)); margin-inline: auto; }
   .nx-tool-index.compact-section { padding-block: 16px; }
