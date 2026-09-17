@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
     <title>XHelpers Pro for Mac</title>
-    <meta name="description" content="60+ Mac tools in one menu bar menu: display and windows, Finder and Safes, pointer and keyboard, audio and subtitles, screen and text tools, Mac health and storage. Free for now, macOS 14 or later, no account required.">
+    <meta name="description" content="60+ Mac tools in one menu bar menu: display and windows, Finder and Safes, pointer and keyboard, audio and subtitles, screen and text tools, Mac health and storage. Free for now, with a free per-Mac license. macOS 14 or later, no account required.">
     <link rel="canonical" href="https://xintechllc.com/XHelpersPro/">
     <meta name="google-site-verification" content="E7DLX6ZlccKL2RXTHrOx2P_Wzp35A1nDlLM3SkugHPE">
     <link rel="alternate" hreflang="en" href="https://xintechllc.com/XHelpersPro/">
@@ -38,7 +38,7 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="XHelpers Pro">
     <meta property="og:title" content="XHelpers Pro for Mac">
-    <meta property="og:description" content="60+ Mac tools in one menu bar menu: display and windows, Finder and Safes, pointer and keyboard, audio and subtitles, screen and text tools, Mac health and storage. Free for now, macOS 14 or later, no account required.">
+    <meta property="og:description" content="60+ Mac tools in one menu bar menu: display and windows, Finder and Safes, pointer and keyboard, audio and subtitles, screen and text tools, Mac health and storage. Free for now, with a free per-Mac license. macOS 14 or later, no account required.">
     <meta property="og:url" content="https://xintechllc.com/XHelpersPro/">
     <meta property="og:image" content="https://xintechllc.com/XHelpersPro/new/xhelperspro-website-refresh-assets/og-image.png?v=20260916">
     <meta property="og:image:width" content="1200">
@@ -46,7 +46,7 @@
     <meta property="og:image:alt" content="XHelpers Pro app icon beside the line: 60+ Mac tools in one menu bar menu.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="XHelpers Pro for Mac">
-    <meta name="twitter:description" content="60+ Mac tools in one menu bar menu: display and windows, Finder and Safes, pointer and keyboard, audio and subtitles, screen and text tools, Mac health and storage. Free for now, macOS 14 or later, no account required.">
+    <meta name="twitter:description" content="60+ Mac tools in one menu bar menu: display and windows, Finder and Safes, pointer and keyboard, audio and subtitles, screen and text tools, Mac health and storage. Free for now, with a free per-Mac license. macOS 14 or later, no account required.">
     <meta name="twitter:image" content="https://xintechllc.com/XHelpersPro/new/xhelperspro-website-refresh-assets/og-image.png?v=20260916">
     <link rel="icon" href="../assets/app-icon.png" type="image/png">
     <link rel="stylesheet" href="../styles.css?v=20260704-merged">
@@ -58,7 +58,7 @@
   "operatingSystem": "macOS 14.0 or later",
   "applicationCategory": "UtilitiesApplication",
   "softwareVersion": "1.0.7",
-  "description": "60+ Mac tools in one menu bar menu: display and windows, Finder and Safes, pointer and keyboard, audio and subtitles, screen and text tools, Mac health and storage. Free for now, macOS 14 or later, no account required.",
+  "description": "60+ Mac tools in one menu bar menu: display and windows, Finder and Safes, pointer and keyboard, audio and subtitles, screen and text tools, Mac health and storage. Free for now, with a free per-Mac license. macOS 14 or later, no account required.",
   "url": "https://xintechllc.com/XHelpersPro/",
   "downloadUrl": "https://xintechllc.com/XHelpersPro/download/XHelpersPro-macOS.dmg",
   "image": "https://xintechllc.com/XHelpersPro/new/xhelperspro-website-refresh-assets/og-image.png?v=20260916",
@@ -71,7 +71,7 @@
     "@type": "Offer",
     "price": "0",
     "priceCurrency": "USD",
-    "description": "Free for now: no trial, no license key, no account."
+    "description": "Free for now: a free per-Mac license, no account required."
   }
 }
     </script>
@@ -226,12 +226,8 @@
   .nx-band-map { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin: 0; padding: 0; list-style: none; }
   .nx-band-map li { padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel-soft); font-size: 0.9rem; line-height: 1.4; color: var(--ink); }
   .nx-band-map li b { display: block; color: var(--teal-dark); font-weight: 600; font-size: 0.8rem; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 3px; }
-  .nx-band figure { margin: 0; position: relative; }
-  .nx-band figure img { display: block; width: 100%; max-height: 640px; object-fit: contain; object-position: top; border-radius: 12px; box-shadow: 0 8px 22px rgba(21, 32, 51, 0.14); cursor: zoom-in; }
-  .nx-band figcaption { margin-top: 8px; color: var(--muted); font-size: 0.9rem; text-align: center; }
 
-  figure.nx-placeholder::after,
-  .nx-band figure.nx-placeholder::after {
+  figure.nx-placeholder::after {
     content: attr(data-note); position: absolute; top: 8px; left: 8px; z-index: 2;
     padding: 3px 8px; border-radius: 6px; background: rgba(240, 200, 107, 0.95); color: #3b2f0b;
     font-size: 0.68rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; pointer-events: none;
@@ -408,22 +404,15 @@
           The menu is laid out in two columns so the whole suite fits on one screen: quick controls at the
           top, tools and settings paired below. No Dock window, no separate apps to open.
         </p>
-        <ul class="nx-band-map" aria-label="Menu sections">
-          <li><b>Display</b>Blackout, dim until key press, brightness, contrast, keyboard backlight</li>
-          <li><b>Windows &amp; Input</b>Active-window highlight, Finder context menus, pointer, scroll, remapping</li>
-          <li><b>Audio &amp; Subtitles</b>Music &amp; Playlists, per-app Audio Mixer, Live Subtitles</li>
-          <li><b>Network</b>Auto Wi-Fi Switch, Network Quality</li>
-          <li><b>Tools</b>Keep Mac Awake, Change Resolution, Snap &amp; Arrange Windows, Screen Tools, Utilities</li>
-          <li><b>Settings &amp; Support</b>Settings, Account, Permissions, Help &amp; Feedback, About, Quit</li>
-        </ul>
       </div>
-      <figure>
-        <picture>
-          <source type="image/webp" srcset="xhelperspro-website-refresh-assets/menu-two-column.webp?v=20260916">
-          <img src="xhelperspro-website-refresh-assets/menu-two-column.png?v=20260916" width="1632" height="1380" alt="The XHelpers Pro menu in dark appearance: Display and Windows &amp; Input in the top band, Audio &amp; Subtitles and Network below them with per-app volume rows, then Tools and Settings &amp; Support">
-        </picture>
-        <figcaption>The two-column menu, with four apps playing through the Audio Mixer.</figcaption>
-      </figure>
+      <ul class="nx-band-map" aria-label="Menu sections">
+        <li><b>Display</b>Blackout, dim until key press, brightness, contrast, keyboard backlight</li>
+        <li><b>Windows &amp; Input</b>Active-window highlight, Finder context menus, pointer, scroll, remapping</li>
+        <li><b>Audio &amp; Subtitles</b>Music &amp; Playlists, per-app Audio Mixer, Live Subtitles</li>
+        <li><b>Network</b>Auto Wi-Fi Switch, Network Quality</li>
+        <li><b>Tools</b>Keep Mac Awake, Change Resolution, Snap &amp; Arrange Windows, Screen Tools, Utilities</li>
+        <li><b>Settings &amp; Support</b>Settings, Account, Permissions, Help &amp; Feedback, About, Quit</li>
+      </ul>
     </div>
   </section>
 
@@ -782,6 +771,7 @@
               <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-language.png?v=20260916" width="17" height="17" alt="">Language</li>
               <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-ai-settings.png?v=20260916" width="14" height="17" alt="">AI Settings <small>· optional</small></li>
               <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-account.png?v=20260916" width="17" height="17" alt="">Account (optional Xin account)</li>
+              <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-manage-license.png?v=20260916" width="17" height="17" alt="">Manage License</li>
               <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-permissions.png?v=20260916" width="15" height="16" alt="">Permissions</li>
               <li><img class="nx-ic" src="xhelperspro-website-refresh-assets/ic-help-feedback.png?v=20260916" width="17" height="17" alt="">Help &amp; Feedback</li>
               <li>Check for Updates</li>
@@ -856,7 +846,7 @@
         </li>
         <li>
           <strong>3</strong>
-          <span>Use every tool. XHelpers Pro is free for now: no trial, no license key, no account.</span>
+          <span>Use every tool. XHelpers Pro is free for now: a free license activates it on this Mac. No account required.</span>
         </li>
       </ol>
       <div class="compatibility-list" aria-label="Compatibility">
@@ -902,7 +892,7 @@
     var overlay = document.getElementById("pvl-overlay");
     var image = document.getElementById("pvl-image");
     if (!overlay || !image) { return; }
-    var openers = document.querySelectorAll(".pvg-shots img, .nx-band figure img");
+    var openers = document.querySelectorAll(".pvg-shots img");
     Array.prototype.forEach.call(openers, function (img) {
       img.addEventListener("click", function () {
         image.src = img.currentSrc || img.src;
