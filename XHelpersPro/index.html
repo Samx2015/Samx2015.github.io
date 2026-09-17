@@ -212,18 +212,25 @@
   .nx-get-steps li:nth-child(3) strong { --step-color: #15813b; }
   .nx-get-steps b { color: var(--ink); font-weight: 600; }
 
-  /* Why it's good: three pillars over six audience tiles, one width with the cards. */
+  /* What to expect: a soft tinted band, three pillar cards washed with their icon's
+     color, and six audience tiles with icons. */
+  .nx-why.section { padding-top: 2.4rem; padding-bottom: 2.6rem; background: linear-gradient(180deg, color-mix(in srgb, var(--teal) 7%, var(--paper)), var(--paper) 85%); }
   .nx-why-inner { width: min(100%, var(--wide-max)); margin-inline: auto; }
   .nx-why h2, #release h2 { margin: 0 0 8px; font-size: clamp(1.6rem, 2.8vw, 2.2rem); font-weight: 500; color: var(--ink); text-wrap: balance; }
-  .nx-why-lede { margin: 0 0 20px; max-width: 62ch; color: var(--muted); line-height: 1.6; }
+  .nx-why-lede { margin: 0 0 22px; max-width: 62ch; color: var(--muted); line-height: 1.6; }
   .nx-pillars { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 0 0 14px; padding: 0; list-style: none; }
-  .nx-pillars li { padding: 18px 18px 16px; border: 1px solid var(--line); border-radius: 18px; background: var(--panel); box-shadow: var(--shadow); }
-  .nx-pillar-icon { display: inline-grid; place-items: center; width: 40px; height: 40px; margin-bottom: 10px; border-radius: 12px; color: var(--tint, var(--teal)); background: color-mix(in srgb, var(--tint, var(--teal)) 12%, transparent); }
-  .nx-pillars h3 { margin: 0 0 6px; font-size: 1.05rem; font-weight: 600; color: var(--ink); }
-  .nx-pillars p { margin: 0; font-size: 0.95rem; line-height: 1.55; color: var(--muted); }
-  .nx-benefits { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 0; padding: 0; list-style: none; }
-  .nx-benefits li { padding: 12px 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel-soft); font-size: 0.92rem; line-height: 1.45; color: var(--muted); }
+  .nx-pillars li {
+    padding: 20px 20px 18px; border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow);
+    background: linear-gradient(180deg, color-mix(in srgb, var(--tint, var(--teal)) 9%, #fff), #fff 62%);
+  }
+  .nx-pillar-icon { display: inline-grid; place-items: center; width: 44px; height: 44px; margin-bottom: 12px; border-radius: 13px; color: #fff; background: var(--tint, var(--teal)); box-shadow: 0 6px 16px color-mix(in srgb, var(--tint, var(--teal)) 35%, transparent); }
+  .nx-pillars h3 { margin: 0 0 6px; font-size: 1.12rem; font-weight: 650; color: var(--ink); }
+  .nx-pillars p { margin: 0; font-size: 0.96rem; line-height: 1.55; color: var(--muted); }
+  .nx-benefits { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
+  .nx-benefits li { display: flex; gap: 12px; align-items: flex-start; padding: 14px 16px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); font-size: 0.93rem; line-height: 1.45; color: var(--muted); }
+  .nx-benefit-icon { display: inline-grid; place-items: center; flex: 0 0 auto; width: 36px; height: 36px; border-radius: 999px; color: var(--tint, var(--teal)); background: color-mix(in srgb, var(--tint, var(--teal)) 12%, transparent); }
   .nx-benefits b { display: block; margin-bottom: 3px; font-weight: 600; color: var(--ink); }
+  .nx-benefits li > div > span { display: block; }
 
   /* ---- nx layer: new for the refresh ---- */
   .nx-hero-shot { position: relative; margin: 0; }
@@ -493,13 +500,13 @@
           </div>
           <h3>Display &amp; Windows</h3>
         </div>
-        <p class="pvg-lede">Run the visual side of your desk without opening System Settings or a second window manager.</p>
+        <p class="pvg-lede">Your displays and windows arranged the way you work, without a second utility.</p>
         <ul class="pvw-points">
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-blackout.png?v=20260916" width="23" height="18" alt="">Black out the built-in MacBook display while it mirrors an external monitor; dim displays until a key press.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-brightness.png?v=20260916" width="19" height="19" alt="">Brightness, contrast and keyboard-backlight sliders right in the menu, plus sleep, restart, shut down and macOS theme.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-change-resolution.png?v=20260916" width="20" height="16" alt="">Install HiDPI presets and custom resolutions, with a keep-or-revert safety timer after every switch.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-snap-arrange-windows.png?v=20260916" width="20" height="16" alt="">Snap &amp; Arrange Windows to halves, quadrants you can customize, maximize or center, or the next display; save and restore window positions.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-active-window-highlight.png?v=20260916" width="20" height="16" alt="">Highlight the active window with a click-through border; Keep Mac Awake for 30 minutes, hours, on power, or while an app runs.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-blackout.png?v=20260916" width="23" height="18" alt="">Work on the big monitor alone: black out the MacBook&rsquo;s built-in screen while it mirrors, and dim every display until you touch a key.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-brightness.png?v=20260916" width="19" height="19" alt="">Adjust brightness, contrast, keyboard backlight and the macOS theme from one menu, and stop hunting through System Settings for the same five switches.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-change-resolution.png?v=20260916" width="20" height="16" alt="">Get crisp text at the size you want on any external display: HiDPI presets and custom resolutions, with a safety timer that reverts a bad switch on its own.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-snap-arrange-windows.png?v=20260916" width="20" height="16" alt="">Put every window where it belongs with one shortcut: halves, quadrants you design, center, maximize or the next display, and bring a whole layout back after unplugging.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-active-window-highlight.png?v=20260916" width="20" height="16" alt="">Never lose track of which window has focus on a wide desk, and keep the Mac awake for exactly as long as a download or a talk needs.</li>
         </ul>
       </div>
       <div class="pvg-shots">
@@ -528,13 +535,13 @@
           </div>
           <h3>Finder, Safes &amp; Archives</h3>
         </div>
-        <p class="pvg-lede">Make Finder do more, and keep selected files, passwords and encrypted Safes on your Mac.</p>
+        <p class="pvg-lede">The file jobs you do ten times a day, done from the right-click menu you already use.</p>
         <ul class="pvw-points">
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-new-file.png?v=20260916" width="16" height="16" alt="">New file or folder, copy path, paste or move, and open in any of 40+ apps, from Terminal and VS Code to Codex and Claude, or add your own.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-secure-archive.png?v=20260916" width="16" height="16" alt="">Compress / Encrypt a selection into a local Safe, 7z, ZIP or DMG from one dialog, with or without a password.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-secure-archive.png?v=20260916" width="16" height="16" alt="">Add files to an existing Safe, or decrypt only the items you choose.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-extract-archive.png?v=20260916" width="16" height="14" alt="">Extract Archive opens zip, 7z, tar, gz, bz2, xz and rar, including password-protected ones, and stops before very large ones.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-uninstall-clean-up.png?v=20260916" width="14" height="16" alt="">Quick Look renders Markdown right in Finder; Uninstall &amp; Clean Up starts from the context menu.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-new-file.png?v=20260916" width="16" height="16" alt="">Skip the detours: create a file or folder where you are, copy a path, paste or move a selection, and open anything in any of 40+ apps, from Terminal and VS Code to Codex and Claude.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-secure-archive.png?v=20260916" width="16" height="16" alt="">Lock private files in seconds: a selection becomes an encrypted Safe, 7z, ZIP or DMG from one dialog, with a password only you hold.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-secure-archive.png?v=20260916" width="16" height="16" alt="">Keep a Safe growing without repacking it, and take out only the items you need.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-extract-archive.png?v=20260916" width="16" height="14" alt="">Open any archive someone sends you, zip to rar and password-protected ones included, without installing another unarchiver.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-uninstall-clean-up.png?v=20260916" width="14" height="16" alt="">Read Markdown with a spacebar tap in Finder, and start a clean uninstall from the same right-click menu.</li>
         </ul>
       </div>
       <div class="pvg-shots">
@@ -557,12 +564,12 @@
           </div>
           <h3>Pointer &amp; Keyboard</h3>
         </div>
-        <p class="pvg-lede">Tune every mouse, trackpad and keyboard on the desk separately, and keep the rules on this Mac.</p>
+        <p class="pvg-lede">Make every mouse, trackpad and keyboard feel exactly right, and keep it that way.</p>
         <ul class="pvw-points">
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-mouse-sensitivity.png?v=20260916" width="14" height="18" alt="">Pointer sensitivity and acceleration per device, with acceleration off when you want raw movement.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-scroll-speed.png?v=20260916" width="17" height="17" alt="">Scroll speed, scroll acceleration and reverse direction per pointing device, LinearMouse-compatible.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-remap-keys-buttons.png?v=20260916" width="22" height="14" alt="">Remap keys and mouse buttons to keys or shortcuts, make dual-role keys, or add a Hyper key.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-global-shortcuts.png?v=20260916" width="16" height="14" alt="">One Global Shortcuts window for display, window and utility hotkeys.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-mouse-sensitivity.png?v=20260916" width="14" height="18" alt="">Aim like you mean it: sensitivity and acceleration tuned per device, with acceleration off entirely for raw, predictable movement.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-scroll-speed.png?v=20260916" width="17" height="17" alt="">Scroll the way each device should, with speed, acceleration and direction set per mouse or trackpad, so a wheel and a trackpad stop fighting each other.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-remap-keys-buttons.png?v=20260916" width="22" height="14" alt="">Turn a spare key or mouse button into the shortcut you reach for most, make Caps Lock do two jobs, or add a Hyper key that never clashes with an app.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-global-shortcuts.png?v=20260916" width="16" height="14" alt="">Run the whole suite from the keyboard: 67 actions ready to bind in one Global Shortcuts window.</li>
         </ul>
       </div>
       <div class="pvg-shots">
@@ -593,10 +600,10 @@
         </div>
         <p class="pvg-lede">Control what each app sounds like, keep every source in one place, and read what any app is saying.</p>
         <ul class="pvw-points">
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-audio-mixer.png?v=20260916" width="17" height="16" alt="">Audio Mixer: per-app volume and mute in the menu, boost quiet apps up to 200%, and per-app Audio Effects (bass, treble, width, punch, loudness, spatial).</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-music-playlists.png?v=20260916" width="16" height="15" alt="">Music &amp; Playlists: your Apple Music library plus local audio and video folders in one library, with playlists and saved filters that span sources.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-audio-player.png?v=20260916" width="18" height="14" alt="">Audio Player with a shared queue, Quick Video with speed, loop and always-on-top, and Extract Audio from video files.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-live-subtitles.png?v=20260916" width="19" height="18" alt="">Live Subtitles: on-device transcription and translation of one app's audio, with a captions-only mode and per-speaker colors (macOS 26.4 or later).</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-audio-mixer.png?v=20260916" width="17" height="16" alt="">Stop reaching for the volume every time a call starts: give each app its own level and mute, boost quiet apps up to 200%, and shape them with per-app Audio Effects.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-music-playlists.png?v=20260916" width="16" height="15" alt="">One library for everything you play: Apple Music alongside local audio and video folders, with playlists and saved filters that cut across all of them.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-audio-player.png?v=20260916" width="18" height="14" alt="">A lightweight player for the file you just downloaded: a shared queue, Quick Video with speed, loop and always-on-top, and the audio pulled out of any video in a click.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-live-subtitles.png?v=20260916" width="19" height="18" alt="">Follow any meeting, stream or video in your language: Live Subtitles transcribe and translate one app&rsquo;s audio on device, with a captions-only mode and per-speaker colors (macOS 26.4 or later).</li>
         </ul>
       </div>
       <div class="pvg-shots">
@@ -624,11 +631,11 @@
         </div>
         <p class="pvg-lede">Anything on screen becomes text, a link, a color or a measurement in one drag; anything on disk gets the small editor or converter it needs.</p>
         <ul class="pvw-points">
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-capture-text.png?v=20260916" width="16" height="15" alt="">Capture Text from Screen and act on it: copy, open links, translate (macOS 15 or later) or read it aloud; scan QR codes and barcodes straight off the screen.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-pin-region.png?v=20260916" width="15" height="17" alt="">Pin a screen region so it floats above everything, keep captures on the Screen Shelf, measure a region, pick a color, or capture and mark up an image.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-clipboard-history.png?v=20260916" width="16" height="18" alt="">Clipboard History with search and pins; Text Editor with a file browser, code syntax and a Markdown preview that renders Mermaid diagrams.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-text-tools.png?v=20260916" width="24" height="12" alt="">Text Tools tidy whitespace, repair garbled characters, decode HTML, URLs and Base64, format JSON, redact contact details and convert to tables, on Apple's on-device models.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-image-tools.png?v=20260916" width="18" height="14" alt="">Image Tools and Batch Image Tools for markup, resize and export; PDF Quick Actions to combine, reorder, unlock and build PDFs from images; Large Text and Binary viewers for files other editors choke on.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-capture-text.png?v=20260916" width="16" height="15" alt="">Stop retyping what is on screen: drag over any text, then copy it, open its links, translate it (macOS 15 or later) or hear it read aloud; QR codes and barcodes scan the same way.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-pin-region.png?v=20260916" width="15" height="17" alt="">Keep a reference in view while you work: pin a region above every window, park captures on the Screen Shelf, measure or pick a color, or mark up a capture and send it.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-clipboard-history.png?v=20260916" width="16" height="18" alt="">Never lose something you copied: searchable Clipboard History with pins, and a Text Editor with a file browser, code syntax and a Markdown preview that renders Mermaid diagrams.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-text-tools.png?v=20260916" width="24" height="12" alt="">Fix messy text without a script: tidy whitespace, repair garbled characters, decode HTML, URLs and Base64, format JSON, redact contact details or turn lines into a table, all on Apple&rsquo;s on-device models.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-image-tools.png?v=20260916" width="18" height="14" alt="">Handle images and PDFs without opening five apps: resize, mark up and export in batches; combine, reorder, unlock or build PDFs; and open huge text or binary files other editors choke on.</li>
         </ul>
       </div>
       <div class="pvg-shots">
@@ -656,11 +663,11 @@
         </div>
         <p class="pvg-lede">Find out why the Mac is slow or full, then fix it with evidence on screen and nothing deleted behind your back.</p>
         <ul class="pvw-points">
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-mac-health.png?v=20260916" width="17" height="14" alt="">Why Is My Mac Slow? gives a verdict with the contributing causes; Memory Health Monitor watches pressure and swap.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-startup-inspector.png?v=20260916" width="20" height="16" alt="">Startup &amp; Background Inspector lists everything that runs at login, with signatures, and disables only your own items; Maintenance &amp; System Tweaks shows dozens of macOS settings as cards, each with what is saved right now.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-reclaim-disk-space.png?v=20260916" width="18" height="13" alt="">Reclaim Disk Space with guided actions and a storage map; Where Did My Space Go? draws your disk as a treemap; Redundancy &amp; Clutter finds duplicates.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-uninstall.png?v=20260916" width="14" height="16" alt="">Uninstall an App with a reviewed file list, Find App Leftovers, and cleanup reports you can export; Install Apps &amp; Dev Tools and Manage Fonts set a new Mac up.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-network-quality.png?v=20260916" width="17" height="18" alt="">Network Quality measures the connection you are on; Auto Wi-Fi Switch moves to a stronger saved network when the signal drops.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-mac-health.png?v=20260916" width="17" height="14" alt="">Get a straight answer to &ldquo;why is my Mac slow?&rdquo;: a verdict with the causes behind it, and a Memory Health Monitor that watches pressure and swap before things grind.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-startup-inspector.png?v=20260916" width="20" height="16" alt="">See everything that starts with your Mac, with signatures, and switch off only what is yours; browse dozens of macOS settings as cards that show what is saved right now.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-reclaim-disk-space.png?v=20260916" width="18" height="13" alt="">Win back space with confidence: guided reclaim actions and a storage map, a treemap of where the disk went, and duplicates found by Redundancy &amp; Clutter.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-uninstall.png?v=20260916" width="14" height="16" alt="">Remove an app properly: a reviewed file list before anything moves, leftovers found for apps you deleted long ago, and cleanup reports you can export; set a new Mac up with Install Apps &amp; Dev Tools and Manage Fonts.</li>
+          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-network-quality.png?v=20260916" width="17" height="18" alt="">Know whether it is the Wi-Fi or the site: Network Quality measures the connection you are on, and Auto Wi-Fi Switch moves to a stronger saved network when the signal drops.</li>
         </ul>
       </div>
       <div class="pvg-shots">
@@ -872,30 +879,48 @@
       <div class="section-kicker">What to expect</div>
       <h2 id="why-title">Less fuss at your desk.</h2>
       <p class="nx-why-lede">Three habits every tool follows.</p>
-      <ul class="nx-pillars" aria-label="Three reasons">
-        <li>
-          <span class="nx-pillar-icon" style="--tint: #246bfe" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect></svg></span>
+      <ul class="nx-pillars" aria-label="Three habits">
+        <li style="--tint: #246bfe">
+          <span class="nx-pillar-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect></svg></span>
           <h3>One app instead of a dozen</h3>
-          <p>Sixty-plus tools share one menu, one Permissions window and one update.</p>
+          <p>Sixty-plus tools, one menu, one Permissions window, one update. Nothing else to install or keep current.</p>
         </li>
-        <li>
-          <span class="nx-pillar-icon" style="--tint: #0f9f9a" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M10 6h11M10 12h11M10 18h11"></path><path d="M3 6l1.6 1.6L7.5 4.6"></path><path d="M3 12l1.6 1.6L7.5 10.6"></path><path d="M3 18l1.6 1.6L7.5 16.6"></path></svg></span>
+        <li style="--tint: #0f9f9a">
+          <span class="nx-pillar-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M10 6h11M10 12h11M10 18h11"></path><path d="M3 6l1.6 1.6L7.5 4.6"></path><path d="M3 12l1.6 1.6L7.5 10.6"></path><path d="M3 18l1.6 1.6L7.5 16.6"></path></svg></span>
           <h3>Shows its work</h3>
-          <p>Cleanup lists files before removing them, and every settings change shows what it will change and how to undo it.</p>
+          <p>Cleanup lists every file before it moves one. Settings changes show what will change and how to undo it.</p>
         </li>
-        <li>
-          <span class="nx-pillar-icon" style="--tint: #7964e8" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M6.3 8.2A6 6 0 0 1 18 8c0 7 3 9 3 9H8"></path><path d="M6 8c0 5-1.2 7.3-2.2 8.5"></path><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"></path><path d="M3 3l18 18"></path></svg></span>
+        <li style="--tint: #7964e8">
+          <span class="nx-pillar-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M6.3 8.2A6 6 0 0 1 18 8c0 7 3 9 3 9H8"></path><path d="M6 8c0 5-1.2 7.3-2.2 8.5"></path><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"></path><path d="M3 3l18 18"></path></svg></span>
           <h3>Helpful, not noisy</h3>
-          <p>It lives in the menu bar and opens a window only when you ask for one.</p>
+          <p>Lives in the menu bar, opens a window only when you ask, and never nags.</p>
         </li>
       </ul>
       <ul class="nx-benefits" aria-label="Who it is for">
-        <li><b>For desk setups</b><span>External displays, a favorite mouse, real speakers, and a network that changes during the day.</span></li>
-        <li><b>For window speed</b><span>Keyboard-first window management, with the Rectangle shortcuts you already know respected.</span></li>
-        <li><b>For Finder and private files</b><span>Everything from the context menu you already use, encrypted Safes included.</span></li>
-        <li><b>For a Mac that stays fast</b><span>Diagnose first, delete last.</span></li>
-        <li><b>For anything on screen or on disk</b><span>One drag to capture, one menu to convert.</span></li>
-        <li><b>For privacy</b><span>Local by default. Connect an AI provider only if you want one.</span></li>
+        <li style="--tint: #246bfe">
+          <span class="nx-benefit-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><rect x="2" y="4" width="20" height="13" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg></span>
+          <div><b>For desk setups</b><span>External displays, a favorite mouse, real speakers and a network that changes during the day, all handled from one place.</span></div>
+        </li>
+        <li style="--tint: #7964e8">
+          <span class="nx-benefit-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><rect x="2" y="6" width="20" height="12" rx="2"></rect><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8"></path></svg></span>
+          <div><b>For window speed</b><span>Keyboard-first window management that respects the Rectangle shortcuts you already know.</span></div>
+        </li>
+        <li style="--tint: #0f9f9a">
+          <span class="nx-benefit-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><rect x="10" y="12.5" width="6" height="4" rx="1"></rect><path d="M11 12.5V11a2 2 0 0 1 4 0v1.5"></path></svg></span>
+          <div><b>For Finder and private files</b><span>Right-click, done. Encrypted Safes included.</span></div>
+        </li>
+        <li style="--tint: #b8235a">
+          <span class="nx-benefit-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M4 17a8 8 0 1 1 16 0"></path><path d="M12 17l3.5-4"></path><circle cx="12" cy="17" r="1"></circle></svg></span>
+          <div><b>For a Mac that stays fast</b><span>Diagnose first, delete last.</span></div>
+        </li>
+        <li style="--tint: #d9482b">
+          <span class="nx-benefit-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"></path><path d="M7 12h10"></path></svg></span>
+          <div><b>For anything on screen or on disk</b><span>One drag to capture, one menu to convert.</span></div>
+        </li>
+        <li style="--tint: #087975">
+          <span class="nx-benefit-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="presentation"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg></span>
+          <div><b>For privacy</b><span>Local by default. Connect an AI provider only if you want one.</span></div>
+        </li>
       </ul>
     </div>
   </section>
