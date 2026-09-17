@@ -249,12 +249,12 @@
   .nx-index > summary {
     display: flex; align-items: center; justify-content: space-between; gap: 18px;
     min-height: 68px; padding: 18px 22px; list-style: none; cursor: pointer;
-    border: 1px solid var(--line); border-radius: 16px; background: var(--panel); box-shadow: var(--shadow);
-    color: var(--teal-dark); font-size: 1.1rem; font-weight: 600;
+    border: 1px solid var(--teal-dark); border-radius: 16px; background: var(--teal-dark); box-shadow: var(--shadow);
+    color: #fff; font-size: clamp(1.1rem, 2vw, 1.25rem); font-weight: 650;
   }
   .nx-index > summary::-webkit-details-marker { display: none; }
-  .nx-index > summary:hover { border-color: var(--teal); }
-  .nx-index > summary:focus-visible { outline-offset: 3px; }
+  .nx-index > summary:hover { border-color: var(--teal); background: var(--teal); }
+  .nx-index > summary:focus-visible { outline: 3px solid var(--teal-dark); outline-offset: 3px; }
   .nx-index > summary > span { flex: 0 0 auto; font-size: 1.5rem; font-weight: 400; }
   .nx-index[open] > summary { margin-bottom: 14px; }
   .nx-index[open] > summary > span { transform: rotate(45deg); }
@@ -1059,6 +1059,20 @@
       menus.forEach(function (menu) {
         if (menu.open) { menu.open = false; menu.querySelector("summary").focus(); }
       });
+    });
+
+    // Align explicit expansion below the header; preserve Find and deep-link destinations.
+    var catalogue = document.getElementById("every-tool");
+    var alignCatalogueOnOpen = false;
+    catalogue.querySelector("summary").addEventListener("click", function () {
+      alignCatalogueOnOpen = !catalogue.open;
+    });
+    catalogue.addEventListener("toggle", function () {
+      var align = alignCatalogueOnOpen;
+      alignCatalogueOnOpen = false;
+      if (catalogue.open && align) {
+        catalogue.scrollIntoView({ block: "start", behavior: "instant" });
+      }
     });
 
     // Open the catalogue before navigating to it, including direct deep links.
