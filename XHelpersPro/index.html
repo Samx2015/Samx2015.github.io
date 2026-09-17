@@ -170,6 +170,10 @@
      keep their own sizing. Preserve every screenshot's natural aspect ratio. */
   .pvg-shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; align-content: start; align-items: start; width: 100%; max-width: 560px; margin-inline: auto; }
   .pvg-shots figure { margin: 0; position: relative; }
+  .nx-shot-caption {
+    margin: 10px 0 0; color: var(--muted); font-size: 0.82rem; font-weight: 400;
+    line-height: 1.45; text-align: center; text-wrap: pretty;
+  }
   .pvg-shots img {
     display: block; width: 100%; max-width: 100%; max-height: 280px; height: auto; object-fit: contain; margin-inline: auto;
     border-radius: 10px; box-shadow: 0 8px 22px rgba(21, 32, 51, 0.14); cursor: zoom-in;
@@ -510,6 +514,7 @@
 
         </button>
 
+        <figcaption class="nx-shot-caption">Your everyday Mac tools, together in one menu.</figcaption>
       </figure>
     </div>
   </section>
@@ -707,6 +712,7 @@
                 <img src="assets/refresh/shot-display-controls.png?v=20260917-0423" width="770" height="460" loading="lazy" alt="Display menu with blackout, dimming, brightness, contrast and keyboard backlight controls">
               </picture>
             </button>
+            <figcaption class="nx-shot-caption">Adjust brightness, contrast, and keyboard backlight from one menu.</figcaption>
           </figure>
           <figure>
             <button class="nx-shot-button" type="button" aria-label="Enlarge: Active Window Highlight" aria-haspopup="dialog" aria-controls="pvl-viewer">
@@ -715,6 +721,7 @@
                 <img src="assets/refresh/shot-active-window-highlight.png?v=20260917-0423" width="1240" height="1202" loading="lazy" alt="Active Window Highlight settings with a cyan border preview and controls for color, border width, opacity and glow">
               </picture>
             </button>
+            <figcaption class="nx-shot-caption">Give the focused window a border you can customize.</figcaption>
           </figure>
         </div>
         <div class="pvg-shots nx-display-details">
@@ -725,6 +732,7 @@
                 <img src="assets/refresh/shot-display-resolution-menu.png?v=20260917-0423" width="594" height="734" loading="lazy" alt="Resolution menu with HiDPI sizes, aspect ratios and refresh rates up to 144 Hz">
               </picture>
             </button>
+            <figcaption class="nx-shot-caption">Choose a HiDPI resolution and refresh rate.</figcaption>
           </figure>
           <figure>
             <button class="nx-shot-button" type="button" aria-label="Enlarge: Custom HiDPI presets" aria-haspopup="dialog" aria-controls="pvl-viewer">
@@ -733,6 +741,7 @@
                 <img src="assets/refresh/shot-display-hidpi-presets.png?v=20260917-0423" width="1990" height="1284" loading="lazy" alt="Custom HiDPI preset form with recommended and advanced presets and their availability">
               </picture>
             </button>
+            <figcaption class="nx-shot-caption">Create custom HiDPI presets for your display.</figcaption>
           </figure>
         </div>
         <div class="pvg-shots nx-window-details">
@@ -743,6 +752,7 @@
                 <img src="assets/refresh/shot-window-arrangements.png?v=20260917-0423" width="908" height="1642" loading="lazy" alt="Snap &amp; Arrange Windows menu with halves, custom quadrants, display switching, saved window positions, focus actions and keyboard shortcuts">
               </picture>
             </button>
+            <figcaption class="nx-shot-caption">Snap windows into place and save your layout.</figcaption>
           </figure>
           <figure>
             <button class="nx-shot-button" type="button" aria-label="Enlarge: Customize Quadrants" aria-haspopup="dialog" aria-controls="pvl-viewer">
@@ -751,6 +761,7 @@
                 <img src="assets/refresh/shot-customize-quadrants.png?v=20260917-0423" width="1360" height="1380" loading="lazy" alt="Customize Quadrants with colored window regions, draggable dividers, split percentages and saved layouts">
               </picture>
             </button>
+            <figcaption class="nx-shot-caption">Drag dividers to build and save custom window layouts.</figcaption>
           </figure>
         </div>
       </div>
@@ -781,6 +792,7 @@
               <img src="assets/refresh/shot-image-tools.png?v=20260917-0423" width="1608" height="1502" loading="lazy" alt="Image Tools displaying a mountain and lake photo, with image-editing, rotate, flip, resize, zoom and export controls">
             </picture>
           </button>
+          <figcaption class="nx-shot-caption">Rotate, resize, and export images in one editor.</figcaption>
         </figure>
         <figure class="nx-screen-featured">
           <button class="nx-shot-button" type="button" aria-label="Enlarge: Text Editor — Markdown source and preview" aria-haspopup="dialog" aria-controls="pvl-viewer">
@@ -789,6 +801,7 @@
               <img src="assets/refresh/shot-text-editor.png?v=20260917-0423" width="3074" height="2450" loading="lazy" alt="Text Editor with a document outline, Markdown source and rendered preview side by side, including code, tables and links">
             </picture>
           </button>
+          <figcaption class="nx-shot-caption">Edit Markdown with its preview beside the source.</figcaption>
         </figure>
         <figure>
           <button class="nx-shot-button" type="button" aria-label="Enlarge: Clipboard History" aria-haspopup="dialog" aria-controls="pvl-viewer">
@@ -797,6 +810,7 @@
               <img src="assets/refresh/shot-clipboard-history.png?v=20260917-0423" width="1572" height="1486" loading="lazy" alt="Clipboard History with searchable copied text, source apps and timestamps, a selected-item preview, and copy, pin and clear controls">
             </picture>
           </button>
+          <figcaption class="nx-shot-caption">Search, preview, and reuse copied text.</figcaption>
         </figure>
         <figure>
           <button class="nx-shot-button" type="button" aria-label="Enlarge: PDF Quick Actions — combine, organize, split, or build a PDF from images" aria-haspopup="dialog" aria-controls="pvl-viewer">
@@ -807,6 +821,7 @@
 
         </button>
 
+          <figcaption class="nx-shot-caption">Combine PDFs, organize pages, or create PDFs from images.</figcaption>
         </figure>
       </div>
     </article>
@@ -838,6 +853,7 @@
 
         </button>
 
+          <figcaption class="nx-shot-caption">Compare account quotas, reset times, and available resets.</figcaption>
         </figure>
         <figure class="nx-tall">
           <button class="nx-shot-button" type="button" aria-label="Enlarge: The AI meter’s hover card, straight from the menu" aria-haspopup="dialog" aria-controls="pvl-viewer">
@@ -848,6 +864,7 @@
 
         </button>
 
+          <figcaption class="nx-shot-caption">Check every account’s remaining quota from the menu.</figcaption>
         </figure>
       </div>
     </article>
@@ -877,6 +894,7 @@
               <img src="assets/refresh/shot-finder-context-menu.png?v=20260917-0423" width="1066" height="994" loading="lazy" alt="Finder context menu with file and folder actions, a Compress / Encrypt submenu, Copy Path and shortcuts to Terminal, Codex, Claude and Visual Studio Code">
             </picture>
           </button>
+          <figcaption class="nx-shot-caption">Create, move, and encrypt files directly in Finder.</figcaption>
         </figure>
         <figure>
           <button class="nx-shot-button" type="button" aria-label="Enlarge: Finder Context Menus settings" aria-haspopup="dialog" aria-controls="pvl-viewer">
@@ -885,6 +903,7 @@
               <img src="assets/refresh/shot-finder-settings.png?v=20260917-0423" width="1800" height="2404" loading="lazy" alt="Finder Context Menus settings with colored privacy, permission and menu-item sections, plus Actions and Apps choices">
             </picture>
           </button>
+          <figcaption class="nx-shot-caption">Choose your Finder actions and preferred apps.</figcaption>
         </figure>
         <figure>
           <button class="nx-shot-button" type="button" aria-label="Enlarge: Extract Archive" aria-haspopup="dialog" aria-controls="pvl-viewer">
@@ -893,6 +912,7 @@
               <img src="assets/refresh/shot-extract-archive.png?v=20260917-0423" width="1280" height="1104" loading="lazy" alt="Extract Archive with a drag-and-drop area, a Choose Archive button and a list of supported formats including 7Z, RAR, TAR and ZIP">
             </picture>
           </button>
+          <figcaption class="nx-shot-caption">Drop an archive to extract its contents.</figcaption>
         </figure>
       </div>
     </article>
@@ -921,6 +941,7 @@
               <img src="assets/refresh/shot-mouse.png?v=20260917-0423" width="1284" height="954" loading="lazy" alt="Mouse Sensitivity &amp; Acceleration settings with a Razer Cobra profile, Accessibility status and per-device controls">
             </picture>
           </button>
+          <figcaption class="nx-shot-caption">Tune pointer sensitivity and acceleration for each mouse.</figcaption>
         </figure>
         <figure>
           <button class="nx-shot-button" type="button" aria-label="Enlarge: Scroll Speed &amp; Acceleration" aria-haspopup="dialog" aria-controls="pvl-viewer">
@@ -929,6 +950,7 @@
               <img src="assets/refresh/shot-scroll.png?v=20260917-0423" width="1284" height="1006" loading="lazy" alt="Scroll Speed &amp; Acceleration settings with per-device speed, acceleration and reverse-direction controls">
             </picture>
           </button>
+          <figcaption class="nx-shot-caption">Set scroll speed, acceleration, and direction per device.</figcaption>
         </figure>
         <figure class="nx-input-remapping">
           <button class="nx-shot-button" type="button" aria-label="Enlarge: Key &amp; Button Remapping — shortcut, dual-role and Hyper key rules" aria-haspopup="dialog" aria-controls="pvl-viewer">
@@ -937,6 +959,7 @@
               <img src="assets/refresh/shot-remap.png?v=20260917-0423" width="1760" height="1384" loading="lazy" alt="Key &amp; Button Remapping settings with colored shortcut, dual-role and Hyper key options, plus a middle-button shortcut rule">
             </picture>
           </button>
+          <figcaption class="nx-shot-caption">Turn keys and mouse buttons into custom shortcuts.</figcaption>
         </figure>
       </div>
     </article>
@@ -965,6 +988,7 @@
               <img src="assets/refresh/shot-audio-mixer-settings.png?v=20260917-0423" width="1240" height="1196" loading="lazy" alt="Audio Mixer settings with colored sections for general controls, app grouping, local audio privacy and troubleshooting">
             </picture>
           </button>
+          <figcaption class="nx-shot-caption">Configure Audio Mixer behavior, permissions, and recovery options.</figcaption>
         </figure>
         <figure>
           <button class="nx-shot-button" type="button" aria-label="Enlarge: Live Subtitles — on-device transcription and translation for one app" aria-haspopup="dialog" aria-controls="pvl-viewer">
@@ -973,6 +997,7 @@
               <img src="assets/refresh/shot-live-subtitles.png?v=20260917-0423" width="1300" height="1964" loading="lazy" alt="Live Subtitles settings with colored sections for app selection, languages, behavior, subtitle appearance and on-device privacy">
             </picture>
           </button>
+          <figcaption class="nx-shot-caption">Choose an app and translate its speech on device.</figcaption>
         </figure>
         <figure>
           <button class="nx-shot-button" type="button" aria-label="Enlarge: Quick Video" aria-haspopup="dialog" aria-controls="pvl-viewer">
@@ -981,6 +1006,7 @@
               <img src="assets/refresh/shot-quick-video.png?v=20260917-0423" width="1320" height="1376" loading="lazy" alt="Quick Video playing a local video with playback, volume, timeline, queue, frame capture, audio extraction, and live subtitle controls">
             </picture>
           </button>
+          <figcaption class="nx-shot-caption">Play local videos, capture frames, and extract audio.</figcaption>
         </figure>
       </div>
     </article>
@@ -1010,6 +1036,7 @@
               <img src="assets/refresh/shot-mac-health.png?v=20260917-0423" width="1768" height="1108" loading="lazy" alt="Mac Health with processor, memory, disk and thermal readings, a two-minute check, slowdown monitoring and related tools">
             </picture>
           </button>
+          <figcaption class="nx-shot-caption">Check CPU, memory, disk space, and thermal health.</figcaption>
         </figure>
         <figure>
           <button class="nx-shot-button" type="button" aria-label="Enlarge: Manage Fonts" aria-haspopup="dialog" aria-controls="pvl-viewer">
@@ -1018,6 +1045,7 @@
               <img src="assets/refresh/shot-manage-fonts.png?v=20260917-0423" width="2760" height="1822" loading="lazy" alt="Manage Fonts with searchable font families, previews, recommended selections, categories, download sizes and installation controls">
             </picture>
           </button>
+          <figcaption class="nx-shot-caption">Preview font families and install the ones you select.</figcaption>
         </figure>
         <figure>
           <button class="nx-shot-button" type="button" aria-label="Enlarge: Maintenance &amp; System Tweaks, one card per setting" aria-haspopup="dialog" aria-controls="pvl-viewer">
@@ -1028,6 +1056,7 @@
 
         </button>
 
+          <figcaption class="nx-shot-caption">Browse macOS tweaks and see each saved setting.</figcaption>
         </figure>
       </div>
     </article>
@@ -1060,6 +1089,7 @@
 
         </button>
 
+          <figcaption class="nx-shot-caption">See what each permission enables and its current status.</figcaption>
         </figure>
         <figure>
           <button class="nx-shot-button" type="button" aria-label="Enlarge: AI Settings" aria-haspopup="dialog" aria-controls="pvl-viewer">
@@ -1068,6 +1098,7 @@
             <img src="assets/refresh/shot-ai-settings.png?v=20260917-0423" width="1640" height="1500" loading="lazy" alt="AI Settings with provider readiness, default AI selection, and Apple's on-device model">
           </picture>
           </button>
+          <figcaption class="nx-shot-caption">Choose and test your preferred AI provider.</figcaption>
         </figure>
       </div>
     </article>
