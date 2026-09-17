@@ -175,6 +175,14 @@
     border-radius: 10px; box-shadow: 0 8px 22px rgba(21, 32, 51, 0.14); cursor: zoom-in;
   }
   .pvg-shots.stack img { width: 100%; max-height: none; }
+  .pvg-group.pvg-display { grid-template-columns: 1fr; }
+  .pvg-display .pvg-copy { gap: 10px; }
+  .pvg-display .pvg-shots { gap: clamp(20px, 3vw, 36px); }
+  .pvg-display .pvg-shots figure { min-width: 0; }
+  .pvg-display .pvg-shots img { width: 100%; height: auto; max-height: none; }
+  .pvg-display .nx-display-overview { grid-template-columns: minmax(0, 1.62fr) minmax(0, 1fr); align-items: center; }
+  /* Match the tall screenshots' heights without cropping their contents. */
+  .pvg-display .nx-display-details { grid-template-columns: minmax(0, 0.51fr) minmax(0, 0.553fr) minmax(0, 0.332fr); }
   /* How to get it: one panel, the pitch and the button beside three compact steps. */
   .nx-get-inner {
     width: min(100%, var(--wide-max)); margin-inline: auto; padding: 24px;
@@ -249,15 +257,17 @@
   .nx-index > summary {
     display: flex; align-items: center; justify-content: space-between; gap: 18px;
     min-height: 68px; padding: 18px 22px; list-style: none; cursor: pointer;
-    border: 1px solid #bdd6d2; border-radius: 16px; background: #eaf4f2; box-shadow: none;
-    color: var(--teal-dark); font-size: clamp(1.1rem, 2vw, 1.25rem); font-weight: 600;
+    border: 1px solid transparent; border-radius: 16px; box-shadow: none;
+    background: linear-gradient(110deg, #f7f9ff, #fbf8fc 50%, #f1faf7) padding-box, linear-gradient(110deg, #b8ccee, #d0c1e5 50%, #abd8cd) border-box;
+    color: #3866ac; font-size: clamp(1.1rem, 2vw, 1.25rem); font-weight: 400;
   }
   .nx-index > summary::-webkit-details-marker { display: none; }
-  .nx-index > summary:hover { border-color: #98c6c1; background: #deeeeb; }
+  .nx-index > summary:hover { border-color: #9cbacb; }
   .nx-index > summary:focus-visible { outline: 3px solid var(--teal-dark); outline-offset: 3px; }
-  .nx-index > summary > span { flex: 0 0 auto; font-size: 1.5rem; font-weight: 400; }
+  .nx-index-title em { color: #765294; font-style: normal; }
+  .nx-index > summary > .nx-index-toggle { flex: 0 0 auto; color: #167c77; font-size: 1.5rem; font-weight: 300; }
   .nx-index[open] > summary { margin-bottom: 14px; }
-  .nx-index[open] > summary > span { transform: rotate(45deg); }
+  .nx-index[open] > summary > .nx-index-toggle { transform: rotate(45deg); }
   .nx-index-group h3 { margin: 0 0 14px; color: var(--teal-dark); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
   /* Two wide cards per row; each card's list flows top-to-bottom through two
      inner columns so an entry stays on one line. Sub-groups (Screen Tools,
@@ -301,6 +311,8 @@
   @media (max-width: 720px) {
     .nx-wide .pvg-shots { flex-direction: column; }
     .nx-wide .pvg-shots figure.nx-tall img { width: auto; max-width: min(100%, 420px); margin-inline: auto; }
+    .pvg-display .nx-display-overview, .pvg-display .nx-display-details { grid-template-columns: 1fr; }
+    .pvg-display .pvg-shots figure { width: 100%; max-width: 520px; margin-inline: auto; }
   }
   @media (max-width: 560px) {
     .pvh-chips { grid-template-columns: 1fr; }
@@ -319,17 +331,10 @@
   .site-header { display: flex; gap: 18px; min-height: 85px; padding-block: 14px; }
   .site-header .brand, .site-header .header-actions { transform: none; }
   .site-header .brand { flex: 0 0 auto; }
-  .site-header .site-nav { margin-inline: auto; }
   .site-header .header-actions { margin-left: auto; gap: 10px; }
   .site-header .header-cta { white-space: nowrap; min-height: 44px; }
   .language-menu summary { min-height: 44px; min-width: 44px; }
   .language-menu-list a { min-height: 44px; }
-  .nx-explore { display: none; position: relative; }
-  .nx-explore > summary { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 12px; list-style: none; cursor: pointer; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); color: var(--ink); font-size: 0.9rem; }
-  .nx-explore > summary::-webkit-details-marker { display: none; }
-  .nx-explore-list { position: absolute; top: calc(100% + 8px); right: 0; display: grid; width: min(340px, calc(100vw - 32px)); max-height: calc(100dvh - 110px); overflow: auto; overscroll-behavior: contain; padding: 8px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); box-shadow: var(--shadow); }
-  .nx-explore-list a { display: flex; align-items: center; min-height: 44px; padding: 8px 12px; border-radius: 7px; color: var(--ink); font-size: 0.9rem; }
-  .nx-explore-list a:hover, .nx-explore-list a:focus-visible { background: var(--panel-muted); }
   .compact-hero { padding-block: 30px; }
   .compact-hero h1 { font-size: clamp(2.5rem, 4.5vw, 3.7rem); font-weight: 600; line-height: 1.08; letter-spacing: -0.035em; margin: 12px 0 20px; }
   .compact-hero .hero-subtitle { max-width: 36ch; font-size: 1.15rem; line-height: 1.6; }
@@ -377,8 +382,6 @@
   .pvl-canvas.is-zoomed img { width: var(--pvl-zoom-width); max-width: none; max-height: none; margin: auto; }
 
   @media (max-width: 1190px) {
-    .site-header .site-nav { display: none; }
-    .nx-explore { display: block; }
     .nx-feature-intro .pvh-chips { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
   @media (max-width: 720px) {
@@ -389,7 +392,6 @@
     .site-header .header-cta { padding-inline: 12px; }
     .site-header .button-glyph { display: none; }
     .language-menu summary { padding-inline: 8px; max-width: none; }
-    .nx-explore-list { position: fixed; top: var(--nx-header-height); left: 16px; right: 16px; width: auto; }
     .language-menu-list { position: fixed; top: var(--nx-header-height); right: 16px; max-height: calc(100dvh - var(--nx-header-height) - 16px); }
     .compact-hero h1 { font-size: clamp(2.4rem, 8vw, 3.2rem); }
     .nx-text-only .pvw-points { grid-template-columns: 1fr; }
@@ -440,29 +442,7 @@
     <img src="assets/refresh/app-icon.png?v=20260916" alt="" width="34" height="34">
     <span>XHelpers Pro</span>
   </a>
-  <nav class="site-nav" aria-label="Page sections">
-    <a href="#what">Features</a>
-    <a href="#every-tool">Every Tool</a>
-    <a href="#private-by-design">Privacy</a>
-    <a href="#release">Get It</a>
-  </nav>
   <div class="header-actions">
-    <details class="nx-explore">
-      <summary>Explore <span aria-hidden="true">⌄</span></summary>
-      <nav class="nx-explore-list" aria-label="Explore tools">
-        <a href="#what">Featured tools</a>
-        <a href="#display-windows">Display &amp; Windows</a>
-        <a href="#screen-text-files">Screen, Text &amp; Files</a>
-        <a href="#ai-usage">AI Usage</a>
-        <a href="#finder-safes-archives">Finder, Safes &amp; Archives</a>
-        <a href="#pointer-keyboard">Pointer &amp; Keyboard</a>
-        <a href="#audio-music-subtitles">Audio, Music &amp; Subtitles</a>
-        <a href="#mac-health-storage-apps">Mac Health, Storage &amp; Apps</a>
-        <a href="#every-tool">Every tool</a>
-        <a href="#private-by-design">Privacy</a>
-        <a href="#release">Download &amp; installation</a>
-      </nav>
-    </details>
     <a class="header-cta" href="https://xintechdownloads.blob.core.windows.net/xhelperspro/XHelpersPro-macOS.dmg">
       <span class="button-glyph" aria-hidden="true"></span>
       <span class="nx-download-label">Download<span class="nx-wide-label"> for Mac</span></span>
@@ -540,7 +520,7 @@
 
   <section class="section compact-section nx-tool-index" aria-label="Full tool list">
     <details class="nx-index" id="every-tool">
-      <summary>Every tool at a glance <span aria-hidden="true">+</span></summary>
+      <summary><span class="nx-index-title">Every tool <em>at a glance</em></span><span class="nx-index-toggle" aria-hidden="true">+</span></summary>
       <div class="nx-index-grid" id="tool-categories">
         <section class="nx-index-group">
           <h3>Display &amp; Windows</h3>
@@ -721,35 +701,50 @@
           </div>
           <h3>Display &amp; Windows</h3>
         </div>
-        <p class="pvg-lede">Your displays and windows arranged the way you work, without a second utility.</p>
-        <ul class="pvw-points">
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-blackout.png?v=20260916" width="23" height="18" alt=""><b>Work on the big monitor alone</b>: black out the MacBook&rsquo;s built-in screen while it mirrors, and dim every display until you touch a key.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-brightness.png?v=20260916" width="19" height="19" alt=""><b>Five switches, one menu</b>: brightness, contrast, keyboard backlight and the macOS theme, without hunting through System Settings.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-change-resolution.png?v=20260916" width="20" height="16" alt=""><b>Get crisp text at the size you want on any external display</b>: HiDPI presets and custom resolutions, with a safety timer that reverts a bad switch on its own.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-snap-arrange-windows.png?v=20260916" width="20" height="16" alt=""><b>Put every window where it belongs with one shortcut</b>: halves, quadrants you design, center, maximize or the next display, and bring a whole layout back after unplugging.</li>
-          <li class="nx-iconed"><img class="nx-ic-bullet" src="assets/refresh/ic-active-window-highlight.png?v=20260916" width="20" height="16" alt=""><b>Never lose the active window</b> on a wide desk, and <b>keep the Mac awake</b> exactly as long as a download or a talk needs.</li>
-        </ul>
+        <p class="pvg-lede">Adjust your displays, choose crisp HiDPI resolutions, and put every window in place.</p>
       </div>
-      <div class="pvg-shots">
+      <div class="pvg-shots nx-display-overview">
         <figure>
-          <button class="nx-shot-button" type="button" aria-label="Enlarge: Display Tools: Resolution — HiDPI modes for an external display, plus custom presets" aria-haspopup="dialog" aria-controls="pvl-viewer">
-          <picture>
-            <source type="image/webp" srcset="assets/refresh/shot-display-resolution.webp?v=20260916">
-            <img src="assets/refresh/shot-display-resolution.png?v=20260916" width="2964" height="1828" loading="lazy" alt="Display Tools: Resolution window listing HiDPI modes for an external display, each with a refresh rate and an Apply button, and a Create Custom HiDPI Preset form">
-          </picture>
-
-        </button>
-
+          <button class="nx-shot-button" type="button" aria-label="Enlarge: Display controls" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <source type="image/webp" srcset="assets/refresh/shot-display-controls.webp?v=20260916">
+              <img src="assets/refresh/shot-display-controls.png?v=20260916" width="770" height="460" loading="lazy" alt="Display menu with blackout, dimming, brightness, contrast and keyboard backlight controls">
+            </picture>
+          </button>
         </figure>
         <figure>
-          <button class="nx-shot-button" type="button" aria-label="Enlarge: Snap &amp; Arrange Windows — every arrangement has a shortcut" aria-haspopup="dialog" aria-controls="pvl-viewer">
-          <picture>
-            <source type="image/webp" srcset="assets/refresh/shot-snap-arrange-submenu.webp?v=20260916">
-            <img src="assets/refresh/shot-snap-arrange-submenu.png?v=20260916" width="905" height="1687" loading="lazy" alt="Snap &amp; Arrange Windows submenu: halves, quadrants, center, maximize, restore, move to the previous or next display, save and restore window positions, focus actions, each with its shortcut">
-          </picture>
-
-        </button>
-
+          <button class="nx-shot-button" type="button" aria-label="Enlarge: Active Window Highlight" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <source type="image/webp" srcset="assets/refresh/shot-active-window-highlight.webp?v=20260916">
+              <img src="assets/refresh/shot-active-window-highlight.png?v=20260916" width="1240" height="1202" loading="lazy" alt="Active Window Highlight settings with a cyan border preview and controls for color, border width, opacity and glow">
+            </picture>
+          </button>
+        </figure>
+      </div>
+      <div class="pvg-shots nx-display-details">
+        <figure>
+          <button class="nx-shot-button" type="button" aria-label="Enlarge: Custom HiDPI presets" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <source type="image/webp" srcset="assets/refresh/shot-display-hidpi-presets.webp?v=20260916">
+              <img src="assets/refresh/shot-display-hidpi-presets.png?v=20260916" width="1846" height="3618" loading="lazy" alt="Display Tools: Resolution showing refresh rates, a custom HiDPI preset form, recommended and advanced presets, and installed custom presets">
+            </picture>
+          </button>
+        </figure>
+        <figure>
+          <button class="nx-shot-button" type="button" aria-label="Enlarge: Snap &amp; Arrange Windows" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <source type="image/webp" srcset="assets/refresh/shot-window-arrangements.webp?v=20260916">
+              <img src="assets/refresh/shot-window-arrangements.png?v=20260916" width="908" height="1642" loading="lazy" alt="Snap &amp; Arrange Windows menu with halves, custom quadrants, display switching, saved window positions, focus actions and keyboard shortcuts">
+            </picture>
+          </button>
+        </figure>
+        <figure>
+          <button class="nx-shot-button" type="button" aria-label="Enlarge: Resolution menu" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <source type="image/webp" srcset="assets/refresh/shot-display-resolution-menu.webp?v=20260916">
+              <img src="assets/refresh/shot-display-resolution-menu.png?v=20260916" width="604" height="1818" loading="lazy" alt="Resolution menu listing native, HiDPI and scaled resolutions with aspect ratios and refresh rates up to 144 Hz">
+            </picture>
+          </button>
         </figure>
       </div>
     </article>
@@ -1038,7 +1033,7 @@
     measureHeader();
     if ("ResizeObserver" in window) { new ResizeObserver(measureHeader).observe(header); }
 
-    var menus = Array.from(document.querySelectorAll(".language-menu, .nx-explore"));
+    var menus = Array.from(document.querySelectorAll(".language-menu"));
     menus.forEach(function (menu) {
       menu.addEventListener("toggle", function () {
         if (menu.open) { menus.forEach(function (other) { if (other !== menu) { other.open = false; } }); }
