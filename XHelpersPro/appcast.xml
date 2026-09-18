@@ -4,13 +4,13 @@
         <title>XHelpers Pro</title>
         <item>
             <title>1.0.10</title>
-            <pubDate>Fri, 18 Sep 2026 02:47:17 -0700</pubDate>
+            <pubDate>Fri, 18 Sep 2026 03:45:54 -0700</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>20</sparkle:version>
+            <sparkle:version>21</sparkle:version>
             <sparkle:shortVersionString>1.0.10</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-# XHelpers Pro 1.0.10 (20)
+# XHelpers Pro 1.0.10 (21)
 
 - Import and update public YouTube playlists without signing in to Google or
   supplying developer credentials. Public details use the publisher's service
@@ -23,11 +23,15 @@
 - Public imports show short service cooldowns and can be cancelled. Saved
   playlist structure survives temporary service failures and the account
   feature's unavailability; cached API information still expires.
-- Improve seeking and queue transitions in Apple Music and YouTube playback.
-  Supported, unprotected files in your Music library can use the local player
-  with its own seek and volume controls.
-- Discover playlists from your Apple Music library and improve library table
-  selection, hover feedback, and column sizing in narrower windows.
+- Open native Apple Music playlists from the shared sidebar. Preserve pinned
+  playlists and recent entries across refreshes and account reconnects.
+- Improve recognition of supported, unprotected files in your Music library
+  for playback with the local player, including its duration, seek, and volume
+  controls. Keep seek requests made while a track is preparing.
+- Seek precisely by clicking or dragging the timeline. Cancel a pending seek
+  when the queue changes to a different item.
+- Improve sidebar resizing, display resolved song metadata in the queue, and
+  highlight the current queue item throughout playback.
 - Keep video geometry stable when expanding or collapsing the player, preserve
   chosen window and queue sizes, and refine the shared volume controls.
 - Mark cleanup tools as early previews and show a persistent notice in their
@@ -38,7 +42,7 @@ apply. Protected or streaming Apple Music items continue to use MusicKit;
 per-player volume adjustment is unavailable for those items.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.10-20/XHelpersPro-1.0.10-20-macOS.dmg" length="135372008" type="application/octet-stream" sparkle:edSignature="MdTdU+jNlIyz1c5vYVPsrrYOfHJffTn1QWG419Tedom/I+CXUMa5sgRhNjVHw82W00IqfSNvmyuNFkicDpGMCQ=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.10-21/XHelpersPro-1.0.10-21-macOS.dmg" length="135405080" type="application/octet-stream" sparkle:edSignature="7kMAHfxIJlZqwjbId6huROfHID6PH+HbD2t4YnnX/YAYdA2VGaCbuulSP2KEMDuN/UaOsL5RnQSPj7SPHbyOCg=="/>
         </item>
     </channel>
 </rss>
