@@ -390,7 +390,12 @@
   .site-header .language-menu { flex: 0 0 auto; }
   /* End shared localization text expansion. */
   .compact-hero { padding-block: 30px; }
-  .compact-hero h1 { font-size: clamp(2.5rem, 3.7vw, 3rem); font-weight: 600; line-height: 1.08; letter-spacing: -0.035em; margin: 12px 0 20px; }
+  .compact-hero h1 {
+    --nx-hero-title-preferred: clamp(2.5rem, 3.7vw, 3rem);
+    font-size: var(--nx-hero-title-fit, var(--nx-hero-title-preferred));
+    font-weight: 600; line-height: 1.08; letter-spacing: -0.035em; margin: 12px 0 20px;
+    overflow-wrap: anywhere;
+  }
   .compact-hero .hero-subtitle {
     display: grid; gap: 5px; max-width: 36ch; margin: 0;
     font-size: clamp(1.2rem, 2vw, 1.3rem); font-weight: 600; line-height: 1.35; letter-spacing: -0.02em;
@@ -460,7 +465,7 @@
     .site-header .button-glyph { display: none; }
     .language-menu summary { padding-inline: 8px; max-width: none; }
     .language-menu-list { position: fixed; top: var(--nx-header-height); right: 16px; max-height: calc(100dvh - var(--nx-header-height) - 16px); }
-    .compact-hero h1 { font-size: clamp(2.4rem, 8vw, 3.2rem); }
+    .compact-hero h1 { --nx-hero-title-preferred: clamp(2.4rem, 8vw, 3.2rem); }
     .nx-text-only .pvw-points { grid-template-columns: 1fr; }
 
   }
@@ -1289,6 +1294,61 @@
     }
     measureHeader();
     if ("ResizeObserver" in window) { new ResizeObserver(measureHeader).observe(header); }
+
+    // Keep the localized <br> and one shared size for both phrases. Measure an
+    // invisible, unwrapped copy; the real heading always permits natural wrapping.
+    var heroTitle = document.getElementById("hero-title");
+    var heroFitFrame = 0;
+    function fitHeroTitle() {
+      heroFitFrame = 0;
+      if (!heroTitle.isConnected || !heroTitle.clientWidth) { return; }
+      var available = heroTitle.clientWidth;
+      var measure = heroTitle.cloneNode(true);
+      measure.removeAttribute("id");
+      measure.setAttribute("aria-hidden", "true");
+      measure.style.cssText += ";position:fixed;top:0;left:0;width:max-content;max-width:none;min-width:0;visibility:hidden;pointer-events:none;white-space:nowrap;overflow-wrap:normal;font-size:var(--nx-hero-title-preferred)";
+      heroTitle.after(measure);
+      var preferred = parseFloat(getComputedStyle(measure).fontSize);
+      var rootSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
+      // A rem floor respects larger default text. Narrow/zoomed views may wrap
+      // below this point instead of shrinking the heading indefinitely.
+      var minimum = Math.min(preferred, rootSize * 1.5);
+      var natural = measure.getBoundingClientRect().width;
+      var fitted = natural <= available ? preferred : Math.max(minimum, preferred * (available - 1) / natural);
+      if (fitted < preferred && fitted > minimum) {
+        measure.style.fontSize = fitted + "px";
+        var measured = measure.getBoundingClientRect().width;
+        // Account for size-dependent font shaping without a live-heading loop.
+        if (measured > available) { fitted = Math.max(minimum, fitted * (available - 1) / measured); }
+      }
+      measure.remove();
+      if (fitted >= preferred) {
+        heroTitle.style.removeProperty("--nx-hero-title-fit");
+      } else {
+        var value = Math.floor(fitted / rootSize * 10000) / 10000 + "rem";
+        if (heroTitle.style.getPropertyValue("--nx-hero-title-fit") !== value) {
+          heroTitle.style.setProperty("--nx-hero-title-fit", value);
+        }
+      }
+    }
+    function scheduleHeroTitleFit() {
+      if (!heroFitFrame) { heroFitFrame = requestAnimationFrame(fitHeroTitle); }
+    }
+    fitHeroTitle();
+    window.addEventListener("resize", scheduleHeroTitleFit, { passive: true });
+    window.addEventListener("pageshow", scheduleHeroTitleFit);
+    if ("ResizeObserver" in window) {
+      var heroCopyWidth = heroTitle.parentElement.getBoundingClientRect().width;
+      new ResizeObserver(function (entries) {
+        var width = entries[0].contentRect.width;
+        // Font-size changes affect height; only external width changes refit.
+        if (Math.abs(width - heroCopyWidth) > 0.5) { heroCopyWidth = width; scheduleHeroTitleFit(); }
+      }).observe(heroTitle.parentElement);
+    }
+    if (document.fonts) {
+      document.fonts.ready.then(scheduleHeroTitleFit);
+      document.fonts.addEventListener("loadingdone", scheduleHeroTitleFit);
+    }
 
     var menus = Array.from(document.querySelectorAll(".language-menu"));
     menus.forEach(function (menu) {
