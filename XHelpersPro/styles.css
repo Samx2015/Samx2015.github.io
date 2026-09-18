@@ -2374,10 +2374,19 @@ p {
 
 .support-page .site-header {
   grid-template-columns: minmax(0, 1fr) auto;
+  /* Keep the shared navigation in English physical order; article text retains
+     the document's writing direction. */
+  direction: ltr;
 }
 
 .support-page .header-actions {
   grid-column: 2;
+}
+
+.support-page .language-menu summary {
+  padding-block: 0.35rem;
+  white-space: normal;
+  text-align: center;
 }
 
 .support-page .support-section {
@@ -2410,6 +2419,42 @@ p {
   max-width: none;
   color: var(--muted);
   line-height: 1.58;
+  overflow-wrap: anywhere;
+}
+
+.support-page .support-section .text-link {
+  white-space: normal;
+}
+
+@media (max-width: 720px) {
+  .support-page .site-header {
+    grid-template-columns: 2.125rem minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+
+  .support-page .brand span {
+    display: none;
+  }
+
+  .support-page .header-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+  }
+
+  .support-page .language-menu {
+    min-width: 0;
+  }
+
+  .support-page .header-cta,
+  .support-page .language-menu summary {
+    width: 100%;
+    max-width: none;
+    padding: 0.35rem 0.5rem;
+    white-space: normal;
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
 }
 
 :focus-visible {
