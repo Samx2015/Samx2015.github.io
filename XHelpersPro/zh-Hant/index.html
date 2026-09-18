@@ -191,9 +191,9 @@
   .pvg-input .pvg-shots figure { min-width: 0; }
   .pvg-input .nx-input-remapping { grid-column: 1 / -1; }
   .pvg-group.pvg-finder, .pvg-group.pvg-audio, .pvg-group.pvg-screen, .pvg-group.pvg-health { align-items: start; }
-  .pvg-audio .nx-audio-mixer-menu { grid-column: 1 / -1; }
+  .pvg-audio .nx-audio-wide { grid-column: 1 / -1; }
   .pvg-screen .pvg-shots figure { min-width: 0; }
-  .pvg-health .pvg-shots figure:last-child { grid-column: 1 / -1; }
+  .pvg-health .pvg-shots .nx-health-wide { grid-column: 1 / -1; }
   /* How to get it: one panel, the offer and its actions beside activation steps. */
   .nx-get-inner {
     width: min(100%, var(--wide-max)); margin-inline: auto; padding: 24px;
@@ -1016,13 +1016,13 @@
         <p lang="zh-Hant" dir="ltr" class="pvg-lede">掌控各 App 的聲音，集中管理所有影音來源，讓 App 裡的語音變成看得懂的文字。</p>
         <ul class="pvw-points">
           <li lang="zh-Hant" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-mixer.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-mixer.png?v=20260917-0423" width="17" height="16" alt=""><b lang="zh-Hant" dir="ltr">不必每次通話都忙著調音量</b>：為各 App 設定獨立音量與靜音，將偏小的音量最高提升至 200%，再以各 App 的「音訊效果」調整音色。</li>
-          <li lang="zh-Hant" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="zh-Hant" dir="ltr">一個資料庫，收齊所有影音</b>：Apple Music 與本機音訊、影片檔案夾放在一起，播放列表及已儲存的篩選條件可跨來源使用。</li>
+          <li lang="zh-Hant" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="zh-Hant" dir="ltr">在一個資料庫中管理混合播放列表</b>：將 Apple Music、YouTube 上的音樂，以及本機音訊和影片合併到同一個播放列表，並使用已儲存的篩選條件篩選整個資料庫。</li>
           <li lang="zh-Hant" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-player.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-player.png?v=20260917-0423" width="18" height="14" alt=""><b lang="zh-Hant" dir="ltr">剛下載的檔案，用輕巧的播放器開啟</b>：共用播放佇列，「影片播放器」支援變速、循環播放與視窗置頂，點一下就能從任何影片擷取音訊。</li>
           <li lang="zh-Hant" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-live-subtitles.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-live-subtitles.png?v=20260917-0423" width="19" height="18" alt=""><b lang="zh-Hant" dir="ltr">用你的語言跟上每場會議、直播或影片</b>：「即時字幕」在裝置上將單一 App 的語音轉為文字並翻譯，支援僅顯示字幕的模式，並以不同顏色區分說話者（macOS 26.4 或以上版本）。</li>
         </ul>
       </div>
       <div class="pvg-shots stack">
-        <figure class="nx-audio-mixer-menu">
+        <figure class="nx-audio-mixer-menu nx-audio-wide">
           <button lang="zh-Hant" class="nx-shot-button" type="button" aria-label="放大：各 App 的音訊混音器" aria-haspopup="dialog" aria-controls="pvl-viewer">
             <picture>
               <source type="image/webp" srcset="../assets/refresh/shot-audio-mixer-menu.webp?v=20260917-0423">
@@ -1067,6 +1067,14 @@
           </button>
           <figcaption lang="zh-Hant" dir="ltr" class="nx-shot-caption">播放本機影片、擷取影格與音訊。</figcaption>
         </figure>
+        <figure class="nx-audio-wide" id="music-playlists-screenshot">
+          <button lang="zh-Hant" class="nx-shot-button" type="button" aria-label="放大: 音樂與播放列表" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="zh-Hant" src="../assets/refresh/shot-music-playlists.png?v=20260917-0423" width="2932" height="2432" loading="lazy" alt="音樂與播放列表">
+            </picture>
+          </button>
+          <figcaption lang="zh-Hant" dir="ltr" class="nx-shot-caption">將 Apple Music、YouTube 上的音樂，以及本機音訊和影片混合到同一個播放列表。</figcaption>
+        </figure>
       </div>
     </article>
 
@@ -1106,7 +1114,7 @@
           </button>
           <figcaption lang="zh-Hant" dir="ltr" class="nx-shot-caption">預覽字型家族，選好再安裝。</figcaption>
         </figure>
-        <figure>
+        <figure class="nx-health-wide">
           <button lang="zh-Hant" class="nx-shot-button" type="button" aria-label="放大：維護與系統微調，每項設定一張卡片" aria-haspopup="dialog" aria-controls="pvl-viewer">
           <picture>
             <source type="image/webp" srcset="../assets/refresh/shot-system-tweaks.webp?v=20260917-0423">
@@ -1116,6 +1124,14 @@
         </button>
 
           <figcaption lang="zh-Hant" dir="ltr" class="nx-shot-caption">瀏覽 macOS 微調選項，查看各項已儲存的設定。</figcaption>
+        </figure>
+        <figure class="nx-health-wide" id="network-quality-screenshot">
+          <button lang="zh-Hant" class="nx-shot-button" type="button" aria-label="放大: 網路品質" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="zh-Hant" src="../assets/refresh/shot-network-quality.png?v=20260917-0423" width="1240" height="1272" loading="lazy" alt="網路品質">
+            </picture>
+          </button>
+          <figcaption lang="zh-Hant" dir="ltr" class="nx-shot-caption">網路品質</figcaption>
         </figure>
       </div>
     </article>

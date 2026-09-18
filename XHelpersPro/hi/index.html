@@ -191,9 +191,9 @@
   .pvg-input .pvg-shots figure { min-width: 0; }
   .pvg-input .nx-input-remapping { grid-column: 1 / -1; }
   .pvg-group.pvg-finder, .pvg-group.pvg-audio, .pvg-group.pvg-screen, .pvg-group.pvg-health { align-items: start; }
-  .pvg-audio .nx-audio-mixer-menu { grid-column: 1 / -1; }
+  .pvg-audio .nx-audio-wide { grid-column: 1 / -1; }
   .pvg-screen .pvg-shots figure { min-width: 0; }
-  .pvg-health .pvg-shots figure:last-child { grid-column: 1 / -1; }
+  .pvg-health .pvg-shots .nx-health-wide { grid-column: 1 / -1; }
   /* How to get it: one panel, the offer and its actions beside activation steps. */
   .nx-get-inner {
     width: min(100%, var(--wide-max)); margin-inline: auto; padding: 24px;
@@ -1016,13 +1016,13 @@
         <p lang="hi" dir="ltr" class="pvg-lede">हर ऐप की ध्वनि अपने हिसाब से तय करें, सभी स्रोत एक जगह रखें और किसी भी ऐप की बोली पढ़ें।</p>
         <ul class="pvw-points">
           <li lang="hi" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-mixer.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-mixer.png?v=20260917-0423" width="17" height="16" alt=""><b lang="hi" dir="ltr">हर कॉल शुरू होते ही वॉल्यूम बदलने का झंझट ख़त्म</b>: हर ऐप का वॉल्यूम और म्यूट अलग तय करें, धीमी आवाज़ वाले ऐप्स का वॉल्यूम 200% तक बढ़ाएँ और हर ऐप की ध्वनि को ऑडियो इफ़ेक्ट से सँवारें।</li>
-          <li lang="hi" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="hi" dir="ltr">आप जो भी चलाएँ, सबके लिए एक लाइब्रेरी</b>: Apple Music के साथ स्थानीय ऑडियो और वीडियो फ़ोल्डर रखें। प्लेलिस्ट और सहेजे हुए फ़िल्टर इन सब पर काम करते हैं।</li>
+          <li lang="hi" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="hi" dir="ltr">एक लाइब्रेरी में मिली-जुली प्लेलिस्ट</b>: Apple Music, YouTube का संगीत और स्थानीय ऑडियो व वीडियो एक ही प्लेलिस्ट में मिलाएँ। सहेजे हुए फ़िल्टर पूरी लाइब्रेरी में इस्तेमाल करें।</li>
           <li lang="hi" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-player.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-player.png?v=20260917-0423" width="18" height="14" alt=""><b lang="hi" dir="ltr">अभी डाउनलोड की गई फ़ाइल के लिए हल्का-फुल्का प्लेयर</b>: साझा कतार, गति बदलने, दोहराने और हमेशा ऊपर रखने के विकल्पों वाला वीडियो प्लेयर, और एक क्लिक में किसी भी वीडियो से ऑडियो निकालने की सुविधा।</li>
           <li lang="hi" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-live-subtitles.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-live-subtitles.png?v=20260917-0423" width="19" height="18" alt=""><b lang="hi" dir="ltr">किसी भी मीटिंग, स्ट्रीम या वीडियो को अपनी भाषा में समझें</b>: लाइव सबटाइटल एक ऐप की बोली को डिवाइस पर ही टेक्स्ट में बदलता है और उसका अनुवाद करता है। केवल कैप्शन वाला मोड और हर वक्ता के लिए अलग रंग भी मिलते हैं (macOS 26.4 या बाद का संस्करण)।</li>
         </ul>
       </div>
       <div class="pvg-shots stack">
-        <figure class="nx-audio-mixer-menu">
+        <figure class="nx-audio-mixer-menu nx-audio-wide">
           <button lang="hi" class="nx-shot-button" type="button" aria-label="बड़ा करके देखें: हर ऐप के लिए ऑडियो मिक्सर" aria-haspopup="dialog" aria-controls="pvl-viewer">
             <picture>
               <source type="image/webp" srcset="../assets/refresh/shot-audio-mixer-menu.webp?v=20260917-0423">
@@ -1067,6 +1067,14 @@
           </button>
           <figcaption lang="hi" dir="ltr" class="nx-shot-caption">स्थानीय वीडियो चलाएँ, फ़्रेम कैप्चर करें और ऑडियो निकालें।</figcaption>
         </figure>
+        <figure class="nx-audio-wide" id="music-playlists-screenshot">
+          <button lang="hi" class="nx-shot-button" type="button" aria-label="ज़ूम इन करें: संगीत और प्लेलिस्ट" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="hi" src="../assets/refresh/shot-music-playlists.png?v=20260917-0423" width="2932" height="2432" loading="lazy" alt="संगीत और प्लेलिस्ट">
+            </picture>
+          </button>
+          <figcaption lang="hi" dir="ltr" class="nx-shot-caption">Apple Music, YouTube का संगीत और स्थानीय ऑडियो व वीडियो एक ही प्लेलिस्ट में मिलाएँ।</figcaption>
+        </figure>
       </div>
     </article>
 
@@ -1106,7 +1114,7 @@
           </button>
           <figcaption lang="hi" dir="ltr" class="nx-shot-caption">फ़ॉन्ट परिवारों का प्रीव्यू देखें और अपनी पसंद के फ़ॉन्ट इंस्टॉल करें।</figcaption>
         </figure>
-        <figure>
+        <figure class="nx-health-wide">
           <button lang="hi" class="nx-shot-button" type="button" aria-label="बड़ा करके देखें: रखरखाव और सिस्टम ट्वीक, हर सेटिंग का एक कार्ड" aria-haspopup="dialog" aria-controls="pvl-viewer">
           <picture>
             <source type="image/webp" srcset="../assets/refresh/shot-system-tweaks.webp?v=20260917-0423">
@@ -1116,6 +1124,14 @@
         </button>
 
           <figcaption lang="hi" dir="ltr" class="nx-shot-caption">macOS में बदलाव के विकल्प देखें और हर सहेजी हुई सेटिंग जानें।</figcaption>
+        </figure>
+        <figure class="nx-health-wide" id="network-quality-screenshot">
+          <button lang="hi" class="nx-shot-button" type="button" aria-label="ज़ूम इन करें: नेटवर्क गुणवत्ता" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="hi" src="../assets/refresh/shot-network-quality.png?v=20260917-0423" width="1240" height="1272" loading="lazy" alt="नेटवर्क गुणवत्ता">
+            </picture>
+          </button>
+          <figcaption lang="hi" dir="ltr" class="nx-shot-caption">नेटवर्क गुणवत्ता</figcaption>
         </figure>
       </div>
     </article>

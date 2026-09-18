@@ -191,9 +191,9 @@
   .pvg-input .pvg-shots figure { min-width: 0; }
   .pvg-input .nx-input-remapping { grid-column: 1 / -1; }
   .pvg-group.pvg-finder, .pvg-group.pvg-audio, .pvg-group.pvg-screen, .pvg-group.pvg-health { align-items: start; }
-  .pvg-audio .nx-audio-mixer-menu { grid-column: 1 / -1; }
+  .pvg-audio .nx-audio-wide { grid-column: 1 / -1; }
   .pvg-screen .pvg-shots figure { min-width: 0; }
-  .pvg-health .pvg-shots figure:last-child { grid-column: 1 / -1; }
+  .pvg-health .pvg-shots .nx-health-wide { grid-column: 1 / -1; }
   /* How to get it: one panel, the offer and its actions beside activation steps. */
   .nx-get-inner {
     width: min(100%, var(--wide-max)); margin-inline: auto; padding: 24px;
@@ -1016,13 +1016,13 @@
         <p lang="th" dir="ltr" class="pvg-lede">ควบคุมเสียงของแต่ละแอป รวมทุกแหล่งไว้ในที่เดียว และอ่านคำพูดจากทุกแอป</p>
         <ul class="pvw-points">
           <li lang="th" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-mixer.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-mixer.png?v=20260917-0423" width="17" height="16" alt=""><b lang="th" dir="ltr">ไม่ต้องคอยปรับเสียงทุกครั้งที่เริ่มคุยสาย</b>: ตั้งระดับเสียงและปิดเสียงแยกแต่ละแอป เร่งเสียงแอปที่เบาได้สูงสุด 200% และปรับแต่งด้วยเอฟเฟกต์เสียงรายแอป</li>
-          <li lang="th" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="th" dir="ltr">คลังเดียวรวมทุกสิ่งที่คุณเล่น</b>: รวม Apple Music กับโฟลเดอร์เสียงและวิดีโอในเครื่อง พร้อมเพลย์ลิสต์และตัวกรองที่บันทึกไว้ซึ่งใช้ได้กับทุกแหล่ง</li>
+          <li lang="th" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="th" dir="ltr">เพลย์ลิสต์รวมหลายแหล่งในคลังเดียว</b>: รวม Apple Music เพลงจาก YouTube และเสียงกับวิดีโอในเครื่องไว้ในเพลย์ลิสต์เดียวกัน พร้อมตัวกรองที่บันทึกไว้ซึ่งใช้ได้ทั่วทั้งคลังของคุณ</li>
           <li lang="th" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-player.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-player.png?v=20260917-0423" width="18" height="14" alt=""><b lang="th" dir="ltr">เครื่องเล่นที่ไม่หนักเครื่องสำหรับไฟล์ที่เพิ่งดาวน์โหลด</b>: ใช้คิวร่วมกัน พร้อมเครื่องเล่นวิดีโอที่ปรับความเร็ว เล่นวน และแสดงเหนือหน้าต่างอื่นได้ แยกเสียงจากวิดีโอได้ในคลิกเดียว</li>
           <li lang="th" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-live-subtitles.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-live-subtitles.png?v=20260917-0423" width="19" height="18" alt=""><b lang="th" dir="ltr">ติดตามทุกการประชุม สตรีม หรือวิดีโอในภาษาของคุณ</b>: คำบรรยายสดถอดเสียงและแปลเสียงจากแอปหนึ่งแอปบนอุปกรณ์ พร้อมโหมดเฉพาะคำบรรยายและสีแยกผู้พูด (macOS 26.4 ขึ้นไป)</li>
         </ul>
       </div>
       <div class="pvg-shots stack">
-        <figure class="nx-audio-mixer-menu">
+        <figure class="nx-audio-mixer-menu nx-audio-wide">
           <button lang="th" class="nx-shot-button" type="button" aria-label="ขยายภาพ: มิกเซอร์เสียงรายแอป" aria-haspopup="dialog" aria-controls="pvl-viewer">
             <picture>
               <source type="image/webp" srcset="../assets/refresh/shot-audio-mixer-menu.webp?v=20260917-0423">
@@ -1067,6 +1067,14 @@
           </button>
           <figcaption lang="th" dir="ltr" class="nx-shot-caption">เล่นวิดีโอในเครื่อง จับภาพเฟรม และแยกเสียง</figcaption>
         </figure>
+        <figure class="nx-audio-wide" id="music-playlists-screenshot">
+          <button lang="th" class="nx-shot-button" type="button" aria-label="ขยายภาพ: เพลงและเพลย์ลิสต์" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="th" src="../assets/refresh/shot-music-playlists.png?v=20260917-0423" width="2932" height="2432" loading="lazy" alt="เพลงและเพลย์ลิสต์">
+            </picture>
+          </button>
+          <figcaption lang="th" dir="ltr" class="nx-shot-caption">รวม Apple Music เพลงจาก YouTube และเสียงกับวิดีโอในเครื่องไว้ในเพลย์ลิสต์เดียว</figcaption>
+        </figure>
       </div>
     </article>
 
@@ -1106,7 +1114,7 @@
           </button>
           <figcaption lang="th" dir="ltr" class="nx-shot-caption">ดูตัวอย่างตระกูลแบบอักษรแล้วติดตั้งรายการที่คุณเลือก</figcaption>
         </figure>
-        <figure>
+        <figure class="nx-health-wide">
           <button lang="th" class="nx-shot-button" type="button" aria-label="ขยายภาพ: การบำรุงรักษาและการปรับแต่งระบบ แสดงการตั้งค่าละหนึ่งการ์ด" aria-haspopup="dialog" aria-controls="pvl-viewer">
           <picture>
             <source type="image/webp" srcset="../assets/refresh/shot-system-tweaks.webp?v=20260917-0423">
@@ -1116,6 +1124,14 @@
         </button>
 
           <figcaption lang="th" dir="ltr" class="nx-shot-caption">ดูตัวเลือกปรับแต่ง macOS และค่าที่บันทึกไว้ของแต่ละรายการ</figcaption>
+        </figure>
+        <figure class="nx-health-wide" id="network-quality-screenshot">
+          <button lang="th" class="nx-shot-button" type="button" aria-label="ขยายภาพ: คุณภาพเครือข่าย" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="th" src="../assets/refresh/shot-network-quality.png?v=20260917-0423" width="1240" height="1272" loading="lazy" alt="คุณภาพเครือข่าย">
+            </picture>
+          </button>
+          <figcaption lang="th" dir="ltr" class="nx-shot-caption">คุณภาพเครือข่าย</figcaption>
         </figure>
       </div>
     </article>

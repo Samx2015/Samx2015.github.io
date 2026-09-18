@@ -191,9 +191,9 @@
   .pvg-input .pvg-shots figure { min-width: 0; }
   .pvg-input .nx-input-remapping { grid-column: 1 / -1; }
   .pvg-group.pvg-finder, .pvg-group.pvg-audio, .pvg-group.pvg-screen, .pvg-group.pvg-health { align-items: start; }
-  .pvg-audio .nx-audio-mixer-menu { grid-column: 1 / -1; }
+  .pvg-audio .nx-audio-wide { grid-column: 1 / -1; }
   .pvg-screen .pvg-shots figure { min-width: 0; }
-  .pvg-health .pvg-shots figure:last-child { grid-column: 1 / -1; }
+  .pvg-health .pvg-shots .nx-health-wide { grid-column: 1 / -1; }
   /* How to get it: one panel, the offer and its actions beside activation steps. */
   .nx-get-inner {
     width: min(100%, var(--wide-max)); margin-inline: auto; padding: 24px;
@@ -1016,13 +1016,13 @@
         <p lang="zh-Hans" dir="ltr" class="pvg-lede">单独调节各 App 的声音，集中管理所有播放来源，用字幕看懂任何 App 的语音。</p>
         <ul class="pvw-points">
           <li lang="zh-Hans" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-mixer.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-mixer.png?v=20260917-0423" width="17" height="16" alt=""><b lang="zh-Hans" dir="ltr">通话开始，不必再忙着调音量</b>：为每个 App 单独设置音量和静音，将声音偏小的 App 提升至 200%，再用各 App 的音频效果调出合适的声音。</li>
-          <li lang="zh-Hans" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="zh-Hans" dir="ltr">一个资料库，汇集所有播放内容</b>：将 Apple Music 与本地音频、视频文件夹放在一起，用播放列表和已保存的筛选条件统一整理。</li>
+          <li lang="zh-Hans" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="zh-Hans" dir="ltr">在一个资料库中管理混合播放列表</b>：将 Apple Music、YouTube 上的音乐，以及本地音频和视频合并到同一个播放列表，并使用已保存的筛选条件筛选整个资料库。</li>
           <li lang="zh-Hans" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-player.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-player.png?v=20260917-0423" width="18" height="14" alt=""><b lang="zh-Hans" dir="ltr">刚下载的文件，用轻巧的播放器打开</b>：共用播放队列，视频播放器支持变速、循环和窗口置顶，还能一键提取任意视频中的音频。</li>
           <li lang="zh-Hans" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-live-subtitles.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-live-subtitles.png?v=20260917-0423" width="19" height="18" alt=""><b lang="zh-Hans" dir="ltr">用熟悉的语言看懂会议、直播和视频</b>：实时字幕在设备端转写和翻译单个 App 的音频，支持仅字幕模式，并用不同颜色区分发言人（需要 macOS 26.4 或更高版本）。</li>
         </ul>
       </div>
       <div class="pvg-shots stack">
-        <figure class="nx-audio-mixer-menu">
+        <figure class="nx-audio-mixer-menu nx-audio-wide">
           <button lang="zh-Hans" class="nx-shot-button" type="button" aria-label="放大查看：可单独控制各 App 的音频混音器" aria-haspopup="dialog" aria-controls="pvl-viewer">
             <picture>
               <source type="image/webp" srcset="../assets/refresh/shot-audio-mixer-menu.webp?v=20260917-0423">
@@ -1067,6 +1067,14 @@
           </button>
           <figcaption lang="zh-Hans" dir="ltr" class="nx-shot-caption">播放本地视频、截取画面、提取音频。</figcaption>
         </figure>
+        <figure class="nx-audio-wide" id="music-playlists-screenshot">
+          <button lang="zh-Hans" class="nx-shot-button" type="button" aria-label="放大: 音乐与播放列表" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="zh-Hans" src="../assets/refresh/shot-music-playlists.png?v=20260917-0423" width="2932" height="2432" loading="lazy" alt="音乐与播放列表">
+            </picture>
+          </button>
+          <figcaption lang="zh-Hans" dir="ltr" class="nx-shot-caption">将 Apple Music、YouTube 上的音乐，以及本地音频和视频混合到同一个播放列表。</figcaption>
+        </figure>
       </div>
     </article>
 
@@ -1106,7 +1114,7 @@
           </button>
           <figcaption lang="zh-Hans" dir="ltr" class="nx-shot-caption">预览字体家族，安装选中的字体。</figcaption>
         </figure>
-        <figure>
+        <figure class="nx-health-wide">
           <button lang="zh-Hans" class="nx-shot-button" type="button" aria-label="放大查看：维护与系统微调，每项设置一张卡片" aria-haspopup="dialog" aria-controls="pvl-viewer">
           <picture>
             <source type="image/webp" srcset="../assets/refresh/shot-system-tweaks.webp?v=20260917-0423">
@@ -1116,6 +1124,14 @@
         </button>
 
           <figcaption lang="zh-Hans" dir="ltr" class="nx-shot-caption">浏览 macOS 微调选项，查看各项已保存的设置。</figcaption>
+        </figure>
+        <figure class="nx-health-wide" id="network-quality-screenshot">
+          <button lang="zh-Hans" class="nx-shot-button" type="button" aria-label="放大: 网络质量" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="zh-Hans" src="../assets/refresh/shot-network-quality.png?v=20260917-0423" width="1240" height="1272" loading="lazy" alt="网络质量">
+            </picture>
+          </button>
+          <figcaption lang="zh-Hans" dir="ltr" class="nx-shot-caption">网络质量</figcaption>
         </figure>
       </div>
     </article>
