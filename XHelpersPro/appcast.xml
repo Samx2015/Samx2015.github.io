@@ -4,13 +4,13 @@
         <title>XHelpers Pro</title>
         <item>
             <title>1.0.10</title>
-            <pubDate>Thu, 17 Sep 2026 18:31:20 -0700</pubDate>
+            <pubDate>Fri, 18 Sep 2026 02:47:17 -0700</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>19</sparkle:version>
+            <sparkle:version>20</sparkle:version>
             <sparkle:shortVersionString>1.0.10</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-# XHelpers Pro 1.0.10 (19)
+# XHelpers Pro 1.0.10 (20)
 
 - Import and update public YouTube playlists without signing in to Google or
   supplying developer credentials. Public details use the publisher's service
@@ -23,12 +23,22 @@
 - Public imports show short service cooldowns and can be cancelled. Saved
   playlist structure survives temporary service failures and the account
   feature's unavailability; cached API information still expires.
+- Improve seeking and queue transitions in Apple Music and YouTube playback.
+  Supported, unprotected files in your Music library can use the local player
+  with its own seek and volume controls.
+- Discover playlists from your Apple Music library and improve library table
+  selection, hover feedback, and column sizing in narrower windows.
+- Keep video geometry stable when expanding or collapsing the player, preserve
+  chosen window and queue sizes, and refine the shared volume controls.
+- Mark cleanup tools as early previews and show a persistent notice in their
+  dialogs.
 
 YouTube's visible player, video availability and playback restrictions still
-apply. Local audio/video and Apple Music keep their existing behavior.
+apply. Protected or streaming Apple Music items continue to use MusicKit;
+per-player volume adjustment is unavailable for those items.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.10/XHelpersPro-1.0.10-19-macOS.dmg" length="134119494" type="application/octet-stream" sparkle:edSignature="ph8D4rdJ0GO4xm1d1xTigsMhGW24rTvBtquY3JDAXCB440u5fBxOdDz9mH5jVK45pyBT3XVuQCXFc5JbCPhPBw=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.10-20/XHelpersPro-1.0.10-20-macOS.dmg" length="135372008" type="application/octet-stream" sparkle:edSignature="MdTdU+jNlIyz1c5vYVPsrrYOfHJffTn1QWG419Tedom/I+CXUMa5sgRhNjVHw82W00IqfSNvmyuNFkicDpGMCQ=="/>
         </item>
     </channel>
 </rss>
