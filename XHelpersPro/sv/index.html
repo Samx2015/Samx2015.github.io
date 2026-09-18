@@ -168,8 +168,12 @@
   }
   /* Feature images are compact previews; the flagship and full-size viewer
      keep their own sizing. Preserve every screenshot's natural aspect ratio. */
-  .pvg-shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; align-content: start; align-items: start; width: 100%; max-width: 560px; margin-inline: auto; }
-  .pvg-shots figure { margin: 0; position: relative; }
+  .pvg-shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; align-content: start; width: 100%; max-width: 560px; margin-inline: auto; }
+  /* Share an image track and a caption track within each row. Center the
+     screenshots themselves, independently of translated caption heights. */
+  .pvg-shots figure { margin: 0; min-width: 0; position: relative; display: grid; grid-row: span 2; grid-template-columns: minmax(0, 1fr); grid-template-rows: subgrid; row-gap: 10px; }
+  .pvg-shots .nx-shot-button { align-self: center; }
+  .pvg-shots .nx-shot-caption { margin: 0; align-self: start; overflow-wrap: anywhere; }
   .nx-shot-caption {
     margin: 10px 0 0; color: var(--muted); font-size: 0.82rem; font-weight: 400;
     line-height: 1.45; text-align: center; text-wrap: pretty;
@@ -183,8 +187,9 @@
   .pvg-display .pvg-copy { gap: 10px; }
   .pvg-display .pvw-points { grid-template-columns: 1fr; gap: 14px; }
   .nx-display-gallery { display: grid; gap: 24px; min-width: 0; width: 100%; margin-inline: auto; }
+  .nx-display-gallery > .pvg-shots { grid-row: span 2; grid-template-rows: subgrid; row-gap: inherit; }
   .pvg-display .pvg-shots figure { min-width: 0; }
-  .pvg-display .nx-display-overview { grid-template-columns: minmax(0, 1.62fr) minmax(0, 1fr); align-items: center; }
+  .pvg-display .nx-display-overview { grid-template-columns: minmax(0, 1.62fr) minmax(0, 1fr); }
   /* Match the paired screenshots' heights without cropping their contents. */
   .pvg-display .nx-display-details { grid-template-columns: minmax(0, 1fr) minmax(0, 1.915fr); }
   .pvg-display .nx-window-details { grid-template-columns: minmax(0, 0.553fr) minmax(0, 0.986fr); }
@@ -369,7 +374,7 @@
   #top:focus { outline: none; }
   .site-header { display: flex; gap: 18px; min-height: 85px; padding-block: 10px; }
   .site-header .brand, .site-header .header-actions { transform: none; }
-  .site-header .brand { flex: 0 0 auto; gap: 0.8rem; font-size: 1.25rem; font-weight: 650; letter-spacing: -0.025em; }
+  .site-header .brand { flex: 0 0 auto; gap: 0.8rem; font-size: 1.25rem; font-weight: 650; letter-spacing: -0.025em; color: #2457ce; }
   .site-header .brand img { width: 4rem; height: 4rem; }
   .site-header .brand-platform { color: #14766f; font-weight: 550; }
   .site-header .header-actions { margin-left: auto; gap: 10px; }
@@ -974,6 +979,14 @@
             </picture>
           </button>
           <figcaption lang="sv" dir="ltr" class="nx-shot-caption">Släpp ett arkiv för att extrahera innehållet.</figcaption>
+        </figure>
+        <figure id="encrypted-archive-formats-screenshot">
+          <button lang="sv" class="nx-shot-button" type="button" aria-label="Zooma in: Komprimera / kryptera (kassaskåp, 7z, ZIP, DMG)" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="sv" src="../assets/refresh/shot-encrypted-archive-formats.png?v=20260917-0423" width="856" height="946" loading="lazy" alt="Komprimera / kryptera (kassaskåp, 7z, ZIP, DMG)">
+            </picture>
+          </button>
+          <figcaption lang="sv" dir="ltr" class="nx-shot-caption">Komprimera / kryptera (kassaskåp, 7z, ZIP, DMG)</figcaption>
         </figure>
       </div>
     </article>
