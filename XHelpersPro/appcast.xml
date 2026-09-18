@@ -4,45 +4,41 @@
         <title>XHelpers Pro</title>
         <item>
             <title>1.0.10</title>
-            <pubDate>Fri, 18 Sep 2026 03:45:54 -0700</pubDate>
+            <pubDate>Fri, 18 Sep 2026 10:19:10 -0700</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>21</sparkle:version>
+            <sparkle:version>22</sparkle:version>
             <sparkle:shortVersionString>1.0.10</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-# XHelpers Pro 1.0.10 (21)
+# XHelpers Pro 1.0.10 (22)
 
-- Import and update public YouTube playlists without signing in to Google or
-  supplying developer credentials. Public details use the publisher's service
-  after a separate privacy disclosure.
-- YouTube account connection, account playlists and Liked Videos are not
-  available in this version. Existing account imports and saved access remain
-  on this Mac, but account items cannot be refreshed or played. You can remove
-  saved access locally and manage Google's authorization in Google Account
-  permissions.
-- Public imports show short service cooldowns and can be cancelled. Saved
-  playlist structure survives temporary service failures and the account
-  feature's unavailability; cached API information still expires.
-- Open native Apple Music playlists from the shared sidebar. Preserve pinned
-  playlists and recent entries across refreshes and account reconnects.
-- Improve recognition of supported, unprotected files in your Music library
-  for playback with the local player, including its duration, seek, and volume
-  controls. Keep seek requests made while a track is preparing.
-- Seek precisely by clicking or dragging the timeline. Cancel a pending seek
-  when the queue changes to a different item.
-- Improve sidebar resizing, display resolved song metadata in the queue, and
-  highlight the current queue item throughout playback.
-- Keep video geometry stable when expanding or collapsing the player, preserve
-  chosen window and queue sizes, and refine the shared volume controls.
-- Mark cleanup tools as early previews and show a persistent notice in their
-  dialogs.
+- Refine Music & Playlists dialogs with clearer titles, consistent action
+  buttons, and colors that distinguish information, warnings, and destructive
+  actions.
+- Explain why YouTube Mix links cannot be imported and show how to use
+  individual video links or a regular public playlist instead.
+- Improve playlist import validation, progress, cancellation, and recovery
+  messages so problems have a clear next step.
+- Clarify account availability, local media repair, library recovery, and
+  deletion confirmations while preserving saved playlists and local data.
+- Polish the shared player, audio effects, and related media dialogs.
+- Give installed Pro editions precedence over their free editions when
+  launching apps in the same product family.
+- Translate the new interface text across all 25 supported translation
+  languages and correct existing translations and ambiguous English labels.
+
+Public YouTube playlist imports continue to use the publisher's service after
+a separate privacy disclosure. YouTube account connection, account playlists,
+and Liked Videos remain unavailable in this version. Saved account access can
+be removed locally; Google's authorization is managed in Google Account
+permissions. Xin account features remain disabled in this release.
 
 YouTube's visible player, video availability and playback restrictions still
 apply. Protected or streaming Apple Music items continue to use MusicKit;
 per-player volume adjustment is unavailable for those items.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.10-21/XHelpersPro-1.0.10-21-macOS.dmg" length="135405080" type="application/octet-stream" sparkle:edSignature="7kMAHfxIJlZqwjbId6huROfHID6PH+HbD2t4YnnX/YAYdA2VGaCbuulSP2KEMDuN/UaOsL5RnQSPj7SPHbyOCg=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.10-22/XHelpersPro-1.0.10-22-macOS.dmg" length="135883876" type="application/octet-stream" sparkle:edSignature="pf+Nw+64wNmJYVh8QfGSlyAnJ1rWMXqNgUK9qUpGC5+ahMG34ChHmiUIRc80PoQOOjsWmJrE8b0knJmW/8yFBw=="/>
         </item>
     </channel>
 </rss>
