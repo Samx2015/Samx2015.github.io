@@ -191,9 +191,9 @@
   .pvg-input .pvg-shots figure { min-width: 0; }
   .pvg-input .nx-input-remapping { grid-column: 1 / -1; }
   .pvg-group.pvg-finder, .pvg-group.pvg-audio, .pvg-group.pvg-screen, .pvg-group.pvg-health { align-items: start; }
-  .pvg-audio .nx-audio-mixer-menu { grid-column: 1 / -1; }
+  .pvg-audio .nx-audio-wide { grid-column: 1 / -1; }
   .pvg-screen .pvg-shots figure { min-width: 0; }
-  .pvg-health .pvg-shots figure:last-child { grid-column: 1 / -1; }
+  .pvg-health .pvg-shots .nx-health-wide { grid-column: 1 / -1; }
   /* How to get it: one panel, the offer and its actions beside activation steps. */
   .nx-get-inner {
     width: min(100%, var(--wide-max)); margin-inline: auto; padding: 24px;
@@ -1016,13 +1016,13 @@
         <p lang="da" dir="ltr" class="pvg-lede">Styr lyden i hver app, saml alle kilder ét sted, og læs, hvad der bliver sagt i enhver app.</p>
         <ul class="pvw-points">
           <li lang="da" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-mixer.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-mixer.png?v=20260917-0423" width="17" height="16" alt=""><b lang="da" dir="ltr">Slip for at justere lyden, hver gang et opkald starter</b>: giv hver app sin egen lydstyrke og mulighed for at slå lyden fra, forstærk stille apps op til 200%, og tilpas lyden med Lydeffekter for hver app.</li>
-          <li lang="da" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="da" dir="ltr">Ét bibliotek til alt, du afspiller</b>: Apple Music sammen med lokale lyd- og videomapper, med playlister og gemte filtre på tværs af dem alle.</li>
+          <li lang="da" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="da" dir="ltr">Blandede playlister i ét bibliotek</b>: kombinér musik fra Apple Music og YouTube med lokale lyd- og videofiler i samme playliste, med gemte filtre på tværs af dit bibliotek.</li>
           <li lang="da" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-player.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-player.png?v=20260917-0423" width="18" height="14" alt=""><b lang="da" dir="ltr">En enkel afspiller til filen, du lige har hentet</b>: en fælles kø, Videoafspiller med hastighedsvalg, gentagelse og mulighed for at holde vinduet øverst, og udtræk af lyd fra enhver video med ét klik.</li>
           <li lang="da" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-live-subtitles.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-live-subtitles.png?v=20260917-0423" width="19" height="18" alt=""><b lang="da" dir="ltr">Følg ethvert møde, enhver stream eller video på dit sprog</b>: Liveundertekster transskriberer og oversætter lyden fra én app lokalt på din Mac, med mulighed for undertekster uden oversættelse og en farve til hver taler (macOS 26.4 eller nyere).</li>
         </ul>
       </div>
       <div class="pvg-shots stack">
-        <figure class="nx-audio-mixer-menu">
+        <figure class="nx-audio-mixer-menu nx-audio-wide">
           <button lang="da" class="nx-shot-button" type="button" aria-label="Forstør: Lydmixer med lydstyrke for hver app" aria-haspopup="dialog" aria-controls="pvl-viewer">
             <picture>
               <source type="image/webp" srcset="../assets/refresh/shot-audio-mixer-menu.webp?v=20260917-0423">
@@ -1067,6 +1067,14 @@
           </button>
           <figcaption lang="da" dir="ltr" class="nx-shot-caption">Afspil lokale videoer, gem enkeltbilleder, og udtræk lyd.</figcaption>
         </figure>
+        <figure class="nx-audio-wide" id="music-playlists-screenshot">
+          <button lang="da" class="nx-shot-button" type="button" aria-label="Zoom ind: Musik og playlister" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="da" src="../assets/refresh/shot-music-playlists.png?v=20260917-0423" width="2932" height="2432" loading="lazy" alt="Musik og playlister">
+            </picture>
+          </button>
+          <figcaption lang="da" dir="ltr" class="nx-shot-caption">Kombinér musik fra Apple Music og YouTube med lokale lyd- og videofiler i én playliste.</figcaption>
+        </figure>
       </div>
     </article>
 
@@ -1106,7 +1114,7 @@
           </button>
           <figcaption lang="da" dir="ltr" class="nx-shot-caption">Se skriftfamilierne, og installer dem, du vælger.</figcaption>
         </figure>
-        <figure>
+        <figure class="nx-health-wide">
           <button lang="da" class="nx-shot-button" type="button" aria-label="Forstør: Vedligeholdelse og systemjusteringer, ét kort pr. indstilling" aria-haspopup="dialog" aria-controls="pvl-viewer">
           <picture>
             <source type="image/webp" srcset="../assets/refresh/shot-system-tweaks.webp?v=20260917-0423">
@@ -1116,6 +1124,14 @@
         </button>
 
           <figcaption lang="da" dir="ltr" class="nx-shot-caption">Se macOS-justeringer og deres gemte indstillinger.</figcaption>
+        </figure>
+        <figure class="nx-health-wide" id="network-quality-screenshot">
+          <button lang="da" class="nx-shot-button" type="button" aria-label="Zoom ind: Netværkskvalitet" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="da" src="../assets/refresh/shot-network-quality.png?v=20260917-0423" width="1240" height="1272" loading="lazy" alt="Netværkskvalitet">
+            </picture>
+          </button>
+          <figcaption lang="da" dir="ltr" class="nx-shot-caption">Netværkskvalitet</figcaption>
         </figure>
       </div>
     </article>

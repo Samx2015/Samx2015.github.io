@@ -191,9 +191,9 @@
   .pvg-input .pvg-shots figure { min-width: 0; }
   .pvg-input .nx-input-remapping { grid-column: 1 / -1; }
   .pvg-group.pvg-finder, .pvg-group.pvg-audio, .pvg-group.pvg-screen, .pvg-group.pvg-health { align-items: start; }
-  .pvg-audio .nx-audio-mixer-menu { grid-column: 1 / -1; }
+  .pvg-audio .nx-audio-wide { grid-column: 1 / -1; }
   .pvg-screen .pvg-shots figure { min-width: 0; }
-  .pvg-health .pvg-shots figure:last-child { grid-column: 1 / -1; }
+  .pvg-health .pvg-shots .nx-health-wide { grid-column: 1 / -1; }
   /* How to get it: one panel, the offer and its actions beside activation steps. */
   .nx-get-inner {
     width: min(100%, var(--wide-max)); margin-inline: auto; padding: 24px;
@@ -1016,13 +1016,13 @@
         <p lang="fi" dir="ltr" class="pvg-lede">Säädä, miltä kukin sovellus kuulostaa, pidä kaikki lähteet yhdessä paikassa ja lue sovellusten puhe tekstinä.</p>
         <ul class="pvw-points">
           <li lang="fi" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-mixer.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-mixer.png?v=20260917-0423" width="17" height="16" alt=""><b lang="fi" dir="ltr">Älä säädä äänenvoimakkuutta aina puhelun alkaessa</b>: aseta kullekin sovellukselle oma äänenvoimakkuus ja mykistys, vahvista hiljaisten sovellusten ääntä jopa tasolle 200% ja muokkaa niiden ääntä sovelluskohtaisilla äänitehosteilla.</li>
-          <li lang="fi" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="fi" dir="ltr">Yksi kirjasto kaikelle toistettavalle</b>: Apple Music sekä paikalliset ääni- ja videokansiot rinnakkain. Soittolistat ja tallennetut suodattimet kattavat kaikki lähteet.</li>
+          <li lang="fi" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="fi" dir="ltr">Eri lähteitä yhdistävät soittolistat yhdessä kirjastossa</b>: yhdistä Apple Musicin ja YouTuben musiikkia sekä paikallisia ääni- ja videotiedostoja samalle soittolistalle ja käytä tallennettuja suodattimia koko kirjastossasi.</li>
           <li lang="fi" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-player.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-player.png?v=20260917-0423" width="18" height="14" alt=""><b lang="fi" dir="ltr">Kevyt soitin juuri lataamallesi tiedostolle</b>: yhteinen jono ja Videosoitin, jossa voit säätää nopeutta, toistaa videota jatkuvasti ja pitää ikkunan päällimmäisenä. Pura ääni mistä tahansa videosta yhdellä klikkauksella.</li>
           <li lang="fi" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-live-subtitles.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-live-subtitles.png?v=20260917-0423" width="19" height="18" alt=""><b lang="fi" dir="ltr">Seuraa kokouksia, lähetyksiä ja videoita omalla kielelläsi</b>: Reaaliaikaiset tekstitykset -toiminto litteroi ja kääntää yhden sovelluksen äänen laitteessa. Voit näyttää pelkät tekstitykset ja erottaa puhujat väreillä (macOS 26.4 tai uudempi).</li>
         </ul>
       </div>
       <div class="pvg-shots stack">
-        <figure class="nx-audio-mixer-menu">
+        <figure class="nx-audio-mixer-menu nx-audio-wide">
           <button lang="fi" class="nx-shot-button" type="button" aria-label="Suurenna: Sovelluskohtainen äänimikseri" aria-haspopup="dialog" aria-controls="pvl-viewer">
             <picture>
               <source type="image/webp" srcset="../assets/refresh/shot-audio-mixer-menu.webp?v=20260917-0423">
@@ -1067,6 +1067,14 @@
           </button>
           <figcaption lang="fi" dir="ltr" class="nx-shot-caption">Toista paikallisia videoita, tallenna yksittäisiä kuvia ja pura ääni.</figcaption>
         </figure>
+        <figure class="nx-audio-wide" id="music-playlists-screenshot">
+          <button lang="fi" class="nx-shot-button" type="button" aria-label="Lähennä: Musiikki ja soittolistat" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="fi" src="../assets/refresh/shot-music-playlists.png?v=20260917-0423" width="2932" height="2432" loading="lazy" alt="Musiikki ja soittolistat">
+            </picture>
+          </button>
+          <figcaption lang="fi" dir="ltr" class="nx-shot-caption">Yhdistä Apple Musicin ja YouTuben musiikkia sekä paikallisia ääni- ja videotiedostoja samalle soittolistalle.</figcaption>
+        </figure>
       </div>
     </article>
 
@@ -1106,7 +1114,7 @@
           </button>
           <figcaption lang="fi" dir="ltr" class="nx-shot-caption">Esikatsele fonttiperheitä ja asenna valitsemasi fontit.</figcaption>
         </figure>
-        <figure>
+        <figure class="nx-health-wide">
           <button lang="fi" class="nx-shot-button" type="button" aria-label="Suurenna: Ylläpito ja järjestelmäsäädöt, oma kortti kullekin asetukselle" aria-haspopup="dialog" aria-controls="pvl-viewer">
           <picture>
             <source type="image/webp" srcset="../assets/refresh/shot-system-tweaks.webp?v=20260917-0423">
@@ -1116,6 +1124,14 @@
         </button>
 
           <figcaption lang="fi" dir="ltr" class="nx-shot-caption">Selaa macOS-säätöjä ja tarkista kunkin asetuksen tallennettu arvo.</figcaption>
+        </figure>
+        <figure class="nx-health-wide" id="network-quality-screenshot">
+          <button lang="fi" class="nx-shot-button" type="button" aria-label="Lähennä: Verkon laatu" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="fi" src="../assets/refresh/shot-network-quality.png?v=20260917-0423" width="1240" height="1272" loading="lazy" alt="Verkon laatu">
+            </picture>
+          </button>
+          <figcaption lang="fi" dir="ltr" class="nx-shot-caption">Verkon laatu</figcaption>
         </figure>
       </div>
     </article>

@@ -191,9 +191,9 @@
   .pvg-input .pvg-shots figure { min-width: 0; }
   .pvg-input .nx-input-remapping { grid-column: 1 / -1; }
   .pvg-group.pvg-finder, .pvg-group.pvg-audio, .pvg-group.pvg-screen, .pvg-group.pvg-health { align-items: start; }
-  .pvg-audio .nx-audio-mixer-menu { grid-column: 1 / -1; }
+  .pvg-audio .nx-audio-wide { grid-column: 1 / -1; }
   .pvg-screen .pvg-shots figure { min-width: 0; }
-  .pvg-health .pvg-shots figure:last-child { grid-column: 1 / -1; }
+  .pvg-health .pvg-shots .nx-health-wide { grid-column: 1 / -1; }
   /* How to get it: one panel, the offer and its actions beside activation steps. */
   .nx-get-inner {
     width: min(100%, var(--wide-max)); margin-inline: auto; padding: 24px;
@@ -1016,13 +1016,13 @@
         <p lang="ms" dir="ltr" class="pvg-lede">Kawal bunyi setiap app, kumpulkan semua sumber di satu tempat dan baca apa yang diperkatakan dalam mana-mana app.</p>
         <ul class="pvw-points">
           <li lang="ms" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-mixer.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-mixer.png?v=20260917-0423" width="17" height="16" alt=""><b lang="ms" dir="ltr">Tak perlu laraskan kelantangan setiap kali panggilan bermula</b>: tetapkan tahap kelantangan dan bisu bagi setiap app, kuatkan app yang perlahan bunyinya sehingga 200%, dan laraskan bunyinya dengan Kesan Audio bagi setiap app.</li>
-          <li lang="ms" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="ms" dir="ltr">Satu pustaka untuk semua yang anda mainkan</b>: Apple Music bersama folder audio dan video setempat, dengan senarai main dan penapis tersimpan yang merangkumi semuanya.</li>
+          <li lang="ms" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="ms" dir="ltr">Senarai main campuran dalam satu pustaka</b>: gabungkan Apple Music, muzik daripada YouTube serta audio dan video setempat dalam senarai main yang sama, dengan penapis tersimpan yang boleh digunakan di seluruh pustaka anda.</li>
           <li lang="ms" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-player.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-player.png?v=20260917-0423" width="18" height="14" alt=""><b lang="ms" dir="ltr">Pemain ringan untuk fail yang baru dimuat turun</b>: baris gilir bersama, Pemain Video dengan kawalan kelajuan, ulangan dan pilihan sentiasa di hadapan, serta pengekstrakan audio daripada mana-mana video dengan satu klik.</li>
           <li lang="ms" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-live-subtitles.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-live-subtitles.png?v=20260917-0423" width="19" height="18" alt=""><b lang="ms" dir="ltr">Ikuti mesyuarat, strim atau video dalam bahasa anda</b>: Sari Kata Langsung mentranskripsi dan menterjemahkan audio satu app pada peranti, dengan mod sari kata sahaja dan warna berbeza bagi setiap penutur (macOS 26.4 atau lebih baharu).</li>
         </ul>
       </div>
       <div class="pvg-shots stack">
-        <figure class="nx-audio-mixer-menu">
+        <figure class="nx-audio-mixer-menu nx-audio-wide">
           <button lang="ms" class="nx-shot-button" type="button" aria-label="Besarkan: Pengadun Audio bagi setiap app" aria-haspopup="dialog" aria-controls="pvl-viewer">
             <picture>
               <source type="image/webp" srcset="../assets/refresh/shot-audio-mixer-menu.webp?v=20260917-0423">
@@ -1067,6 +1067,14 @@
           </button>
           <figcaption lang="ms" dir="ltr" class="nx-shot-caption">Mainkan video setempat, tangkap bingkai dan ekstrak audio.</figcaption>
         </figure>
+        <figure class="nx-audio-wide" id="music-playlists-screenshot">
+          <button lang="ms" class="nx-shot-button" type="button" aria-label="Zum masuk: Muzik &amp; Senarai Main" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="ms" src="../assets/refresh/shot-music-playlists.png?v=20260917-0423" width="2932" height="2432" loading="lazy" alt="Muzik &amp; Senarai Main">
+            </picture>
+          </button>
+          <figcaption lang="ms" dir="ltr" class="nx-shot-caption">Gabungkan Apple Music, muzik daripada YouTube serta audio dan video setempat dalam satu senarai main.</figcaption>
+        </figure>
       </div>
     </article>
 
@@ -1106,7 +1114,7 @@
           </button>
           <figcaption lang="ms" dir="ltr" class="nx-shot-caption">Pratonton keluarga fon dan pasang yang anda pilih.</figcaption>
         </figure>
-        <figure>
+        <figure class="nx-health-wide">
           <button lang="ms" class="nx-shot-button" type="button" aria-label="Besarkan: Penyelenggaraan &amp; Pelarasan Sistem, satu kad bagi setiap tetapan" aria-haspopup="dialog" aria-controls="pvl-viewer">
           <picture>
             <source type="image/webp" srcset="../assets/refresh/shot-system-tweaks.webp?v=20260917-0423">
@@ -1116,6 +1124,14 @@
         </button>
 
           <figcaption lang="ms" dir="ltr" class="nx-shot-caption">Semak pelarasan macOS dan lihat setiap tetapan tersimpan.</figcaption>
+        </figure>
+        <figure class="nx-health-wide" id="network-quality-screenshot">
+          <button lang="ms" class="nx-shot-button" type="button" aria-label="Zum masuk: Kualiti Rangkaian" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="ms" src="../assets/refresh/shot-network-quality.png?v=20260917-0423" width="1240" height="1272" loading="lazy" alt="Kualiti Rangkaian">
+            </picture>
+          </button>
+          <figcaption lang="ms" dir="ltr" class="nx-shot-caption">Kualiti Rangkaian</figcaption>
         </figure>
       </div>
     </article>

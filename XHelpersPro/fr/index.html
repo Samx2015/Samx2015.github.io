@@ -191,9 +191,9 @@
   .pvg-input .pvg-shots figure { min-width: 0; }
   .pvg-input .nx-input-remapping { grid-column: 1 / -1; }
   .pvg-group.pvg-finder, .pvg-group.pvg-audio, .pvg-group.pvg-screen, .pvg-group.pvg-health { align-items: start; }
-  .pvg-audio .nx-audio-mixer-menu { grid-column: 1 / -1; }
+  .pvg-audio .nx-audio-wide { grid-column: 1 / -1; }
   .pvg-screen .pvg-shots figure { min-width: 0; }
-  .pvg-health .pvg-shots figure:last-child { grid-column: 1 / -1; }
+  .pvg-health .pvg-shots .nx-health-wide { grid-column: 1 / -1; }
   /* How to get it: one panel, the offer and its actions beside activation steps. */
   .nx-get-inner {
     width: min(100%, var(--wide-max)); margin-inline: auto; padding: 24px;
@@ -1016,13 +1016,13 @@
         <p lang="fr" dir="ltr" class="pvg-lede">Réglez le son de chaque app, rassemblez toutes vos sources et lisez ce qui se dit dans n’importe quelle app.</p>
         <ul class="pvw-points">
           <li lang="fr" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-mixer.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-mixer.png?v=20260917-0423" width="17" height="16" alt=""><b lang="fr" dir="ltr">Ne réglez plus le volume à chaque appel</b> : ajustez le niveau de chaque app ou mettez-la en sourdine, amplifiez les apps trop discrètes jusqu’à 200% et personnalisez leur son avec les Effets audio par app.</li>
-          <li lang="fr" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="fr" dir="ltr">Une seule bibliothèque pour tout écouter et regarder</b> : Apple Music et vos dossiers audio et vidéo locaux, réunis par des playlists et des filtres enregistrés qui couvrent toutes ces sources.</li>
+          <li lang="fr" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="fr" dir="ltr">Des playlists mixtes dans une seule bibliothèque</b> : combinez des morceaux d’Apple Music, de la musique de YouTube et des fichiers audio et vidéo locaux dans une même playlist, avec des filtres enregistrés pour toute votre bibliothèque.</li>
           <li lang="fr" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-player.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-player.png?v=20260917-0423" width="18" height="14" alt=""><b lang="fr" dir="ltr">Un lecteur léger pour le fichier que vous venez de télécharger</b> : une file d’attente commune, le Lecteur vidéo avec vitesse réglable, lecture en boucle et maintien au premier plan, et l’extraction de l’audio de toute vidéo en un clic.</li>
           <li lang="fr" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-live-subtitles.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-live-subtitles.png?v=20260917-0423" width="19" height="18" alt=""><b lang="fr" dir="ltr">Suivez réunions, diffusions et vidéos dans votre langue</b> : les Sous-titres en direct transcrivent et traduisent l’audio d’une app sur l’appareil, avec un mode Sous-titres seuls et une couleur par intervenant (macOS 26.4 ou ultérieur).</li>
         </ul>
       </div>
       <div class="pvg-shots stack">
-        <figure class="nx-audio-mixer-menu">
+        <figure class="nx-audio-mixer-menu nx-audio-wide">
           <button lang="fr" class="nx-shot-button" type="button" aria-label="Agrandir : Mixeur audio par app" aria-haspopup="dialog" aria-controls="pvl-viewer">
             <picture>
               <source type="image/webp" srcset="../assets/refresh/shot-audio-mixer-menu.webp?v=20260917-0423">
@@ -1067,6 +1067,14 @@
           </button>
           <figcaption lang="fr" dir="ltr" class="nx-shot-caption">Lisez des vidéos locales, capturez des images et extrayez l’audio.</figcaption>
         </figure>
+        <figure class="nx-audio-wide" id="music-playlists-screenshot">
+          <button lang="fr" class="nx-shot-button" type="button" aria-label="Zoom avant: Musique et playlists" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="fr" src="../assets/refresh/shot-music-playlists.png?v=20260917-0423" width="2932" height="2432" loading="lazy" alt="Musique et playlists">
+            </picture>
+          </button>
+          <figcaption lang="fr" dir="ltr" class="nx-shot-caption">Réunissez des morceaux d’Apple Music, de la musique de YouTube et des fichiers audio et vidéo locaux dans une seule playlist.</figcaption>
+        </figure>
       </div>
     </article>
 
@@ -1106,7 +1114,7 @@
           </button>
           <figcaption lang="fr" dir="ltr" class="nx-shot-caption">Prévisualisez les familles de polices et installez celles que vous choisissez.</figcaption>
         </figure>
-        <figure>
+        <figure class="nx-health-wide">
           <button lang="fr" class="nx-shot-button" type="button" aria-label="Agrandir : Maintenance et réglages système, une fiche par réglage" aria-haspopup="dialog" aria-controls="pvl-viewer">
           <picture>
             <source type="image/webp" srcset="../assets/refresh/shot-system-tweaks.webp?v=20260917-0423">
@@ -1116,6 +1124,14 @@
         </button>
 
           <figcaption lang="fr" dir="ltr" class="nx-shot-caption">Parcourez les réglages macOS et consultez la valeur enregistrée pour chacun.</figcaption>
+        </figure>
+        <figure class="nx-health-wide" id="network-quality-screenshot">
+          <button lang="fr" class="nx-shot-button" type="button" aria-label="Zoom avant: Qualité du réseau" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="fr" src="../assets/refresh/shot-network-quality.png?v=20260917-0423" width="1240" height="1272" loading="lazy" alt="Qualité du réseau">
+            </picture>
+          </button>
+          <figcaption lang="fr" dir="ltr" class="nx-shot-caption">Qualité du réseau</figcaption>
         </figure>
       </div>
     </article>

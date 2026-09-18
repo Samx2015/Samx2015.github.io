@@ -191,9 +191,9 @@
   .pvg-input .pvg-shots figure { min-width: 0; }
   .pvg-input .nx-input-remapping { grid-column: 1 / -1; }
   .pvg-group.pvg-finder, .pvg-group.pvg-audio, .pvg-group.pvg-screen, .pvg-group.pvg-health { align-items: start; }
-  .pvg-audio .nx-audio-mixer-menu { grid-column: 1 / -1; }
+  .pvg-audio .nx-audio-wide { grid-column: 1 / -1; }
   .pvg-screen .pvg-shots figure { min-width: 0; }
-  .pvg-health .pvg-shots figure:last-child { grid-column: 1 / -1; }
+  .pvg-health .pvg-shots .nx-health-wide { grid-column: 1 / -1; }
   /* How to get it: one panel, the offer and its actions beside activation steps. */
   .nx-get-inner {
     width: min(100%, var(--wide-max)); margin-inline: auto; padding: 24px;
@@ -1016,13 +1016,13 @@
         <p lang="pt-BR" dir="ltr" class="pvg-lede">Controle o som de cada app, reúna todas as fontes em um só lugar e leia o que qualquer app está dizendo.</p>
         <ul class="pvw-points">
           <li lang="pt-BR" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-mixer.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-mixer.png?v=20260917-0423" width="17" height="16" alt=""><b lang="pt-BR" dir="ltr">Chega de ajustar o volume toda vez que uma chamada começa</b>: controle o volume e silencie cada app, amplifique apps com som baixo até 200% e ajuste o som com Efeitos de áudio por app.</li>
-          <li lang="pt-BR" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="pt-BR" dir="ltr">Uma biblioteca para tudo o que você ouve e assiste</b>: Apple Music junto com pastas locais de áudio e vídeo, com playlists e filtros salvos que abrangem todas as fontes.</li>
+          <li lang="pt-BR" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="pt-BR" dir="ltr">Playlists mistas em uma só biblioteca</b>: combine músicas do Apple Music, músicas do YouTube e arquivos locais de áudio e vídeo na mesma playlist, com filtros salvos para toda a sua biblioteca.</li>
           <li lang="pt-BR" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-player.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-player.png?v=20260917-0423" width="18" height="14" alt=""><b lang="pt-BR" dir="ltr">Um reprodutor leve para o arquivo que você acabou de baixar</b>: fila compartilhada, Reprodutor de vídeo com controle de velocidade, repetição e opção de ficar sobre as outras janelas, além de extração de áudio de qualquer vídeo com um clique.</li>
           <li lang="pt-BR" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-live-subtitles.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-live-subtitles.png?v=20260917-0423" width="19" height="18" alt=""><b lang="pt-BR" dir="ltr">Acompanhe qualquer reunião, transmissão ou vídeo no seu idioma</b>: o recurso Legendas ao vivo transcreve e traduz o áudio de um app no próprio Mac, com um modo que exibe apenas legendas e cores por falante (macOS 26.4 ou posterior).</li>
         </ul>
       </div>
       <div class="pvg-shots stack">
-        <figure class="nx-audio-mixer-menu">
+        <figure class="nx-audio-mixer-menu nx-audio-wide">
           <button lang="pt-BR" class="nx-shot-button" type="button" aria-label="Ampliar: Mixer de áudio por app" aria-haspopup="dialog" aria-controls="pvl-viewer">
             <picture>
               <source type="image/webp" srcset="../assets/refresh/shot-audio-mixer-menu.webp?v=20260917-0423">
@@ -1067,6 +1067,14 @@
           </button>
           <figcaption lang="pt-BR" dir="ltr" class="nx-shot-caption">Reproduza vídeos locais, capture quadros e extraia o áudio.</figcaption>
         </figure>
+        <figure class="nx-audio-wide" id="music-playlists-screenshot">
+          <button lang="pt-BR" class="nx-shot-button" type="button" aria-label="Ampliar: Músicas e playlists" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="pt-BR" src="../assets/refresh/shot-music-playlists.png?v=20260917-0423" width="2932" height="2432" loading="lazy" alt="Músicas e playlists">
+            </picture>
+          </button>
+          <figcaption lang="pt-BR" dir="ltr" class="nx-shot-caption">Combine músicas do Apple Music, músicas do YouTube e arquivos locais de áudio e vídeo em uma única playlist.</figcaption>
+        </figure>
       </div>
     </article>
 
@@ -1106,7 +1114,7 @@
           </button>
           <figcaption lang="pt-BR" dir="ltr" class="nx-shot-caption">Veja prévias das famílias de fontes e instale as que escolher.</figcaption>
         </figure>
-        <figure>
+        <figure class="nx-health-wide">
           <button lang="pt-BR" class="nx-shot-button" type="button" aria-label="Ampliar: Manutenção e ajustes do sistema, um cartão por ajuste" aria-haspopup="dialog" aria-controls="pvl-viewer">
           <picture>
             <source type="image/webp" srcset="../assets/refresh/shot-system-tweaks.webp?v=20260917-0423">
@@ -1116,6 +1124,14 @@
         </button>
 
           <figcaption lang="pt-BR" dir="ltr" class="nx-shot-caption">Explore os ajustes do macOS e veja cada configuração salva.</figcaption>
+        </figure>
+        <figure class="nx-health-wide" id="network-quality-screenshot">
+          <button lang="pt-BR" class="nx-shot-button" type="button" aria-label="Ampliar: Qualidade da rede" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="pt-BR" src="../assets/refresh/shot-network-quality.png?v=20260917-0423" width="1240" height="1272" loading="lazy" alt="Qualidade da rede">
+            </picture>
+          </button>
+          <figcaption lang="pt-BR" dir="ltr" class="nx-shot-caption">Qualidade da rede</figcaption>
         </figure>
       </div>
     </article>

@@ -191,9 +191,9 @@
   .pvg-input .pvg-shots figure { min-width: 0; }
   .pvg-input .nx-input-remapping { grid-column: 1 / -1; }
   .pvg-group.pvg-finder, .pvg-group.pvg-audio, .pvg-group.pvg-screen, .pvg-group.pvg-health { align-items: start; }
-  .pvg-audio .nx-audio-mixer-menu { grid-column: 1 / -1; }
+  .pvg-audio .nx-audio-wide { grid-column: 1 / -1; }
   .pvg-screen .pvg-shots figure { min-width: 0; }
-  .pvg-health .pvg-shots figure:last-child { grid-column: 1 / -1; }
+  .pvg-health .pvg-shots .nx-health-wide { grid-column: 1 / -1; }
   /* How to get it: one panel, the offer and its actions beside activation steps. */
   .nx-get-inner {
     width: min(100%, var(--wide-max)); margin-inline: auto; padding: 24px;
@@ -1016,13 +1016,13 @@
         <p lang="uk" dir="ltr" class="pvg-lede">Керуйте звучанням кожної програми, тримайте всі джерела в одному місці й читайте те, що звучить у будь-якій програмі.</p>
         <ul class="pvw-points">
           <li lang="uk" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-mixer.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-mixer.png?v=20260917-0423" width="17" height="16" alt=""><b lang="uk" dir="ltr">Не регулюйте гучність щоразу, коли починається дзвінок</b>: задавайте кожній програмі власну гучність і вимикайте її звук, підсилюйте тихі програми до 200% та налаштовуйте їхнє звучання окремими звуковими ефектами.</li>
-          <li lang="uk" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="uk" dir="ltr">Одна медіатека для всього, що ви слухаєте й дивитеся</b>: Apple Music поруч із локальними папками аудіо й відео, зі спільними плейлистами та збереженими фільтрами для всіх джерел.</li>
+          <li lang="uk" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="uk" dir="ltr">Змішані плейлисти в одній медіатеці</b>: поєднуйте музику з Apple Music і YouTube та локальні аудіо й відео в одному плейлисті й застосовуйте збережені фільтри до всієї медіатеки.</li>
           <li lang="uk" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-player.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-player.png?v=20260917-0423" width="18" height="14" alt=""><b lang="uk" dir="ltr">Легкий програвач для щойно завантаженого файлу</b>: спільна черга, відеопрогравач зі зміною швидкості, повтором і показом поверх інших вікон, а також видобування звуку з будь-якого відео одним клацанням.</li>
           <li lang="uk" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-live-subtitles.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-live-subtitles.png?v=20260917-0423" width="19" height="18" alt=""><b lang="uk" dir="ltr">Стежте за зустрічами, трансляціями й відео своєю мовою</b>: субтитри наживо розпізнають і перекладають мовлення однієї програми на пристрої, з режимом лише субтитрів і окремими кольорами для кожного мовця (macOS 26.4 або новіша).</li>
         </ul>
       </div>
       <div class="pvg-shots stack">
-        <figure class="nx-audio-mixer-menu">
+        <figure class="nx-audio-mixer-menu nx-audio-wide">
           <button lang="uk" class="nx-shot-button" type="button" aria-label="Збільшити: аудіомікшер для кожної програми" aria-haspopup="dialog" aria-controls="pvl-viewer">
             <picture>
               <source type="image/webp" srcset="../assets/refresh/shot-audio-mixer-menu.webp?v=20260917-0423">
@@ -1067,6 +1067,14 @@
           </button>
           <figcaption lang="uk" dir="ltr" class="nx-shot-caption">Відтворюйте локальні відео, робіть знімки кадрів і видобувайте звук.</figcaption>
         </figure>
+        <figure class="nx-audio-wide" id="music-playlists-screenshot">
+          <button lang="uk" class="nx-shot-button" type="button" aria-label="Збільшити: Музика й плейлисти" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="uk" src="../assets/refresh/shot-music-playlists.png?v=20260917-0423" width="2932" height="2432" loading="lazy" alt="Музика й плейлисти">
+            </picture>
+          </button>
+          <figcaption lang="uk" dir="ltr" class="nx-shot-caption">Поєднуйте музику з Apple Music і YouTube та локальні аудіо й відео в одному плейлисті.</figcaption>
+        </figure>
       </div>
     </article>
 
@@ -1106,7 +1114,7 @@
           </button>
           <figcaption lang="uk" dir="ltr" class="nx-shot-caption">Переглядайте гарнітури шрифтів і встановлюйте вибрані.</figcaption>
         </figure>
-        <figure>
+        <figure class="nx-health-wide">
           <button lang="uk" class="nx-shot-button" type="button" aria-label="Збільшити: обслуговування та налаштування системи — окрема картка для кожного параметра" aria-haspopup="dialog" aria-controls="pvl-viewer">
           <picture>
             <source type="image/webp" srcset="../assets/refresh/shot-system-tweaks.webp?v=20260917-0423">
@@ -1116,6 +1124,14 @@
         </button>
 
           <figcaption lang="uk" dir="ltr" class="nx-shot-caption">Переглядайте налаштування macOS і збережене значення кожного параметра.</figcaption>
+        </figure>
+        <figure class="nx-health-wide" id="network-quality-screenshot">
+          <button lang="uk" class="nx-shot-button" type="button" aria-label="Збільшити: Якість мережі" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="uk" src="../assets/refresh/shot-network-quality.png?v=20260917-0423" width="1240" height="1272" loading="lazy" alt="Якість мережі">
+            </picture>
+          </button>
+          <figcaption lang="uk" dir="ltr" class="nx-shot-caption">Якість мережі</figcaption>
         </figure>
       </div>
     </article>

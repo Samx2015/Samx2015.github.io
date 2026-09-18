@@ -191,9 +191,9 @@
   .pvg-input .pvg-shots figure { min-width: 0; }
   .pvg-input .nx-input-remapping { grid-column: 1 / -1; }
   .pvg-group.pvg-finder, .pvg-group.pvg-audio, .pvg-group.pvg-screen, .pvg-group.pvg-health { align-items: start; }
-  .pvg-audio .nx-audio-mixer-menu { grid-column: 1 / -1; }
+  .pvg-audio .nx-audio-wide { grid-column: 1 / -1; }
   .pvg-screen .pvg-shots figure { min-width: 0; }
-  .pvg-health .pvg-shots figure:last-child { grid-column: 1 / -1; }
+  .pvg-health .pvg-shots .nx-health-wide { grid-column: 1 / -1; }
   /* How to get it: one panel, the offer and its actions beside activation steps. */
   .nx-get-inner {
     width: min(100%, var(--wide-max)); margin-inline: auto; padding: 24px;
@@ -1016,13 +1016,13 @@
         <p lang="cs" dir="ltr" class="pvg-lede">Ovládejte zvuk každé aplikace, mějte všechny zdroje na jednom místě a čtěte, co v aplikacích zaznívá.</p>
         <ul class="pvw-points">
           <li lang="cs" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-mixer.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-mixer.png?v=20260917-0423" width="17" height="16" alt=""><b lang="cs" dir="ltr">Už nemusíte upravovat hlasitost při každém hovoru</b>: nastavte hlasitost a ztlumení pro každou aplikaci zvlášť, zesilte tiché aplikace až na 200% a dolaďte jejich zvuk pomocí Zvukových efektů.</li>
-          <li lang="cs" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="cs" dir="ltr">Jedna knihovna pro vše, co přehráváte</b>: Apple Music i místní složky se zvukem a videem, se společnými playlisty a uloženými filtry napříč všemi zdroji.</li>
+          <li lang="cs" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="cs" dir="ltr">Smíšené playlisty v jedné knihovně</b>: kombinujte hudbu z Apple Music, hudbu z YouTube a místní audio i video v jednom playlistu a používejte uložené filtry napříč celou knihovnou.</li>
           <li lang="cs" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-player.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-player.png?v=20260917-0423" width="18" height="14" alt=""><b lang="cs" dir="ltr">Lehký přehrávač pro právě stažený soubor</b>: společná fronta, Přehrávač videa s nastavením rychlosti, opakováním a oknem vždy navrchu. Zvuk z libovolného videa získáte jedním kliknutím.</li>
           <li lang="cs" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-live-subtitles.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-live-subtitles.png?v=20260917-0423" width="19" height="18" alt=""><b lang="cs" dir="ltr">Sledujte schůzky, streamy i videa ve svém jazyce</b>: Živé titulky přepisují a překládají zvuk jedné aplikace přímo v zařízení. Nabízejí režim pouze s titulky a barevné rozlišení mluvčích (macOS 26.4 nebo novější).</li>
         </ul>
       </div>
       <div class="pvg-shots stack">
-        <figure class="nx-audio-mixer-menu">
+        <figure class="nx-audio-mixer-menu nx-audio-wide">
           <button lang="cs" class="nx-shot-button" type="button" aria-label="Zvětšit: Mixér zvuku pro jednotlivé aplikace" aria-haspopup="dialog" aria-controls="pvl-viewer">
             <picture>
               <source type="image/webp" srcset="../assets/refresh/shot-audio-mixer-menu.webp?v=20260917-0423">
@@ -1067,6 +1067,14 @@
           </button>
           <figcaption lang="cs" dir="ltr" class="nx-shot-caption">Přehrávejte místní videa, zachycujte snímky a extrahujte zvuk.</figcaption>
         </figure>
+        <figure class="nx-audio-wide" id="music-playlists-screenshot">
+          <button lang="cs" class="nx-shot-button" type="button" aria-label="Přiblížit: Hudba a playlisty" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="cs" src="../assets/refresh/shot-music-playlists.png?v=20260917-0423" width="2932" height="2432" loading="lazy" alt="Hudba a playlisty">
+            </picture>
+          </button>
+          <figcaption lang="cs" dir="ltr" class="nx-shot-caption">Spojte hudbu z Apple Music, hudbu z YouTube a místní audio i video v jednom playlistu.</figcaption>
+        </figure>
       </div>
     </article>
 
@@ -1106,7 +1114,7 @@
           </button>
           <figcaption lang="cs" dir="ltr" class="nx-shot-caption">Prohlédněte si rodiny písem a nainstalujte ty, které si vyberete.</figcaption>
         </figure>
-        <figure>
+        <figure class="nx-health-wide">
           <button lang="cs" class="nx-shot-button" type="button" aria-label="Zvětšit: Údržba a systémové úpravy, každé nastavení na vlastní kartě" aria-haspopup="dialog" aria-controls="pvl-viewer">
           <picture>
             <source type="image/webp" srcset="../assets/refresh/shot-system-tweaks.webp?v=20260917-0423">
@@ -1116,6 +1124,14 @@
         </button>
 
           <figcaption lang="cs" dir="ltr" class="nx-shot-caption">Procházejte úpravy macOS a podívejte se na uložená nastavení.</figcaption>
+        </figure>
+        <figure class="nx-health-wide" id="network-quality-screenshot">
+          <button lang="cs" class="nx-shot-button" type="button" aria-label="Přiblížit: Kvalita sítě" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="cs" src="../assets/refresh/shot-network-quality.png?v=20260917-0423" width="1240" height="1272" loading="lazy" alt="Kvalita sítě">
+            </picture>
+          </button>
+          <figcaption lang="cs" dir="ltr" class="nx-shot-caption">Kvalita sítě</figcaption>
         </figure>
       </div>
     </article>

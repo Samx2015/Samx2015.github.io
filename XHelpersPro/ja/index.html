@@ -191,9 +191,9 @@
   .pvg-input .pvg-shots figure { min-width: 0; }
   .pvg-input .nx-input-remapping { grid-column: 1 / -1; }
   .pvg-group.pvg-finder, .pvg-group.pvg-audio, .pvg-group.pvg-screen, .pvg-group.pvg-health { align-items: start; }
-  .pvg-audio .nx-audio-mixer-menu { grid-column: 1 / -1; }
+  .pvg-audio .nx-audio-wide { grid-column: 1 / -1; }
   .pvg-screen .pvg-shots figure { min-width: 0; }
-  .pvg-health .pvg-shots figure:last-child { grid-column: 1 / -1; }
+  .pvg-health .pvg-shots .nx-health-wide { grid-column: 1 / -1; }
   /* How to get it: one panel, the offer and its actions beside activation steps. */
   .nx-get-inner {
     width: min(100%, var(--wide-max)); margin-inline: auto; padding: 24px;
@@ -1016,13 +1016,13 @@
         <p lang="ja" dir="ltr" class="pvg-lede">アプリごとに音を調整し、音源や動画を一か所に。どのアプリの音声も字幕で確認できます。</p>
         <ul class="pvw-points">
           <li lang="ja" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-mixer.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-mixer.png?v=20260917-0423" width="17" height="16" alt=""><b lang="ja" dir="ltr">通話が始まるたびに音量を調整する手間を解消</b>：アプリごとに音量とミュートを設定。音が小さいアプリは最大200%まで増幅し、オーディオエフェクトで音質も個別に調整できます。</li>
-          <li lang="ja" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="ja" dir="ltr">再生するものを、ひとつのライブラリに</b>：Apple Musicとローカルのオーディオ・動画フォルダをまとめて管理。すべてを共通のプレイリストや保存済みフィルタで整理できます。</li>
+          <li lang="ja" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="ja" dir="ltr">複数のソースを組み合わせたプレイリストを、ひとつのライブラリに</b>：Apple Music、YouTubeの音楽、ローカルのオーディオと動画を同じプレイリストにまとめ、ライブラリ全体で保存済みフィルタを使えます。</li>
           <li lang="ja" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-player.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-player.png?v=20260917-0423" width="18" height="14" alt=""><b lang="ja" dir="ltr">ダウンロードしたファイルを軽快に再生</b>：共通のキューと、速度調整・ループ再生・最前面表示に対応した動画プレーヤー。動画からのオーディオ抽出もワンクリックです。</li>
           <li lang="ja" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-live-subtitles.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-live-subtitles.png?v=20260917-0423" width="19" height="18" alt=""><b lang="ja" dir="ltr">会議も配信も動画も、自分の言語で理解</b>：ライブ字幕がひとつのアプリの音声をデバイス上で文字起こし・翻訳。字幕のみの表示や話者ごとの色分けにも対応します（macOS 26.4以降）。</li>
         </ul>
       </div>
       <div class="pvg-shots stack">
-        <figure class="nx-audio-mixer-menu">
+        <figure class="nx-audio-mixer-menu nx-audio-wide">
           <button lang="ja" class="nx-shot-button" type="button" aria-label="拡大：アプリごとに調整できるオーディオミキサー" aria-haspopup="dialog" aria-controls="pvl-viewer">
             <picture>
               <source type="image/webp" srcset="../assets/refresh/shot-audio-mixer-menu.webp?v=20260917-0423">
@@ -1067,6 +1067,14 @@
           </button>
           <figcaption lang="ja" dir="ltr" class="nx-shot-caption">ローカルの動画を再生し、フレームのキャプチャやオーディオの抽出も。</figcaption>
         </figure>
+        <figure class="nx-audio-wide" id="music-playlists-screenshot">
+          <button lang="ja" class="nx-shot-button" type="button" aria-label="拡大: ミュージックとプレイリスト" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="ja" src="../assets/refresh/shot-music-playlists.png?v=20260917-0423" width="2932" height="2432" loading="lazy" alt="ミュージックとプレイリスト">
+            </picture>
+          </button>
+          <figcaption lang="ja" dir="ltr" class="nx-shot-caption">Apple Music、YouTubeの音楽、ローカルのオーディオと動画を、ひとつのプレイリストに組み合わせられます。</figcaption>
+        </figure>
       </div>
     </article>
 
@@ -1106,7 +1114,7 @@
           </button>
           <figcaption lang="ja" dir="ltr" class="nx-shot-caption">フォントファミリーをプレビューし、選んだものをインストール。</figcaption>
         </figure>
-        <figure>
+        <figure class="nx-health-wide">
           <button lang="ja" class="nx-shot-button" type="button" aria-label="拡大：メンテナンスとシステム調整、設定ごとにカードで表示" aria-haspopup="dialog" aria-controls="pvl-viewer">
           <picture>
             <source type="image/webp" srcset="../assets/refresh/shot-system-tweaks.webp?v=20260917-0423">
@@ -1116,6 +1124,14 @@
         </button>
 
           <figcaption lang="ja" dir="ltr" class="nx-shot-caption">macOSの調整項目と、それぞれの保存済み設定を一覧で確認。</figcaption>
+        </figure>
+        <figure class="nx-health-wide" id="network-quality-screenshot">
+          <button lang="ja" class="nx-shot-button" type="button" aria-label="拡大: ネットワーク品質" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="ja" src="../assets/refresh/shot-network-quality.png?v=20260917-0423" width="1240" height="1272" loading="lazy" alt="ネットワーク品質">
+            </picture>
+          </button>
+          <figcaption lang="ja" dir="ltr" class="nx-shot-caption">ネットワーク品質</figcaption>
         </figure>
       </div>
     </article>

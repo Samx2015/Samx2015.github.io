@@ -191,9 +191,9 @@
   .pvg-input .pvg-shots figure { min-width: 0; }
   .pvg-input .nx-input-remapping { grid-column: 1 / -1; }
   .pvg-group.pvg-finder, .pvg-group.pvg-audio, .pvg-group.pvg-screen, .pvg-group.pvg-health { align-items: start; }
-  .pvg-audio .nx-audio-mixer-menu { grid-column: 1 / -1; }
+  .pvg-audio .nx-audio-wide { grid-column: 1 / -1; }
   .pvg-screen .pvg-shots figure { min-width: 0; }
-  .pvg-health .pvg-shots figure:last-child { grid-column: 1 / -1; }
+  .pvg-health .pvg-shots .nx-health-wide { grid-column: 1 / -1; }
   /* How to get it: one panel, the offer and its actions beside activation steps. */
   .nx-get-inner {
     width: min(100%, var(--wide-max)); margin-inline: auto; padding: 24px;
@@ -1016,13 +1016,13 @@
         <p lang="id" dir="ltr" class="pvg-lede">Atur suara tiap aplikasi, satukan semua sumber, dan baca ucapan dari aplikasi mana pun.</p>
         <ul class="pvw-points">
           <li lang="id" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-mixer.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-mixer.png?v=20260917-0423" width="17" height="16" alt=""><b lang="id" dir="ltr">Tak perlu lagi mengatur volume setiap panggilan dimulai</b>: atur volume dan bisukan tiap aplikasi secara terpisah, perkuat suara aplikasi yang pelan hingga 200%, dan sesuaikan karakternya dengan Efek Audio per aplikasi.</li>
-          <li lang="id" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="id" dir="ltr">Satu pustaka untuk semua yang Anda putar</b>: Apple Music serta folder audio dan video lokal, dengan daftar putar dan filter tersimpan yang mencakup semuanya.</li>
+          <li lang="id" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-music-playlists.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-music-playlists.png?v=20260917-0423" width="16" height="15" alt=""><b lang="id" dir="ltr">Daftar putar campuran dalam satu pustaka</b>: gabungkan Apple Music, musik dari YouTube, serta audio dan video lokal dalam daftar putar yang sama, dengan filter tersimpan yang dapat digunakan di seluruh pustaka Anda.</li>
           <li lang="id" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-audio-player.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-audio-player.png?v=20260917-0423" width="18" height="14" alt=""><b lang="id" dir="ltr">Pemutar ringan untuk file yang baru diunduh</b>: antrean bersama, Pemutar Video dengan pengaturan kecepatan, pemutaran berulang, dan tampilan selalu di depan, serta ekstraksi audio dari video apa pun dalam sekali klik.</li>
           <li lang="id" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-live-subtitles.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-live-subtitles.png?v=20260917-0423" width="19" height="18" alt=""><b lang="id" dir="ltr">Ikuti rapat, siaran, atau video dalam bahasa Anda</b>: Takarir Langsung mentranskripsikan dan menerjemahkan audio dari satu aplikasi di perangkat, dengan mode hanya takarir dan warna berbeda untuk tiap pembicara (macOS 26.4 atau lebih baru).</li>
         </ul>
       </div>
       <div class="pvg-shots stack">
-        <figure class="nx-audio-mixer-menu">
+        <figure class="nx-audio-mixer-menu nx-audio-wide">
           <button lang="id" class="nx-shot-button" type="button" aria-label="Perbesar: Mixer Audio per aplikasi" aria-haspopup="dialog" aria-controls="pvl-viewer">
             <picture>
               <source type="image/webp" srcset="../assets/refresh/shot-audio-mixer-menu.webp?v=20260917-0423">
@@ -1067,6 +1067,14 @@
           </button>
           <figcaption lang="id" dir="ltr" class="nx-shot-caption">Putar video lokal, ambil bingkai, dan ekstrak audionya.</figcaption>
         </figure>
+        <figure class="nx-audio-wide" id="music-playlists-screenshot">
+          <button lang="id" class="nx-shot-button" type="button" aria-label="Perbesar: Musik &amp; Daftar Putar" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="id" src="../assets/refresh/shot-music-playlists.png?v=20260917-0423" width="2932" height="2432" loading="lazy" alt="Musik &amp; Daftar Putar">
+            </picture>
+          </button>
+          <figcaption lang="id" dir="ltr" class="nx-shot-caption">Gabungkan Apple Music, musik dari YouTube, serta audio dan video lokal dalam satu daftar putar.</figcaption>
+        </figure>
       </div>
     </article>
 
@@ -1106,7 +1114,7 @@
           </button>
           <figcaption lang="id" dir="ltr" class="nx-shot-caption">Pratinjau keluarga font dan pasang yang Anda pilih.</figcaption>
         </figure>
-        <figure>
+        <figure class="nx-health-wide">
           <button lang="id" class="nx-shot-button" type="button" aria-label="Perbesar: Pemeliharaan &amp; Penyesuaian Sistem, satu kartu untuk tiap pengaturan" aria-haspopup="dialog" aria-controls="pvl-viewer">
           <picture>
             <source type="image/webp" srcset="../assets/refresh/shot-system-tweaks.webp?v=20260917-0423">
@@ -1116,6 +1124,14 @@
         </button>
 
           <figcaption lang="id" dir="ltr" class="nx-shot-caption">Jelajahi penyesuaian macOS dan lihat setiap pengaturan yang tersimpan.</figcaption>
+        </figure>
+        <figure class="nx-health-wide" id="network-quality-screenshot">
+          <button lang="id" class="nx-shot-button" type="button" aria-label="Perbesar: Kualitas Jaringan" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="id" src="../assets/refresh/shot-network-quality.png?v=20260917-0423" width="1240" height="1272" loading="lazy" alt="Kualitas Jaringan">
+            </picture>
+          </button>
+          <figcaption lang="id" dir="ltr" class="nx-shot-caption">Kualitas Jaringan</figcaption>
         </figure>
       </div>
     </article>
