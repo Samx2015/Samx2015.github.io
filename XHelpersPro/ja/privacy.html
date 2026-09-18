@@ -34,7 +34,7 @@
     <link rel="alternate" hreflang="uk" href="https://xintechllc.com/XHelpersPro/uk/privacy.html">
     <link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XHelpersPro/privacy.html">
     <link rel="icon" href="../assets/app-icon.png" type="image/png">
-    <link rel="stylesheet" href="../styles.css?v=20260616-deskhelperpro-support">
+    <link rel="stylesheet" href="../styles.css?v=20260917-auxiliary">
     <script src="../script.js?v=20260609-dropdown2" defer></script>
   <script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
 <script>
@@ -112,7 +112,7 @@
         <section class="support-section" id="scope-controller">
           <h2>適用範囲とコントローラー</h2>
           <p>このポリシーでは、XHelpers Proがお客様のMac上でどのように情報を処理し、情報がいつXintech LLCまたはサービスプロバイダーに送信されるかを説明します。Xintech LLCは、ライセンス、サポートコミュニケーション、およびウェブサイトを通じて受信した情報のコントローラーです。</p>
-          <p>XHelpers Proは、ローカルツールの利用にアカウントを必要とせず、分析、広告、またはクラッシュレポートSDKを含まず、バックグラウンドでの利用状況データをXintech LLCに送信しません。XHelpersメンバーシップとサーバー利用権のために、任意のXinアカウントを提供しています。これについては後述の「任意のXinアカウントとサインイン」で説明します。ローカルツール、試用版、およびローカルのProアクティブ化は、サインアウトした状態でもオフラインでも動作します。Xintech LLCは、個人情報を販売したり、コンテキストを横断した行動ターゲティング広告に使用したりすることはありません。</p>
+          <p>XHelpers Proは、ローカルツールの利用にアカウントを必要とせず、分析、広告、クラッシュレポート用のSDKを含まず、バックグラウンドでの利用状況のテレメトリをXintech LLCに送信しません。XHelpersメンバーシップとサーバー利用権のために、任意のXinアカウントを提供しています。詳しくは、後述の「任意のXinアカウントとサインイン」をご覧ください。サインインせずにローカルツールや試用版を利用し、ライセンスをアクティベートできます。初回のライセンスのアクティベーションにはインターネット接続が必要で、アプリは保存済みのライセンスを定期的に検証します。詳しくは、後述の「ネットワークサービス」をご覧ください。Xintech LLCは、個人情報を販売したり、コンテキストを横断した行動ターゲティング広告に使用したりしません。</p>
         </section>
 
         <section class="support-section" id="local-data">
@@ -256,7 +256,7 @@
 
         <section class="support-section" id="xin-account">
           <h2>任意のXinアカウントとサインイン</h2>
-          <p>Xinアカウントは任意です。Xinアカウントは、XHelpers Proが他のXintech製品と共有するXintechのアカウントです。ローカルツール、試用版、およびローカルのProアクティブ化は、サインアウトした状態でもオフラインでも動作し、アカウントを必要とすることはありません。アカウント関連の機能はXHelpers Proのメニューの[アカウント]から開き、お客様が開始した場合にのみ実行されます。</p>
+          <p>Xinアカウントの利用は任意です。Xinアカウントは、XHelpers Proが他のXintech製品と共有するXintechのアカウントです。アカウントやサインインなしでローカルツールや試用版を利用し、ライセンスをアクティベートできます。初回のライセンスのアクティベーションにはインターネット接続が必要で、アプリは保存済みのライセンスを定期的に検証します。詳しくは、前述の「ネットワークサービス」をご覧ください。アカウント関連の機能は、XHelpers Proのメニューの「アカウント」から開き、お客様が開始した場合にのみ実行されます。</p>
           <p>サインインの方法として、XHelpers Proは4つの方法に対応しています。メールアドレスとパスワード、メールで送信されるサインインコード、Google、およびSign in with Appleです。パスワードによるサインアップの確認、パスワードの復旧、およびパスワードを使わないサインインコードは、それぞれ別のメールメッセージとして送信されます。</p>
           <p>Xintech LLCのIDプロバイダーであるSupabaseは、お客様が選択したメールアドレスまたはGoogleもしくはAppleのID、プロバイダー識別子、認証イベント、セッションデータ、およびIPアドレスや時刻などの通常のリクエストメタデータを処理します。XHelpers Proが、お客様のGoogleまたはAppleのパスワードを求めたり保存したりすることはありません。</p>
           <p>セッション、コールバック試行、PKCE、および範囲を限定した復旧の状態は、このMac上のKeychainアイテムにのみ保存され、iCloudや他のデバイスに同期されることはありません。パスワード、ワンタイムコード、およびOAuthトークンは、インターフェースにもログにも保持されません。GoogleとSign in with Appleは、いずれもシステムのブラウザで実行されます。XHelpers ProがそこでSupabaseの認可ページを開き、お客様はそのページでGoogleまたはAppleによる認証を行い、Supabaseは自社のコールバックでプロバイダーとのやり取りを完了し、XHelpers Proは自身のスキームで一度限り有効な認可コードのみを受け取ります。XHelpers Proが、Appleの認可コード、AppleのIDトークン、またはAppleのリフレッシュトークンを受け取ったり保存したりすることはありません。</p>
