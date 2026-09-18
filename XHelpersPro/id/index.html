@@ -179,10 +179,10 @@
     border-radius: 10px; box-shadow: 0 8px 22px rgba(21, 32, 51, 0.14); cursor: zoom-in;
   }
   .pvg-shots figure:only-child { grid-column: 1 / -1; }
-  .pvg-group.pvg-display { grid-template-columns: minmax(0, 0.42fr) minmax(0, 0.58fr); align-items: start; }
+  .pvg-group.pvg-display { grid-template-columns: 1fr; align-items: start; }
   .pvg-display .pvg-copy { gap: 10px; }
   .pvg-display .pvw-points { grid-template-columns: 1fr; gap: 14px; }
-  .nx-display-gallery { display: grid; gap: 14px; min-width: 0; width: 100%; max-width: 560px; margin-inline: auto; }
+  .nx-display-gallery { display: grid; gap: 24px; min-width: 0; width: 100%; margin-inline: auto; }
   .pvg-display .pvg-shots figure { min-width: 0; }
   .pvg-display .nx-display-overview { grid-template-columns: minmax(0, 1.62fr) minmax(0, 1fr); align-items: center; }
   /* Match the paired screenshots' heights without cropping their contents. */
@@ -191,9 +191,25 @@
   .pvg-input .pvg-shots figure { min-width: 0; }
   .pvg-input .nx-input-remapping { grid-column: 1 / -1; }
   .pvg-group.pvg-finder, .pvg-group.pvg-audio, .pvg-group.pvg-screen, .pvg-group.pvg-health { align-items: start; }
-  .pvg-audio .nx-audio-wide { grid-column: 1 / -1; }
   .pvg-screen .pvg-shots figure { min-width: 0; }
-  .pvg-health .pvg-shots .nx-health-wide { grid-column: 1 / -1; }
+  /* Put the featured screenshot beside the copy; supporting images use the
+     entire next row instead of making one column much taller than the other. */
+  .pvg-group.nx-featured { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+  .nx-featured .nx-feature-shot { grid-template-columns: 1fr; max-width: 600px; }
+  .nx-featured .nx-feature-shot img { max-height: 480px; }
+  .nx-featured .nx-related-shots { grid-column: 1 / -1; max-width: none; gap: 20px; }
+  .pvg-audio .nx-related-shots { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .pvg-health .nx-related-shots { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .nx-related-shots .nx-audio-mixer-menu { grid-column: 1 / -1; width: min(100%, 800px); margin-inline: auto; }
+  @media (min-width: 981px) {
+    .pvg-display .pvw-points { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 28px; }
+    .nx-display-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .nx-display-gallery .nx-window-details { grid-column: 1 / -1; }
+  }
+  @media (min-width: 1200px) {
+    .nx-display-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .nx-display-gallery .nx-window-details { grid-column: auto; }
+  }
   /* How to get it: one panel, the offer and its actions beside activation steps. */
   .nx-get-inner {
     width: min(100%, var(--wide-max)); margin-inline: auto; padding: 24px;
@@ -252,11 +268,12 @@
   .nx-numbers span { display: block; margin-top: 7px; color: var(--muted); font-size: 0.86rem; line-height: 1.3; }
 
   .pvg-group.nx-flip .pvg-copy { order: 2; }
-  /* Keep the AI overview's paired images at the same compact height. */
-  .pvg-group.nx-wide { grid-template-columns: 1fr; }
-  .nx-wide .pvw-points { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 28px; }
-  .nx-wide .pvg-shots { grid-template-columns: minmax(0, 1fr) minmax(0, 0.4475fr); max-width: 520px; }
-  .nx-wide .pvg-shots figure { min-width: 0; }
+  /* A larger AI gallery balances the copy while keeping both images at the
+     same natural scale. The full-size viewer remains available for detail. */
+  .pvg-group.pvg-ai { grid-template-columns: minmax(0, 0.4fr) minmax(0, 0.6fr); align-items: start; }
+  .pvg-ai .pvg-shots { grid-template-columns: minmax(0, 1fr) minmax(0, 0.4475fr); max-width: none; }
+  .pvg-ai .pvg-shots figure { min-width: 0; }
+  .pvg-ai .pvg-shots img { max-height: 420px; }
 
   /* App icons: the menu's own glyphs (SF Symbols with the app's tints), rendered
      to PNG by scripts/build_xhelperspro_site_icons.py from icons.json. An index
@@ -304,7 +321,7 @@
   /* The icon floats into the entry's left padding. Not absolutely positioned:
      Chromium's column balancing collapses to one column when an avoid-break
      item holds an absolutely positioned child. */
-  .nx-index-group li { margin: 0 0 8px; padding-left: 36px; min-height: 24px; font-size: 0.92rem; color: var(--ink); line-height: 1.4; break-inside: avoid; }
+  .nx-index-group li { margin: 0 0 8px; padding-left: 36px; min-height: 24px; font-size: 0.92rem; color: var(--ink); line-height: 1.4; break-inside: avoid; overflow-wrap: anywhere; }
   .nx-index-group li > .nx-ic { float: left; width: 28px; height: 24px; margin: -2px 0 0 -36px; }
   .nx-index-group li small { color: var(--muted); }
   .nx-index-group li.nx-index-sub { margin: 0 0 6px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
@@ -320,8 +337,10 @@
   @media (max-width: 980px) {
     .compact-hero .hero-content { grid-template-columns: 1fr; }
     .nx-get-inner { grid-template-columns: 1fr; }
-    .nx-wide .pvw-points { grid-template-columns: 1fr; }
-    .pvg-group, .pvg-group.pvg-display { grid-template-columns: 1fr; }
+    .pvg-group, .pvg-group.pvg-display, .pvg-group.pvg-ai, .pvg-group.nx-featured { grid-template-columns: 1fr; }
+    .pvg-ai .pvg-shots { max-width: 760px; }
+    .nx-featured .nx-related-shots { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .pvg-health .nx-related-shots figure:last-child { grid-column: 1 / -1; width: min(100%, 560px); margin-inline: auto; }
     .pvg-group.nx-flip .pvg-copy { order: 0; }
     .nx-numbers-inner { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .nx-index-grid { grid-template-columns: 1fr; }
@@ -329,6 +348,7 @@
   @media (max-width: 720px) {
     .pvg-display .pvw-points { grid-template-columns: 1fr; }
     .pvg-shots img { max-height: 240px; }
+    .pvg-ai .pvg-shots img, .nx-featured .nx-feature-shot img { max-height: 360px; }
   }
   @media (max-width: 560px) {
     .pvh-chips { grid-template-columns: 1fr; }
@@ -867,7 +887,7 @@
       </div>
     </article>
 
-    <article class="pvg-group pvg-ai nx-wide" id="ai-usage">
+    <article class="pvg-group pvg-ai" id="ai-usage">
       <div class="pvg-copy">
         <div class="pvg-head">
           <div class="pvw-icon" aria-hidden="true">
@@ -1005,7 +1025,7 @@
       </div>
     </article>
 
-    <article class="pvg-group pvg-audio nx-flip" id="audio-music-subtitles">
+    <article class="pvg-group pvg-audio nx-featured" id="audio-music-subtitles">
       <div class="pvg-copy">
         <div class="pvg-head">
           <div class="pvw-icon" aria-hidden="true">
@@ -1021,8 +1041,18 @@
           <li lang="id" dir="ltr" class="nx-iconed"><!-- icon-slot:audio_music_subtitles.ic-live-subtitles.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-live-subtitles.png?v=20260917-0423" width="19" height="18" alt=""><b lang="id" dir="ltr">Ikuti rapat, siaran, atau video dalam bahasa Anda</b>: Takarir Langsung mentranskripsikan dan menerjemahkan audio dari satu aplikasi di perangkat, dengan mode hanya takarir dan warna berbeda untuk tiap pembicara (macOS 26.4 atau lebih baru).</li>
         </ul>
       </div>
-      <div class="pvg-shots stack">
-        <figure class="nx-audio-mixer-menu nx-audio-wide">
+      <div class="pvg-shots nx-feature-shot">
+        <figure id="music-playlists-screenshot">
+          <button lang="id" class="nx-shot-button" type="button" aria-label="Perbesar: Musik &amp; Daftar Putar" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="id" src="../assets/refresh/shot-music-playlists.png?v=20260917-0423" width="2932" height="2432" loading="lazy" alt="Musik &amp; Daftar Putar">
+            </picture>
+          </button>
+          <figcaption lang="id" dir="ltr" class="nx-shot-caption">Gabungkan Apple Music, musik dari YouTube, serta audio dan video lokal dalam satu daftar putar.</figcaption>
+        </figure>
+      </div>
+      <div class="pvg-shots nx-related-shots">
+        <figure class="nx-audio-mixer-menu">
           <button lang="id" class="nx-shot-button" type="button" aria-label="Perbesar: Mixer Audio per aplikasi" aria-haspopup="dialog" aria-controls="pvl-viewer">
             <picture>
               <source type="image/webp" srcset="../assets/refresh/shot-audio-mixer-menu.webp?v=20260917-0423">
@@ -1067,18 +1097,10 @@
           </button>
           <figcaption lang="id" dir="ltr" class="nx-shot-caption">Putar video lokal, ambil bingkai, dan ekstrak audionya.</figcaption>
         </figure>
-        <figure class="nx-audio-wide" id="music-playlists-screenshot">
-          <button lang="id" class="nx-shot-button" type="button" aria-label="Perbesar: Musik &amp; Daftar Putar" aria-haspopup="dialog" aria-controls="pvl-viewer">
-            <picture>
-              <img lang="id" src="../assets/refresh/shot-music-playlists.png?v=20260917-0423" width="2932" height="2432" loading="lazy" alt="Musik &amp; Daftar Putar">
-            </picture>
-          </button>
-          <figcaption lang="id" dir="ltr" class="nx-shot-caption">Gabungkan Apple Music, musik dari YouTube, serta audio dan video lokal dalam satu daftar putar.</figcaption>
-        </figure>
       </div>
     </article>
 
-    <article class="pvg-group pvg-health nx-flip" id="mac-health-storage-apps">
+    <article class="pvg-group pvg-health nx-featured" id="mac-health-storage-apps">
       <div class="pvg-copy">
         <div class="pvg-head">
           <div class="pvw-icon" aria-hidden="true">
@@ -1095,7 +1117,17 @@
           <li lang="id" dir="ltr" class="nx-iconed"><!-- icon-slot:mac_health_storage_apps.ic-network-quality.1 --><img class="nx-ic-bullet" src="../assets/refresh/ic-network-quality.png?v=20260917-0423" width="17" height="18" alt=""><b lang="id" dir="ltr">Ketahui apakah masalahnya ada di Wi-Fi atau situs</b>: Kualitas Jaringan mengukur koneksi yang sedang digunakan, dan Alih Wi-Fi Otomatis beralih ke jaringan tersimpan dengan sinyal lebih kuat saat sinyal melemah.</li>
         </ul>
       </div>
-      <div class="pvg-shots stack">
+      <div class="pvg-shots nx-feature-shot">
+        <figure id="network-quality-screenshot">
+          <button lang="id" class="nx-shot-button" type="button" aria-label="Perbesar: Kualitas Jaringan" aria-haspopup="dialog" aria-controls="pvl-viewer">
+            <picture>
+              <img lang="id" src="../assets/refresh/shot-network-quality.png?v=20260917-0423" width="1240" height="1272" loading="lazy" alt="Kualitas Jaringan">
+            </picture>
+          </button>
+          <figcaption lang="id" dir="ltr" class="nx-shot-caption">Kualitas Jaringan</figcaption>
+        </figure>
+      </div>
+      <div class="pvg-shots nx-related-shots">
         <figure>
           <button lang="id" class="nx-shot-button" type="button" aria-label="Perbesar: Kesehatan Mac — Mengapa Mac Saya Lambat?" aria-haspopup="dialog" aria-controls="pvl-viewer">
             <picture>
@@ -1114,7 +1146,7 @@
           </button>
           <figcaption lang="id" dir="ltr" class="nx-shot-caption">Pratinjau keluarga font dan pasang yang Anda pilih.</figcaption>
         </figure>
-        <figure class="nx-health-wide">
+        <figure>
           <button lang="id" class="nx-shot-button" type="button" aria-label="Perbesar: Pemeliharaan &amp; Penyesuaian Sistem, satu kartu untuk tiap pengaturan" aria-haspopup="dialog" aria-controls="pvl-viewer">
           <picture>
             <source type="image/webp" srcset="../assets/refresh/shot-system-tweaks.webp?v=20260917-0423">
@@ -1124,14 +1156,6 @@
         </button>
 
           <figcaption lang="id" dir="ltr" class="nx-shot-caption">Jelajahi penyesuaian macOS dan lihat setiap pengaturan yang tersimpan.</figcaption>
-        </figure>
-        <figure class="nx-health-wide" id="network-quality-screenshot">
-          <button lang="id" class="nx-shot-button" type="button" aria-label="Perbesar: Kualitas Jaringan" aria-haspopup="dialog" aria-controls="pvl-viewer">
-            <picture>
-              <img lang="id" src="../assets/refresh/shot-network-quality.png?v=20260917-0423" width="1240" height="1272" loading="lazy" alt="Kualitas Jaringan">
-            </picture>
-          </button>
-          <figcaption lang="id" dir="ltr" class="nx-shot-caption">Kualitas Jaringan</figcaption>
         </figure>
       </div>
     </article>
