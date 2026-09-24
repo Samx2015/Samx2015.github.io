@@ -124,6 +124,10 @@
     .shots .shot { align-self: center; }
     .split { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(20px, 3vw, 40px); align-items: center; }
     .split .points { grid-template-columns: 1fr; }
+    .split.flip { grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); }
+    .flip > figure { order: -1; }
+    .shots .narrow img { max-width: 360px; margin-inline: auto; }
+    .shots.wide-first { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); }
     .play { --icon: #3f5bd9; }
     .order { --icon: #0f8f8a; }
     .sync { --icon: #7964e8; }
@@ -163,8 +167,9 @@
 
     @media (max-width: 880px) {
       .hero .wrap, .get, .split, .points { grid-template-columns: 1fr; }
-      .shots { grid-template-columns: 1fr; row-gap: 24px; }
+      .shots, .shots.wide-first { grid-template-columns: 1fr; row-gap: 24px; }
       .shots figure { display: block; grid-row: auto; }
+      .flip > figure { order: 0; }
     }
     @media (max-width: 560px) {
       .site-header .wrap { min-height: 68px; }
@@ -209,9 +214,9 @@
       </div>
       <figure>
         <button class="shot" type="button" aria-haspopup="dialog" aria-label="Enlarge screenshot: Library">
-          <img src="assets/screens/library.svg" width="1600" height="1000" alt="Placeholder for a screenshot of the Tonale library">
+          <img src="assets/screens/library.png" width="1600" height="1080" alt="The Tonale library window with the playlist Late Night Sessions, which holds songs from Local Audio and videos from Local Video">
         </button>
-        <figcaption>Every source in one sidebar, playing from one queue.</figcaption>
+        <figcaption>Songs and videos in one playlist, every source in the sidebar.</figcaption>
       </figure>
     </div>
   </section>
@@ -228,44 +233,38 @@
           <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="4"/><path d="m10 9.5 4.5 2.5-4.5 2.5Z"/></svg><b>YouTube.</b> Public videos and playlists in YouTube’s official player. No Google sign-in.</li>
           <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1.5 14h5M9.5 8h5M17.5 16h5"/></svg><b>Audio effects.</b> Bass, treble, width, punch and loudness compensation for your own files.</li>
         </ul>
-        <div class="shots">
+        <div class="shots wide-first">
           <figure>
-            <button class="shot" type="button" aria-haspopup="dialog" aria-label="Enlarge screenshot: YouTube player">
-              <img src="assets/screens/youtube.svg" width="1600" height="1000" loading="lazy" alt="Placeholder for a screenshot of a YouTube video playing in Tonale">
+            <button class="shot" type="button" aria-haspopup="dialog" aria-label="Enlarge screenshot: Video player">
+              <img src="assets/screens/video-player.png" width="1200" height="1056" loading="lazy" alt="Tonale's video player playing Ocean Morning, with the queue of sample videos below it">
             </button>
-            <figcaption>YouTube player</figcaption>
+            <figcaption>Video player and queue</figcaption>
           </figure>
-          <figure>
+          <figure class="narrow">
             <button class="shot" type="button" aria-haspopup="dialog" aria-label="Enlarge screenshot: Audio Effects">
-              <img src="assets/screens/audio-effects.svg" width="1100" height="800" loading="lazy" alt="Placeholder for a screenshot of the Audio Effects panel">
+              <img src="assets/screens/audio-effects.png" width="720" height="762" loading="lazy" alt="The Audio Effects window with the Full and Wide preset: bass, treble, width, punch and loudness compensation">
             </button>
             <figcaption>Audio Effects</figcaption>
           </figure>
         </div>
       </article>
 
-      <article class="card order">
-        <h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h12M3 11h12M3 16h8"/><path d="M19 16.5V6l3 1.5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg>Keep it all in order</h3>
-        <ul class="points">
-          <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/></svg><b>Mix every source</b> in one playlist, and play it as one queue.</li>
-          <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18l-7 8v6l-4 2v-8Z"/></svg><b>Saved filters</b> update themselves as your library changes.</li>
-          <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><b>Find Missing Files</b> reconnects moved files by their content, even renamed ones.</li>
-          <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg><b>Find Duplicates</b> merges items with the same content. Your files stay untouched.</li>
-        </ul>
-        <div class="shots">
-          <figure>
-            <button class="shot" type="button" aria-haspopup="dialog" aria-label="Enlarge screenshot: A playlist from three sources">
-              <img src="assets/screens/playlist.svg" width="1600" height="1000" loading="lazy" alt="Placeholder for a screenshot of a playlist that mixes files, Apple Music and YouTube">
-            </button>
-            <figcaption>A playlist from three sources</figcaption>
-          </figure>
-          <figure>
-            <button class="shot" type="button" aria-haspopup="dialog" aria-label="Enlarge screenshot: Find Missing Files">
-              <img src="assets/screens/find-missing.svg" width="1200" height="800" loading="lazy" alt="Placeholder for a screenshot of Find Missing Files">
-            </button>
-            <figcaption>Find Missing Files</figcaption>
-          </figure>
+      <article class="card order split flip">
+        <div>
+          <h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h12M3 11h12M3 16h8"/><path d="M19 16.5V6l3 1.5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg>Keep it all in order</h3>
+          <ul class="points">
+            <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/></svg><b>Mix every source</b> in one playlist, and play it as one queue.</li>
+            <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18l-7 8v6l-4 2v-8Z"/></svg><b>Saved filters</b> update themselves as your library changes.</li>
+            <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><b>Find Missing Files</b> reconnects moved files by their content, even renamed ones.</li>
+            <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg><b>Find Duplicates</b> merges items with the same content. Your files stay untouched.</li>
+          </ul>
         </div>
+        <figure>
+          <button class="shot" type="button" aria-haspopup="dialog" aria-label="Enlarge screenshot: Find Duplicates">
+            <img src="assets/screens/find-duplicates.png" width="1400" height="1008" loading="lazy" alt="Find Duplicates listing three pairs of videos with the same content, each with a Merge button">
+          </button>
+          <figcaption>Find Duplicates</figcaption>
+        </figure>
       </article>
 
       <article class="card sync split">
@@ -279,7 +278,7 @@
         </div>
         <figure>
           <button class="shot" type="button" aria-haspopup="dialog" aria-label="Enlarge screenshot: Account &amp; Sync">
-            <img src="assets/screens/account-sync.svg" width="1400" height="940" loading="lazy" alt="Placeholder for a screenshot of Account &amp; Sync settings">
+            <img src="assets/screens/account-sync.png" width="1400" height="1132" loading="lazy" alt="Account &amp; Sync settings with a signed-in Xin Account, its sign-in methods, and sync">
           </button>
           <figcaption>Account &amp; Sync</figcaption>
         </figure>
