@@ -1,44 +1,327 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tonale — music and playlists for macOS</title>
-  <meta name="description" content="Tonale brings your own audio and video files, your Apple Music library, and web videos into one library, one queue, and one window on macOS.">
+  <title>Tonale for Mac</title>
+  <meta name="description" content="The music and video files on your Mac, your Apple Music library and YouTube videos in one library and one queue, with playlists across all of them. macOS 14 or later.">
   <link rel="canonical" href="https://xintechllc.com/Tonale/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tonale">
+  <meta property="og:title" content="Tonale for Mac">
+  <meta property="og:description" content="The music and video files on your Mac, your Apple Music library and YouTube videos in one library and one queue, with playlists across all of them.">
+  <meta property="og:url" content="https://xintechllc.com/Tonale/">
+  <meta property="og:image" content="https://xintechllc.com/Tonale/assets/tonale-icon-256.png">
+  <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/png" href="assets/favicon.png">
-  <style>body{margin:0;font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1d1d1f;background:#fbfaf7}
-main{max-width:880px;margin:0 auto;padding:48px 24px}a{color:#0a66c2}
-.hero{display:flex;gap:32px;align-items:center;flex-wrap:wrap}.hero img{width:128px;height:128px}
-h1{font-size:44px;margin:0}.lede{font-size:21px;color:#444;margin:8px 0 20px}
-.button{display:inline-block;background:#1d1d1f;color:#fff;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:600}
-.note{font-size:14px;color:#666;margin-top:10px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin:40px 0}
-.card{background:#fff;border:1px solid #e6e3dc;border-radius:14px;padding:18px}.card h3{margin:0 0 6px;font-size:18px}
-footer{max-width:880px;margin:0 auto;padding:24px;font-size:14px;color:#666;display:flex;gap:18px;flex-wrap:wrap}
-pre{white-space:pre-wrap;font:15px/1.55 -apple-system,sans-serif}</style>
+  <style>
+    :root {
+      --ink: #182023;
+      --muted: #687477;
+      --paper: #fbfaf7;
+      --panel: #ffffff;
+      --panel-soft: #f4f6f5;
+      --line: #dfe6e4;
+      --brand: #2f45c0;
+      --accent: #3148c9;
+      --accent-dark: #283caf;
+      --coral: #f0643c;
+      --teal-dark: #075f5d;
+      --shadow: 0 18px 44px rgba(27, 38, 40, 0.1);
+      --gutter: clamp(1rem, 5vw, 5rem);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 100px; -webkit-text-size-adjust: 100%; }
+    html:has(.viewer[open]) { overflow: hidden; }
+    body {
+      margin: 0; background: var(--paper); color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-weight: 330;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; height: auto; }
+    figure { margin: 0; }
+    .wrap { width: min(76rem, 100% - 2 * var(--gutter)); margin-inline: auto; }
+    .skip { position: absolute; left: 16px; top: -64px; z-index: 20; padding: 12px 18px; border-radius: 8px; background: var(--teal-dark); color: #fff; }
+    .skip:focus { top: 12px; }
+    .i { flex: none; width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+    .site-header {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(251, 250, 247, 0.88); border-bottom: 1px solid rgba(223, 230, 228, 0.9);
+      -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px);
+    }
+    .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 18px; min-height: 84px; }
+    .brand { display: flex; align-items: center; gap: 0.8rem; color: var(--brand); font-size: 1.25rem; font-weight: 650; letter-spacing: -0.025em; text-decoration: none; }
+    .brand img { width: 64px; height: 64px; filter: drop-shadow(0 6px 12px rgba(24, 32, 35, 0.14)); }
+    .brand .platform { color: #14766f; font-weight: 550; }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; min-height: 44px; padding: 0 1.05rem;
+      border: 1px solid rgba(49, 72, 201, 0.2); border-radius: 8px; background: var(--accent); color: #fff;
+      box-shadow: 0 10px 22px rgba(49, 72, 201, 0.18); font-size: 0.9rem; font-weight: 400; text-decoration: none; white-space: nowrap;
+      transition: background-color 120ms ease;
+    }
+    .button:hover, .button:focus-visible { background: var(--accent-dark); }
+    .button-large { min-height: 48px; font-size: 1rem; }
+    .glyph {
+      width: 16px; height: 16px; border-radius: 50%;
+      background: radial-gradient(circle at 70% 25%, #fff 0 28%, transparent 30%), var(--coral);
+      box-shadow: inset -0.12rem 0 0 rgba(0, 0, 0, 0.18);
+    }
+
+    .hero { padding: clamp(1.5rem, 4vw, 3rem) 0 clamp(1.25rem, 3vw, 2.25rem); background: linear-gradient(180deg, #f6f4ef, var(--paper)); }
+    .hero .wrap { display: grid; grid-template-columns: minmax(300px, 0.62fr) minmax(0, 1.38fr); gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; }
+    h1 { margin: 0 0 1.1rem; font-size: clamp(2.2rem, 4vw, 3rem); font-weight: 600; line-height: 1.08; letter-spacing: -0.035em; }
+    .tagline { display: grid; gap: 5px; margin: 0; font-size: clamp(1.12rem, 1.6vw, 1.26rem); font-weight: 600; line-height: 1.35; letter-spacing: -0.02em; }
+    .tagline span:nth-child(1) { color: #315dc3; }
+    .tagline span:nth-child(2) { color: #14766f; }
+    .tagline span:nth-child(3) {
+      margin-top: 3px; color: #765090; font-family: ui-serif, Georgia, "Times New Roman", serif;
+      font-size: 1.2em; font-style: italic; font-weight: 500; letter-spacing: -0.025em;
+    }
+    .tagline em { text-decoration: underline 2px rgba(118, 80, 144, 0.3); text-underline-offset: 0.2em; }
+    .facts { max-width: 25rem; margin-top: 22px; padding-top: 15px; border-top: 1px solid #dce4e3; }
+    .facts p { display: flex; flex-wrap: wrap; gap: 7px 16px; margin: 0; color: #526968; font-size: 0.82rem; line-height: 1.7; }
+    .facts p span { display: inline-flex; align-items: center; gap: 7px; }
+    .facts .i { width: 15px; height: 15px; color: #327c79; }
+    .pill { display: inline-block; margin-top: 14px; padding: 5px 11px; border: 1px solid #d6e1f3; border-radius: 999px; background: #f0f5fd; color: #486081; font-size: 0.82rem; }
+    .pill b { color: #315991; font-weight: 650; }
+
+    .shot { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
+    .shot img { width: 100%; filter: drop-shadow(0 10px 22px rgba(21, 32, 51, 0.16)); }
+    .hero .shot img { filter: drop-shadow(0 22px 44px rgba(21, 32, 51, 0.22)); }
+    figcaption { margin-top: 12px; color: var(--muted); font-size: 0.82rem; line-height: 1.45; text-align: center; }
+
+    .section { padding: clamp(1.75rem, 4vw, 2.75rem) 0 0.5rem; }
+    .section h2 { margin: 0 0 1.25rem; font-size: clamp(1.6rem, 2.8vw, 1.9rem); font-weight: 500; letter-spacing: -0.01em; }
+    .card { padding: clamp(18px, 2.4vw, 28px); border: 1px solid var(--line); border-radius: 22px; background: var(--panel); box-shadow: var(--shadow); }
+    .card + .card { margin-top: 18px; }
+    .card h3 { display: flex; align-items: center; gap: 12px; margin: 0 0 18px; font-size: 1.28rem; font-weight: 500; line-height: 1.2; }
+    .card h3 .i { width: 28px; height: 28px; color: var(--icon); }
+    .points { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 28px; margin: 0; padding: 0; list-style: none; }
+    .points li { position: relative; padding-left: 36px; color: var(--muted); line-height: 1.52; }
+    .points .i { position: absolute; left: 0; top: 0.05em; color: var(--icon); }
+    .points b { color: var(--ink); font-weight: 600; }
+    .shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 clamp(16px, 2.5vw, 28px); margin-top: 28px; }
+    .shots figure { display: grid; grid-row: span 2; grid-template-rows: subgrid; }
+    .shots .shot { align-self: center; }
+    .split { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(20px, 3vw, 40px); align-items: center; }
+    .split .points { grid-template-columns: 1fr; }
+    .play { --icon: #3f5bd9; }
+    .order { --icon: #0f8f8a; }
+    .sync { --icon: #7964e8; }
+
+    .get { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: clamp(20px, 3vw, 40px); align-items: center; }
+    .kicker { margin-bottom: 6px; color: var(--teal-dark); font-size: 0.78rem; font-weight: 520; letter-spacing: 0.1em; text-transform: uppercase; }
+    .section .get h2 { margin: 0 0 8px; font-size: clamp(1.6rem, 2.8vw, 2.2rem); }
+    .get p { margin: 0 0 16px; color: var(--muted); line-height: 1.6; }
+    .get .meta { margin: 12px 0 0; font-size: 0.85rem; }
+    .steps { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+    .steps li { display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel-soft); color: var(--muted); font-size: 0.95rem; line-height: 1.5; }
+    .steps strong {
+      display: inline-grid; flex: none; place-items: center; width: 26px; height: 26px; margin-top: 1px; border-radius: 50%;
+      background: var(--step); box-shadow: 0 0 0 3px color-mix(in srgb, var(--step) 18%, transparent);
+      color: #fff; font-size: 0.88rem; font-weight: 700; line-height: 1;
+    }
+    .steps li:nth-child(1) { --step: #246bfe; }
+    .steps li:nth-child(2) { --step: #0f9f9a; }
+    .steps li:nth-child(3) { --step: #7964e8; }
+    .steps b { color: var(--ink); font-weight: 600; }
+    .steps a { color: inherit; }
+
+    .site-footer { margin-top: clamp(2rem, 4vw, 2.75rem); border-top: 1px solid var(--line); }
+    .site-footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 18px; padding: 18px 0 28px; color: var(--muted); font-size: 0.88rem; }
+    .site-footer nav { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+    .site-footer a { color: var(--teal-dark); text-decoration: none; }
+    .site-footer a:hover { text-decoration: underline; }
+
+    .viewer { width: 100%; height: 100%; max-width: 100%; max-height: 100%; margin: 0; padding: 0; border: 0; background: transparent; }
+    .viewer[open] { display: grid; place-items: center; }
+    .viewer::backdrop { background: rgba(8, 12, 14, 0.92); }
+    .viewer img { width: auto; height: auto; max-width: calc(100vw - 32px); max-height: calc(100dvh - 88px); }
+    .viewer button {
+      position: fixed; top: 12px; right: 12px; min-height: 40px; padding: 8px 14px;
+      border: 1px solid #71818a; border-radius: 8px; background: #24383f; color: #fff; font: inherit; font-size: 0.9rem; cursor: pointer;
+    }
+
+    @media (max-width: 880px) {
+      .hero .wrap, .get, .split, .points { grid-template-columns: 1fr; }
+      .shots { grid-template-columns: 1fr; row-gap: 24px; }
+      .shots figure { display: block; grid-row: auto; }
+    }
+    @media (max-width: 560px) {
+      .site-header .wrap { min-height: 68px; }
+      .brand img { width: 48px; height: 48px; }
+      .wide { display: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .button { transition: none; }
+    }
+  </style>
 </head>
 <body>
-<main>
-  <section class="hero">
-    <img src="assets/tonale-icon-256.png" alt="Tonale app icon" width="128" height="128">
-    <div>
-      <h1>Tonale</h1>
-      <p class="lede">Your music, playlists, and queues in one Mac app.</p>
-      <a class="button" href="https://github.com/Samx2015/Samx2015.github.io/releases/download/tonale-v0.1.0-1/Tonale-0.1.0-1.dmg">Download for Mac</a>
-      <p class="note">Version 0.1.0 · Requires macOS 14 or later · Signed and notarized by Apple · Updates itself when new versions are released.</p>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Tonale for Mac, top of page">
+      <img src="assets/tonale-icon-256.png" alt="" width="64" height="64">
+      <span>Tonale <span class="platform">for Mac</span></span>
+    </a>
+    <a class="button" href="https://github.com/Samx2015/Samx2015.github.io/releases/download/tonale-v0.1.0-1/Tonale-0.1.0-1.dmg">
+      <span class="glyph" aria-hidden="true"></span><span>Download<span class="wide"> for Mac</span></span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <h1 id="hero-title">All your music.<br>One library.</h1>
+        <p class="tagline">
+          <span>Your own files.</span>
+          <span>Apple Music and YouTube.</span>
+          <span>Played <em>your way.</em></span>
+        </p>
+        <div class="facts">
+          <p>
+            <span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 3v6c0 4-5 7-8 9-3-2-8-5-8-9V6l8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>Signed and notarized</span>
+            <span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>26 languages</span>
+          </p>
+          <span class="pill"><b>macOS 14</b> or later</span>
+        </div>
+      </div>
+      <figure>
+        <button class="shot" type="button" aria-haspopup="dialog" aria-label="Enlarge screenshot: Library">
+          <img src="assets/screens/library.svg" width="1600" height="1000" alt="Placeholder for a screenshot of the Tonale library">
+        </button>
+        <figcaption>Every source in one sidebar, playing from one queue.</figcaption>
+      </figure>
     </div>
   </section>
-  <section class="grid" aria-label="Features">
-    <article class="card"><h3>Your own files</h3><p>Add files or folders. Tonale plays the audio and video formats macOS supports and never copies, moves, or changes your files.</p></article>
-    <article class="card"><h3>Apple Music</h3><p>Play your Apple Music library next to your own files. Apple Music playback needs an active Apple Music subscription.</p></article>
-    <article class="card"><h3>Videos from the web</h3><p>Watch YouTube videos in the official embedded player and put them in the same playlists as everything else.</p></article>
-    <article class="card"><h3>One library, one queue</h3><p>Build playlists across all your sources. Sign in with a Xin Account to keep them on every Mac, or use Tonale as a guest.</p></article>
+
+  <section class="section" aria-labelledby="features-title">
+    <div class="wrap">
+      <h2 id="features-title">What you can do.</h2>
+
+      <article class="card play">
+        <h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m10 8.5 5 3.5-5 3.5Z"/></svg>Play everything</h3>
+        <ul class="points">
+          <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg><b>Files on your Mac.</b> Add a folder or drop files in. Tonale plays every audio and video format macOS supports, right where the files are.</li>
+          <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></svg><b>Apple Music.</b> Your library and playlists, next to your own files. Needs an Apple Music subscription.</li>
+          <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="4"/><path d="m10 9.5 4.5 2.5-4.5 2.5Z"/></svg><b>YouTube.</b> Public videos and playlists in YouTube’s official player. No Google sign-in.</li>
+          <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1.5 14h5M9.5 8h5M17.5 16h5"/></svg><b>Audio effects.</b> Bass, treble, width, punch and loudness compensation for your own files.</li>
+        </ul>
+        <div class="shots">
+          <figure>
+            <button class="shot" type="button" aria-haspopup="dialog" aria-label="Enlarge screenshot: YouTube player">
+              <img src="assets/screens/youtube.svg" width="1600" height="1000" loading="lazy" alt="Placeholder for a screenshot of a YouTube video playing in Tonale">
+            </button>
+            <figcaption>YouTube player</figcaption>
+          </figure>
+          <figure>
+            <button class="shot" type="button" aria-haspopup="dialog" aria-label="Enlarge screenshot: Audio Effects">
+              <img src="assets/screens/audio-effects.svg" width="1100" height="800" loading="lazy" alt="Placeholder for a screenshot of the Audio Effects panel">
+            </button>
+            <figcaption>Audio Effects</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="card order">
+        <h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h12M3 11h12M3 16h8"/><path d="M19 16.5V6l3 1.5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg>Keep it all in order</h3>
+        <ul class="points">
+          <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/></svg><b>Mix every source</b> in one playlist, and play it as one queue.</li>
+          <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18l-7 8v6l-4 2v-8Z"/></svg><b>Saved filters</b> update themselves as your library changes.</li>
+          <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><b>Find Missing Files</b> reconnects moved files by their content, even renamed ones.</li>
+          <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg><b>Find Duplicates</b> merges items with the same content. Your files stay untouched.</li>
+        </ul>
+        <div class="shots">
+          <figure>
+            <button class="shot" type="button" aria-haspopup="dialog" aria-label="Enlarge screenshot: A playlist from three sources">
+              <img src="assets/screens/playlist.svg" width="1600" height="1000" loading="lazy" alt="Placeholder for a screenshot of a playlist that mixes files, Apple Music and YouTube">
+            </button>
+            <figcaption>A playlist from three sources</figcaption>
+          </figure>
+          <figure>
+            <button class="shot" type="button" aria-haspopup="dialog" aria-label="Enlarge screenshot: Find Missing Files">
+              <img src="assets/screens/find-missing.svg" width="1200" height="800" loading="lazy" alt="Placeholder for a screenshot of Find Missing Files">
+            </button>
+            <figcaption>Find Missing Files</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="card sync split">
+        <div>
+          <h3><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8"/><path d="M4 4v4h4"/><path d="M4 13a8 8 0 0 0 14.3 4.9L20 16"/><path d="M20 20v-4h-4"/></svg>Your library on every Mac</h3>
+          <ul class="points">
+            <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><b>Sign in, or don’t.</b> Tonale works fully without an account. A Xin Account, with Apple, Google or email, keeps your Macs in sync.</li>
+            <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a5 5 0 1 1 1-9.9A6 6 0 0 1 19.5 10 4 4 0 0 1 18 18Z"/></svg><b>Only your lists sync.</b> Playlists and saved filters travel. Your files, file paths and passwords never do.</li>
+            <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 3v6c0 4-5 7-8 9-3-2-8-5-8-9V6l8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><b>No ads. No analytics.</b> Delete your data from inside the app at any time.</li>
+          </ul>
+        </div>
+        <figure>
+          <button class="shot" type="button" aria-haspopup="dialog" aria-label="Enlarge screenshot: Account &amp; Sync">
+            <img src="assets/screens/account-sync.svg" width="1400" height="940" loading="lazy" alt="Placeholder for a screenshot of Account &amp; Sync settings">
+          </button>
+          <figcaption>Account &amp; Sync</figcaption>
+        </figure>
+      </article>
+    </div>
   </section>
-  <section>
-    <h2>Installing</h2>
-    <p>Open the downloaded disk image and drag Tonale to Applications. Keep one copy of Tonale in Applications, and quit Tonale before you replace it. If you use XHelpers Pro, its Tonale menu opens the Tonale you installed.</p>
+
+  <section class="section" id="download" aria-labelledby="download-title">
+    <div class="wrap">
+      <div class="card get">
+        <div>
+          <div class="kicker">Download</div>
+          <h2 id="download-title">Get Tonale for Mac.</h2>
+          <p>Tonale updates itself, so this is the only download you need.</p>
+          <a class="button button-large" href="https://github.com/Samx2015/Samx2015.github.io/releases/download/tonale-v0.1.0-1/Tonale-0.1.0-1.dmg">
+            <span class="glyph" aria-hidden="true"></span>Download DMG
+          </a>
+          <p class="meta">Version 0.1.0 · 20 MB</p>
+        </div>
+        <ol class="steps">
+          <li><strong>1</strong><span><b>Open the DMG and drag Tonale to Applications.</b></span></li>
+          <li><strong>2</strong><span><b>Open Tonale</b> and add a folder, or allow access to Apple Music.</span></li>
+          <li><strong>3</strong><span><b>Using <a href="../XHelpersPro/">XHelpers Pro</a>?</b> Its Music &amp; Playlists menu opens this same Tonale.</span></li>
+        </ol>
+      </div>
+    </div>
   </section>
 </main>
-<footer><div>© 2026 Xintech LLC.</div><a href="eula.html">License Agreement</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></footer>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Xintech LLC · Tonale for Mac</span>
+    <nav aria-label="Footer">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="eula.html">License Agreement</a>
+    </nav>
+  </div>
+</footer>
+
+<dialog class="viewer" id="viewer" aria-label="Screenshot">
+  <button type="button">Close <span aria-hidden="true">×</span></button>
+  <img alt="">
+</dialog>
+
+<script>
+  (function () {
+    var viewer = document.getElementById("viewer");
+    var large = viewer.querySelector("img");
+    document.querySelectorAll(".shot").forEach(function (shot) {
+      shot.addEventListener("click", function () {
+        var img = shot.querySelector("img");
+        large.src = img.currentSrc || img.src;
+        large.alt = img.alt;
+        viewer.showModal();
+      });
+    });
+    viewer.addEventListener("click", function () { viewer.close(); });
+  })();
+</script>
 </body>
 </html>
