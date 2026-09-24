@@ -31,7 +31,7 @@ footer{max-width:880px;margin:0 auto;padding:24px;font-size:14px;color:#666;disp
   <p>Tonale keeps these things in its own folder on your Mac, <code>~/Library/Containers/com.xintechllc.tonale/</code>. They stay on your Mac unless a section below says otherwise:</p>
   <ul>
     <li>your playlists and saved filters, their names, and the order of their entries;</li>
-    <li>a reference to each item you add: for a file, its name, size, and modification date, and a security-scoped bookmark (a token from macOS that lets Tonale open the file again); for Apple Music, Apple's identifiers; for YouTube, the video identifier;</li>
+    <li>a reference to each item you add: for a file, its name, size, and modification date, a fingerprint of its contents, and a security-scoped bookmark (a token from macOS that lets Tonale open the file again); for Apple Music, Apple's identifiers; for YouTube, the video identifier. The fingerprint is a short one-way code made from parts of the file's sound or picture data. Tonale uses it to recognize a file that was moved or renamed, and the file cannot be recovered from it;</li>
     <li>the title, artist, album, and duration shown for each item;</li>
     <li>public YouTube details: title, channel, duration, thumbnail address, availability, whether the video can be embedded, and whether it is made for kids. Tonale clears these details after 30 days and gets them again when it needs them;</li>
     <li>your settings, such as playback options and window sizes;</li>
@@ -48,7 +48,7 @@ footer{max-width:880px;margin:0 auto;padding:24px;font-size:14px;color:#666;disp
     <li>Tonale opens only the files and folders that you choose in a macOS open panel or drag into the app. It does not look through your disk.</li>
     <li>Tonale does not change, move, or delete your media files.</li>
     <li>If a file moves or macOS no longer lets Tonale open it, Tonale shows the item as "Unavailable" and asks you to locate it. It does not search for the file.</li>
-    <li><strong>Tonale never uploads the contents of your files and never sends their paths.</strong> If you use sync, a file is described only by its name, size, and modification date, and the title, artist, album, and duration shown in the app.</li>
+    <li><strong>Tonale never uploads the contents of your files and never sends their paths.</strong> If you use sync, a file is described only by its name, size, modification date, and fingerprint, and the title, artist, album, and duration shown in the app.</li>
   </ul>
 
   <h2 id="apple-music">Apple Music</h2>
@@ -102,7 +102,7 @@ footer{max-width:880px;margin:0 auto;padding:24px;font-size:14px;color:#666;disp
   <ul>
     <li>playlists you made, their names, and the order of their entries;</li>
     <li>saved filters you made, their names, and their rules;</li>
-    <li>a reference to each item in them: for a file, its name, size, and modification date; for Apple Music, the ISRC and catalog identifier; for YouTube, the video identifier; and the title, artist, album, and duration shown in the app.</li>
+    <li>a reference to each item in them: for a file, its name, size, modification date, and fingerprint, so your other Macs can find the same file; for Apple Music, the ISRC and catalog identifier; for YouTube, the video identifier; and the title, artist, album, and duration shown in the app.</li>
   </ul>
   <h3>What never syncs</h3>
   <ul>
