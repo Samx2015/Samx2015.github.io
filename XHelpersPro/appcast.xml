@@ -3,57 +3,55 @@
     <channel>
         <title>XHelpers Pro</title>
         <item>
-            <title>1.0.11</title>
-            <pubDate>Wed, 23 Sep 2026 00:26:19 -0700</pubDate>
+            <title>1.0.12</title>
+            <pubDate>Thu, 24 Sep 2026 08:52:03 -0700</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>23</sparkle:version>
-            <sparkle:shortVersionString>1.0.11</sparkle:shortVersionString>
+            <sparkle:version>24</sparkle:version>
+            <sparkle:shortVersionString>1.0.12</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-# XHelpers Pro 1.0.11 (23)
+# XHelpers Pro 1.0.12 (24)
 
-- Music & Playlists is now the standalone Tonale app. The Music & Playlists
-  entry in XHelpers Pro opens Tonale. If Tonale is not installed, XHelpers Pro
-  can download it through Xintech's Tonale update feed, verify its update
-  signature and Developer ID signature, and install it for you.
-- Window Outline (formerly Active Window Highlight): give each window its own
-  outline color with Window Outline Colors, available in the Window Outline
-  settings and by keyboard shortcut. The settings now group border and glow
-  options in one form with a live preview, and accept typed values.
-- Keep Mac Awake: the menu row shows the active mode at a glance, including a
-  timer's end time and whether the display is also kept awake. The submenu
-  stays open while you change modes.
-- Pointer, scroll, remapping, Window Outline, and Audio Mixer settings show
-  clearly when the feature is turned off.
-- Keep the Permissions dialog at a stable size and let descriptions use the
-  full row width.
-- AI Usage: choose which accounts the hover card lists and in what order, tint
-  each account by provider, color quota bars by what is left, and show reset
-  times more clearly. AI Usage now recovers from refused collections without a
-  restart, keeps Claude credentials readable after the Claude CLI rotates them,
-  offers a working repair when credential access must be allowed, and names
-  the Claude Code version it found and the version it needs when sign-in
-  refuses an older one.
-- Audio Player: add a three-way pin, a more compact queue, and an optional
-  magnet that docks the player to screen edges and corners. Maximizing no
-  longer pauses playback, long titles no longer resize the player, and the
-  YouTube playback notice can be turned off.
-- Mixer: show short sounds from players without an app bundle, such as Claude
-  Code's chime, with the launching app's icon.
-- Review and remove all detected free-edition copies together in one clearer
-  cleanup window.
-- Fix the Snap & Arrange Windows submenu jumping while open, and two image
-  capture shortcuts that could trigger the wrong action. Window recall
-  diagnostics are now hidden by default.
+- License window: every button, field, status line, and card border is
+  readable in light and dark mode and in every license state. Activate lights
+  up as soon as a key is typed, the window shows when a promotion ends, and
+  Buy License follows the website's current promotion.
+- Status menu: the Account row's icon shows whether you are signed in, signed
+  out, or need attention. Music & Playlists is labelled "Music & Playlists
+  (Tonale)…" and shows Tonale's own icon in the menu row and the install
+  panel, which gained an icon tile, tinted callouts, and a filled primary
+  button.
+- Keep Mac Awake resumes after a restart.
+- AI Usage: the hover card says each fact once, shows bare percentages, puts
+  the plan badge beside the pill with green reset counts, uses one date shape
+  with aligned countdown and percent columns, and keeps each account's height
+  steady while it refreshes. The menu-bar mark can be icon-only. The window
+  pins limit resets above each card's actions, keeps its toolbar on one row in
+  longer languages, names accounts in the app's language, and shows Claude's
+  saved reset grants and weekly session-limit reset as well as Grok's
+  limit-reset credits. The bundled collector is updated to CodexBar 0.65.1.
+- Browser sign-in for XHelpers Pro returns through its page on xintechllc.com.
+- Shortcuts: default shortcut keys come from the localized System Settings
+  tables, and the conflict warning names the macOS shortcut a key collides
+  with and detects global shortcuts already taken by other apps.
+- System Tweaks: a card that turns off press-and-hold accents, and the
+  shortest key-repeat delay macOS accepts.
+- Audio Player: the speaker sits beside More with the transport centred, the
+  queue fits its rows, the output device is chosen beside the volume, the
+  effects window opens beside the player, Queue information is back, and the
+  More menu is tidier. In-house effects load in a sandbox, and a failed audio
+  unit no longer crashes the player.
+- Video player: matches the Audio Player's look and opens its Open panel as a
+  sheet on its window.
+- Text Editor preserves rich clipboard content.
 - Translate the new interface text across all 25 supported translation
-  languages.
+  languages, including the Window Outline rename and corrected Audio Effects
+  terms.
 
-Xin account features remain disabled in this release. Tonale is a separate app
-with its own library and settings; it starts fresh and does not import music
-data from earlier versions of XHelpers Pro.
+Xin account features remain disabled in this release.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.11/XHelpersPro-1.0.11-23-macOS.dmg" length="133458093" type="application/octet-stream" sparkle:edSignature="QN51X+OE+j/u9J3pELSTsRi9hzf5psZRlvYu7pQxW+Lb2Hhqxu3RlbaonYfNYqZ3Y+lHPk6vy4YemAJpySQfCw=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.12/XHelpersPro-1.0.12-24-macOS.dmg" length="134702793" type="application/octet-stream" sparkle:edSignature="tIW8NG+QLYxTHKK9cwklYcydJB0NMmHMddz5nrBF0B83RXkN10I/Y+J6hAl9qiH21LOuukftzvyilbItgGTuDw=="/>
         </item>
     </channel>
 </rss>
