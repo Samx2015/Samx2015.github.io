@@ -36,7 +36,8 @@ footer{max-width:880px;margin:0 auto;padding:24px;font-size:14px;color:#666;disp
     <li>public YouTube details: title, channel, duration, thumbnail address, availability, whether the video can be embedded, and whether it is made for kids. Tonale clears these details after 30 days and gets them again when it needs them;</li>
     <li>your settings, such as playback options and window sizes;</li>
     <li>a copy of the library database made once a day, before the first change of the day. Tonale keeps the newest three copies. If you restore a copy, Tonale also keeps the library it replaced;</li>
-    <li>if you sign in, your session, in the macOS Keychain on this Mac. It is shared only with other Xin apps on this Mac and does not sync to iCloud.</li>
+    <li>up to ten email addresses you signed in with on this Mac, so the sign-in form can offer them again;</li>
+    <li>if you sign in, your session, in the macOS Keychain on this Mac. It is shared only with Xin apps on this Mac that share sign-in, such as XHelpers Pro, and does not sync to iCloud.</li>
   </ul>
   <p>If you sign in, Tonale keeps a separate library for your account next to the library you use while signed out.</p>
   <p>This data stays until you delete it in Tonale or delete Tonale's folder above. Moving Tonale to the Trash does not delete it.</p>
@@ -89,7 +90,7 @@ footer{max-width:880px;margin:0 auto;padding:24px;font-size:14px;color:#666;disp
     <li>Supabase is Xintech LLC's sign-in provider. It processes the email address or the Apple or Google identity that you sign in with, sign-in events, session data, and ordinary request information such as IP address and time. If you sign in with an email address, Supabase also processes your password or the codes it emails to you. Sign-in codes, account confirmations, and password-reset messages are sent through Xintech LLC's email provider.</li>
     <li>With Sign in with Apple, macOS shows Apple's sign-in sheet, and Tonale asks Apple only for your email address. Xintech LLC's account service keeps Apple's refresh token, encrypted, so that it can end Tonale's Sign in with Apple access if you delete your Xin Account.</li>
     <li>With Google, Tonale opens Google's sign-in page in a secure browser window that macOS provides. After you sign in, a page on xintechllc.com gives the result back to Tonale. Tonale never sees your Google or Apple password.</li>
-    <li>When you sign in once on a Mac, your other Xin apps on that Mac can use the same sign-in. When you sign out of Tonale, your other Xin apps on this Mac are signed out too.</li>
+    <li>When you sign in once on a Mac, Xin apps that share sign-in, such as XHelpers Pro, can use the same sign-in on that Mac. When you sign out of Tonale, those apps are signed out on this Mac too.</li>
     <li>Xintech LLC's account service runs on Microsoft Azure. It stores your account record with your email address; your Tonale membership and an identifier used only for Tonale; the identifier of your sign-in identity at Supabase; and a record of the Mac-wide sign-ins you use, with a random identifier for each Tonale installation. It does not store your name, and it does not use a hardware or device identifier.</li>
     <li>If you use Sign in with Apple with Hide My Email, Apple gives Xintech LLC a private relay address instead of your own.</li>
     <li>Signing out ends the session on this Mac. It deletes nothing on the server. Your synced library stays on this Mac, hidden, until you sign in to the same account again.</li>
