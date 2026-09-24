@@ -14,6 +14,24 @@
   <meta property="og:image" content="https://xintechllc.com/Tonale/assets/tonale-icon-256.png">
   <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/png" href="assets/favicon.png">
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+  <script>
+    window.addEventListener("click", function (event) {
+      var link = event.target.closest && event.target.closest("a[href]");
+      if (!link || !window.umami) return;
+      var href = link.getAttribute("href") || "";
+      var url = link.href || href;
+      var eventName = null;
+      if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+      else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+      else if (/support\.html/i.test(href)) eventName = "Support Click";
+      else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+      else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+      if (eventName) {
+        window.umami.track(eventName, { href: url, path: window.location.pathname });
+      }
+    });
+  </script>
   <style>
     :root {
       --ink: #182023;
@@ -185,7 +203,6 @@
         <div class="facts">
           <p>
             <span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 3v6c0 4-5 7-8 9-3-2-8-5-8-9V6l8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>Signed and notarized</span>
-            <span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>26 languages</span>
           </p>
           <span class="pill"><b>macOS 14</b> or later</span>
         </div>
@@ -257,7 +274,7 @@
           <ul class="points">
             <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><b>Sign in, or don’t.</b> Tonale works fully without an account. A Xin Account, with Apple, Google or email, keeps your Macs in sync.</li>
             <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a5 5 0 1 1 1-9.9A6 6 0 0 1 19.5 10 4 4 0 0 1 18 18Z"/></svg><b>Only your lists sync.</b> Playlists and saved filters travel. Your files, file paths and passwords never do.</li>
-            <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 3v6c0 4-5 7-8 9-3-2-8-5-8-9V6l8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><b>No ads. No analytics.</b> Delete your data from inside the app at any time.</li>
+            <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 3v6c0 4-5 7-8 9-3-2-8-5-8-9V6l8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><b>No ads or analytics in Tonale.</b> Delete your data from inside the app at any time.</li>
           </ul>
         </div>
         <figure>
