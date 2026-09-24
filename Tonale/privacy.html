@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tonale Privacy Policy</title>
+  <meta name="description" content="How Tonale for Mac handles your files, your library, Apple Music, YouTube, the optional Xin Account, sync, updates, and deletion.">
+  <link rel="canonical" href="https://xintechllc.com/Tonale/privacy.html">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <style>body{margin:0;font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1d1d1f;background:#fbfaf7}
+main{max-width:880px;margin:0 auto;padding:48px 24px}a{color:#0a66c2}
+h1{font-size:40px;line-height:1.15;margin:0}h2{font-size:24px;margin:40px 0 10px}h3{font-size:18px;margin:24px 0 6px}
+.note{font-size:15px;color:#666;margin:8px 0 28px}ul{padding-left:22px}li{margin:6px 0}code{font:15px ui-monospace,SFMono-Regular,Menlo,monospace;overflow-wrap:anywhere}
+.table{overflow-x:auto;margin:14px 0}table{border-collapse:collapse;width:100%;min-width:560px;font-size:15px}
+th,td{border:1px solid #e6e3dc;padding:9px 11px;text-align:left;vertical-align:top}th{background:#f3f1ec}
+footer{max-width:880px;margin:0 auto;padding:24px;font-size:14px;color:#666;display:flex;gap:18px;flex-wrap:wrap}</style>
+</head>
+<body>
+<main>
+  <p><a href="./">← Tonale</a></p>
+  <h1>Tonale Privacy Policy</h1>
+  <p class="note">Effective date: 2026-09-24 · Web copy: <a href="https://xintechllc.com/Tonale/privacy.html">https://xintechllc.com/Tonale/privacy.html</a></p>
+
+  <h2 id="scope">Scope and Controller</h2>
+  <p>This policy explains how Tonale handles information on your Mac, and when information goes to Xintech LLC or to another company. Xintech LLC is the controller of the information it receives.</p>
+  <p>Tonale is a music and playlist app for macOS 14 and later. It runs in Apple's App Sandbox, so it can open only the files and folders you give it.</p>
+  <p>You can use Tonale without an account. Your own files, your playlists, Apple Music, and YouTube videos all work while you are signed out. An account is needed only to keep your library the same on more than one Mac.</p>
+  <p>Tonale has no advertising, no analytics SDK, and no crash-reporting SDK, and it sends no background usage data to Xintech LLC. Xintech LLC does not sell personal information and does not use it for cross-context behavioral advertising.</p>
+
+  <h2 id="on-your-mac">What Tonale Keeps on Your Mac</h2>
+  <p>Tonale keeps these things in its own folder on your Mac, <code>~/Library/Containers/com.xintechllc.tonale/</code>. They stay on your Mac unless a section below says otherwise:</p>
+  <ul>
+    <li>your playlists and saved filters, their names, and the order of their entries;</li>
+    <li>a reference to each item you add: for a file, its name, size, and modification date, and a security-scoped bookmark (a token from macOS that lets Tonale open the file again); for Apple Music, Apple's identifiers; for YouTube, the video identifier;</li>
+    <li>the title, artist, album, and duration shown for each item;</li>
+    <li>public YouTube details: title, channel, duration, thumbnail address, availability, whether the video can be embedded, and whether it is made for kids. Tonale clears these details after 30 days and gets them again when it needs them;</li>
+    <li>your settings, such as playback options and window sizes;</li>
+    <li>a copy of the library database made once a day, before the first change of the day. Tonale keeps the newest three copies. If you restore a copy, Tonale also keeps the library it replaced;</li>
+    <li>if you sign in, your session, in the macOS Keychain on this Mac. It is shared only with other Xin apps on this Mac and does not sync to iCloud.</li>
+  </ul>
+  <p>If you sign in, Tonale keeps a separate library for your account next to the library you use while signed out.</p>
+  <p>This data stays until you delete it in Tonale or delete Tonale's folder above. Moving Tonale to the Trash does not delete it.</p>
+  <p>Tonale writes status messages to Apple's unified log on your Mac. They are meant to leave out your titles, file paths, tokens, and email address. Tonale has no log file of its own and does not send logs to Xintech LLC. macOS controls how long the unified log keeps messages.</p>
+
+  <h2 id="files">Your Files</h2>
+  <ul>
+    <li>Tonale opens only the files and folders that you choose in a macOS open panel or drag into the app. It does not look through your disk.</li>
+    <li>Tonale does not change, move, or delete your media files.</li>
+    <li>If a file moves or macOS no longer lets Tonale open it, Tonale shows the item as "Unavailable" and asks you to locate it. It does not search for the file.</li>
+    <li><strong>Tonale never uploads the contents of your files and never sends their paths.</strong> If you use sync, a file is described only by its name, size, and modification date, and the title, artist, album, and duration shown in the app.</li>
+  </ul>
+
+  <h2 id="apple-music">Apple Music</h2>
+  <ul>
+    <li>The first time you use Apple Music in Tonale, macOS asks for permission to use your media library. You can say no; the rest of Tonale still works. You can change this later in System Settings › Privacy &amp; Security › Media &amp; Apple Music.</li>
+    <li>Playing Apple Music content needs your own Apple Music subscription. Xintech LLC does not sell or bill for Apple Music.</li>
+    <li>Tonale uses Apple's MusicKit. Your requests go to Apple under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>. Xintech LLC does not receive your Apple Music account, your listening history, or your subscription status.</li>
+    <li>Tonale can also read unprotected music files in your Music library, with the read-only permission macOS gives it for music files.</li>
+  </ul>
+
+  <h2 id="youtube">YouTube</h2>
+  <p>Tonale plays YouTube videos in YouTube's official embedded player, in a visible window.</p>
+  <ul>
+    <li>The video pauses when the player is hidden, minimized, mostly covered, or moved off the screen, and when the display sleeps. Tonale does not play YouTube audio in the background.</li>
+    <li>Tonale does not download videos, save their audio, or block ads.</li>
+    <li>Playing a video connects your Mac directly to YouTube and Google. The <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> apply to that connection. Tonale does not keep YouTube's cookies or website data after you quit.</li>
+    <li>Thumbnails load directly from the addresses YouTube provides.</li>
+    <li>You cannot connect a YouTube or Google account in this version of Tonale.</li>
+  </ul>
+  <h3>Public YouTube details</h3>
+  <p>To show titles, durations, and the contents of public playlists, Tonale asks a service run by Xintech LLC at <code>dataol.net</code>. That service gets the details from Google with its own key. Tonale asks for your permission before it uses this service the first time.</p>
+  <ul>
+    <li>The request contains only the video or playlist identifiers you asked for, and a page token for long playlists. It carries no account, token, or cookie; the service refuses requests that have them.</li>
+    <li>The service stores nothing from these requests: no log record, no copy of the answer, and no record of your IP address. To limit request rates, it keeps a scrambled form of your IP address in memory for one minute.</li>
+    <li>Microsoft Azure hosts the service and may process connection information under its own terms.</li>
+  </ul>
+  <h3>Playing YouTube in Chrome (edition from this website)</h3>
+  <p>The Tonale you download from this website can also play YouTube items from its queue in a small Google Chrome window, through a Chrome extension. This is off until you set it up:</p>
+  <ul>
+    <li>When you choose to set it up, you pick Chrome's native messaging folder, and Tonale writes one file there, <code>com.xintechllc.tonale.browser.json</code>, that lets Chrome start Tonale's helper. While Tonale can reach that folder, it writes the file again each time its library window opens.</li>
+    <li>The extension works only on the YouTube window it opens for Tonale. It reads that player's state (playing or paused, time, duration, volume, and whether an ad is showing) and sends it to Tonale on your Mac. It does not read other tabs, page text, your cookies, or your history.</li>
+    <li>Nothing from the extension goes to Xintech LLC. The Chrome window uses your normal Chrome profile, so YouTube and Google see your usual Chrome cookies and sign-in.</li>
+    <li>To stop, remove the extension in Chrome. You can also delete the file above from <code>~/Library/Application Support/Google/Chrome/NativeMessagingHosts/</code>.</li>
+  </ul>
+
+  <h2 id="xin-account">Optional Xin Account and Sign-In</h2>
+  <p>A Xin Account is the account that Xintech LLC's apps share. In Tonale it has one purpose: to keep your library the same on your Macs. Tonale works fully without it.</p>
+  <ul>
+    <li>Supabase is Xintech LLC's sign-in provider. It processes the email address or the Apple or Google identity that you sign in with, sign-in events, session data, and ordinary request information such as IP address and time. If you sign in with an email address, Supabase also processes your password or the codes it emails to you.</li>
+    <li>With Sign in with Apple, macOS shows Apple's sign-in sheet, and Tonale asks Apple only for your email address. Xintech LLC's account service keeps Apple's refresh token, encrypted, so that it can end Tonale's Sign in with Apple access if you delete your Xin Account.</li>
+    <li>With Google, Tonale opens Google's sign-in page in a secure browser window that macOS provides. After you sign in, a page on xintechllc.com gives the result back to Tonale. Tonale never sees your Google or Apple password.</li>
+    <li>When you sign in once on a Mac, your other Xin apps on that Mac can use the same sign-in. When you sign out of Tonale, your other Xin apps on this Mac are signed out too.</li>
+    <li>Xintech LLC's account service runs on Microsoft Azure. It stores your account record with your email address; your Tonale membership and an identifier used only for Tonale; the identifier of your sign-in identity at Supabase; and a record of the Mac-wide sign-ins you use, with a random identifier for each Tonale installation. It does not store your name, and it does not use a hardware or device identifier.</li>
+    <li>If you use Sign in with Apple with Hide My Email, Apple gives Xintech LLC a private relay address instead of your own.</li>
+    <li>Signing out ends the session on this Mac. It deletes nothing on the server. Your synced library stays on this Mac, hidden, until you sign in to the same account again.</li>
+  </ul>
+
+  <h2 id="sync">Syncing Your Library</h2>
+  <p>While you are signed in, Tonale keeps your library in step with your account. It sends the things you made, and nothing else.</p>
+  <h3>What syncs</h3>
+  <ul>
+    <li>playlists you made, their names, and the order of their entries;</li>
+    <li>saved filters you made, their names, and their rules;</li>
+    <li>a reference to each item in them: for a file, its name, size, and modification date; for Apple Music, the ISRC and catalog identifier; for YouTube, the video identifier; and the title, artist, album, and duration shown in the app.</li>
+  </ul>
+  <h3>What never syncs</h3>
+  <ul>
+    <li>the contents of any file;</li>
+    <li>file paths, folder paths, or security-scoped bookmarks;</li>
+    <li>passwords, tokens, or other credentials;</li>
+    <li>the name of your Mac or any device or advertising identifier;</li>
+    <li>the lists Tonale builds for you from a source, such as your Apple Music library or your local files. Each Mac builds these from its own access;</li>
+    <li>your settings. No settings sync in this version.</li>
+  </ul>
+  <p>While you are signed in, the library you used while signed out appears under "On This Mac". It is read-only there and does not sync. Only what you copy with "Copy to Synced Library" goes into your synced library.</p>
+  <p>Tonale syncs when it starts, shortly after you make a change, and every few minutes. Each request carries your session, the product name, the platform, and Tonale's version and build. Xintech LLC stores your synced library in Microsoft Azure Table storage. Because file paths never leave your Mac, a playlist that reaches a second Mac shows its files as "Unavailable" until you locate them there.</p>
+
+  <h2 id="xhelpers-pro">Importing from XHelpers Pro</h2>
+  <p>If you also use XHelpers Pro, it can save its queue as a Tonale playlist. Pro writes a small import file in its own Application Support folder and asks macOS to open it, together with the media files, in Tonale.</p>
+  <ul>
+    <li>The file contains a request identifier, the time, Pro's app identifier and name, the playlist name, and the list of <code>file://</code> addresses in order.</li>
+    <li>It stays on your Mac. Nothing in it goes to Xintech LLC.</li>
+    <li>Pro deletes import files that are older than 24 hours when it writes a new one. Tonale remembers the identifiers of the last 200 imports so it does not import one twice.</li>
+  </ul>
+
+  <h2 id="updates">Updates</h2>
+  <p>The Tonale you download from this website uses Sparkle to update itself. Sparkle checks the update feed at <code>https://xintechllc.com/Tonale/appcast.xml</code> when you choose Check for Updates, and automatically if you allow it. It downloads updates you accept from GitHub. These requests include your IP address, the time, and a user agent with the Tonale and Sparkle versions. Tonale does not turn on Sparkle's optional system-profile report. GitHub hosts the feed and the downloads and processes these requests under its own terms.</p>
+
+  <h2 id="retention">Retention</h2>
+  <div class="table">
+  <table>
+    <thead><tr><th>Data</th><th>How long it is kept</th></tr></thead>
+    <tbody>
+      <tr><td>Your media files</td><td>Never uploaded or copied off your Mac.</td></tr>
+      <tr><td>Library, bookmarks, settings, and library copies on your Mac</td><td>Until you delete them. Tonale keeps the newest three daily copies of the library.</td></tr>
+      <tr><td>Public YouTube requests</td><td>Nothing is stored. A scrambled form of your IP address stays in memory for one minute to limit request rates.</td></tr>
+      <tr><td>Your synced library</td><td>Until you delete your Tonale data or your Xin Account. The record of individual changes is removed after about 90 days, and sync receipts after about 30 days. Markers that record a deleted item stay until your Tonale data is deleted.</td></tr>
+      <tr><td>Request records for account and sync requests</td><td>For each request, the service records the request path, result, and time; your IP address and the approximate location that comes from it; the user agent; and Tonale's platform, version, and build. Xintech LLC uses these records to run the service and to prevent abuse. They are kept with no fixed end date and are not deleted when you delete your account.</td></tr>
+      <tr><td>Sign-in identity and sessions</td><td>Kept by Supabase while the identity exists. Supabase keeps its own sign-in logs under its policy.</td></tr>
+      <tr><td>Deletion records</td><td>After a deletion, the account service keeps a small record with no fixed end date: that the deletion happened, when, internal identifiers, and the identifier of the deleted sign-in identity. It has no email address, name, or library content. It makes sure a deletion is not run twice and a deleted account does not come back.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2 id="deletion">Deleting Your Data</h2>
+  <p>In Tonale, open Settings › Account &amp; Sync and use the Account deletion menu. Each choice asks you to type DELETE and to sign in again, and each is permanent. An interrupted deletion continues when you come back to it.</p>
+  <ul>
+    <li><strong>Delete Tonale Data…</strong> deletes your synced library and Tonale membership on the server, and your account's library on this Mac, and signs you out. Your Xin Account and your other Xin apps stay.</li>
+    <li><strong>Delete Xin Account…</strong> (when it is offered) also deletes your Xin Account and its data in your other Xin apps, clears your email address from the account service, deletes your sign-in identity at Supabase, and ends Tonale's Sign in with Apple access.</li>
+    <li><strong>Delete Unfinished Xin Signup…</strong> is for when you signed in but did not finish creating a Xin Account.</li>
+  </ul>
+  <p>Deleting does not delete your media files or the library you use while signed out on this Mac.</p>
+
+  <h2 id="children">Children</h2>
+  <p>Tonale is not directed to children, and Xintech LLC does not knowingly collect personal information from children. YouTube content in the embedded player comes from Google and is subject to Google's own protections.</p>
+
+  <h2 id="rights">Your Rights</h2>
+  <p>Depending on where you live, you may have the right to ask for access to, correction of, deletion of, restriction of, or a portable copy of your personal information, to object to how it is used, and to complain to a data-protection authority. Most Tonale data never leaves your Mac, so Xintech LLC may not have data for a request about it. Your account, synced library, and request records are the exception. Tonale has no in-app export. To make a request, write to <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>.</p>
+
+  <h2 id="changes">Changes to This Policy</h2>
+  <p>If this policy changes, the new version is posted at this address with a new effective date.</p>
+
+  <h2 id="contact">Contact</h2>
+  <p>Questions about privacy, or requests about information that Xintech LLC holds: <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>.</p>
+</main>
+<footer><div>© 2026 Xintech LLC.</div><a href="eula.html">License Agreement</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></footer>
+</body>
+</html>
