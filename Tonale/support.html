@@ -28,7 +28,11 @@ footer{max-width:880px;margin:0 auto;padding:24px;font-size:14px;color:#666;disp
   <h3>Why does Tonale ask me to choose files or folders?</h3>
   <p>Tonale runs in Apple's App Sandbox, so it can open only what you give it. When you choose a file or folder, macOS lets Tonale open it, and Tonale remembers it. Tonale does not look anywhere else on your disk.</p>
   <h3>An item says "Unavailable". What happened?</h3>
-  <p>The file moved, was renamed, is on a disk that is not connected, or macOS no longer lets Tonale open it. Use Locate… or Repair… on the item and choose the file again. Other files in the same folder reconnect with it. If a whole folder is affected, use Reauthorize….</p>
+  <p>The file moved, was renamed, is on a disk that is not connected, or macOS no longer lets Tonale open it. Use Locate… or Repair… on the item and choose the file again. Other files in the same folder reconnect with it. If the file you choose has different content, Tonale asks before it uses it. If a whole folder is affected, use Reauthorize….</p>
+  <h3>Many files moved. Can Tonale find them?</h3>
+  <p>Yes. Choose File › Find Missing Files… and pick the folder that holds them. Tonale reconnects every missing file whose content it finds there, even under a different name. The folder is not added to the library.</p>
+  <h3>The same song is in my library twice.</h3>
+  <p>Choose File › Find Duplicates…. Tonale lists the items that have the same content. Merge keeps the oldest item, moves playlist entries to it, and hides the others from the library. No file is changed.</p>
   <h3>Does Tonale copy or change my files?</h3>
   <p>No. Tonale plays your files where they are. It does not copy, move, change, or delete them.</p>
 
@@ -64,7 +68,7 @@ footer{max-width:880px;margin:0 auto;padding:24px;font-size:14px;color:#666;disp
   <h3>What syncs?</h3>
   <p>The playlists and saved filters you made, the order of their entries, and references to the items in them. Your files, file paths, passwords, and device identifiers never sync, and no settings sync in this version. Lists that Tonale builds for you from a source, such as your Apple Music library, are built again on each Mac.</p>
   <h3>My playlist is on my other Mac, but its files say "Unavailable".</h3>
-  <p>Tonale syncs the playlist, not the files, and never sends file paths. If the other Mac has the same file in Local Audio or Local Video, Tonale finds it by its fingerprint. Otherwise, locate the file once there and the items reconnect.</p>
+  <p>Tonale syncs the playlist, not the files, and never sends file paths. If the other Mac has the same file in Local Audio or Local Video, Tonale finds it by its fingerprint. Otherwise, choose File › Find Missing Files… there and pick the folder that holds the files, or locate one file.</p>
   <h3>Two Macs changed the same item. What happens?</h3>
   <p>Account &amp; Sync shows the conflict and lets you choose Keep server version or Keep my version. Tonale does not silently discard an edit.</p>
   <h3>What happens when I sign out?</h3>
