@@ -4,20 +4,33 @@
         <title>XHelpers Pro</title>
         <item>
             <title>1.0.12</title>
-            <pubDate>Fri, 25 Sep 2026 02:27:24 -0700</pubDate>
+            <pubDate>Fri, 25 Sep 2026 08:09:51 -0700</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>26</sparkle:version>
+            <sparkle:version>27</sparkle:version>
             <sparkle:shortVersionString>1.0.12</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-# XHelpers Pro 1.0.12 (26)
+# XHelpers Pro 1.0.12 (27)
+
+- AI Usage: the AI meter can also sit in the menu bar as its own item, and
+  clicking it opens the hover card. Turn it on with the Menu bar checkbox in
+  the card's title bar or in the hover card settings; ⌘-drag it off the menu
+  bar to turn it off. The card's Details button opens the AI Usage window.
+- AI Usage: a Codex subscription whose weekly timer has not started is
+  flagged, with a note to use it to start the timer. Menu rows under the
+  hover card no longer light up or take clicks.
+- Uninstall: the steps list shows only steps with work to do, grouped and
+  coloured by kind. Failure notes, step status and the plan read more
+  clearly, a draft session can be discarded, and a protected app no longer
+  offers a Continue that cannot finish.
+- Software Update: choosing Check for Updates while an update is already
+  open brings that update forward instead of a stuck "Checking" window.
+
+## Also in 1.0.12
 
 - AI Usage: a Claude account no longer stays at "Sign-in expired" after a
   Claude Code update removes the version it was set up with; automatic and
   manual Repair work for it again.
-
-## Also in 1.0.12
-
 - Keep Mac Awake: timers for 1, 2, 4, 8, 12, 16, 20, or 24 hours, and
   Custom… for any number of days, hours, and minutes. The Custom… window shows
   when the Mac can sleep again as you type, and the menu names the day when a
@@ -70,7 +83,7 @@
 Xin account features remain disabled in this release.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.12-26/XHelpersPro-1.0.12-26-macOS.dmg" length="133114884" type="application/octet-stream" sparkle:edSignature="eBELDRuNSkbCyfTHMa42prGb4gQh68qjzthtfjhW4jtkIY9x88pbiNyyM6GPkmQRYm4urBNGi09eBaT5y3g/Cg=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.12-27/XHelpersPro-1.0.12-27-macOS.dmg" length="133163909" type="application/octet-stream" sparkle:edSignature="PqkJpD8rmqtRrbWsF8Uz5SUDkjVWp/Hyf7SxyXTgCrQeG2TyNCQDQhWIm1SQUIFSBE5M4noUxNekSeRfTmv3DQ=="/>
         </item>
     </channel>
 </rss>
