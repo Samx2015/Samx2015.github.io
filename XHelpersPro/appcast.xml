@@ -4,13 +4,29 @@
         <title>XHelpers Pro</title>
         <item>
             <title>1.0.12</title>
-            <pubDate>Thu, 24 Sep 2026 08:52:03 -0700</pubDate>
+            <pubDate>Fri, 25 Sep 2026 01:25:01 -0700</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>24</sparkle:version>
+            <sparkle:version>25</sparkle:version>
             <sparkle:shortVersionString>1.0.12</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-# XHelpers Pro 1.0.12 (24)
+# XHelpers Pro 1.0.12 (25)
+
+- Keep Mac Awake: timers for 1, 2, 4, 8, 12, 16, 20, or 24 hours, and
+  Custom… for any number of days, hours, and minutes. The Custom… window shows
+  when the Mac can sleep again as you type, and the menu names the day when a
+  timer ends after today. The chosen timer stays checked after a restart.
+- AI Usage: the hover card grows to fit its accounts and scrolls only when the
+  screen has no more room.
+- Audio Player: the playback buttons are easier to read, the More menu keeps
+  the same items and dims the ones that do not apply, "Clear Up Next" is now
+  "Clear Rest of Queue", Playback Details and the Queue share one summary, and
+  the volume panel's Output button names the current device.
+- Video player: an empty queue says to drop videos on it, Queue is an on/off
+  toggle, queued videos show their length, and videos that fail to play show
+  an orange warning.
+
+## Also in 1.0.12
 
 - License window: every button, field, status line, and card border is
   readable in light and dark mode and in every license state. Activate lights
@@ -51,7 +67,7 @@
 Xin account features remain disabled in this release.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.12/XHelpersPro-1.0.12-24-macOS.dmg" length="134702793" type="application/octet-stream" sparkle:edSignature="tIW8NG+QLYxTHKK9cwklYcydJB0NMmHMddz5nrBF0B83RXkN10I/Y+J6hAl9qiH21LOuukftzvyilbItgGTuDw=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.12-25/XHelpersPro-1.0.12-25-macOS.dmg" length="133114354" type="application/octet-stream" sparkle:edSignature="o3PQdOxqMJLTexnwfyf3Du1bSF2lZahDTjSk5nsC/MAri9jMwnDVW4dxIgZnXtsvQA2uh7y4YSPHXGLP67KkBQ=="/>
         </item>
     </channel>
 </rss>
