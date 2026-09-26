@@ -175,12 +175,6 @@
     .comparison-notes p { margin: 0; }
     .comparison-notes p + p { margin-top: 8px; }
     .comparison-notes strong { color: var(--ink); font-weight: 600; }
-    .comparison-sources { margin-top: 16px; color: var(--muted); font-size: 0.8rem; line-height: 1.6; }
-    .comparison-sources > summary { width: fit-content; cursor: pointer; color: var(--teal-dark); }
-    .comparison-sources p { margin: 10px 0; }
-    .comparison-sources ul { margin: 10px 0; padding-left: 20px; }
-    .comparison-sources li + li { margin-top: 7px; }
-    .comparison-sources a { color: var(--teal-dark); text-underline-offset: 2px; }
     .comparison-cta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--line); }
     .comparison-cta p { margin: 0; color: var(--ink); font-size: 1.05rem; font-weight: 550; }
     .comparison-cta small { display: block; margin-top: 4px; color: var(--muted); font-size: 0.8rem; font-weight: 400; }
@@ -419,17 +413,6 @@
             <p><strong>Made for your Mac.</strong> Tonale requires macOS 14 or later. Apple Music playback needs a subscription. Local files play where they are; optional Xin Account sync carries playlists, saved filters and media references, not the files themselves. Keep the files available on each Mac.</p>
             <p><strong>YouTube stays YouTube.</strong> Public embeddable videos play in its official visible player and may include ads. Playback pauses when that player is hidden, minimized or covered. Video availability depends on YouTube.</p>
           </div>
-          <details class="comparison-sources">
-            <summary>Sources and comparison notes · September 26, 2026</summary>
-            <p>Each app name links to its publisher’s documentation or source. This comparison describes when Tonale is a useful fit, based on those materials and selected source-code review. It is not a speed, reliability or audio-quality benchmark. Features not established in the reviewed sources are not marked as missing.</p>
-            <ul>
-              <li><strong>Parachord:</strong> <a href="https://github.com/Parachord/parachord/releases/tag/v0.9.7">v0.9.7 playback notes</a> describe YouTube opening in a browser; the reviewed <a href="https://github.com/Parachord/parachord/blob/3199d97a49481903ab2295cf1067d0941280cac3/local-files/metadata-reader.js">local importer</a> accepts MP3, M4A, FLAC, WAV and AAC. Parachord already supports mixed queues and service playlist sync.</li>
-              <li><strong>Sonora:</strong> the reviewed <a href="https://github.com/sonorahq/sonora/blob/b135b9c66d5bfc59d00752dfd3a2cd821c6c24af/crates/state/src/session.rs">session implementation</a> maintains one active streaming provider plus a local provider. This is a version-specific finding, not a claim that Sonora lacks mixed local/streaming playback.</li>
-              <li><strong>Music Assistant:</strong> see its <a href="https://www.music-assistant.io/installation/">server installation</a> and <a href="https://www.music-assistant.io/music-providers/youtube-music/">YouTube Music setup</a>. The latter excludes free accounts and requires a login cookie and token-generator service. Its desktop companion still connects to its server.</li>
-              <li><strong>Roon:</strong> its documented <a href="https://help.roonlabs.com/portal/en/kb/articles/multichannel">audio-only scope</a> and <a href="https://help.roonlabs.com/portal/en/kb/articles/starting-with-roon-server">server architecture</a> differ from Tonale’s desktop audio/video workflow. A server can run on the same computer; separate hardware is not required.</li>
-              <li><strong>Scope matters:</strong> Kopuz, Moosync, MiniTune and VOX offer overlapping capabilities; their rows highlight Tonale’s implemented workflow without asserting that every alternative lacks it. UniMusic had <a href="https://github.com/UniMusic-app/unimusic/releases">no published GitHub release</a> at review time. Products change, and this table reflects the review date.</li>
-            </ul>
-          </details>
           <div class="comparison-cta">
             <p>Bring your sources together.<small>Native Mac app · Signed and notarized · No Xin Account needed to start</small></p>
             <a class="button" href="https://github.com/Samx2015/Samx2015.github.io/releases/download/tonale-v1.0.1-4/Tonale-1.0.1-4.dmg"><span class="glyph" aria-hidden="true"></span>Download Tonale</a>
