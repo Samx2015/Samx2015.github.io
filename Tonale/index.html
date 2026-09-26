@@ -132,6 +132,59 @@
     .order { --icon: #0f8f8a; }
     .sync { --icon: #7964e8; }
 
+    .comparison-section { padding-block: 16px; }
+    .comparison { scroll-margin-top: 100px; }
+    .comparison > summary {
+      display: flex; align-items: center; justify-content: space-between; gap: 18px;
+      min-height: 68px; padding: 14px 20px; list-style: none; cursor: pointer;
+      border: 2px solid transparent; border-radius: 16px; box-shadow: 0 5px 16px rgba(70, 81, 170, 0.12);
+      background: linear-gradient(110deg, #e5edff, #f6e7ff 50%, #dcf8ef) padding-box, linear-gradient(110deg, #4877f4, #b34dde 50%, #0ba58f) border-box;
+      color: #2457ce; font-size: clamp(1.1rem, 2vw, 1.25rem); font-weight: 500;
+      transition: box-shadow 160ms ease;
+    }
+    .comparison > summary::-webkit-details-marker { display: none; }
+    .comparison > summary:hover { box-shadow: 0 7px 20px rgba(70, 81, 170, 0.18); }
+    .comparison summary:focus-visible, .comparison a:focus-visible { outline: 3px solid var(--teal-dark); outline-offset: 4px; }
+    .comparison-title em { color: #8b2dbc; font-style: normal; }
+    .comparison-toggle {
+      display: grid; place-items: center; flex: 0 0 34px; width: 34px; height: 34px;
+      border-radius: 50%; background: #087f77; color: #fff; box-shadow: 0 3px 9px rgba(8, 127, 119, 0.2);
+      font-size: 1.5rem; font-weight: 300; line-height: 1;
+    }
+    .comparison[open] .comparison-toggle { transform: rotate(45deg); }
+    .comparison-body { margin-top: 14px; padding: clamp(16px, 2.4vw, 28px); border: 1px solid var(--line); border-radius: 18px; background: var(--panel); }
+    .comparison-body h2 { max-width: 42rem; margin: 0 0 12px; font-size: clamp(1.4rem, 2.6vw, 1.85rem); font-weight: 550; line-height: 1.2; letter-spacing: -0.025em; }
+    .comparison-lede { max-width: 48rem; margin: 0; color: var(--muted); line-height: 1.6; }
+    .comparison-benefits { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 18px 0 24px; padding: 0; list-style: none; color: var(--teal-dark); font-size: 0.88rem; font-weight: 550; }
+    .comparison-benefits li::before { content: "✓"; margin-right: 7px; }
+    .comparison-table { width: 100%; border-collapse: separate; border-spacing: 0; table-layout: fixed; font-size: 0.9rem; line-height: 1.5; }
+    .comparison-table .app-column { width: 18%; }
+    .comparison-table .tonale-column { width: 47%; }
+    .comparison-table .alternative-column { width: 35%; }
+    .comparison-table th, .comparison-table td { padding: 14px 16px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+    .comparison-table thead th { color: #4d6063; background: #f4f6f5; font-size: 0.78rem; font-weight: 650; }
+    .comparison-table thead .tonale-heading { color: var(--teal-dark); background: #dcefe8; }
+    .comparison-table th[scope="row"] { font-weight: 600; }
+    .comparison-table th[scope="row"] a { color: #3156a3; text-decoration-color: #bdcae5; text-underline-offset: 3px; }
+    .comparison-table th[scope="row"] a:hover { text-decoration-color: currentColor; }
+    .comparison-table .tonale-fit { background: #f0f8f4; color: #194f49; }
+    .comparison-table .alternative-fit { color: #59686b; }
+    .comparison-table strong { font-weight: 650; }
+    .comparison-table .comparison-group th { padding: 22px 16px 10px; background: #fff; color: var(--teal-dark); font-size: 0.75rem; font-weight: 650; letter-spacing: 0.045em; text-transform: uppercase; }
+    .comparison-notes { margin-top: 20px; padding: 16px 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel-soft); color: #526164; font-size: 0.83rem; line-height: 1.6; }
+    .comparison-notes p { margin: 0; }
+    .comparison-notes p + p { margin-top: 8px; }
+    .comparison-notes strong { color: var(--ink); font-weight: 600; }
+    .comparison-sources { margin-top: 16px; color: var(--muted); font-size: 0.8rem; line-height: 1.6; }
+    .comparison-sources > summary { width: fit-content; cursor: pointer; color: var(--teal-dark); }
+    .comparison-sources p { margin: 10px 0; }
+    .comparison-sources ul { margin: 10px 0; padding-left: 20px; }
+    .comparison-sources li + li { margin-top: 7px; }
+    .comparison-sources a { color: var(--teal-dark); text-underline-offset: 2px; }
+    .comparison-cta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--line); }
+    .comparison-cta p { margin: 0; color: var(--ink); font-size: 1.05rem; font-weight: 550; }
+    .comparison-cta small { display: block; margin-top: 4px; color: var(--muted); font-size: 0.8rem; font-weight: 400; }
+
     .get { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: clamp(20px, 3vw, 40px); align-items: center; }
     .kicker { margin-bottom: 6px; color: var(--teal-dark); font-size: 0.78rem; font-weight: 520; letter-spacing: 0.1em; text-transform: uppercase; }
     .section .get h2 { margin: 0 0 8px; font-size: clamp(1.6rem, 2.8vw, 2.2rem); }
@@ -176,8 +229,21 @@
       .brand img { width: 48px; height: 48px; }
       .wide { display: none; }
     }
+    @media (max-width: 700px) {
+      .comparison-table, .comparison-table tbody { display: block; }
+      .comparison-table colgroup { display: none; }
+      .comparison-table thead { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+      .comparison-table tr { display: grid; grid-template-columns: minmax(0, 1fr); margin-bottom: 14px; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+      .comparison-table th, .comparison-table td { display: block; padding: 12px 14px; }
+      .comparison-table th[scope="row"] { background: #f7f8fa; }
+      .comparison-table td::before { display: block; margin-bottom: 4px; content: attr(data-label); color: inherit; font-size: 0.72rem; font-weight: 650; }
+      .comparison-table td:last-child { border-bottom: 0; }
+      .comparison-table .comparison-group { margin-bottom: 8px; border: 0; border-radius: 0; }
+      .comparison-table .comparison-group th { padding: 14px 0 6px; border: 0; }
+      .comparison-notes { padding: 14px; }
+    }
     @media (prefers-reduced-motion: reduce) {
-      .button { transition: none; }
+      .button, .comparison > summary { transition: none; }
     }
   </style>
 </head>
@@ -189,7 +255,7 @@
       <img src="assets/tonale-icon-256.png" alt="" width="64" height="64">
       <span>Tonale <span class="platform">for Mac</span></span>
     </a>
-    <a class="button" href="https://github.com/Samx2015/Samx2015.github.io/releases/download/tonale-v1.0.0-2/Tonale-1.0.0-2.dmg">
+    <a class="button" href="https://github.com/Samx2015/Samx2015.github.io/releases/download/tonale-v1.0.1-4/Tonale-1.0.1-4.dmg">
       <span class="glyph" aria-hidden="true"></span><span>Download<span class="wide"> for Mac</span></span>
     </a>
   </div>
@@ -218,6 +284,158 @@
         </button>
         <figcaption>Songs and videos in one playlist, every source in the sidebar.</figcaption>
       </figure>
+    </div>
+  </section>
+
+  <section class="comparison-section" aria-label="Compare music players">
+    <div class="wrap">
+      <details class="comparison" id="compare">
+        <summary><span class="comparison-title">Why Tonale? <em>Compare at a glance</em></span><span class="comparison-toggle" aria-hidden="true">+</span></summary>
+        <div class="comparison-body">
+          <h2>One playlist for Apple Music, YouTube and your own audio and video.</h2>
+          <p class="comparison-lede">Bring your sources together in a native Mac library. Mix them in one queue, reconnect moved files and keep your playlists organized. Here’s where Tonale fits alongside 19 other players.</p>
+          <ul class="comparison-benefits" aria-label="Why choose Tonale">
+            <li>No media server to configure</li>
+            <li>Your files stay on your Mac</li>
+            <li>Optional playlist and filter sync</li>
+          </ul>
+
+          <table class="comparison-table" role="table" aria-label="When to choose Tonale compared with 19 other music and media players">
+            <colgroup><col class="app-column"><col class="tonale-column"><col class="alternative-column"></colgroup>
+            <thead role="rowgroup">
+              <tr role="row">
+                <th scope="col" role="columnheader">Other app</th>
+                <th class="tonale-heading" scope="col" role="columnheader">Choose Tonale when…</th>
+                <th scope="col" role="columnheader">What the other app offers</th>
+              </tr>
+            </thead>
+            <tbody role="rowgroup">
+              <tr class="comparison-group" role="row"><th colspan="3" scope="rowgroup" role="rowheader">Streaming &amp; home libraries</th></tr>
+              <tr role="row">
+                <th scope="row" role="rowheader"><a href="https://support.apple.com/guide/music/access-your-music-library-on-all-your-devices-musa3dd5209/mac">Apple Music</a></th>
+                <td class="tonale-fit" role="cell" data-label="Choose Tonale when…">You want <strong>public YouTube videos in the same playlists</strong> as your Apple Music library and local audio and video.</td>
+                <td class="alternative-fit" role="cell" data-label="What the other app offers">Cloud access to your songs, mobile listening and local-media playlists.</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader"><a href="https://support.spotify.com/us/article/your-premium-benefits/">Spotify</a></th>
+                <td class="tonale-fit" role="cell" data-label="Choose Tonale when…">Your collection centers on <strong>Apple Music, YouTube and your own audio and video.</strong> Tonale does not play Spotify tracks.</td>
+                <td class="alternative-fit" role="cell" data-label="What the other app offers">Spotify’s catalog, personalized discovery, offline catalog listening and shared listening.</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader"><a href="https://support.google.com/youtubemusic/answer/9716522?hl=en">YouTube Music</a></th>
+                <td class="tonale-fit" role="cell" data-label="Choose Tonale when…">You want Apple Music and <strong>direct local audio/video playback without uploading your files.</strong></td>
+                <td class="alternative-fit" role="cell" data-label="What the other app offers">Uploaded personal songs mixed with its catalog and available across devices; video-file uploads are excluded.</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader"><a href="https://help.roonlabs.com/portal/en/kb/articles/playlists">Roon</a></th>
+                <td class="tonale-fit" role="cell" data-label="Choose Tonale when…">You want <strong>Apple Music, public YouTube and local video</strong> in a standalone Mac player, with no media server to configure.</td>
+                <td class="alternative-fit" role="cell" data-label="What the other app offers">Mixed local/streaming music playlists in an audio-focused system built around Roon Server.</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader"><a href="https://www.plex.tv/plexamp/">Plexamp</a></th>
+                <td class="tonale-fit" role="cell" data-label="Choose Tonale when…">You want Apple Music and YouTube alongside local video, <strong>without setting up Plex Media Server.</strong></td>
+                <td class="alternative-fit" role="cell" data-label="What the other app offers">Personal-music discovery and playback across desktop, mobile and car systems, using your Plex library.</td>
+              </tr>
+            </tbody>
+            <tbody role="rowgroup">
+              <tr class="comparison-group" role="row"><th colspan="3" scope="rowgroup" role="rowheader">Players that bring sources together</th></tr>
+              <tr role="row">
+                <th scope="row" role="rowheader"><a href="https://parachord.com/">Parachord</a></th>
+                <td class="tonale-fit" role="cell" data-label="Choose Tonale when…">You want <strong>YouTube inside the player and local video in your library.</strong> Parachord’s reviewed release opens YouTube in a browser and imports local audio.</td>
+                <td class="alternative-fit" role="cell" data-label="What the other app offers">Mixed queues, more streaming services, music discovery and playlist synchronization across services.</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader"><a href="https://github.com/sonorahq/sonora">Sonora</a></th>
+                <td class="tonale-fit" role="cell" data-label="Choose Tonale when…">You want <strong>Apple Music and YouTube together in one queue</strong> with local files. The reviewed Sonora source keeps one streaming provider active at a time.</td>
+                <td class="alternative-fit" role="cell" data-label="What the other app offers">More streaming providers and platforms, with local tracks mixed into the active provider’s queue.</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader"><a href="https://www.music-assistant.io/usage/">Music Assistant</a></th>
+                <td class="tonale-fit" role="cell" data-label="Choose Tonale when…">You want <strong>a standalone Mac app and public YouTube playback</strong> without configuring a server or signing in to YouTube.</td>
+                <td class="alternative-fit" role="cell" data-label="What the other app offers">Many music sources, mixed playlists, multiroom audio and home automation through its server.</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader"><a href="https://github.com/Kopuz-org/kopuz">Kopuz</a></th>
+                <td class="tonale-fit" role="cell" data-label="Choose Tonale when…">You want Tonale’s <strong>native Mac interface and integrated local-video workflow</strong> alongside Apple Music and public YouTube.</td>
+                <td class="alternative-fit" role="cell" data-label="What the other app offers">A wider range of streaming and self-hosted services, including Apple Music, YouTube Music and Spotify.</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader"><a href="https://github.com/Moosync/Moosync">Moosync</a></th>
+                <td class="tonale-fit" role="cell" data-label="Choose Tonale when…">You want a Mac library with <strong>Apple Music and local video built in.</strong></td>
+                <td class="alternative-fit" role="cell" data-label="What the other app offers">Mixed-provider playlists, local audio, Spotify integration, extensions and more desktop platforms.</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader"><a href="https://github.com/staniel359/muffon">muffon</a></th>
+                <td class="tonale-fit" role="cell" data-label="Choose Tonale when…">You want to organize <strong>your subscribed Apple Music library and files you already own.</strong></td>
+                <td class="alternative-fit" role="cell" data-label="What the other app offers">Online music discovery, video and social features across multiple sources; it does not use streaming-service premium accounts.</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader"><a href="https://github.com/shirkeharsh/mooziac">Mooziac</a></th>
+                <td class="tonale-fit" role="cell" data-label="Choose Tonale when…">You want to add <strong>Apple Music, local video and optional playlist sync between Macs.</strong></td>
+                <td class="alternative-fit" role="cell" data-label="What the other app offers">A native Mac YouTube Music/local-audio queue, menu-bar lyrics and gestures, with playlists stored locally.</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader"><a href="https://minitune.app/support">MiniTune</a></th>
+                <td class="tonale-fit" role="cell" data-label="Choose Tonale when…">You want <strong>one editable library and mixed playback queue inside Tonale.</strong></td>
+                <td class="alternative-fit" role="cell" data-label="What the other app offers">A common control interface whose source modes operate Music, Spotify and Safari, plus support for other sources.</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader"><a href="https://github.com/UniMusic-app/unimusic">UniMusic</a></th>
+                <td class="tonale-fit" role="cell" data-label="Choose Tonale when…">You want <strong>a downloadable, signed and notarized Mac release today.</strong></td>
+                <td class="alternative-fit" role="cell" data-label="What the other app offers">An emerging Apple Music/YouTube/local-file alternative; its documented unified library is still partly implemented.</td>
+              </tr>
+            </tbody>
+            <tbody role="rowgroup">
+              <tr class="comparison-group" role="row"><th colspan="3" scope="rowgroup" role="rowheader">Local media players</th></tr>
+              <tr role="row">
+                <th scope="row" role="rowheader"><a href="https://iina.io/">IINA</a></th>
+                <td class="tonale-fit" role="cell" data-label="Choose Tonale when…">You want <strong>Apple Music and persistent mixed playlists</strong>, with optional playlist and filter sync.</td>
+                <td class="alternative-fit" role="cell" data-label="What the other app offers">Native Mac video playback, online streams, subtitles, picture-in-picture and plugins.</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader"><a href="https://www.videolan.org/vlc/features.html">VLC</a></th>
+                <td class="tonale-fit" role="cell" data-label="Choose Tonale when…">You want <strong>Apple Music, YouTube and local media organized as one collection.</strong></td>
+                <td class="alternative-fit" role="cell" data-label="What the other app offers">Broad format and network-protocol support, subtitles, streaming and media conversion.</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader"><a href="https://swinsian.com/">Swinsian</a></th>
+                <td class="tonale-fit" role="cell" data-label="Choose Tonale when…">You want <strong>Apple Music subscription playback, public YouTube and video</strong> alongside your own music.</td>
+                <td class="alternative-fit" role="cell" data-label="What the other app offers">Local-audio tagging, folder watching, smart playlists, duplicate finding and Apple Music library import.</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader"><a href="https://brushedtype.co/doppler/features/">Doppler</a></th>
+                <td class="tonale-fit" role="cell" data-label="Choose Tonale when…">You want <strong>Apple Music, public YouTube and local video together</strong> on your Mac.</td>
+                <td class="alternative-fit" role="cell" data-label="What the other app offers">Owned-music libraries on Mac and iPhone, metadata editing, file transfer and CarPlay.</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader"><a href="https://vox.rocks/mac-music-player">VOX</a></th>
+                <td class="tonale-fit" role="cell" data-label="Choose Tonale when…">You want Tonale’s <strong>Apple Music library integration and local-video workflow.</strong></td>
+                <td class="alternative-fit" role="cell" data-label="What the other app offers">High-resolution audio, YouTube links, SoundCloud, radio and paid cloud storage for music files.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="comparison-notes">
+            <p><strong>Made for your Mac.</strong> Tonale requires macOS 14 or later. Apple Music playback needs a subscription. Local files play where they are; optional Xin Account sync carries playlists, saved filters and media references, not the files themselves. Keep the files available on each Mac.</p>
+            <p><strong>YouTube stays YouTube.</strong> Public embeddable videos play in its official visible player and may include ads. Playback pauses when that player is hidden, minimized or covered. Video availability depends on YouTube.</p>
+          </div>
+          <details class="comparison-sources">
+            <summary>Sources and comparison notes · September 26, 2026</summary>
+            <p>Each app name links to its publisher’s documentation or source. This comparison describes when Tonale is a useful fit, based on those materials and selected source-code review. It is not a speed, reliability or audio-quality benchmark. Features not established in the reviewed sources are not marked as missing.</p>
+            <ul>
+              <li><strong>Parachord:</strong> <a href="https://github.com/Parachord/parachord/releases/tag/v0.9.7">v0.9.7 playback notes</a> describe YouTube opening in a browser; the reviewed <a href="https://github.com/Parachord/parachord/blob/3199d97a49481903ab2295cf1067d0941280cac3/local-files/metadata-reader.js">local importer</a> accepts MP3, M4A, FLAC, WAV and AAC. Parachord already supports mixed queues and service playlist sync.</li>
+              <li><strong>Sonora:</strong> the reviewed <a href="https://github.com/sonorahq/sonora/blob/b135b9c66d5bfc59d00752dfd3a2cd821c6c24af/crates/state/src/session.rs">session implementation</a> maintains one active streaming provider plus a local provider. This is a version-specific finding, not a claim that Sonora lacks mixed local/streaming playback.</li>
+              <li><strong>Music Assistant:</strong> see its <a href="https://www.music-assistant.io/installation/">server installation</a> and <a href="https://www.music-assistant.io/music-providers/youtube-music/">YouTube Music setup</a>. The latter excludes free accounts and requires a login cookie and token-generator service. Its desktop companion still connects to its server.</li>
+              <li><strong>Roon:</strong> its documented <a href="https://help.roonlabs.com/portal/en/kb/articles/multichannel">audio-only scope</a> and <a href="https://help.roonlabs.com/portal/en/kb/articles/starting-with-roon-server">server architecture</a> differ from Tonale’s desktop audio/video workflow. A server can run on the same computer; separate hardware is not required.</li>
+              <li><strong>Scope matters:</strong> Kopuz, Moosync, MiniTune and VOX offer overlapping capabilities; their rows highlight Tonale’s implemented workflow without asserting that every alternative lacks it. UniMusic had <a href="https://github.com/UniMusic-app/unimusic/releases">no published GitHub release</a> at review time. Products change, and this table reflects the review date.</li>
+            </ul>
+          </details>
+          <div class="comparison-cta">
+            <p>Bring your sources together.<small>Native Mac app · Signed and notarized · No Xin Account needed to start</small></p>
+            <a class="button" href="https://github.com/Samx2015/Samx2015.github.io/releases/download/tonale-v1.0.1-4/Tonale-1.0.1-4.dmg"><span class="glyph" aria-hidden="true"></span>Download Tonale</a>
+          </div>
+        </div>
+      </details>
     </div>
   </section>
 
@@ -273,7 +491,7 @@
           <ul class="points">
             <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><b>Sign in, or don’t.</b> Tonale works fully without an account. A Xin Account, with Apple, Google or email, keeps your Macs in sync.</li>
             <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a5 5 0 1 1 1-9.9A6 6 0 0 1 19.5 10 4 4 0 0 1 18 18Z"/></svg><b>Only your lists sync.</b> Playlists and saved filters travel. Your files, file paths and passwords never do.</li>
-            <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 3v6c0 4-5 7-8 9-3-2-8-5-8-9V6l8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><b>No ads or analytics in Tonale.</b> Delete your data from inside the app at any time.</li>
+            <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 3v6c0 4-5 7-8 9-3-2-8-5-8-9V6l8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><b>No Tonale ads or analytics.</b> YouTube’s player may show its own ads. Delete your Tonale data from inside the app at any time.</li>
           </ul>
         </div>
         <figure>
@@ -293,10 +511,10 @@
           <div class="kicker">Download</div>
           <h2 id="download-title">Get Tonale for Mac.</h2>
           <p>Tonale updates itself, so this is the only download you need.</p>
-          <a class="button button-large" href="https://github.com/Samx2015/Samx2015.github.io/releases/download/tonale-v1.0.0-2/Tonale-1.0.0-2.dmg">
+          <a class="button button-large" href="https://github.com/Samx2015/Samx2015.github.io/releases/download/tonale-v1.0.1-4/Tonale-1.0.1-4.dmg">
             <span class="glyph" aria-hidden="true"></span>Download DMG
           </a>
-          <p class="meta">Version 1.0.0 · 21 MB</p>
+          <p class="meta">Version 1.0.1 · 21.7 MB</p>
         </div>
         <ol class="steps">
           <li><strong>1</strong><span><b>Open the DMG and drag Tonale to Applications.</b></span></li>
@@ -312,6 +530,7 @@
   <div class="wrap">
     <span>© 2026 Xintech LLC · Tonale for Mac</span>
     <nav aria-label="Footer">
+      <a href="#compare">Compare players</a>
       <a href="support.html">Support</a>
       <a href="privacy.html">Privacy</a>
       <a href="eula.html">License Agreement</a>
