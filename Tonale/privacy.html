@@ -19,7 +19,7 @@ footer{max-width:880px;margin:0 auto;padding:24px;font-size:14px;color:#666;disp
 <main>
   <p><a href="./">← Tonale</a></p>
   <h1>Tonale Privacy Policy</h1>
-  <p class="note">Effective date: 2026-09-24 · Web copy: <a href="https://xintechllc.com/Tonale/privacy.html">https://xintechllc.com/Tonale/privacy.html</a></p>
+  <p class="note">Effective date: 2026-09-26 · Web copy: <a href="https://xintechllc.com/Tonale/privacy.html">https://xintechllc.com/Tonale/privacy.html</a></p>
 
   <h2 id="scope">Scope and Controller</h2>
   <p>This policy explains how Tonale handles information on your Mac, and when information goes to Xintech LLC or to another company. Xintech LLC is the controller of the information it receives.</p>
@@ -37,6 +37,7 @@ footer{max-width:880px;margin:0 auto;padding:24px;font-size:14px;color:#666;disp
     <li>your settings, such as playback options and window sizes;</li>
     <li>a copy of the library database made once a day, before the first change of the day. Tonale keeps the newest three copies. If you restore a copy, Tonale also keeps the library it replaced;</li>
     <li>up to ten email addresses you signed in with on this Mac, so the sign-in form can offer them again;</li>
+    <li>if you choose to sign in to YouTube, Tonale's WebKit website data, which holds your YouTube session, until you sign out (see <a href="#youtube-sign-in">Signing in to YouTube</a>);</li>
     <li>if you sign in, your session, in the macOS Keychain on this Mac. It is shared only with Xin apps on this Mac that share sign-in, such as XHelpers Pro, and does not sync to iCloud.</li>
   </ul>
   <p>If you sign in, Tonale keeps a separate library for your account next to the library you use while signed out.</p>
@@ -64,9 +65,19 @@ footer{max-width:880px;margin:0 auto;padding:24px;font-size:14px;color:#666;disp
   <ul>
     <li>The video pauses when the player is hidden, minimized, mostly covered, or moved off the screen, and when the display sleeps. Tonale does not play YouTube audio in the background.</li>
     <li>Tonale does not download videos, save their audio, or block ads.</li>
-    <li>Playing a video connects your Mac directly to YouTube and Google. The <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> apply to that connection. Tonale does not keep YouTube's cookies or website data after you quit.</li>
+    <li>Playing a video connects your Mac directly to YouTube and Google. The <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> apply to that connection. Unless you choose to sign in to YouTube (see below), Tonale does not keep YouTube's cookies or website data after you quit.</li>
     <li>Thumbnails load directly from the addresses YouTube provides.</li>
-    <li>You cannot connect your YouTube account to Tonale in this version.</li>
+  </ul>
+  <h3 id="youtube-sign-in">Signing in to YouTube (optional, macOS 27 or later)</h3>
+  <p>On macOS 27 or later, you can sign in to YouTube in Settings › YouTube, so that your YouTube sign-in applies to videos that play in Tonale. This is optional and off until you choose it. Before your first sign-in, Tonale shows a consent sheet that explains what changes. Tonale cannot import your YouTube playlists in this version.</p>
+  <ul>
+    <li>You sign in on Google's own pages, in a Tonale window. Tonale receives no password or other credentials, types nothing into those pages, and reads nothing from them. To show whether you are signed in, Tonale reads only the names of cookies, never their values.</li>
+    <li>From the time you choose to sign in until you sign out, Tonale keeps its WebKit website data (WebKit is the web engine in macOS), which holds your YouTube session, in its folder on your Mac. Nothing about the session goes to Xintech LLC.</li>
+    <li>While you are signed in, Tonale's player loads from <code>youtube.com</code> instead of the privacy-enhanced <code>youtube-nocookie.com</code>, so YouTube and Google recognize you. Your history, recommendations, and ads follow your Google settings, under Google's policies.</li>
+    <li>Before you choose to sign in, and again after you sign out, the player loads from <code>youtube-nocookie.com</code> with new, temporary website data each time a player opens.</li>
+    <li>To sign out, choose Settings › YouTube › Sign Out…. Signing out deletes all of Tonale's WebKit website data.</li>
+    <li>Tonale includes the <code>NSCrossWebsiteTrackingUsageDescription</code> entry so that your sign-in can reach the player. On macOS 27 and later, this entry turns off WebKit's cross-site tracking prevention inside Tonale, whether or not you sign in. On earlier versions of macOS, it has no effect. Apart from the sign-in window, YouTube playback is the only web content in Tonale.</li>
+    <li>Tonale adds no advertising, analytics, or tracking of its own.</li>
   </ul>
   <h3>Public YouTube details</h3>
   <p>To show titles, durations, and the contents of public playlists, Tonale asks a service run by Xintech LLC at <code>dataol.net</code>. That service gets the details from Google with its own key. Tonale asks for your permission before it uses this service the first time.</p>
@@ -137,6 +148,7 @@ footer{max-width:880px;margin:0 auto;padding:24px;font-size:14px;color:#666;disp
     <tbody>
       <tr><td>Your media files</td><td>Never uploaded or copied off your Mac.</td></tr>
       <tr><td>Library, bookmarks, settings, and library copies on your Mac</td><td>Until you delete them. Tonale keeps the newest three daily copies of the library.</td></tr>
+      <tr><td>YouTube sign-in session (Tonale's WebKit website data)</td><td>On your Mac, from the time you choose to sign in to YouTube until you sign out. Signing out deletes all of Tonale's WebKit website data. Nothing about the session goes to Xintech LLC.</td></tr>
       <tr><td>Public YouTube requests</td><td>Nothing is stored. A scrambled form of your IP address stays in memory for one minute to limit request rates.</td></tr>
       <tr><td>Your synced library</td><td>Until you delete your Tonale data or your Xin Account. The record of individual changes is removed after about 90 days, and sync receipts after about 30 days. Markers that record a deleted item stay until your Tonale data is deleted.</td></tr>
       <tr><td>Request records for account and sync requests</td><td>For each request, the service records the request path, result, and time; your IP address and the approximate location that comes from it; the user agent; and Tonale's platform, version, and build. Xintech LLC uses these records to run the service and to prevent abuse. They are kept with no fixed end date and are not deleted when you delete your account.</td></tr>
