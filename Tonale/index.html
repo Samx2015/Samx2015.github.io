@@ -107,6 +107,11 @@
     .shot { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
     .shot img { width: 100%; filter: drop-shadow(0 10px 22px rgba(21, 32, 51, 0.16)); }
     .hero .shot img { filter: drop-shadow(0 22px 44px rgba(21, 32, 51, 0.22)); }
+    /* A capture with a clear border around its window: the border is pulled
+       outside the column, so the window lines up with the other screenshots.
+       --l, --t, --r and --b are the border and --w the window width, in image pixels. */
+    .shot img.trim { width: calc(100% * (var(--w) + var(--l) + var(--r)) / var(--w)); max-width: none;
+      margin: calc(-100% * var(--t) / var(--w)) 0 calc(-100% * var(--b) / var(--w)) calc(-100% * var(--l) / var(--w)); }
     figcaption { margin-top: 12px; color: var(--muted); font-size: 0.82rem; line-height: 1.45; text-align: center; }
 
     .section { padding: clamp(1.75rem, 4vw, 2.75rem) 0 0.5rem; }
@@ -450,7 +455,7 @@
         <div class="shots wide-first">
           <figure>
             <button class="shot" type="button" aria-haspopup="dialog" aria-label="Enlarge screenshot: Video player">
-              <img src="assets/screens/video-player.webp" width="2000" height="1980" loading="lazy" alt="Tonale's video player playing a YouTube video, with a queue of 26 videos below it">
+              <img class="trim" style="--l:102;--t:70;--r:102;--b:134;--w:1796" src="assets/screens/video-player.webp" width="2000" height="1980" loading="lazy" alt="Tonale's video player playing a YouTube video, with a queue of 26 videos below it">
             </button>
             <figcaption>Video player and queue</figcaption>
           </figure>
