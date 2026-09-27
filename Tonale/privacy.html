@@ -19,7 +19,7 @@ footer{max-width:880px;margin:0 auto;padding:24px;font-size:14px;color:#666;disp
 <main>
   <p><a href="./">← Tonale</a></p>
   <h1>Tonale Privacy Policy</h1>
-  <p class="note">Effective date: 2026-09-26 · Web copy: <a href="https://xintechllc.com/Tonale/privacy.html">https://xintechllc.com/Tonale/privacy.html</a></p>
+  <p class="note">Effective date: 2026-09-27 · Web copy: <a href="https://xintechllc.com/Tonale/privacy.html">https://xintechllc.com/Tonale/privacy.html</a></p>
 
   <h2 id="scope">Scope and Controller</h2>
   <p>This policy explains how Tonale handles information on your Mac, and when information goes to Xintech LLC or to another company. Xintech LLC is the controller of the information it receives.</p>
@@ -61,22 +61,31 @@ footer{max-width:880px;margin:0 auto;padding:24px;font-size:14px;color:#666;disp
   </ul>
 
   <h2 id="youtube">YouTube</h2>
-  <p>Tonale plays YouTube videos in YouTube's official embedded player, in a visible window.</p>
+  <p>Tonale plays YouTube videos in YouTube's official embedded player, in a visible window. You can also watch a video on YouTube's own page in a Tonale window (see <a href="#watch-on-youtube">Watch on YouTube</a>).</p>
   <ul>
-    <li>The video pauses when the player is hidden, minimized, mostly covered, or moved off the screen, and when the display sleeps. Tonale does not play YouTube audio in the background.</li>
+    <li>In the player inside Tonale, the video pauses when the player is hidden, minimized, mostly covered, or moved off the screen, and when the display sleeps. That player does not play YouTube audio in the background.</li>
     <li>Tonale does not download videos, save their audio, or block ads.</li>
     <li>Playing a video connects your Mac directly to YouTube and Google. The <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> apply to that connection. Unless you choose to sign in to YouTube (see below), Tonale does not keep YouTube's cookies or website data after you quit.</li>
     <li>Thumbnails load directly from the addresses YouTube provides.</li>
   </ul>
-  <h3 id="youtube-sign-in">Signing in to YouTube (optional, macOS 27 or later)</h3>
-  <p>On macOS 27 or later, you can sign in to YouTube in Settings › YouTube, so that your YouTube sign-in applies to videos that play in Tonale. This is optional and off until you choose it. Before your first sign-in, Tonale shows a consent sheet that explains what changes. Tonale cannot import your YouTube playlists in this version.</p>
+  <h3 id="watch-on-youtube">Watch on YouTube</h3>
+  <p>You can choose Watch on YouTube in the Playback menu, or on the player when a video cannot play there. Tonale then shows YouTube's own watch page for that video in a Tonale window.</p>
+  <ul>
+    <li>The window shows <code>youtube.com</code> as a browser does, with YouTube's own cookies, ads, and controls. Tonale adds no script to the page and reads nothing from it except the page's address, which tells Tonale which video is showing.</li>
+    <li>Pages other than YouTube and Google's sign-in open in your default browser.</li>
+    <li>If you chose to sign in to YouTube, the window uses your saved sign-in data (see <a href="#youtube-sign-in">Signing in to YouTube</a>). If you did not, it uses temporary website data, which is deleted when the window closes.</li>
+  </ul>
+  <h3 id="youtube-sign-in">Signing in to YouTube (optional)</h3>
+  <p>You can sign in to YouTube in Settings › YouTube › Sign in to YouTube…, so that your YouTube sign-in applies to videos you watch in Tonale. This is optional and off until you choose it. Before your first sign-in, Tonale shows a consent sheet that explains what changes. Tonale cannot import your YouTube playlists in this version.</p>
   <ul>
     <li>You sign in on Google's own pages, in a Tonale window. Tonale receives no password or other credentials, types nothing into those pages, and reads nothing from them. To show whether you are signed in, Tonale reads only the names of cookies, never their values.</li>
     <li>From the time you choose to sign in until you sign out, Tonale keeps its WebKit website data (WebKit is the web engine in macOS), which holds your YouTube session, in its folder on your Mac. Nothing about the session goes to Xintech LLC.</li>
-    <li>While you are signed in, Tonale's player loads from <code>youtube.com</code> instead of the privacy-enhanced <code>youtube-nocookie.com</code>, so YouTube and Google recognize you. Your history, recommendations, and ads follow your Google settings, under Google's policies.</li>
+    <li>On macOS 27 or later, while you are signed in, Tonale's player loads from <code>youtube.com</code> instead of the privacy-enhanced <code>youtube-nocookie.com</code>, so YouTube and Google recognize you in the player and on YouTube's watch page.</li>
+    <li>On earlier versions of macOS, the player inside Tonale stays signed out, on <code>youtube-nocookie.com</code>. Your sign-in is used only on YouTube's watch page, in the window that Watch on YouTube opens.</li>
+    <li>Where YouTube and Google recognize you, your history, recommendations, and ads follow your Google settings, under Google's policies.</li>
     <li>Before you choose to sign in, and again after you sign out, the player loads from <code>youtube-nocookie.com</code> with new, temporary website data each time a player opens.</li>
-    <li>To sign out, choose Settings › YouTube › Sign Out…. Signing out deletes all of Tonale's WebKit website data.</li>
-    <li>Tonale includes the <code>NSCrossWebsiteTrackingUsageDescription</code> entry so that your sign-in can reach the player. On macOS 27 and later, this entry turns off WebKit's cross-site tracking prevention inside Tonale, whether or not you sign in. On earlier versions of macOS, it has no effect. Apart from the sign-in window, YouTube playback is the only web content in Tonale.</li>
+    <li>To sign out, choose Settings › YouTube › Sign Out…. Signing out deletes all of Tonale's WebKit website data and closes the watch and sign-in windows.</li>
+    <li>Tonale includes the <code>NSCrossWebsiteTrackingUsageDescription</code> entry so that your sign-in can reach the player. On macOS 27 and later, this entry turns off WebKit's cross-site tracking prevention inside Tonale, whether or not you sign in. On earlier versions of macOS, it has no effect. Apart from the sign-in and watch windows, YouTube playback is the only web content in Tonale.</li>
     <li>Tonale adds no advertising, analytics, or tracking of its own.</li>
   </ul>
   <h3>Public YouTube details</h3>
