@@ -4,18 +4,52 @@
         <title>XHelpers Pro</title>
         <item>
             <title>1.0.12</title>
-            <pubDate>Fri, 25 Sep 2026 08:09:51 -0700</pubDate>
+            <pubDate>Sun, 27 Sep 2026 11:12:03 -0700</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>27</sparkle:version>
+            <sparkle:version>28</sparkle:version>
             <sparkle:shortVersionString>1.0.12</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-# XHelpers Pro 1.0.12 (27)
+# XHelpers Pro 1.0.12 (28)
+
+- Display resolution: a resolution chosen from the menu or the resolution
+  window now stays when an external display reconnects during the change.
+  Keep, Revert and the 15-second timeout work as before.
+- AI Usage: accounts show their subscription billing dates. Codex renewal
+  dates are found automatically, and Claude renewal dates are read during
+  browser setup. The hover card sorts by limit reset or by billing renewal
+  without closing, with dates and countdowns aligned across accounts. The
+  title bar puts sorting on the left and Menu bar and Configure (formerly
+  Details) on the right.
+- Text Editor: smart typing, a find bar with replace, Go to Line, encoding
+  and line-ending menus, editor commands, more languages, outlines and
+  folding. Markdown gains source colours, table formatting, list
+  renumbering, local images and export to PDF and HTML. Legacy encodings
+  such as Windows-1252 and Shift JIS open and save, and Save warns before
+  overwriting another app's change.
+- Mac Health (formerly Why Is My Mac Slow?): clearer readings, top apps,
+  earlier findings, an optional menu bar item, and alerts for sustained app
+  CPU use, fast-falling free space and apps that stop responding.
+- Reclaim Disk Space: a guided flow checks disk use, takes you through each
+  cleanup and suggestion, confirms what moves to the Trash and shows the
+  result. Emptying what XHelpers moved and emptying the whole Trash have
+  separate confirmations.
+- Uninstall an App: review the removal plan on one screen, put an app back
+  from the Trash, find leftovers from removed apps, and manage unfinished
+  and completed sessions more easily.
+- Audio and video players: a pin button keeps the player above other
+  windows while it plays, the timeline can be dragged with live video
+  scrubbing, and the volume panel opens on click.
+- Keep Mac Awake: its menu row is ticked while any mode is on.
+- Translate the new interface text across all 25 supported translation
+  languages, and correct wrong translations found in review.
+
+## Also in 1.0.12
 
 - AI Usage: the AI meter can also sit in the menu bar as its own item, and
   clicking it opens the hover card. Turn it on with the Menu bar checkbox in
   the card's title bar or in the hover card settings; ⌘-drag it off the menu
-  bar to turn it off. The card's Details button opens the AI Usage window.
+  bar to turn it off. The card's Configure button opens the AI Usage window.
 - AI Usage: a Codex subscription whose weekly timer has not started is
   flagged, with a note to use it to start the timer. Menu rows under the
   hover card no longer light up or take clicks.
@@ -25,8 +59,6 @@
   offers a Continue that cannot finish.
 - Software Update: choosing Check for Updates while an update is already
   open brings that update forward instead of a stuck "Checking" window.
-
-## Also in 1.0.12
 
 - AI Usage: a Claude account no longer stays at "Sign-in expired" after a
   Claude Code update removes the version it was set up with; automatic and
@@ -83,7 +115,7 @@
 Xin account features remain disabled in this release.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.12-27/XHelpersPro-1.0.12-27-macOS.dmg" length="133163909" type="application/octet-stream" sparkle:edSignature="PqkJpD8rmqtRrbWsF8Uz5SUDkjVWp/Hyf7SxyXTgCrQeG2TyNCQDQhWIm1SQUIFSBE5M4noUxNekSeRfTmv3DQ=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.12-28/XHelpersPro-1.0.12-28-macOS.dmg" length="141239682" type="application/octet-stream" sparkle:edSignature="zvHa6qc2zFnC/lu5BBheCmG9b8/a5+p77DH+gcdHU52rGJaWq8W5rywCqYmQynmUNpZUnqexl6q6dk0wYhLkAw=="/>
         </item>
     </channel>
 </rss>
