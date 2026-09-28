@@ -4,18 +4,31 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>XTimers — Mac, iPhone ও iPad</title>
-<meta content="XTimers হলো Mac, iPhone ও iPad-এ টাইমার, কাউন্টডাউন, ঘড়ি, টাস্ক সেট, রিপোর্ট, কাস্টম সাউন্ড ও অ্যাকাউন্ট অনুস্মারকের জন্য শান্ত, Apple-নেটিভ টাইমার কর্মক্ষেত্র।" name="description"/>
 <meta content="#fbfaf7" name="theme-color"/>
-<meta content="XTimers" property="og:title"/>
-<meta content="Mac, iPhone ও iPad-এর জন্য টাইমার, কাউন্টডাউন, ঘড়ি, রিপোর্ট, সাউন্ড ও অ্যাকাউন্ট অনুস্মারক।" property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="https://xintechllc.com/XTimers/assets/flexible-timers/macos/1-single-light.png" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="XTimers" name="twitter:title"/>
-<meta content="Timers, countdowns, clocks, reports, sounds, and account reminders for Mac, iPhone, and iPad." name="twitter:description"/>
-<meta content="https://xintechllc.com/XTimers/assets/flexible-timers/macos/1-single-light.png" name="twitter:image"/>
-<link rel="canonical" href="https://xintechllc.com/XTimers/bn/">
+<meta content="কেটে যাওয়া সময়। কাউন্টডাউন। বিশ্বঘড়ি। বিশ্ব ক্যালেন্ডার। নমনীয়। নিজের মতো সাজানো যায়। টাইমার, রুটিন, রিমাইন্ডার ও রিপোর্ট এক কর্মপরিসরে আনুন।" name="description"/>
+<title>XTimers — কেটে যাওয়া সময়। কাউন্টডাউন। বিশ্বঘড়ি। বিশ্ব ক্যালেন্ডার।</title>
+<link href="../assets/marketing/app-icon.png" rel="icon"/>
+<link href="../assets/marketing/styles.css" rel="stylesheet"/>
+<link href="../assets/marketing/site-style.css" rel="stylesheet"/>
+<script defer="" src="../assets/marketing/site.js"></script>
+<script data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19" defer="" src="https://cloud.umami.is/script.js"></script><script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script> <link rel="canonical" href="https://xintechllc.com/XTimers/bn/">
 <link rel="alternate" hreflang="ar" href="https://xintechllc.com/XTimers/ar/">
 <link rel="alternate" hreflang="bn" href="https://xintechllc.com/XTimers/bn/">
 <link rel="alternate" hreflang="ca" href="https://xintechllc.com/XTimers/ca/">
@@ -23,7 +36,7 @@
 <link rel="alternate" hreflang="da" href="https://xintechllc.com/XTimers/da/">
 <link rel="alternate" hreflang="de" href="https://xintechllc.com/XTimers/de/">
 <link rel="alternate" hreflang="el" href="https://xintechllc.com/XTimers/el/">
-<link rel="alternate" hreflang="en" href="https://xintechllc.com/XTimers/flexible-timers.html">
+<link rel="alternate" hreflang="en" href="https://xintechllc.com/XTimers/">
 <link rel="alternate" hreflang="es" href="https://xintechllc.com/XTimers/es/">
 <link rel="alternate" hreflang="fi" href="https://xintechllc.com/XTimers/fi/">
 <link rel="alternate" hreflang="fr" href="https://xintechllc.com/XTimers/fr/">
@@ -61,7 +74,7 @@
 <link rel="alternate" hreflang="vi" href="https://xintechllc.com/XTimers/vi/">
 <link rel="alternate" hreflang="zh-Hans" href="https://xintechllc.com/XTimers/zh-Hans/">
 <link rel="alternate" hreflang="zh-Hant" href="https://xintechllc.com/XTimers/zh-Hant/">
-<link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XTimers/flexible-timers.html">
+<link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XTimers/">
 
 
 
@@ -108,37 +121,43 @@
 
 
 
-<link href="../assets/flexible-timers/brand/favicon.png" rel="icon" type="image/png"/>
-<link href="../assets/flexible-timers/site.css" rel="stylesheet"/>
-<script data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19" defer="" src="https://cloud.umami.is/script.js"></script>
-<script>
-  window.addEventListener("click", function (event) {
-    var link = event.target.closest && event.target.closest("a[href]");
-    if (!link || !window.umami) return;
-    var href = link.getAttribute("href") || "";
-    var url = link.href || href;
-    var eventName = null;
-    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
-    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
-    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
-    else if (/support\.html/i.test(href)) eventName = "Support Click";
-    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
-    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
-    if (eventName) {
-      window.umami.track(eventName, { href: url, path: window.location.pathname });
-    }
-  });
-</script>
 </head>
 <body>
-<div class="page-shell">
-<header class="nav">
-<div class="nav-inner">
-<a aria-label="XTimers মূল পাতা" class="brand" href="index.html">
-<img alt="" class="brand-icon" height="36" src="../assets/flexible-timers/brand/app-icon.png" width="36"/>
-<span class="brand-text">XTimers<small>Mac • iPhone • iPad</small></span>
-</a>
-<div class="nav-actions"><a class="button primary" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12">Mac-এর জন্য ডাউনলোড করুন</a><details class="language-menu">
+<svg aria-hidden="true" class="svg-definitions" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<symbol id="i-clock" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></symbol>
+<symbol id="i-timer" viewbox="0 0 24 24"><circle cx="12" cy="14" r="8"></circle><path d="M12 10v4l3 2M9 2h6m-3 0v4m6 0 2 2"></path></symbol>
+<symbol id="i-countdown" viewbox="0 0 24 24"><path d="M6 3h12M6 21h12M7 3v4l5 5-5 5v4m10-18v4l-5 5 5 5v4M9 18h6"></path></symbol>
+<symbol id="i-folder" viewbox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h5l3 3h6a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7h18"></path></symbol>
+<symbol id="i-check" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></symbol>
+<symbol id="i-globe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><ellipse cx="12" cy="12" rx="4" ry="9"></ellipse><path d="M3 12h18"></path></symbol>
+<symbol id="i-calendar" viewbox="0 0 24 24"><rect height="16" rx="3" width="18" x="3" y="5"></rect><path d="M7 3v4m10-4v4M3 11h18m-14 4h3m4 0h3m-10 3h3"></path></symbol>
+<symbol id="i-chart" viewbox="0 0 24 24"><path d="M4 3v18h17M8 17v-5m5 5V7m5 10V4"></path></symbol>
+<symbol id="i-sound" viewbox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9H3m13-1a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"></path></symbol>
+<symbol id="i-mail" viewbox="0 0 24 24"><rect height="14" rx="3" width="18" x="3" y="5"></rect><path d="m3 7 9 6 9-6"></path></symbol>
+<symbol id="i-phone" viewbox="0 0 24 24"><path d="m8 3 3 5-3 3a14 14 0 0 0 5 5l3-3 5 3v3c0 2-2 3-4 2C10 19 5 14 3 7c-1-2 0-4 2-4h3Z"></path></symbol>
+<symbol id="i-sync" viewbox="0 0 24 24"><path d="M20 8a8 8 0 0 0-14-3L3 8m0-5v5h5m-4 8a8 8 0 0 0 14 3l3-3m0 5v-5h-5"></path></symbol>
+<symbol id="i-lock" viewbox="0 0 24 24"><rect height="11" rx="3" width="14" x="5" y="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"></path></symbol>
+<symbol id="i-mac" viewbox="0 0 24 24"><rect height="13" rx="2" width="18" x="3" y="3"></rect><path d="M9 21h6m-3-5v5"></path></symbol>
+<symbol id="i-mobile" viewbox="0 0 24 24"><rect height="20" rx="3" width="12" x="6" y="2"></rect><path d="M10 5h4m-3 14h2"></path></symbol>
+<symbol id="i-tablet" viewbox="0 0 24 24"><rect height="20" rx="3" width="18" x="3" y="2"></rect><path d="M10 19h4"></path></symbol>
+<symbol id="i-plus" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></symbol>
+<symbol id="i-expand" viewbox="0 0 24 24"><path d="M9 3H3v6m0-6 6 6m6 12h6v-6m0 6-6-6"></path></symbol>
+<symbol id="i-leaf" viewbox="0 0 24 24"><path d="M4 20 16 8M5 17C-1 5 13 7 20 3c2 13-4 19-12 15"></path></symbol>
+</defs>
+</svg>
+<a class="skip-link" href="#main">মূল কনটেন্টে যান</a>
+<header class="site-header">
+<nav aria-label="প্রধান নেভিগেশন" class="navigation wrap">
+<a aria-label="XTimers মূল পাতা" class="brand" href="#top"><img alt="" height="36" src="../assets/marketing/app-icon.png" width="36"/><span>XTimers</span></a>
+<button aria-controls="nav-links" aria-expanded="false" aria-label="নেভিগেশন খুলুন" class="menu-toggle" data-close-label="নেভিগেশন বন্ধ করুন" data-open-label="নেভিগেশন খুলুন" type="button"><span></span><span></span></button>
+<div class="nav-links" id="nav-links">
+<a href="#features">বৈশিষ্ট্য</a>
+<a href="#devices">আপনার ডিভাইস</a>
+<a href="#support">প্রশ্ন</a>
+<div class="header-actions">
+<a class="button button-small button-ink" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12">Mac-এর জন্য ডাউনলোড করুন</a>
+<details class="language-menu">
             <summary>🌐 · বাংলা</summary>
             <div class="language-menu-list" aria-label="ভাষা">
               <a href="../ar/" lang="ar" dir="rtl">العربية</a>
@@ -148,7 +167,7 @@
               <a href="../da/" lang="da" dir="ltr">Dansk</a>
               <a href="../de/" lang="de" dir="ltr">Deutsch</a>
               <a href="../el/" lang="el" dir="ltr">Ελληνικά</a>
-              <a href="../flexible-timers.html" lang="en" dir="ltr">English</a>
+              <a href="../" lang="en" dir="ltr">English</a>
               <a href="../es/" lang="es" dir="ltr">Español</a>
               <a href="../fi/" lang="fi" dir="ltr">Suomi</a>
               <a href="../fr/" lang="fr" dir="ltr">Français</a>
@@ -187,34 +206,640 @@
               <a href="../zh-Hans/" lang="zh-Hans" dir="ltr">简体中文</a>
               <a href="../zh-Hant/" lang="zh-Hant" dir="ltr">繁體中文</a>
             </div>
-          </details></div>
+          </details>
 </div>
+</div>
+</nav>
 </header>
-<main id="top">
-<section aria-labelledby="hero-title" class="hero"><div><h1 id="hero-title">XTimers</h1><p class="hero-lede">Mac, iPhone ও iPad-এর জন্য টাইমার, কাউন্টডাউন, ঘড়ি, রিপোর্ট, সাউন্ড ও অ্যাকাউন্ট অনুস্মারক। আগে নাম ছিল Flexible Timers।</p></div><div aria-label="XTimers অ্যাপের স্ক্রিনশট" class="hero-visual"><div class="device-stage"><div class="desktop-card"><div aria-hidden="true" class="window-bar"><span class="traffic"></span><span class="traffic"></span><span class="traffic"></span><span class="window-title">Mac-এর জন্য XTimers</span></div><figure class="shot"><img alt="XTimers macOS লাইট মোডে প্রধান টাইমার উইন্ডো" height="1125" loading="eager" src="../assets/flexible-timers/macos/1-single-light.png" width="1800"/></figure></div><div aria-label="XTimers iPhone স্ক্রিনশট" class="phone-card"><figure class="shot"><img alt="XTimers iPhone টাইমার তালিকা হালকা মোডে" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-1-timers-light.png" width="736"/></figure></div><div aria-label="XTimers iPad স্ক্রিনশট" class="tablet-card"><figure class="shot"><img alt="XTimers iPad টাইমার তালিকা হালকা মোডে" height="1600" loading="eager" src="../assets/flexible-timers/ios/ipad-13-1-timers-light.png" width="1200"/></figure></div></div></div></section>
-<section aria-label="নমনীয় টাইমার বৈশিষ্ট্য" class="section" id="features"><div class="feature-grid"><article class="feature-card"><h3>নমনীয় কাজের ধরন</h3><p>টাইমার, শেষ সময়ের কাউন্টডাউন, বিশ্ব ঘড়ি এবং অ্যাকাউন্ট অনুস্মারকের কাজ।</p></article><article class="feature-card"><h3>টাস্ক সেট</h3><p>আলাদা কাজ, রান্না, পড়াশোনা, ভ্রমণ এবং পুনরায় ব্যবহারযোগ্য রুটিন।</p></article><article class="feature-card"><h3>প্রতিবেদন ও সংরক্ষণাগার</h3><p>স্ন্যাপশটগুলি পর্যালোচনা করুন, নোট যোগ করুন এবং আপনার অ্যাকাউন্টের ইমেইলে প্রতিবেদন পাঠান।</p></article><article class="feature-card"><h3>সাউন্ড ও বিজ্ঞপ্তি</h3><p>অ্যাপের সঙ্গে দেওয়া সাউন্ড, কাস্টম সাউন্ড, বিপ এবং স্থানীয় বিজ্ঞপ্তি ব্যবহার করুন।</p></article></div></section>
-<section aria-label="XTimers প্ল্যাটফর্ম" class="section platform-section"><article class="platform" id="mac"><div class="platform-copy"><h2>Mac-এ মনোযোগী টাইমার কাজের জন্য তৈরি।</h2><p>টাস্ক সেট, রিপোর্ট, সিঙ্ক, কাস্টম সাউন্ড এবং মেনু-বার স্ট্যাটাস সহ সুইফটইউআই টাইমার।</p><div class="platform-list"><div class="platform-item"><span class="check">✓</span><span>একক বা সম্প্রসারিত টাইমার বিন্যাস।</span></div><div class="platform-item"><span class="check">✓</span><span>সক্রিয় টাইমারের জন্য মেনু-বারের অবস্থা।</span></div><div class="platform-item"><span class="check">✓</span><span>টাইমার, কাউন্টডাউন, ঘড়ি এবং অনুস্মারক কাজ।</span></div><div class="platform-item"><span class="check">✓</span><span>সিঙ্ক, আর্কাইভ, রিপোর্ট এবং কাস্টম সাউন্ড।</span></div></div></div><div class="shot-stack"><figure class="shot"><img alt="XTimers macOS সম্প্রসারিত ডাবল-কলাম টাইমার উইন্ডো" height="1125" loading="eager" src="../assets/flexible-timers/macos/3-double-light.png" width="1800"/></figure><div class="shot-row"><figure class="shot"><img alt="XTimers macOS লাইট মোডে টাইমার শীট যোগ করুন" height="1125" loading="eager" src="../assets/flexible-timers/macos/5-addtimer-light.png" width="1800"/></figure><figure class="shot"><img alt="XTimers macOS হালকা মোডে কাউন্টডাউন শীট যোগ করুন" height="1125" loading="eager" src="../assets/flexible-timers/macos/7-addcountdown-light.png" width="1800"/></figure></div></div></article><article class="platform reverse" id="ios"><div class="phone-showcase"><div class="phone-screen"><figure class="shot"><img alt="XTimers iPhone স্ক্রিনশট" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-1-timers-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="XTimers iPhone স্ক্রিনশট" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-4-add-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="XTimers iPhone স্ক্রিনশট" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-6-settings-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="XTimers iPhone স্ক্রিনশট" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-7-report-light.png" width="736"/></figure></div></div><div class="platform-copy"><h2>iPhone এবং iPad-এ একই টাইমার সিস্টেম।</h2><p>iPhone ও iPad-এ টাইমার, ঘড়ি, রিপোর্ট, সেটিংস, সিঙ্ক, বিজ্ঞপ্তি ও সাউন্ড।</p><div class="platform-list"><div class="platform-item"><span class="check">✓</span><span>iPhone তালিকা এবং iPad গ্রিড বিন্যাস।</span></div><div class="platform-item"><span class="check">✓</span><span>টাইমার, কাউন্টডাউন, ঘড়ি ও অনুস্মারক তৈরি করুন।</span></div><div class="platform-item"><span class="check">✓</span><span>রিপোর্ট, সেটিংস, সাউন্ড এবং সিঙ্ক।</span></div></div></div></article></section>
-<section aria-labelledby="sync-title" class="section" id="sync"><div class="account-panel"><div><h2 id="sync-title">Xin Account-এ সাইন-ইন। XTimers ডেটা আলাদা থাকে।</h2><p>অভিন্ন সাইন-ইনের জন্য XTimers আপনার Xin Account ব্যবহার করে, আর আপনার টাইমার, প্রতিবেদন, সেটিংস, সাউন্ড ও SMS পছন্দগুলোকে XTimers পণ্য ডেটা হিসেবে আলাদা রাখে। <a href="privacy.html#xin-account">অ্যাকাউন্টের স্তরগুলো কীভাবে কাজ করে তা জানুন।</a></p></div><div class="account-list"><div class="account-row"><strong>একাধিক ডিভাইসে সাইন ইন</strong><span>আপনার Xin Account আপনাকে শনাক্ত করে এবং প্রতিটি সংযুক্ত XTimers অ্যাকাউন্ট অনুমোদন করে।</span></div><div class="account-row"><strong>XTimers ডেটা সিঙ্ক করুন</strong><span>টাস্ক সেট, আর্কাইভ, সেটিংস এবং সাউন্ড সংযুক্ত XTimers অ্যাকাউন্টের সঙ্গে থাকে।</span></div><div class="account-row"><strong>আলাদা গোপনীয়তা পছন্দ</strong><span>সাইন আউট করা, স্থানীয় কপি সরানো, XTimers ডেটা মুছে ফেলা এবং বৈশ্বিক Xin Account মুছে ফেলাকে পৃথক কাজ হিসেবে বিবেচনা করুন।</span></div></div></div></section>
-</main>
-<footer><div>© 2017-2026 Xintech LLC.</div><div class="footer-links"><a href="support.html">সমর্থন</a><a href="privacy.html">গোপনীয়তা</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a><a href="sms-terms.html">SMS শর্তাবলী</a><a href="sms-opt-in.html">SMS অপ্ট ইন</a></div></footer>
+<main id="main">
+<section aria-labelledby="hero-heading" class="hero wrap" id="top">
+<div class="hero-copy hero-hoefler">
+<div class="hero-copy-inner">
+<p class="eyebrow">Mac, iPhone ও iPad-এর জন্য</p>
+<h1 aria-label="কেটে যাওয়া সময়। কাউন্টডাউন। বিশ্বঘড়ি। বিশ্ব ক্যালেন্ডার।" class="hero-timing-heading" id="hero-heading"><span class="hero-line">কেটে যাওয়া সময়।</span> <span class="hero-line">কাউন্টডাউন।</span> <span class="hero-line">বিশ্বঘড়ি।</span> <span class="hero-line">বিশ্ব ক্যালেন্ডার।</span></h1>
+<p class="hero-payoff">নমনীয়। নিজের মতো সাজানো যায়।</p>
+<p class="hero-description">টাইমার, কাউন্টডাউন ও বিশ্বঘড়ি এক কর্মপরিসরে আনুন। পুনর্ব্যবহারযোগ্য রুটিন, রিমাইন্ডার ও রিপোর্ট যোগ করুন; লেআউট আর চেহারা সাজান নিজের মতো।</p>
+<p class="hero-note"><svg aria-hidden="true" class="icon"><use href="#i-check"></use></svg>মৌলিক টাইমারগুলো অফলাইনেই চলে। অ্যাকাউন্ট লাগে না।</p>
 </div>
-<script>
-      // ft-language-menu-dismiss: close the language dropdown when clicking
-      // outside it or pressing Escape. A native <details> otherwise only closes
-      // on a second click of its <summary>.
-      (function () {
-        function closeAll() {
-          document.querySelectorAll('details.language-menu[open]')
-            .forEach(function (d) { d.removeAttribute('open'); });
-        }
-        document.addEventListener('click', function (e) {
-          document.querySelectorAll('details.language-menu[open]')
-            .forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute('open'); });
-        });
-        document.addEventListener('keydown', function (e) {
-          if (e.key === 'Escape' || e.key === 'Esc') closeAll();
-        });
-      })();
-    </script>
+</div>
+<div class="hero-stage">
+<div class="floating-label"><span class="pulse-dot"></span>গুরুত্বপূর্ণ বিষয়ের জন্য সময় রাখুন।</div>
+<button aria-label="বড় করে দেখুন: ইনস্টল করা Mac অ্যাপের “Studio” স্ক্রিনশট" class="image-button hero-mac" data-caption="“Studio” কর্মপরিসর — ইনস্টল করা Mac অ্যাপে নমুনা টাইমার, একটি কাউন্টডাউন ও বিশ্বঘড়ি।" data-zoom="../assets/marketing/mac-dark.png" type="button">
+<img alt="ইনস্টল করা XTimers-এর “Studio” কর্মপরিসরে গাঢ় নীল পটভূমিতে নমুনা “Design”, “Research”, “Writing”, “Reading” ও “Planning” টাইমার, “Focus sprint” ও তিনটি বিশ্বঘড়ি দেখা যাচ্ছে" fetchpriority="high" height="796" src="../assets/marketing/mac-dark.png" width="1240"/>
+</button>
+<button aria-label="বড় করে দেখুন: লুকানো নিয়ন্ত্রণসহ ছোট “Design” টাইমার" class="image-button hero-mini" data-caption="একটি ছোট “Design” টাইমার — ইনস্টল করা Mac অ্যাপে নমুনা ডেটা ও লুকানো নিয়ন্ত্রণসহ।" data-zoom="../assets/marketing/mac-timer-minimal-hidden.png" type="button">
+<img alt="নিয়ন্ত্রণগুলো মিলিয়ে যাওয়ার পর ছোট গাঢ় নীল “Minimal” উইন্ডোতে “Design” টাইমার" fetchpriority="high" height="480" src="../assets/marketing/mac-timer-minimal-hidden.png" width="1240"/>
+</button>
+<button aria-label="বড় করে দেখুন: প্রথম অংশে বিশ্ব ক্যালেন্ডার" class="image-button hero-calendar" data-caption="বিশ্ব ক্যালেন্ডার — ইনস্টল করা Mac অ্যাপে সরকারি ছুটি, চীনা ক্যালেন্ডারের তারিখ ও জাতীয় দিবসের বিস্তারিতসহ অক্টোবর 2026।" data-zoom="../assets/marketing/mac-world-calendar-month.png" type="button">
+<img alt="হালকা Mac উইন্ডোতে বিশ্ব ক্যালেন্ডারের মাসের ছক ও ছুটির বিস্তারিত" decoding="async" height="1440" src="../assets/marketing/mac-world-calendar-month.png" width="2040"/>
+</button>
+<button aria-label="বড় করে দেখুন: প্রথম অংশে শব্দের লাইব্রেরি" class="image-button hero-sounds" data-caption="শব্দের লাইব্রেরি — ইনস্টল করা Mac অ্যাপে “World Ceremonial”-এর শব্দ, নিজস্ব তরঙ্গরূপ, পছন্দের তালিকা ও চালানোর নিয়ন্ত্রণসহ।" data-zoom="../assets/marketing/mac-sound-ceremonial.png" type="button">
+<img alt="শব্দের লাইব্রেরির “World Ceremonial” সংগ্রহ, যাতে ঘণ্টা, ঝংকার, ঢোল ও ট্রাম্পেটের তরঙ্গরূপ দেখা যায়" decoding="async" height="1120" src="../assets/marketing/mac-sound-ceremonial.png" width="1440"/>
+</button>
+<button aria-label="বড় করে দেখুন: প্রথম অংশে ডলোমাইটসের ছবিসহ “Planning”" class="image-button hero-photo" data-caption="আপনার নিজের ভিউ — ডলোমাইটসের ছবির ওপর “Planning”-এ 20:04 দেখা যাচ্ছে; ইনস্টল করা Mac অ্যাপে নিয়ন্ত্রণগুলো স্বাভাবিকভাবে লুকিয়ে আছে।" data-zoom="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" type="button">
+<img alt="পাহাড়ের ছবির ওপর “Minimal” ভিউতে “Planning”-এ 20:04 দেখা যাচ্ছে" decoding="async" height="468" src="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" width="658"/>
+</button>
+<button aria-label="বড় করে দেখুন: প্রথম অংশে সাপ্তাহিক রিপোর্টের চার্ট" class="image-button hero-report" data-caption="আপনার সপ্তাহ স্পষ্টভাবে — ইনস্টল করা Mac অ্যাপে পাঁচটি কাজে নমুনা হিসেবে দেখানো 30 ঘণ্টা, দৈনিক মোট সময় ও প্রতিটি কাজের অংশের চার্টসহ।" data-zoom="../assets/marketing/mac-report-week-daily-totals.png" type="button">
+<img alt="রঙিন স্তূপাকার দৈনিক মোট সময় ও নমুনা হিসেবে দেখানো 30 ঘণ্টায় প্রতিটি কাজের অংশ দেখানো চার্টসহ সাপ্তাহিক সময়ের রিপোর্ট" decoding="async" height="2396" src="../assets/marketing/mac-report-week-daily-totals.png" width="1520"/>
+</button>
+<div class="hero-menubar">
+<button aria-label="বড় করে দেখুন: প্রথম অংশে মেনু বারে “Planning”-এর অবস্থা" class="image-button" data-caption="মেনু বারে আপনার টাইমার — “Planning” 20:04-এ বিরত আছে; মূল উইন্ডো না খুলেই macOS-এর স্ট্যাটাস আইকনের পাশে দেখা যাচ্ছে।" data-zoom="../assets/marketing/mac-menubar-status-planning.png" type="button">
+<img alt="macOS-এর মেনু বারে বিরতির চিহ্ন ও “Planning 20:04” সিস্টেম স্ট্যাটাস আইকনের পাশে দেখা যাচ্ছে" decoding="async" height="60" src="../assets/marketing/mac-menubar-status-planning.png" width="572"/>
+</button>
+<a href="#menu-bar">আপনার টাইমার, সরাসরি মেনু বারে।</a>
+</div>
+<span class="stage-caption">আপনার সময়। একনজরে।</span>
+</div>
+</section>
+<section aria-label="XTimers-এর বৈশিষ্ট্যগুলো দেখুন" class="feature-overview wrap" id="features">
+<details class="feature-browser">
+<summary>সব 20টি বৈশিষ্ট্য দেখুন <span aria-hidden="true">+</span></summary>
+<nav aria-label="বিভাগ অনুযায়ী সব 20টি বৈশিষ্ট্য" class="feature-index">
+<div class="feature-group">
+<h3><a class="feature-category" href="#timers"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timers.png" width="16"/>সময় মাপা<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#timers"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timers.png" width="16"/><span>টাইমার ও কাউন্টডাউন</span></a></li>
+<li><a href="#reminders"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/reminders.png" width="16"/><span>ইমেইল, SMS ও কলের মাধ্যমে রিমাইন্ডার</span></a></li>
+<li><a href="#sound-library"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/sound-library.png" width="16"/><span>শব্দের লাইব্রেরি</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#task-sets"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/task-sets.png" width="16"/>রুটিন<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#task-sets"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/task-sets.png" width="16"/><span>কাজের সেট ও পুনর্ব্যবহারযোগ্য টেমপ্লেট</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#timer-views"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timer-views.png" width="16"/>ভিউ<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#timer-views"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timer-views.png" width="16"/><span>টাইমারের নমনীয় ভিউ</span></a></li>
+<li><a href="#classic-interface"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/classic-interface.png" width="16"/><span>ক্লাসিক ইন্টারফেস</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#world-calendar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-clocks.png" width="16"/>বিশ্বের সময়<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#world-clocks"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-clocks.png" width="16"/><span>বিশ্বঘড়ি</span></a></li>
+<li><a href="#world-calendar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-calendar.png" width="16"/><span>বিশ্ব ক্যালেন্ডার</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#time-reports"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/time-reports.png" width="16"/>রিপোর্ট<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#time-reports"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/time-reports.png" width="16"/><span>সময়ের রিপোর্ট ও শেয়ারিং</span></a></li>
+<li><a href="#archives"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/archives.png" width="16"/><span>আর্কাইভ</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#appearance"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/appearance.png" width="16"/>চেহারা<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#appearance"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/appearance.png" width="16"/><span>চেহারার ব্যক্তিগতকরণ</span></a></li>
+<li><a href="#languages"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/languages.png" width="16"/><span>বহুভাষিক সহায়তা</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#menu-bar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/menu-bar.png" width="16"/>আপনার ডিভাইস<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#menu-bar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/menu-bar.png" width="16"/><span>মেনু বার ও ডেস্কটপের সঙ্গে সংযোগ</span></a></li>
+<li><a href="#live-activities"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/live-activities.png" width="16"/><span>লাইভ অ্যাক্টিভিটি</span></a></li>
+<li><a href="#siri-shortcuts"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/siri-shortcuts.png" width="16"/><span>Siri ও শর্টকাট</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#offline"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/protected-sync.png" width="16"/>সিঙ্ক ও গোপনীয়তা<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#offline"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/offline.png" width="16"/><span>অ্যাকাউন্ট ছাড়াই অফলাইনে ব্যবহার</span></a></li>
+<li><a href="#synchronization"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/synchronization.png" width="16"/><span>ডিভাইসগুলোর মধ্যে সিঙ্ক</span></a></li>
+<li><a href="#protected-sync"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/protected-sync.png" width="16"/><span>সুরক্ষিত সিঙ্ক</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#activity-tracking"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/xhelpers-pro.png" width="16"/>Mac-এ আরও কিছু<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#activity-tracking"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/activity-tracking.png" width="16"/><span>অ্যাপ ব্যবহারের স্বয়ংক্রিয় পর্যবেক্ষণ</span></a></li>
+<li><a href="#xhelpers-pro"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/xhelpers-pro.png" width="16"/><span>XHelpers Pro সুবিধা</span></a></li>
+</ul>
+</div>
+</nav>
+</details>
+</section>
+<section aria-labelledby="timers-heading" class="highlight-row has-gallery" data-highlight="01" id="timers">
+<span class="anchor-target" id="count-up-timers"></span><span class="anchor-target" id="countdowns"></span><span class="anchor-target" id="running-timers"></span><span class="anchor-target" id="task-controls"></span><span class="anchor-target" id="notes-history"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">01</span>টাইমার ও কাউন্টডাউন</p>
+<h2 id="timers-heading">গুরুত্বপূর্ণ বিষয়ের জন্য সময় রাখুন।</h2>
+<p>কাটানো সময় মাপুন, একটি নির্দিষ্ট সময়ের কাউন্টডাউন চালান বা শেষ সময়টি চোখের সামনে রাখুন। এক বা একাধিক কাজ চালান, বিরতি দিন ও আবার শুরু করুন, আর সেশনের সঙ্গে নোট রাখুন। দিনের পরিবর্তনের সঙ্গে টাইমারও মানিয়ে নেয়।</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="টাইমার ও কাউন্টডাউন-এর ছবি" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>আপনার টাইমারের কর্মপরিসর</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: আপনার টাইমারের কর্মপরিসর" class="image-button capture-image" data-caption="আপনার টাইমারের কর্মপরিসর — “Studio” কর্মপরিসরে কেটে যাওয়া সময় মাপার পাঁচটি টাইমার, একটি “Focus sprint” কাউন্টডাউন ও তিনটি বিশ্বঘড়ি একসঙ্গে আছে।" data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="“Studio” কর্মপরিসরে কেটে যাওয়া সময় মাপার পাঁচটি টাইমার, একটি “Focus sprint” কাউন্টডাউন ও তিনটি বিশ্বঘড়ি একসঙ্গে আছে।" decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>“Studio” কর্মপরিসরে কেটে যাওয়া সময় মাপার পাঁচটি টাইমার, একটি “Focus sprint” কাউন্টডাউন ও তিনটি বিশ্বঘড়ি একসঙ্গে আছে।</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>আপনার নিজের কাউন্টডাউন</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: আপনার নিজের কাউন্টডাউন" class="image-button capture-image" data-caption="আপনার নিজের কাউন্টডাউন — “Focus sprint”: “Studio”-তে বিরতি দেওয়া যায় এমন 25 মিনিটের কাউন্টডাউন, যা হাতে শুরু হয় ও “Gentle Bell” দিয়ে শেষ হয়।" data-zoom="../assets/marketing/mac-countdown.png" type="button"><img alt="“Focus sprint”: “Studio”-তে বিরতি দেওয়া যায় এমন 25 মিনিটের কাউন্টডাউন, যা হাতে শুরু হয় ও “Gentle Bell” দিয়ে শেষ হয়।" decoding="async" loading="lazy" src="../assets/marketing/mac-countdown.png"/></button>
+<figcaption>“Focus sprint”: “Studio”-তে বিরতি দেওয়া যায় এমন 25 মিনিটের কাউন্টডাউন, যা হাতে শুরু হয় ও “Gentle Bell” দিয়ে শেষ হয়।</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="task-sets-heading" class="highlight-row" data-highlight="02" id="task-sets">
+<span class="anchor-target" id="routines"></span><span class="anchor-target" id="templates"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">02</span>কাজের সেট ও পুনর্ব্যবহারযোগ্য টেমপ্লেট</p>
+<h2 id="task-sets-heading">প্রতিটি রুটিনের জন্য একটি জায়গা।</h2>
+<p>কাজ, শেখা ও দৈনন্দিন জীবনের জন্য আলাদা নামের কাজের সেট তৈরি করুন। একটি কাজ বা গোটা সেট টেমপ্লেট হিসেবে সংরক্ষণ করুন, তারপর পরের সেশনে চেনা রুটিন নিয়ে আসুন।</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="কাজের সেট ও পুনর্ব্যবহারযোগ্য টেমপ্লেট-এর ছবি" class="feature-gallery gallery-1">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>টাস্ক সেট</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: কাজের সেট" class="image-button capture-image" data-caption="কাজের সেট — নয়টি সক্রিয় কাজ এবং পুনর্ব্যবহারযোগ্য “Studio Template” নিয়ে “Studio” কাজের সেট।" data-zoom="../assets/marketing/mac-task-sets.png" type="button"><img alt="নয়টি সক্রিয় কাজ এবং পুনর্ব্যবহারযোগ্য “Studio Template” নিয়ে “Studio” কাজের সেট।" decoding="async" loading="lazy" src="../assets/marketing/mac-task-sets.png"/></button>
+<figcaption>নয়টি সক্রিয় কাজ এবং পুনর্ব্যবহারযোগ্য “Studio Template” নিয়ে “Studio” কাজের সেট।</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="timer-views-heading" class="highlight-row has-gallery" data-highlight="03" id="timer-views">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">03</span>টাইমারের নমনীয় ভিউ</p>
+<h2 id="timer-views-heading">এই মুহূর্তের জন্য সঠিক ভিউ।</h2>
+<p>পুরো ছবিটা দেখুন, অথবা একটি কাজে মন দিন। Mac-এ “List”, “Grid”, “Single” ও “Minimal” ভিউ আছে। iPhone ও iPad-এ মুহূর্তের প্রয়োজন অনুযায়ী “List”, “Focus” বা “Single” বেছে নিন।</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">“Single” ও “Minimal” ভিউতে পয়েন্টার সরে গেলে নিয়ন্ত্রণগুলো মিলিয়ে যায়; ওপর দিয়ে পয়েন্টার নিলে আবার দেখা যায়।</p>
+</div>
+<div aria-label="টাইমারের নমনীয় ভিউ-এর ছবি" class="feature-gallery gallery-14">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · তালিকা (“List”)</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: Mac · তালিকা (“List”)" class="image-button capture-image" data-caption="Mac · তালিকা (“List”) — “List” ভিউতে “Studio”, যেখানে নয়টি কাজ ছোট ছোট সারিতে সাজানো।" data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="“List” ভিউতে “Studio”, যেখানে নয়টি কাজ ছোট ছোট সারিতে সাজানো।" decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>“List” ভিউতে “Studio”, যেখানে নয়টি কাজ ছোট ছোট সারিতে সাজানো।</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · গ্রিড (“Grid”)</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: Mac · গ্রিড (“Grid”)" class="image-button capture-image" data-caption="Mac · গ্রিড (“Grid”) — “Studio”-র “Design”, “Research”, “Writing”, “Reading” ও “Planning” টাইমার, “Focus sprint” এবং নিউ ইয়র্ক, লন্ডন ও টোকিওর ঘড়ি।" data-zoom="../assets/marketing/mac-grid-light.png" type="button"><img alt="“Studio”-র “Design”, “Research”, “Writing”, “Reading” ও “Planning” টাইমার, “Focus sprint” এবং নিউ ইয়র্ক, লন্ডন ও টোকিওর ঘড়ি।" decoding="async" loading="lazy" src="../assets/marketing/mac-grid-light.png"/></button>
+<figcaption>“Studio”-র “Design”, “Research”, “Writing”, “Reading” ও “Planning” টাইমার, “Focus sprint” এবং নিউ ইয়র্ক, লন্ডন ও টোকিওর ঘড়ি।</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · একক (“Single”), নিয়ন্ত্রণ দৃশ্যমান · সম্পূর্ণ কালো</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: Mac · একক (“Single”), নিয়ন্ত্রণ দৃশ্যমান · সম্পূর্ণ কালো" class="image-button capture-image" data-caption="Mac · একক (“Single”), নিয়ন্ত্রণ দৃশ্যমান · সম্পূর্ণ কালো — ইনস্টল করা Mac অ্যাপের “Single” ভিউতে “Planning”-এ 20:04, দৃশ্যমান নিয়ন্ত্রণ ও সম্পূর্ণ কালো পটভূমিসহ।" data-zoom="../assets/marketing/mac-planning-single-black.png" type="button"><img alt="ইনস্টল করা Mac অ্যাপের “Single” ভিউতে “Planning”-এ 20:04, দৃশ্যমান নিয়ন্ত্রণ ও সম্পূর্ণ কালো পটভূমিসহ।" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-black.png"/></button>
+<figcaption>ইনস্টল করা Mac অ্যাপের “Single” ভিউতে “Planning”-এ 20:04, দৃশ্যমান নিয়ন্ত্রণ ও সম্পূর্ণ কালো পটভূমিসহ।</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · ন্যূনতম (“Minimal”), নিয়ন্ত্রণ দৃশ্যমান · সম্পূর্ণ কালো</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: Mac · ন্যূনতম (“Minimal”), নিয়ন্ত্রণ দৃশ্যমান · সম্পূর্ণ কালো" class="image-button capture-image" data-caption="Mac · ন্যূনতম (“Minimal”), নিয়ন্ত্রণ দৃশ্যমান · সম্পূর্ণ কালো — ইনস্টল করা Mac অ্যাপের “Minimal” ভিউতে “Planning”-এ 20:04, দৃশ্যমান নিয়ন্ত্রণ ও সম্পূর্ণ কালো পটভূমিসহ।" data-zoom="../assets/marketing/mac-planning-minimal-black.png" type="button"><img alt="ইনস্টল করা Mac অ্যাপের “Minimal” ভিউতে “Planning”-এ 20:04, দৃশ্যমান নিয়ন্ত্রণ ও সম্পূর্ণ কালো পটভূমিসহ।" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-black.png"/></button>
+<figcaption>ইনস্টল করা Mac অ্যাপের “Minimal” ভিউতে “Planning”-এ 20:04, দৃশ্যমান নিয়ন্ত্রণ ও সম্পূর্ণ কালো পটভূমিসহ।</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · একক (“Single”), নিয়ন্ত্রণ লুকানো · সম্পূর্ণ কালো</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: Mac · একক (“Single”), নিয়ন্ত্রণ লুকানো · সম্পূর্ণ কালো" class="image-button capture-image" data-caption="Mac · একক (“Single”), নিয়ন্ত্রণ লুকানো · সম্পূর্ণ কালো — ইনস্টল করা Mac অ্যাপের “Single” ভিউতে “Planning”-এ 20:04, লুকানো নিয়ন্ত্রণ ও সম্পূর্ণ কালো পটভূমিসহ।" data-zoom="../assets/marketing/mac-planning-single-hidden-black.png" type="button"><img alt="ইনস্টল করা Mac অ্যাপের “Single” ভিউতে “Planning”-এ 20:04, লুকানো নিয়ন্ত্রণ ও সম্পূর্ণ কালো পটভূমিসহ।" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-black.png"/></button>
+<figcaption>ইনস্টল করা Mac অ্যাপের “Single” ভিউতে “Planning”-এ 20:04, লুকানো নিয়ন্ত্রণ ও সম্পূর্ণ কালো পটভূমিসহ।</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · ন্যূনতম (“Minimal”), নিয়ন্ত্রণ লুকানো · সম্পূর্ণ কালো</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: Mac · ন্যূনতম (“Minimal”), নিয়ন্ত্রণ লুকানো · সম্পূর্ণ কালো" class="image-button capture-image" data-caption="Mac · ন্যূনতম (“Minimal”), নিয়ন্ত্রণ লুকানো · সম্পূর্ণ কালো — ইনস্টল করা Mac অ্যাপের “Minimal” ভিউতে “Planning”-এ 20:04, লুকানো নিয়ন্ত্রণ ও সম্পূর্ণ কালো পটভূমিসহ।" data-zoom="../assets/marketing/mac-planning-minimal-hidden-black.png" type="button"><img alt="ইনস্টল করা Mac অ্যাপের “Minimal” ভিউতে “Planning”-এ 20:04, লুকানো নিয়ন্ত্রণ ও সম্পূর্ণ কালো পটভূমিসহ।" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-black.png"/></button>
+<figcaption>ইনস্টল করা Mac অ্যাপের “Minimal” ভিউতে “Planning”-এ 20:04, লুকানো নিয়ন্ত্রণ ও সম্পূর্ণ কালো পটভূমিসহ।</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · একক (“Single”), নিয়ন্ত্রণ দৃশ্যমান · ইয়োসেমিটির ছবি</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: Mac · একক (“Single”), নিয়ন্ত্রণ দৃশ্যমান · ইয়োসেমিটির ছবি" class="image-button capture-image" data-caption="Mac · একক (“Single”), নিয়ন্ত্রণ দৃশ্যমান · ইয়োসেমিটির ছবি — ইনস্টল করা Mac অ্যাপের “Single” ভিউতে “Planning”-এ 20:04, দৃশ্যমান নিয়ন্ত্রণ ও ইয়োসেমিটির ছবির পটভূমিসহ।" data-zoom="../assets/marketing/mac-planning-single-yosemite.png" type="button"><img alt="ইনস্টল করা Mac অ্যাপের “Single” ভিউতে “Planning”-এ 20:04, দৃশ্যমান নিয়ন্ত্রণ ও ইয়োসেমিটির ছবির পটভূমিসহ।" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-yosemite.png"/></button>
+<figcaption>ইনস্টল করা Mac অ্যাপের “Single” ভিউতে “Planning”-এ 20:04, দৃশ্যমান নিয়ন্ত্রণ ও ইয়োসেমিটির ছবির পটভূমিসহ।</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · ন্যূনতম (“Minimal”), নিয়ন্ত্রণ দৃশ্যমান · ইয়োসেমিটির ছবি</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: Mac · ন্যূনতম (“Minimal”), নিয়ন্ত্রণ দৃশ্যমান · ইয়োসেমিটির ছবি" class="image-button capture-image" data-caption="Mac · ন্যূনতম (“Minimal”), নিয়ন্ত্রণ দৃশ্যমান · ইয়োসেমিটির ছবি — ইনস্টল করা Mac অ্যাপের “Minimal” ভিউতে “Planning”-এ 20:04, দৃশ্যমান নিয়ন্ত্রণ ও ইয়োসেমিটির ছবির পটভূমিসহ।" data-zoom="../assets/marketing/mac-planning-minimal-yosemite.png" type="button"><img alt="ইনস্টল করা Mac অ্যাপের “Minimal” ভিউতে “Planning”-এ 20:04, দৃশ্যমান নিয়ন্ত্রণ ও ইয়োসেমিটির ছবির পটভূমিসহ।" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-yosemite.png"/></button>
+<figcaption>ইনস্টল করা Mac অ্যাপের “Minimal” ভিউতে “Planning”-এ 20:04, দৃশ্যমান নিয়ন্ত্রণ ও ইয়োসেমিটির ছবির পটভূমিসহ।</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · একক (“Single”), নিয়ন্ত্রণ লুকানো · ইয়োসেমিটির ছবি</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: Mac · একক (“Single”), নিয়ন্ত্রণ লুকানো · ইয়োসেমিটির ছবি" class="image-button capture-image" data-caption="Mac · একক (“Single”), নিয়ন্ত্রণ লুকানো · ইয়োসেমিটির ছবি — ইনস্টল করা Mac অ্যাপের “Single” ভিউতে “Planning”-এ 20:04, লুকানো নিয়ন্ত্রণ ও ইয়োসেমিটির ছবির পটভূমিসহ।" data-zoom="../assets/marketing/mac-planning-single-hidden-yosemite.png" type="button"><img alt="ইনস্টল করা Mac অ্যাপের “Single” ভিউতে “Planning”-এ 20:04, লুকানো নিয়ন্ত্রণ ও ইয়োসেমিটির ছবির পটভূমিসহ।" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-yosemite.png"/></button>
+<figcaption>ইনস্টল করা Mac অ্যাপের “Single” ভিউতে “Planning”-এ 20:04, লুকানো নিয়ন্ত্রণ ও ইয়োসেমিটির ছবির পটভূমিসহ।</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · ন্যূনতম (“Minimal”), নিয়ন্ত্রণ লুকানো · ইয়োসেমিটির ছবি</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: Mac · ন্যূনতম (“Minimal”), নিয়ন্ত্রণ লুকানো · ইয়োসেমিটির ছবি" class="image-button capture-image" data-caption="Mac · ন্যূনতম (“Minimal”), নিয়ন্ত্রণ লুকানো · ইয়োসেমিটির ছবি — ইনস্টল করা Mac অ্যাপের “Minimal” ভিউতে “Planning”-এ 20:04, লুকানো নিয়ন্ত্রণ ও ইয়োসেমিটির ছবির পটভূমিসহ।" data-zoom="../assets/marketing/mac-planning-minimal-hidden-yosemite.png" type="button"><img alt="ইনস্টল করা Mac অ্যাপের “Minimal” ভিউতে “Planning”-এ 20:04, লুকানো নিয়ন্ত্রণ ও ইয়োসেমিটির ছবির পটভূমিসহ।" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-yosemite.png"/></button>
+<figcaption>ইনস্টল করা Mac অ্যাপের “Minimal” ভিউতে “Planning”-এ 20:04, লুকানো নিয়ন্ত্রণ ও ইয়োসেমিটির ছবির পটভূমিসহ।</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · একক (“Single”), নিয়ন্ত্রণ দৃশ্যমান · ডলোমাইটসের ছবি</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: Mac · একক (“Single”), নিয়ন্ত্রণ দৃশ্যমান · ডলোমাইটসের ছবি" class="image-button capture-image" data-caption="Mac · একক (“Single”), নিয়ন্ত্রণ দৃশ্যমান · ডলোমাইটসের ছবি — ইনস্টল করা Mac অ্যাপের “Single” ভিউতে “Planning”-এ 20:04, দৃশ্যমান নিয়ন্ত্রণ ও ডলোমাইটসের ছবির পটভূমিসহ।" data-zoom="../assets/marketing/mac-planning-single-dolomites.png" type="button"><img alt="ইনস্টল করা Mac অ্যাপের “Single” ভিউতে “Planning”-এ 20:04, দৃশ্যমান নিয়ন্ত্রণ ও ডলোমাইটসের ছবির পটভূমিসহ।" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-dolomites.png"/></button>
+<figcaption>ইনস্টল করা Mac অ্যাপের “Single” ভিউতে “Planning”-এ 20:04, দৃশ্যমান নিয়ন্ত্রণ ও ডলোমাইটসের ছবির পটভূমিসহ।</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · ন্যূনতম (“Minimal”), নিয়ন্ত্রণ দৃশ্যমান · ডলোমাইটসের ছবি</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: Mac · ন্যূনতম (“Minimal”), নিয়ন্ত্রণ দৃশ্যমান · ডলোমাইটসের ছবি" class="image-button capture-image" data-caption="Mac · ন্যূনতম (“Minimal”), নিয়ন্ত্রণ দৃশ্যমান · ডলোমাইটসের ছবি — ইনস্টল করা Mac অ্যাপের “Minimal” ভিউতে “Planning”-এ 20:04, দৃশ্যমান নিয়ন্ত্রণ ও ডলোমাইটসের ছবির পটভূমিসহ।" data-zoom="../assets/marketing/mac-planning-minimal-dolomites.png" type="button"><img alt="ইনস্টল করা Mac অ্যাপের “Minimal” ভিউতে “Planning”-এ 20:04, দৃশ্যমান নিয়ন্ত্রণ ও ডলোমাইটসের ছবির পটভূমিসহ।" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-dolomites.png"/></button>
+<figcaption>ইনস্টল করা Mac অ্যাপের “Minimal” ভিউতে “Planning”-এ 20:04, দৃশ্যমান নিয়ন্ত্রণ ও ডলোমাইটসের ছবির পটভূমিসহ।</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · একক (“Single”), নিয়ন্ত্রণ লুকানো · ডলোমাইটসের ছবি</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: Mac · একক (“Single”), নিয়ন্ত্রণ লুকানো · ডলোমাইটসের ছবি" class="image-button capture-image" data-caption="Mac · একক (“Single”), নিয়ন্ত্রণ লুকানো · ডলোমাইটসের ছবি — ইনস্টল করা Mac অ্যাপের “Single” ভিউতে “Planning”-এ 20:04, লুকানো নিয়ন্ত্রণ ও ডলোমাইটসের ছবির পটভূমিসহ।" data-zoom="../assets/marketing/mac-planning-single-hidden-dolomites.png" type="button"><img alt="ইনস্টল করা Mac অ্যাপের “Single” ভিউতে “Planning”-এ 20:04, লুকানো নিয়ন্ত্রণ ও ডলোমাইটসের ছবির পটভূমিসহ।" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-dolomites.png"/></button>
+<figcaption>ইনস্টল করা Mac অ্যাপের “Single” ভিউতে “Planning”-এ 20:04, লুকানো নিয়ন্ত্রণ ও ডলোমাইটসের ছবির পটভূমিসহ।</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · ন্যূনতম (“Minimal”), নিয়ন্ত্রণ লুকানো · ডলোমাইটসের ছবি</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: Mac · ন্যূনতম (“Minimal”), নিয়ন্ত্রণ লুকানো · ডলোমাইটসের ছবি" class="image-button capture-image" data-caption="Mac · ন্যূনতম (“Minimal”), নিয়ন্ত্রণ লুকানো · ডলোমাইটসের ছবি — ইনস্টল করা Mac অ্যাপের “Minimal” ভিউতে “Planning”-এ 20:04, লুকানো নিয়ন্ত্রণ ও ডলোমাইটসের ছবির পটভূমিসহ।" data-zoom="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" type="button"><img alt="ইনস্টল করা Mac অ্যাপের “Minimal” ভিউতে “Planning”-এ 20:04, লুকানো নিয়ন্ত্রণ ও ডলোমাইটসের ছবির পটভূমিসহ।" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-dolomites.png"/></button>
+<figcaption>ইনস্টল করা Mac অ্যাপের “Minimal” ভিউতে “Planning”-এ 20:04, লুকানো নিয়ন্ত্রণ ও ডলোমাইটসের ছবির পটভূমিসহ।</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="world-clocks-heading" class="highlight-row has-gallery" data-highlight="04" id="world-clocks">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">04</span>বিশ্বঘড়ি</p>
+<h2 id="world-clocks-heading">আপনার জায়গাগুলো কাছে রাখুন।</h2>
+<p>আপনার কাছে গুরুত্বপূর্ণ শহর ও সময় অঞ্চল যোগ করুন। সহকর্মী, পরিবার ও ভ্রমণ পরিকল্পনার সময় টাইমারের পাশেই দেখুন, প্রতিটি জায়গার বর্তমান স্থানীয় সময়সহ।</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="বিশ্বঘড়ি-এর ছবি" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>টাইমারের পাশে ঘড়ি</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: টাইমারের পাশে ঘড়ি" class="image-button capture-image" data-caption="টাইমারের পাশে ঘড়ি — নীল “Grid” কর্মপরিসরে “Studio”-র টাইমারের পাশে নিউ ইয়র্ক, লন্ডন ও টোকিও।" data-zoom="../assets/marketing/mac-grid-dark.png" type="button"><img alt="নীল “Grid” কর্মপরিসরে “Studio”-র টাইমারের পাশে নিউ ইয়র্ক, লন্ডন ও টোকিও।" decoding="async" loading="lazy" src="../assets/marketing/mac-grid-dark.png"/></button>
+<figcaption>নীল “Grid” কর্মপরিসরে “Studio”-র টাইমারের পাশে নিউ ইয়র্ক, লন্ডন ও টোকিও।</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>জায়গা বেছে নিন</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা সেটআপ</span></div>
+<button aria-label="বড় করে দেখুন: জায়গা বেছে নিন" class="image-button capture-image" data-caption="জায়গা বেছে নিন — ইনস্টল করা Mac-এর ঘড়ি সম্পাদকে নিউ ইয়র্ক, তার মানচিত্র, স্থানীয় সময় ও UTC−04:00 পার্থক্যসহ।" data-zoom="../assets/marketing/mac-clock-editor.png" type="button"><img alt="ইনস্টল করা Mac-এর ঘড়ি সম্পাদকে নিউ ইয়র্ক, তার মানচিত্র, স্থানীয় সময় ও UTC−04:00 পার্থক্যসহ।" decoding="async" loading="lazy" src="../assets/marketing/mac-clock-editor.png"/></button>
+<figcaption>ইনস্টল করা Mac-এর ঘড়ি সম্পাদকে নিউ ইয়র্ক, তার মানচিত্র, স্থানীয় সময় ও UTC−04:00 পার্থক্যসহ।</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="world-calendar-heading" class="highlight-row has-gallery" data-highlight="05" id="world-calendar">
+<span class="anchor-target" id="regional-holidays"></span><span class="anchor-target" id="world-events"></span><span class="anchor-target" id="apple-calendar"></span><span class="anchor-target" id="calendar-actions"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">05</span>বিশ্ব ক্যালেন্ডার</p>
+<h2 id="world-calendar-heading">দিনটিকে প্রেক্ষাপটে দেখুন।</h2>
+<p>ছুটির দিন, সাংস্কৃতিক তারিখ, বিশ্বের ঘটনা ও ইতিহাসের মুহূর্তগুলো জানুন। আপনার Apple ক্যালেন্ডারের কেবল পড়ার ভিউ যোগ করুন, তারপর কোনো তারিখ বা ঘটনাকে কাউন্টডাউন বা ব্যক্তিগত রিমাইন্ডারে বদলে নিন।</p>
+<span class="platform-pill">Mac</span>
+<p class="feature-note">অফলাইনে দেখার জন্য ক্যাটালগ একবার ডাউনলোড করুন। আপনার Apple ক্যালেন্ডারে প্রবেশাধিকার ঐচ্ছিক এবং কেবল পড়ার জন্য।</p>
+</div>
+<div aria-label="বিশ্ব ক্যালেন্ডার-এর ছবি" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>একনজরে মাস</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা সেটআপ</span></div>
+<button aria-label="বড় করে দেখুন: একনজরে মাস" class="image-button capture-image" data-caption="একনজরে মাস — মূল ভূখণ্ড চীনের ছুটির প্রোফাইল, চীনা ক্যালেন্ডারের তারিখ ও জাতীয় দিবসের বিস্তারিতসহ অক্টোবর 2026।" data-zoom="../assets/marketing/mac-world-calendar-month.png" type="button"><img alt="মূল ভূখণ্ড চীনের ছুটির প্রোফাইল, চীনা ক্যালেন্ডারের তারিখ ও জাতীয় দিবসের বিস্তারিতসহ অক্টোবর 2026।" decoding="async" loading="lazy" src="../assets/marketing/mac-world-calendar-month.png"/></button>
+<figcaption>মূল ভূখণ্ড চীনের ছুটির প্রোফাইল, চীনা ক্যালেন্ডারের তারিখ ও জাতীয় দিবসের বিস্তারিতসহ অক্টোবর 2026।</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>সপ্তাহের ভিউ ও তারিখের বিস্তারিত</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা সেটআপ</span></div>
+<button aria-label="বড় করে দেখুন: সপ্তাহের ভিউ ও তারিখের বিস্তারিত" class="image-button capture-image" data-caption="সপ্তাহের ভিউ ও তারিখের বিস্তারিত — 27 সেপ্টেম্বর–3 অক্টোবর; 1 অক্টোবর নির্বাচিত, আর সপ্তাহের পাশে তার জাতীয় দিবসের বিস্তারিত দেখা যাচ্ছে।" data-zoom="../assets/marketing/mac-world-calendar-week.png" type="button"><img alt="27 সেপ্টেম্বর–3 অক্টোবর; 1 অক্টোবর নির্বাচিত, আর সপ্তাহের পাশে তার জাতীয় দিবসের বিস্তারিত দেখা যাচ্ছে।" decoding="async" loading="lazy" src="../assets/marketing/mac-world-calendar-week.png"/></button>
+<figcaption>27 সেপ্টেম্বর–3 অক্টোবর; 1 অক্টোবর নির্বাচিত, আর সপ্তাহের পাশে তার জাতীয় দিবসের বিস্তারিত দেখা যাচ্ছে।</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="reminders-heading" class="highlight-row copy-only" data-highlight="06" id="reminders">
+<span class="anchor-target" id="email-sms"></span><span class="anchor-target" id="call-me"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">06</span>ইমেইল, SMS ও কলের মাধ্যমে রিমাইন্ডার</p>
+<h2 id="reminders-heading">আপনার নিজের ভাষায় রিমাইন্ডার।</h2>
+<p>নির্দিষ্ট সময় পরে বা নির্দিষ্ট তারিখ ও সময়ে নিজেকে বার্তা পাঠানোর সময় ঠিক করুন। ইমেইল, SMS বা সমর্থিত এককালীন কল বেছে নিন এবং কাজের পাশেই তার পৌঁছানোর অবস্থা দেখুন।</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">অ্যাকাউন্ট ও পরিষেবার প্রাপ্যতা প্রযোজ্য। SMS ও কলের জন্য আপনার নিজের যোগ্য ও যাচাইকৃত নম্বর এবং আলাদা সম্মতি দরকার। কল USA/Canada-এর নম্বরে সমর্থিত, ইংরেজিতে হয় এবং স্বয়ংক্রিয়ভাবে আবার ডায়াল করে না।</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="sound-library-heading" class="highlight-row has-gallery" data-highlight="07" id="sound-library">
+<span class="anchor-target" id="sounds"></span><span class="anchor-target" id="interval-beeps"></span><span class="anchor-target" id="completion-alerts"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">07</span>শব্দের লাইব্রেরি</p>
+<h2 id="sound-library-heading">আপনার সমাপ্তির সুর খুঁজে নিন।</h2>
+<p>সঙ্গে থাকা 66টি শব্দ দেখুন, বেছে নেওয়ার আগে শুনুন এবং পছন্দেরগুলো সংরক্ষণ করুন। নিজের অডিও আমদানি করুন, অথবা সেশন চলার সময় নির্দিষ্ট সময় অন্তর বিপের শব্দ দিয়ে সময় সম্পর্কে সচেতন থাকুন।</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="শব্দের লাইব্রেরি-এর ছবি" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>আপনার দিনের শব্দ</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা সেটআপ</span></div>
+<button aria-label="বড় করে দেখুন: আপনার দিনের শব্দ" class="image-button capture-image" data-caption="আপনার দিনের শব্দ — ইনস্টল করা Mac-এর শব্দের লাইব্রেরি, “Classic Tones”, তরঙ্গরূপ, পছন্দের তালিকা ও চালানোর নিয়ন্ত্রণসহ।" data-zoom="../assets/marketing/mac-sound-library.png" type="button"><img alt="ইনস্টল করা Mac-এর শব্দের লাইব্রেরি, “Classic Tones”, তরঙ্গরূপ, পছন্দের তালিকা ও চালানোর নিয়ন্ত্রণসহ।" decoding="async" loading="lazy" src="../assets/marketing/mac-sound-library.png"/></button>
+<figcaption>ইনস্টল করা Mac-এর শব্দের লাইব্রেরি, “Classic Tones”, তরঙ্গরূপ, পছন্দের তালিকা ও চালানোর নিয়ন্ত্রণসহ।</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>বিশ্বের আচার-অনুষ্ঠানের সুর</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা সেটআপ</span></div>
+<button aria-label="বড় করে দেখুন: বিশ্বের আচার-অনুষ্ঠানের সুর" class="image-button capture-image" data-caption="বিশ্বের আচার-অনুষ্ঠানের সুর — “World Ceremonial”-এর শব্দ, “Gentle Bell” ও “Bright Chime” থেকে “Ceremonial Drum” ও “Trumpet Salute” পর্যন্ত।" data-zoom="../assets/marketing/mac-sound-ceremonial.png" type="button"><img alt="“World Ceremonial”-এর শব্দ, “Gentle Bell” ও “Bright Chime” থেকে “Ceremonial Drum” ও “Trumpet Salute” পর্যন্ত।" decoding="async" loading="lazy" src="../assets/marketing/mac-sound-ceremonial.png"/></button>
+<figcaption>“World Ceremonial”-এর শব্দ, “Gentle Bell” ও “Bright Chime” থেকে “Ceremonial Drum” ও “Trumpet Salute” পর্যন্ত।</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="time-reports-heading" class="highlight-row has-gallery" data-highlight="08" id="time-reports">
+<span class="anchor-target" id="report-charts"></span><span class="anchor-target" id="report-exports"></span><span class="anchor-target" id="report-sharing"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">08</span>সময়ের রিপোর্ট ও শেয়ারিং</p>
+<h2 id="time-reports-heading">আপনার সময় কোথায় যাচ্ছে দেখুন।</h2>
+<p>সেশন, দৈনিক মোট সময় বা বর্তমান রিডিং দেখুন। চার্ট দেখুন, সময়কাল তুলনা করুন এবং কাজ বা সেট দিয়ে ফিল্টার করুন। CSV, HTML বা PDF রাখুন, নিজেকে রিপোর্ট ইমেইল করুন, অথবা মেয়াদ শেষ হয় এমন লিংকে শেয়ার করুন।</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">স্থানীয় রিপোর্ট ও এক্সপোর্ট অফলাইনেই চলে। ইমেইল ও অনলাইন শেয়ারিংয়ের জন্য সংযোগ লাগে।</p>
+</div>
+<div aria-label="সময়ের রিপোর্ট ও শেয়ারিং-এর ছবি" class="feature-gallery gallery-4 report-gallery">
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>দৈনিক মোট সময় · একনজরে সপ্তাহ</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ইতিহাস</span></div>
+<button aria-label="বড় করে দেখুন: দৈনিক মোট সময় · একনজরে সপ্তাহ" class="image-button capture-image" data-caption="দৈনিক মোট সময় · একনজরে সপ্তাহ — 21–25 সেপ্টেম্বর, 2026: পাঁচটি নমুনা কাজে 30 ঘণ্টা, দৈনিক মোট সময় ও প্রতিটি কাজের অংশসহ। “Design”-এ 12 ঘণ্টা 05 মিনিট (40.3%)।" data-zoom="../assets/marketing/mac-report-week-daily-totals.png" type="button"><img alt="21–25 সেপ্টেম্বর, 2026: পাঁচটি নমুনা কাজে 30 ঘণ্টা, দৈনিক মোট সময় ও প্রতিটি কাজের অংশসহ। “Design”-এ 12 ঘণ্টা 05 মিনিট (40.3%)।" decoding="async" loading="lazy" src="../assets/marketing/mac-report-week-daily-totals.png"/></button>
+<figcaption>21–25 সেপ্টেম্বর, 2026: পাঁচটি নমুনা কাজে 30 ঘণ্টা, দৈনিক মোট সময় ও প্রতিটি কাজের অংশসহ। “Design”-এ 12 ঘণ্টা 05 মিনিট (40.3%)।</figcaption>
+</figure>
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>সেশন · কখন কাজ হয়েছে</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ইতিহাস</span></div>
+<button aria-label="বড় করে দেখুন: সেশন · কখন কাজ হয়েছে" class="image-button capture-image" data-caption="সেশন · কখন কাজ হয়েছে — 29টি সেশন ও 30 ঘণ্টার একটি নমুনা সপ্তাহ; টাইমলাইনে 21–25 সেপ্টেম্বর, 2026 জুড়ে কখন কাজ হয়েছে তা দেখা যায়।" data-zoom="../assets/marketing/mac-report-week-sessions.png" type="button"><img alt="29টি সেশন ও 30 ঘণ্টার একটি নমুনা সপ্তাহ; টাইমলাইনে 21–25 সেপ্টেম্বর, 2026 জুড়ে কখন কাজ হয়েছে তা দেখা যায়।" decoding="async" loading="lazy" src="../assets/marketing/mac-report-week-sessions.png"/></button>
+<figcaption>29টি সেশন ও 30 ঘণ্টার একটি নমুনা সপ্তাহ; টাইমলাইনে 21–25 সেপ্টেম্বর, 2026 জুড়ে কখন কাজ হয়েছে তা দেখা যায়।</figcaption>
+</figure>
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>সেশন · একটি দিনের বিস্তারিত</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ইতিহাস</span></div>
+<button aria-label="বড় করে দেখুন: সেশন · একটি দিনের বিস্তারিত" class="image-button capture-image" data-caption="সেশন · একটি দিনের বিস্তারিত — 24 সেপ্টেম্বর, 2026-এর ছয়টি নমুনা সেশন, মোট 6 ঘণ্টা 15 মিনিট; দিনের টাইমলাইন ও প্রতিটি সেশনের শুরু-শেষের সময়সহ।" data-zoom="../assets/marketing/mac-report-day-sessions.png" type="button"><img alt="24 সেপ্টেম্বর, 2026-এর ছয়টি নমুনা সেশন, মোট 6 ঘণ্টা 15 মিনিট; দিনের টাইমলাইন ও প্রতিটি সেশনের শুরু-শেষের সময়সহ।" decoding="async" loading="lazy" src="../assets/marketing/mac-report-day-sessions.png"/></button>
+<figcaption>24 সেপ্টেম্বর, 2026-এর ছয়টি নমুনা সেশন, মোট 6 ঘণ্টা 15 মিনিট; দিনের টাইমলাইন ও প্রতিটি সেশনের শুরু-শেষের সময়সহ।</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>বর্তমান রিডিং</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: বর্তমান রিডিং" class="image-button capture-image" data-caption="বর্তমান রিডিং — “Studio” কর্মপরিসরের বর্তমান রিডিং, কপি, এক্সপোর্ট ও শেয়ার করার নিয়ন্ত্রণসহ।" data-zoom="../assets/marketing/mac-report-current-readings.png" type="button"><img alt="“Studio” কর্মপরিসরের বর্তমান রিডিং, কপি, এক্সপোর্ট ও শেয়ার করার নিয়ন্ত্রণসহ।" decoding="async" loading="lazy" src="../assets/marketing/mac-report-current-readings.png"/></button>
+<figcaption>“Studio” কর্মপরিসরের বর্তমান রিডিং, কপি, এক্সপোর্ট ও শেয়ার করার নিয়ন্ত্রণসহ।</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="archives-heading" class="highlight-row" data-highlight="09" id="archives">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">09</span>আর্কাইভ</p>
+<h2 id="archives-heading">শেষ করা কাজ ধরে রাখুন।</h2>
+<p>কাজের একটি সেট আর্কাইভ করে তার ইতিহাস হাতের কাছে রাখুন। আগের কাজ খুঁজুন, সংরক্ষিত অবস্থাগুলো দেখুন, আর কোনো প্রকল্প বা রুটিন ফিরে দেখতে চাইলে তার রিপোর্ট খুলুন।</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="আর্কাইভ-এর ছবি" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>সংরক্ষিত প্রকল্পের রিপোর্ট</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: সংরক্ষিত প্রকল্পের রিপোর্ট" class="image-button capture-image" data-caption="সংরক্ষিত প্রকল্পের রিপোর্ট — “Brand workshop” আর্কাইভ হিসেবে সংরক্ষিত, আর তার নমুনা টাইমার রিডিংগুলো রিপোর্টে রাখা আছে।" data-zoom="../assets/marketing/mac-archive-report.png" type="button"><img alt="“Brand workshop” আর্কাইভ হিসেবে সংরক্ষিত, আর তার নমুনা টাইমার রিডিংগুলো রিপোর্টে রাখা আছে।" decoding="async" loading="lazy" src="../assets/marketing/mac-archive-report.png"/></button>
+<figcaption>“Brand workshop” আর্কাইভ হিসেবে সংরক্ষিত, আর তার নমুনা টাইমার রিডিংগুলো রিপোর্টে রাখা আছে।</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="appearance-heading" class="highlight-row has-gallery" data-highlight="10" id="appearance">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">10</span>চেহারার ব্যক্তিগতকরণ</p>
+<h2 id="appearance-heading">জায়গাটিকে নিজের মতো করে নিন।</h2>
+<p>হালকা বা গাঢ় চেহারা, একরঙা বা ছবির পটভূমি বেছে নিন। নিজের ছবি দিয়ে পটভূমির লাইব্রেরি বানিয়ে টাইমারের কর্মপরিসর যতটা চান শান্ত বা রঙিন করুন। Mac-এ একটি ফোল্ডার থেকে ছবি ঘুরিয়ে দেখানোও যায়।</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">আপনি যে ডিভাইস ব্যবহার করছেন সেটি নিজের মতো সাজান; Mac-এর জন্য আলাদা চেহারার সেটিংসও নির্ধারণ করতে পারেন।</p>
+</div>
+<div aria-label="চেহারার ব্যক্তিগতকরণ-এর ছবি" class="feature-gallery gallery-4">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>একরঙা পটভূমি · সাদা</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: একরঙা পটভূমি · সাদা" class="image-button capture-image" data-caption="একরঙা পটভূমি · সাদা — সাধারণ সাদা পটভূমিতে “Single” ভিউতে “Design” টাইমার।" data-zoom="../assets/marketing/mac-single-light.png" type="button"><img alt="সাধারণ সাদা পটভূমিতে “Single” ভিউতে “Design” টাইমার।" decoding="async" loading="lazy" src="../assets/marketing/mac-single-light.png"/></button>
+<figcaption>সাধারণ সাদা পটভূমিতে “Single” ভিউতে “Design” টাইমার।</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>একরঙা · গাঢ় নীল</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: একরঙা · গাঢ় নীল" class="image-button capture-image" data-caption="একরঙা · গাঢ় নীল — একই “Design” টাইমার গাঢ় নীল একরঙা পটভূমিতে।" data-zoom="../assets/marketing/mac-timer-single.png" type="button"><img alt="একই “Design” টাইমার গাঢ় নীল একরঙা পটভূমিতে।" decoding="async" loading="lazy" src="../assets/marketing/mac-timer-single.png"/></button>
+<figcaption>একই “Design” টাইমার গাঢ় নীল একরঙা পটভূমিতে।</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>ছবির পটভূমি</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: ছবির পটভূমি" class="image-button capture-image" data-caption="ছবির পটভূমি — XTimers-এর সঙ্গে থাকা ডলোমাইটসের ছবির ওপর “Design” টাইমার।" data-zoom="../assets/marketing/mac-single-photo.png" type="button"><img alt="XTimers-এর সঙ্গে থাকা ডলোমাইটসের ছবির ওপর “Design” টাইমার।" decoding="async" loading="lazy" src="../assets/marketing/mac-single-photo.png"/></button>
+<figcaption>XTimers-এর সঙ্গে থাকা ডলোমাইটসের ছবির ওপর “Design” টাইমার।</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>ছবি বেছে নিন</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা সেটআপ</span></div>
+<button aria-label="বড় করে দেখুন: ছবি বেছে নিন" class="image-button capture-image" data-caption="ছবি বেছে নিন — ইনস্টল করা Mac-এর পটভূমি বাছাইয়ের পর্দা, সঙ্গে থাকা ছবিগুলো ও নির্বাচিত ইয়োসেমিটি ছবিসহ।" data-zoom="../assets/marketing/mac-background-library.png" type="button"><img alt="ইনস্টল করা Mac-এর পটভূমি বাছাইয়ের পর্দা, সঙ্গে থাকা ছবিগুলো ও নির্বাচিত ইয়োসেমিটি ছবিসহ।" decoding="async" loading="lazy" src="../assets/marketing/mac-background-library.png"/></button>
+<figcaption>ইনস্টল করা Mac-এর পটভূমি বাছাইয়ের পর্দা, সঙ্গে থাকা ছবিগুলো ও নির্বাচিত ইয়োসেমিটি ছবিসহ।</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="menu-bar-heading" class="highlight-row has-gallery" data-highlight="11" id="menu-bar">
+<span class="anchor-target" id="devices"></span><span class="anchor-target" id="mac-shortcuts"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">11</span>মেনু বার ও ডেস্কটপের সঙ্গে সংযোগ</p>
+<h2 id="menu-bar-heading">কাজের কাছেই সময় রাখুন।</h2>
+<p>মূল উইন্ডো না খুলেই Mac-এর মেনু বারে কাজের নাম ও টাইমারের রিডিং দেখুন। ক্লিক করে দ্রুত কাজ শুরু বা বিরতি দিন, সেট বদলান এবং রিপোর্ট খুলুন। সর্বত্র কার্যকর শর্টকাট আর সবার ওপরে থাকা উইন্ডো নিয়ন্ত্রণগুলো হাতের কাছে রাখে।</p>
+<span class="platform-pill">Mac</span>
+</div>
+<div aria-label="মেনু বার ও ডেস্কটপের সঙ্গে সংযোগ-এর ছবি" class="feature-gallery gallery-3 menu-bar-gallery">
+<figure class="capture-card capture-status-strip">
+<div class="capture-heading"><h3>আপনার টাইমার একনজরে</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: আপনার টাইমার একনজরে" class="image-button capture-image" data-caption="আপনার টাইমার একনজরে — “Planning” 20:04-এ বিরত আছে; আপনি অন্য অ্যাপে কাজ করলেও Mac-এর মেনু বারেই দেখা যাচ্ছে।" data-zoom="../assets/marketing/mac-menubar-status-planning.png" type="button"><img alt="“Planning” 20:04-এ বিরত আছে; Mac-এর মেনু বারে সিস্টেম স্ট্যাটাস আইকনের পাশেই দেখা যাচ্ছে" decoding="async" height="60" loading="lazy" src="../assets/marketing/mac-menubar-status-planning.png" width="572"/></button>
+<figcaption>কাজের নাম, রিডিং ও বিরতির চিহ্ন মেনু বারে দেখা যায়। টাইমারের নিয়ন্ত্রণে যেতে স্ট্যাটাস আইটেমে ক্লিক করুন।</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>মেনু বারের কর্মপরিসর</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: মেনু বারের কর্মপরিসর" class="image-button capture-image" data-caption="মেনু বারের কর্মপরিসর — Mac-এর মেনু বারে “Studio”-র “Design” ও অন্য টাইমার, কাজের সেট, রিপোর্ট ও উইন্ডোর নিয়ন্ত্রণ।" data-zoom="../assets/marketing/mac-menu-bar.png" type="button"><img alt="Mac-এর মেনু বারে “Studio”-র “Design” ও অন্য টাইমার, কাজের সেট, রিপোর্ট ও উইন্ডোর নিয়ন্ত্রণ।" decoding="async" loading="lazy" src="../assets/marketing/mac-menu-bar.png"/></button>
+<figcaption>Mac-এর মেনু বারে “Studio”-র “Design” ও অন্য টাইমার, কাজের সেট, রিপোর্ট ও উইন্ডোর নিয়ন্ত্রণ।</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>একটি ছোট টাইমার উইন্ডো</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: একটি ছোট টাইমার উইন্ডো" class="image-button capture-image" data-caption="একটি ছোট টাইমার উইন্ডো — ছোট “Minimal” উইন্ডোতে “Studio”-র “Design” টাইমার।" data-zoom="../assets/marketing/mac-timer-minimal.png" type="button"><img alt="ছোট “Minimal” উইন্ডোতে “Studio”-র “Design” টাইমার।" decoding="async" loading="lazy" src="../assets/marketing/mac-timer-minimal.png"/></button>
+<figcaption>ছোট “Minimal” উইন্ডোতে “Studio”-র “Design” টাইমার।</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="live-activities-heading" class="highlight-row has-gallery" data-highlight="12" id="live-activities">
+<span class="anchor-target" id="mobile"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">12</span>লাইভ অ্যাক্টিভিটি</p>
+<h2 id="live-activities-heading">আপনার সময়, একনজরে।</h2>
+<p>সমর্থিত টাইমার আপনার iPhone-এর লক স্ক্রিন বা Dynamic Island-এ দৃশ্যমান রাখুন। কাজ ও তার রিডিং দেখুন, তারপর পুরো কর্মপরিসর না খুলেই সমর্থিত টাইমারে বিরতি দিন বা আবার চালান।</p>
+<span class="platform-pill">iPhone</span>
+<p class="feature-note">সমর্থিত ডিভাইস ও সিস্টেমের অনুমতি প্রয়োজন। বিশ্বঘড়ি লাইভ অ্যাক্টিভিটি তৈরি করে না।</p>
+</div>
+<div aria-label="লাইভ অ্যাক্টিভিটি-এর ছবি" class="feature-gallery gallery-2">
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>আপনার লক স্ক্রিনে</h3><span class="capture-status status-real">iPhone · ডিভাইস থেকে সরাসরি তোলা ছবি</span></div>
+<button aria-label="বড় করে দেখুন: আপনার লক স্ক্রিনে" class="image-button capture-image" data-caption="আপনার লক স্ক্রিনে — iPhone-এর লক স্ক্রিনে কাউন্টডাউনের লাইভ অ্যাক্টিভিটি, যাতে কাজের নাম, বাকি সময় ও বিরতি দেওয়ার নিয়ন্ত্রণ দেখা যায়।" data-zoom="../assets/marketing/ios-live-activity-lockscreen.png" type="button"><img alt="iPhone-এর লক স্ক্রিনে কাউন্টডাউনের লাইভ অ্যাক্টিভিটি, যাতে কাজের নাম, বাকি সময় ও বিরতি দেওয়ার নিয়ন্ত্রণ দেখা যায়।" decoding="async" height="2868" loading="lazy" src="../assets/marketing/ios-live-activity-lockscreen.png" width="1320"/></button>
+<figcaption>iPhone-এর লক স্ক্রিনে কাউন্টডাউনের লাইভ অ্যাক্টিভিটি, যাতে কাজের নাম, বাকি সময় ও বিরতি দেওয়ার নিয়ন্ত্রণ দেখা যায়।</figcaption>
+</figure>
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>Dynamic Island-এ</h3><span class="capture-status status-real">iPhone · ডিভাইস থেকে সরাসরি তোলা ছবি</span></div>
+<button aria-label="বড় করে দেখুন: Dynamic Island-এ" class="image-button capture-image" data-caption="Dynamic Island-এ — iPhone-এর হোম স্ক্রিন খোলা থাকলেও Dynamic Island-এ একটি ছোট কাউন্টডাউন দেখা যায়।" data-zoom="../assets/marketing/ios-live-activity-island.png" type="button"><img alt="iPhone-এর হোম স্ক্রিন খোলা থাকলেও Dynamic Island-এ একটি ছোট কাউন্টডাউন দেখা যায়।" decoding="async" height="2868" loading="lazy" src="../assets/marketing/ios-live-activity-island.png" width="1320"/></button>
+<figcaption>iPhone-এর হোম স্ক্রিন খোলা থাকলেও Dynamic Island-এ একটি ছোট কাউন্টডাউন দেখা যায়।</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="siri-shortcuts-heading" class="highlight-row has-gallery" data-highlight="13" id="siri-shortcuts">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">13</span>Siri ও শর্টকাট</p>
+<h2 id="siri-shortcuts-heading">একটি কথা বা ট্যাপেই শুরু করুন।</h2>
+<p>Siri ও শর্টকাট দিয়ে সমর্থিত টাইমার শুরু করুন, বিরতি দিন বা চালু-বিরতির অবস্থা বদলান। নতুন স্টপওয়াচ চালু করা বা বর্তমান কাজে বিরতি দেওয়া ও আবার শুরু করার জন্য সিস্টেম নিয়ন্ত্রণ যোগ করুন।</p>
+<span class="platform-pill">iPhone · iPad</span>
+<p class="feature-note">স্বতন্ত্র সিস্টেম নিয়ন্ত্রণ XTimers খোলে। লাইভ অ্যাক্টিভিটির নিয়ন্ত্রণ যেখানে আছে সেখানেই কাজ করতে পারে।</p>
+</div>
+<div aria-label="Siri ও শর্টকাট-এর ছবি" class="feature-gallery gallery-1">
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>আপনার XTimers শর্টকাট</h3><span class="capture-status status-real">iPhone · ডিভাইস থেকে সরাসরি তোলা ছবি</span></div>
+<button aria-label="বড় করে দেখুন: আপনার XTimers শর্টকাট" class="image-button capture-image" data-caption="আপনার XTimers শর্টকাট — নিজস্ব শর্টকাট অ্যাপে “Toggle Timer”, “Start” ও “Pause” অ্যাকশন।" data-zoom="../assets/marketing/ios-siri-shortcuts.png" type="button"><img alt="নিজস্ব শর্টকাট অ্যাপে “Toggle Timer”, “Start” ও “Pause” অ্যাকশন।" decoding="async" height="2622" loading="lazy" src="../assets/marketing/ios-siri-shortcuts.png" width="1206"/></button>
+<figcaption>নিজস্ব শর্টকাট অ্যাপে “Toggle Timer”, “Start” ও “Pause” অ্যাকশন।</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="offline-heading" class="highlight-row" data-highlight="14" id="offline">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">14</span>অ্যাকাউন্ট ছাড়াই অফলাইনে ব্যবহার</p>
+<h2 id="offline-heading">শুরু করুন। সাইন ইন করতে হবে না।</h2>
+<p>ডিভাইসে মৌলিক টাইমার, কাউন্টডাউন, কাজের সেট, নোট, বিশ্বঘড়ি ও স্থানীয় রিপোর্ট ব্যবহার করুন। অফলাইনেও চালিয়ে যান; সংযোগনির্ভর বৈশিষ্ট্য চাইলে যেকোনো সময় অ্যাকাউন্ট যোগ করুন।</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="অ্যাকাউন্ট ছাড়াই অফলাইনে ব্যবহার-এর ছবি" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>আপনার স্থানীয় “Studio” কর্মপরিসর</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: আপনার স্থানীয় “Studio” কর্মপরিসর" class="image-button capture-image" data-caption="আপনার স্থানীয় “Studio” কর্মপরিসর — সাইন আউট করা Mac অ্যাপের “Studio” কর্মপরিসর, নমুনা স্থানীয় টাইমার ও বিশ্বঘড়িসহ।" data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="সাইন আউট করা Mac অ্যাপের “Studio” কর্মপরিসর, নমুনা স্থানীয় টাইমার ও বিশ্বঘড়িসহ।" decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>সাইন আউট করা Mac অ্যাপের “Studio” কর্মপরিসর, নমুনা স্থানীয় টাইমার ও বিশ্বঘড়িসহ।</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="synchronization-heading" class="highlight-row" data-highlight="15" id="synchronization">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">15</span>ডিভাইসগুলোর মধ্যে সিঙ্ক</p>
+<h2 id="synchronization-heading">চেনা কর্মপরিসর নিয়ে এগিয়ে চলুন।</h2>
+<p>সমর্থিত কাজ, ইতিহাস, টেমপ্লেট, সেটিংস ও নিজের যোগ করা উপকরণ Mac, iPhone ও iPad-এর মধ্যে নিয়ে যান। সাময়িক সংযোগের সমস্যা হলেও আপনার স্থানীয় কাজ ব্যবহার করা যায়।</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Apple, Google, ইমেইল কোড বা পাসওয়ার্ড দিয়ে সাইন ইন করুন। ডিভাইসের কিছু সেটিংস ও কেবল স্থানীয় ডেটা নিজ নিজ ডিভাইসেই থাকে।</p>
+</div>
+<div aria-label="ডিভাইসগুলোর মধ্যে সিঙ্ক-এর ছবি" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac-এ</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: Mac-এ" class="image-button capture-image" data-caption="Mac-এ — ইনস্টল করা Mac অ্যাপে “Studio”-র নমুনা টাইমার ও ঘড়ি।" data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="ইনস্টল করা Mac অ্যাপে “Studio”-র নমুনা টাইমার ও ঘড়ি।" decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>ইনস্টল করা Mac অ্যাপে “Studio”-র নমুনা টাইমার ও ঘড়ি।</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="protected-sync-heading" class="highlight-row copy-only" data-highlight="16" id="protected-sync">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">16</span>সুরক্ষিত সিঙ্ক</p>
+<h2 id="protected-sync-heading">আপলোডের আগেই সুরক্ষা বেছে নিন।</h2>
+<p><a href="privacy.html#xin-account">অ্যাকাউন্ট সিঙ্কের</a> আগে নতুন টাইমার কনটেন্ট ও নিজের আপলোডগুলো ডিভাইসেই এনক্রিপ্ট করুন। iCloud Keychain বা সংরক্ষিত পুনরুদ্ধার কোড দিয়ে আপনার কী উদ্ধার করুন।</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">সমর্থিত অ্যাকাউন্টে ঐচ্ছিক। রিমাইন্ডারের বার্তা, অ্যাকাউন্ট/সিঙ্কের মেটাডেটা, চালু করার আগে তৈরি কনটেন্ট ও ডিভাইসের স্থানীয় স্টোরেজ এর আওতায় পড়ে না।</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="languages-heading" class="highlight-row has-gallery" data-highlight="17" id="languages">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">17</span>বহুভাষিক সহায়তা</p>
+<h2 id="languages-heading">নিজের ভাষায়, চেনা স্বাচ্ছন্দ্যে।</h2>
+<p>45টি ভাষার বিকল্প থেকে বেছে নিন, ডিভাইসের ভাষা অনুসরণ করুন বা নিজের পছন্দ নির্ধারণ করুন। স্থানীয় রীতির তারিখ, সময় ও সংখ্যা, সঙ্গে ডান থেকে বাঁয়ে লেআউট কর্মপরিসরটিকে চেনা করে তোলে।</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="বহুভাষিক সহায়তা-এর ছবি" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · ইংরেজি</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা সেটআপ</span></div>
+<button aria-label="বড় করে দেখুন: Mac · ইংরেজি" class="image-button capture-image" data-caption="Mac · ইংরেজি — হালকা চেহারায় ইনস্টল করা Mac অ্যাপ থেকে তোলা ইংরেজি সাধারণ সেটিংসের ছবি।" data-zoom="../assets/marketing/mac-settings-english.png" type="button"><img alt="হালকা চেহারায় ইনস্টল করা Mac অ্যাপ থেকে তোলা ইংরেজি সাধারণ সেটিংসের ছবি।" decoding="async" loading="lazy" src="../assets/marketing/mac-settings-english.png"/></button>
+<figcaption>হালকা চেহারায় ইনস্টল করা Mac অ্যাপ থেকে তোলা ইংরেজি সাধারণ সেটিংসের ছবি।</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · জাপানি</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা সেটআপ</span></div>
+<button aria-label="বড় করে দেখুন: Mac · জাপানি" class="image-button capture-image" data-caption="Mac · জাপানি — একই সাধারণ সেটিংসের পর্দা জাপানি ভাষায়, হালকা চেহারায়।" data-zoom="../assets/marketing/mac-settings-japanese.png" type="button"><img alt="একই সাধারণ সেটিংসের পর্দা জাপানি ভাষায়, হালকা চেহারায়।" decoding="async" loading="lazy" src="../assets/marketing/mac-settings-japanese.png"/></button>
+<figcaption>একই সাধারণ সেটিংসের পর্দা জাপানি ভাষায়, হালকা চেহারায়।</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="activity-tracking-heading" class="highlight-row" data-highlight="18" id="activity-tracking">
+<span class="anchor-target" id="extras"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">18</span>অ্যাপ ব্যবহারের স্বয়ংক্রিয় পর্যবেক্ষণ</p>
+<h2 id="activity-tracking-heading">অ্যাপে কাটানো সময় কীভাবে জমছে দেখুন।</h2>
+<p>Mac-এ সামনে খোলা অ্যাপে কাটানো সময় পর্যবেক্ষণ করতে চাইলে তা চালু করুন। দিন, সপ্তাহ, মাস বা বছর অনুযায়ী আপনার কাজকর্ম দেখুন, আর দূরে থাকার সময় কীভাবে গণনা হবে তা বেছে নিন।</p>
+<span class="platform-pill">Mac · নির্বাচিত প্রোফাইল</span>
+<p class="feature-note">স্থানীয় ও পুরোনো প্রোফাইলে পাওয়া যায়; স্থানীয় ডেটাকে অগ্রাধিকার দেওয়া সিঙ্ক অ্যাকাউন্টে লুকানো থাকে। অ্যাপের পরিচয় ও নিষ্ক্রিয় সময় এই Mac-এই থাকে। ওয়েবসাইট, ব্রাউজিং ইতিহাস ও উইন্ডোর শিরোনাম সংগ্রহ করা হয় না।</p>
+</div>
+<div aria-label="অ্যাপ ব্যবহারের স্বয়ংক্রিয় পর্যবেক্ষণ-এর ছবি" class="feature-gallery gallery-1">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>অ্যাপ ব্যবহারের পর্যবেক্ষণ নিয়ন্ত্রণ</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · সেটিংস</span></div>
+<button aria-label="বড় করে দেখুন: অ্যাপ ব্যবহারের পর্যবেক্ষণ নিয়ন্ত্রণ" class="image-button capture-image" data-caption="অ্যাপ ব্যবহারের পর্যবেক্ষণ নিয়ন্ত্রণ — সাধারণ XTimers-এ রিপোর্টের সময়কাল, সক্রিয় কাজে স্ক্রল করা ও দূরে থাকার সময়ের নিজস্ব নিয়ন্ত্রণ। এই সেটআপে পর্যবেক্ষণ বন্ধ আছে।" data-zoom="../assets/marketing/mac-activity-tracking-settings.png" type="button"><img alt="সাধারণ XTimers-এ রিপোর্টের সময়কাল, সক্রিয় কাজে স্ক্রল করা ও দূরে থাকার সময়ের নিজস্ব নিয়ন্ত্রণ। এই সেটআপে পর্যবেক্ষণ বন্ধ আছে।" decoding="async" loading="lazy" src="../assets/marketing/mac-activity-tracking-settings.png"/></button>
+<figcaption>সাধারণ XTimers-এ রিপোর্টের সময়কাল, সক্রিয় কাজে স্ক্রল করা ও দূরে থাকার সময়ের নিজস্ব নিয়ন্ত্রণ। এই সেটআপে পর্যবেক্ষণ বন্ধ আছে।</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="classic-interface-heading" class="highlight-row has-gallery" data-highlight="19" id="classic-interface">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">19</span>ক্লাসিক ইন্টারফেস</p>
+<h2 id="classic-interface-heading">সময় রাখার আরেকটি উপায়।</h2>
+<p>আলাদা নিজস্ব কর্মপরিসরসহ কেবল ইংরেজিতে থাকা স্থানীয় টাইমার ইন্টারফেস বেছে নিন। XTimers থেকেই ইন্টারফেস বদলে আপনার চেনা উপস্থাপনাটি রাখুন।</p>
+<span class="platform-pill">Mac · কেবল স্থানীয়</span>
+<p class="feature-note">সঙ্গে থাকা ক্লাসিক রানটাইম প্রয়োজন। অ্যাকাউন্ট সিঙ্ক এবং ইমেইল/SMS পাঠানোর সুবিধা মূল XTimers ইন্টারফেসে আছে।</p>
+</div>
+<div aria-label="ক্লাসিক ইন্টারফেস-এর ছবি" class="feature-gallery gallery-2">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>ক্লাসিক · দুই কলাম</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: ক্লাসিক · দুই কলাম" class="image-button capture-image" data-caption="ক্লাসিক · দুই কলাম — সৃজনশীল কাজ, শেখা ও দৈনন্দিন জীবন জুড়ে নাম দেওয়া 20টি কাজ নিয়ে একটি বড় ক্লাসিক রুটিন।" data-zoom="../assets/marketing/classic-two-column.png" type="button"><img alt="সৃজনশীল কাজ, শেখা ও দৈনন্দিন জীবন জুড়ে নাম দেওয়া 20টি কাজ নিয়ে একটি বড় ক্লাসিক রুটিন।" decoding="async" loading="lazy" src="../assets/marketing/classic-two-column.png"/></button>
+<figcaption>সৃজনশীল কাজ, শেখা ও দৈনন্দিন জীবন জুড়ে নাম দেওয়া 20টি কাজ নিয়ে একটি বড় ক্লাসিক রুটিন।</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>ক্লাসিক · এক কলাম</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা ডেটা</span></div>
+<button aria-label="বড় করে দেখুন: ক্লাসিক · এক কলাম" class="image-button capture-image" data-caption="ক্লাসিক · এক কলাম — “Design”, “Research”, “Writing”, “Reading” ও “Planning”—এই পাঁচটি কাজ নিয়ে একটি ছোট ক্লাসিক কর্মপরিসর।" data-zoom="../assets/marketing/classic-one-column.png" type="button"><img alt="“Design”, “Research”, “Writing”, “Reading” ও “Planning”—এই পাঁচটি কাজ নিয়ে একটি ছোট ক্লাসিক কর্মপরিসর।" decoding="async" loading="lazy" src="../assets/marketing/classic-one-column.png"/></button>
+<figcaption>“Design”, “Research”, “Writing”, “Reading” ও “Planning”—এই পাঁচটি কাজ নিয়ে একটি ছোট ক্লাসিক কর্মপরিসর।</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="xhelpers-pro-heading" class="highlight-row" data-highlight="20" id="xhelpers-pro">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">20</span>XHelpers Pro সুবিধা</p>
+<h2 id="xhelpers-pro-heading">আপনার Mac-এর সঙ্গী।</h2>
+<p>XHelpers Pro দেখুন—এটি Mac-এর আলাদা একটি ইউটিলিটি, যা প্রতিদিনের নিয়ন্ত্রণগুলোতে দ্রুত পৌঁছাতে সাহায্য করে। XTimers ব্যবহারকারীরা বর্তমান শর্ত ও সক্রিয় করার বিস্তারিত জানতে এর প্রচারমূলক লাইসেন্স অফার দেখতে পারেন।</p>
+<span class="platform-pill">Mac · আলাদা অ্যাপ</span>
+<a class="text-link" href="https://xintechllc.com/XHelpersPro/" rel="noopener noreferrer" target="_blank">XHelpers Pro অফার দেখুন</a>
+</div>
+<div aria-label="XHelpers Pro সুবিধা-এর ছবি" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>সঙ্গে থাকা XHelpers Pro সুবিধা</h3><span class="capture-status status-real">ইনস্টল করা Mac অ্যাপ · নমুনা সেটআপ</span></div>
+<button aria-label="বড় করে দেখুন: সঙ্গে থাকা XHelpers Pro সুবিধা" class="image-button capture-image" data-caption="সঙ্গে থাকা XHelpers Pro সুবিধা — ইনস্টল করা XTimers অ্যাপের পরিচিতি পর্দায় সঙ্গে থাকা XHelpers Pro সুবিধা দেখা যাচ্ছে।" data-zoom="../assets/marketing/mac-xhelpers-benefit.png" type="button"><img alt="ইনস্টল করা XTimers অ্যাপের পরিচিতি পর্দায় সঙ্গে থাকা XHelpers Pro সুবিধা দেখা যাচ্ছে।" decoding="async" loading="lazy" src="../assets/marketing/mac-xhelpers-benefit.png"/></button>
+<figcaption>ইনস্টল করা XTimers অ্যাপের পরিচিতি পর্দায় সঙ্গে থাকা XHelpers Pro সুবিধা দেখা যাচ্ছে।</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="download-heading" class="download-section" id="download">
+<div class="wrap download-inner">
+<div class="download-copy"><img alt="" height="64" loading="lazy" src="../assets/marketing/app-icon.png" width="64"/><h2 id="download-heading">একটু সময় রাখুন<br/><em>নিজের জন্য।</em></h2><p>আপনার কাজের জন্য টাইমার। আপনার রুটিনের জন্য জায়গা।</p></div>
+<div class="download-choices">
+<a class="download-choice" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" class="icon"><use href="#i-mac"></use></svg><span><strong>Mac-এর জন্য XTimers</strong><small>Mac App Store-এ দেখুন</small></span></a>
+<a class="download-choice" href="#mobile"><svg aria-hidden="true" class="icon"><use href="#i-mobile"></use></svg><span><strong>iPhone ও iPad-এর জন্য XTimers</strong><small>মোবাইলে ব্যবহারের অভিজ্ঞতা দেখুন</small></span></a>
+<p class="download-note">Mac, iPhone ও iPad। আপনার দিনে প্রত্যেকেরই জায়গা আছে।</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="faq-heading" class="section faq-section wrap" id="support">
+<div class="section-copy"><p class="eyebrow">কিছু দরকারি উত্তর</p><h2 id="faq-heading">সময় রাখার<br/>আগে।</h2><p>আর কিছু জানতে চান?</p><a class="text-link" href="support.html" rel="noopener noreferrer" target="_blank">সহায়তা দেখুন</a></div>
+<div class="faq-list">
+<details><summary>আমার কি অ্যাকাউন্ট লাগবে?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>মৌলিক স্থানীয় টাইমার, কাউন্টডাউন, বিশ্বঘড়ি ও স্থানীয় রিপোর্টের জন্য অ্যাকাউন্ট লাগে না। অ্যাকাউন্ট সিঙ্ক বা অ্যাকাউন্টভিত্তিক রিমাইন্ডার চাইলে সাইন ইন করুন।</p><p class="feature-note">ব্যবহারকারীকে শনাক্ত ও প্রমাণীকরণ করতে XTimers একটি Xin Account ব্যবহার করে। Xin Account হলো XTimers এবং অ্যাকাউন্ট নিয়ন্ত্রণে তালিকাভুক্ত অন্য যেকোনো সংযুক্ত পণ্যের অভিন্ন পরিচয় স্তর; এটি XTimers পণ্য অ্যাকাউন্ট নয় এবং এতে XTimers টাইমার, প্রতিবেদন, সাউন্ড বা SMS ডেটা থাকে না।</p></details>
+<details><summary>XTimers কি অফলাইনে ব্যবহার করা যায়?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>মৌলিক সময় মাপা ও স্থানীয় রিপোর্ট অফলাইনেই চলে। সিঙ্ক, অনলাইন শেয়ারিং ও সার্ভারের রিমাইন্ডারের জন্য সংযোগ লাগে। Mac-এর বিশ্ব ক্যালেন্ডারের ক্যাটালগ প্রথমবার ডাউনলোড করতে হয়; ইনস্টল করা ক্যাটালগ পরে অফলাইনে ব্যবহার করা যায়।</p></details>
+<details><summary>একসঙ্গে কি একাধিক টাইমার চালানো যায়?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>হ্যাঁ। অন্য কাজে গেলে আগের সমর্থিত টাইমারে বিরতি দেওয়া হবে নাকি সেটি চলতে থাকবে, তা বেছে নিন। কাজের সেট ভিন্ন কার্যকলাপগুলো গুছিয়ে রাখতে সাহায্য করে।</p></details>
+<details><summary>সব ডিভাইসে কি একই বৈশিষ্ট্য আছে?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>মূল কর্মপরিসরে টাইমার, কাউন্টডাউন, ঘড়ি, কাজের সেট ও রিপোর্ট থাকে। Mac-এ আরও আছে মেনু বারের নিয়ন্ত্রণ ও বিশ্ব ক্যালেন্ডার। উপযুক্ত ডিভাইসে iPhone লাইভ অ্যাক্টিভিটি সমর্থন করে, আর iPad-এ কাজের বড় লেআউটের জন্য বেশি জায়গা আছে।</p></details>
+<details><summary>ফোনের রিমাইন্ডার কীভাবে কাজ করে?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>আলাদা SMS বা কলের সম্মতি নিয়ে আপনার নিজের যোগ্য ও যাচাইকৃত নম্বরে রিমাইন্ডার পাঠানো হয়। প্রাপ্যতা আপনার অ্যাকাউন্ট, অঞ্চল ও পরিষেবার ওপর নির্ভর করে। নির্ধারিত কলের জন্য সার্ভারের নিশ্চিতকরণ লাগে; “Call Me” ইংরেজিতে কাজ করে এবং স্বয়ংক্রিয়ভাবে আবার ডায়াল করে না।</p></details>
+</div>
+</section>
+</main>
+<footer class="site-footer wrap">
+<p class="footer-copy"><small>© 2026 Xintech LLC</small><span>আপনার কাছে গুরুত্বপূর্ণ বিষয়ের জন্য সময় রাখুন।</span></p>
+<div class="footer-links"><a href="#features">বৈশিষ্ট্য</a><a href="#devices">আপনার ডিভাইস</a><a href="support.html" rel="noopener noreferrer" target="_blank">সহায়তা</a><a href="privacy.html" rel="noopener noreferrer" target="_blank">গোপনীয়তা</a><a href="sms-terms.html" rel="noopener noreferrer" target="_blank">বার্তা পরিষেবার শর্ত</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener noreferrer" target="_blank">লাইসেন্স</a><a href="terms.html">শর্তাবলী</a><a href="privacy-choices.html">গোপনীয়তা নিয়ন্ত্রণের বিকল্প</a><a href="sms-opt-in.html">SMS অপ্ট ইন</a></div>
+</footer>
+<dialog aria-labelledby="image-dialog-caption" class="image-dialog" id="image-dialog">
+<button aria-label="ছোট করুন এবং স্ক্রিনশট বন্ধ করুন" class="image-dialog-zoom-out" type="button">
+<img alt="" id="image-dialog-img"/>
+</button>
+<p id="image-dialog-caption"></p>
+</dialog>
 </body>
 </html>

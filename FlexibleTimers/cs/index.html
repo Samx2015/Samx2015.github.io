@@ -4,18 +4,31 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>XTimers — Mac, iPhone a iPad</title>
-<meta content="XTimers je klidné pracovní prostředí pro časovače vytvořené nativně pro platformy Apple, které na Macu, iPhonu a iPadu nabízí časovače, odpočty, hodiny, sady úkolů, přehledy, vlastní zvuky a připomenutí účtu." name="description"/>
 <meta content="#fbfaf7" name="theme-color"/>
-<meta content="XTimers" property="og:title"/>
-<meta content="Časovače, odpočty, hodiny, přehledy, zvuky a připomenutí účtu pro Mac, iPhone a iPad." property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="https://xintechllc.com/XTimers/assets/flexible-timers/macos/1-single-light.png" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="XTimers" name="twitter:title"/>
-<meta content="Timers, countdowns, clocks, reports, sounds, and account reminders for Mac, iPhone, and iPad." name="twitter:description"/>
-<meta content="https://xintechllc.com/XTimers/assets/flexible-timers/macos/1-single-light.png" name="twitter:image"/>
-<link rel="canonical" href="https://xintechllc.com/XTimers/cs/">
+<meta content="Měřte čas. Odpočítávejte. Světové hodiny. Světový kalendář. Flexibilní. Přizpůsobitelné. Spojte časovače, rutiny, připomínky a přehledy v jednom pracovním prostoru." name="description"/>
+<title>XTimers — Měřte čas. Odpočítávejte. Světové hodiny. Světový kalendář.</title>
+<link href="../assets/marketing/app-icon.png" rel="icon"/>
+<link href="../assets/marketing/styles.css" rel="stylesheet"/>
+<link href="../assets/marketing/site-style.css" rel="stylesheet"/>
+<script defer="" src="../assets/marketing/site.js"></script>
+<script data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19" defer="" src="https://cloud.umami.is/script.js"></script><script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script> <link rel="canonical" href="https://xintechllc.com/XTimers/cs/">
 <link rel="alternate" hreflang="ar" href="https://xintechllc.com/XTimers/ar/">
 <link rel="alternate" hreflang="bn" href="https://xintechllc.com/XTimers/bn/">
 <link rel="alternate" hreflang="ca" href="https://xintechllc.com/XTimers/ca/">
@@ -23,7 +36,7 @@
 <link rel="alternate" hreflang="da" href="https://xintechllc.com/XTimers/da/">
 <link rel="alternate" hreflang="de" href="https://xintechllc.com/XTimers/de/">
 <link rel="alternate" hreflang="el" href="https://xintechllc.com/XTimers/el/">
-<link rel="alternate" hreflang="en" href="https://xintechllc.com/XTimers/flexible-timers.html">
+<link rel="alternate" hreflang="en" href="https://xintechllc.com/XTimers/">
 <link rel="alternate" hreflang="es" href="https://xintechllc.com/XTimers/es/">
 <link rel="alternate" hreflang="fi" href="https://xintechllc.com/XTimers/fi/">
 <link rel="alternate" hreflang="fr" href="https://xintechllc.com/XTimers/fr/">
@@ -61,7 +74,7 @@
 <link rel="alternate" hreflang="vi" href="https://xintechllc.com/XTimers/vi/">
 <link rel="alternate" hreflang="zh-Hans" href="https://xintechllc.com/XTimers/zh-Hans/">
 <link rel="alternate" hreflang="zh-Hant" href="https://xintechllc.com/XTimers/zh-Hant/">
-<link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XTimers/flexible-timers.html">
+<link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XTimers/">
 
 
 
@@ -108,37 +121,43 @@
 
 
 
-<link href="../assets/flexible-timers/brand/favicon.png" rel="icon" type="image/png"/>
-<link href="../assets/flexible-timers/site.css" rel="stylesheet"/>
-<script data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19" defer="" src="https://cloud.umami.is/script.js"></script>
-<script>
-  window.addEventListener("click", function (event) {
-    var link = event.target.closest && event.target.closest("a[href]");
-    if (!link || !window.umami) return;
-    var href = link.getAttribute("href") || "";
-    var url = link.href || href;
-    var eventName = null;
-    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
-    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
-    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
-    else if (/support\.html/i.test(href)) eventName = "Support Click";
-    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
-    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
-    if (eventName) {
-      window.umami.track(eventName, { href: url, path: window.location.pathname });
-    }
-  });
-</script>
 </head>
 <body>
-<div class="page-shell">
-<header class="nav">
-<div class="nav-inner">
-<a aria-label="Domovská stránka XTimers" class="brand" href="index.html">
-<img alt="" class="brand-icon" height="36" src="../assets/flexible-timers/brand/app-icon.png" width="36"/>
-<span class="brand-text">XTimers<small>Mac • iPhone • iPad</small></span>
-</a>
-<div class="nav-actions"><a class="button primary" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12">Stáhnout pro Mac</a><details class="language-menu">
+<svg aria-hidden="true" class="svg-definitions" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<symbol id="i-clock" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></symbol>
+<symbol id="i-timer" viewbox="0 0 24 24"><circle cx="12" cy="14" r="8"></circle><path d="M12 10v4l3 2M9 2h6m-3 0v4m6 0 2 2"></path></symbol>
+<symbol id="i-countdown" viewbox="0 0 24 24"><path d="M6 3h12M6 21h12M7 3v4l5 5-5 5v4m10-18v4l-5 5 5 5v4M9 18h6"></path></symbol>
+<symbol id="i-folder" viewbox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h5l3 3h6a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7h18"></path></symbol>
+<symbol id="i-check" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></symbol>
+<symbol id="i-globe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><ellipse cx="12" cy="12" rx="4" ry="9"></ellipse><path d="M3 12h18"></path></symbol>
+<symbol id="i-calendar" viewbox="0 0 24 24"><rect height="16" rx="3" width="18" x="3" y="5"></rect><path d="M7 3v4m10-4v4M3 11h18m-14 4h3m4 0h3m-10 3h3"></path></symbol>
+<symbol id="i-chart" viewbox="0 0 24 24"><path d="M4 3v18h17M8 17v-5m5 5V7m5 10V4"></path></symbol>
+<symbol id="i-sound" viewbox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9H3m13-1a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"></path></symbol>
+<symbol id="i-mail" viewbox="0 0 24 24"><rect height="14" rx="3" width="18" x="3" y="5"></rect><path d="m3 7 9 6 9-6"></path></symbol>
+<symbol id="i-phone" viewbox="0 0 24 24"><path d="m8 3 3 5-3 3a14 14 0 0 0 5 5l3-3 5 3v3c0 2-2 3-4 2C10 19 5 14 3 7c-1-2 0-4 2-4h3Z"></path></symbol>
+<symbol id="i-sync" viewbox="0 0 24 24"><path d="M20 8a8 8 0 0 0-14-3L3 8m0-5v5h5m-4 8a8 8 0 0 0 14 3l3-3m0 5v-5h-5"></path></symbol>
+<symbol id="i-lock" viewbox="0 0 24 24"><rect height="11" rx="3" width="14" x="5" y="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"></path></symbol>
+<symbol id="i-mac" viewbox="0 0 24 24"><rect height="13" rx="2" width="18" x="3" y="3"></rect><path d="M9 21h6m-3-5v5"></path></symbol>
+<symbol id="i-mobile" viewbox="0 0 24 24"><rect height="20" rx="3" width="12" x="6" y="2"></rect><path d="M10 5h4m-3 14h2"></path></symbol>
+<symbol id="i-tablet" viewbox="0 0 24 24"><rect height="20" rx="3" width="18" x="3" y="2"></rect><path d="M10 19h4"></path></symbol>
+<symbol id="i-plus" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></symbol>
+<symbol id="i-expand" viewbox="0 0 24 24"><path d="M9 3H3v6m0-6 6 6m6 12h6v-6m0 6-6-6"></path></symbol>
+<symbol id="i-leaf" viewbox="0 0 24 24"><path d="M4 20 16 8M5 17C-1 5 13 7 20 3c2 13-4 19-12 15"></path></symbol>
+</defs>
+</svg>
+<a class="skip-link" href="#main">Přejít k obsahu</a>
+<header class="site-header">
+<nav aria-label="Hlavní navigace" class="navigation wrap">
+<a aria-label="Domovská stránka XTimers" class="brand" href="#top"><img alt="" height="36" src="../assets/marketing/app-icon.png" width="36"/><span>XTimers</span></a>
+<button aria-controls="nav-links" aria-expanded="false" aria-label="Otevřít navigaci" class="menu-toggle" data-close-label="Zavřít navigaci" data-open-label="Otevřít navigaci" type="button"><span></span><span></span></button>
+<div class="nav-links" id="nav-links">
+<a href="#features">Funkce</a>
+<a href="#devices">Vaše zařízení</a>
+<a href="#support">Otázky</a>
+<div class="header-actions">
+<a class="button button-small button-ink" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12">Stáhnout pro Mac</a>
+<details class="language-menu">
             <summary>🌐 · Čeština</summary>
             <div class="language-menu-list" aria-label="Jazyk">
               <a href="../ar/" lang="ar" dir="rtl">العربية</a>
@@ -148,7 +167,7 @@
               <a href="../da/" lang="da" dir="ltr">Dansk</a>
               <a href="../de/" lang="de" dir="ltr">Deutsch</a>
               <a href="../el/" lang="el" dir="ltr">Ελληνικά</a>
-              <a href="../flexible-timers.html" lang="en" dir="ltr">English</a>
+              <a href="../" lang="en" dir="ltr">English</a>
               <a href="../es/" lang="es" dir="ltr">Español</a>
               <a href="../fi/" lang="fi" dir="ltr">Suomi</a>
               <a href="../fr/" lang="fr" dir="ltr">Français</a>
@@ -187,34 +206,640 @@
               <a href="../zh-Hans/" lang="zh-Hans" dir="ltr">简体中文</a>
               <a href="../zh-Hant/" lang="zh-Hant" dir="ltr">繁體中文</a>
             </div>
-          </details></div>
+          </details>
 </div>
+</div>
+</nav>
 </header>
-<main id="top">
-<section aria-labelledby="hero-title" class="hero"><div><h1 id="hero-title">XTimers</h1><p class="hero-lede">Časovače, odpočty, hodiny, přehledy, zvuky a připomenutí účtu pro Mac, iPhone a iPad. Dříve Flexible Timers.</p></div><div aria-label="Snímky obrazovky aplikace XTimers" class="hero-visual"><div class="device-stage"><div class="desktop-card"><div aria-hidden="true" class="window-bar"><span class="traffic"></span><span class="traffic"></span><span class="traffic"></span><span class="window-title">XTimers pro Mac</span></div><figure class="shot"><img alt="Hlavní okno časovačů XTimers v macOS ve světlém režimu" height="1125" loading="eager" src="../assets/flexible-timers/macos/1-single-light.png" width="1800"/></figure></div><div aria-label="Snímek obrazovky XTimers na iPhonu" class="phone-card"><figure class="shot"><img alt="Seznam časovačů XTimers na iPhonu ve světlém režimu" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-1-timers-light.png" width="736"/></figure></div><div aria-label="Snímek obrazovky XTimers na iPadu" class="tablet-card"><figure class="shot"><img alt="Seznam časovačů XTimers na iPadu ve světlém režimu" height="1600" loading="eager" src="../assets/flexible-timers/ios/ipad-13-1-timers-light.png" width="1200"/></figure></div></div></div></section>
-<section aria-label="Funkce flexibilního časovače" class="section" id="features"><div class="feature-grid"><article class="feature-card"><h3>Flexibilní typy úkolů</h3><p>Časovače, odpočty do času ukončení, světové hodiny a úlohy účtu s připomenutím.</p></article><article class="feature-card"><h3>Sady úkolů</h3><p>Oddělte práci, vaření, studium, cestování a opakovaně použitelné rutiny.</p></article><article class="feature-card"><h3>Přehledy a archivy</h3><p>Prohlížejte si snímky, přidávejte poznámky a posílejte přehledy na e-mail vašeho účtu.</p></article><article class="feature-card"><h3>Zvuky a upozornění</h3><p>Používejte vestavěné zvuky, vlastní zvuky, pípnutí a místní oznámení.</p></article></div></section>
-<section aria-label="Platformy XTimers" class="section platform-section"><article class="platform" id="mac"><div class="platform-copy"><h2>Vytvořeno pro soustředěnou práci s časovačem na Macu.</h2><p>Časovače SwiftUI se sadami úkolů, přehledy, synchronizací, vlastními zvuky a stavem řádku nabídek.</p><div class="platform-list"><div class="platform-item"><span class="check">✓</span><span>Jednoduché nebo rozšířené rozložení časovače.</span></div><div class="platform-item"><span class="check">✓</span><span>Stav panelu nabídek pro aktivní časovač.</span></div><div class="platform-item"><span class="check">✓</span><span>Časovače, odpočty, hodiny a úlohy s připomenutím.</span></div><div class="platform-item"><span class="check">✓</span><span>Synchronizace, archivy, přehledy a vlastní zvuky.</span></div></div></div><div class="shot-stack"><figure class="shot"><img alt="Rozšířené dvousloupcové okno časovačů XTimers v macOS" height="1125" loading="eager" src="../assets/flexible-timers/macos/3-double-light.png" width="1800"/></figure><div class="shot-row"><figure class="shot"><img alt="Panel XTimers pro přidání časovače v macOS ve světlém režimu" height="1125" loading="eager" src="../assets/flexible-timers/macos/5-addtimer-light.png" width="1800"/></figure><figure class="shot"><img alt="Panel XTimers pro přidání odpočtu v macOS ve světlém režimu" height="1125" loading="eager" src="../assets/flexible-timers/macos/7-addcountdown-light.png" width="1800"/></figure></div></div></article><article class="platform reverse" id="ios"><div class="phone-showcase"><div class="phone-screen"><figure class="shot"><img alt="Snímek obrazovky XTimers na iPhonu" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-1-timers-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="Snímek obrazovky XTimers na iPhonu" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-4-add-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="Snímek obrazovky XTimers na iPhonu" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-6-settings-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="Snímek obrazovky XTimers na iPhonu" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-7-report-light.png" width="736"/></figure></div></div><div class="platform-copy"><h2>Stejný systém časovačů na iPhonu a iPadu.</h2><p>Časovače, hodiny, přehledy, nastavení, synchronizace, oznámení a zvuky na iPhonu a iPadu.</p><div class="platform-list"><div class="platform-item"><span class="check">✓</span><span>Seznamové rozložení na iPhonu a mřížkové rozložení na iPadu.</span></div><div class="platform-item"><span class="check">✓</span><span>Vytvářejte časovače, odpočítávání, hodiny a připomenutí.</span></div><div class="platform-item"><span class="check">✓</span><span>Přehledy, nastavení, zvuky a synchronizace.</span></div></div></div></article></section>
-<section aria-labelledby="sync-title" class="section" id="sync"><div class="account-panel"><div><h2 id="sync-title">Přihlášení pomocí Xin Account. Data XTimers zůstávají oddělená.</h2><p>XTimers používá váš Xin Account pro sdílené přihlášení, zatímco vaše časovače, zprávy, nastavení, zvuky a volby SMS uchovává jako data produktu XTimers. <a href="privacy.html#xin-account">Zjistěte, jak fungují vrstvy účtu.</a></p></div><div class="account-list"><div class="account-row"><strong>Přihlášení na více zařízeních</strong><span>Váš Xin Account vás identifikuje a autorizuje každý připojený účet XTimers.</span></div><div class="account-row"><strong>Synchronizovat data XTimers</strong><span>Sady úloh, archivy, nastavení a zvuky jsou vázány na připojený účet XTimers.</span></div><div class="account-row"><strong>Oddělené volby ochrany soukromí</strong><span>Odhlášení, odebrání místních kopií, smazání dat XTimers a smazání globálního Xin Account jsou samostatné úkony.</span></div></div></div></section>
-</main>
-<footer><div>© 2017-2026 Xintech LLC.</div><div class="footer-links"><a href="support.html">Podpora</a><a href="privacy.html">Soukromí</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a><a href="sms-terms.html">Podmínky SMS</a><a href="sms-opt-in.html">Souhlas se zasíláním SMS</a></div></footer>
+<main id="main">
+<section aria-labelledby="hero-heading" class="hero wrap" id="top">
+<div class="hero-copy hero-hoefler">
+<div class="hero-copy-inner">
+<p class="eyebrow">Pro Mac, iPhone a iPad</p>
+<h1 aria-label="Měřte čas. Odpočítávejte. Světové hodiny. Světový kalendář." class="hero-timing-heading" id="hero-heading"><span class="hero-line">Měřte čas.</span> <span class="hero-line">Odpočítávejte.</span> <span class="hero-line">Světové hodiny.</span> <span class="hero-line">Světový kalendář.</span></h1>
+<p class="hero-payoff">Flexibilní. Přizpůsobitelné.</p>
+<p class="hero-description">Spojte časovače, odpočty a světové hodiny v jednom pracovním prostoru. Přidejte opakovaně použitelné rutiny, připomínky a přehledy a přizpůsobte si rozvržení i vzhled.</p>
+<p class="hero-note"><svg aria-hidden="true" class="icon"><use href="#i-check"></use></svg>Základní časovače fungují offline. Bez účtu.</p>
 </div>
-<script>
-      // ft-language-menu-dismiss: close the language dropdown when clicking
-      // outside it or pressing Escape. A native <details> otherwise only closes
-      // on a second click of its <summary>.
-      (function () {
-        function closeAll() {
-          document.querySelectorAll('details.language-menu[open]')
-            .forEach(function (d) { d.removeAttribute('open'); });
-        }
-        document.addEventListener('click', function (e) {
-          document.querySelectorAll('details.language-menu[open]')
-            .forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute('open'); });
-        });
-        document.addEventListener('keydown', function (e) {
-          if (e.key === 'Escape' || e.key === 'Esc') closeAll();
-        });
-      })();
-    </script>
+</div>
+<div class="hero-stage">
+<div class="floating-label"><span class="pulse-dot"></span>Udělejte si čas na to, na čem záleží.</div>
+<button aria-label="Zvětšit: snímek pracovního prostoru „Studio“ v nainstalované aplikaci pro Mac" class="image-button hero-mac" data-caption="Pracovní prostor „Studio“ — nainstalovaná aplikace pro Mac se simulovanými časovači, odpočtem a světovými hodinami." data-zoom="../assets/marketing/mac-dark.png" type="button">
+<img alt="Pracovní prostor „Studio“ v nainstalované aplikaci XTimers se simulovanými časovači „Design“, „Research“, „Writing“, „Reading“ a „Planning“, odpočtem „Focus sprint“ a trojicí světových hodin na tmavě modrém pozadí" fetchpriority="high" height="796" src="../assets/marketing/mac-dark.png" width="1240"/>
+</button>
+<button aria-label="Zvětšit: kompaktní časovač „Design“ se skrytými ovládacími prvky" class="image-button hero-mini" data-caption="Kompaktní časovač „Design“ — nainstalovaná aplikace pro Mac se simulovanými daty a skrytými ovládacími prvky." data-zoom="../assets/marketing/mac-timer-minimal-hidden.png" type="button">
+<img alt="Časovač „Design“ v kompaktním tmavě modrém okně „Minimal“ po skrytí ovládacích prvků" fetchpriority="high" height="480" src="../assets/marketing/mac-timer-minimal-hidden.png" width="1240"/>
+</button>
+<button aria-label="Zvětšit: Světový kalendář v úvodní sekci" class="image-button hero-calendar" data-caption="Světový kalendář — říjen 2026 se státními svátky, daty čínského kalendáře a podrobnostmi státního svátku v nainstalované aplikaci pro Mac." data-zoom="../assets/marketing/mac-world-calendar-month.png" type="button">
+<img alt="Měsíční mřížka a podrobnosti svátků ve Světovém kalendáři ve světlém okně pro Mac" decoding="async" height="1440" src="../assets/marketing/mac-world-calendar-month.png" width="2040"/>
+</button>
+<button aria-label="Zvětšit: Knihovna zvuků v úvodní sekci" class="image-button hero-sounds" data-caption="Knihovna zvuků — zvuky „World Ceremonial“ s nativním zobrazením průběhů vln, oblíbenými položkami a ovládáním přehrávání v nainstalované aplikaci pro Mac." data-zoom="../assets/marketing/mac-sound-ceremonial.png" type="button">
+<img alt="Sbírka „World Ceremonial“ v Knihovně zvuků, s průběhy zvukových vln zvonu, zvonkohry, bubnu a trubky" decoding="async" height="1120" src="../assets/marketing/mac-sound-ceremonial.png" width="1440"/>
+</button>
+<button aria-label="Zvětšit: „Planning“ s fotografií Dolomit v úvodní sekci" class="image-button hero-photo" data-caption="Zobrazení podle vás — „Planning“ s časem 20:04 na fotografii Dolomit, s automaticky skrytými ovládacími prvky v nainstalované aplikaci pro Mac." data-zoom="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" type="button">
+<img alt="„Planning“ s časem 20:04 na horské fotografii v zobrazení „Minimal“" decoding="async" height="468" src="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" width="658"/>
+</button>
+<button aria-label="Zvětšit: grafy týdenního přehledu v úvodní sekci" class="image-button hero-report" data-caption="Váš týden pod drobnohledem — 30 ukázkových hodin v pěti úkolech s denními součty a grafy podílů úkolů v nainstalované aplikaci pro Mac." data-zoom="../assets/marketing/mac-report-week-daily-totals.png" type="button">
+<img alt="Týdenní přehled času s barevnými skládanými denními součty a grafem podílu jednotlivých úkolů na 30 ukázkových hodinách" decoding="async" height="2396" src="../assets/marketing/mac-report-week-daily-totals.png" width="1520"/>
+</button>
+<div class="hero-menubar">
+<button aria-label="Zvětšit: stav úkolu „Planning“ v řádku nabídek v úvodní sekci" class="image-button" data-caption="Váš časovač v řádku nabídek — „Planning“ pozastavený na 20:04, viditelný vedle stavových ikon macOS bez otevření hlavního okna." data-zoom="../assets/marketing/mac-menubar-status-planning.png" type="button">
+<img alt="Řádek nabídek macOS s indikátorem pozastavení a údajem „Planning 20:04“ vedle systémových stavových ikon" decoding="async" height="60" src="../assets/marketing/mac-menubar-status-planning.png" width="572"/>
+</button>
+<a href="#menu-bar">Váš časovač přímo v řádku nabídek.</a>
+</div>
+<span class="stage-caption">Váš čas. Na první pohled.</span>
+</div>
+</section>
+<section aria-label="Objevte funkce XTimers" class="feature-overview wrap" id="features">
+<details class="feature-browser">
+<summary>Prohlédnout všech 20 funkcí <span aria-hidden="true">+</span></summary>
+<nav aria-label="Všech 20 funkcí podle kategorií" class="feature-index">
+<div class="feature-group">
+<h3><a class="feature-category" href="#timers"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timers.png" width="16"/>Měření času<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#timers"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timers.png" width="16"/><span>Časovače a odpočty</span></a></li>
+<li><a href="#reminders"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/reminders.png" width="16"/><span>Připomínky e-mailem, SMS a telefonátem</span></a></li>
+<li><a href="#sound-library"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/sound-library.png" width="16"/><span>Knihovna zvuků</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#task-sets"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/task-sets.png" width="16"/>Rutiny<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#task-sets"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/task-sets.png" width="16"/><span>Sady úkolů a opakovaně použitelné šablony</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#timer-views"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timer-views.png" width="16"/>Zobrazení<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#timer-views"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timer-views.png" width="16"/><span>Flexibilní zobrazení časovačů</span></a></li>
+<li><a href="#classic-interface"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/classic-interface.png" width="16"/><span>Klasické rozhraní</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#world-calendar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-clocks.png" width="16"/>Světový čas<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#world-clocks"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-clocks.png" width="16"/><span>Světové hodiny</span></a></li>
+<li><a href="#world-calendar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-calendar.png" width="16"/><span>Světový kalendář</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#time-reports"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/time-reports.png" width="16"/>Přehledy<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#time-reports"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/time-reports.png" width="16"/><span>Přehledy času a sdílení</span></a></li>
+<li><a href="#archives"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/archives.png" width="16"/><span>Archivy</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#appearance"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/appearance.png" width="16"/>Vzhled<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#appearance"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/appearance.png" width="16"/><span>Přizpůsobení vzhledu</span></a></li>
+<li><a href="#languages"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/languages.png" width="16"/><span>Podpora více jazyků</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#menu-bar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/menu-bar.png" width="16"/>Vaše zařízení<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#menu-bar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/menu-bar.png" width="16"/><span>Integrace s řádkem nabídek a plochou</span></a></li>
+<li><a href="#live-activities"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/live-activities.png" width="16"/><span>Aktivity živě</span></a></li>
+<li><a href="#siri-shortcuts"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/siri-shortcuts.png" width="16"/><span>Siri a Zkratky</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#offline"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/protected-sync.png" width="16"/>Synchronizace a soukromí<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#offline"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/offline.png" width="16"/><span>Používání offline bez účtu</span></a></li>
+<li><a href="#synchronization"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/synchronization.png" width="16"/><span>Synchronizace mezi zařízeními</span></a></li>
+<li><a href="#protected-sync"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/protected-sync.png" width="16"/><span>Chráněná synchronizace</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#activity-tracking"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/xhelpers-pro.png" width="16"/>Více na počítači Mac<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#activity-tracking"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/activity-tracking.png" width="16"/><span>Automatické sledování aktivity aplikací</span></a></li>
+<li><a href="#xhelpers-pro"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/xhelpers-pro.png" width="16"/><span>Výhoda XHelpers Pro</span></a></li>
+</ul>
+</div>
+</nav>
+</details>
+</section>
+<section aria-labelledby="timers-heading" class="highlight-row has-gallery" data-highlight="01" id="timers">
+<span class="anchor-target" id="count-up-timers"></span><span class="anchor-target" id="countdowns"></span><span class="anchor-target" id="running-timers"></span><span class="anchor-target" id="task-controls"></span><span class="anchor-target" id="notes-history"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">01</span>Časovače a odpočty</p>
+<h2 id="timers-heading">Udělejte si čas na to, na čem záleží.</h2>
+<p>Měřte strávený čas, odpočítávejte určitou dobu nebo sledujte blížící se termín. Spusťte jeden úkol či několik současně, pozastavujte je a obnovujte a přidávejte k relacím poznámky. Časovače se přizpůsobí změnám vašeho dne.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Snímky funkce: Časovače a odpočty" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Váš prostor pro časovače</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Váš prostor pro časovače" class="image-button capture-image" data-caption="Váš prostor pro časovače — Pracovní prostor „Studio“ spojuje pět stopek, odpočet „Focus sprint“ a troje světové hodiny." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="Pracovní prostor „Studio“ spojuje pět stopek, odpočet „Focus sprint“ a troje světové hodiny." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>Pracovní prostor „Studio“ spojuje pět stopek, odpočet „Focus sprint“ a troje světové hodiny.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Odpočet podle vás</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Odpočet podle vás" class="image-button capture-image" data-caption="Odpočet podle vás — „Focus sprint“: odpočet na 25 minut v prostoru „Studio“, který lze pozastavit; spouští se ručně a končí zvukem „Gentle Bell“." data-zoom="../assets/marketing/mac-countdown.png" type="button"><img alt="„Focus sprint“: odpočet na 25 minut v prostoru „Studio“, který lze pozastavit; spouští se ručně a končí zvukem „Gentle Bell“." decoding="async" loading="lazy" src="../assets/marketing/mac-countdown.png"/></button>
+<figcaption>„Focus sprint“: odpočet na 25 minut v prostoru „Studio“, který lze pozastavit; spouští se ručně a končí zvukem „Gentle Bell“.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="task-sets-heading" class="highlight-row" data-highlight="02" id="task-sets">
+<span class="anchor-target" id="routines"></span><span class="anchor-target" id="templates"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">02</span>Sady úkolů a opakovaně použitelné šablony</p>
+<h2 id="task-sets-heading">Místo pro každou rutinu.</h2>
+<p>Vytvořte si pojmenované sady úkolů pro práci, učení i každodenní život. Uložte úkol nebo celou sadu jako šablonu a přeneste známou rutinu do další relace.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Snímky funkce: Sady úkolů a opakovaně použitelné šablony" class="feature-gallery gallery-1">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Sady úkolů</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Sady úkolů" class="image-button capture-image" data-caption="Sady úkolů — sada „Studio“ s devíti aktivními úkoly a opakovaně použitelnou šablonou „Studio Template“." data-zoom="../assets/marketing/mac-task-sets.png" type="button"><img alt="Sada úkolů „Studio“ s devíti aktivními úkoly a opakovaně použitelnou šablonou „Studio Template“." decoding="async" loading="lazy" src="../assets/marketing/mac-task-sets.png"/></button>
+<figcaption>Sada úkolů „Studio“ s devíti aktivními úkoly a opakovaně použitelnou šablonou „Studio Template“.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="timer-views-heading" class="highlight-row has-gallery" data-highlight="03" id="timer-views">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">03</span>Flexibilní zobrazení časovačů</p>
+<h2 id="timer-views-heading">Správné zobrazení pro tuto chvíli.</h2>
+<p>Sledujte celý přehled nebo věnujte pozornost jedinému úkolu. Mac nabízí zobrazení Seznam, Mřížka, Jednotlivé a Minimální. Na telefonu iPhone a zařízení iPad si podle situace vyberte Seznam, Soustředění nebo Jednotlivé.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">V zobrazeních „Single“ a „Minimal“ se ovládací prvky skryjí, když ukazatel opustí okno, a znovu se objeví po jeho návratu.</p>
+</div>
+<div aria-label="Snímky funkce: Flexibilní zobrazení časovačů" class="feature-gallery gallery-14">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · seznam</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Mac · seznam" class="image-button capture-image" data-caption="Mac · seznam — „Studio“ v zobrazení Seznam s devíti úkoly v kompaktních řádcích." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="„Studio“ v zobrazení Seznam s devíti úkoly v kompaktních řádcích." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>„Studio“ v zobrazení Seznam s devíti úkoly v kompaktních řádcích.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · mřížka</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Mac · mřížka" class="image-button capture-image" data-caption="Mac · mřížka — Časovače „Design“, „Research“, „Writing“, „Reading“ a „Planning“ prostoru „Studio“, odpočet „Focus sprint“ a hodiny pro New York, Londýn a Tokio." data-zoom="../assets/marketing/mac-grid-light.png" type="button"><img alt="Časovače „Design“, „Research“, „Writing“, „Reading“ a „Planning“ prostoru „Studio“, odpočet „Focus sprint“ a hodiny pro New York, Londýn a Tokio." decoding="async" loading="lazy" src="../assets/marketing/mac-grid-light.png"/></button>
+<figcaption>Časovače „Design“, „Research“, „Writing“, „Reading“ a „Planning“ prostoru „Studio“, odpočet „Focus sprint“ a hodiny pro New York, Londýn a Tokio.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · viditelné ovládací prvky · čistě černá</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Mac · Single · viditelné ovládací prvky · čistě černá" class="image-button capture-image" data-caption="Mac · Single · viditelné ovládací prvky · čistě černá — „Planning“ s časem 20:04 v zobrazení „Single“ nainstalované aplikace pro Mac, s viditelnými ovládacími prvky a čistě černým pozadím." data-zoom="../assets/marketing/mac-planning-single-black.png" type="button"><img alt="„Planning“ s časem 20:04 v zobrazení „Single“ nainstalované aplikace pro Mac, s viditelnými ovládacími prvky a čistě černým pozadím." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-black.png"/></button>
+<figcaption>„Planning“ s časem 20:04 v zobrazení „Single“ nainstalované aplikace pro Mac, s viditelnými ovládacími prvky a čistě černým pozadím.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · viditelné ovládací prvky · čistě černá</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Mac · Minimal · viditelné ovládací prvky · čistě černá" class="image-button capture-image" data-caption="Mac · Minimal · viditelné ovládací prvky · čistě černá — „Planning“ s časem 20:04 v zobrazení „Minimal“ nainstalované aplikace pro Mac, s viditelnými ovládacími prvky a čistě černým pozadím." data-zoom="../assets/marketing/mac-planning-minimal-black.png" type="button"><img alt="„Planning“ s časem 20:04 v zobrazení „Minimal“ nainstalované aplikace pro Mac, s viditelnými ovládacími prvky a čistě černým pozadím." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-black.png"/></button>
+<figcaption>„Planning“ s časem 20:04 v zobrazení „Minimal“ nainstalované aplikace pro Mac, s viditelnými ovládacími prvky a čistě černým pozadím.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · skryté ovládací prvky · čistě černá</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Mac · Single · skryté ovládací prvky · čistě černá" class="image-button capture-image" data-caption="Mac · Single · skryté ovládací prvky · čistě černá — „Planning“ s časem 20:04 v zobrazení „Single“ nainstalované aplikace pro Mac, se skrytými ovládacími prvky a čistě černým pozadím." data-zoom="../assets/marketing/mac-planning-single-hidden-black.png" type="button"><img alt="„Planning“ s časem 20:04 v zobrazení „Single“ nainstalované aplikace pro Mac, se skrytými ovládacími prvky a čistě černým pozadím." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-black.png"/></button>
+<figcaption>„Planning“ s časem 20:04 v zobrazení „Single“ nainstalované aplikace pro Mac, se skrytými ovládacími prvky a čistě černým pozadím.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · skryté ovládací prvky · čistě černá</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Mac · Minimal · skryté ovládací prvky · čistě černá" class="image-button capture-image" data-caption="Mac · Minimal · skryté ovládací prvky · čistě černá — „Planning“ s časem 20:04 v zobrazení „Minimal“ nainstalované aplikace pro Mac, se skrytými ovládacími prvky a čistě černým pozadím." data-zoom="../assets/marketing/mac-planning-minimal-hidden-black.png" type="button"><img alt="„Planning“ s časem 20:04 v zobrazení „Minimal“ nainstalované aplikace pro Mac, se skrytými ovládacími prvky a čistě černým pozadím." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-black.png"/></button>
+<figcaption>„Planning“ s časem 20:04 v zobrazení „Minimal“ nainstalované aplikace pro Mac, se skrytými ovládacími prvky a čistě černým pozadím.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · viditelné ovládací prvky · fotografie Yosemite</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Mac · Single · viditelné ovládací prvky · fotografie Yosemite" class="image-button capture-image" data-caption="Mac · Single · viditelné ovládací prvky · fotografie Yosemite — „Planning“ s časem 20:04 v zobrazení „Single“ nainstalované aplikace pro Mac, s viditelnými ovládacími prvky a fotografií Yosemite na pozadí." data-zoom="../assets/marketing/mac-planning-single-yosemite.png" type="button"><img alt="„Planning“ s časem 20:04 v zobrazení „Single“ nainstalované aplikace pro Mac, s viditelnými ovládacími prvky a fotografií Yosemite na pozadí." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-yosemite.png"/></button>
+<figcaption>„Planning“ s časem 20:04 v zobrazení „Single“ nainstalované aplikace pro Mac, s viditelnými ovládacími prvky a fotografií Yosemite na pozadí.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · viditelné ovládací prvky · fotografie Yosemite</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Mac · Minimal · viditelné ovládací prvky · fotografie Yosemite" class="image-button capture-image" data-caption="Mac · Minimal · viditelné ovládací prvky · fotografie Yosemite — „Planning“ s časem 20:04 v zobrazení „Minimal“ nainstalované aplikace pro Mac, s viditelnými ovládacími prvky a fotografií Yosemite na pozadí." data-zoom="../assets/marketing/mac-planning-minimal-yosemite.png" type="button"><img alt="„Planning“ s časem 20:04 v zobrazení „Minimal“ nainstalované aplikace pro Mac, s viditelnými ovládacími prvky a fotografií Yosemite na pozadí." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-yosemite.png"/></button>
+<figcaption>„Planning“ s časem 20:04 v zobrazení „Minimal“ nainstalované aplikace pro Mac, s viditelnými ovládacími prvky a fotografií Yosemite na pozadí.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · skryté ovládací prvky · fotografie Yosemite</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Mac · Single · skryté ovládací prvky · fotografie Yosemite" class="image-button capture-image" data-caption="Mac · Single · skryté ovládací prvky · fotografie Yosemite — „Planning“ s časem 20:04 v zobrazení „Single“ nainstalované aplikace pro Mac, se skrytými ovládacími prvky a fotografií Yosemite na pozadí." data-zoom="../assets/marketing/mac-planning-single-hidden-yosemite.png" type="button"><img alt="„Planning“ s časem 20:04 v zobrazení „Single“ nainstalované aplikace pro Mac, se skrytými ovládacími prvky a fotografií Yosemite na pozadí." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-yosemite.png"/></button>
+<figcaption>„Planning“ s časem 20:04 v zobrazení „Single“ nainstalované aplikace pro Mac, se skrytými ovládacími prvky a fotografií Yosemite na pozadí.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · skryté ovládací prvky · fotografie Yosemite</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Mac · Minimal · skryté ovládací prvky · fotografie Yosemite" class="image-button capture-image" data-caption="Mac · Minimal · skryté ovládací prvky · fotografie Yosemite — „Planning“ s časem 20:04 v zobrazení „Minimal“ nainstalované aplikace pro Mac, se skrytými ovládacími prvky a fotografií Yosemite na pozadí." data-zoom="../assets/marketing/mac-planning-minimal-hidden-yosemite.png" type="button"><img alt="„Planning“ s časem 20:04 v zobrazení „Minimal“ nainstalované aplikace pro Mac, se skrytými ovládacími prvky a fotografií Yosemite na pozadí." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-yosemite.png"/></button>
+<figcaption>„Planning“ s časem 20:04 v zobrazení „Minimal“ nainstalované aplikace pro Mac, se skrytými ovládacími prvky a fotografií Yosemite na pozadí.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · viditelné ovládací prvky · fotografie Dolomit</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Mac · Single · viditelné ovládací prvky · fotografie Dolomit" class="image-button capture-image" data-caption="Mac · Single · viditelné ovládací prvky · fotografie Dolomit — „Planning“ s časem 20:04 v zobrazení „Single“ nainstalované aplikace pro Mac, s viditelnými ovládacími prvky a fotografií Dolomit na pozadí." data-zoom="../assets/marketing/mac-planning-single-dolomites.png" type="button"><img alt="„Planning“ s časem 20:04 v zobrazení „Single“ nainstalované aplikace pro Mac, s viditelnými ovládacími prvky a fotografií Dolomit na pozadí." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-dolomites.png"/></button>
+<figcaption>„Planning“ s časem 20:04 v zobrazení „Single“ nainstalované aplikace pro Mac, s viditelnými ovládacími prvky a fotografií Dolomit na pozadí.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · viditelné ovládací prvky · fotografie Dolomit</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Mac · Minimal · viditelné ovládací prvky · fotografie Dolomit" class="image-button capture-image" data-caption="Mac · Minimal · viditelné ovládací prvky · fotografie Dolomit — „Planning“ s časem 20:04 v zobrazení „Minimal“ nainstalované aplikace pro Mac, s viditelnými ovládacími prvky a fotografií Dolomit na pozadí." data-zoom="../assets/marketing/mac-planning-minimal-dolomites.png" type="button"><img alt="„Planning“ s časem 20:04 v zobrazení „Minimal“ nainstalované aplikace pro Mac, s viditelnými ovládacími prvky a fotografií Dolomit na pozadí." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-dolomites.png"/></button>
+<figcaption>„Planning“ s časem 20:04 v zobrazení „Minimal“ nainstalované aplikace pro Mac, s viditelnými ovládacími prvky a fotografií Dolomit na pozadí.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · skryté ovládací prvky · fotografie Dolomit</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Mac · Single · skryté ovládací prvky · fotografie Dolomit" class="image-button capture-image" data-caption="Mac · Single · skryté ovládací prvky · fotografie Dolomit — „Planning“ s časem 20:04 v zobrazení „Single“ nainstalované aplikace pro Mac, se skrytými ovládacími prvky a fotografií Dolomit na pozadí." data-zoom="../assets/marketing/mac-planning-single-hidden-dolomites.png" type="button"><img alt="„Planning“ s časem 20:04 v zobrazení „Single“ nainstalované aplikace pro Mac, se skrytými ovládacími prvky a fotografií Dolomit na pozadí." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-dolomites.png"/></button>
+<figcaption>„Planning“ s časem 20:04 v zobrazení „Single“ nainstalované aplikace pro Mac, se skrytými ovládacími prvky a fotografií Dolomit na pozadí.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · skryté ovládací prvky · fotografie Dolomit</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Mac · Minimal · skryté ovládací prvky · fotografie Dolomit" class="image-button capture-image" data-caption="Mac · Minimal · skryté ovládací prvky · fotografie Dolomit — „Planning“ s časem 20:04 v zobrazení „Minimal“ nainstalované aplikace pro Mac, se skrytými ovládacími prvky a fotografií Dolomit na pozadí." data-zoom="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" type="button"><img alt="„Planning“ s časem 20:04 v zobrazení „Minimal“ nainstalované aplikace pro Mac, se skrytými ovládacími prvky a fotografií Dolomit na pozadí." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-dolomites.png"/></button>
+<figcaption>„Planning“ s časem 20:04 v zobrazení „Minimal“ nainstalované aplikace pro Mac, se skrytými ovládacími prvky a fotografií Dolomit na pozadí.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="world-clocks-heading" class="highlight-row has-gallery" data-highlight="04" id="world-clocks">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">04</span>Světové hodiny</p>
+<h2 id="world-clocks-heading">Mějte svá místa nablízku.</h2>
+<p>Přidejte města a časová pásma, která jsou pro vás důležitá. Vedle časovačů mějte přehled o kolezích, rodině i cestovních plánech a aktuálním místním čase v každém místě.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Snímky funkce: Světové hodiny" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Hodiny vedle časovačů</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Hodiny vedle časovačů" class="image-button capture-image" data-caption="Hodiny vedle časovačů — New York, Londýn a Tokio vedle časovačů „Studio“ v modrém pracovním prostoru s mřížkou." data-zoom="../assets/marketing/mac-grid-dark.png" type="button"><img alt="New York, Londýn a Tokio vedle časovačů „Studio“ v modrém pracovním prostoru s mřížkou." decoding="async" loading="lazy" src="../assets/marketing/mac-grid-dark.png"/></button>
+<figcaption>New York, Londýn a Tokio vedle časovačů „Studio“ v modrém pracovním prostoru s mřížkou.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Vyberte místo</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · ukázkové nastavení</span></div>
+<button aria-label="Zvětšit: Vyberte místo" class="image-button capture-image" data-caption="Vyberte místo — New York v editoru hodin nainstalované aplikace pro Mac, s mapou, místním časem a posunem UTC−04:00." data-zoom="../assets/marketing/mac-clock-editor.png" type="button"><img alt="New York v editoru hodin nainstalované aplikace pro Mac, s mapou, místním časem a posunem UTC−04:00." decoding="async" loading="lazy" src="../assets/marketing/mac-clock-editor.png"/></button>
+<figcaption>New York v editoru hodin nainstalované aplikace pro Mac, s mapou, místním časem a posunem UTC−04:00.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="world-calendar-heading" class="highlight-row has-gallery" data-highlight="05" id="world-calendar">
+<span class="anchor-target" id="regional-holidays"></span><span class="anchor-target" id="world-events"></span><span class="anchor-target" id="apple-calendar"></span><span class="anchor-target" id="calendar-actions"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">05</span>Světový kalendář</p>
+<h2 id="world-calendar-heading">Vnímejte svůj den v souvislostech.</h2>
+<p>Objevujte svátky, kulturní výročí, světové události a historické okamžiky. Přidejte si zobrazení svých kalendářů Apple pouze pro čtení a vytvořte z data nebo události odpočet či osobní připomínku.</p>
+<span class="platform-pill">Mac</span>
+<p class="feature-note">Stačí jednou stáhnout katalog a můžete jej procházet offline. Přístup k vašim kalendářům Apple je volitelný a pouze pro čtení.</p>
+</div>
+<div aria-label="Snímky funkce: Světový kalendář" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Měsíc na první pohled</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · ukázkové nastavení</span></div>
+<button aria-label="Zvětšit: Měsíc na první pohled" class="image-button capture-image" data-caption="Měsíc na první pohled — Říjen 2026 s profilem svátků pevninské Číny, daty čínského kalendáře a podrobnostmi státního svátku." data-zoom="../assets/marketing/mac-world-calendar-month.png" type="button"><img alt="Říjen 2026 s profilem svátků pevninské Číny, daty čínského kalendáře a podrobnostmi státního svátku." decoding="async" loading="lazy" src="../assets/marketing/mac-world-calendar-month.png"/></button>
+<figcaption>Říjen 2026 s profilem svátků pevninské Číny, daty čínského kalendáře a podrobnostmi státního svátku.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Týdenní zobrazení a podrobnosti data</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · ukázkové nastavení</span></div>
+<button aria-label="Zvětšit: Týdenní zobrazení a podrobnosti data" class="image-button capture-image" data-caption="Týdenní zobrazení a podrobnosti data — 27. září až 3. října, s vybraným 1. říjnem a podrobnostmi jeho státního svátku vedle týdenního přehledu." data-zoom="../assets/marketing/mac-world-calendar-week.png" type="button"><img alt="27. září až 3. října, s vybraným 1. říjnem a podrobnostmi jeho státního svátku vedle týdenního přehledu." decoding="async" loading="lazy" src="../assets/marketing/mac-world-calendar-week.png"/></button>
+<figcaption>27. září až 3. října, s vybraným 1. říjnem a podrobnostmi jeho státního svátku vedle týdenního přehledu.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="reminders-heading" class="highlight-row copy-only" data-highlight="06" id="reminders">
+<span class="anchor-target" id="email-sms"></span><span class="anchor-target" id="call-me"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">06</span>Připomínky e-mailem, SMS a telefonátem</p>
+<h2 id="reminders-heading">Připomínka vašimi slovy.</h2>
+<p>Naplánujte si zprávu po uplynutí určité doby nebo na konkrétní datum a čas. Vyberte e-mail, SMS nebo podporovaný jednorázový telefonát a sledujte stav doručení vedle svých úkolů.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Platí podmínky dostupnosti účtu a služby. SMS a telefonáty vyžadují vaše vlastní podporované a ověřené číslo a samostatný souhlas. Telefonáty podporují čísla z USA a Kanady, probíhají v angličtině a automaticky se neopakují.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="sound-library-heading" class="highlight-row has-gallery" data-highlight="07" id="sound-library">
+<span class="anchor-target" id="sounds"></span><span class="anchor-target" id="interval-beeps"></span><span class="anchor-target" id="completion-alerts"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">07</span>Knihovna zvuků</p>
+<h2 id="sound-library-heading">Najděte zvuk pro zakončení.</h2>
+<p>Projděte si 66 přiložených zvuků, poslechněte si je před výběrem a uložte si oblíbené. Importujte vlastní zvuk nebo zapněte pípání v intervalech, abyste měli přehled o čase i během probíhající relace.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Snímky funkce: Knihovna zvuků" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Zvuky pro váš den</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · ukázkové nastavení</span></div>
+<button aria-label="Zvětšit: Zvuky pro váš den" class="image-button capture-image" data-caption="Zvuky pro váš den — Knihovna zvuků v nainstalované aplikaci pro Mac se sbírkou „Classic Tones“, průběhy zvukových vln, oblíbenými položkami a ovládáním přehrávání." data-zoom="../assets/marketing/mac-sound-library.png" type="button"><img alt="Knihovna zvuků v nainstalované aplikaci pro Mac se sbírkou „Classic Tones“, průběhy zvukových vln, oblíbenými položkami a ovládáním přehrávání." decoding="async" loading="lazy" src="../assets/marketing/mac-sound-library.png"/></button>
+<figcaption>Knihovna zvuků v nainstalované aplikaci pro Mac se sbírkou „Classic Tones“, průběhy zvukových vln, oblíbenými položkami a ovládáním přehrávání.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Světové ceremonie</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · ukázkové nastavení</span></div>
+<button aria-label="Zvětšit: Světové ceremonie" class="image-button capture-image" data-caption="Světové ceremonie — Zvuky sbírky „World Ceremonial“, od „Gentle Bell“ a „Bright Chime“ po „Ceremonial Drum“ a „Trumpet Salute“." data-zoom="../assets/marketing/mac-sound-ceremonial.png" type="button"><img alt="Zvuky sbírky „World Ceremonial“, od „Gentle Bell“ a „Bright Chime“ po „Ceremonial Drum“ a „Trumpet Salute“." decoding="async" loading="lazy" src="../assets/marketing/mac-sound-ceremonial.png"/></button>
+<figcaption>Zvuky sbírky „World Ceremonial“, od „Gentle Bell“ a „Bright Chime“ po „Ceremonial Drum“ a „Trumpet Salute“.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="time-reports-heading" class="highlight-row has-gallery" data-highlight="08" id="time-reports">
+<span class="anchor-target" id="report-charts"></span><span class="anchor-target" id="report-exports"></span><span class="anchor-target" id="report-sharing"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">08</span>Přehledy času a sdílení</p>
+<h2 id="time-reports-heading">Zjistěte, kam plyne váš čas.</h2>
+<p>Prohlížejte relace, denní součty nebo aktuální údaje. Prozkoumejte grafy, porovnávejte období a filtrujte podle úkolu nebo sady. Uložte si CSV, HTML či PDF, pošlete si přehled e-mailem nebo jej sdílejte odkazem s omezenou platností.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Místní přehledy a exporty fungují offline. E-mail a online sdílení vyžadují připojení.</p>
+</div>
+<div aria-label="Snímky funkce: Přehledy času a sdílení" class="feature-gallery gallery-4 report-gallery">
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>Denní součty · Týden na první pohled</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná historie</span></div>
+<button aria-label="Zvětšit: Denní součty · Týden na první pohled" class="image-button capture-image" data-caption="Denní součty · Týden na první pohled — 21.–25. září 2026: 30 hodin v pěti ukázkových úkolech s denními součty a podíly úkolů. „Design“ tvoří 12 h 05 min (40,3 %)." data-zoom="../assets/marketing/mac-report-week-daily-totals.png" type="button"><img alt="21.–25. září 2026: 30 hodin v pěti ukázkových úkolech s denními součty a podíly úkolů. „Design“ tvoří 12 h 05 min (40,3 %)." decoding="async" loading="lazy" src="../assets/marketing/mac-report-week-daily-totals.png"/></button>
+<figcaption>21.–25. září 2026: 30 hodin v pěti ukázkových úkolech s denními součty a podíly úkolů. „Design“ tvoří 12 h 05 min (40,3 %).</figcaption>
+</figure>
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>Relace · Kdy probíhala práce</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná historie</span></div>
+<button aria-label="Zvětšit: Relace · Kdy probíhala práce" class="image-button capture-image" data-caption="Relace · Kdy probíhala práce — Ukázkový týden s 29 relacemi a 30 hodinami; časová osa ukazuje, kdy probíhala práce ve dnech 21.–25. září 2026." data-zoom="../assets/marketing/mac-report-week-sessions.png" type="button"><img alt="Ukázkový týden s 29 relacemi a 30 hodinami; časová osa ukazuje, kdy probíhala práce ve dnech 21.–25. září 2026." decoding="async" loading="lazy" src="../assets/marketing/mac-report-week-sessions.png"/></button>
+<figcaption>Ukázkový týden s 29 relacemi a 30 hodinami; časová osa ukazuje, kdy probíhala práce ve dnech 21.–25. září 2026.</figcaption>
+</figure>
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>Relace · Jeden den podrobně</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná historie</span></div>
+<button aria-label="Zvětšit: Relace · Jeden den podrobně" class="image-button capture-image" data-caption="Relace · Jeden den podrobně — Šest ukázkových relací 24. září 2026 v celkové délce 6 h 15 min, s časovou osou dne a jednotlivými časy zahájení a ukončení." data-zoom="../assets/marketing/mac-report-day-sessions.png" type="button"><img alt="Šest ukázkových relací 24. září 2026 v celkové délce 6 h 15 min, s časovou osou dne a jednotlivými časy zahájení a ukončení." decoding="async" loading="lazy" src="../assets/marketing/mac-report-day-sessions.png"/></button>
+<figcaption>Šest ukázkových relací 24. září 2026 v celkové délce 6 h 15 min, s časovou osou dne a jednotlivými časy zahájení a ukončení.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Aktuální údaje</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Aktuální údaje" class="image-button capture-image" data-caption="Aktuální údaje — Aktuální údaje pracovního prostoru „Studio“ s ovládáním kopírování, exportu a sdílení." data-zoom="../assets/marketing/mac-report-current-readings.png" type="button"><img alt="Aktuální údaje pracovního prostoru „Studio“ s ovládáním kopírování, exportu a sdílení." decoding="async" loading="lazy" src="../assets/marketing/mac-report-current-readings.png"/></button>
+<figcaption>Aktuální údaje pracovního prostoru „Studio“ s ovládáním kopírování, exportu a sdílení.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="archives-heading" class="highlight-row" data-highlight="09" id="archives">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">09</span>Archivy</p>
+<h2 id="archives-heading">Uchovejte si dokončenou práci.</h2>
+<p>Archivujte sadu úkolů a mějte její historii po ruce. Prohledávejte minulou práci, procházejte uložené snímky a otevřete přehled, když se chcete vrátit k projektu nebo rutině.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Snímky funkce: Archivy" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Uložený přehled projektu</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Uložený přehled projektu" class="image-button capture-image" data-caption="Uložený přehled projektu — „Brand workshop“ uložený v archivu; simulované údaje časovačů zůstávají zachované v přehledu." data-zoom="../assets/marketing/mac-archive-report.png" type="button"><img alt="„Brand workshop“ uložený v archivu; simulované údaje časovačů zůstávají zachované v přehledu." decoding="async" loading="lazy" src="../assets/marketing/mac-archive-report.png"/></button>
+<figcaption>„Brand workshop“ uložený v archivu; simulované údaje časovačů zůstávají zachované v přehledu.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="appearance-heading" class="highlight-row has-gallery" data-highlight="10" id="appearance">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">10</span>Přizpůsobení vzhledu</p>
+<h2 id="appearance-heading">Přizpůsobte si prostor po svém.</h2>
+<p>Vyberte světlý nebo tmavý vzhled, jednolitou barvu či fotografii. Vytvořte si knihovnu pozadí z vlastních obrázků a dodejte časovačům klidný nebo pestrý vzhled podle svého. Mac také umí střídat fotografie ze složky.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Přizpůsobte zařízení, které právě používáte, včetně samostatného nastavení vzhledu pro Mac.</p>
+</div>
+<div aria-label="Snímky funkce: Přizpůsobení vzhledu" class="feature-gallery gallery-4">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Jednobarevné pozadí · bílé</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Jednobarevné pozadí · bílé" class="image-button capture-image" data-caption="Jednobarevné pozadí · bílé — Časovač „Design“ v zobrazení „Single“ na jednolitém bílém pozadí." data-zoom="../assets/marketing/mac-single-light.png" type="button"><img alt="Časovač „Design“ v zobrazení „Single“ na jednolitém bílém pozadí." decoding="async" loading="lazy" src="../assets/marketing/mac-single-light.png"/></button>
+<figcaption>Časovač „Design“ v zobrazení „Single“ na jednolitém bílém pozadí.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Jednolitá barva · tmavě modrá</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Jednolitá barva · tmavě modrá" class="image-button capture-image" data-caption="Jednolitá barva · tmavě modrá — Stejný časovač „Design“ na jednolitém tmavě modrém pozadí." data-zoom="../assets/marketing/mac-timer-single.png" type="button"><img alt="Stejný časovač „Design“ na jednolitém tmavě modrém pozadí." decoding="async" loading="lazy" src="../assets/marketing/mac-timer-single.png"/></button>
+<figcaption>Stejný časovač „Design“ na jednolitém tmavě modrém pozadí.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Fotografie na pozadí</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Fotografie na pozadí" class="image-button capture-image" data-caption="Fotografie na pozadí — Časovač „Design“ na přiložené fotografii Dolomit z XTimers." data-zoom="../assets/marketing/mac-single-photo.png" type="button"><img alt="Časovač „Design“ na přiložené fotografii Dolomit z XTimers." decoding="async" loading="lazy" src="../assets/marketing/mac-single-photo.png"/></button>
+<figcaption>Časovač „Design“ na přiložené fotografii Dolomit z XTimers.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Vyberte fotografii</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · ukázkové nastavení</span></div>
+<button aria-label="Zvětšit: Vyberte fotografii" class="image-button capture-image" data-caption="Vyberte fotografii — Výběr pozadí v nainstalované aplikaci pro Mac s přiloženými fotografiemi a vybraným snímkem Yosemite." data-zoom="../assets/marketing/mac-background-library.png" type="button"><img alt="Výběr pozadí v nainstalované aplikaci pro Mac s přiloženými fotografiemi a vybraným snímkem Yosemite." decoding="async" loading="lazy" src="../assets/marketing/mac-background-library.png"/></button>
+<figcaption>Výběr pozadí v nainstalované aplikaci pro Mac s přiloženými fotografiemi a vybraným snímkem Yosemite.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="menu-bar-heading" class="highlight-row has-gallery" data-highlight="11" id="menu-bar">
+<span class="anchor-target" id="devices"></span><span class="anchor-target" id="mac-shortcuts"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">11</span>Integrace s řádkem nabídek a plochou</p>
+<h2 id="menu-bar-heading">Mějte čas po ruce při práci.</h2>
+<p>Sledujte název úkolu a údaj časovače přímo v řádku nabídek počítače Mac bez otevírání hlavního okna. Kliknutím získáte rychlý přístup ke spouštění a pozastavování úkolů, přepínání sad a otevírání přehledů. Globální klávesová zkratka a okna vždy navrchu udrží ovládání po ruce.</p>
+<span class="platform-pill">Mac</span>
+</div>
+<div aria-label="Snímky funkce: Integrace s řádkem nabídek a plochou" class="feature-gallery gallery-3 menu-bar-gallery">
+<figure class="capture-card capture-status-strip">
+<div class="capture-heading"><h3>Váš časovač na první pohled</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Váš časovač na první pohled" class="image-button capture-image" data-caption="Váš časovač na první pohled — „Planning“ pozastavený na 20:04, viditelný přímo v řádku nabídek počítače Mac při práci v jiné aplikaci." data-zoom="../assets/marketing/mac-menubar-status-planning.png" type="button"><img alt="„Planning“ pozastavený na 20:04, viditelný přímo v řádku nabídek počítače Mac vedle systémových stavových ikon" decoding="async" height="60" loading="lazy" src="../assets/marketing/mac-menubar-status-planning.png" width="572"/></button>
+<figcaption>Název úkolu, údaj časovače a indikátor pozastavení zůstávají viditelné v řádku nabídek. Kliknutím na stavovou položku otevřete ovládání časovače.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Pracovní prostor v řádku nabídek</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Pracovní prostor v řádku nabídek" class="image-button capture-image" data-caption="Pracovní prostor v řádku nabídek — Časovač „Design“ a další časovače, sady úkolů, přehledy a ovládání oken prostoru „Studio“ v řádku nabídek počítače Mac." data-zoom="../assets/marketing/mac-menu-bar.png" type="button"><img alt="Časovač „Design“ a další časovače, sady úkolů, přehledy a ovládání oken prostoru „Studio“ v řádku nabídek počítače Mac." decoding="async" loading="lazy" src="../assets/marketing/mac-menu-bar.png"/></button>
+<figcaption>Časovač „Design“ a další časovače, sady úkolů, přehledy a ovládání oken prostoru „Studio“ v řádku nabídek počítače Mac.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Kompaktní okno časovače</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Kompaktní okno časovače" class="image-button capture-image" data-caption="Kompaktní okno časovače — Časovač „Design“ z prostoru „Studio“ v kompaktním okně „Minimal“." data-zoom="../assets/marketing/mac-timer-minimal.png" type="button"><img alt="Časovač „Design“ z prostoru „Studio“ v kompaktním okně „Minimal“." decoding="async" loading="lazy" src="../assets/marketing/mac-timer-minimal.png"/></button>
+<figcaption>Časovač „Design“ z prostoru „Studio“ v kompaktním okně „Minimal“.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="live-activities-heading" class="highlight-row has-gallery" data-highlight="12" id="live-activities">
+<span class="anchor-target" id="mobile"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">12</span>Aktivity živě</p>
+<h2 id="live-activities-heading">Váš čas na první pohled.</h2>
+<p>Mějte podporovaný časovač stále viditelný na zamknuté obrazovce telefonu iPhone nebo v Dynamic Islandu. Sledujte úkol i jeho čas a podporované časovače pozastavujte či znovu spouštějte bez otevření celého pracovního prostoru.</p>
+<span class="platform-pill">iPhone</span>
+<p class="feature-note">Vyžaduje podporované zařízení a systémové oprávnění. Světové hodiny nevytvářejí Aktivity živě.</p>
+</div>
+<div aria-label="Snímky funkce: Aktivity živě" class="feature-gallery gallery-2">
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>Na zamknuté obrazovce</h3><span class="capture-status status-real">iPhone · přímý snímek obrazovky</span></div>
+<button aria-label="Zvětšit: Na zamknuté obrazovce" class="image-button capture-image" data-caption="Na zamknuté obrazovce — Aktivita živě s odpočtem, názvem úkolu, zbývajícím časem a tlačítkem pozastavení na zamknuté obrazovce telefonu iPhone." data-zoom="../assets/marketing/ios-live-activity-lockscreen.png" type="button"><img alt="Aktivita živě s odpočtem, názvem úkolu, zbývajícím časem a tlačítkem pozastavení na zamknuté obrazovce telefonu iPhone." decoding="async" height="2868" loading="lazy" src="../assets/marketing/ios-live-activity-lockscreen.png" width="1320"/></button>
+<figcaption>Aktivita živě s odpočtem, názvem úkolu, zbývajícím časem a tlačítkem pozastavení na zamknuté obrazovce telefonu iPhone.</figcaption>
+</figure>
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>V Dynamic Islandu</h3><span class="capture-status status-real">iPhone · přímý snímek obrazovky</span></div>
+<button aria-label="Zvětšit: V Dynamic Islandu" class="image-button capture-image" data-caption="V Dynamic Islandu — Kompaktní odpočet zůstává viditelný v Dynamic Islandu, když je otevřená plocha telefonu iPhone." data-zoom="../assets/marketing/ios-live-activity-island.png" type="button"><img alt="Kompaktní odpočet zůstává viditelný v Dynamic Islandu, když je otevřená plocha telefonu iPhone." decoding="async" height="2868" loading="lazy" src="../assets/marketing/ios-live-activity-island.png" width="1320"/></button>
+<figcaption>Kompaktní odpočet zůstává viditelný v Dynamic Islandu, když je otevřená plocha telefonu iPhone.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="siri-shortcuts-heading" class="highlight-row has-gallery" data-highlight="13" id="siri-shortcuts">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">13</span>Siri a Zkratky</p>
+<h2 id="siri-shortcuts-heading">Začněte slovem nebo klepnutím.</h2>
+<p>Spouštějte, pozastavujte nebo přepínejte běh podporovaného časovače pomocí Siri a Zkratek. Přidejte systémové ovládací prvky pro spuštění nových stopek nebo pozastavení a obnovení aktuálního úkolu.</p>
+<span class="platform-pill">iPhone · iPad</span>
+<p class="feature-note">Samostatné systémové ovládací prvky otevřou XTimers. Ovládání Aktivit živě může fungovat přímo na místě.</p>
+</div>
+<div aria-label="Snímky funkce: Siri a Zkratky" class="feature-gallery gallery-1">
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>Vaše zkratky XTimers</h3><span class="capture-status status-real">iPhone · přímý snímek obrazovky</span></div>
+<button aria-label="Zvětšit: Vaše zkratky XTimers" class="image-button capture-image" data-caption="Vaše zkratky XTimers — Akce „Toggle Timer“, „Start“ a „Pause“ v nativní aplikaci Zkratky." data-zoom="../assets/marketing/ios-siri-shortcuts.png" type="button"><img alt="Akce „Toggle Timer“, „Start“ a „Pause“ v nativní aplikaci Zkratky." decoding="async" height="2622" loading="lazy" src="../assets/marketing/ios-siri-shortcuts.png" width="1206"/></button>
+<figcaption>Akce „Toggle Timer“, „Start“ a „Pause“ v nativní aplikaci Zkratky.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="offline-heading" class="highlight-row" data-highlight="14" id="offline">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">14</span>Používání offline bez účtu</p>
+<h2 id="offline-heading">Začněte. Bez přihlašování.</h2>
+<p>Používejte základní časovače, odpočty, sady úkolů, poznámky, světové hodiny a místní přehledy přímo ve svém zařízení. Pokračujte offline a účet přidejte, až budete chtít připojené funkce.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Snímky funkce: Používání offline bez účtu" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Váš místní pracovní prostor Studio</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Váš místní pracovní prostor Studio" class="image-button capture-image" data-caption="Váš místní pracovní prostor Studio — Pracovní prostor „Studio“ v aplikaci pro Mac bez přihlášení, se simulovanými místními časovači a světovými hodinami." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="Pracovní prostor „Studio“ v aplikaci pro Mac bez přihlášení, se simulovanými místními časovači a světovými hodinami." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>Pracovní prostor „Studio“ v aplikaci pro Mac bez přihlášení, se simulovanými místními časovači a světovými hodinami.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="synchronization-heading" class="highlight-row" data-highlight="15" id="synchronization">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">15</span>Synchronizace mezi zařízeními</p>
+<h2 id="synchronization-heading">Pokračujte ve známém pracovním prostoru.</h2>
+<p>Přenášejte podporované úkoly, historii, šablony, nastavení a vlastní soubory mezi počítačem Mac, telefonem iPhone a zařízením iPad. Vaše místní práce zůstává dostupná i při dočasných potížích s připojením.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Přihlaste se pomocí Apple, Google, e-mailového kódu nebo hesla. Některá nastavení zařízení a výhradně místní data zůstávají pouze na daném zařízení.</p>
+</div>
+<div aria-label="Snímky funkce: Synchronizace mezi zařízeními" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Na počítači Mac</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Na počítači Mac" class="image-button capture-image" data-caption="Na počítači Mac — Ukázkové časovače a hodiny prostoru „Studio“ v nainstalované aplikaci pro Mac." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="Ukázkové časovače a hodiny prostoru „Studio“ v nainstalované aplikaci pro Mac." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>Ukázkové časovače a hodiny prostoru „Studio“ v nainstalované aplikaci pro Mac.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="protected-sync-heading" class="highlight-row copy-only" data-highlight="16" id="protected-sync">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">16</span>Chráněná synchronizace</p>
+<h2 id="protected-sync-heading">Zvolte ochranu před nahráním.</h2>
+<p>Zašifrujte nový obsah časovačů a vlastní nahrávané soubory ve svém zařízení před <a href="privacy.html#xin-account">synchronizací účtu</a>. Klíč můžete obnovit pomocí iCloud Keychain nebo uloženého kódu pro obnovení.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Volitelné u podporovaných účtů. Nezahrnuje zprávy připomínek, metadata účtu a synchronizace, obsah vytvořený před aktivací ani místní úložiště zařízení.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="languages-heading" class="highlight-row has-gallery" data-highlight="17" id="languages">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">17</span>Podpora více jazyků</p>
+<h2 id="languages-heading">Ve vašem jazyce jako doma.</h2>
+<p>Vyberte si ze 45 jazyků, použijte jazyk zařízení nebo nastavte vlastní volbu. Místní formáty data, času a čísel i rozvržení zprava doleva vám pomohou cítit se v pracovním prostoru jako doma.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Snímky funkce: Podpora více jazyků" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · angličtina</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · ukázkové nastavení</span></div>
+<button aria-label="Zvětšit: Mac · angličtina" class="image-button capture-image" data-caption="Mac · angličtina — Obecná nastavení v angličtině zachycená v nainstalované aplikaci pro Mac ve světlém vzhledu." data-zoom="../assets/marketing/mac-settings-english.png" type="button"><img alt="Obecná nastavení v angličtině zachycená v nainstalované aplikaci pro Mac ve světlém vzhledu." decoding="async" loading="lazy" src="../assets/marketing/mac-settings-english.png"/></button>
+<figcaption>Obecná nastavení v angličtině zachycená v nainstalované aplikaci pro Mac ve světlém vzhledu.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · japonština</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · ukázkové nastavení</span></div>
+<button aria-label="Zvětšit: Mac · japonština" class="image-button capture-image" data-caption="Mac · japonština — Stejná obrazovka obecných nastavení v japonštině ve světlém vzhledu." data-zoom="../assets/marketing/mac-settings-japanese.png" type="button"><img alt="Stejná obrazovka obecných nastavení v japonštině ve světlém vzhledu." decoding="async" loading="lazy" src="../assets/marketing/mac-settings-japanese.png"/></button>
+<figcaption>Stejná obrazovka obecných nastavení v japonštině ve světlém vzhledu.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="activity-tracking-heading" class="highlight-row" data-highlight="18" id="activity-tracking">
+<span class="anchor-target" id="extras"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">18</span>Automatické sledování aktivity aplikací</p>
+<h2 id="activity-tracking-heading">Zjistěte, kolik času trávíte v aplikacích.</h2>
+<p>Dobrovolně zapněte sledování času stráveného v aplikacích v popředí na počítači Mac. Prohlížejte si aktivity po dnech, týdnech, měsících či letech a zvolte, jak započítávat dobu nepřítomnosti.</p>
+<span class="platform-pill">Mac · vybrané profily</span>
+<p class="feature-note">Dostupné v místních a starších profilech; skryté u účtů se synchronizací upřednostňující místní data. Identita aplikací a doba nečinnosti zůstávají na tomto počítači Mac. Weby, historie prohlížení ani názvy oken se nezaznamenávají.</p>
+</div>
+<div aria-label="Snímky funkce: Automatické sledování aktivity aplikací" class="feature-gallery gallery-1">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Ovládání sledování aktivity</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · nastavení</span></div>
+<button aria-label="Zvětšit: Ovládání sledování aktivity" class="image-button capture-image" data-caption="Ovládání sledování aktivity — Nativní ovládání ve standardní aplikaci XTimers pro období přehledu, posouvání k aktivnímu úkolu a dobu nepřítomnosti. V tomto nastavení je sledování vypnuté." data-zoom="../assets/marketing/mac-activity-tracking-settings.png" type="button"><img alt="Nativní ovládání ve standardní aplikaci XTimers pro období přehledu, posouvání k aktivnímu úkolu a dobu nepřítomnosti. V tomto nastavení je sledování vypnuté." decoding="async" loading="lazy" src="../assets/marketing/mac-activity-tracking-settings.png"/></button>
+<figcaption>Nativní ovládání ve standardní aplikaci XTimers pro období přehledu, posouvání k aktivnímu úkolu a dobu nepřítomnosti. V tomto nastavení je sledování vypnuté.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="classic-interface-heading" class="highlight-row has-gallery" data-highlight="19" id="classic-interface">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">19</span>Klasické rozhraní</p>
+<h2 id="classic-interface-heading">Další způsob, jak si udělat čas.</h2>
+<p>Zvolte místní rozhraní časovačů dostupné pouze v angličtině s vlastním samostatným pracovním prostorem. Přepínejte rozhraní v XTimers a používejte to, na které jste zvyklí.</p>
+<span class="platform-pill">Mac · pouze místně</span>
+<p class="feature-note">Vyžaduje přiložené běhové prostředí Classic. Synchronizace účtu a doručování e-mailů a SMS jsou součástí hlavního rozhraní XTimers.</p>
+</div>
+<div aria-label="Snímky funkce: Klasické rozhraní" class="feature-gallery gallery-2">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Classic · dva sloupce</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Classic · dva sloupce" class="image-button capture-image" data-caption="Classic · dva sloupce — Rozšířená rutina Classic s 20 pojmenovanými úkoly pro tvůrčí práci, učení i každodenní život." data-zoom="../assets/marketing/classic-two-column.png" type="button"><img alt="Rozšířená rutina Classic s 20 pojmenovanými úkoly pro tvůrčí práci, učení i každodenní život." decoding="async" loading="lazy" src="../assets/marketing/classic-two-column.png"/></button>
+<figcaption>Rozšířená rutina Classic s 20 pojmenovanými úkoly pro tvůrčí práci, učení i každodenní život.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Classic · jeden sloupec</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · simulovaná data</span></div>
+<button aria-label="Zvětšit: Classic · jeden sloupec" class="image-button capture-image" data-caption="Classic · jeden sloupec — Kompaktní pracovní prostor Classic s pěti úkoly: „Design“, „Research“, „Writing“, „Reading“ a „Planning“." data-zoom="../assets/marketing/classic-one-column.png" type="button"><img alt="Kompaktní pracovní prostor Classic s pěti úkoly: „Design“, „Research“, „Writing“, „Reading“ a „Planning“." decoding="async" loading="lazy" src="../assets/marketing/classic-one-column.png"/></button>
+<figcaption>Kompaktní pracovní prostor Classic s pěti úkoly: „Design“, „Research“, „Writing“, „Reading“ a „Planning“.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="xhelpers-pro-heading" class="highlight-row" data-highlight="20" id="xhelpers-pro">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">20</span>Výhoda XHelpers Pro</p>
+<h2 id="xhelpers-pro-heading">Společník pro váš Mac.</h2>
+<p>Poznejte XHelpers Pro, samostatnou aplikaci pro Mac s rychlým přístupem ke každodennímu ovládání. Uživatelé XTimers si mohou prohlédnout její zvýhodněnou licenční nabídku s aktuálními podmínkami a podrobnostmi aktivace.</p>
+<span class="platform-pill">Mac · samostatná aplikace</span>
+<a class="text-link" href="https://xintechllc.com/XHelpersPro/" rel="noopener noreferrer" target="_blank">Zobrazit nabídku XHelpers Pro</a>
+</div>
+<div aria-label="Snímky funkce: Výhoda XHelpers Pro" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Zahrnutá výhoda XHelpers Pro</h3><span class="capture-status status-real">Nainstalovaná aplikace pro Mac · ukázkové nastavení</span></div>
+<button aria-label="Zvětšit: Zahrnutá výhoda XHelpers Pro" class="image-button capture-image" data-caption="Zahrnutá výhoda XHelpers Pro — Obrazovka O aplikaci v nainstalované aplikaci XTimers ukazuje zahrnutou výhodu XHelpers Pro." data-zoom="../assets/marketing/mac-xhelpers-benefit.png" type="button"><img alt="Obrazovka O aplikaci v nainstalované aplikaci XTimers ukazuje zahrnutou výhodu XHelpers Pro." decoding="async" loading="lazy" src="../assets/marketing/mac-xhelpers-benefit.png"/></button>
+<figcaption>Obrazovka O aplikaci v nainstalované aplikaci XTimers ukazuje zahrnutou výhodu XHelpers Pro.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="download-heading" class="download-section" id="download">
+<div class="wrap download-inner">
+<div class="download-copy"><img alt="" height="64" loading="lazy" src="../assets/marketing/app-icon.png" width="64"/><h2 id="download-heading">Udělejte si chvíli času<br/>pro <em>sebe.</em></h2><p>Časovač pro vaše úkoly. Prostor pro vaše rutiny.</p></div>
+<div class="download-choices">
+<a class="download-choice" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" class="icon"><use href="#i-mac"></use></svg><span><strong>XTimers pro Mac</strong><small>Zobrazit v Mac App Store</small></span></a>
+<a class="download-choice" href="#mobile"><svg aria-hidden="true" class="icon"><use href="#i-mobile"></use></svg><span><strong>XTimers pro iPhone a iPad</strong><small>Prozkoumejte mobilní aplikaci</small></span></a>
+<p class="download-note">Mac, iPhone a iPad. Každý má ve vašem dni své místo.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="faq-heading" class="section faq-section wrap" id="support">
+<div class="section-copy"><p class="eyebrow">Několik užitečných odpovědí</p><h2 id="faq-heading">Než si<br/>uděláte čas.</h2><p>Máte na mysli něco jiného?</p><a class="text-link" href="support.html" rel="noopener noreferrer" target="_blank">Navštívit podporu</a></div>
+<div class="faq-list">
+<details><summary>Potřebuji účet?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Základní místní časovače, odpočty, světové hodiny a místní přehledy účet nevyžadují. Přihlaste se, až budete chtít synchronizaci účtu nebo připomínky propojené s účtem.</p><p class="feature-note">XTimers používá Xin Account k identifikaci a ověření uživatele. Xin Account je společná identita pro XTimers a jakékoli další připojené produkty uvedené v ovládacích prvcích účtu; není to účet produktu XTimers a neobsahuje časy XTimers, zprávy, zvuky ani data SMS.</p></details>
+<details><summary>Mohu XTimers používat offline?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Základní měření času a místní přehledy fungují offline. Synchronizace, online sdílení a serverové připomínky vyžadují připojení. Světový kalendář na počítači Mac nejprve vyžaduje stažení katalogu; nainstalovaný katalog pak lze používat offline.</p></details>
+<details><summary>Může běžet několik časovačů současně?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Ano. Vyberte, zda přechod k jinému úkolu pozastaví předchozí podporovaný časovač, nebo jej nechá běžet dál. Sady úkolů vám pomohou uspořádat různé činnosti.</p></details>
+<details><summary>Jsou funkce na všech zařízeních stejné?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Základní pracovní prostor zahrnuje časovače, odpočty, hodiny, sady úkolů a přehledy. Mac přidává ovládání z řádku nabídek a Světový kalendář. iPhone podporuje Aktivity živě na kompatibilních zařízeních, zatímco iPad nabízí prostor pro rozsáhlejší rozvržení úkolů.</p></details>
+<details><summary>Jak fungují telefonické připomínky?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Připomínky se odesílají na vaše vlastní podporované a ověřené číslo se samostatným souhlasem pro SMS nebo telefonáty. Dostupnost závisí na účtu, oblasti a službě. Naplánovaný hovor vyžaduje potvrzení serveru; funkce „Call Me“ používá angličtinu a automaticky neopakuje vytáčení.</p></details>
+</div>
+</section>
+</main>
+<footer class="site-footer wrap">
+<p class="footer-copy"><small>© 2026 Xintech LLC</small><span>Udělejte si čas na to, na čem vám záleží.</span></p>
+<div class="footer-links"><a href="#features">Funkce</a><a href="#devices">Vaše zařízení</a><a href="support.html" rel="noopener noreferrer" target="_blank">Podpora</a><a href="privacy.html" rel="noopener noreferrer" target="_blank">Soukromí</a><a href="sms-terms.html" rel="noopener noreferrer" target="_blank">Podmínky zasílání zpráv</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener noreferrer" target="_blank">Licence</a><a href="terms.html">Podmínky</a><a href="privacy-choices.html">Možnosti ochrany soukromí</a><a href="sms-opt-in.html">Souhlas se zasíláním SMS</a></div>
+</footer>
+<dialog aria-labelledby="image-dialog-caption" class="image-dialog" id="image-dialog">
+<button aria-label="Zmenšit a zavřít snímek obrazovky" class="image-dialog-zoom-out" type="button">
+<img alt="" id="image-dialog-img"/>
+</button>
+<p id="image-dialog-caption"></p>
+</dialog>
 </body>
 </html>

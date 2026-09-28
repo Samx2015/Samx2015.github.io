@@ -4,18 +4,31 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>XTimers — Mac、iPhone、iPad</title>
-<meta content="XTimersは、Mac、iPhone、iPadでタイマー、カウントダウン、時計、タスクセット、レポート、カスタムサウンド、アカウントリマインダーを扱える、落ち着いたAppleネイティブのタイマーワークスペースです。" name="description"/>
 <meta content="#fbfaf7" name="theme-color"/>
-<meta content="XTimers" property="og:title"/>
-<meta content="Mac、iPhone、iPad で使えるタイマー、カウントダウン、時計、レポート、サウンド、アカウント通知。" property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="https://xintechllc.com/XTimers/assets/flexible-timers/macos/1-single-light.png" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="XTimers" name="twitter:title"/>
-<meta content="Timers, countdowns, clocks, reports, sounds, and account reminders for Mac, iPhone, and iPad." name="twitter:description"/>
-<meta content="https://xintechllc.com/XTimers/assets/flexible-timers/macos/1-single-light.png" name="twitter:image"/>
-<link rel="canonical" href="https://xintechllc.com/XTimers/ja/">
+<meta content="経過時間。カウントダウン。世界時計。世界カレンダー。 柔軟に。自分好みに。 タイマー、ルーティン、リマインダー、レポートをひとつのワークスペースに。" name="description"/>
+<title>XTimers — 経過時間。カウントダウン。世界時計。世界カレンダー。</title>
+<link href="../assets/marketing/app-icon.png" rel="icon"/>
+<link href="../assets/marketing/styles.css" rel="stylesheet"/>
+<link href="../assets/marketing/site-style.css" rel="stylesheet"/>
+<script defer="" src="../assets/marketing/site.js"></script>
+<script data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19" defer="" src="https://cloud.umami.is/script.js"></script><script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script> <link rel="canonical" href="https://xintechllc.com/XTimers/ja/">
 <link rel="alternate" hreflang="ar" href="https://xintechllc.com/XTimers/ar/">
 <link rel="alternate" hreflang="bn" href="https://xintechllc.com/XTimers/bn/">
 <link rel="alternate" hreflang="ca" href="https://xintechllc.com/XTimers/ca/">
@@ -23,7 +36,7 @@
 <link rel="alternate" hreflang="da" href="https://xintechllc.com/XTimers/da/">
 <link rel="alternate" hreflang="de" href="https://xintechllc.com/XTimers/de/">
 <link rel="alternate" hreflang="el" href="https://xintechllc.com/XTimers/el/">
-<link rel="alternate" hreflang="en" href="https://xintechllc.com/XTimers/flexible-timers.html">
+<link rel="alternate" hreflang="en" href="https://xintechllc.com/XTimers/">
 <link rel="alternate" hreflang="es" href="https://xintechllc.com/XTimers/es/">
 <link rel="alternate" hreflang="fi" href="https://xintechllc.com/XTimers/fi/">
 <link rel="alternate" hreflang="fr" href="https://xintechllc.com/XTimers/fr/">
@@ -61,7 +74,7 @@
 <link rel="alternate" hreflang="vi" href="https://xintechllc.com/XTimers/vi/">
 <link rel="alternate" hreflang="zh-Hans" href="https://xintechllc.com/XTimers/zh-Hans/">
 <link rel="alternate" hreflang="zh-Hant" href="https://xintechllc.com/XTimers/zh-Hant/">
-<link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XTimers/flexible-timers.html">
+<link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XTimers/">
 
 
 
@@ -108,37 +121,43 @@
 
 
 
-<link href="../assets/flexible-timers/brand/favicon.png" rel="icon" type="image/png"/>
-<link href="../assets/flexible-timers/site.css" rel="stylesheet"/>
-<script data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19" defer="" src="https://cloud.umami.is/script.js"></script>
-<script>
-  window.addEventListener("click", function (event) {
-    var link = event.target.closest && event.target.closest("a[href]");
-    if (!link || !window.umami) return;
-    var href = link.getAttribute("href") || "";
-    var url = link.href || href;
-    var eventName = null;
-    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
-    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
-    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
-    else if (/support\.html/i.test(href)) eventName = "Support Click";
-    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
-    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
-    if (eventName) {
-      window.umami.track(eventName, { href: url, path: window.location.pathname });
-    }
-  });
-</script>
 </head>
 <body>
-<div class="page-shell">
-<header class="nav">
-<div class="nav-inner">
-<a aria-label="XTimersホーム" class="brand" href="index.html">
-<img alt="" class="brand-icon" height="36" src="../assets/flexible-timers/brand/app-icon.png" width="36"/>
-<span class="brand-text">XTimers<small>Mac • iPhone • iPad</small></span>
-</a>
-<div class="nav-actions"><a class="button primary" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12">Mac 版をダウンロード</a><details class="language-menu">
+<svg aria-hidden="true" class="svg-definitions" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<symbol id="i-clock" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></symbol>
+<symbol id="i-timer" viewbox="0 0 24 24"><circle cx="12" cy="14" r="8"></circle><path d="M12 10v4l3 2M9 2h6m-3 0v4m6 0 2 2"></path></symbol>
+<symbol id="i-countdown" viewbox="0 0 24 24"><path d="M6 3h12M6 21h12M7 3v4l5 5-5 5v4m10-18v4l-5 5 5 5v4M9 18h6"></path></symbol>
+<symbol id="i-folder" viewbox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h5l3 3h6a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7h18"></path></symbol>
+<symbol id="i-check" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></symbol>
+<symbol id="i-globe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><ellipse cx="12" cy="12" rx="4" ry="9"></ellipse><path d="M3 12h18"></path></symbol>
+<symbol id="i-calendar" viewbox="0 0 24 24"><rect height="16" rx="3" width="18" x="3" y="5"></rect><path d="M7 3v4m10-4v4M3 11h18m-14 4h3m4 0h3m-10 3h3"></path></symbol>
+<symbol id="i-chart" viewbox="0 0 24 24"><path d="M4 3v18h17M8 17v-5m5 5V7m5 10V4"></path></symbol>
+<symbol id="i-sound" viewbox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9H3m13-1a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"></path></symbol>
+<symbol id="i-mail" viewbox="0 0 24 24"><rect height="14" rx="3" width="18" x="3" y="5"></rect><path d="m3 7 9 6 9-6"></path></symbol>
+<symbol id="i-phone" viewbox="0 0 24 24"><path d="m8 3 3 5-3 3a14 14 0 0 0 5 5l3-3 5 3v3c0 2-2 3-4 2C10 19 5 14 3 7c-1-2 0-4 2-4h3Z"></path></symbol>
+<symbol id="i-sync" viewbox="0 0 24 24"><path d="M20 8a8 8 0 0 0-14-3L3 8m0-5v5h5m-4 8a8 8 0 0 0 14 3l3-3m0 5v-5h-5"></path></symbol>
+<symbol id="i-lock" viewbox="0 0 24 24"><rect height="11" rx="3" width="14" x="5" y="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"></path></symbol>
+<symbol id="i-mac" viewbox="0 0 24 24"><rect height="13" rx="2" width="18" x="3" y="3"></rect><path d="M9 21h6m-3-5v5"></path></symbol>
+<symbol id="i-mobile" viewbox="0 0 24 24"><rect height="20" rx="3" width="12" x="6" y="2"></rect><path d="M10 5h4m-3 14h2"></path></symbol>
+<symbol id="i-tablet" viewbox="0 0 24 24"><rect height="20" rx="3" width="18" x="3" y="2"></rect><path d="M10 19h4"></path></symbol>
+<symbol id="i-plus" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></symbol>
+<symbol id="i-expand" viewbox="0 0 24 24"><path d="M9 3H3v6m0-6 6 6m6 12h6v-6m0 6-6-6"></path></symbol>
+<symbol id="i-leaf" viewbox="0 0 24 24"><path d="M4 20 16 8M5 17C-1 5 13 7 20 3c2 13-4 19-12 15"></path></symbol>
+</defs>
+</svg>
+<a class="skip-link" href="#main">本文へスキップ</a>
+<header class="site-header">
+<nav aria-label="メインナビゲーション" class="navigation wrap">
+<a aria-label="XTimersホーム" class="brand" href="#top"><img alt="" height="36" src="../assets/marketing/app-icon.png" width="36"/><span>XTimers</span></a>
+<button aria-controls="nav-links" aria-expanded="false" aria-label="ナビゲーションを開く" class="menu-toggle" data-close-label="ナビゲーションを閉じる" data-open-label="ナビゲーションを開く" type="button"><span></span><span></span></button>
+<div class="nav-links" id="nav-links">
+<a href="#features">機能</a>
+<a href="#devices">お使いのデバイス</a>
+<a href="#support">よくある質問</a>
+<div class="header-actions">
+<a class="button button-small button-ink" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12">Mac 版をダウンロード</a>
+<details class="language-menu">
             <summary>🌐 · 日本語</summary>
             <div class="language-menu-list" aria-label="言語">
               <a href="../ar/" lang="ar" dir="rtl">العربية</a>
@@ -148,7 +167,7 @@
               <a href="../da/" lang="da" dir="ltr">Dansk</a>
               <a href="../de/" lang="de" dir="ltr">Deutsch</a>
               <a href="../el/" lang="el" dir="ltr">Ελληνικά</a>
-              <a href="../flexible-timers.html" lang="en" dir="ltr">English</a>
+              <a href="../" lang="en" dir="ltr">English</a>
               <a href="../es/" lang="es" dir="ltr">Español</a>
               <a href="../fi/" lang="fi" dir="ltr">Suomi</a>
               <a href="../fr/" lang="fr" dir="ltr">Français</a>
@@ -187,34 +206,640 @@
               <a href="../zh-Hans/" lang="zh-Hans" dir="ltr">简体中文</a>
               <a href="../zh-Hant/" lang="zh-Hant" dir="ltr">繁體中文</a>
             </div>
-          </details></div>
+          </details>
 </div>
+</div>
+</nav>
 </header>
-<main id="top">
-<section aria-labelledby="hero-title" class="hero"><div><h1 id="hero-title">XTimers</h1><p class="hero-lede">Mac、iPhone、iPad で使えるタイマー、カウントダウン、時計、レポート、サウンド、アカウント通知。 旧名称：Flexible Timers。</p></div><div aria-label="XTimersアプリのスクリーンショット" class="hero-visual"><div class="device-stage"><div class="desktop-card"><div aria-hidden="true" class="window-bar"><span class="traffic"></span><span class="traffic"></span><span class="traffic"></span><span class="window-title">Mac版XTimers</span></div><figure class="shot"><img alt="ライトモードで表示したXTimers macOS版のメインタイマーウインドウ" height="1125" loading="eager" src="../assets/flexible-timers/macos/1-single-light.png" width="1800"/></figure></div><div aria-label="XTimersのiPhoneスクリーンショット" class="phone-card"><figure class="shot"><img alt="ライトモードで表示したXTimersのiPhoneタイマーリスト" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-1-timers-light.png" width="736"/></figure></div><div aria-label="XTimersのiPadスクリーンショット" class="tablet-card"><figure class="shot"><img alt="ライトモードで表示したXTimersのiPadタイマーリスト" height="1600" loading="eager" src="../assets/flexible-timers/ios/ipad-13-1-timers-light.png" width="1200"/></figure></div></div></div></section>
-<section aria-label="柔軟なタイマー機能" class="section" id="features"><div class="feature-grid"><article class="feature-card"><h3>柔軟なタスクタイプ</h3><p>タイマー、終了時刻カウントダウン、世界時計、アカウント通知タスク。</p></article><article class="feature-card"><h3>タスクセット</h3><p>仕事、料理、学習、旅行、再利用できるルーティンを分けて管理。</p></article><article class="feature-card"><h3>レポートとアーカイブ</h3><p>スナップショットを確認し、メモを追加して、アカウントのメールへ送信。</p></article><article class="feature-card"><h3>サウンドと通知</h3><p>内蔵サウンド、カスタムサウンド、ビープ音、ローカル通知を使用。</p></article></div></section>
-<section aria-label="XTimersの対応プラットフォーム" class="section platform-section"><article class="platform" id="mac"><div class="platform-copy"><h2>Mac で集中してタイマーを使うために。</h2><p>SwiftUI タイマー。タスクセット、レポート、同期、カスタムサウンド、メニューバー状態に対応。</p><div class="platform-list"><div class="platform-item"><span class="check">✓</span><span>単一または展開タイマーレイアウト。</span></div><div class="platform-item"><span class="check">✓</span><span>アクティブなタイマーをメニューバーに表示。</span></div><div class="platform-item"><span class="check">✓</span><span>タイマー、カウントダウン、時計、通知タスク。</span></div><div class="platform-item"><span class="check">✓</span><span>同期、アーカイブ、レポート、カスタムサウンド。</span></div></div></div><div class="shot-stack"><figure class="shot"><img alt="XTimers macOS版の展開された2列タイマーウインドウ" height="1125" loading="eager" src="../assets/flexible-timers/macos/3-double-light.png" width="1800"/></figure><div class="shot-row"><figure class="shot"><img alt="ライトモードで表示したXTimers macOS版のタイマー追加シート" height="1125" loading="eager" src="../assets/flexible-timers/macos/5-addtimer-light.png" width="1800"/></figure><figure class="shot"><img alt="ライトモードで表示したXTimers macOS版のカウントダウン追加シート" height="1125" loading="eager" src="../assets/flexible-timers/macos/7-addcountdown-light.png" width="1800"/></figure></div></div></article><article class="platform reverse" id="ios"><div class="phone-showcase"><div class="phone-screen"><figure class="shot"><img alt="XTimersのiPhoneスクリーンショット" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-1-timers-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="XTimersのiPhoneスクリーンショット" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-4-add-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="XTimersのiPhoneスクリーンショット" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-6-settings-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="XTimersのiPhoneスクリーンショット" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-7-report-light.png" width="736"/></figure></div></div><div class="platform-copy"><h2>iPhone と iPad でも同じタイマーシステム。</h2><p>iPhone と iPad でタイマー、時計、レポート、設定、同期、通知、サウンドを利用。</p><div class="platform-list"><div class="platform-item"><span class="check">✓</span><span>iPhone のリストと iPad のグリッドレイアウト。</span></div><div class="platform-item"><span class="check">✓</span><span>タイマー、カウントダウン、時計、通知を作成。</span></div><div class="platform-item"><span class="check">✓</span><span>レポート、設定、サウンド、同期。</span></div></div></div></article></section>
-<section aria-labelledby="sync-title" class="section" id="sync"><div class="account-panel"><div><h2 id="sync-title">Xin Accountでサインイン。XTimersデータは分離されたままです。</h2><p>XTimersは共有サインインにXin Accountを使用し、タイマー、レポート、設定、サウンド、およびSMSの選択内容はXTimers製品データとしてXTimersが保持します。 <a href="privacy.html#xin-account">アカウントの各層の仕組みをご確認ください。</a></p></div><div class="account-list"><div class="account-row"><strong>複数のデバイスでサインイン</strong><span>Xin Accountはお客様を識別し、接続された各XTimersアカウントへのアクセスを承認します。</span></div><div class="account-row"><strong>XTimersデータを同期</strong><span>タスクセット、アーカイブ、設定、サウンドは、接続されたXTimersアカウントに紐づきます。</span></div><div class="account-row"><strong>個別のプライバシー選択</strong><span>サインアウト、ローカルコピーの削除、XTimersデータの削除、グローバルなXin Accountの削除は、それぞれ異なる操作です。</span></div></div></div></section>
-</main>
-<footer><div>© 2017-2026 Xintech LLC.</div><div class="footer-links"><a href="support.html">サポート</a><a href="privacy.html">プライバシー</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a><a href="sms-terms.html">SMS規約</a><a href="sms-opt-in.html">SMS オプトイン</a></div></footer>
+<main id="main">
+<section aria-labelledby="hero-heading" class="hero wrap" id="top">
+<div class="hero-copy hero-hoefler">
+<div class="hero-copy-inner">
+<p class="eyebrow">Mac、iPhone、iPadで</p>
+<h1 aria-label="経過時間。カウントダウン。世界時計。世界カレンダー。" class="hero-timing-heading" id="hero-heading"><span class="hero-line">経過時間。</span> <span class="hero-line">カウントダウン。</span> <span class="hero-line">世界時計。</span> <span class="hero-line">世界カレンダー。</span></h1>
+<p class="hero-payoff">柔軟に。自分好みに。</p>
+<p class="hero-description">タイマー、カウントダウン、世界時計をひとつのワークスペースに。再利用できるルーティン、リマインダー、レポートを追加して、レイアウトや外観も自分好みにできます。</p>
+<p class="hero-note"><svg aria-hidden="true" class="icon"><use href="#i-check"></use></svg>基本のタイマーはオフラインで使えます。アカウントは不要です。</p>
 </div>
-<script>
-      // ft-language-menu-dismiss: close the language dropdown when clicking
-      // outside it or pressing Escape. A native <details> otherwise only closes
-      // on a second click of its <summary>.
-      (function () {
-        function closeAll() {
-          document.querySelectorAll('details.language-menu[open]')
-            .forEach(function (d) { d.removeAttribute('open'); });
-        }
-        document.addEventListener('click', function (e) {
-          document.querySelectorAll('details.language-menu[open]')
-            .forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute('open'); });
-        });
-        document.addEventListener('keydown', function (e) {
-          if (e.key === 'Escape' || e.key === 'Esc') closeAll();
-        });
-      })();
-    </script>
+</div>
+<div class="hero-stage">
+<div class="floating-label"><span class="pulse-dot"></span>大切なことに、時間を。</div>
+<button aria-label="インストール済みMacアプリの「Studio」のスクリーンショットを拡大" class="image-button hero-mac" data-caption="「Studio」ワークスペース。インストール済みMacアプリで、サンプルのタイマー、カウントダウン、世界時計を表示。" data-zoom="../assets/marketing/mac-dark.png" type="button">
+<img alt="インストール済みXTimersの「Studio」ワークスペース。サンプルの「Design」「Research」「Writing」「Reading」「Planning」のタイマー、「Focus sprint」、3つの世界時計をネイビーの背景で表示" fetchpriority="high" height="796" src="../assets/marketing/mac-dark.png" width="1240"/>
+</button>
+<button aria-label="操作ボタンを隠したコンパクトな「Design」タイマーを拡大" class="image-button hero-mini" data-caption="コンパクトな「Design」タイマー。インストール済みMacアプリで、サンプルデータを表示し、操作ボタンを隠している。" data-zoom="../assets/marketing/mac-timer-minimal-hidden.png" type="button">
+<img alt="操作ボタンが消えた後の「Design」タイマー。ネイビーのコンパクトなミニマルウインドウに表示されている" fetchpriority="high" height="480" src="../assets/marketing/mac-timer-minimal-hidden.png" width="1240"/>
+</button>
+<button aria-label="メインビジュアルの世界カレンダーを拡大" class="image-button hero-calendar" data-caption="世界カレンダー — インストール済みMacアプリで、2026年10月の祝日、中国暦の日付、国慶節の詳細を表示。" data-zoom="../assets/marketing/mac-world-calendar-month.png" type="button">
+<img alt="ライト外観のMacウインドウに表示した世界カレンダーの月間グリッドと祝日の詳細" decoding="async" height="1440" src="../assets/marketing/mac-world-calendar-month.png" width="2040"/>
+</button>
+<button aria-label="メインビジュアルのサウンドライブラリを拡大" class="image-button hero-sounds" data-caption="サウンドライブラリ — インストール済みMacアプリで世界の儀礼音のサウンドを表示。ネイティブの波形、お気に入り、再生コントロールが並ぶ。" data-zoom="../assets/marketing/mac-sound-ceremonial.png" type="button">
+<img alt="サウンドライブラリの世界の儀礼音コレクション。ベル、チャイム、太鼓、トランペットの波形を表示" decoding="async" height="1120" src="../assets/marketing/mac-sound-ceremonial.png" width="1440"/>
+</button>
+<button aria-label="メインビジュアルのドロミーティの写真を背景にした「Planning」を拡大" class="image-button hero-photo" data-caption="自分好みの表示。ドロミーティの写真を背景に「Planning」が20:04を示し、インストール済みMacアプリの操作ボタンは自動的に隠れている。" data-zoom="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" type="button">
+<img alt="ミニマル表示で、山の写真を背景に「Planning」が20:04を示している" decoding="async" height="468" src="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" width="658"/>
+</button>
+<button aria-label="メインビジュアルの週次レポートのグラフを拡大" class="image-button hero-report" data-caption="1週間に注目 — インストール済みMacアプリで、5つのタスクにわたるサンプルの30時間を表示。日別合計とタスク別の割合のグラフが見える。" data-zoom="../assets/marketing/mac-report-week-daily-totals.png" type="button">
+<img alt="週次の時間レポート。日別合計を色分けした積み上げグラフと、サンプルの30時間に占める各タスクの割合を示すグラフ" decoding="async" height="2396" src="../assets/marketing/mac-report-week-daily-totals.png" width="1520"/>
+</button>
+<div class="hero-menubar">
+<button aria-label="メインビジュアルの「Planning」のメニューバー表示を拡大" class="image-button" data-caption="メニューバーのタイマー — メインウインドウを開かずに、20:04で一時停止した「Planning」をmacOSの状態アイコンの隣で確認できる。" data-zoom="../assets/marketing/mac-menubar-status-planning.png" type="button">
+<img alt="macOSのメニューバーで、システム状態アイコンの隣に一時停止マークと「Planning 20:04」を表示" decoding="async" height="60" src="../assets/marketing/mac-menubar-status-planning.png" width="572"/>
+</button>
+<a href="#menu-bar">タイマーを、そのままメニューバーに。</a>
+</div>
+<span class="stage-caption">自分の時間。ひと目で。</span>
+</div>
+</section>
+<section aria-label="XTimersの機能を見る" class="feature-overview wrap" id="features">
+<details class="feature-browser">
+<summary>全20機能を見る <span aria-hidden="true">+</span></summary>
+<nav aria-label="全20機能をカテゴリ別に" class="feature-index">
+<div class="feature-group">
+<h3><a class="feature-category" href="#timers"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timers.png" width="16"/>時間の計測<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#timers"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timers.png" width="16"/><span>タイマーとカウントダウン</span></a></li>
+<li><a href="#reminders"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/reminders.png" width="16"/><span>メール・SMS・電話のリマインダー</span></a></li>
+<li><a href="#sound-library"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/sound-library.png" width="16"/><span>サウンドライブラリ</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#task-sets"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/task-sets.png" width="16"/>ルーティン<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#task-sets"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/task-sets.png" width="16"/><span>タスクセットと再利用できるテンプレート</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#timer-views"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timer-views.png" width="16"/>表示<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#timer-views"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timer-views.png" width="16"/><span>柔軟なタイマー表示</span></a></li>
+<li><a href="#classic-interface"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/classic-interface.png" width="16"/><span>クラシックインターフェース</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#world-calendar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-clocks.png" width="16"/>世界の時間<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#world-clocks"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-clocks.png" width="16"/><span>世界時計</span></a></li>
+<li><a href="#world-calendar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-calendar.png" width="16"/><span>世界カレンダー</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#time-reports"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/time-reports.png" width="16"/>レポート<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#time-reports"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/time-reports.png" width="16"/><span>時間レポートと共有</span></a></li>
+<li><a href="#archives"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/archives.png" width="16"/><span>アーカイブ</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#appearance"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/appearance.png" width="16"/>外観<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#appearance"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/appearance.png" width="16"/><span>外観のカスタマイズ</span></a></li>
+<li><a href="#languages"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/languages.png" width="16"/><span>多言語対応</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#menu-bar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/menu-bar.png" width="16"/>お使いのデバイス<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#menu-bar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/menu-bar.png" width="16"/><span>メニューバーとデスクトップの連携</span></a></li>
+<li><a href="#live-activities"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/live-activities.png" width="16"/><span>ライブアクティビティ</span></a></li>
+<li><a href="#siri-shortcuts"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/siri-shortcuts.png" width="16"/><span>Siriとショートカット</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#offline"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/protected-sync.png" width="16"/>同期とプライバシー<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#offline"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/offline.png" width="16"/><span>アカウント不要のオフライン利用</span></a></li>
+<li><a href="#synchronization"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/synchronization.png" width="16"/><span>デバイス間の同期</span></a></li>
+<li><a href="#protected-sync"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/protected-sync.png" width="16"/><span>保護された同期</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#activity-tracking"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/xhelpers-pro.png" width="16"/>Macならではの機能<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#activity-tracking"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/activity-tracking.png" width="16"/><span>アプリ使用状況の自動記録</span></a></li>
+<li><a href="#xhelpers-pro"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/xhelpers-pro.png" width="16"/><span>XHelpers Proの特典</span></a></li>
+</ul>
+</div>
+</nav>
+</details>
+</section>
+<section aria-labelledby="timers-heading" class="highlight-row has-gallery" data-highlight="01" id="timers">
+<span class="anchor-target" id="count-up-timers"></span><span class="anchor-target" id="countdowns"></span><span class="anchor-target" id="running-timers"></span><span class="anchor-target" id="task-controls"></span><span class="anchor-target" id="notes-history"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">01</span>タイマーとカウントダウン</p>
+<h2 id="timers-heading">大切なことに、時間を。</h2>
+<p>使った時間を記録し、指定した時間からカウントダウンし、締め切りまでの時間を確認。ひとつでも複数でもタスクを動かし、一時停止・再開して、セッションにメモを残せます。その日の変化に合わせて、タイマーも柔軟に。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="タイマーとカウントダウンの画像" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>タイマーのワークスペース</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="タイマーのワークスペースを拡大" class="image-button capture-image" data-caption="タイマーのワークスペース — 「Studio」ワークスペースには、5つの経過時間タイマー、「Focus sprint」のカウントダウン、3つの世界時計がある。" data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="「Studio」ワークスペースには、5つの経過時間タイマー、「Focus sprint」のカウントダウン、3つの世界時計がある。" decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>「Studio」ワークスペースには、5つの経過時間タイマー、「Focus sprint」のカウントダウン、3つの世界時計がある。</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>自分に合ったカウントダウン</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="自分に合ったカウントダウンを拡大" class="image-button capture-image" data-caption="自分に合ったカウントダウン — 「Focus sprint」：「Studio」にある一時停止可能な25分のカウントダウン。手動で開始し、終了時に「Gentle Bell」が鳴る設定。" data-zoom="../assets/marketing/mac-countdown.png" type="button"><img alt="「Focus sprint」：「Studio」にある一時停止可能な25分のカウントダウン。手動で開始し、終了時に「Gentle Bell」が鳴る設定。" decoding="async" loading="lazy" src="../assets/marketing/mac-countdown.png"/></button>
+<figcaption>「Focus sprint」：「Studio」にある一時停止可能な25分のカウントダウン。手動で開始し、終了時に「Gentle Bell」が鳴る設定。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="task-sets-heading" class="highlight-row" data-highlight="02" id="task-sets">
+<span class="anchor-target" id="routines"></span><span class="anchor-target" id="templates"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">02</span>タスクセットと再利用できるテンプレート</p>
+<h2 id="task-sets-heading">ルーティンごとに、自分の場所を。</h2>
+<p>仕事、学び、日常生活に、それぞれ名前を付けたタスクセットを。タスク単体もセット全体もテンプレートとして保存できるので、次のセッションでもいつものルーティンを始められます。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="タスクセットと再利用できるテンプレートの画像" class="feature-gallery gallery-1">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>タスクセット</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="タスクセットを拡大" class="image-button capture-image" data-caption="タスクセット — 9つのアクティブなタスクと、再利用可能な「Studio Template」がある「Studio」タスクセット。" data-zoom="../assets/marketing/mac-task-sets.png" type="button"><img alt="9つのアクティブなタスクと、再利用可能な「Studio Template」がある「Studio」タスクセット。" decoding="async" loading="lazy" src="../assets/marketing/mac-task-sets.png"/></button>
+<figcaption>9つのアクティブなタスクと、再利用可能な「Studio Template」がある「Studio」タスクセット。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="timer-views-heading" class="highlight-row has-gallery" data-highlight="03" id="timer-views">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">03</span>柔軟なタイマー表示</p>
+<h2 id="timer-views-heading">今にぴったりの表示を。</h2>
+<p>全体を見渡すことも、ひとつのタスクに集中することも。Macではリスト、グリッド、シングル、ミニマルの表示を選べます。iPhoneとiPadでは、そのときに合わせてリスト、フォーカス、シングルを選択できます。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">シングル表示とミニマル表示では、ポインタが離れると操作ボタンが消え、重ねると再び表示されます。</p>
+</div>
+<div aria-label="柔軟なタイマー表示の画像" class="feature-gallery gallery-14">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · リスト</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="Mac · リストを拡大" class="image-button capture-image" data-caption="Mac · リスト — 「Studio」のリスト表示。9つのタスクをコンパクトな行に並べている。" data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="「Studio」のリスト表示。9つのタスクをコンパクトな行に並べている。" decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>「Studio」のリスト表示。9つのタスクをコンパクトな行に並べている。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · グリッド</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="Mac · グリッドを拡大" class="image-button capture-image" data-caption="Mac · グリッド — 「Studio」の「Design」「Research」「Writing」「Reading」「Planning」のタイマー、「Focus sprint」、ニューヨーク・ロンドン・東京の時計。" data-zoom="../assets/marketing/mac-grid-light.png" type="button"><img alt="「Studio」の「Design」「Research」「Writing」「Reading」「Planning」のタイマー、「Focus sprint」、ニューヨーク・ロンドン・東京の時計。" decoding="async" loading="lazy" src="../assets/marketing/mac-grid-light.png"/></button>
+<figcaption>「Studio」の「Design」「Research」「Writing」「Reading」「Planning」のタイマー、「Focus sprint」、ニューヨーク・ロンドン・東京の時計。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · シングル、操作ボタン表示 · 漆黒</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="Mac · シングル、操作ボタン表示 · 漆黒を拡大" class="image-button capture-image" data-caption="Mac · シングル、操作ボタン表示 · 漆黒 — インストール済みMacアプリのシングル表示で「Planning」が20:04を示している。操作ボタンは表示、背景は黒一色。" data-zoom="../assets/marketing/mac-planning-single-black.png" type="button"><img alt="インストール済みMacアプリのシングル表示で「Planning」が20:04を示している。操作ボタンは表示、背景は黒一色。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-black.png"/></button>
+<figcaption>インストール済みMacアプリのシングル表示で「Planning」が20:04を示している。操作ボタンは表示、背景は黒一色。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · ミニマル、操作ボタン表示 · 漆黒</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="Mac · ミニマル、操作ボタン表示 · 漆黒を拡大" class="image-button capture-image" data-caption="Mac · ミニマル、操作ボタン表示 · 漆黒 — インストール済みMacアプリのミニマル表示で「Planning」が20:04を示している。操作ボタンは表示、背景は黒一色。" data-zoom="../assets/marketing/mac-planning-minimal-black.png" type="button"><img alt="インストール済みMacアプリのミニマル表示で「Planning」が20:04を示している。操作ボタンは表示、背景は黒一色。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-black.png"/></button>
+<figcaption>インストール済みMacアプリのミニマル表示で「Planning」が20:04を示している。操作ボタンは表示、背景は黒一色。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · シングル、操作ボタン非表示 · 漆黒</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="Mac · シングル、操作ボタン非表示 · 漆黒を拡大" class="image-button capture-image" data-caption="Mac · シングル、操作ボタン非表示 · 漆黒 — インストール済みMacアプリのシングル表示で「Planning」が20:04を示している。操作ボタンは非表示、背景は黒一色。" data-zoom="../assets/marketing/mac-planning-single-hidden-black.png" type="button"><img alt="インストール済みMacアプリのシングル表示で「Planning」が20:04を示している。操作ボタンは非表示、背景は黒一色。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-black.png"/></button>
+<figcaption>インストール済みMacアプリのシングル表示で「Planning」が20:04を示している。操作ボタンは非表示、背景は黒一色。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · ミニマル、操作ボタン非表示 · 漆黒</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="Mac · ミニマル、操作ボタン非表示 · 漆黒を拡大" class="image-button capture-image" data-caption="Mac · ミニマル、操作ボタン非表示 · 漆黒 — インストール済みMacアプリのミニマル表示で「Planning」が20:04を示している。操作ボタンは非表示、背景は黒一色。" data-zoom="../assets/marketing/mac-planning-minimal-hidden-black.png" type="button"><img alt="インストール済みMacアプリのミニマル表示で「Planning」が20:04を示している。操作ボタンは非表示、背景は黒一色。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-black.png"/></button>
+<figcaption>インストール済みMacアプリのミニマル表示で「Planning」が20:04を示している。操作ボタンは非表示、背景は黒一色。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · シングル、操作ボタン表示 · ヨセミテの写真</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="Mac · シングル、操作ボタン表示 · ヨセミテの写真を拡大" class="image-button capture-image" data-caption="Mac · シングル、操作ボタン表示 · ヨセミテの写真 — インストール済みMacアプリのシングル表示で「Planning」が20:04を示している。操作ボタンは表示、背景はヨセミテの写真。" data-zoom="../assets/marketing/mac-planning-single-yosemite.png" type="button"><img alt="インストール済みMacアプリのシングル表示で「Planning」が20:04を示している。操作ボタンは表示、背景はヨセミテの写真。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-yosemite.png"/></button>
+<figcaption>インストール済みMacアプリのシングル表示で「Planning」が20:04を示している。操作ボタンは表示、背景はヨセミテの写真。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · ミニマル、操作ボタン表示 · ヨセミテの写真</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="Mac · ミニマル、操作ボタン表示 · ヨセミテの写真を拡大" class="image-button capture-image" data-caption="Mac · ミニマル、操作ボタン表示 · ヨセミテの写真 — インストール済みMacアプリのミニマル表示で「Planning」が20:04を示している。操作ボタンは表示、背景はヨセミテの写真。" data-zoom="../assets/marketing/mac-planning-minimal-yosemite.png" type="button"><img alt="インストール済みMacアプリのミニマル表示で「Planning」が20:04を示している。操作ボタンは表示、背景はヨセミテの写真。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-yosemite.png"/></button>
+<figcaption>インストール済みMacアプリのミニマル表示で「Planning」が20:04を示している。操作ボタンは表示、背景はヨセミテの写真。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · シングル、操作ボタン非表示 · ヨセミテの写真</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="Mac · シングル、操作ボタン非表示 · ヨセミテの写真を拡大" class="image-button capture-image" data-caption="Mac · シングル、操作ボタン非表示 · ヨセミテの写真 — インストール済みMacアプリのシングル表示で「Planning」が20:04を示している。操作ボタンは非表示、背景はヨセミテの写真。" data-zoom="../assets/marketing/mac-planning-single-hidden-yosemite.png" type="button"><img alt="インストール済みMacアプリのシングル表示で「Planning」が20:04を示している。操作ボタンは非表示、背景はヨセミテの写真。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-yosemite.png"/></button>
+<figcaption>インストール済みMacアプリのシングル表示で「Planning」が20:04を示している。操作ボタンは非表示、背景はヨセミテの写真。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · ミニマル、操作ボタン非表示 · ヨセミテの写真</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="Mac · ミニマル、操作ボタン非表示 · ヨセミテの写真を拡大" class="image-button capture-image" data-caption="Mac · ミニマル、操作ボタン非表示 · ヨセミテの写真 — インストール済みMacアプリのミニマル表示で「Planning」が20:04を示している。操作ボタンは非表示、背景はヨセミテの写真。" data-zoom="../assets/marketing/mac-planning-minimal-hidden-yosemite.png" type="button"><img alt="インストール済みMacアプリのミニマル表示で「Planning」が20:04を示している。操作ボタンは非表示、背景はヨセミテの写真。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-yosemite.png"/></button>
+<figcaption>インストール済みMacアプリのミニマル表示で「Planning」が20:04を示している。操作ボタンは非表示、背景はヨセミテの写真。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · シングル、操作ボタン表示 · ドロミーティの写真</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="Mac · シングル、操作ボタン表示 · ドロミーティの写真を拡大" class="image-button capture-image" data-caption="Mac · シングル、操作ボタン表示 · ドロミーティの写真 — インストール済みMacアプリのシングル表示で「Planning」が20:04を示している。操作ボタンは表示、背景はドロミーティの写真。" data-zoom="../assets/marketing/mac-planning-single-dolomites.png" type="button"><img alt="インストール済みMacアプリのシングル表示で「Planning」が20:04を示している。操作ボタンは表示、背景はドロミーティの写真。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-dolomites.png"/></button>
+<figcaption>インストール済みMacアプリのシングル表示で「Planning」が20:04を示している。操作ボタンは表示、背景はドロミーティの写真。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · ミニマル、操作ボタン表示 · ドロミーティの写真</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="Mac · ミニマル、操作ボタン表示 · ドロミーティの写真を拡大" class="image-button capture-image" data-caption="Mac · ミニマル、操作ボタン表示 · ドロミーティの写真 — インストール済みMacアプリのミニマル表示で「Planning」が20:04を示している。操作ボタンは表示、背景はドロミーティの写真。" data-zoom="../assets/marketing/mac-planning-minimal-dolomites.png" type="button"><img alt="インストール済みMacアプリのミニマル表示で「Planning」が20:04を示している。操作ボタンは表示、背景はドロミーティの写真。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-dolomites.png"/></button>
+<figcaption>インストール済みMacアプリのミニマル表示で「Planning」が20:04を示している。操作ボタンは表示、背景はドロミーティの写真。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · シングル、操作ボタン非表示 · ドロミーティの写真</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="Mac · シングル、操作ボタン非表示 · ドロミーティの写真を拡大" class="image-button capture-image" data-caption="Mac · シングル、操作ボタン非表示 · ドロミーティの写真 — インストール済みMacアプリのシングル表示で「Planning」が20:04を示している。操作ボタンは非表示、背景はドロミーティの写真。" data-zoom="../assets/marketing/mac-planning-single-hidden-dolomites.png" type="button"><img alt="インストール済みMacアプリのシングル表示で「Planning」が20:04を示している。操作ボタンは非表示、背景はドロミーティの写真。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-dolomites.png"/></button>
+<figcaption>インストール済みMacアプリのシングル表示で「Planning」が20:04を示している。操作ボタンは非表示、背景はドロミーティの写真。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · ミニマル、操作ボタン非表示 · ドロミーティの写真</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="Mac · ミニマル、操作ボタン非表示 · ドロミーティの写真を拡大" class="image-button capture-image" data-caption="Mac · ミニマル、操作ボタン非表示 · ドロミーティの写真 — インストール済みMacアプリのミニマル表示で「Planning」が20:04を示している。操作ボタンは非表示、背景はドロミーティの写真。" data-zoom="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" type="button"><img alt="インストール済みMacアプリのミニマル表示で「Planning」が20:04を示している。操作ボタンは非表示、背景はドロミーティの写真。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-dolomites.png"/></button>
+<figcaption>インストール済みMacアプリのミニマル表示で「Planning」が20:04を示している。操作ボタンは非表示、背景はドロミーティの写真。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="world-clocks-heading" class="highlight-row has-gallery" data-highlight="04" id="world-clocks">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">04</span>世界時計</p>
+<h2 id="world-clocks-heading">大切な場所を、いつも身近に。</h2>
+<p>自分にとって大切な都市やタイムゾーンを追加。各地の現在時刻をタイマーと並べて、同僚や家族のいる場所、旅行の予定をいつでも確認できます。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="世界時計の画像" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>タイマーの隣に世界時計</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="タイマーの隣に世界時計を拡大" class="image-button capture-image" data-caption="タイマーの隣に世界時計 — 青いグリッドのワークスペースで、「Studio」のタイマーとニューヨーク、ロンドン、東京の時計を並べている。" data-zoom="../assets/marketing/mac-grid-dark.png" type="button"><img alt="青いグリッドのワークスペースで、「Studio」のタイマーとニューヨーク、ロンドン、東京の時計を並べている。" decoding="async" loading="lazy" src="../assets/marketing/mac-grid-dark.png"/></button>
+<figcaption>青いグリッドのワークスペースで、「Studio」のタイマーとニューヨーク、ロンドン、東京の時計を並べている。</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>場所を選ぶ</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプル設定</span></div>
+<button aria-label="場所を選ぶを拡大" class="image-button capture-image" data-caption="場所を選ぶ — インストール済みMacアプリの時計エディタでニューヨークを表示。地図、現地時刻、UTC−04:00の時差が見える。" data-zoom="../assets/marketing/mac-clock-editor.png" type="button"><img alt="インストール済みMacアプリの時計エディタでニューヨークを表示。地図、現地時刻、UTC−04:00の時差が見える。" decoding="async" loading="lazy" src="../assets/marketing/mac-clock-editor.png"/></button>
+<figcaption>インストール済みMacアプリの時計エディタでニューヨークを表示。地図、現地時刻、UTC−04:00の時差が見える。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="world-calendar-heading" class="highlight-row has-gallery" data-highlight="05" id="world-calendar">
+<span class="anchor-target" id="regional-holidays"></span><span class="anchor-target" id="world-events"></span><span class="anchor-target" id="apple-calendar"></span><span class="anchor-target" id="calendar-actions"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">05</span>世界カレンダー</p>
+<h2 id="world-calendar-heading">今日を、世界の流れの中で。</h2>
+<p>祝日、文化にまつわる日、世界のイベント、歴史上の出来事を見てみましょう。Appleのカレンダーを読み取り専用で表示し、日付やイベントからカウントダウンや個人用リマインダーを作成できます。</p>
+<span class="platform-pill">Mac</span>
+<p class="feature-note">カタログを一度ダウンロードすれば、オフラインで閲覧できます。Appleのカレンダーへのアクセスは任意で、読み取り専用です。</p>
+</div>
+<div aria-label="世界カレンダーの画像" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>1か月をひと目で</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプル設定</span></div>
+<button aria-label="1か月をひと目でを拡大" class="image-button capture-image" data-caption="1か月をひと目で — 中国本土の祝日プロファイルを使った2026年10月の表示。中国暦の日付と国慶節の詳細が見える。" data-zoom="../assets/marketing/mac-world-calendar-month.png" type="button"><img alt="中国本土の祝日プロファイルを使った2026年10月の表示。中国暦の日付と国慶節の詳細が見える。" decoding="async" loading="lazy" src="../assets/marketing/mac-world-calendar-month.png"/></button>
+<figcaption>中国本土の祝日プロファイルを使った2026年10月の表示。中国暦の日付と国慶節の詳細が見える。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>週表示と日付の詳細</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプル設定</span></div>
+<button aria-label="週表示と日付の詳細を拡大" class="image-button capture-image" data-caption="週表示と日付の詳細 — 9月27日〜10月3日の週。10月1日が選択され、国慶節の詳細が週表示の横に表示されている。" data-zoom="../assets/marketing/mac-world-calendar-week.png" type="button"><img alt="9月27日〜10月3日の週。10月1日が選択され、国慶節の詳細が週表示の横に表示されている。" decoding="async" loading="lazy" src="../assets/marketing/mac-world-calendar-week.png"/></button>
+<figcaption>9月27日〜10月3日の週。10月1日が選択され、国慶節の詳細が週表示の横に表示されている。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="reminders-heading" class="highlight-row copy-only" data-highlight="06" id="reminders">
+<span class="anchor-target" id="email-sms"></span><span class="anchor-target" id="call-me"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">06</span>メール・SMS・電話のリマインダー</p>
+<h2 id="reminders-heading">自分の言葉で、リマインダーを。</h2>
+<p>指定した時間が経過したとき、または特定の日時に、自分へメッセージを送るよう予約。メール、SMS、条件を満たす1回限りの電話から選び、配信状況をタスクと一緒に確認できます。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">アカウントとサービスの提供状況によって利用できる機能が異なります。SMSと電話には、利用条件を満たす認証済みのご自身の番号と、それぞれ個別の同意が必要です。電話は米国・カナダの番号に対応し、英語で発信され、自動リダイヤルは行いません。</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="sound-library-heading" class="highlight-row has-gallery" data-highlight="07" id="sound-library">
+<span class="anchor-target" id="sounds"></span><span class="anchor-target" id="interval-beeps"></span><span class="anchor-target" id="completion-alerts"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">07</span>サウンドライブラリ</p>
+<h2 id="sound-library-heading">終わりを知らせる、自分だけの音を。</h2>
+<p>付属の66種類のサウンドを試聴して選び、お気に入りに保存。自分の音声を読み込んだり、セッション中に一定間隔のビープ音で時間の経過を意識したりできます。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="サウンドライブラリの画像" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>毎日のサウンド</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプル設定</span></div>
+<button aria-label="毎日のサウンドを拡大" class="image-button capture-image" data-caption="毎日のサウンド — インストール済みMacアプリのサウンドライブラリ。「Classic Tones」、波形、お気に入り、再生コントロールを表示。" data-zoom="../assets/marketing/mac-sound-library.png" type="button"><img alt="インストール済みMacアプリのサウンドライブラリ。「Classic Tones」、波形、お気に入り、再生コントロールを表示。" decoding="async" loading="lazy" src="../assets/marketing/mac-sound-library.png"/></button>
+<figcaption>インストール済みMacアプリのサウンドライブラリ。「Classic Tones」、波形、お気に入り、再生コントロールを表示。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>世界の儀礼音</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプル設定</span></div>
+<button aria-label="世界の儀礼音を拡大" class="image-button capture-image" data-caption="世界の儀礼音 — 「Gentle Bell」「Bright Chime」から「Ceremonial Drum」「Trumpet Salute」まで、世界の儀礼音のサウンド。" data-zoom="../assets/marketing/mac-sound-ceremonial.png" type="button"><img alt="「Gentle Bell」「Bright Chime」から「Ceremonial Drum」「Trumpet Salute」まで、世界の儀礼音のサウンド。" decoding="async" loading="lazy" src="../assets/marketing/mac-sound-ceremonial.png"/></button>
+<figcaption>「Gentle Bell」「Bright Chime」から「Ceremonial Drum」「Trumpet Salute」まで、世界の儀礼音のサウンド。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="time-reports-heading" class="highlight-row has-gallery" data-highlight="08" id="time-reports">
+<span class="anchor-target" id="report-charts"></span><span class="anchor-target" id="report-exports"></span><span class="anchor-target" id="report-sharing"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">08</span>時間レポートと共有</p>
+<h2 id="time-reports-heading">時間の使い道を知る。</h2>
+<p>セッション、日別合計、現在の計測値を確認。グラフを見たり、期間を比較したり、タスクやセットで絞り込んだりできます。CSV、HTML、PDFで保存し、自分にメールでレポートを送るか、有効期限付きのリンクで共有できます。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">ローカルレポートと書き出しはオフラインで使えます。メールとオンライン共有には接続が必要です。</p>
+</div>
+<div aria-label="時間レポートと共有の画像" class="feature-gallery gallery-4 report-gallery">
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>日別合計 · 1週間をひと目で</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプル履歴</span></div>
+<button aria-label="日別合計 · 1週間をひと目でを拡大" class="image-button capture-image" data-caption="日別合計 · 1週間をひと目で — 2026年9月21〜25日：5つのサンプルタスクで計30時間。日別合計とタスクごとの割合を表示し、「Design」は12時間05分（40.3%）を占める。" data-zoom="../assets/marketing/mac-report-week-daily-totals.png" type="button"><img alt="2026年9月21〜25日：5つのサンプルタスクで計30時間。日別合計とタスクごとの割合を表示し、「Design」は12時間05分（40.3%）を占める。" decoding="async" loading="lazy" src="../assets/marketing/mac-report-week-daily-totals.png"/></button>
+<figcaption>2026年9月21〜25日：5つのサンプルタスクで計30時間。日別合計とタスクごとの割合を表示し、「Design」は12時間05分（40.3%）を占める。</figcaption>
+</figure>
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>セッション · 作業した時間帯</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプル履歴</span></div>
+<button aria-label="セッション · 作業した時間帯を拡大" class="image-button capture-image" data-caption="セッション · 作業した時間帯 — 29セッション、計30時間のサンプルの1週間。2026年9月21〜25日の作業時間帯をタイムラインで表示。" data-zoom="../assets/marketing/mac-report-week-sessions.png" type="button"><img alt="29セッション、計30時間のサンプルの1週間。2026年9月21〜25日の作業時間帯をタイムラインで表示。" decoding="async" loading="lazy" src="../assets/marketing/mac-report-week-sessions.png"/></button>
+<figcaption>29セッション、計30時間のサンプルの1週間。2026年9月21〜25日の作業時間帯をタイムラインで表示。</figcaption>
+</figure>
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>セッション · 1日を詳しく</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプル履歴</span></div>
+<button aria-label="セッション · 1日を詳しくを拡大" class="image-button capture-image" data-caption="セッション · 1日を詳しく — 2026年9月24日の6つのサンプルセッション、計6時間15分。その日のタイムラインと、各セッションの開始・終了時刻を表示。" data-zoom="../assets/marketing/mac-report-day-sessions.png" type="button"><img alt="2026年9月24日の6つのサンプルセッション、計6時間15分。その日のタイムラインと、各セッションの開始・終了時刻を表示。" decoding="async" loading="lazy" src="../assets/marketing/mac-report-day-sessions.png"/></button>
+<figcaption>2026年9月24日の6つのサンプルセッション、計6時間15分。その日のタイムラインと、各セッションの開始・終了時刻を表示。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>現在の計測値</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="現在の計測値を拡大" class="image-button capture-image" data-caption="現在の計測値 — 「Studio」ワークスペースの現在の計測値。コピー、書き出し、共有の操作ボタンが並ぶ。" data-zoom="../assets/marketing/mac-report-current-readings.png" type="button"><img alt="「Studio」ワークスペースの現在の計測値。コピー、書き出し、共有の操作ボタンが並ぶ。" decoding="async" loading="lazy" src="../assets/marketing/mac-report-current-readings.png"/></button>
+<figcaption>「Studio」ワークスペースの現在の計測値。コピー、書き出し、共有の操作ボタンが並ぶ。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="archives-heading" class="highlight-row" data-highlight="09" id="archives">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">09</span>アーカイブ</p>
+<h2 id="archives-heading">終えた作業を、残しておく。</h2>
+<p>タスクセットをアーカイブして、履歴を手元に。過去の作業を検索し、保存したスナップショットを閲覧して、プロジェクトやルーティンを振り返りたいときにはレポートを開けます。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="アーカイブの画像" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>保存したプロジェクトレポート</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="保存したプロジェクトレポートを拡大" class="image-button capture-image" data-caption="保存したプロジェクトレポート — 「Brand workshop」をアーカイブとして保存。サンプルのタイマー記録もレポートに保持されている。" data-zoom="../assets/marketing/mac-archive-report.png" type="button"><img alt="「Brand workshop」をアーカイブとして保存。サンプルのタイマー記録もレポートに保持されている。" decoding="async" loading="lazy" src="../assets/marketing/mac-archive-report.png"/></button>
+<figcaption>「Brand workshop」をアーカイブとして保存。サンプルのタイマー記録もレポートに保持されている。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="appearance-heading" class="highlight-row has-gallery" data-highlight="10" id="appearance">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">10</span>外観のカスタマイズ</p>
+<h2 id="appearance-heading">自分らしい空間に。</h2>
+<p>ライトかダーク、単色か写真を選択。自分の画像で背景ライブラリをつくり、落ち着いた雰囲気も色鮮やかな空間も思いのままに。Macではフォルダ内の写真を順番に表示することもできます。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">お使いのデバイスごとにカスタマイズ。Macだけに適用する外観の設定もできます。</p>
+</div>
+<div aria-label="外観のカスタマイズの画像" class="feature-gallery gallery-4">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>単色の背景 · 白</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="単色の背景 · 白を拡大" class="image-button capture-image" data-caption="単色の背景 · 白 — 白一色の背景で、シングル表示にした「Design」タイマー。" data-zoom="../assets/marketing/mac-single-light.png" type="button"><img alt="白一色の背景で、シングル表示にした「Design」タイマー。" decoding="async" loading="lazy" src="../assets/marketing/mac-single-light.png"/></button>
+<figcaption>白一色の背景で、シングル表示にした「Design」タイマー。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>単色 · ネイビー</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="単色 · ネイビーを拡大" class="image-button capture-image" data-caption="単色 · ネイビー — 同じ「Design」タイマーを、ネイビー一色の背景に表示。" data-zoom="../assets/marketing/mac-timer-single.png" type="button"><img alt="同じ「Design」タイマーを、ネイビー一色の背景に表示。" decoding="async" loading="lazy" src="../assets/marketing/mac-timer-single.png"/></button>
+<figcaption>同じ「Design」タイマーを、ネイビー一色の背景に表示。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>写真の背景</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="写真の背景を拡大" class="image-button capture-image" data-caption="写真の背景 — XTimersに付属するドロミーティの写真を背景にした「Design」タイマー。" data-zoom="../assets/marketing/mac-single-photo.png" type="button"><img alt="XTimersに付属するドロミーティの写真を背景にした「Design」タイマー。" decoding="async" loading="lazy" src="../assets/marketing/mac-single-photo.png"/></button>
+<figcaption>XTimersに付属するドロミーティの写真を背景にした「Design」タイマー。</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>写真を選ぶ</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプル設定</span></div>
+<button aria-label="写真を選ぶを拡大" class="image-button capture-image" data-caption="写真を選ぶ — インストール済みMacアプリの背景選択画面。付属の写真が並び、ヨセミテが選択されている。" data-zoom="../assets/marketing/mac-background-library.png" type="button"><img alt="インストール済みMacアプリの背景選択画面。付属の写真が並び、ヨセミテが選択されている。" decoding="async" loading="lazy" src="../assets/marketing/mac-background-library.png"/></button>
+<figcaption>インストール済みMacアプリの背景選択画面。付属の写真が並び、ヨセミテが選択されている。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="menu-bar-heading" class="highlight-row has-gallery" data-highlight="11" id="menu-bar">
+<span class="anchor-target" id="devices"></span><span class="anchor-target" id="mac-shortcuts"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">11</span>メニューバーとデスクトップの連携</p>
+<h2 id="menu-bar-heading">作業のそばに、いつも時間を。</h2>
+<p>メインウインドウを開かずに、Macのメニューバーでタスク名とタイマーの計測値を確認。クリックすれば、タスクの開始・一時停止、セットの切り替え、レポートの表示へすぐにアクセスできます。グローバルショートカットと最前面に固定できるウインドウで、操作もいつも手元に。</p>
+<span class="platform-pill">Mac</span>
+</div>
+<div aria-label="メニューバーとデスクトップの連携の画像" class="feature-gallery gallery-3 menu-bar-gallery">
+<figure class="capture-card capture-status-strip">
+<div class="capture-heading"><h3>タイマーをひと目で</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="タイマーをひと目でを拡大" class="image-button capture-image" data-caption="タイマーをひと目で — 別のアプリで作業していても、20:04で一時停止した「Planning」がMacのメニューバーに表示されている。" data-zoom="../assets/marketing/mac-menubar-status-planning.png" type="button"><img alt="20:04で一時停止した「Planning」が、Macのメニューバーのシステム状態アイコンの隣に表示されている" decoding="async" height="60" loading="lazy" src="../assets/marketing/mac-menubar-status-planning.png" width="572"/></button>
+<figcaption>タスク名、計測値、一時停止マークをメニューバーに表示し続けます。ステータス項目をクリックすると、タイマーの操作にアクセスできます。</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>メニューバーのワークスペース</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="メニューバーのワークスペースを拡大" class="image-button capture-image" data-caption="メニューバーのワークスペース — Macのメニューバーに並ぶ「Studio」の「Design」などのタイマー、タスクセット、レポート、ウインドウの操作。" data-zoom="../assets/marketing/mac-menu-bar.png" type="button"><img alt="Macのメニューバーに並ぶ「Studio」の「Design」などのタイマー、タスクセット、レポート、ウインドウの操作。" decoding="async" loading="lazy" src="../assets/marketing/mac-menu-bar.png"/></button>
+<figcaption>Macのメニューバーに並ぶ「Studio」の「Design」などのタイマー、タスクセット、レポート、ウインドウの操作。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>コンパクトなタイマーウインドウ</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="コンパクトなタイマーウインドウを拡大" class="image-button capture-image" data-caption="コンパクトなタイマーウインドウ — コンパクトなミニマルウインドウに表示した「Studio」の「Design」タイマー。" data-zoom="../assets/marketing/mac-timer-minimal.png" type="button"><img alt="コンパクトなミニマルウインドウに表示した「Studio」の「Design」タイマー。" decoding="async" loading="lazy" src="../assets/marketing/mac-timer-minimal.png"/></button>
+<figcaption>コンパクトなミニマルウインドウに表示した「Studio」の「Design」タイマー。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="live-activities-heading" class="highlight-row has-gallery" data-highlight="12" id="live-activities">
+<span class="anchor-target" id="mobile"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">12</span>ライブアクティビティ</p>
+<h2 id="live-activities-heading">自分の時間を、ひと目で。</h2>
+<p>対応するタイマーをiPhoneのロック画面やDynamic Islandに表示。タスクと計測値を確認し、ワークスペース全体を開かずに対応タイマーを一時停止・再開できます。</p>
+<span class="platform-pill">iPhone</span>
+<p class="feature-note">対応デバイスとシステムの許可が必要です。世界時計はライブアクティビティを作成しません。</p>
+</div>
+<div aria-label="ライブアクティビティの画像" class="feature-gallery gallery-2">
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>ロック画面で</h3><span class="capture-status status-real">iPhone · ネイティブ画面キャプチャ</span></div>
+<button aria-label="ロック画面でを拡大" class="image-button capture-image" data-caption="ロック画面で — iPhoneのロック画面に表示されたカウントダウンのライブアクティビティ。タスク名、残り時間、一時停止ボタンが見える。" data-zoom="../assets/marketing/ios-live-activity-lockscreen.png" type="button"><img alt="iPhoneのロック画面に表示されたカウントダウンのライブアクティビティ。タスク名、残り時間、一時停止ボタンが見える。" decoding="async" height="2868" loading="lazy" src="../assets/marketing/ios-live-activity-lockscreen.png" width="1320"/></button>
+<figcaption>iPhoneのロック画面に表示されたカウントダウンのライブアクティビティ。タスク名、残り時間、一時停止ボタンが見える。</figcaption>
+</figure>
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>Dynamic Islandで</h3><span class="capture-status status-real">iPhone · ネイティブ画面キャプチャ</span></div>
+<button aria-label="Dynamic Islandでを拡大" class="image-button capture-image" data-caption="Dynamic Islandで — iPhoneのホーム画面を開いている間も、コンパクトなカウントダウンがDynamic Islandに表示される。" data-zoom="../assets/marketing/ios-live-activity-island.png" type="button"><img alt="iPhoneのホーム画面を開いている間も、コンパクトなカウントダウンがDynamic Islandに表示される。" decoding="async" height="2868" loading="lazy" src="../assets/marketing/ios-live-activity-island.png" width="1320"/></button>
+<figcaption>iPhoneのホーム画面を開いている間も、コンパクトなカウントダウンがDynamic Islandに表示される。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="siri-shortcuts-heading" class="highlight-row has-gallery" data-highlight="13" id="siri-shortcuts">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">13</span>Siriとショートカット</p>
+<h2 id="siri-shortcuts-heading">ひと言、またはひとタップで開始。</h2>
+<p>Siriとショートカットで、対応タイマーの開始、一時停止、切り替えができます。新しいストップウォッチの開始や現在のタスクの一時停止・再開用に、システムコントロールを追加できます。</p>
+<span class="platform-pill">iPhone · iPad</span>
+<p class="feature-note">独立したシステムコントロールはXTimersを開きます。ライブアクティビティのコントロールはその場で操作できます。</p>
+</div>
+<div aria-label="Siriとショートカットの画像" class="feature-gallery gallery-1">
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>XTimersのショートカット</h3><span class="capture-status status-real">iPhone · ネイティブ画面キャプチャ</span></div>
+<button aria-label="XTimersのショートカットを拡大" class="image-button capture-image" data-caption="XTimersのショートカット — 標準のショートカットアプリに並ぶ「Toggle Timer」「Start」「Pause」のアクション。" data-zoom="../assets/marketing/ios-siri-shortcuts.png" type="button"><img alt="標準のショートカットアプリに並ぶ「Toggle Timer」「Start」「Pause」のアクション。" decoding="async" height="2622" loading="lazy" src="../assets/marketing/ios-siri-shortcuts.png" width="1206"/></button>
+<figcaption>標準のショートカットアプリに並ぶ「Toggle Timer」「Start」「Pause」のアクション。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="offline-heading" class="highlight-row" data-highlight="14" id="offline">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">14</span>アカウント不要のオフライン利用</p>
+<h2 id="offline-heading">サインインなしで、始めよう。</h2>
+<p>基本のタイマー、カウントダウン、タスクセット、メモ、世界時計、ローカルレポートをデバイス上で利用できます。オフラインでも続けられ、接続を使う機能が必要になったらいつでもアカウントを追加できます。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="アカウント不要のオフライン利用の画像" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>ローカルの「Studio」ワークスペース</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="ローカルの「Studio」ワークスペースを拡大" class="image-button capture-image" data-caption="ローカルの「Studio」ワークスペース — サインアウトしたMacアプリの「Studio」ワークスペース。サンプルのローカルタイマーと世界時計を表示。" data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="サインアウトしたMacアプリの「Studio」ワークスペース。サンプルのローカルタイマーと世界時計を表示。" decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>サインアウトしたMacアプリの「Studio」ワークスペース。サンプルのローカルタイマーと世界時計を表示。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="synchronization-heading" class="highlight-row" data-highlight="15" id="synchronization">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">15</span>デバイス間の同期</p>
+<h2 id="synchronization-heading">いつものワークスペースで続きを。</h2>
+<p>対応するタスク、履歴、テンプレート、設定、カスタム素材をMac、iPhone、iPadで共有。一時的に接続が途切れても、ローカルの作業は引き続き利用できます。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Apple、Google、メールのコード、またはパスワードでサインインできます。一部のデバイス設定とローカル専用データは、それぞれのデバイスに残ります。</p>
+</div>
+<div aria-label="デバイス間の同期の画像" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Macで</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="Macでを拡大" class="image-button capture-image" data-caption="Macで — インストール済みMacアプリで表示した「Studio」のサンプルタイマーと時計。" data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="インストール済みMacアプリで表示した「Studio」のサンプルタイマーと時計。" decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>インストール済みMacアプリで表示した「Studio」のサンプルタイマーと時計。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="protected-sync-heading" class="highlight-row copy-only" data-highlight="16" id="protected-sync">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">16</span>保護された同期</p>
+<h2 id="protected-sync-heading">アップロードする前に、保護を選ぶ。</h2>
+<p>新しいタイマーの内容とカスタムアップロードを、<a href="privacy.html#xin-account">アカウントの同期</a>の前にデバイス上で暗号化。鍵はiCloud Keychainまたは保存した復元コードから復元できます。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">対応アカウントで任意に利用できます。リマインダーメッセージ、アカウントや同期のメタデータ、有効化前に作成された内容、デバイス内のローカル保存領域は対象外です。</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="languages-heading" class="highlight-row has-gallery" data-highlight="17" id="languages">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">17</span>多言語対応</p>
+<h2 id="languages-heading">いつもの言葉で、心地よく。</h2>
+<p>45種類の言語オプションから、デバイスの設定に合わせるか、お好みの言語を選べます。地域に合った日付・時刻・数値の表示と右から左へのレイアウトで、使い慣れた感覚のワークスペースに。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="多言語対応の画像" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 英語</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプル設定</span></div>
+<button aria-label="Mac · 英語を拡大" class="image-button capture-image" data-caption="Mac · 英語 — インストール済みMacアプリのライト外観で撮影した、英語の一般設定画面。" data-zoom="../assets/marketing/mac-settings-english.png" type="button"><img alt="インストール済みMacアプリのライト外観で撮影した、英語の一般設定画面。" decoding="async" loading="lazy" src="../assets/marketing/mac-settings-english.png"/></button>
+<figcaption>インストール済みMacアプリのライト外観で撮影した、英語の一般設定画面。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 日本語</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプル設定</span></div>
+<button aria-label="Mac · 日本語を拡大" class="image-button capture-image" data-caption="Mac · 日本語 — 同じ一般設定画面を、日本語とライト外観で表示。" data-zoom="../assets/marketing/mac-settings-japanese.png" type="button"><img alt="同じ一般設定画面を、日本語とライト外観で表示。" decoding="async" loading="lazy" src="../assets/marketing/mac-settings-japanese.png"/></button>
+<figcaption>同じ一般設定画面を、日本語とライト外観で表示。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="activity-tracking-heading" class="highlight-row" data-highlight="18" id="activity-tracking">
+<span class="anchor-target" id="extras"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">18</span>アプリ使用状況の自動記録</p>
+<h2 id="activity-tracking-heading">アプリに使った時間を、見える形に。</h2>
+<p>Macで最前面のアプリを使った時間を、希望に応じて記録。日・週・月・年ごとに使用状況を振り返り、不在時間の数え方も選べます。</p>
+<span class="platform-pill">Mac · 一部のプロファイル</span>
+<p class="feature-note">ローカルプロファイルと従来のプロファイルで利用でき、ローカル優先の同期アカウントでは表示されません。アプリの識別情報と操作のない時間は、このMacにのみ保存されます。Webサイト、閲覧履歴、ウインドウのタイトルは記録されません。</p>
+</div>
+<div aria-label="アプリ使用状況の自動記録の画像" class="feature-gallery gallery-1">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>使用状況の記録設定</h3><span class="capture-status status-real">インストール済みMacアプリ · 設定</span></div>
+<button aria-label="使用状況の記録設定を拡大" class="image-button capture-image" data-caption="使用状況の記録設定 — 標準のXTimersにある、レポート期間、アクティブなタスクへのスクロール、不在時間のネイティブ設定。この設定例では記録はオフ。" data-zoom="../assets/marketing/mac-activity-tracking-settings.png" type="button"><img alt="標準のXTimersにある、レポート期間、アクティブなタスクへのスクロール、不在時間のネイティブ設定。この設定例では記録はオフ。" decoding="async" loading="lazy" src="../assets/marketing/mac-activity-tracking-settings.png"/></button>
+<figcaption>標準のXTimersにある、レポート期間、アクティブなタスクへのスクロール、不在時間のネイティブ設定。この設定例では記録はオフ。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="classic-interface-heading" class="highlight-row has-gallery" data-highlight="19" id="classic-interface">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">19</span>クラシックインターフェース</p>
+<h2 id="classic-interface-heading">時間をつくる、もうひとつの方法。</h2>
+<p>英語のみのローカルタイマーインターフェースを、独立したワークスペースで利用できます。XTimersからインターフェースを切り替えて、使い慣れた表示で作業を続けられます。</p>
+<span class="platform-pill">Mac · ローカルのみ</span>
+<p class="feature-note">同梱のクラシックランタイムが必要です。アカウントの同期とメール・SMSの送信は、メインのXTimersインターフェースで利用します。</p>
+</div>
+<div aria-label="クラシックインターフェースの画像" class="feature-gallery gallery-2">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>クラシック · 2列</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="クラシック · 2列を拡大" class="image-button capture-image" data-caption="クラシック · 2列 — クリエイティブな仕事、学び、日常生活にわたる、名前付きの20タスクを並べたクラシックのルーティン。" data-zoom="../assets/marketing/classic-two-column.png" type="button"><img alt="クリエイティブな仕事、学び、日常生活にわたる、名前付きの20タスクを並べたクラシックのルーティン。" decoding="async" loading="lazy" src="../assets/marketing/classic-two-column.png"/></button>
+<figcaption>クリエイティブな仕事、学び、日常生活にわたる、名前付きの20タスクを並べたクラシックのルーティン。</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>クラシック · 1列</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプルデータ</span></div>
+<button aria-label="クラシック · 1列を拡大" class="image-button capture-image" data-caption="クラシック · 1列 — 「Design」「Research」「Writing」「Reading」「Planning」の5つのタスクをまとめた、コンパクトなクラシックワークスペース。" data-zoom="../assets/marketing/classic-one-column.png" type="button"><img alt="「Design」「Research」「Writing」「Reading」「Planning」の5つのタスクをまとめた、コンパクトなクラシックワークスペース。" decoding="async" loading="lazy" src="../assets/marketing/classic-one-column.png"/></button>
+<figcaption>「Design」「Research」「Writing」「Reading」「Planning」の5つのタスクをまとめた、コンパクトなクラシックワークスペース。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="xhelpers-pro-heading" class="highlight-row" data-highlight="20" id="xhelpers-pro">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">20</span>XHelpers Proの特典</p>
+<h2 id="xhelpers-pro-heading">あなたのMacの相棒に。</h2>
+<p>日常的な操作にすばやくアクセスできる、独立したMacユーティリティXHelpers Proをご紹介します。XTimersをご利用の方は、ライセンスの特典ページで現在の条件と有効化の方法をご確認いただけます。</p>
+<span class="platform-pill">Mac · 別アプリ</span>
+<a class="text-link" href="https://xintechllc.com/XHelpersPro/" rel="noopener noreferrer" target="_blank">XHelpers Proの特典を見る</a>
+</div>
+<div aria-label="XHelpers Proの特典の画像" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>付属のXHelpers Pro特典</h3><span class="capture-status status-real">インストール済みMacアプリ · サンプル設定</span></div>
+<button aria-label="付属のXHelpers Pro特典を拡大" class="image-button capture-image" data-caption="付属のXHelpers Pro特典 — インストール済みXTimersアプリの「このアプリについて」画面に、付属のXHelpers Pro特典が表示されている。" data-zoom="../assets/marketing/mac-xhelpers-benefit.png" type="button"><img alt="インストール済みXTimersアプリの「このアプリについて」画面に、付属のXHelpers Pro特典が表示されている。" decoding="async" loading="lazy" src="../assets/marketing/mac-xhelpers-benefit.png"/></button>
+<figcaption>インストール済みXTimersアプリの「このアプリについて」画面に、付属のXHelpers Pro特典が表示されている。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="download-heading" class="download-section" id="download">
+<div class="wrap download-inner">
+<div class="download-copy"><img alt="" height="64" loading="lazy" src="../assets/marketing/app-icon.png" width="64"/><h2 id="download-heading">少しの時間を<br/><em>自分のために。</em></h2><p>タスクにはタイマーを。ルーティンには、自分の場所を。</p></div>
+<div class="download-choices">
+<a class="download-choice" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" class="icon"><use href="#i-mac"></use></svg><span><strong>Mac版XTimers</strong><small>Mac App Storeで見る</small></span></a>
+<a class="download-choice" href="#mobile"><svg aria-hidden="true" class="icon"><use href="#i-mobile"></use></svg><span><strong>iPhone・iPad用XTimers</strong><small>モバイルでの使い方を見る</small></span></a>
+<p class="download-note">Mac、iPhone、iPad。毎日の、それぞれの場面に。</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="faq-heading" class="section faq-section wrap" id="support">
+<div class="section-copy"><p class="eyebrow">知っておきたいこと</p><h2 id="faq-heading">時間をつくる<br/>その前に。</h2><p>ほかに知りたいことはありますか？</p><a class="text-link" href="support.html" rel="noopener noreferrer" target="_blank">サポートを見る</a></div>
+<div class="faq-list">
+<details><summary>アカウントは必要ですか？<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>基本のローカルタイマー、カウントダウン、世界時計、ローカルレポートにはアカウントは不要です。アカウントの同期やアカウントを使うリマインダーを利用したいときにサインインしてください。</p><p class="feature-note">XTimers はユーザーを識別して認証するために Xin Account を使用します。 Xin Account は、XTimers およびアカウント管理に記載されている他の接続された製品の共有ID層であり、XTimers 製品アカウントではなく、XTimers タイマー、レポート、サウンド、または SMS データを含んでいません。</p></details>
+<details><summary>XTimersはオフラインで使えますか？<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>基本の時間計測とローカルレポートはオフラインで使えます。同期、オンライン共有、サーバーからのリマインダーには接続が必要です。Macの世界カレンダーは最初にカタログのダウンロードが必要ですが、インストール後はオフラインで利用できます。</p></details>
+<details><summary>複数のタイマーを同時に動かせますか？<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>はい。別のタスクに移ったとき、対応する直前のタイマーを一時停止するか、そのまま動かし続けるかを選べます。タスクセットを使えば、さまざまな活動を整理できます。</p></details>
+<details><summary>どのデバイスでも同じ機能を使えますか？<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>基本のワークスペースには、タイマー、カウントダウン、時計、タスクセット、レポートがあります。Macにはメニューバー操作と世界カレンダーを追加。対応するiPhoneではライブアクティビティを利用でき、iPadではより広いタスクレイアウトを使えます。</p></details>
+<details><summary>電話のリマインダーはどのように動作しますか？<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>リマインダーは、利用条件を満たす認証済みのご自身の番号に届きます。SMSと電話にはそれぞれ個別の同意が必要です。利用可否はアカウント、地域、サービスによって異なります。予約した電話にはサーバーの確認が必要です。「Call Me」は英語で発信され、自動リダイヤルは行いません。</p></details>
+</div>
+</section>
+</main>
+<footer class="site-footer wrap">
+<p class="footer-copy"><small>© 2026 Xintech LLC</small><span>あなたにとって大切なことに、時間を。</span></p>
+<div class="footer-links"><a href="#features">機能</a><a href="#devices">お使いのデバイス</a><a href="support.html" rel="noopener noreferrer" target="_blank">サポート</a><a href="privacy.html" rel="noopener noreferrer" target="_blank">プライバシー</a><a href="sms-terms.html" rel="noopener noreferrer" target="_blank">メッセージ送信の利用条件</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener noreferrer" target="_blank">ライセンス</a><a href="terms.html">利用規約</a><a href="privacy-choices.html">プライバシーに関する選択</a><a href="sms-opt-in.html">SMS オプトイン</a></div>
+</footer>
+<dialog aria-labelledby="image-dialog-caption" class="image-dialog" id="image-dialog">
+<button aria-label="縮小してスクリーンショットを閉じる" class="image-dialog-zoom-out" type="button">
+<img alt="" id="image-dialog-img"/>
+</button>
+<p id="image-dialog-caption"></p>
+</dialog>
 </body>
 </html>

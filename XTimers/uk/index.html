@@ -4,18 +4,31 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>XTimers — Mac, iPhone, iPad</title>
-<meta content="XTimers — це спокійний, створений для платформ Apple робочий простір із таймерами, зворотними відліками, годинниками, наборами завдань, звітами, власними звуками та нагадуваннями облікового запису на Mac, iPhone й iPad." name="description"/>
 <meta content="#fbfaf7" name="theme-color"/>
-<meta content="XTimers" property="og:title"/>
-<meta content="Таймери, зворотні відліки, годинники, звіти, звуки та нагадування облікового запису для Mac, iPhone й iPad." property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="https://xintechllc.com/XTimers/assets/flexible-timers/macos/1-single-light.png" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="XTimers" name="twitter:title"/>
-<meta content="Timers, countdowns, clocks, reports, sounds, and account reminders for Mac, iPhone, and iPad." name="twitter:description"/>
-<meta content="https://xintechllc.com/XTimers/assets/flexible-timers/macos/1-single-light.png" name="twitter:image"/>
-<link rel="canonical" href="https://xintechllc.com/XTimers/uk/">
+<meta content="Прямий відлік. Зворотний відлік. Світові годинники. Світовий календар. Гнучкість. Ваші налаштування. Об’єднайте таймери, звичні справи, нагадування та звіти в одному робочому просторі." name="description"/>
+<title>XTimers — Прямий відлік. Зворотний відлік. Світові годинники. Світовий календар.</title>
+<link href="../assets/marketing/app-icon.png" rel="icon"/>
+<link href="../assets/marketing/styles.css" rel="stylesheet"/>
+<link href="../assets/marketing/site-style.css" rel="stylesheet"/>
+<script defer="" src="../assets/marketing/site.js"></script>
+<script data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19" defer="" src="https://cloud.umami.is/script.js"></script><script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script> <link rel="canonical" href="https://xintechllc.com/XTimers/uk/">
 <link rel="alternate" hreflang="ar" href="https://xintechllc.com/XTimers/ar/">
 <link rel="alternate" hreflang="bn" href="https://xintechllc.com/XTimers/bn/">
 <link rel="alternate" hreflang="ca" href="https://xintechllc.com/XTimers/ca/">
@@ -23,7 +36,7 @@
 <link rel="alternate" hreflang="da" href="https://xintechllc.com/XTimers/da/">
 <link rel="alternate" hreflang="de" href="https://xintechllc.com/XTimers/de/">
 <link rel="alternate" hreflang="el" href="https://xintechllc.com/XTimers/el/">
-<link rel="alternate" hreflang="en" href="https://xintechllc.com/XTimers/flexible-timers.html">
+<link rel="alternate" hreflang="en" href="https://xintechllc.com/XTimers/">
 <link rel="alternate" hreflang="es" href="https://xintechllc.com/XTimers/es/">
 <link rel="alternate" hreflang="fi" href="https://xintechllc.com/XTimers/fi/">
 <link rel="alternate" hreflang="fr" href="https://xintechllc.com/XTimers/fr/">
@@ -61,7 +74,7 @@
 <link rel="alternate" hreflang="vi" href="https://xintechllc.com/XTimers/vi/">
 <link rel="alternate" hreflang="zh-Hans" href="https://xintechllc.com/XTimers/zh-Hans/">
 <link rel="alternate" hreflang="zh-Hant" href="https://xintechllc.com/XTimers/zh-Hant/">
-<link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XTimers/flexible-timers.html">
+<link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XTimers/">
 
 
 
@@ -108,37 +121,43 @@
 
 
 
-<link href="../assets/flexible-timers/brand/favicon.png" rel="icon" type="image/png"/>
-<link href="../assets/flexible-timers/site.css" rel="stylesheet"/>
-<script data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19" defer="" src="https://cloud.umami.is/script.js"></script>
-<script>
-  window.addEventListener("click", function (event) {
-    var link = event.target.closest && event.target.closest("a[href]");
-    if (!link || !window.umami) return;
-    var href = link.getAttribute("href") || "";
-    var url = link.href || href;
-    var eventName = null;
-    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
-    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
-    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
-    else if (/support\.html/i.test(href)) eventName = "Support Click";
-    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
-    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
-    if (eventName) {
-      window.umami.track(eventName, { href: url, path: window.location.pathname });
-    }
-  });
-</script>
 </head>
 <body>
-<div class="page-shell">
-<header class="nav">
-<div class="nav-inner">
-<a aria-label="Головна сторінка XTimers" class="brand" href="index.html">
-<img alt="" class="brand-icon" height="36" src="../assets/flexible-timers/brand/app-icon.png" width="36"/>
-<span class="brand-text">XTimers<small>Mac • iPhone • iPad</small></span>
-</a>
-<div class="nav-actions"><a class="button primary" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12">Завантажити для Mac</a><details class="language-menu">
+<svg aria-hidden="true" class="svg-definitions" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<symbol id="i-clock" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></symbol>
+<symbol id="i-timer" viewbox="0 0 24 24"><circle cx="12" cy="14" r="8"></circle><path d="M12 10v4l3 2M9 2h6m-3 0v4m6 0 2 2"></path></symbol>
+<symbol id="i-countdown" viewbox="0 0 24 24"><path d="M6 3h12M6 21h12M7 3v4l5 5-5 5v4m10-18v4l-5 5 5 5v4M9 18h6"></path></symbol>
+<symbol id="i-folder" viewbox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h5l3 3h6a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7h18"></path></symbol>
+<symbol id="i-check" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></symbol>
+<symbol id="i-globe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><ellipse cx="12" cy="12" rx="4" ry="9"></ellipse><path d="M3 12h18"></path></symbol>
+<symbol id="i-calendar" viewbox="0 0 24 24"><rect height="16" rx="3" width="18" x="3" y="5"></rect><path d="M7 3v4m10-4v4M3 11h18m-14 4h3m4 0h3m-10 3h3"></path></symbol>
+<symbol id="i-chart" viewbox="0 0 24 24"><path d="M4 3v18h17M8 17v-5m5 5V7m5 10V4"></path></symbol>
+<symbol id="i-sound" viewbox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9H3m13-1a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"></path></symbol>
+<symbol id="i-mail" viewbox="0 0 24 24"><rect height="14" rx="3" width="18" x="3" y="5"></rect><path d="m3 7 9 6 9-6"></path></symbol>
+<symbol id="i-phone" viewbox="0 0 24 24"><path d="m8 3 3 5-3 3a14 14 0 0 0 5 5l3-3 5 3v3c0 2-2 3-4 2C10 19 5 14 3 7c-1-2 0-4 2-4h3Z"></path></symbol>
+<symbol id="i-sync" viewbox="0 0 24 24"><path d="M20 8a8 8 0 0 0-14-3L3 8m0-5v5h5m-4 8a8 8 0 0 0 14 3l3-3m0 5v-5h-5"></path></symbol>
+<symbol id="i-lock" viewbox="0 0 24 24"><rect height="11" rx="3" width="14" x="5" y="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"></path></symbol>
+<symbol id="i-mac" viewbox="0 0 24 24"><rect height="13" rx="2" width="18" x="3" y="3"></rect><path d="M9 21h6m-3-5v5"></path></symbol>
+<symbol id="i-mobile" viewbox="0 0 24 24"><rect height="20" rx="3" width="12" x="6" y="2"></rect><path d="M10 5h4m-3 14h2"></path></symbol>
+<symbol id="i-tablet" viewbox="0 0 24 24"><rect height="20" rx="3" width="18" x="3" y="2"></rect><path d="M10 19h4"></path></symbol>
+<symbol id="i-plus" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></symbol>
+<symbol id="i-expand" viewbox="0 0 24 24"><path d="M9 3H3v6m0-6 6 6m6 12h6v-6m0 6-6-6"></path></symbol>
+<symbol id="i-leaf" viewbox="0 0 24 24"><path d="M4 20 16 8M5 17C-1 5 13 7 20 3c2 13-4 19-12 15"></path></symbol>
+</defs>
+</svg>
+<a class="skip-link" href="#main">Перейти до вмісту</a>
+<header class="site-header">
+<nav aria-label="Основна навігація" class="navigation wrap">
+<a aria-label="Головна сторінка XTimers" class="brand" href="#top"><img alt="" height="36" src="../assets/marketing/app-icon.png" width="36"/><span>XTimers</span></a>
+<button aria-controls="nav-links" aria-expanded="false" aria-label="Відкрити навігацію" class="menu-toggle" data-close-label="Закрити навігацію" data-open-label="Відкрити навігацію" type="button"><span></span><span></span></button>
+<div class="nav-links" id="nav-links">
+<a href="#features">Функції</a>
+<a href="#devices">Ваші пристрої</a>
+<a href="#support">Запитання</a>
+<div class="header-actions">
+<a class="button button-small button-ink" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12">Завантажити для Mac</a>
+<details class="language-menu">
             <summary>🌐 · Українська</summary>
             <div class="language-menu-list" aria-label="Мова">
               <a href="../ar/" lang="ar" dir="rtl">العربية</a>
@@ -148,7 +167,7 @@
               <a href="../da/" lang="da" dir="ltr">Dansk</a>
               <a href="../de/" lang="de" dir="ltr">Deutsch</a>
               <a href="../el/" lang="el" dir="ltr">Ελληνικά</a>
-              <a href="../flexible-timers.html" lang="en" dir="ltr">English</a>
+              <a href="../" lang="en" dir="ltr">English</a>
               <a href="../es/" lang="es" dir="ltr">Español</a>
               <a href="../fi/" lang="fi" dir="ltr">Suomi</a>
               <a href="../fr/" lang="fr" dir="ltr">Français</a>
@@ -187,34 +206,640 @@
               <a href="../zh-Hans/" lang="zh-Hans" dir="ltr">简体中文</a>
               <a href="../zh-Hant/" lang="zh-Hant" dir="ltr">繁體中文</a>
             </div>
-          </details></div>
+          </details>
 </div>
+</div>
+</nav>
 </header>
-<main id="top">
-<section aria-labelledby="hero-title" class="hero"><div><h1 id="hero-title">XTimers</h1><p class="hero-lede">Таймери, зворотний відлік, годинники, звіти, звуки та нагадування облікового запису для Mac, iPhone і iPad. Раніше — Flexible Timers.</p></div><div aria-label="Знімки екрана XTimers" class="hero-visual"><div class="device-stage"><div class="desktop-card"><div aria-hidden="true" class="window-bar"><span class="traffic"></span><span class="traffic"></span><span class="traffic"></span><span class="window-title">XTimers для Mac</span></div><figure class="shot"><img alt="Головне вікно таймерів XTimers на macOS у світлому режимі" height="1125" loading="eager" src="../assets/flexible-timers/macos/1-single-light.png" width="1800"/></figure></div><div aria-label="Знімок екрана XTimers на iPhone" class="phone-card"><figure class="shot"><img alt="Список таймерів XTimers на iPhone у світлому режимі" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-1-timers-light.png" width="736"/></figure></div><div aria-label="Знімок екрана XTimers на iPad" class="tablet-card"><figure class="shot"><img alt="Список таймерів XTimers на iPad у світлому режимі" height="1600" loading="eager" src="../assets/flexible-timers/ios/ipad-13-1-timers-light.png" width="1200"/></figure></div></div></div></section>
-<section aria-label="Функції гнучких таймерів" class="section" id="features"><div class="feature-grid"><article class="feature-card"><h3>Гнучкі типи завдань</h3><p>Таймери, зворотні відліки до часу завершення, світові годинники та завдання-нагадування облікового запису.</p></article><article class="feature-card"><h3>Набори завдань</h3><p>Розділяйте роботу, готування, навчання, подорожі та повторювані справи.</p></article><article class="feature-card"><h3>Звіти та архіви</h3><p>Переглядайте знімки, додавайте примітки та надсилайте звіти на електронну адресу свого облікового запису.</p></article><article class="feature-card"><h3>Звуки та сповіщення</h3><p>Використовуйте пакетні звуки, спеціальні звуки, звукові сигнали та локальні сповіщення.</p></article></div></section>
-<section aria-label="Платформи XTimers" class="section platform-section"><article class="platform" id="mac"><div class="platform-copy"><h2>Створено для зосередженої роботи з таймерами на Mac.</h2><p>Таймери SwiftUI із наборами завдань, звітами, синхронізацією, спеціальними звуками та статусом панелі меню.</p><div class="platform-list"><div class="platform-item"><span class="check">✓</span><span>Одинарне або розгорнуте компонування таймера.</span></div><div class="platform-item"><span class="check">✓</span><span>Статус панелі меню для активного таймера.</span></div><div class="platform-item"><span class="check">✓</span><span>Таймери, зворотні відліки, годинники та завдання-нагадування.</span></div><div class="platform-item"><span class="check">✓</span><span>Синхронізація, архіви, звіти та власні звуки.</span></div></div></div><div class="shot-stack"><figure class="shot"><img alt="Розгорнуте двоколонкове вікно таймерів XTimers на macOS" height="1125" loading="eager" src="../assets/flexible-timers/macos/3-double-light.png" width="1800"/></figure><div class="shot-row"><figure class="shot"><img alt="Форма додавання таймера XTimers на macOS у світлому режимі" height="1125" loading="eager" src="../assets/flexible-timers/macos/5-addtimer-light.png" width="1800"/></figure><figure class="shot"><img alt="Форма додавання зворотного відліку XTimers на macOS у світлому режимі" height="1125" loading="eager" src="../assets/flexible-timers/macos/7-addcountdown-light.png" width="1800"/></figure></div></div></article><article class="platform reverse" id="ios"><div class="phone-showcase"><div class="phone-screen"><figure class="shot"><img alt="Знімок екрана XTimers на iPhone" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-1-timers-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="Знімок екрана XTimers на iPhone" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-4-add-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="Знімок екрана XTimers на iPhone" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-6-settings-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="Знімок екрана XTimers на iPhone" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-7-report-light.png" width="736"/></figure></div></div><div class="platform-copy"><h2>Така сама система таймерів на iPhone і iPad.</h2><p>Таймери, годинники, звіти, налаштування, синхронізація, сповіщення та звуки на iPhone й iPad.</p><div class="platform-list"><div class="platform-item"><span class="check">✓</span><span>Список на iPhone і сітка на iPad.</span></div><div class="platform-item"><span class="check">✓</span><span>Створюйте таймери, зворотний відлік, годинники та нагадування.</span></div><div class="platform-item"><span class="check">✓</span><span>Звіти, налаштування, звуки та синхронізація.</span></div></div></div></article></section>
-<section aria-labelledby="sync-title" class="section" id="sync"><div class="account-panel"><div><h2 id="sync-title">Вхід за допомогою Xin Account. Дані XTimers залишаються окремими.</h2><p>XTimers використовує ваш Xin Account для спільного входу, а ваші таймери, звіти, налаштування, звуки та параметри SMS зберігає окремо як дані продукту XTimers. <a href="privacy.html#xin-account">Дізнайтеся, як працюють рівні облікового запису.</a></p></div><div class="account-list"><div class="account-row"><strong>Вхід на різних пристроях</strong><span>Ваш Xin Account ідентифікує вас і авторизує кожен підключений обліковий запис XTimers.</span></div><div class="account-row"><strong>Синхронізувати дані XTimers</strong><span>Набори завдань, архіви, налаштування та звуки пов’язані з підключеним обліковим записом XTimers.</span></div><div class="account-row"><strong>Окремі налаштування конфіденційності</strong><span>Вихід, видалення локальних копій, видалення даних XTimers і видалення глобального Xin Account є окремими діями.</span></div></div></div></section>
-</main>
-<footer><div>© 2017-2026 Xintech LLC.</div><div class="footer-links"><a href="support.html">Підтримка</a><a href="privacy.html">Конфіденційність</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a><a href="sms-terms.html">Умови SMS</a><a href="sms-opt-in.html">Згода на SMS</a></div></footer>
+<main id="main">
+<section aria-labelledby="hero-heading" class="hero wrap" id="top">
+<div class="hero-copy hero-hoefler">
+<div class="hero-copy-inner">
+<p class="eyebrow">Для Mac, iPhone та iPad</p>
+<h1 aria-label="Прямий відлік. Зворотний відлік. Світові годинники. Світовий календар." class="hero-timing-heading" id="hero-heading"><span class="hero-line">Прямий відлік.</span> <span class="hero-line">Зворотний відлік.</span> <span class="hero-line">Світові годинники.</span> <span class="hero-line">Світовий календар.</span></h1>
+<p class="hero-payoff">Гнучкість. Ваші налаштування.</p>
+<p class="hero-description">Об’єднайте таймери, зворотний відлік і світові годинники в одному робочому просторі. Додайте багаторазові сценарії звичних справ, нагадування та звіти й налаштуйте компонування та вигляд на свій смак.</p>
+<p class="hero-note"><svg aria-hidden="true" class="icon"><use href="#i-check"></use></svg>Основні таймери працюють офлайн. Обліковий запис не потрібен.</p>
 </div>
-<script>
-      // ft-language-menu-dismiss: close the language dropdown when clicking
-      // outside it or pressing Escape. A native <details> otherwise only closes
-      // on a second click of its <summary>.
-      (function () {
-        function closeAll() {
-          document.querySelectorAll('details.language-menu[open]')
-            .forEach(function (d) { d.removeAttribute('open'); });
-        }
-        document.addEventListener('click', function (e) {
-          document.querySelectorAll('details.language-menu[open]')
-            .forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute('open'); });
-        });
-        document.addEventListener('keydown', function (e) {
-          if (e.key === 'Escape' || e.key === 'Esc') closeAll();
-        });
-      })();
-    </script>
+</div>
+<div class="hero-stage">
+<div class="floating-label"><span class="pulse-dot"></span>Знайдіть час для важливого.</div>
+<button aria-label="Збільшити: знімок «Studio» у встановленій програмі для Mac" class="image-button hero-mac" data-caption="Робочий простір «Studio» у встановленій програмі для Mac із демонстраційними таймерами, зворотним відліком і світовими годинниками." data-zoom="../assets/marketing/mac-dark.png" type="button">
+<img alt="Робочий простір «Studio» у встановленій програмі XTimers із демонстраційними таймерами «Design», «Research», «Writing», «Reading» і «Planning», «Focus sprint» та трьома світовими годинниками на темно-синьому тлі" fetchpriority="high" height="796" src="../assets/marketing/mac-dark.png" width="1240"/>
+</button>
+<button aria-label="Збільшити: компактний таймер «Design» із прихованими елементами керування" class="image-button hero-mini" data-caption="Компактний таймер «Design» у встановленій програмі для Mac із демонстраційними даними та прихованими елементами керування." data-zoom="../assets/marketing/mac-timer-minimal-hidden.png" type="button">
+<img alt="Таймер «Design» у компактному темно-синьому вікні мінімального режиму після зникнення елементів керування" fetchpriority="high" height="480" src="../assets/marketing/mac-timer-minimal-hidden.png" width="1240"/>
+</button>
+<button aria-label="Збільшити: Світовий календар у головному блоці" class="image-button hero-calendar" data-caption="Світовий календар — Жовтень 2026 року у встановленій програмі для Mac: державні свята, дати китайського календаря та подробиці Національного свята Китаю." data-zoom="../assets/marketing/mac-world-calendar-month.png" type="button">
+<img alt="Місячна сітка Світового календаря та подробиці свят у світлому вікні Mac" decoding="async" height="1440" src="../assets/marketing/mac-world-calendar-month.png" width="2040"/>
+</button>
+<button aria-label="Збільшити: бібліотека звуків у головному блоці" class="image-button hero-sounds" data-caption="Бібліотека звуків — Церемоніальні звуки світу у встановленій програмі для Mac із вбудованими формами хвиль, улюбленими та елементами керування відтворенням." data-zoom="../assets/marketing/mac-sound-ceremonial.png" type="button">
+<img alt="Колекція «Церемоніальні звуки світу» в бібліотеці звуків із формами хвиль дзвонів, передзвонів, барабана й труби" decoding="async" height="1120" src="../assets/marketing/mac-sound-ceremonial.png" width="1440"/>
+</button>
+<button aria-label="Збільшити: «Planning» із фотографією Доломітових Альп у головному блоці" class="image-button hero-photo" data-caption="Вигляд на ваш смак: «Planning» із показником 20:04 на тлі фотографії Доломітових Альп; елементи керування у встановленій програмі для Mac автоматично приховано." data-zoom="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" type="button">
+<img alt="«Planning» із показником 20:04 на тлі фотографії гір у мінімальному режимі" decoding="async" height="468" src="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" width="658"/>
+</button>
+<button aria-label="Збільшити: діаграми тижневого звіту в головному блоці" class="image-button hero-report" data-caption="Ваш тиждень у фокусі — 30 демонстраційних годин на п’ять завдань із підсумками за днями та діаграмами часток завдань у встановленій програмі для Mac." data-zoom="../assets/marketing/mac-report-week-daily-totals.png" type="button">
+<img alt="Тижневий звіт про час із кольоровими накопичувальними підсумками за днями та діаграмою частки кожного завдання в 30 демонстраційних годинах" decoding="async" height="2396" src="../assets/marketing/mac-report-week-daily-totals.png" width="1520"/>
+</button>
+<div class="hero-menubar">
+<button aria-label="Збільшити: стан «Planning» у рядку меню в головному блоці" class="image-button" data-caption="Ваш таймер у рядку меню — «Planning», призупинений на 20:04, видно поруч зі значками стану macOS без відкривання головного вікна." data-zoom="../assets/marketing/mac-menubar-status-planning.png" type="button">
+<img alt="Рядок меню macOS з індикатором паузи та «Planning 20:04» поруч із системними значками стану" decoding="async" height="60" src="../assets/marketing/mac-menubar-status-planning.png" width="572"/>
+</button>
+<a href="#menu-bar">Ваш таймер — просто в рядку меню.</a>
+</div>
+<span class="stage-caption">Ваш час. Одним поглядом.</span>
+</div>
+</section>
+<section aria-label="Переглянути функції XTimers" class="feature-overview wrap" id="features">
+<details class="feature-browser">
+<summary>Переглянути всі 20 функцій <span aria-hidden="true">+</span></summary>
+<nav aria-label="Усі 20 функцій за категоріями" class="feature-index">
+<div class="feature-group">
+<h3><a class="feature-category" href="#timers"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timers.png" width="16"/>Відлік часу<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#timers"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timers.png" width="16"/><span>Таймери й зворотний відлік</span></a></li>
+<li><a href="#reminders"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/reminders.png" width="16"/><span>Нагадування електронною поштою, SMS і дзвінками</span></a></li>
+<li><a href="#sound-library"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/sound-library.png" width="16"/><span>Бібліотека звуків</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#task-sets"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/task-sets.png" width="16"/>Звичні справи<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#task-sets"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/task-sets.png" width="16"/><span>Набори завдань і багаторазові шаблони</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#timer-views"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timer-views.png" width="16"/>Режими перегляду<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#timer-views"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timer-views.png" width="16"/><span>Гнучкі режими перегляду таймерів</span></a></li>
+<li><a href="#classic-interface"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/classic-interface.png" width="16"/><span>Класичний інтерфейс</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#world-calendar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-clocks.png" width="16"/>Час у світі<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#world-clocks"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-clocks.png" width="16"/><span>Світові годинники</span></a></li>
+<li><a href="#world-calendar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-calendar.png" width="16"/><span>Світовий календар</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#time-reports"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/time-reports.png" width="16"/>Звіти<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#time-reports"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/time-reports.png" width="16"/><span>Звіти про час і поширення</span></a></li>
+<li><a href="#archives"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/archives.png" width="16"/><span>Архіви</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#appearance"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/appearance.png" width="16"/>Вигляд<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#appearance"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/appearance.png" width="16"/><span>Налаштування вигляду</span></a></li>
+<li><a href="#languages"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/languages.png" width="16"/><span>Підтримка різних мов</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#menu-bar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/menu-bar.png" width="16"/>Ваші пристрої<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#menu-bar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/menu-bar.png" width="16"/><span>Інтеграція з рядком меню та робочим столом</span></a></li>
+<li><a href="#live-activities"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/live-activities.png" width="16"/><span>Дії наживо</span></a></li>
+<li><a href="#siri-shortcuts"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/siri-shortcuts.png" width="16"/><span>Siri та Швидкі команди</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#offline"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/protected-sync.png" width="16"/>Синхронізація та приватність<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#offline"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/offline.png" width="16"/><span>Робота офлайн без облікового запису</span></a></li>
+<li><a href="#synchronization"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/synchronization.png" width="16"/><span>Синхронізація між пристроями</span></a></li>
+<li><a href="#protected-sync"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/protected-sync.png" width="16"/><span>Захищена синхронізація</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#activity-tracking"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/xhelpers-pro.png" width="16"/>Більше на Mac<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#activity-tracking"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/activity-tracking.png" width="16"/><span>Автоматичний облік часу в програмах</span></a></li>
+<li><a href="#xhelpers-pro"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/xhelpers-pro.png" width="16"/><span>Пропозиція XHelpers Pro</span></a></li>
+</ul>
+</div>
+</nav>
+</details>
+</section>
+<section aria-labelledby="timers-heading" class="highlight-row has-gallery" data-highlight="01" id="timers">
+<span class="anchor-target" id="count-up-timers"></span><span class="anchor-target" id="countdowns"></span><span class="anchor-target" id="running-timers"></span><span class="anchor-target" id="task-controls"></span><span class="anchor-target" id="notes-history"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">01</span>Таймери й зворотний відлік</p>
+<h2 id="timers-heading">Знайдіть час для важливого.</h2>
+<p>Вимірюйте витрачений час, відлічуйте заданий проміжок у зворотному напрямку або стежте за наближенням терміну. Запускайте одне чи кілька завдань, призупиняйте й поновлюйте їх та зберігайте нотатки до сеансів. Таймери підлаштовуються до змін у вашому дні.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Зображення: Таймери й зворотний відлік" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Ваш робочий простір із таймерами</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Ваш робочий простір із таймерами" class="image-button capture-image" data-caption="Ваш робочий простір із таймерами — Робочий простір «Studio» об’єднує п’ять таймерів прямого відліку, зворотний відлік «Focus sprint» і три світові годинники." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="Робочий простір «Studio» об’єднує п’ять таймерів прямого відліку, зворотний відлік «Focus sprint» і три світові годинники." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>Робочий простір «Studio» об’єднує п’ять таймерів прямого відліку, зворотний відлік «Focus sprint» і три світові годинники.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Ваш власний зворотний відлік</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Ваш власний зворотний відлік" class="image-button capture-image" data-caption="Ваш власний зворотний відлік — «Focus sprint»: 25-хвилинний зворотний відлік у «Studio» з можливістю паузи, ручним запуском і звуком «Gentle Bell» після завершення." data-zoom="../assets/marketing/mac-countdown.png" type="button"><img alt="«Focus sprint»: 25-хвилинний зворотний відлік у «Studio» з можливістю паузи, ручним запуском і звуком «Gentle Bell» після завершення." decoding="async" loading="lazy" src="../assets/marketing/mac-countdown.png"/></button>
+<figcaption>«Focus sprint»: 25-хвилинний зворотний відлік у «Studio» з можливістю паузи, ручним запуском і звуком «Gentle Bell» після завершення.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="task-sets-heading" class="highlight-row" data-highlight="02" id="task-sets">
+<span class="anchor-target" id="routines"></span><span class="anchor-target" id="templates"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">02</span>Набори завдань і багаторазові шаблони</p>
+<h2 id="task-sets-heading">Місце для кожної звичної справи.</h2>
+<p>Створіть окремі названі набори завдань для роботи, навчання та повсякденних справ. Збережіть завдання або весь набір як шаблон і перенесіть звичний порядок дій у наступний сеанс.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Зображення: Набори завдань і багаторазові шаблони" class="feature-gallery gallery-1">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Набори завдань</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Набори завдань" class="image-button capture-image" data-caption="Набори завдань — Набір завдань «Studio» з дев’ятьма активними завданнями та багаторазовим шаблоном «Studio Template»." data-zoom="../assets/marketing/mac-task-sets.png" type="button"><img alt="Набір завдань «Studio» з дев’ятьма активними завданнями та багаторазовим шаблоном «Studio Template»." decoding="async" loading="lazy" src="../assets/marketing/mac-task-sets.png"/></button>
+<figcaption>Набір завдань «Studio» з дев’ятьма активними завданнями та багаторазовим шаблоном «Studio Template».</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="timer-views-heading" class="highlight-row has-gallery" data-highlight="03" id="timer-views">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">03</span>Гнучкі режими перегляду таймерів</p>
+<h2 id="timer-views-heading">Потрібний вигляд саме зараз.</h2>
+<p>Бачте всю картину або зосередьтеся на одному завданні. Mac пропонує режими «Список», «Сітка», «Одне завдання» та «Мінімальний». На iPhone й iPad вибирайте «Список», «Фокус» або «Одне завдання» відповідно до потреби.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">У режимах одного завдання та мінімального вигляду елементи керування зникають, коли вказівник виходить за межі, і знову з’являються під час наведення.</p>
+</div>
+<div aria-label="Зображення: Гнучкі режими перегляду таймерів" class="feature-gallery gallery-14">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Список</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Mac · Список" class="image-button capture-image" data-caption="Mac · Список — «Studio» у режимі списку: дев’ять завдань у компактних рядках." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="«Studio» у режимі списку: дев’ять завдань у компактних рядках." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>«Studio» у режимі списку: дев’ять завдань у компактних рядках.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Сітка</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Mac · Сітка" class="image-button capture-image" data-caption="Mac · Сітка — Таймери «Design», «Research», «Writing», «Reading» і «Planning» у «Studio», «Focus sprint» та годинники Нью-Йорка, Лондона й Токіо." data-zoom="../assets/marketing/mac-grid-light.png" type="button"><img alt="Таймери «Design», «Research», «Writing», «Reading» і «Planning» у «Studio», «Focus sprint» та годинники Нью-Йорка, Лондона й Токіо." decoding="async" loading="lazy" src="../assets/marketing/mac-grid-light.png"/></button>
+<figcaption>Таймери «Design», «Research», «Writing», «Reading» і «Planning» у «Studio», «Focus sprint» та годинники Нью-Йорка, Лондона й Токіо.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Одне завдання, елементи керування видно · Суцільний чорний</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Mac · Одне завдання, елементи керування видно · Суцільний чорний" class="image-button capture-image" data-caption="Mac · Одне завдання, елементи керування видно · Суцільний чорний — «Planning» із показником 20:04 у режимі одного завдання встановленої програми для Mac; елементи керування видно, тло — суцільний чорний колір." data-zoom="../assets/marketing/mac-planning-single-black.png" type="button"><img alt="«Planning» із показником 20:04 у режимі одного завдання встановленої програми для Mac; елементи керування видно, тло — суцільний чорний колір." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-black.png"/></button>
+<figcaption>«Planning» із показником 20:04 у режимі одного завдання встановленої програми для Mac; елементи керування видно, тло — суцільний чорний колір.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Мінімальний режим, елементи керування видно · Суцільний чорний</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Mac · Мінімальний режим, елементи керування видно · Суцільний чорний" class="image-button capture-image" data-caption="Mac · Мінімальний режим, елементи керування видно · Суцільний чорний — «Planning» із показником 20:04 у мінімальному режимі встановленої програми для Mac; елементи керування видно, тло — суцільний чорний колір." data-zoom="../assets/marketing/mac-planning-minimal-black.png" type="button"><img alt="«Planning» із показником 20:04 у мінімальному режимі встановленої програми для Mac; елементи керування видно, тло — суцільний чорний колір." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-black.png"/></button>
+<figcaption>«Planning» із показником 20:04 у мінімальному режимі встановленої програми для Mac; елементи керування видно, тло — суцільний чорний колір.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Одне завдання, елементи керування приховано · Суцільний чорний</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Mac · Одне завдання, елементи керування приховано · Суцільний чорний" class="image-button capture-image" data-caption="Mac · Одне завдання, елементи керування приховано · Суцільний чорний — «Planning» із показником 20:04 у режимі одного завдання встановленої програми для Mac; елементи керування приховано, тло — суцільний чорний колір." data-zoom="../assets/marketing/mac-planning-single-hidden-black.png" type="button"><img alt="«Planning» із показником 20:04 у режимі одного завдання встановленої програми для Mac; елементи керування приховано, тло — суцільний чорний колір." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-black.png"/></button>
+<figcaption>«Planning» із показником 20:04 у режимі одного завдання встановленої програми для Mac; елементи керування приховано, тло — суцільний чорний колір.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Мінімальний режим, елементи керування приховано · Суцільний чорний</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Mac · Мінімальний режим, елементи керування приховано · Суцільний чорний" class="image-button capture-image" data-caption="Mac · Мінімальний режим, елементи керування приховано · Суцільний чорний — «Planning» із показником 20:04 у мінімальному режимі встановленої програми для Mac; елементи керування приховано, тло — суцільний чорний колір." data-zoom="../assets/marketing/mac-planning-minimal-hidden-black.png" type="button"><img alt="«Planning» із показником 20:04 у мінімальному режимі встановленої програми для Mac; елементи керування приховано, тло — суцільний чорний колір." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-black.png"/></button>
+<figcaption>«Planning» із показником 20:04 у мінімальному режимі встановленої програми для Mac; елементи керування приховано, тло — суцільний чорний колір.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Одне завдання, елементи керування видно · Фото Йосеміті</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Mac · Одне завдання, елементи керування видно · Фото Йосеміті" class="image-button capture-image" data-caption="Mac · Одне завдання, елементи керування видно · Фото Йосеміті — «Planning» із показником 20:04 у режимі одного завдання встановленої програми для Mac; елементи керування видно, тло — фотографія Йосеміті." data-zoom="../assets/marketing/mac-planning-single-yosemite.png" type="button"><img alt="«Planning» із показником 20:04 у режимі одного завдання встановленої програми для Mac; елементи керування видно, тло — фотографія Йосеміті." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-yosemite.png"/></button>
+<figcaption>«Planning» із показником 20:04 у режимі одного завдання встановленої програми для Mac; елементи керування видно, тло — фотографія Йосеміті.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Мінімальний режим, елементи керування видно · Фото Йосеміті</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Mac · Мінімальний режим, елементи керування видно · Фото Йосеміті" class="image-button capture-image" data-caption="Mac · Мінімальний режим, елементи керування видно · Фото Йосеміті — «Planning» із показником 20:04 у мінімальному режимі встановленої програми для Mac; елементи керування видно, тло — фотографія Йосеміті." data-zoom="../assets/marketing/mac-planning-minimal-yosemite.png" type="button"><img alt="«Planning» із показником 20:04 у мінімальному режимі встановленої програми для Mac; елементи керування видно, тло — фотографія Йосеміті." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-yosemite.png"/></button>
+<figcaption>«Planning» із показником 20:04 у мінімальному режимі встановленої програми для Mac; елементи керування видно, тло — фотографія Йосеміті.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Одне завдання, елементи керування приховано · Фото Йосеміті</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Mac · Одне завдання, елементи керування приховано · Фото Йосеміті" class="image-button capture-image" data-caption="Mac · Одне завдання, елементи керування приховано · Фото Йосеміті — «Planning» із показником 20:04 у режимі одного завдання встановленої програми для Mac; елементи керування приховано, тло — фотографія Йосеміті." data-zoom="../assets/marketing/mac-planning-single-hidden-yosemite.png" type="button"><img alt="«Planning» із показником 20:04 у режимі одного завдання встановленої програми для Mac; елементи керування приховано, тло — фотографія Йосеміті." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-yosemite.png"/></button>
+<figcaption>«Planning» із показником 20:04 у режимі одного завдання встановленої програми для Mac; елементи керування приховано, тло — фотографія Йосеміті.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Мінімальний режим, елементи керування приховано · Фото Йосеміті</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Mac · Мінімальний режим, елементи керування приховано · Фото Йосеміті" class="image-button capture-image" data-caption="Mac · Мінімальний режим, елементи керування приховано · Фото Йосеміті — «Planning» із показником 20:04 у мінімальному режимі встановленої програми для Mac; елементи керування приховано, тло — фотографія Йосеміті." data-zoom="../assets/marketing/mac-planning-minimal-hidden-yosemite.png" type="button"><img alt="«Planning» із показником 20:04 у мінімальному режимі встановленої програми для Mac; елементи керування приховано, тло — фотографія Йосеміті." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-yosemite.png"/></button>
+<figcaption>«Planning» із показником 20:04 у мінімальному режимі встановленої програми для Mac; елементи керування приховано, тло — фотографія Йосеміті.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Одне завдання, елементи керування видно · Фото Доломітових Альп</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Mac · Одне завдання, елементи керування видно · Фото Доломітових Альп" class="image-button capture-image" data-caption="Mac · Одне завдання, елементи керування видно · Фото Доломітових Альп — «Planning» із показником 20:04 у режимі одного завдання встановленої програми для Mac; елементи керування видно, тло — фотографія Доломітових Альп." data-zoom="../assets/marketing/mac-planning-single-dolomites.png" type="button"><img alt="«Planning» із показником 20:04 у режимі одного завдання встановленої програми для Mac; елементи керування видно, тло — фотографія Доломітових Альп." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-dolomites.png"/></button>
+<figcaption>«Planning» із показником 20:04 у режимі одного завдання встановленої програми для Mac; елементи керування видно, тло — фотографія Доломітових Альп.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Мінімальний режим, елементи керування видно · Фото Доломітових Альп</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Mac · Мінімальний режим, елементи керування видно · Фото Доломітових Альп" class="image-button capture-image" data-caption="Mac · Мінімальний режим, елементи керування видно · Фото Доломітових Альп — «Planning» із показником 20:04 у мінімальному режимі встановленої програми для Mac; елементи керування видно, тло — фотографія Доломітових Альп." data-zoom="../assets/marketing/mac-planning-minimal-dolomites.png" type="button"><img alt="«Planning» із показником 20:04 у мінімальному режимі встановленої програми для Mac; елементи керування видно, тло — фотографія Доломітових Альп." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-dolomites.png"/></button>
+<figcaption>«Planning» із показником 20:04 у мінімальному режимі встановленої програми для Mac; елементи керування видно, тло — фотографія Доломітових Альп.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Одне завдання, елементи керування приховано · Фото Доломітових Альп</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Mac · Одне завдання, елементи керування приховано · Фото Доломітових Альп" class="image-button capture-image" data-caption="Mac · Одне завдання, елементи керування приховано · Фото Доломітових Альп — «Planning» із показником 20:04 у режимі одного завдання встановленої програми для Mac; елементи керування приховано, тло — фотографія Доломітових Альп." data-zoom="../assets/marketing/mac-planning-single-hidden-dolomites.png" type="button"><img alt="«Planning» із показником 20:04 у режимі одного завдання встановленої програми для Mac; елементи керування приховано, тло — фотографія Доломітових Альп." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-dolomites.png"/></button>
+<figcaption>«Planning» із показником 20:04 у режимі одного завдання встановленої програми для Mac; елементи керування приховано, тло — фотографія Доломітових Альп.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Мінімальний режим, елементи керування приховано · Фото Доломітових Альп</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Mac · Мінімальний режим, елементи керування приховано · Фото Доломітових Альп" class="image-button capture-image" data-caption="Mac · Мінімальний режим, елементи керування приховано · Фото Доломітових Альп — «Planning» із показником 20:04 у мінімальному режимі встановленої програми для Mac; елементи керування приховано, тло — фотографія Доломітових Альп." data-zoom="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" type="button"><img alt="«Planning» із показником 20:04 у мінімальному режимі встановленої програми для Mac; елементи керування приховано, тло — фотографія Доломітових Альп." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-dolomites.png"/></button>
+<figcaption>«Planning» із показником 20:04 у мінімальному режимі встановленої програми для Mac; елементи керування приховано, тло — фотографія Доломітових Альп.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="world-clocks-heading" class="highlight-row has-gallery" data-highlight="04" id="world-clocks">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">04</span>Світові годинники</p>
+<h2 id="world-clocks-heading">Важливі місця — завжди поруч.</h2>
+<p>Додайте важливі для вас міста й часові пояси. Бачте поточний місцевий час поруч із таймерами, щоб враховувати час колег і рідних та планувати подорожі.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Зображення: Світові годинники" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Годинники поруч із таймерами</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Годинники поруч із таймерами" class="image-button capture-image" data-caption="Годинники поруч із таймерами — Годинники Нью-Йорка, Лондона й Токіо поряд із таймерами «Studio» у синьому робочому просторі з режимом сітки." data-zoom="../assets/marketing/mac-grid-dark.png" type="button"><img alt="Годинники Нью-Йорка, Лондона й Токіо поряд із таймерами «Studio» у синьому робочому просторі з режимом сітки." decoding="async" loading="lazy" src="../assets/marketing/mac-grid-dark.png"/></button>
+<figcaption>Годинники Нью-Йорка, Лондона й Токіо поряд із таймерами «Studio» у синьому робочому просторі з режимом сітки.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Виберіть місце</h3><span class="capture-status status-real">Встановлена програма для Mac · приклад налаштування</span></div>
+<button aria-label="Збільшити: Виберіть місце" class="image-button capture-image" data-caption="Виберіть місце — Нью-Йорк у редакторі годинників встановленої програми для Mac: карта, місцевий час і зміщення UTC−04:00." data-zoom="../assets/marketing/mac-clock-editor.png" type="button"><img alt="Нью-Йорк у редакторі годинників встановленої програми для Mac: карта, місцевий час і зміщення UTC−04:00." decoding="async" loading="lazy" src="../assets/marketing/mac-clock-editor.png"/></button>
+<figcaption>Нью-Йорк у редакторі годинників встановленої програми для Mac: карта, місцевий час і зміщення UTC−04:00.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="world-calendar-heading" class="highlight-row has-gallery" data-highlight="05" id="world-calendar">
+<span class="anchor-target" id="regional-holidays"></span><span class="anchor-target" id="world-events"></span><span class="anchor-target" id="apple-calendar"></span><span class="anchor-target" id="calendar-actions"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">05</span>Світовий календар</p>
+<h2 id="world-calendar-heading">Погляньте на день у ширшому контексті.</h2>
+<p>Досліджуйте свята, культурні дати, світові події та миті історії. Додайте свої календарі Apple лише для перегляду, а потім перетворіть дату чи подію на зворотний відлік або особисте нагадування.</p>
+<span class="platform-pill">Mac</span>
+<p class="feature-note">Завантажте каталог один раз, щоб переглядати його офлайн. Доступ до ваших календарів Apple необов’язковий і надається лише для читання.</p>
+</div>
+<div aria-label="Зображення: Світовий календар" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Місяць одним поглядом</h3><span class="capture-status status-real">Встановлена програма для Mac · приклад налаштування</span></div>
+<button aria-label="Збільшити: Місяць одним поглядом" class="image-button capture-image" data-caption="Місяць одним поглядом — Жовтень 2026 року з профілем свят материкового Китаю, датами китайського календаря та подробицями Національного свята Китаю." data-zoom="../assets/marketing/mac-world-calendar-month.png" type="button"><img alt="Жовтень 2026 року з профілем свят материкового Китаю, датами китайського календаря та подробицями Національного свята Китаю." decoding="async" loading="lazy" src="../assets/marketing/mac-world-calendar-month.png"/></button>
+<figcaption>Жовтень 2026 року з профілем свят материкового Китаю, датами китайського календаря та подробицями Національного свята Китаю.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Тижневий вигляд і подробиці дати</h3><span class="capture-status status-real">Встановлена програма для Mac · приклад налаштування</span></div>
+<button aria-label="Збільшити: Тижневий вигляд і подробиці дати" class="image-button capture-image" data-caption="Тижневий вигляд і подробиці дати — 27 вересня — 3 жовтня; вибрано 1 жовтня, а подробиці Національного свята Китаю показано поруч із тижнем." data-zoom="../assets/marketing/mac-world-calendar-week.png" type="button"><img alt="27 вересня — 3 жовтня; вибрано 1 жовтня, а подробиці Національного свята Китаю показано поруч із тижнем." decoding="async" loading="lazy" src="../assets/marketing/mac-world-calendar-week.png"/></button>
+<figcaption>27 вересня — 3 жовтня; вибрано 1 жовтня, а подробиці Національного свята Китаю показано поруч із тижнем.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="reminders-heading" class="highlight-row copy-only" data-highlight="06" id="reminders">
+<span class="anchor-target" id="email-sms"></span><span class="anchor-target" id="call-me"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">06</span>Нагадування електронною поштою, SMS і дзвінками</p>
+<h2 id="reminders-heading">Нагадування вашими словами.</h2>
+<p>Заплануйте повідомлення собі через певний проміжок часу або на визначену дату й час. Виберіть електронну пошту, SMS чи разовий дзвінок за дотримання умов і переглядайте стан доставки поруч із завданнями.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Залежить від облікового запису та доступності сервісу. Для SMS і дзвінків потрібні ваш власний підтверджений номер, що відповідає вимогам, та окрема згода. Дзвінки підтримують номери США й Канади, здійснюються англійською та не повторюються автоматично.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="sound-library-heading" class="highlight-row has-gallery" data-highlight="07" id="sound-library">
+<span class="anchor-target" id="sounds"></span><span class="anchor-target" id="interval-beeps"></span><span class="anchor-target" id="completion-alerts"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">07</span>Бібліотека звуків</p>
+<h2 id="sound-library-heading">Знайдіть звук для завершення.</h2>
+<p>Перегляньте 66 вбудованих звуків, прослухайте їх перед вибором і збережіть улюблені. Імпортуйте власне аудіо або ввімкніть періодичні сигнали, щоб відчувати плин часу під час сеансу.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Зображення: Бібліотека звуків" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Звуки для вашого дня</h3><span class="capture-status status-real">Встановлена програма для Mac · приклад налаштування</span></div>
+<button aria-label="Збільшити: Звуки для вашого дня" class="image-button capture-image" data-caption="Звуки для вашого дня — Бібліотека звуків у встановленій програмі для Mac із «Classic Tones», формами хвиль, улюбленими та елементами керування відтворенням." data-zoom="../assets/marketing/mac-sound-library.png" type="button"><img alt="Бібліотека звуків у встановленій програмі для Mac із «Classic Tones», формами хвиль, улюбленими та елементами керування відтворенням." decoding="async" loading="lazy" src="../assets/marketing/mac-sound-library.png"/></button>
+<figcaption>Бібліотека звуків у встановленій програмі для Mac із «Classic Tones», формами хвиль, улюбленими та елементами керування відтворенням.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Церемоніальні звуки світу</h3><span class="capture-status status-real">Встановлена програма для Mac · приклад налаштування</span></div>
+<button aria-label="Збільшити: Церемоніальні звуки світу" class="image-button capture-image" data-caption="Церемоніальні звуки світу — Церемоніальні звуки світу: від «Gentle Bell» і «Bright Chime» до «Ceremonial Drum» та «Trumpet Salute»." data-zoom="../assets/marketing/mac-sound-ceremonial.png" type="button"><img alt="Церемоніальні звуки світу: від «Gentle Bell» і «Bright Chime» до «Ceremonial Drum» та «Trumpet Salute»." decoding="async" loading="lazy" src="../assets/marketing/mac-sound-ceremonial.png"/></button>
+<figcaption>Церемоніальні звуки світу: від «Gentle Bell» і «Bright Chime» до «Ceremonial Drum» та «Trumpet Salute».</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="time-reports-heading" class="highlight-row has-gallery" data-highlight="08" id="time-reports">
+<span class="anchor-target" id="report-charts"></span><span class="anchor-target" id="report-exports"></span><span class="anchor-target" id="report-sharing"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">08</span>Звіти про час і поширення</p>
+<h2 id="time-reports-heading">Дізнайтеся, куди йде ваш час.</h2>
+<p>Переглядайте сеанси, підсумки за днями або поточні показники. Досліджуйте діаграми, порівнюйте періоди та фільтруйте за завданням чи набором. Збережіть CSV, HTML або PDF, надішліть звіт собі електронною поштою чи поділіться посиланням з обмеженим строком дії.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Локальні звіти та експорт працюють офлайн. Для електронної пошти й поширення онлайн потрібне з’єднання.</p>
+</div>
+<div aria-label="Зображення: Звіти про час і поширення" class="feature-gallery gallery-4 report-gallery">
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>Підсумки за днями · Тиждень одним поглядом</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційна історія</span></div>
+<button aria-label="Збільшити: Підсумки за днями · Тиждень одним поглядом" class="image-button capture-image" data-caption="Підсумки за днями · Тиждень одним поглядом — 21–25 вересня 2026 року: 30 годин на п’ять прикладів завдань із підсумками за днями й часткою кожного завдання. На «Design» припадає 12 год 05 хв (40,3%)." data-zoom="../assets/marketing/mac-report-week-daily-totals.png" type="button"><img alt="21–25 вересня 2026 року: 30 годин на п’ять прикладів завдань із підсумками за днями й часткою кожного завдання. На «Design» припадає 12 год 05 хв (40,3%)." decoding="async" loading="lazy" src="../assets/marketing/mac-report-week-daily-totals.png"/></button>
+<figcaption>21–25 вересня 2026 року: 30 годин на п’ять прикладів завдань із підсумками за днями й часткою кожного завдання. На «Design» припадає 12 год 05 хв (40,3%).</figcaption>
+</figure>
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>Сеанси · Коли тривала робота</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційна історія</span></div>
+<button aria-label="Збільшити: Сеанси · Коли тривала робота" class="image-button capture-image" data-caption="Сеанси · Коли тривала робота — Приклад тижня з 29 сеансами загальною тривалістю 30 годин. Часова шкала показує, коли тривала робота протягом 21–25 вересня 2026 року." data-zoom="../assets/marketing/mac-report-week-sessions.png" type="button"><img alt="Приклад тижня з 29 сеансами загальною тривалістю 30 годин. Часова шкала показує, коли тривала робота протягом 21–25 вересня 2026 року." decoding="async" loading="lazy" src="../assets/marketing/mac-report-week-sessions.png"/></button>
+<figcaption>Приклад тижня з 29 сеансами загальною тривалістю 30 годин. Часова шкала показує, коли тривала робота протягом 21–25 вересня 2026 року.</figcaption>
+</figure>
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>Сеанси · Один день докладно</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційна історія</span></div>
+<button aria-label="Збільшити: Сеанси · Один день докладно" class="image-button capture-image" data-caption="Сеанси · Один день докладно — Шість демонстраційних сеансів за 24 вересня 2026 року загальною тривалістю 6 год 15 хв: часова шкала дня та час початку й завершення кожного сеансу." data-zoom="../assets/marketing/mac-report-day-sessions.png" type="button"><img alt="Шість демонстраційних сеансів за 24 вересня 2026 року загальною тривалістю 6 год 15 хв: часова шкала дня та час початку й завершення кожного сеансу." decoding="async" loading="lazy" src="../assets/marketing/mac-report-day-sessions.png"/></button>
+<figcaption>Шість демонстраційних сеансів за 24 вересня 2026 року загальною тривалістю 6 год 15 хв: часова шкала дня та час початку й завершення кожного сеансу.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Поточні показники</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Поточні показники" class="image-button capture-image" data-caption="Поточні показники — Поточні показники робочого простору «Studio» з елементами керування для копіювання, експорту та поширення." data-zoom="../assets/marketing/mac-report-current-readings.png" type="button"><img alt="Поточні показники робочого простору «Studio» з елементами керування для копіювання, експорту та поширення." decoding="async" loading="lazy" src="../assets/marketing/mac-report-current-readings.png"/></button>
+<figcaption>Поточні показники робочого простору «Studio» з елементами керування для копіювання, експорту та поширення.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="archives-heading" class="highlight-row" data-highlight="09" id="archives">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">09</span>Архіви</p>
+<h2 id="archives-heading">Зберігайте завершену роботу.</h2>
+<p>Архівуйте набір завдань, щоб його історія завжди була під рукою. Шукайте минулу роботу, переглядайте збережені знімки стану й відкривайте звіт, коли хочете повернутися до проєкту чи звичних справ.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Зображення: Архіви" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Збережений звіт про проєкт</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Збережений звіт про проєкт" class="image-button capture-image" data-caption="Збережений звіт про проєкт — «Brand workshop» збережено в архіві, а демонстраційні показники таймерів — у звіті." data-zoom="../assets/marketing/mac-archive-report.png" type="button"><img alt="«Brand workshop» збережено в архіві, а демонстраційні показники таймерів — у звіті." decoding="async" loading="lazy" src="../assets/marketing/mac-archive-report.png"/></button>
+<figcaption>«Brand workshop» збережено в архіві, а демонстраційні показники таймерів — у звіті.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="appearance-heading" class="highlight-row has-gallery" data-highlight="10" id="appearance">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">10</span>Налаштування вигляду</p>
+<h2 id="appearance-heading">Зробіть цей простір своїм.</h2>
+<p>Виберіть світлий або темний вигляд, суцільний колір чи фотографію. Створіть бібліотеку тла з власних зображень і зробіть робочий простір стриманим або барвистим. На Mac фотографії з папки також можуть змінюватися автоматично.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Налаштовуйте пристрій, яким користуєтеся, зокрема окремі параметри вигляду лише для Mac.</p>
+</div>
+<div aria-label="Зображення: Налаштування вигляду" class="feature-gallery gallery-4">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Суцільне тло · біле</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Суцільне тло · біле" class="image-button capture-image" data-caption="Суцільне тло · біле — Таймер «Design» у режимі одного завдання на простому білому тлі." data-zoom="../assets/marketing/mac-single-light.png" type="button"><img alt="Таймер «Design» у режимі одного завдання на простому білому тлі." decoding="async" loading="lazy" src="../assets/marketing/mac-single-light.png"/></button>
+<figcaption>Таймер «Design» у режимі одного завдання на простому білому тлі.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Суцільний колір · темно-синій</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Суцільний колір · темно-синій" class="image-button capture-image" data-caption="Суцільний колір · темно-синій — Той самий таймер «Design» на суцільному темно-синьому тлі." data-zoom="../assets/marketing/mac-timer-single.png" type="button"><img alt="Той самий таймер «Design» на суцільному темно-синьому тлі." decoding="async" loading="lazy" src="../assets/marketing/mac-timer-single.png"/></button>
+<figcaption>Той самий таймер «Design» на суцільному темно-синьому тлі.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Фотографія на тлі</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Фотографія на тлі" class="image-button capture-image" data-caption="Фотографія на тлі — Таймер «Design» на тлі фотографії Доломітових Альп із комплекту XTimers." data-zoom="../assets/marketing/mac-single-photo.png" type="button"><img alt="Таймер «Design» на тлі фотографії Доломітових Альп із комплекту XTimers." decoding="async" loading="lazy" src="../assets/marketing/mac-single-photo.png"/></button>
+<figcaption>Таймер «Design» на тлі фотографії Доломітових Альп із комплекту XTimers.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Виберіть фотографію</h3><span class="capture-status status-real">Встановлена програма для Mac · приклад налаштування</span></div>
+<button aria-label="Збільшити: Виберіть фотографію" class="image-button capture-image" data-caption="Виберіть фотографію — Вибір тла у встановленій програмі для Mac: вбудовані фотографії, серед яких вибрано Йосеміті." data-zoom="../assets/marketing/mac-background-library.png" type="button"><img alt="Вибір тла у встановленій програмі для Mac: вбудовані фотографії, серед яких вибрано Йосеміті." decoding="async" loading="lazy" src="../assets/marketing/mac-background-library.png"/></button>
+<figcaption>Вибір тла у встановленій програмі для Mac: вбудовані фотографії, серед яких вибрано Йосеміті.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="menu-bar-heading" class="highlight-row has-gallery" data-highlight="11" id="menu-bar">
+<span class="anchor-target" id="devices"></span><span class="anchor-target" id="mac-shortcuts"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">11</span>Інтеграція з рядком меню та робочим столом</p>
+<h2 id="menu-bar-heading">Тримайте час поруч із роботою.</h2>
+<p>Бачте назву завдання та показник таймера просто в рядку меню Mac, не відкриваючи головне вікно. Натисніть, щоб швидко запускати й призупиняти завдання, перемикати набори та відкривати звіти. Глобальне клавіатурне скорочення й вікна поверх інших тримають керування під рукою.</p>
+<span class="platform-pill">Mac</span>
+</div>
+<div aria-label="Зображення: Інтеграція з рядком меню та робочим столом" class="feature-gallery gallery-3 menu-bar-gallery">
+<figure class="capture-card capture-status-strip">
+<div class="capture-heading"><h3>Ваш таймер одним поглядом</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Ваш таймер одним поглядом" class="image-button capture-image" data-caption="Ваш таймер одним поглядом — «Planning», призупинений на 20:04, видно просто в рядку меню Mac, поки ви працюєте в іншій програмі." data-zoom="../assets/marketing/mac-menubar-status-planning.png" type="button"><img alt="«Planning», призупинений на 20:04, видно просто в рядку меню Mac поруч із системними значками стану" decoding="async" height="60" loading="lazy" src="../assets/marketing/mac-menubar-status-planning.png" width="572"/></button>
+<figcaption>Назва завдання, показник і індикатор паузи залишаються видимими в рядку меню. Натисніть елемент стану, щоб відкрити керування таймером.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Робочий простір у рядку меню</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Робочий простір у рядку меню" class="image-button capture-image" data-caption="Робочий простір у рядку меню — Таймер «Design» та інші таймери «Studio», набори завдань, звіти й елементи керування вікнами в рядку меню Mac." data-zoom="../assets/marketing/mac-menu-bar.png" type="button"><img alt="Таймер «Design» та інші таймери «Studio», набори завдань, звіти й елементи керування вікнами в рядку меню Mac." decoding="async" loading="lazy" src="../assets/marketing/mac-menu-bar.png"/></button>
+<figcaption>Таймер «Design» та інші таймери «Studio», набори завдань, звіти й елементи керування вікнами в рядку меню Mac.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Компактне вікно таймера</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Компактне вікно таймера" class="image-button capture-image" data-caption="Компактне вікно таймера — Таймер «Design» із «Studio» в компактному вікні мінімального режиму." data-zoom="../assets/marketing/mac-timer-minimal.png" type="button"><img alt="Таймер «Design» із «Studio» в компактному вікні мінімального режиму." decoding="async" loading="lazy" src="../assets/marketing/mac-timer-minimal.png"/></button>
+<figcaption>Таймер «Design» із «Studio» в компактному вікні мінімального режиму.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="live-activities-heading" class="highlight-row has-gallery" data-highlight="12" id="live-activities">
+<span class="anchor-target" id="mobile"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">12</span>Дії наживо</p>
+<h2 id="live-activities-heading">Ваш час — одним поглядом.</h2>
+<p>Залишайте підтримуваний таймер видимим на замкненому екрані iPhone або в Dynamic Island. Переглядайте завдання та його показник, призупиняйте й поновлюйте підтримувані таймери, не відкриваючи весь робочий простір.</p>
+<span class="platform-pill">iPhone</span>
+<p class="feature-note">Потрібні підтримуваний пристрій і системний дозвіл. Світові годинники не створюють Дій наживо.</p>
+</div>
+<div aria-label="Зображення: Дії наживо" class="feature-gallery gallery-2">
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>На замкненому екрані</h3><span class="capture-status status-real">iPhone · знімок екрана програми</span></div>
+<button aria-label="Збільшити: На замкненому екрані" class="image-button capture-image" data-caption="На замкненому екрані — Дія наживо зі зворотним відліком на замкненому екрані iPhone: назва завдання, залишок часу та кнопка паузи." data-zoom="../assets/marketing/ios-live-activity-lockscreen.png" type="button"><img alt="Дія наживо зі зворотним відліком на замкненому екрані iPhone: назва завдання, залишок часу та кнопка паузи." decoding="async" height="2868" loading="lazy" src="../assets/marketing/ios-live-activity-lockscreen.png" width="1320"/></button>
+<figcaption>Дія наживо зі зворотним відліком на замкненому екрані iPhone: назва завдання, залишок часу та кнопка паузи.</figcaption>
+</figure>
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>У Dynamic Island</h3><span class="capture-status status-real">iPhone · знімок екрана програми</span></div>
+<button aria-label="Збільшити: У Dynamic Island" class="image-button capture-image" data-caption="У Dynamic Island — Компактний зворотний відлік залишається видимим у Dynamic Island, поки на iPhone відкрито початковий екран." data-zoom="../assets/marketing/ios-live-activity-island.png" type="button"><img alt="Компактний зворотний відлік залишається видимим у Dynamic Island, поки на iPhone відкрито початковий екран." decoding="async" height="2868" loading="lazy" src="../assets/marketing/ios-live-activity-island.png" width="1320"/></button>
+<figcaption>Компактний зворотний відлік залишається видимим у Dynamic Island, поки на iPhone відкрито початковий екран.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="siri-shortcuts-heading" class="highlight-row has-gallery" data-highlight="13" id="siri-shortcuts">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">13</span>Siri та Швидкі команди</p>
+<h2 id="siri-shortcuts-heading">Почніть словом або дотиком.</h2>
+<p>Запускайте, призупиняйте або перемикайте підтримуваний таймер за допомогою Siri та Швидких команд. Додайте системні елементи керування, щоб запускати новий секундомір або призупиняти й поновлювати поточне завдання.</p>
+<span class="platform-pill">iPhone · iPad</span>
+<p class="feature-note">Окремі системні елементи керування відкривають XTimers. Елементи керування Діями наживо можуть діяти на місці.</p>
+</div>
+<div aria-label="Зображення: Siri та Швидкі команди" class="feature-gallery gallery-1">
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>Ваші швидкі команди XTimers</h3><span class="capture-status status-real">iPhone · знімок екрана програми</span></div>
+<button aria-label="Збільшити: Ваші швидкі команди XTimers" class="image-button capture-image" data-caption="Ваші швидкі команди XTimers — Дії «Toggle Timer», «Start» і «Pause» у вбудованій програмі «Швидкі команди»." data-zoom="../assets/marketing/ios-siri-shortcuts.png" type="button"><img alt="Дії «Toggle Timer», «Start» і «Pause» у вбудованій програмі «Швидкі команди»." decoding="async" height="2622" loading="lazy" src="../assets/marketing/ios-siri-shortcuts.png" width="1206"/></button>
+<figcaption>Дії «Toggle Timer», «Start» і «Pause» у вбудованій програмі «Швидкі команди».</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="offline-heading" class="highlight-row" data-highlight="14" id="offline">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">14</span>Робота офлайн без облікового запису</p>
+<h2 id="offline-heading">Почніть без входу в обліковий запис.</h2>
+<p>Користуйтеся основними таймерами, зворотним відліком, наборами завдань, нотатками, світовими годинниками та локальними звітами на своєму пристрої. Продовжуйте офлайн і додайте обліковий запис, коли знадобляться мережеві функції.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Зображення: Робота офлайн без облікового запису" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Ваш локальний робочий простір «Studio»</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Ваш локальний робочий простір «Studio»" class="image-button capture-image" data-caption="Ваш локальний робочий простір «Studio» — Робочий простір «Studio» у програмі для Mac без входу в обліковий запис: демонстраційні локальні таймери та світові годинники." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="Робочий простір «Studio» у програмі для Mac без входу в обліковий запис: демонстраційні локальні таймери та світові годинники." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>Робочий простір «Studio» у програмі для Mac без входу в обліковий запис: демонстраційні локальні таймери та світові годинники.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="synchronization-heading" class="highlight-row" data-highlight="15" id="synchronization">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">15</span>Синхронізація між пристроями</p>
+<h2 id="synchronization-heading">Продовжуйте у звичному робочому просторі.</h2>
+<p>Синхронізуйте підтримувані завдання, історію, шаблони, налаштування та власні матеріали між Mac, iPhone й iPad. Локальна робота залишається доступною навіть під час тимчасових проблем зі з’єднанням.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Увійдіть через Apple, Google, код з електронного листа або пароль. Деякі налаштування пристрою та суто локальні дані залишаються на своєму пристрої.</p>
+</div>
+<div aria-label="Зображення: Синхронізація між пристроями" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>На Mac</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: На Mac" class="image-button capture-image" data-caption="На Mac — Демонстраційні таймери й годинники «Studio» у встановленій програмі для Mac." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="Демонстраційні таймери й годинники «Studio» у встановленій програмі для Mac." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>Демонстраційні таймери й годинники «Studio» у встановленій програмі для Mac.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="protected-sync-heading" class="highlight-row copy-only" data-highlight="16" id="protected-sync">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">16</span>Захищена синхронізація</p>
+<h2 id="protected-sync-heading">Виберіть захист перед передаванням.</h2>
+<p>Шифруйте новий вміст таймерів і власні завантажувані матеріали на пристрої перед <a href="privacy.html#xin-account">синхронізацією облікового запису</a>. Відновлюйте ключ через iCloud Keychain або збережений код відновлення.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Необов’язкова функція для підтримуваних облікових записів. Не охоплює повідомлення-нагадування, метадані облікового запису й синхронізації, вміст, створений до активації, та локальне сховище пристрою.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="languages-heading" class="highlight-row has-gallery" data-highlight="17" id="languages">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">17</span>Підтримка різних мов</p>
+<h2 id="languages-heading">Затишно рідною мовою.</h2>
+<p>Вибирайте з 45 мовних варіантів: дотримуйтеся налаштувань пристрою або задайте бажану мову. Регіональні формати дат, часу й чисел, а також компонування справа наліво роблять робочий простір звичним.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Зображення: Підтримка різних мов" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Англійська</h3><span class="capture-status status-real">Встановлена програма для Mac · приклад налаштування</span></div>
+<button aria-label="Збільшити: Mac · Англійська" class="image-button capture-image" data-caption="Mac · Англійська — Загальні налаштування англійською у світлому вигляді, зняті у встановленій програмі для Mac." data-zoom="../assets/marketing/mac-settings-english.png" type="button"><img alt="Загальні налаштування англійською у світлому вигляді, зняті у встановленій програмі для Mac." decoding="async" loading="lazy" src="../assets/marketing/mac-settings-english.png"/></button>
+<figcaption>Загальні налаштування англійською у світлому вигляді, зняті у встановленій програмі для Mac.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Японська</h3><span class="capture-status status-real">Встановлена програма для Mac · приклад налаштування</span></div>
+<button aria-label="Збільшити: Mac · Японська" class="image-button capture-image" data-caption="Mac · Японська — Той самий екран загальних налаштувань японською у світлому вигляді." data-zoom="../assets/marketing/mac-settings-japanese.png" type="button"><img alt="Той самий екран загальних налаштувань японською у світлому вигляді." decoding="async" loading="lazy" src="../assets/marketing/mac-settings-japanese.png"/></button>
+<figcaption>Той самий екран загальних налаштувань японською у світлому вигляді.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="activity-tracking-heading" class="highlight-row" data-highlight="18" id="activity-tracking">
+<span class="anchor-target" id="extras"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">18</span>Автоматичний облік часу в програмах</p>
+<h2 id="activity-tracking-heading">Дізнайтеся, скільки часу йде на програми.</h2>
+<p>За бажанням увімкніть облік часу в програмах на передньому плані Mac. Переглядайте активність за день, тиждень, місяць або рік і вибирайте спосіб урахування часу відсутності.</p>
+<span class="platform-pill">Mac · окремі профілі</span>
+<p class="feature-note">Доступно для локальних і застарілих профілів; приховано для облікових записів із локально-орієнтованою синхронізацією. Дані про програми та час бездіяльності залишаються на цьому Mac. Вебсайти, історія переглядів і заголовки вікон не записуються.</p>
+</div>
+<div aria-label="Зображення: Автоматичний облік часу в програмах" class="feature-gallery gallery-1">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Налаштування обліку активності</h3><span class="capture-status status-real">Встановлена програма для Mac · налаштування</span></div>
+<button aria-label="Збільшити: Налаштування обліку активності" class="image-button capture-image" data-caption="Налаштування обліку активності — Вбудовані елементи керування у стандартній версії XTimers: період звіту, прокручування до активного завдання та час відсутності. У цьому налаштуванні облік вимкнено." data-zoom="../assets/marketing/mac-activity-tracking-settings.png" type="button"><img alt="Вбудовані елементи керування у стандартній версії XTimers: період звіту, прокручування до активного завдання та час відсутності. У цьому налаштуванні облік вимкнено." decoding="async" loading="lazy" src="../assets/marketing/mac-activity-tracking-settings.png"/></button>
+<figcaption>Вбудовані елементи керування у стандартній версії XTimers: період звіту, прокручування до активного завдання та час відсутності. У цьому налаштуванні облік вимкнено.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="classic-interface-heading" class="highlight-row has-gallery" data-highlight="19" id="classic-interface">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">19</span>Класичний інтерфейс</p>
+<h2 id="classic-interface-heading">Ще один спосіб знайти час.</h2>
+<p>Виберіть локальний інтерфейс таймерів лише англійською з окремим робочим простором. Перемикайте інтерфейси в XTimers і працюйте у звичному для себе вигляді.</p>
+<span class="platform-pill">Mac · лише локально</span>
+<p class="feature-note">Потрібне класичне середовище виконання з комплекту. Синхронізація облікового запису й надсилання електронної пошти та SMS доступні в основному інтерфейсі XTimers.</p>
+</div>
+<div aria-label="Зображення: Класичний інтерфейс" class="feature-gallery gallery-2">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Класичний · два стовпці</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Класичний · два стовпці" class="image-button capture-image" data-caption="Класичний · два стовпці — Розширений класичний набір звичних справ із 20 названими завданнями для творчої роботи, навчання та повсякденного життя." data-zoom="../assets/marketing/classic-two-column.png" type="button"><img alt="Розширений класичний набір звичних справ із 20 названими завданнями для творчої роботи, навчання та повсякденного життя." decoding="async" loading="lazy" src="../assets/marketing/classic-two-column.png"/></button>
+<figcaption>Розширений класичний набір звичних справ із 20 названими завданнями для творчої роботи, навчання та повсякденного життя.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Класичний · один стовпець</h3><span class="capture-status status-real">Встановлена програма для Mac · демонстраційні дані</span></div>
+<button aria-label="Збільшити: Класичний · один стовпець" class="image-button capture-image" data-caption="Класичний · один стовпець — Компактний класичний робочий простір із п’ятьма завданнями: «Design», «Research», «Writing», «Reading» і «Planning»." data-zoom="../assets/marketing/classic-one-column.png" type="button"><img alt="Компактний класичний робочий простір із п’ятьма завданнями: «Design», «Research», «Writing», «Reading» і «Planning»." decoding="async" loading="lazy" src="../assets/marketing/classic-one-column.png"/></button>
+<figcaption>Компактний класичний робочий простір із п’ятьма завданнями: «Design», «Research», «Writing», «Reading» і «Planning».</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="xhelpers-pro-heading" class="highlight-row" data-highlight="20" id="xhelpers-pro">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">20</span>Пропозиція XHelpers Pro</p>
+<h2 id="xhelpers-pro-heading">Помічник для вашого Mac.</h2>
+<p>Познайомтеся з XHelpers Pro — окремою утилітою для Mac, що надає швидкий доступ до повсякденних елементів керування. Користувачі XTimers можуть відкрити сторінку акційної ліцензійної пропозиції, щоб переглянути чинні умови та відомості про активацію.</p>
+<span class="platform-pill">Mac · окрема програма</span>
+<a class="text-link" href="https://xintechllc.com/XHelpersPro/" rel="noopener noreferrer" target="_blank">Переглянути пропозицію XHelpers Pro</a>
+</div>
+<div aria-label="Зображення: Пропозиція XHelpers Pro" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Пропозиція XHelpers Pro у комплекті</h3><span class="capture-status status-real">Встановлена програма для Mac · приклад налаштування</span></div>
+<button aria-label="Збільшити: Пропозиція XHelpers Pro у комплекті" class="image-button capture-image" data-caption="Пропозиція XHelpers Pro у комплекті — Екран «Про програму» у встановленій XTimers показує пропозицію XHelpers Pro з комплекту." data-zoom="../assets/marketing/mac-xhelpers-benefit.png" type="button"><img alt="Екран «Про програму» у встановленій XTimers показує пропозицію XHelpers Pro з комплекту." decoding="async" loading="lazy" src="../assets/marketing/mac-xhelpers-benefit.png"/></button>
+<figcaption>Екран «Про програму» у встановленій XTimers показує пропозицію XHelpers Pro з комплекту.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="download-heading" class="download-section" id="download">
+<div class="wrap download-inner">
+<div class="download-copy"><img alt="" height="64" loading="lazy" src="../assets/marketing/app-icon.png" width="64"/><h2 id="download-heading">Знайдіть трохи часу<br/>для <em>себе.</em></h2><p>Таймер для завдань. Простір для звичних справ.</p></div>
+<div class="download-choices">
+<a class="download-choice" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" class="icon"><use href="#i-mac"></use></svg><span><strong>XTimers для Mac</strong><small>Переглянути в Mac App Store</small></span></a>
+<a class="download-choice" href="#mobile"><svg aria-hidden="true" class="icon"><use href="#i-mobile"></use></svg><span><strong>XTimers для iPhone та iPad</strong><small>Ознайомитися з мобільною версією</small></span></a>
+<p class="download-note">Mac, iPhone та iPad. Кожен має своє місце у вашому дні.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="faq-heading" class="section faq-section wrap" id="support">
+<div class="section-copy"><p class="eyebrow">Кілька корисних відповідей</p><h2 id="faq-heading">Перш ніж<br/>знайти час.</h2><p>Маєте інші запитання?</p><a class="text-link" href="support.html" rel="noopener noreferrer" target="_blank">Перейти до підтримки</a></div>
+<div class="faq-list">
+<details><summary>Чи потрібен обліковий запис?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Для основних локальних таймерів, зворотного відліку, світових годинників і локальних звітів обліковий запис не потрібен. Увійдіть, коли захочете скористатися синхронізацією або нагадуваннями через обліковий запис.</p><p class="feature-note">XTimers використовує Xin Account для ідентифікації та автентифікації користувача. Xin Account є спільним рівнем ідентифікації для XTimers та будь-яких інших підключених продуктів, зазначених у засобах керування обліковим записом; це не обліковий запис продукту XTimers і він не містить таймерів XTimers, звітів, звуків або даних SMS.</p></details>
+<details><summary>Чи можна використовувати XTimers офлайн?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Основний відлік часу та локальні звіти працюють офлайн. Для синхронізації, поширення онлайн і серверних нагадувань потрібне з’єднання. Світовий календар на Mac спочатку потребує завантаження каталогу; після встановлення каталог доступний офлайн.</p></details>
+<details><summary>Чи можуть працювати кілька таймерів одночасно?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Так. Виберіть, чи перехід до іншого завдання призупинятиме попередній підтримуваний таймер, чи дозволятиме йому працювати далі. Набори завдань допомагають упорядкувати різні заняття.</p></details>
+<details><summary>Чи однакові функції на всіх пристроях?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Основний робочий простір містить таймери, зворотний відлік, годинники, набори завдань і звіти. На Mac також є керування з рядка меню та Світовий календар. iPhone підтримує Дії наживо на сумісних пристроях, а iPad надає більше місця для розміщення завдань.</p></details>
+<details><summary>Як працюють телефонні нагадування?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Нагадування надходять на ваш власний підтверджений номер, що відповідає вимогам, за окремою згодою на SMS або дзвінки. Доступність залежить від облікового запису, регіону й сервісу. Запланований дзвінок потребує підтвердження сервера; «Call Me» працює англійською та не повторює дзвінки автоматично.</p></details>
+</div>
+</section>
+</main>
+<footer class="site-footer wrap">
+<p class="footer-copy"><small>© 2026 Xintech LLC</small><span>Знайдіть час для того, що важливе саме вам.</span></p>
+<div class="footer-links"><a href="#features">Функції</a><a href="#devices">Ваші пристрої</a><a href="support.html" rel="noopener noreferrer" target="_blank">Підтримка</a><a href="privacy.html" rel="noopener noreferrer" target="_blank">Конфіденційність</a><a href="sms-terms.html" rel="noopener noreferrer" target="_blank">Умови обміну повідомленнями</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener noreferrer" target="_blank">Ліцензія</a><a href="terms.html">Умови</a><a href="privacy-choices.html">Вибір щодо конфіденційності</a><a href="sms-opt-in.html">Згода на SMS</a></div>
+</footer>
+<dialog aria-labelledby="image-dialog-caption" class="image-dialog" id="image-dialog">
+<button aria-label="Зменшити й закрити знімок екрана" class="image-dialog-zoom-out" type="button">
+<img alt="" id="image-dialog-img"/>
+</button>
+<p id="image-dialog-caption"></p>
+</dialog>
 </body>
 </html>

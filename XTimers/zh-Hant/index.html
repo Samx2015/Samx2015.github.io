@@ -4,18 +4,31 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>XTimers — Mac、iPhone 與 iPad</title>
-<meta content="XTimers 是適用於 Mac、iPhone 與 iPad 的 Apple 原生計時工作區，支援計時器、倒數、時鐘、任務集、報告、自訂聲音與帳號提醒。" name="description"/>
 <meta content="#fbfaf7" name="theme-color"/>
-<meta content="XTimers" property="og:title"/>
-<meta content="適用於 Mac、iPhone 和 iPad 的計時器、倒數、時鐘、報告、聲音和帳戶提醒。" property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="https://xintechllc.com/XTimers/assets/flexible-timers/macos/1-single-light.png" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="XTimers" name="twitter:title"/>
-<meta content="Timers, countdowns, clocks, reports, sounds, and account reminders for Mac, iPhone, and iPad." name="twitter:description"/>
-<meta content="https://xintechllc.com/XTimers/assets/flexible-timers/macos/1-single-light.png" name="twitter:image"/>
-<link rel="canonical" href="https://xintechllc.com/XTimers/zh-Hant/">
+<meta content="正向計時。倒數計時。世界時鐘。世界行事曆。 靈活隨心。自由自訂。 將計時器、日常流程、提醒與報告匯集在同一個工作區。" name="description"/>
+<title>XTimers — 正向計時。倒數計時。世界時鐘。世界行事曆。</title>
+<link href="../assets/marketing/app-icon.png" rel="icon"/>
+<link href="../assets/marketing/styles.css" rel="stylesheet"/>
+<link href="../assets/marketing/site-style.css" rel="stylesheet"/>
+<script defer="" src="../assets/marketing/site.js"></script>
+<script data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19" defer="" src="https://cloud.umami.is/script.js"></script><script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script> <link rel="canonical" href="https://xintechllc.com/XTimers/zh-Hant/">
 <link rel="alternate" hreflang="ar" href="https://xintechllc.com/XTimers/ar/">
 <link rel="alternate" hreflang="bn" href="https://xintechllc.com/XTimers/bn/">
 <link rel="alternate" hreflang="ca" href="https://xintechllc.com/XTimers/ca/">
@@ -23,7 +36,7 @@
 <link rel="alternate" hreflang="da" href="https://xintechllc.com/XTimers/da/">
 <link rel="alternate" hreflang="de" href="https://xintechllc.com/XTimers/de/">
 <link rel="alternate" hreflang="el" href="https://xintechllc.com/XTimers/el/">
-<link rel="alternate" hreflang="en" href="https://xintechllc.com/XTimers/flexible-timers.html">
+<link rel="alternate" hreflang="en" href="https://xintechllc.com/XTimers/">
 <link rel="alternate" hreflang="es" href="https://xintechllc.com/XTimers/es/">
 <link rel="alternate" hreflang="fi" href="https://xintechllc.com/XTimers/fi/">
 <link rel="alternate" hreflang="fr" href="https://xintechllc.com/XTimers/fr/">
@@ -61,7 +74,7 @@
 <link rel="alternate" hreflang="vi" href="https://xintechllc.com/XTimers/vi/">
 <link rel="alternate" hreflang="zh-Hans" href="https://xintechllc.com/XTimers/zh-Hans/">
 <link rel="alternate" hreflang="zh-Hant" href="https://xintechllc.com/XTimers/zh-Hant/">
-<link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XTimers/flexible-timers.html">
+<link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XTimers/">
 
 
 
@@ -108,37 +121,43 @@
 
 
 
-<link href="../assets/flexible-timers/brand/favicon.png" rel="icon" type="image/png"/>
-<link href="../assets/flexible-timers/site.css" rel="stylesheet"/>
-<script data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19" defer="" src="https://cloud.umami.is/script.js"></script>
-<script>
-  window.addEventListener("click", function (event) {
-    var link = event.target.closest && event.target.closest("a[href]");
-    if (!link || !window.umami) return;
-    var href = link.getAttribute("href") || "";
-    var url = link.href || href;
-    var eventName = null;
-    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
-    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
-    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
-    else if (/support\.html/i.test(href)) eventName = "Support Click";
-    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
-    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
-    if (eventName) {
-      window.umami.track(eventName, { href: url, path: window.location.pathname });
-    }
-  });
-</script>
 </head>
 <body>
-<div class="page-shell">
-<header class="nav">
-<div class="nav-inner">
-<a aria-label="XTimers 首頁" class="brand" href="index.html">
-<img alt="" class="brand-icon" height="36" src="../assets/flexible-timers/brand/app-icon.png" width="36"/>
-<span class="brand-text">XTimers<small>Mac • iPhone • iPad</small></span>
-</a>
-<div class="nav-actions"><a class="button primary" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12">下載 Mac 版</a><details class="language-menu">
+<svg aria-hidden="true" class="svg-definitions" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<symbol id="i-clock" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></symbol>
+<symbol id="i-timer" viewbox="0 0 24 24"><circle cx="12" cy="14" r="8"></circle><path d="M12 10v4l3 2M9 2h6m-3 0v4m6 0 2 2"></path></symbol>
+<symbol id="i-countdown" viewbox="0 0 24 24"><path d="M6 3h12M6 21h12M7 3v4l5 5-5 5v4m10-18v4l-5 5 5 5v4M9 18h6"></path></symbol>
+<symbol id="i-folder" viewbox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h5l3 3h6a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7h18"></path></symbol>
+<symbol id="i-check" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></symbol>
+<symbol id="i-globe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><ellipse cx="12" cy="12" rx="4" ry="9"></ellipse><path d="M3 12h18"></path></symbol>
+<symbol id="i-calendar" viewbox="0 0 24 24"><rect height="16" rx="3" width="18" x="3" y="5"></rect><path d="M7 3v4m10-4v4M3 11h18m-14 4h3m4 0h3m-10 3h3"></path></symbol>
+<symbol id="i-chart" viewbox="0 0 24 24"><path d="M4 3v18h17M8 17v-5m5 5V7m5 10V4"></path></symbol>
+<symbol id="i-sound" viewbox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9H3m13-1a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"></path></symbol>
+<symbol id="i-mail" viewbox="0 0 24 24"><rect height="14" rx="3" width="18" x="3" y="5"></rect><path d="m3 7 9 6 9-6"></path></symbol>
+<symbol id="i-phone" viewbox="0 0 24 24"><path d="m8 3 3 5-3 3a14 14 0 0 0 5 5l3-3 5 3v3c0 2-2 3-4 2C10 19 5 14 3 7c-1-2 0-4 2-4h3Z"></path></symbol>
+<symbol id="i-sync" viewbox="0 0 24 24"><path d="M20 8a8 8 0 0 0-14-3L3 8m0-5v5h5m-4 8a8 8 0 0 0 14 3l3-3m0 5v-5h-5"></path></symbol>
+<symbol id="i-lock" viewbox="0 0 24 24"><rect height="11" rx="3" width="14" x="5" y="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"></path></symbol>
+<symbol id="i-mac" viewbox="0 0 24 24"><rect height="13" rx="2" width="18" x="3" y="3"></rect><path d="M9 21h6m-3-5v5"></path></symbol>
+<symbol id="i-mobile" viewbox="0 0 24 24"><rect height="20" rx="3" width="12" x="6" y="2"></rect><path d="M10 5h4m-3 14h2"></path></symbol>
+<symbol id="i-tablet" viewbox="0 0 24 24"><rect height="20" rx="3" width="18" x="3" y="2"></rect><path d="M10 19h4"></path></symbol>
+<symbol id="i-plus" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></symbol>
+<symbol id="i-expand" viewbox="0 0 24 24"><path d="M9 3H3v6m0-6 6 6m6 12h6v-6m0 6-6-6"></path></symbol>
+<symbol id="i-leaf" viewbox="0 0 24 24"><path d="M4 20 16 8M5 17C-1 5 13 7 20 3c2 13-4 19-12 15"></path></symbol>
+</defs>
+</svg>
+<a class="skip-link" href="#main">跳至內容</a>
+<header class="site-header">
+<nav aria-label="主要導覽" class="navigation wrap">
+<a aria-label="XTimers 首頁" class="brand" href="#top"><img alt="" height="36" src="../assets/marketing/app-icon.png" width="36"/><span>XTimers</span></a>
+<button aria-controls="nav-links" aria-expanded="false" aria-label="開啟導覽" class="menu-toggle" data-close-label="關閉導覽" data-open-label="開啟導覽" type="button"><span></span><span></span></button>
+<div class="nav-links" id="nav-links">
+<a href="#features">功能</a>
+<a href="#devices">你的裝置</a>
+<a href="#support">常見問題</a>
+<div class="header-actions">
+<a class="button button-small button-ink" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12">下載 Mac 版</a>
+<details class="language-menu">
             <summary>🌐 · 繁體中文</summary>
             <div class="language-menu-list" aria-label="語言">
               <a href="../ar/" lang="ar" dir="rtl">العربية</a>
@@ -148,7 +167,7 @@
               <a href="../da/" lang="da" dir="ltr">Dansk</a>
               <a href="../de/" lang="de" dir="ltr">Deutsch</a>
               <a href="../el/" lang="el" dir="ltr">Ελληνικά</a>
-              <a href="../flexible-timers.html" lang="en" dir="ltr">English</a>
+              <a href="../" lang="en" dir="ltr">English</a>
               <a href="../es/" lang="es" dir="ltr">Español</a>
               <a href="../fi/" lang="fi" dir="ltr">Suomi</a>
               <a href="../fr/" lang="fr" dir="ltr">Français</a>
@@ -187,34 +206,640 @@
               <a href="../zh-Hans/" lang="zh-Hans" dir="ltr">简体中文</a>
               <a href="../zh-Hant/" lang="zh-Hant" dir="ltr" aria-current="page">繁體中文</a>
             </div>
-          </details></div>
+          </details>
 </div>
+</div>
+</nav>
 </header>
-<main id="top">
-<section aria-labelledby="hero-title" class="hero"><div><h1 id="hero-title">XTimers</h1><p class="hero-lede">適用於 Mac、iPhone 和 iPad 的計時器、倒數、時鐘、報告、聲音和帳戶提醒。曾用名稱：Flexible Timers。</p></div><div aria-label="XTimers App 螢幕截圖" class="hero-visual"><div class="device-stage"><div class="desktop-card"><div aria-hidden="true" class="window-bar"><span class="traffic"></span><span class="traffic"></span><span class="traffic"></span><span class="window-title">XTimers Mac 版</span></div><figure class="shot"><img alt="淺色模式下的 XTimers macOS 主計時器視窗" height="1125" loading="eager" src="../assets/flexible-timers/macos/1-single-light.png" width="1800"/></figure></div><div aria-label="XTimers iPhone 螢幕截圖" class="phone-card"><figure class="shot"><img alt="淺色模式下的 XTimers iPhone 計時器列表" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-1-timers-light.png" width="736"/></figure></div><div aria-label="XTimers iPad 螢幕截圖" class="tablet-card"><figure class="shot"><img alt="淺色模式下的 XTimers iPad 計時器列表" height="1600" loading="eager" src="../assets/flexible-timers/ios/ipad-13-1-timers-light.png" width="1200"/></figure></div></div></div></section>
-<section aria-label="彈性的計時器功能" class="section" id="features"><div class="feature-grid"><article class="feature-card"><h3>彈性的任務型別</h3><p>計時器、結束時間倒數、世界時鐘與帳號提醒任務。</p></article><article class="feature-card"><h3>任務集</h3><p>分開管理工作、烹飪、學習、旅行與可重複使用的流程。</p></article><article class="feature-card"><h3>報告與封存</h3><p>檢視快照、新增備註，並將報告傳送到帳戶電子郵件。</p></article><article class="feature-card"><h3>聲音與通知</h3><p>使用內建聲音、自訂聲音、提示音與本機通知。</p></article></div></section>
-<section aria-label="XTimers 平台" class="section platform-section"><article class="platform" id="mac"><div class="platform-copy"><h2>為 Mac 上的專注計時而打造。</h2><p>SwiftUI 計時器，支援任務集、報告、同步、自訂聲音與選單列狀態。</p><div class="platform-list"><div class="platform-item"><span class="check">✓</span><span>單一或展開的計時版面。</span></div><div class="platform-item"><span class="check">✓</span><span>選單列顯示目前計時器狀態。</span></div><div class="platform-item"><span class="check">✓</span><span>計時器、倒數、時鐘與提醒任務。</span></div><div class="platform-item"><span class="check">✓</span><span>同步、封存、報告與自訂聲音。</span></div></div></div><div class="shot-stack"><figure class="shot"><img alt="XTimers macOS 展開的雙欄計時器視窗" height="1125" loading="eager" src="../assets/flexible-timers/macos/3-double-light.png" width="1800"/></figure><div class="shot-row"><figure class="shot"><img alt="淺色模式下的 XTimers macOS 新增計時器表單" height="1125" loading="eager" src="../assets/flexible-timers/macos/5-addtimer-light.png" width="1800"/></figure><figure class="shot"><img alt="淺色模式下的 XTimers macOS 新增倒數表單" height="1125" loading="eager" src="../assets/flexible-timers/macos/7-addcountdown-light.png" width="1800"/></figure></div></div></article><article class="platform reverse" id="ios"><div class="phone-showcase"><div class="phone-screen"><figure class="shot"><img alt="XTimers iPhone 螢幕截圖" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-1-timers-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="XTimers iPhone 螢幕截圖" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-4-add-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="XTimers iPhone 螢幕截圖" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-6-settings-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="XTimers iPhone 螢幕截圖" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-7-report-light.png" width="736"/></figure></div></div><div class="platform-copy"><h2>iPhone 與 iPad 上同樣的計時系統。</h2><p>在 iPhone 與 iPad 上使用計時器、時鐘、報告、設定、同步、通知與聲音。</p><div class="platform-list"><div class="platform-item"><span class="check">✓</span><span>iPhone 列表與 iPad 網格版面。</span></div><div class="platform-item"><span class="check">✓</span><span>建立計時器、倒數、時鐘與提醒。</span></div><div class="platform-item"><span class="check">✓</span><span>報告、設定、聲音與同步。</span></div></div></div></article></section>
-<section aria-labelledby="sync-title" class="section" id="sync"><div class="account-panel"><div><h2 id="sync-title">使用 Xin Account 登入。XTimers 資料保持獨立。</h2><p>XTimers 使用您的 Xin Account 進行共用登入，同時將您的計時器、報告、設定、聲音和 SMS 選擇做為 XTimers 產品資料分開保存。 <a href="privacy.html#xin-account">瞭解帳戶各層的運作方式。</a></p></div><div class="account-list"><div class="account-row"><strong>在多部裝置上登入</strong><span>您的 Xin Account 會識別您的身分，並授權每個已連結的 XTimers 帳戶。</span></div><div class="account-row"><strong>同步 XTimers 資料</strong><span>工作集、封存、設定和聲音會隨已連結的 XTimers 帳戶同步。</span></div><div class="account-row"><strong>彼此獨立的隱私權選擇</strong><span>登出、移除本機副本、刪除 XTimers 資料和刪除全域 Xin Account 是彼此獨立的操作。</span></div></div></div></section>
-</main>
-<footer><div>© 2017-2026 Xintech LLC.</div><div class="footer-links"><a href="support.html">支援</a><a href="privacy.html">隱私</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a><a href="sms-terms.html">SMS 條款</a><a href="sms-opt-in.html">選擇接收 SMS</a></div></footer>
+<main id="main">
+<section aria-labelledby="hero-heading" class="hero wrap" id="top">
+<div class="hero-copy hero-hoefler">
+<div class="hero-copy-inner">
+<p class="eyebrow">適用於 Mac、iPhone 與 iPad</p>
+<h1 aria-label="正向計時。倒數計時。世界時鐘。世界行事曆。" class="hero-timing-heading" id="hero-heading"><span class="hero-line">正向計時。</span> <span class="hero-line">倒數計時。</span> <span class="hero-line">世界時鐘。</span> <span class="hero-line">世界行事曆。</span></h1>
+<p class="hero-payoff">靈活隨心。自由自訂。</p>
+<p class="hero-description">將計時器、倒數計時與世界時鐘匯集在同一個工作區。加入可重複使用的日常流程、提醒與報告，再依喜好調整版面與外觀。</p>
+<p class="hero-note"><svg aria-hidden="true" class="icon"><use href="#i-check"></use></svg>基本計時功能可離線使用，無須帳號。</p>
 </div>
-<script>
-      // ft-language-menu-dismiss: close the language dropdown when clicking
-      // outside it or pressing Escape. A native <details> otherwise only closes
-      // on a second click of its <summary>.
-      (function () {
-        function closeAll() {
-          document.querySelectorAll('details.language-menu[open]')
-            .forEach(function (d) { d.removeAttribute('open'); });
-        }
-        document.addEventListener('click', function (e) {
-          document.querySelectorAll('details.language-menu[open]')
-            .forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute('open'); });
-        });
-        document.addEventListener('keydown', function (e) {
-          if (e.key === 'Escape' || e.key === 'Esc') closeAll();
-        });
-      })();
-    </script>
+</div>
+<div class="hero-stage">
+<div class="floating-label"><span class="pulse-dot"></span>為重要的事，留點時間。</div>
+<button aria-label="放大：已安裝的 Mac App 中的「Studio」截圖" class="image-button hero-mac" data-caption="「Studio」工作區：已安裝的 Mac App 中的模擬計時器、倒數計時與世界時鐘。" data-zoom="../assets/marketing/mac-dark.png" type="button">
+<img alt="已安裝的 XTimers 中的「Studio」工作區，以海軍藍為背景，顯示模擬的「Design」、「Research」、「Writing」、「Reading」與「Planning」計時器、「Focus sprint」，以及三個世界時鐘" fetchpriority="high" height="796" src="../assets/marketing/mac-dark.png" width="1240"/>
+</button>
+<button aria-label="放大：隱藏控制項的小巧「Design」計時器" class="image-button hero-mini" data-caption="小巧的「Design」計時器：已安裝的 Mac App，使用模擬資料，控制項已隱藏。" data-zoom="../assets/marketing/mac-timer-minimal-hidden.png" type="button">
+<img alt="控制項淡出後，在小巧的海軍藍極簡視窗中顯示的「Design」計時器" fetchpriority="high" height="480" src="../assets/marketing/mac-timer-minimal-hidden.png" width="1240"/>
+</button>
+<button aria-label="放大：主視覺中的世界行事曆" class="image-button hero-calendar" data-caption="世界行事曆 — 已安裝的 Mac App 中的 2026 年 10 月，顯示國定假日、農曆日期與國慶節詳細資訊。" data-zoom="../assets/marketing/mac-world-calendar-month.png" type="button">
+<img alt="淺色 Mac 視窗中的世界行事曆月曆格線與假日詳細資訊" decoding="async" height="1440" src="../assets/marketing/mac-world-calendar-month.png" width="2040"/>
+</button>
+<button aria-label="放大：主視覺中的音效資料庫" class="image-button hero-sounds" data-caption="音效資料庫 — 已安裝的 Mac App 中的世界儀式之聲，提供原生波形、喜好項目與播放控制項。" data-zoom="../assets/marketing/mac-sound-ceremonial.png" type="button">
+<img alt="音效資料庫中的世界儀式之聲合集，顯示鈴、鐘、鼓與小號的波形" decoding="async" height="1120" src="../assets/marketing/mac-sound-ceremonial.png" width="1440"/>
+</button>
+<button aria-label="放大：主視覺中以多洛米蒂照片為背景的「Planning」" class="image-button hero-photo" data-caption="自己的檢視：多洛米蒂照片上方的「Planning」顯示 20:04，已安裝的 Mac App 中的控制項自然淡出。" data-zoom="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" type="button">
+<img alt="極簡檢視中的「Planning」在山景照片上方顯示 20:04" decoding="async" height="468" src="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" width="658"/>
+</button>
+<button aria-label="放大：主視覺中的每週報告圖表" class="image-button hero-report" data-caption="聚焦一週 — 已安裝的 Mac App 以每日總計與任務占比圖表，呈現五項任務共 30 小時的範例時間。" data-zoom="../assets/marketing/mac-report-week-daily-totals.png" type="button">
+<img alt="每週時間報告，以彩色堆疊圖呈現每日總計，並以圖表顯示各任務在 30 小時範例時間中的占比" decoding="async" height="2396" src="../assets/marketing/mac-report-week-daily-totals.png" width="1520"/>
+</button>
+<div class="hero-menubar">
+<button aria-label="放大：主視覺中「Planning」的選單列狀態" class="image-button" data-caption="選單列中的計時器 — 無須開啟主視窗，暫停在 20:04 的「Planning」直接顯示在 macOS 狀態圖像旁。" data-zoom="../assets/marketing/mac-menubar-status-planning.png" type="button">
+<img alt="macOS 選單列中，系統狀態圖像旁顯示暫停指示與「Planning 20:04」" decoding="async" height="60" src="../assets/marketing/mac-menubar-status-planning.png" width="572"/>
+</button>
+<a href="#menu-bar">你的計時器，就在選單列。</a>
+</div>
+<span class="stage-caption">你的時間。一目了然。</span>
+</div>
+</section>
+<section aria-label="探索 XTimers 功能" class="feature-overview wrap" id="features">
+<details class="feature-browser">
+<summary>瀏覽全部 20 項功能 <span aria-hidden="true">+</span></summary>
+<nav aria-label="依類別查看全部 20 項功能" class="feature-index">
+<div class="feature-group">
+<h3><a class="feature-category" href="#timers"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timers.png" width="16"/>計時<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#timers"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timers.png" width="16"/><span>計時器與倒數計時</span></a></li>
+<li><a href="#reminders"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/reminders.png" width="16"/><span>電子郵件、SMS 與電話提醒</span></a></li>
+<li><a href="#sound-library"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/sound-library.png" width="16"/><span>音效資料庫</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#task-sets"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/task-sets.png" width="16"/>日常流程<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#task-sets"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/task-sets.png" width="16"/><span>任務組合與可重複使用的範本</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#timer-views"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timer-views.png" width="16"/>檢視<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#timer-views"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timer-views.png" width="16"/><span>靈活的計時器檢視</span></a></li>
+<li><a href="#classic-interface"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/classic-interface.png" width="16"/><span>經典介面</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#world-calendar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-clocks.png" width="16"/>世界時間<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#world-clocks"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-clocks.png" width="16"/><span>世界時鐘</span></a></li>
+<li><a href="#world-calendar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-calendar.png" width="16"/><span>世界行事曆</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#time-reports"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/time-reports.png" width="16"/>報告<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#time-reports"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/time-reports.png" width="16"/><span>時間報告與分享</span></a></li>
+<li><a href="#archives"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/archives.png" width="16"/><span>封存</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#appearance"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/appearance.png" width="16"/>外觀<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#appearance"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/appearance.png" width="16"/><span>自訂外觀</span></a></li>
+<li><a href="#languages"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/languages.png" width="16"/><span>多語言支援</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#menu-bar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/menu-bar.png" width="16"/>你的裝置<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#menu-bar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/menu-bar.png" width="16"/><span>選單列與桌面整合</span></a></li>
+<li><a href="#live-activities"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/live-activities.png" width="16"/><span>即時動態</span></a></li>
+<li><a href="#siri-shortcuts"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/siri-shortcuts.png" width="16"/><span>Siri 與捷徑</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#offline"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/protected-sync.png" width="16"/>同步與隱私<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#offline"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/offline.png" width="16"/><span>無須帳號即可離線使用</span></a></li>
+<li><a href="#synchronization"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/synchronization.png" width="16"/><span>跨裝置同步</span></a></li>
+<li><a href="#protected-sync"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/protected-sync.png" width="16"/><span>受保護的同步</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#activity-tracking"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/xhelpers-pro.png" width="16"/>Mac 專屬功能<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#activity-tracking"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/activity-tracking.png" width="16"/><span>自動追蹤 App 使用情況</span></a></li>
+<li><a href="#xhelpers-pro"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/xhelpers-pro.png" width="16"/><span>XHelpers Pro 優惠</span></a></li>
+</ul>
+</div>
+</nav>
+</details>
+</section>
+<section aria-labelledby="timers-heading" class="highlight-row has-gallery" data-highlight="01" id="timers">
+<span class="anchor-target" id="count-up-timers"></span><span class="anchor-target" id="countdowns"></span><span class="anchor-target" id="running-timers"></span><span class="anchor-target" id="task-controls"></span><span class="anchor-target" id="notes-history"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">01</span>計時器與倒數計時</p>
+<h2 id="timers-heading">為重要的事，留點時間。</h2>
+<p>記錄已用時間、依時長倒數，或隨時掌握截止時間。執行一項或多項任務，暫停與繼續，並為計時記錄加上備註。一天中的安排不斷改變，計時器也隨之靈活調整。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="計時器與倒數計時圖片" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>你的計時工作區</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：你的計時工作區" class="image-button capture-image" data-caption="你的計時工作區 — 「Studio」工作區匯集五個正向計時器、一個「Focus sprint」倒數計時與三個世界時鐘。" data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="「Studio」工作區匯集五個正向計時器、一個「Focus sprint」倒數計時與三個世界時鐘。" decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>「Studio」工作區匯集五個正向計時器、一個「Focus sprint」倒數計時與三個世界時鐘。</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>專屬於你的倒數計時</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：專屬於你的倒數計時" class="image-button capture-image" data-caption="專屬於你的倒數計時 — 「Focus sprint」：「Studio」中可暫停的 25 分鐘倒數計時，設定為手動開始，並在結束時播放「Gentle Bell」。" data-zoom="../assets/marketing/mac-countdown.png" type="button"><img alt="「Focus sprint」：「Studio」中可暫停的 25 分鐘倒數計時，設定為手動開始，並在結束時播放「Gentle Bell」。" decoding="async" loading="lazy" src="../assets/marketing/mac-countdown.png"/></button>
+<figcaption>「Focus sprint」：「Studio」中可暫停的 25 分鐘倒數計時，設定為手動開始，並在結束時播放「Gentle Bell」。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="task-sets-heading" class="highlight-row" data-highlight="02" id="task-sets">
+<span class="anchor-target" id="routines"></span><span class="anchor-target" id="templates"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">02</span>任務組合與可重複使用的範本</p>
+<h2 id="task-sets-heading">讓每種日常流程都有自己的空間。</h2>
+<p>為工作、學習與日常生活分別建立具名的任務組合。將單項任務或整個組合儲存為範本，下次計時即可沿用熟悉的流程。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="任務組合與可重複使用的範本圖片" class="feature-gallery gallery-1">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>任務集</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：任務組合" class="image-button capture-image" data-caption="任務組合 — 「Studio」任務組合，包含九項作用中任務與可重複使用的「Studio Template」。" data-zoom="../assets/marketing/mac-task-sets.png" type="button"><img alt="「Studio」任務組合，包含九項作用中任務與可重複使用的「Studio Template」。" decoding="async" loading="lazy" src="../assets/marketing/mac-task-sets.png"/></button>
+<figcaption>「Studio」任務組合，包含九項作用中任務與可重複使用的「Studio Template」。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="timer-views-heading" class="highlight-row has-gallery" data-highlight="03" id="timer-views">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">03</span>靈活的計時器檢視</p>
+<h2 id="timer-views-heading">當下所需，恰好的檢視。</h2>
+<p>既能掌握全貌，也能專注於一項任務。Mac 提供列表、格狀、單一與極簡檢視。在 iPhone 與 iPad 上，可選擇列表、專注或單一檢視，配合當下的需要。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">在單一與極簡檢視中，指標移開後控制項會淡出，停留其上時會再次出現。</p>
+</div>
+<div aria-label="靈活的計時器檢視圖片" class="feature-gallery gallery-14">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 列表</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：Mac · 列表" class="image-button capture-image" data-caption="Mac · 列表 — 列表檢視中的「Studio」，九項任務排列成精簡的列。" data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="列表檢視中的「Studio」，九項任務排列成精簡的列。" decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>列表檢視中的「Studio」，九項任務排列成精簡的列。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 格狀</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：Mac · 格狀" class="image-button capture-image" data-caption="Mac · 格狀 — 「Studio」中的「Design」、「Research」、「Writing」、「Reading」與「Planning」計時器、「Focus sprint」，以及紐約、倫敦與東京的時鐘。" data-zoom="../assets/marketing/mac-grid-light.png" type="button"><img alt="「Studio」中的「Design」、「Research」、「Writing」、「Reading」與「Planning」計時器、「Focus sprint」，以及紐約、倫敦與東京的時鐘。" decoding="async" loading="lazy" src="../assets/marketing/mac-grid-light.png"/></button>
+<figcaption>「Studio」中的「Design」、「Research」、「Writing」、「Reading」與「Planning」計時器、「Focus sprint」，以及紐約、倫敦與東京的時鐘。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 單一，控制項顯示中 · 純黑</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：Mac · 單一，控制項顯示中 · 純黑" class="image-button capture-image" data-caption="Mac · 單一，控制項顯示中 · 純黑 — 已安裝的 Mac App 在單一檢視中顯示讀值為 20:04 的「Planning」，控制項顯示中，背景為純黑色。" data-zoom="../assets/marketing/mac-planning-single-black.png" type="button"><img alt="已安裝的 Mac App 在單一檢視中顯示讀值為 20:04 的「Planning」，控制項顯示中，背景為純黑色。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-black.png"/></button>
+<figcaption>已安裝的 Mac App 在單一檢視中顯示讀值為 20:04 的「Planning」，控制項顯示中，背景為純黑色。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 極簡，控制項顯示中 · 純黑</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：Mac · 極簡，控制項顯示中 · 純黑" class="image-button capture-image" data-caption="Mac · 極簡，控制項顯示中 · 純黑 — 已安裝的 Mac App 在極簡檢視中顯示讀值為 20:04 的「Planning」，控制項顯示中，背景為純黑色。" data-zoom="../assets/marketing/mac-planning-minimal-black.png" type="button"><img alt="已安裝的 Mac App 在極簡檢視中顯示讀值為 20:04 的「Planning」，控制項顯示中，背景為純黑色。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-black.png"/></button>
+<figcaption>已安裝的 Mac App 在極簡檢視中顯示讀值為 20:04 的「Planning」，控制項顯示中，背景為純黑色。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 單一，控制項已隱藏 · 純黑</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：Mac · 單一，控制項已隱藏 · 純黑" class="image-button capture-image" data-caption="Mac · 單一，控制項已隱藏 · 純黑 — 已安裝的 Mac App 在單一檢視中顯示讀值為 20:04 的「Planning」，控制項已隱藏，背景為純黑色。" data-zoom="../assets/marketing/mac-planning-single-hidden-black.png" type="button"><img alt="已安裝的 Mac App 在單一檢視中顯示讀值為 20:04 的「Planning」，控制項已隱藏，背景為純黑色。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-black.png"/></button>
+<figcaption>已安裝的 Mac App 在單一檢視中顯示讀值為 20:04 的「Planning」，控制項已隱藏，背景為純黑色。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 極簡，控制項已隱藏 · 純黑</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：Mac · 極簡，控制項已隱藏 · 純黑" class="image-button capture-image" data-caption="Mac · 極簡，控制項已隱藏 · 純黑 — 已安裝的 Mac App 在極簡檢視中顯示讀值為 20:04 的「Planning」，控制項已隱藏，背景為純黑色。" data-zoom="../assets/marketing/mac-planning-minimal-hidden-black.png" type="button"><img alt="已安裝的 Mac App 在極簡檢視中顯示讀值為 20:04 的「Planning」，控制項已隱藏，背景為純黑色。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-black.png"/></button>
+<figcaption>已安裝的 Mac App 在極簡檢視中顯示讀值為 20:04 的「Planning」，控制項已隱藏，背景為純黑色。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 單一，控制項顯示中 · 優勝美地照片</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：Mac · 單一，控制項顯示中 · 優勝美地照片" class="image-button capture-image" data-caption="Mac · 單一，控制項顯示中 · 優勝美地照片 — 已安裝的 Mac App 在單一檢視中顯示讀值為 20:04 的「Planning」，控制項顯示中，背景為優勝美地照片。" data-zoom="../assets/marketing/mac-planning-single-yosemite.png" type="button"><img alt="已安裝的 Mac App 在單一檢視中顯示讀值為 20:04 的「Planning」，控制項顯示中，背景為優勝美地照片。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-yosemite.png"/></button>
+<figcaption>已安裝的 Mac App 在單一檢視中顯示讀值為 20:04 的「Planning」，控制項顯示中，背景為優勝美地照片。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 極簡，控制項顯示中 · 優勝美地照片</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：Mac · 極簡，控制項顯示中 · 優勝美地照片" class="image-button capture-image" data-caption="Mac · 極簡，控制項顯示中 · 優勝美地照片 — 已安裝的 Mac App 在極簡檢視中顯示讀值為 20:04 的「Planning」，控制項顯示中，背景為優勝美地照片。" data-zoom="../assets/marketing/mac-planning-minimal-yosemite.png" type="button"><img alt="已安裝的 Mac App 在極簡檢視中顯示讀值為 20:04 的「Planning」，控制項顯示中，背景為優勝美地照片。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-yosemite.png"/></button>
+<figcaption>已安裝的 Mac App 在極簡檢視中顯示讀值為 20:04 的「Planning」，控制項顯示中，背景為優勝美地照片。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 單一，控制項已隱藏 · 優勝美地照片</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：Mac · 單一，控制項已隱藏 · 優勝美地照片" class="image-button capture-image" data-caption="Mac · 單一，控制項已隱藏 · 優勝美地照片 — 已安裝的 Mac App 在單一檢視中顯示讀值為 20:04 的「Planning」，控制項已隱藏，背景為優勝美地照片。" data-zoom="../assets/marketing/mac-planning-single-hidden-yosemite.png" type="button"><img alt="已安裝的 Mac App 在單一檢視中顯示讀值為 20:04 的「Planning」，控制項已隱藏，背景為優勝美地照片。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-yosemite.png"/></button>
+<figcaption>已安裝的 Mac App 在單一檢視中顯示讀值為 20:04 的「Planning」，控制項已隱藏，背景為優勝美地照片。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 極簡，控制項已隱藏 · 優勝美地照片</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：Mac · 極簡，控制項已隱藏 · 優勝美地照片" class="image-button capture-image" data-caption="Mac · 極簡，控制項已隱藏 · 優勝美地照片 — 已安裝的 Mac App 在極簡檢視中顯示讀值為 20:04 的「Planning」，控制項已隱藏，背景為優勝美地照片。" data-zoom="../assets/marketing/mac-planning-minimal-hidden-yosemite.png" type="button"><img alt="已安裝的 Mac App 在極簡檢視中顯示讀值為 20:04 的「Planning」，控制項已隱藏，背景為優勝美地照片。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-yosemite.png"/></button>
+<figcaption>已安裝的 Mac App 在極簡檢視中顯示讀值為 20:04 的「Planning」，控制項已隱藏，背景為優勝美地照片。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 單一，控制項顯示中 · 多洛米蒂照片</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：Mac · 單一，控制項顯示中 · 多洛米蒂照片" class="image-button capture-image" data-caption="Mac · 單一，控制項顯示中 · 多洛米蒂照片 — 已安裝的 Mac App 在單一檢視中顯示讀值為 20:04 的「Planning」，控制項顯示中，背景為多洛米蒂照片。" data-zoom="../assets/marketing/mac-planning-single-dolomites.png" type="button"><img alt="已安裝的 Mac App 在單一檢視中顯示讀值為 20:04 的「Planning」，控制項顯示中，背景為多洛米蒂照片。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-dolomites.png"/></button>
+<figcaption>已安裝的 Mac App 在單一檢視中顯示讀值為 20:04 的「Planning」，控制項顯示中，背景為多洛米蒂照片。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 極簡，控制項顯示中 · 多洛米蒂照片</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：Mac · 極簡，控制項顯示中 · 多洛米蒂照片" class="image-button capture-image" data-caption="Mac · 極簡，控制項顯示中 · 多洛米蒂照片 — 已安裝的 Mac App 在極簡檢視中顯示讀值為 20:04 的「Planning」，控制項顯示中，背景為多洛米蒂照片。" data-zoom="../assets/marketing/mac-planning-minimal-dolomites.png" type="button"><img alt="已安裝的 Mac App 在極簡檢視中顯示讀值為 20:04 的「Planning」，控制項顯示中，背景為多洛米蒂照片。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-dolomites.png"/></button>
+<figcaption>已安裝的 Mac App 在極簡檢視中顯示讀值為 20:04 的「Planning」，控制項顯示中，背景為多洛米蒂照片。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 單一，控制項已隱藏 · 多洛米蒂照片</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：Mac · 單一，控制項已隱藏 · 多洛米蒂照片" class="image-button capture-image" data-caption="Mac · 單一，控制項已隱藏 · 多洛米蒂照片 — 已安裝的 Mac App 在單一檢視中顯示讀值為 20:04 的「Planning」，控制項已隱藏，背景為多洛米蒂照片。" data-zoom="../assets/marketing/mac-planning-single-hidden-dolomites.png" type="button"><img alt="已安裝的 Mac App 在單一檢視中顯示讀值為 20:04 的「Planning」，控制項已隱藏，背景為多洛米蒂照片。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-dolomites.png"/></button>
+<figcaption>已安裝的 Mac App 在單一檢視中顯示讀值為 20:04 的「Planning」，控制項已隱藏，背景為多洛米蒂照片。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 極簡，控制項已隱藏 · 多洛米蒂照片</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：Mac · 極簡，控制項已隱藏 · 多洛米蒂照片" class="image-button capture-image" data-caption="Mac · 極簡，控制項已隱藏 · 多洛米蒂照片 — 已安裝的 Mac App 在極簡檢視中顯示讀值為 20:04 的「Planning」，控制項已隱藏，背景為多洛米蒂照片。" data-zoom="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" type="button"><img alt="已安裝的 Mac App 在極簡檢視中顯示讀值為 20:04 的「Planning」，控制項已隱藏，背景為多洛米蒂照片。" decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-dolomites.png"/></button>
+<figcaption>已安裝的 Mac App 在極簡檢視中顯示讀值為 20:04 的「Planning」，控制項已隱藏，背景為多洛米蒂照片。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="world-clocks-heading" class="highlight-row has-gallery" data-highlight="04" id="world-clocks">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">04</span>世界時鐘</p>
+<h2 id="world-clocks-heading">讓重要的地方，近在眼前。</h2>
+<p>加入對你重要的城市與時區。在計時器旁查看各地目前時間，隨時掌握同事、家人與旅遊計畫所在的時區。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="世界時鐘圖片" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>計時器旁的時鐘</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：計時器旁的時鐘" class="image-button capture-image" data-caption="計時器旁的時鐘 — 藍色格狀工作區中，紐約、倫敦與東京的時鐘和「Studio」計時器並排顯示。" data-zoom="../assets/marketing/mac-grid-dark.png" type="button"><img alt="藍色格狀工作區中，紐約、倫敦與東京的時鐘和「Studio」計時器並排顯示。" decoding="async" loading="lazy" src="../assets/marketing/mac-grid-dark.png"/></button>
+<figcaption>藍色格狀工作區中，紐約、倫敦與東京的時鐘和「Studio」計時器並排顯示。</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>選擇地點</h3><span class="capture-status status-real">已安裝的 Mac App · 範例設定</span></div>
+<button aria-label="放大：選擇地點" class="image-button capture-image" data-caption="選擇地點 — 已安裝的 Mac 時鐘編輯器中顯示紐約，包括地圖、當地時間與 UTC−04:00 時差。" data-zoom="../assets/marketing/mac-clock-editor.png" type="button"><img alt="已安裝的 Mac 時鐘編輯器中顯示紐約，包括地圖、當地時間與 UTC−04:00 時差。" decoding="async" loading="lazy" src="../assets/marketing/mac-clock-editor.png"/></button>
+<figcaption>已安裝的 Mac 時鐘編輯器中顯示紐約，包括地圖、當地時間與 UTC−04:00 時差。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="world-calendar-heading" class="highlight-row has-gallery" data-highlight="05" id="world-calendar">
+<span class="anchor-target" id="regional-holidays"></span><span class="anchor-target" id="world-events"></span><span class="anchor-target" id="apple-calendar"></span><span class="anchor-target" id="calendar-actions"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">05</span>世界行事曆</p>
+<h2 id="world-calendar-heading">讓今天，與更廣闊的世界相連。</h2>
+<p>探索假日、文化紀念日、全球活動與歷史時刻。加入 Apple 行事曆的唯讀檢視，再將日期或行程設為倒數計時或個人提醒。</p>
+<span class="platform-pill">Mac</span>
+<p class="feature-note">下載一次目錄，即可離線瀏覽。存取 Apple 行事曆是選用功能，且僅限讀取。</p>
+</div>
+<div aria-label="世界行事曆圖片" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>整月概覽</h3><span class="capture-status status-real">已安裝的 Mac App · 範例設定</span></div>
+<button aria-label="放大：整月概覽" class="image-button capture-image" data-caption="整月概覽 — 採用中國大陸假日設定檔的 2026 年 10 月，顯示農曆日期與國慶節詳細資訊。" data-zoom="../assets/marketing/mac-world-calendar-month.png" type="button"><img alt="採用中國大陸假日設定檔的 2026 年 10 月，顯示農曆日期與國慶節詳細資訊。" decoding="async" loading="lazy" src="../assets/marketing/mac-world-calendar-month.png"/></button>
+<figcaption>採用中國大陸假日設定檔的 2026 年 10 月，顯示農曆日期與國慶節詳細資訊。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>週檢視與日期詳細資訊</h3><span class="capture-status status-real">已安裝的 Mac App · 範例設定</span></div>
+<button aria-label="放大：週檢視與日期詳細資訊" class="image-button capture-image" data-caption="週檢視與日期詳細資訊 — 9 月 27 日至 10 月 3 日，選取 10 月 1 日，國慶節詳細資訊顯示在週檢視旁。" data-zoom="../assets/marketing/mac-world-calendar-week.png" type="button"><img alt="9 月 27 日至 10 月 3 日，選取 10 月 1 日，國慶節詳細資訊顯示在週檢視旁。" decoding="async" loading="lazy" src="../assets/marketing/mac-world-calendar-week.png"/></button>
+<figcaption>9 月 27 日至 10 月 3 日，選取 10 月 1 日，國慶節詳細資訊顯示在週檢視旁。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="reminders-heading" class="highlight-row copy-only" data-highlight="06" id="reminders">
+<span class="anchor-target" id="email-sms"></span><span class="anchor-target" id="call-me"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">06</span>電子郵件、SMS 與電話提醒</p>
+<h2 id="reminders-heading">用自己的話，提醒自己。</h2>
+<p>設定在一段時間後或指定日期與時間傳送訊息給自己。選擇電子郵件、SMS 或符合資格的一次性電話，並在任務旁查看傳送狀態。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">依帳號與服務供應情況而定。SMS 與電話需要使用符合資格且已驗證的本人號碼，並分別提供同意。電話支援美國與加拿大號碼，以英語提供，且不會自動重撥。</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="sound-library-heading" class="highlight-row has-gallery" data-highlight="07" id="sound-library">
+<span class="anchor-target" id="sounds"></span><span class="anchor-target" id="interval-beeps"></span><span class="anchor-target" id="completion-alerts"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">07</span>音效資料庫</p>
+<h2 id="sound-library-heading">找到適合你的結束提示音。</h2>
+<p>瀏覽內建的 66 種音效，先試聽再選擇，並將喜歡的聲音加入喜好項目。也能匯入自己的音訊，或在計時期間以間隔提示音感受時間流逝。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="音效資料庫圖片" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>陪伴日常的聲音</h3><span class="capture-status status-real">已安裝的 Mac App · 範例設定</span></div>
+<button aria-label="放大：陪伴日常的聲音" class="image-button capture-image" data-caption="陪伴日常的聲音 — 已安裝的 Mac App 音效資料庫，顯示「Classic Tones」、波形、喜好項目與播放控制項。" data-zoom="../assets/marketing/mac-sound-library.png" type="button"><img alt="已安裝的 Mac App 音效資料庫，顯示「Classic Tones」、波形、喜好項目與播放控制項。" decoding="async" loading="lazy" src="../assets/marketing/mac-sound-library.png"/></button>
+<figcaption>已安裝的 Mac App 音效資料庫，顯示「Classic Tones」、波形、喜好項目與播放控制項。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>世界儀式之聲</h3><span class="capture-status status-real">已安裝的 Mac App · 範例設定</span></div>
+<button aria-label="放大：世界儀式之聲" class="image-button capture-image" data-caption="世界儀式之聲 — 世界儀式之聲：從柔和鈴聲（「Gentle Bell」）與明亮鐘聲（「Bright Chime」），到儀式鼓聲（「Ceremonial Drum」）與禮讚號聲（「Trumpet Salute」）。" data-zoom="../assets/marketing/mac-sound-ceremonial.png" type="button"><img alt="世界儀式之聲：從柔和鈴聲（「Gentle Bell」）與明亮鐘聲（「Bright Chime」），到儀式鼓聲（「Ceremonial Drum」）與禮讚號聲（「Trumpet Salute」）。" decoding="async" loading="lazy" src="../assets/marketing/mac-sound-ceremonial.png"/></button>
+<figcaption>世界儀式之聲：從柔和鈴聲（「Gentle Bell」）與明亮鐘聲（「Bright Chime」），到儀式鼓聲（「Ceremonial Drum」）與禮讚號聲（「Trumpet Salute」）。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="time-reports-heading" class="highlight-row has-gallery" data-highlight="08" id="time-reports">
+<span class="anchor-target" id="report-charts"></span><span class="anchor-target" id="report-exports"></span><span class="anchor-target" id="report-sharing"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">08</span>時間報告與分享</p>
+<h2 id="time-reports-heading">看清時間花在哪裡。</h2>
+<p>查看計時記錄、每日總計或目前讀值。瀏覽圖表、比較期間，並依任務或任務組合篩選。儲存為 CSV、HTML 或 PDF，以電子郵件將報告寄給自己，或使用有期限的連結分享。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">本機報告與輸出可離線使用。電子郵件與線上分享需要連線。</p>
+</div>
+<div aria-label="時間報告與分享圖片" class="feature-gallery gallery-4 report-gallery">
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>每日總計 · 一週概覽</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬歷史記錄</span></div>
+<button aria-label="放大：每日總計 · 一週概覽" class="image-button capture-image" data-caption="每日總計 · 一週概覽 — 2026 年 9 月 21–25 日：五項範例任務共計 30 小時，顯示每日總計與任務占比。「Design」占 12 小時 05 分（40.3%）。" data-zoom="../assets/marketing/mac-report-week-daily-totals.png" type="button"><img alt="2026 年 9 月 21–25 日：五項範例任務共計 30 小時，顯示每日總計與任務占比。「Design」占 12 小時 05 分（40.3%）。" decoding="async" loading="lazy" src="../assets/marketing/mac-report-week-daily-totals.png"/></button>
+<figcaption>2026 年 9 月 21–25 日：五項範例任務共計 30 小時，顯示每日總計與任務占比。「Design」占 12 小時 05 分（40.3%）。</figcaption>
+</figure>
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>計時記錄 · 工作進行的時段</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬歷史記錄</span></div>
+<button aria-label="放大：計時記錄 · 工作進行的時段" class="image-button capture-image" data-caption="計時記錄 · 工作進行的時段 — 一週範例，共 29 次計時、30 小時，透過時間軸呈現 2026 年 9 月 21–25 日的工作時段。" data-zoom="../assets/marketing/mac-report-week-sessions.png" type="button"><img alt="一週範例，共 29 次計時、30 小時，透過時間軸呈現 2026 年 9 月 21–25 日的工作時段。" decoding="async" loading="lazy" src="../assets/marketing/mac-report-week-sessions.png"/></button>
+<figcaption>一週範例，共 29 次計時、30 小時，透過時間軸呈現 2026 年 9 月 21–25 日的工作時段。</figcaption>
+</figure>
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>計時記錄 · 一天詳情</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬歷史記錄</span></div>
+<button aria-label="放大：計時記錄 · 一天詳情" class="image-button capture-image" data-caption="計時記錄 · 一天詳情 — 2026 年 9 月 24 日的六次範例計時，共計 6 小時 15 分，顯示當天的時間軸及每次計時的開始與結束時間。" data-zoom="../assets/marketing/mac-report-day-sessions.png" type="button"><img alt="2026 年 9 月 24 日的六次範例計時，共計 6 小時 15 分，顯示當天的時間軸及每次計時的開始與結束時間。" decoding="async" loading="lazy" src="../assets/marketing/mac-report-day-sessions.png"/></button>
+<figcaption>2026 年 9 月 24 日的六次範例計時，共計 6 小時 15 分，顯示當天的時間軸及每次計時的開始與結束時間。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>目前讀值</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：目前讀值" class="image-button capture-image" data-caption="目前讀值 — 「Studio」工作區的目前讀值，以及拷貝、輸出與分享控制項。" data-zoom="../assets/marketing/mac-report-current-readings.png" type="button"><img alt="「Studio」工作區的目前讀值，以及拷貝、輸出與分享控制項。" decoding="async" loading="lazy" src="../assets/marketing/mac-report-current-readings.png"/></button>
+<figcaption>「Studio」工作區的目前讀值，以及拷貝、輸出與分享控制項。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="archives-heading" class="highlight-row" data-highlight="09" id="archives">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">09</span>封存</p>
+<h2 id="archives-heading">保留已完成的工作。</h2>
+<p>封存任務組合，讓歷史記錄隨時可查。搜尋過去的工作、瀏覽已儲存的快照，想回顧專案或日常流程時，開啟報告即可。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="封存圖片" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>已儲存的專案報告</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：已儲存的專案報告" class="image-button capture-image" data-caption="已儲存的專案報告 — 「Brand workshop」已儲存為封存項目，模擬的計時器讀值也保留在報告中。" data-zoom="../assets/marketing/mac-archive-report.png" type="button"><img alt="「Brand workshop」已儲存為封存項目，模擬的計時器讀值也保留在報告中。" decoding="async" loading="lazy" src="../assets/marketing/mac-archive-report.png"/></button>
+<figcaption>「Brand workshop」已儲存為封存項目，模擬的計時器讀值也保留在報告中。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="appearance-heading" class="highlight-row has-gallery" data-highlight="10" id="appearance">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">10</span>自訂外觀</p>
+<h2 id="appearance-heading">打造屬於自己的空間。</h2>
+<p>選擇淺色或深色、純色或照片。用自己的影像建立背景圖庫，讓計時工作區隨心所欲，寧靜簡約或繽紛多彩。Mac 還可以輪流顯示檔案夾中的照片。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">依目前使用的裝置自訂設定，包括僅在 Mac 上覆寫套用的外觀設定。</p>
+</div>
+<div aria-label="自訂外觀圖片" class="feature-gallery gallery-4">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>純色背景 · 白色</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：純色背景 · 白色" class="image-button capture-image" data-caption="純色背景 · 白色 — 純白背景上的單一檢視「Design」計時器。" data-zoom="../assets/marketing/mac-single-light.png" type="button"><img alt="純白背景上的單一檢視「Design」計時器。" decoding="async" loading="lazy" src="../assets/marketing/mac-single-light.png"/></button>
+<figcaption>純白背景上的單一檢視「Design」計時器。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>純色 · 海軍藍</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：純色 · 海軍藍" class="image-button capture-image" data-caption="純色 · 海軍藍 — 同一個「Design」計時器，使用海軍藍純色背景。" data-zoom="../assets/marketing/mac-timer-single.png" type="button"><img alt="同一個「Design」計時器，使用海軍藍純色背景。" decoding="async" loading="lazy" src="../assets/marketing/mac-timer-single.png"/></button>
+<figcaption>同一個「Design」計時器，使用海軍藍純色背景。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>照片背景</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：照片背景" class="image-button capture-image" data-caption="照片背景 — 「Design」計時器以 XTimers 內建的多洛米蒂照片為背景。" data-zoom="../assets/marketing/mac-single-photo.png" type="button"><img alt="「Design」計時器以 XTimers 內建的多洛米蒂照片為背景。" decoding="async" loading="lazy" src="../assets/marketing/mac-single-photo.png"/></button>
+<figcaption>「Design」計時器以 XTimers 內建的多洛米蒂照片為背景。</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>選擇照片</h3><span class="capture-status status-real">已安裝的 Mac App · 範例設定</span></div>
+<button aria-label="放大：選擇照片" class="image-button capture-image" data-caption="選擇照片 — 已安裝的 Mac App 背景選擇器，顯示內建照片，並選取優勝美地。" data-zoom="../assets/marketing/mac-background-library.png" type="button"><img alt="已安裝的 Mac App 背景選擇器，顯示內建照片，並選取優勝美地。" decoding="async" loading="lazy" src="../assets/marketing/mac-background-library.png"/></button>
+<figcaption>已安裝的 Mac App 背景選擇器，顯示內建照片，並選取優勝美地。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="menu-bar-heading" class="highlight-row has-gallery" data-highlight="11" id="menu-bar">
+<span class="anchor-target" id="devices"></span><span class="anchor-target" id="mac-shortcuts"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">11</span>選單列與桌面整合</p>
+<h2 id="menu-bar-heading">讓時間常伴工作左右。</h2>
+<p>無須開啟主視窗，就能直接在 Mac 選單列查看任務名稱與計時器讀值。點一下即可快速開始或暫停任務、切換任務組合、開啟報告。全域快速鍵與置頂視窗，讓控制功能隨手可得。</p>
+<span class="platform-pill">Mac</span>
+</div>
+<div aria-label="選單列與桌面整合圖片" class="feature-gallery gallery-3 menu-bar-gallery">
+<figure class="capture-card capture-status-strip">
+<div class="capture-heading"><h3>計時器一目了然</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：計時器一目了然" class="image-button capture-image" data-caption="計時器一目了然 — 在其他 App 中工作時，暫停在 20:04 的「Planning」仍直接顯示在 Mac 選單列中。" data-zoom="../assets/marketing/mac-menubar-status-planning.png" type="button"><img alt="暫停在 20:04 的「Planning」，直接顯示在 Mac 選單列的系統狀態圖像旁" decoding="async" height="60" loading="lazy" src="../assets/marketing/mac-menubar-status-planning.png" width="572"/></button>
+<figcaption>任務名稱、讀值與暫停指示持續顯示在選單列。點按狀態項目即可取用計時器控制項。</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>選單列中的工作區</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：選單列中的工作區" class="image-button capture-image" data-caption="選單列中的工作區 — Mac 選單列中的「Studio」工作區，顯示「Design」等計時器、任務組合、報告與視窗控制項。" data-zoom="../assets/marketing/mac-menu-bar.png" type="button"><img alt="Mac 選單列中的「Studio」工作區，顯示「Design」等計時器、任務組合、報告與視窗控制項。" decoding="async" loading="lazy" src="../assets/marketing/mac-menu-bar.png"/></button>
+<figcaption>Mac 選單列中的「Studio」工作區，顯示「Design」等計時器、任務組合、報告與視窗控制項。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>小巧的計時器視窗</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：小巧的計時器視窗" class="image-button capture-image" data-caption="小巧的計時器視窗 — 小巧的極簡視窗中顯示「Studio」的「Design」計時器。" data-zoom="../assets/marketing/mac-timer-minimal.png" type="button"><img alt="小巧的極簡視窗中顯示「Studio」的「Design」計時器。" decoding="async" loading="lazy" src="../assets/marketing/mac-timer-minimal.png"/></button>
+<figcaption>小巧的極簡視窗中顯示「Studio」的「Design」計時器。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="live-activities-heading" class="highlight-row has-gallery" data-highlight="12" id="live-activities">
+<span class="anchor-target" id="mobile"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">12</span>即時動態</p>
+<h2 id="live-activities-heading">你的時間，一目了然。</h2>
+<p>讓符合資格的計時器持續顯示在 iPhone 鎖定畫面或動態島中。查看任務與讀值，無須開啟完整工作區，即可暫停或繼續支援的計時器。</p>
+<span class="platform-pill">iPhone</span>
+<p class="feature-note">需要支援的裝置與系統權限。世界時鐘不會建立即時動態。</p>
+</div>
+<div aria-label="即時動態圖片" class="feature-gallery gallery-2">
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>在鎖定畫面上</h3><span class="capture-status status-real">iPhone · 原生截圖</span></div>
+<button aria-label="放大：在鎖定畫面上" class="image-button capture-image" data-caption="在鎖定畫面上 — iPhone 鎖定畫面上的倒數計時即時動態，顯示任務名稱、剩餘時間與暫停控制項。" data-zoom="../assets/marketing/ios-live-activity-lockscreen.png" type="button"><img alt="iPhone 鎖定畫面上的倒數計時即時動態，顯示任務名稱、剩餘時間與暫停控制項。" decoding="async" height="2868" loading="lazy" src="../assets/marketing/ios-live-activity-lockscreen.png" width="1320"/></button>
+<figcaption>iPhone 鎖定畫面上的倒數計時即時動態，顯示任務名稱、剩餘時間與暫停控制項。</figcaption>
+</figure>
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>在動態島中</h3><span class="capture-status status-real">iPhone · 原生截圖</span></div>
+<button aria-label="放大：在動態島中" class="image-button capture-image" data-caption="在動態島中 — 開啟 iPhone 主畫面時，小巧的倒數計時仍會顯示在動態島中。" data-zoom="../assets/marketing/ios-live-activity-island.png" type="button"><img alt="開啟 iPhone 主畫面時，小巧的倒數計時仍會顯示在動態島中。" decoding="async" height="2868" loading="lazy" src="../assets/marketing/ios-live-activity-island.png" width="1320"/></button>
+<figcaption>開啟 iPhone 主畫面時，小巧的倒數計時仍會顯示在動態島中。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="siri-shortcuts-heading" class="highlight-row has-gallery" data-highlight="13" id="siri-shortcuts">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">13</span>Siri 與捷徑</p>
+<h2 id="siri-shortcuts-heading">一句話，或點一下，就能開始。</h2>
+<p>使用 Siri 與捷徑啟動、暫停或切換符合資格的計時器。加入系統控制項，開始新的碼錶，或暫停及繼續目前任務。</p>
+<span class="platform-pill">iPhone · iPad</span>
+<p class="feature-note">獨立的系統控制項會開啟 XTimers。即時動態控制項可直接在原處操作。</p>
+</div>
+<div aria-label="Siri 與捷徑圖片" class="feature-gallery gallery-1">
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>你的 XTimers 捷徑</h3><span class="capture-status status-real">iPhone · 原生截圖</span></div>
+<button aria-label="放大：你的 XTimers 捷徑" class="image-button capture-image" data-caption="你的 XTimers 捷徑 — 原生捷徑 App 中的「Toggle Timer」、「Start」與「Pause」動作。" data-zoom="../assets/marketing/ios-siri-shortcuts.png" type="button"><img alt="原生捷徑 App 中的「Toggle Timer」、「Start」與「Pause」動作。" decoding="async" height="2622" loading="lazy" src="../assets/marketing/ios-siri-shortcuts.png" width="1206"/></button>
+<figcaption>原生捷徑 App 中的「Toggle Timer」、「Start」與「Pause」動作。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="offline-heading" class="highlight-row" data-highlight="14" id="offline">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">14</span>無須帳號即可離線使用</p>
+<h2 id="offline-heading">開始使用，無須登入。</h2>
+<p>在裝置上使用基本計時器、倒數計時、任務組合、備註、世界時鐘與本機報告。離線也能繼續，需要連線功能時，隨時加入帳號。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="無須帳號即可離線使用圖片" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>本機「Studio」工作區</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：本機「Studio」工作區" class="image-button capture-image" data-caption="本機「Studio」工作區 — 已登出的 Mac App 中的「Studio」工作區，顯示模擬的本機計時器與世界時鐘。" data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="已登出的 Mac App 中的「Studio」工作區，顯示模擬的本機計時器與世界時鐘。" decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>已登出的 Mac App 中的「Studio」工作區，顯示模擬的本機計時器與世界時鐘。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="synchronization-heading" class="highlight-row" data-highlight="15" id="synchronization">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">15</span>跨裝置同步</p>
+<h2 id="synchronization-heading">在熟悉的工作區接著做。</h2>
+<p>在 Mac、iPhone 與 iPad 之間同步支援的任務、歷史記錄、範本、設定與自訂素材。即使暫時遇到連線問題，本機工作仍可繼續使用。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">使用 Apple、Google、電子郵件驗證碼或密碼登入。部分裝置設定與僅限本機的資料會保留在各自的裝置上。</p>
+</div>
+<div aria-label="跨裝置同步圖片" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>在 Mac 上</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：在 Mac 上" class="image-button capture-image" data-caption="在 Mac 上 — 已安裝的 Mac App 中的「Studio」範例計時器與時鐘。" data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="已安裝的 Mac App 中的「Studio」範例計時器與時鐘。" decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>已安裝的 Mac App 中的「Studio」範例計時器與時鐘。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="protected-sync-heading" class="highlight-row copy-only" data-highlight="16" id="protected-sync">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">16</span>受保護的同步</p>
+<h2 id="protected-sync-heading">上傳之前，先選擇保護。</h2>
+<p>在<a href="privacy.html#xin-account">帳號同步</a>之前，先在裝置上加密新的計時器內容與自訂上傳內容。可透過 iCloud Keychain 或儲存的復原碼找回金鑰。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">支援的帳號可自行啟用。不包含提醒訊息、帳號及同步中繼資料、啟用前建立的內容，以及裝置本機儲存空間。</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="languages-heading" class="highlight-row has-gallery" data-highlight="17" id="languages">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">17</span>多語言支援</p>
+<h2 id="languages-heading">用熟悉的語言，自在使用。</h2>
+<p>提供 45 個語言選項，可跟隨裝置設定，也能自行選擇。符合地區習慣的日期、時間與數字格式，加上由右至左的版面配置，讓工作區更親切熟悉。</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="多語言支援圖片" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 英語</h3><span class="capture-status status-real">已安裝的 Mac App · 範例設定</span></div>
+<button aria-label="放大：Mac · 英語" class="image-button capture-image" data-caption="Mac · 英語 — 已安裝的 Mac App 中的英文一般設定，以淺色外觀擷取。" data-zoom="../assets/marketing/mac-settings-english.png" type="button"><img alt="已安裝的 Mac App 中的英文一般設定，以淺色外觀擷取。" decoding="async" loading="lazy" src="../assets/marketing/mac-settings-english.png"/></button>
+<figcaption>已安裝的 Mac App 中的英文一般設定，以淺色外觀擷取。</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 日語</h3><span class="capture-status status-real">已安裝的 Mac App · 範例設定</span></div>
+<button aria-label="放大：Mac · 日語" class="image-button capture-image" data-caption="Mac · 日語 — 同一個一般設定畫面，使用日語與淺色外觀。" data-zoom="../assets/marketing/mac-settings-japanese.png" type="button"><img alt="同一個一般設定畫面，使用日語與淺色外觀。" decoding="async" loading="lazy" src="../assets/marketing/mac-settings-japanese.png"/></button>
+<figcaption>同一個一般設定畫面，使用日語與淺色外觀。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="activity-tracking-heading" class="highlight-row" data-highlight="18" id="activity-tracking">
+<span class="anchor-target" id="extras"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">18</span>自動追蹤 App 使用情況</p>
+<h2 id="activity-tracking-heading">看看 App 使用時間如何累積。</h2>
+<p>可自行選擇追蹤 Mac 最前方 App 的使用時間。依日、週、月或年回顧活動，並選擇如何計算離開時間。</p>
+<span class="platform-pill">Mac · 部分設定檔</span>
+<p class="feature-note">適用於本機與舊版設定檔；對本機優先同步帳號隱藏。App 識別資訊與閒置時間保留在這台 Mac 上，不會擷取網站、瀏覽記錄或視窗標題。</p>
+</div>
+<div aria-label="自動追蹤 App 使用情況圖片" class="feature-gallery gallery-1">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>使用情況追蹤控制項</h3><span class="capture-status status-real">已安裝的 Mac App · 設定</span></div>
+<button aria-label="放大：使用情況追蹤控制項" class="image-button capture-image" data-caption="使用情況追蹤控制項 — 標準版 XTimers 中的原生控制項，可設定報告期間、捲動至作用中任務與離開時間。此設定中已關閉追蹤。" data-zoom="../assets/marketing/mac-activity-tracking-settings.png" type="button"><img alt="標準版 XTimers 中的原生控制項，可設定報告期間、捲動至作用中任務與離開時間。此設定中已關閉追蹤。" decoding="async" loading="lazy" src="../assets/marketing/mac-activity-tracking-settings.png"/></button>
+<figcaption>標準版 XTimers 中的原生控制項，可設定報告期間、捲動至作用中任務與離開時間。此設定中已關閉追蹤。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="classic-interface-heading" class="highlight-row has-gallery" data-highlight="19" id="classic-interface">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">19</span>經典介面</p>
+<h2 id="classic-interface-heading">另一種留出時間的方式。</h2>
+<p>可選擇僅支援英語的本機計時介面，並使用其獨立工作區。在 XTimers 中切換介面，保留你熟悉的呈現方式。</p>
+<span class="platform-pill">Mac · 僅限本機</span>
+<p class="feature-note">需要隨附的經典執行環境。帳號同步與電子郵件/SMS 傳送由主要 XTimers 介面提供。</p>
+</div>
+<div aria-label="經典介面圖片" class="feature-gallery gallery-2">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>經典 · 雙欄</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：經典 · 雙欄" class="image-button capture-image" data-caption="經典 · 雙欄 — 展開的經典日常流程，包含 20 項具名任務，涵蓋創作、學習與日常生活。" data-zoom="../assets/marketing/classic-two-column.png" type="button"><img alt="展開的經典日常流程，包含 20 項具名任務，涵蓋創作、學習與日常生活。" decoding="async" loading="lazy" src="../assets/marketing/classic-two-column.png"/></button>
+<figcaption>展開的經典日常流程，包含 20 項具名任務，涵蓋創作、學習與日常生活。</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>經典 · 單欄</h3><span class="capture-status status-real">已安裝的 Mac App · 模擬資料</span></div>
+<button aria-label="放大：經典 · 單欄" class="image-button capture-image" data-caption="經典 · 單欄 — 精簡的經典工作區，包含「Design」、「Research」、「Writing」、「Reading」與「Planning」五項任務。" data-zoom="../assets/marketing/classic-one-column.png" type="button"><img alt="精簡的經典工作區，包含「Design」、「Research」、「Writing」、「Reading」與「Planning」五項任務。" decoding="async" loading="lazy" src="../assets/marketing/classic-one-column.png"/></button>
+<figcaption>精簡的經典工作區，包含「Design」、「Research」、「Writing」、「Reading」與「Planning」五項任務。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="xhelpers-pro-heading" class="highlight-row" data-highlight="20" id="xhelpers-pro">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">20</span>XHelpers Pro 優惠</p>
+<h2 id="xhelpers-pro-heading">陪伴你的 Mac。</h2>
+<p>認識獨立的 Mac 工具程式 XHelpers Pro，快速取用日常控制功能。XTimers 使用者可前往其促銷授權優惠頁面，查看目前條款與啟用詳細資訊。</p>
+<span class="platform-pill">Mac · 獨立 App</span>
+<a class="text-link" href="https://xintechllc.com/XHelpersPro/" rel="noopener noreferrer" target="_blank">查看 XHelpers Pro 優惠</a>
+</div>
+<div aria-label="XHelpers Pro 優惠圖片" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>隨附的 XHelpers Pro 優惠</h3><span class="capture-status status-real">已安裝的 Mac App · 範例設定</span></div>
+<button aria-label="放大：隨附的 XHelpers Pro 優惠" class="image-button capture-image" data-caption="隨附的 XHelpers Pro 優惠 — 已安裝的 XTimers App「關於」畫面顯示隨附的 XHelpers Pro 優惠。" data-zoom="../assets/marketing/mac-xhelpers-benefit.png" type="button"><img alt="已安裝的 XTimers App「關於」畫面顯示隨附的 XHelpers Pro 優惠。" decoding="async" loading="lazy" src="../assets/marketing/mac-xhelpers-benefit.png"/></button>
+<figcaption>已安裝的 XTimers App「關於」畫面顯示隨附的 XHelpers Pro 優惠。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="download-heading" class="download-section" id="download">
+<div class="wrap download-inner">
+<div class="download-copy"><img alt="" height="64" loading="lazy" src="../assets/marketing/app-icon.png" width="64"/><h2 id="download-heading">留一點時間<br/>給<em>自己。</em></h2><p>用計時器管理任務。用工作區安放日常。</p></div>
+<div class="download-choices">
+<a class="download-choice" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" class="icon"><use href="#i-mac"></use></svg><span><strong>XTimers Mac 版</strong><small>在 Mac App Store 檢視</small></span></a>
+<a class="download-choice" href="#mobile"><svg aria-hidden="true" class="icon"><use href="#i-mobile"></use></svg><span><strong>適用於 iPhone 與 iPad 的 XTimers</strong><small>了解行動裝置使用體驗</small></span></a>
+<p class="download-note">Mac、iPhone 與 iPad，在你的一天中各有位置。</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="faq-heading" class="section faq-section wrap" id="support">
+<div class="section-copy"><p class="eyebrow">幾個實用解答</p><h2 id="faq-heading">留出時間<br/>之前。</h2><p>還有其他想了解的事嗎？</p><a class="text-link" href="support.html" rel="noopener noreferrer" target="_blank">造訪支援頁面</a></div>
+<div class="faq-list">
+<details><summary>需要帳號嗎？<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>基本的本機計時器、倒數計時、世界時鐘與本機報告無須帳號。需要帳號同步或透過帳號使用的提醒時，再登入即可。</p><p class="feature-note">XTimers 使用 Xin Account 來識別和驗證使用者。 Xin Account 是 XTimers 以及帳戶控管中列出的任何其他相關產品的共享身份層；它不是 XTimers 產品帳戶，也不包含 XTimers 計時器、報告、聲音或 SMS 資料。</p></details>
+<details><summary>XTimers 可以離線使用嗎？<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>基本計時與本機報告可離線使用。同步、線上分享與伺服器提醒需要連線。Mac 上的世界行事曆首次使用時需要下載目錄；安裝後即可離線使用該目錄。</p></details>
+<details><summary>可以同時執行多個計時器嗎？<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>可以。切換到另一項任務時，可選擇暫停先前符合資格的計時器，或讓它繼續執行。任務組合能幫助你有條理地整理不同活動。</p></details>
+<details><summary>每種裝置的功能都一樣嗎？<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>基本工作區包含計時器、倒數計時、時鐘、任務組合與報告。Mac 另有選單列控制項與世界行事曆。iPhone 在相容裝置上支援即時動態，iPad 則能容納更寬闊的任務版面配置。</p></details>
+<details><summary>電話提醒如何運作？<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>提醒會傳送至符合資格且已驗證的本人號碼，SMS 或電話需分別取得同意。供應情況取決於帳號、地區與服務。預約電話需經伺服器確認；「Call Me」以英語提供，且不會自動重撥。</p></details>
+</div>
+</section>
+</main>
+<footer class="site-footer wrap">
+<p class="footer-copy"><small>© 2026 Xintech LLC</small><span>為你在乎的事，留點時間。</span></p>
+<div class="footer-links"><a href="#features">功能</a><a href="#devices">你的裝置</a><a href="support.html" rel="noopener noreferrer" target="_blank">支援</a><a href="privacy.html" rel="noopener noreferrer" target="_blank">隱私</a><a href="sms-terms.html" rel="noopener noreferrer" target="_blank">訊息服務條款</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener noreferrer" target="_blank">授權</a><a href="terms.html">條款</a><a href="privacy-choices.html">隱私選項</a><a href="sms-opt-in.html">選擇接收 SMS</a></div>
+</footer>
+<dialog aria-labelledby="image-dialog-caption" class="image-dialog" id="image-dialog">
+<button aria-label="縮小並關閉截圖" class="image-dialog-zoom-out" type="button">
+<img alt="" id="image-dialog-img"/>
+</button>
+<p id="image-dialog-caption"></p>
+</dialog>
 </body>
 </html>

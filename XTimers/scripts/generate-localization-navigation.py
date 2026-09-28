@@ -25,6 +25,50 @@ ALTERNATE_TAG_PATTERN = re.compile(
 CANONICAL_PATTERN = re.compile(r'<link\b(?=[^>]*\brel="canonical")[^>]*>')
 HEAD_CLOSE_PATTERN = re.compile(r'</head>', re.IGNORECASE)
 SITEMAP_NAMESPACE = "http://www.sitemaps.org/schemas/sitemap/0.9"
+PAGE_NAMES = (
+    "index.html",
+    "support.html",
+    "terms.html",
+    "privacy.html",
+    "privacy-choices.html",
+    "extension-privacy.html",
+    "sms-terms.html",
+    "sms-opt-in.html",
+)
+IDENTIFIER_PATTERN = re.compile(r"^[a-z]{2,3}(?:-[A-Z][A-Za-z]{1,7})?$")
+ENGLISH_SITEMAP_URLS = (
+    BASE_URL,
+    BASE_URL + "support.html",
+    LEGAL_BASE_URL + "terms.html",
+    LEGAL_BASE_URL + "privacy.html",
+    LEGAL_BASE_URL + "privacy-choices.html",
+    LEGAL_BASE_URL + "extension-privacy.html",
+    LEGAL_BASE_URL + "sms-terms.html",
+    LEGAL_BASE_URL + "sms-opt-in.html",
+    LEGAL_BASE_URL + "compliance.html",
+)
+
+
+def validate_inventory(localizations: list[dict]) -> None:
+    for item in localizations:
+        identifier = item.get("identifier")
+        direction = item.get("direction")
+        route = item.get("route")
+        native_name = item.get("nativeName")
+        if not isinstance(identifier, str) or IDENTIFIER_PATTERN.fullmatch(identifier) is None:
+            raise RuntimeError(f"Unsafe localization identifier: {identifier!r}")
+        if direction not in {"ltr", "rtl"}:
+            raise RuntimeError(f"Unsafe localization direction for {identifier}: {direction!r}")
+        expected_route = "flexible-timers.html" if identifier == "en" else f"{identifier}/"
+        if route != expected_route:
+            raise RuntimeError(f"Unsafe localization route for {identifier}: {route!r}")
+        if (
+            not isinstance(native_name, str)
+            or not native_name.strip()
+            or len(native_name) > 80
+            or any(ord(character) < 0x20 for character in native_name)
+        ):
+            raise RuntimeError(f"Unsafe native language name for {identifier}")
 
 
 def parse_arguments() -> argparse.Namespace:
@@ -59,18 +103,22 @@ def menu(
     )
     lines = [
         '<details class="language-menu">',
-        f"            <summary>🌐 · {current_name}</summary>",
+        f"            <summary>🌐 · {html_escape(current_name)}</summary>",
         f'            <div class="language-menu-list" aria-label="{html_escape(translated_label, quote=True)}">',
     ]
-    prefix = "../" if localized_page else ""
     for item in localizations:
         identifier = item["identifier"]
-        href = prefix + item["route"]
+        if identifier == "en":
+            href = "../" if localized_page else "./"
+        else:
+            prefix = "../" if localized_page else ""
+            href = prefix + item["route"]
         current_attribute = ' aria-current="page"' if identifier == current else ""
         lines.append(
-            f'              <a href="{href}" lang="{identifier}"'
-            f' dir="{item["direction"]}"'
-            f'{current_attribute}>{item["nativeName"]}</a>'
+            f'              <a href="{html_escape(href, quote=True)}" '
+            f'lang="{html_escape(identifier, quote=True)}"'
+            f' dir="{html_escape(item["direction"], quote=True)}"'
+            f'{current_attribute}>{html_escape(item["nativeName"])}</a>'
         )
     lines.extend(["            </div>", "          </details>"])
     return "\n".join(lines)
@@ -83,7 +131,11 @@ def alternates(
     uses_product_base = product_page or file_name == "support.html"
     for item in localizations:
         if product_page:
-            href = BASE_URL + item["route"]
+            href = (
+                BASE_URL
+                if item["identifier"] == "en"
+                else BASE_URL + item["route"]
+            )
         elif uses_product_base and item["identifier"] == "en":
             href = BASE_URL + file_name
         elif uses_product_base:
@@ -97,7 +149,7 @@ def alternates(
             f'href="{href}">'
         )
     if product_page:
-        default_href = BASE_URL + "flexible-timers.html"
+        default_href = BASE_URL
     elif uses_product_base:
         default_href = BASE_URL + file_name
     else:
@@ -170,8 +222,6 @@ def canonical_href(
     if product_page:
         if localized_page:
             return BASE_URL + current + "/"
-        if path.name == "flexible-timers.html":
-            return BASE_URL + "flexible-timers.html"
         return BASE_URL
     base = BASE_URL if file_name == "support.html" else LEGAL_BASE_URL
     if localized_page:
@@ -252,39 +302,34 @@ def updated_page(
     )
 
 
+def expected_sitemap_urls(localizations: list[dict]) -> list[str]:
+    expected_urls = list(ENGLISH_SITEMAP_URLS)
+    for item in localizations:
+        identifier = item["identifier"]
+        if identifier == "en":
+            continue
+        expected_urls.append(BASE_URL + item["route"])
+        expected_urls.append(BASE_URL + identifier + "/support.html")
+        expected_urls.extend(
+            LEGAL_BASE_URL + identifier + "/" + page
+            for page in PAGE_NAMES
+            if page not in {"index.html", "support.html"}
+        )
+    return expected_urls
+
+
 def updated_sitemap(content: str, localizations: list[dict]) -> str:
     ET.register_namespace("", SITEMAP_NAMESPACE)
     root = ET.fromstring(content)
     if root.tag != f"{{{SITEMAP_NAMESPACE}}}urlset":
         raise RuntimeError("Unexpected sitemap root element")
     location_tag = f"{{{SITEMAP_NAMESPACE}}}loc"
-    expected_urls = [
-        BASE_URL + item["route"]
-        for item in localizations
-        if item["identifier"] != "en"
-    ]
-    expected_set = set(expected_urls)
-    for child in list(root):
-        location = child.find(location_tag)
-        if location is not None and location.text in expected_set:
-            root.remove(child)
-
-    root_index = next(
-        (
-            index
-            for index, child in enumerate(root)
-            if (location := child.find(location_tag)) is not None
-            and location.text == BASE_URL
-        ),
-        None,
-    )
-    if root_index is None:
-        raise RuntimeError("Sitemap lacks the canonical XTimers root URL")
     url_tag = f"{{{SITEMAP_NAMESPACE}}}url"
-    for offset, url in enumerate(expected_urls, start=1):
+    root.clear()
+    for url in expected_sitemap_urls(localizations):
         element = ET.Element(url_tag)
         ET.SubElement(element, location_tag).text = url
-        root.insert(root_index + offset, element)
+        root.append(element)
 
     tree = ET.ElementTree(root)
     ET.indent(tree, space="  ")
@@ -301,6 +346,7 @@ def main() -> int:
     identifiers = [item["identifier"] for item in localizations]
     if len(set(identifiers)) != 45 or "en" not in identifiers:
         raise RuntimeError("Website localization identifiers must be unique and include en")
+    validate_inventory(localizations)
 
     pages: list[tuple[Path, str, bool, str, bool]] = [
         (arguments.root / "index.html", "en", False, "index.html", True),
@@ -314,7 +360,8 @@ def main() -> int:
     ]
     pages.extend(
         (arguments.root / file_name, "en", False, file_name, False)
-        for file_name in ("support.html", "privacy.html", "sms-terms.html", "sms-opt-in.html")
+        for file_name in PAGE_NAMES
+        if file_name != "index.html"
     )
     pages.extend(
         (
@@ -326,13 +373,7 @@ def main() -> int:
         )
         for identifier in identifiers
         if identifier != "en"
-        for file_name in (
-            "index.html",
-            "support.html",
-            "privacy.html",
-            "sms-terms.html",
-            "sms-opt-in.html",
-        )
+        for file_name in PAGE_NAMES
     )
 
     stale: list[str] = []

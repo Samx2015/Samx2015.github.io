@@ -4,18 +4,31 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>XTimers — Mac, iPhone, iPad</title>
-<meta content="XTimers to spokojna, natywna dla platform Apple przestrzeń do pracy z minutnikami, odliczaniami, zegarami, zestawami zadań, raportami, niestandardowymi dźwiękami i przypomnieniami konta na Macu, iPhonie i iPadzie." name="description"/>
 <meta content="#fbfaf7" name="theme-color"/>
-<meta content="XTimers" property="og:title"/>
-<meta content="Minutniki, odliczania, zegary, raporty, dźwięki i przypomnienia konta na Maca, iPhone’a i iPada." property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="https://xintechllc.com/XTimers/assets/flexible-timers/macos/1-single-light.png" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="XTimers" name="twitter:title"/>
-<meta content="Timers, countdowns, clocks, reports, sounds, and account reminders for Mac, iPhone, and iPad." name="twitter:description"/>
-<meta content="https://xintechllc.com/XTimers/assets/flexible-timers/macos/1-single-light.png" name="twitter:image"/>
-<link rel="canonical" href="https://xintechllc.com/XTimers/pl/">
+<meta content="Mierz czas. Odliczaj. Zegary światowe. Kalendarz świata. Elastycznie. Po Twojemu. Połącz czasomierze, rutyny, przypomnienia i raporty w jednym obszarze roboczym." name="description"/>
+<title>XTimers — Mierz czas. Odliczaj. Zegary światowe. Kalendarz świata.</title>
+<link href="../assets/marketing/app-icon.png" rel="icon"/>
+<link href="../assets/marketing/styles.css" rel="stylesheet"/>
+<link href="../assets/marketing/site-style.css" rel="stylesheet"/>
+<script defer="" src="../assets/marketing/site.js"></script>
+<script data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19" defer="" src="https://cloud.umami.is/script.js"></script><script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script> <link rel="canonical" href="https://xintechllc.com/XTimers/pl/">
 <link rel="alternate" hreflang="ar" href="https://xintechllc.com/XTimers/ar/">
 <link rel="alternate" hreflang="bn" href="https://xintechllc.com/XTimers/bn/">
 <link rel="alternate" hreflang="ca" href="https://xintechllc.com/XTimers/ca/">
@@ -23,7 +36,7 @@
 <link rel="alternate" hreflang="da" href="https://xintechllc.com/XTimers/da/">
 <link rel="alternate" hreflang="de" href="https://xintechllc.com/XTimers/de/">
 <link rel="alternate" hreflang="el" href="https://xintechllc.com/XTimers/el/">
-<link rel="alternate" hreflang="en" href="https://xintechllc.com/XTimers/flexible-timers.html">
+<link rel="alternate" hreflang="en" href="https://xintechllc.com/XTimers/">
 <link rel="alternate" hreflang="es" href="https://xintechllc.com/XTimers/es/">
 <link rel="alternate" hreflang="fi" href="https://xintechllc.com/XTimers/fi/">
 <link rel="alternate" hreflang="fr" href="https://xintechllc.com/XTimers/fr/">
@@ -61,7 +74,7 @@
 <link rel="alternate" hreflang="vi" href="https://xintechllc.com/XTimers/vi/">
 <link rel="alternate" hreflang="zh-Hans" href="https://xintechllc.com/XTimers/zh-Hans/">
 <link rel="alternate" hreflang="zh-Hant" href="https://xintechllc.com/XTimers/zh-Hant/">
-<link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XTimers/flexible-timers.html">
+<link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XTimers/">
 
 
 
@@ -108,37 +121,43 @@
 
 
 
-<link href="../assets/flexible-timers/brand/favicon.png" rel="icon" type="image/png"/>
-<link href="../assets/flexible-timers/site.css" rel="stylesheet"/>
-<script data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19" defer="" src="https://cloud.umami.is/script.js"></script>
-<script>
-  window.addEventListener("click", function (event) {
-    var link = event.target.closest && event.target.closest("a[href]");
-    if (!link || !window.umami) return;
-    var href = link.getAttribute("href") || "";
-    var url = link.href || href;
-    var eventName = null;
-    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
-    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
-    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
-    else if (/support\.html/i.test(href)) eventName = "Support Click";
-    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
-    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
-    if (eventName) {
-      window.umami.track(eventName, { href: url, path: window.location.pathname });
-    }
-  });
-</script>
 </head>
 <body>
-<div class="page-shell">
-<header class="nav">
-<div class="nav-inner">
-<a aria-label="Strona główna XTimers" class="brand" href="index.html">
-<img alt="" class="brand-icon" height="36" src="../assets/flexible-timers/brand/app-icon.png" width="36"/>
-<span class="brand-text">XTimers<small>Mac • iPhone • iPad</small></span>
-</a>
-<div class="nav-actions"><a class="button primary" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12">Pobierz na Maca</a><details class="language-menu">
+<svg aria-hidden="true" class="svg-definitions" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<symbol id="i-clock" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></symbol>
+<symbol id="i-timer" viewbox="0 0 24 24"><circle cx="12" cy="14" r="8"></circle><path d="M12 10v4l3 2M9 2h6m-3 0v4m6 0 2 2"></path></symbol>
+<symbol id="i-countdown" viewbox="0 0 24 24"><path d="M6 3h12M6 21h12M7 3v4l5 5-5 5v4m10-18v4l-5 5 5 5v4M9 18h6"></path></symbol>
+<symbol id="i-folder" viewbox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h5l3 3h6a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7h18"></path></symbol>
+<symbol id="i-check" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></symbol>
+<symbol id="i-globe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><ellipse cx="12" cy="12" rx="4" ry="9"></ellipse><path d="M3 12h18"></path></symbol>
+<symbol id="i-calendar" viewbox="0 0 24 24"><rect height="16" rx="3" width="18" x="3" y="5"></rect><path d="M7 3v4m10-4v4M3 11h18m-14 4h3m4 0h3m-10 3h3"></path></symbol>
+<symbol id="i-chart" viewbox="0 0 24 24"><path d="M4 3v18h17M8 17v-5m5 5V7m5 10V4"></path></symbol>
+<symbol id="i-sound" viewbox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9H3m13-1a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"></path></symbol>
+<symbol id="i-mail" viewbox="0 0 24 24"><rect height="14" rx="3" width="18" x="3" y="5"></rect><path d="m3 7 9 6 9-6"></path></symbol>
+<symbol id="i-phone" viewbox="0 0 24 24"><path d="m8 3 3 5-3 3a14 14 0 0 0 5 5l3-3 5 3v3c0 2-2 3-4 2C10 19 5 14 3 7c-1-2 0-4 2-4h3Z"></path></symbol>
+<symbol id="i-sync" viewbox="0 0 24 24"><path d="M20 8a8 8 0 0 0-14-3L3 8m0-5v5h5m-4 8a8 8 0 0 0 14 3l3-3m0 5v-5h-5"></path></symbol>
+<symbol id="i-lock" viewbox="0 0 24 24"><rect height="11" rx="3" width="14" x="5" y="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"></path></symbol>
+<symbol id="i-mac" viewbox="0 0 24 24"><rect height="13" rx="2" width="18" x="3" y="3"></rect><path d="M9 21h6m-3-5v5"></path></symbol>
+<symbol id="i-mobile" viewbox="0 0 24 24"><rect height="20" rx="3" width="12" x="6" y="2"></rect><path d="M10 5h4m-3 14h2"></path></symbol>
+<symbol id="i-tablet" viewbox="0 0 24 24"><rect height="20" rx="3" width="18" x="3" y="2"></rect><path d="M10 19h4"></path></symbol>
+<symbol id="i-plus" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></symbol>
+<symbol id="i-expand" viewbox="0 0 24 24"><path d="M9 3H3v6m0-6 6 6m6 12h6v-6m0 6-6-6"></path></symbol>
+<symbol id="i-leaf" viewbox="0 0 24 24"><path d="M4 20 16 8M5 17C-1 5 13 7 20 3c2 13-4 19-12 15"></path></symbol>
+</defs>
+</svg>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="site-header">
+<nav aria-label="Nawigacja główna" class="navigation wrap">
+<a aria-label="Strona główna XTimers" class="brand" href="#top"><img alt="" height="36" src="../assets/marketing/app-icon.png" width="36"/><span>XTimers</span></a>
+<button aria-controls="nav-links" aria-expanded="false" aria-label="Otwórz nawigację" class="menu-toggle" data-close-label="Zamknij nawigację" data-open-label="Otwórz nawigację" type="button"><span></span><span></span></button>
+<div class="nav-links" id="nav-links">
+<a href="#features">Funkcje</a>
+<a href="#devices">Twoje urządzenia</a>
+<a href="#support">Pytania</a>
+<div class="header-actions">
+<a class="button button-small button-ink" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12">Pobierz na Maca</a>
+<details class="language-menu">
             <summary>🌐 · Polski</summary>
             <div class="language-menu-list" aria-label="Język">
               <a href="../ar/" lang="ar" dir="rtl">العربية</a>
@@ -148,7 +167,7 @@
               <a href="../da/" lang="da" dir="ltr">Dansk</a>
               <a href="../de/" lang="de" dir="ltr">Deutsch</a>
               <a href="../el/" lang="el" dir="ltr">Ελληνικά</a>
-              <a href="../flexible-timers.html" lang="en" dir="ltr">English</a>
+              <a href="../" lang="en" dir="ltr">English</a>
               <a href="../es/" lang="es" dir="ltr">Español</a>
               <a href="../fi/" lang="fi" dir="ltr">Suomi</a>
               <a href="../fr/" lang="fr" dir="ltr">Français</a>
@@ -187,34 +206,640 @@
               <a href="../zh-Hans/" lang="zh-Hans" dir="ltr">简体中文</a>
               <a href="../zh-Hant/" lang="zh-Hant" dir="ltr">繁體中文</a>
             </div>
-          </details></div>
+          </details>
 </div>
+</div>
+</nav>
 </header>
-<main id="top">
-<section aria-labelledby="hero-title" class="hero"><div><h1 id="hero-title">XTimers</h1><p class="hero-lede">Minutniki, odliczania, zegary, raporty, dźwięki i przypomnienia konta na Maca, iPhone’a i iPada. Dawniej Flexible Timers.</p></div><div aria-label="Zrzuty ekranu aplikacji XTimers" class="hero-visual"><div class="device-stage"><div class="desktop-card"><div aria-hidden="true" class="window-bar"><span class="traffic"></span><span class="traffic"></span><span class="traffic"></span><span class="window-title">XTimers for Mac</span></div><figure class="shot"><img alt="Główne okno minutników XTimers w macOS w trybie jasnym" height="1125" loading="eager" src="../assets/flexible-timers/macos/1-single-light.png" width="1800"/></figure></div><div aria-label="Zrzut ekranu XTimers na iPhonie" class="phone-card"><figure class="shot"><img alt="Lista minutników XTimers na iPhonie w trybie jasnym" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-1-timers-light.png" width="736"/></figure></div><div aria-label="Zrzut ekranu XTimers na iPadzie" class="tablet-card"><figure class="shot"><img alt="Lista minutników XTimers na iPadzie w trybie jasnym" height="1600" loading="eager" src="../assets/flexible-timers/ios/ipad-13-1-timers-light.png" width="1200"/></figure></div></div></div></section>
-<section aria-label="Funkcje elastycznych minutników" class="section" id="features"><div class="feature-grid"><article class="feature-card"><h3>Elastyczne typy zadań</h3><p>Minutniki, odliczania do godziny zakończenia, zegary światowe i zadania przypomnień konta.</p></article><article class="feature-card"><h3>Zestawy zadań</h3><p>Oddziel pracę, gotowanie, naukę, podróże i czynności wielokrotnego użytku.</p></article><article class="feature-card"><h3>Raporty i archiwa</h3><p>Przeglądaj migawki, dodawaj notatki i wysyłaj raporty na adres e-mail swojego konta.</p></article><article class="feature-card"><h3>Dźwięki i powiadomienia</h3><p>Korzystaj z dźwięków pakietowych, dźwięków niestandardowych, sygnałów dźwiękowych i powiadomień lokalnych.</p></article></div></section>
-<section aria-label="Platformy XTimers" class="section platform-section"><article class="platform" id="mac"><div class="platform-copy"><h2>Stworzony do skupionej pracy z minutnikami na Macu.</h2><p>Minutniki SwiftUI z zestawami zadań, raportami, synchronizacją, niestandardowymi dźwiękami i stanem na pasku menu.</p><div class="platform-list"><div class="platform-item"><span class="check">✓</span><span>Pojedyncze lub rozszerzone układy minutników.</span></div><div class="platform-item"><span class="check">✓</span><span>Stan aktywnego minutnika na pasku menu.</span></div><div class="platform-item"><span class="check">✓</span><span>Minutniki, odliczanie, zegary i zadania przypominające.</span></div><div class="platform-item"><span class="check">✓</span><span>Synchronizuj, archiwizuj, raporty i niestandardowe dźwięki.</span></div></div></div><div class="shot-stack"><figure class="shot"><img alt="Rozszerzone dwukolumnowe okno minutników XTimers w macOS" height="1125" loading="eager" src="../assets/flexible-timers/macos/3-double-light.png" width="1800"/></figure><div class="shot-row"><figure class="shot"><img alt="Arkusz dodawania minutnika XTimers w macOS w trybie jasnym" height="1125" loading="eager" src="../assets/flexible-timers/macos/5-addtimer-light.png" width="1800"/></figure><figure class="shot"><img alt="Arkusz dodawania odliczania XTimers w macOS w trybie jasnym" height="1125" loading="eager" src="../assets/flexible-timers/macos/7-addcountdown-light.png" width="1800"/></figure></div></div></article><article class="platform reverse" id="ios"><div class="phone-showcase"><div class="phone-screen"><figure class="shot"><img alt="Zrzut ekranu XTimers na iPhonie" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-1-timers-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="Zrzut ekranu XTimers na iPhonie" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-4-add-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="Zrzut ekranu XTimers na iPhonie" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-6-settings-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="Zrzut ekranu XTimers na iPhonie" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-7-report-light.png" width="736"/></figure></div></div><div class="platform-copy"><h2>Ten sam system minutników na iPhonie i iPadzie.</h2><p>Minutniki, zegary, raporty, ustawienia, synchronizacja, powiadomienia i dźwięki na iPhonie i iPadzie.</p><div class="platform-list"><div class="platform-item"><span class="check">✓</span><span>Lista iPhone i układy siatki iPad.</span></div><div class="platform-item"><span class="check">✓</span><span>Twórz liczniki, odliczanie, zegary i przypomnienia.</span></div><div class="platform-item"><span class="check">✓</span><span>Raporty, ustawienia, dźwięki i synchronizacja.</span></div></div></div></article></section>
-<section aria-labelledby="sync-title" class="section" id="sync"><div class="account-panel"><div><h2 id="sync-title">Logowanie przez Xin Account. Dane XTimers pozostają oddzielne.</h2><p>XTimers używa Twojego Xin Account do współdzielonego logowania, a minutniki, raporty, ustawienia, dźwięki i wybory SMS przechowuje jako dane produktu XTimers. <a href="privacy.html#xin-account">Dowiedz się, jak działają warstwy konta.</a></p></div><div class="account-list"><div class="account-row"><strong>Logowanie na różnych urządzeniach</strong><span>Xin Account identyfikuje Cię i autoryzuje każde połączone konto XTimers.</span></div><div class="account-row"><strong>Synchronizuj dane XTimers</strong><span>Zestawy zadań, archiwa, ustawienia i dźwięki są powiązane z połączonym kontem XTimers.</span></div><div class="account-row"><strong>Oddzielne ustawienia prywatności</strong><span>Wylogowanie, usunięcie lokalnych kopii, usunięcie danych XTimers i usunięcie globalnego Xin Account to odrębne działania.</span></div></div></div></section>
-</main>
-<footer><div>© 2017-2026 Xintech LLC.</div><div class="footer-links"><a href="support.html">Pomoc</a><a href="privacy.html">Prywatność</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a><a href="sms-terms.html">Regulamin SMS</a><a href="sms-opt-in.html">Zgoda na SMS</a></div></footer>
+<main id="main">
+<section aria-labelledby="hero-heading" class="hero wrap" id="top">
+<div class="hero-copy hero-hoefler">
+<div class="hero-copy-inner">
+<p class="eyebrow">Na Maca, iPhone'a i iPada</p>
+<h1 aria-label="Mierz czas. Odliczaj. Zegary światowe. Kalendarz świata." class="hero-timing-heading" id="hero-heading"><span class="hero-line">Mierz czas.</span> <span class="hero-line">Odliczaj.</span> <span class="hero-line">Zegary światowe.</span> <span class="hero-line">Kalendarz świata.</span></h1>
+<p class="hero-payoff">Elastycznie. Po Twojemu.</p>
+<p class="hero-description">Połącz czasomierze, odliczanie i zegary światowe w jednym obszarze roboczym. Dodaj rutyny wielokrotnego użytku, przypomnienia i raporty, a układ oraz wygląd dostosuj do siebie.</p>
+<p class="hero-note"><svg aria-hidden="true" class="icon"><use href="#i-check"></use></svg>Podstawowe czasomierze działają offline. Konto nie jest potrzebne.</p>
 </div>
-<script>
-      // ft-language-menu-dismiss: close the language dropdown when clicking
-      // outside it or pressing Escape. A native <details> otherwise only closes
-      // on a second click of its <summary>.
-      (function () {
-        function closeAll() {
-          document.querySelectorAll('details.language-menu[open]')
-            .forEach(function (d) { d.removeAttribute('open'); });
-        }
-        document.addEventListener('click', function (e) {
-          document.querySelectorAll('details.language-menu[open]')
-            .forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute('open'); });
-        });
-        document.addEventListener('keydown', function (e) {
-          if (e.key === 'Escape' || e.key === 'Esc') closeAll();
-        });
-      })();
-    </script>
+</div>
+<div class="hero-stage">
+<div class="floating-label"><span class="pulse-dot"></span>Znajdź czas na to, co ważne.</div>
+<button aria-label="Powiększ: zrzut obszaru „Studio” w zainstalowanej aplikacji na Maca" class="image-button hero-mac" data-caption="Obszar roboczy „Studio” — zainstalowana aplikacja na Maca z symulowanymi czasomierzami, odliczaniem i zegarami światowymi." data-zoom="../assets/marketing/mac-dark.png" type="button">
+<img alt="Obszar roboczy „Studio” w zainstalowanej aplikacji XTimers, z symulowanymi czasomierzami „Design”, „Research”, „Writing”, „Reading” i „Planning”, odliczaniem „Focus sprint” i trzema zegarami światowymi na granatowym tle" fetchpriority="high" height="796" src="../assets/marketing/mac-dark.png" width="1240"/>
+</button>
+<button aria-label="Powiększ: kompaktowy czasomierz „Design” z ukrytymi elementami sterowania" class="image-button hero-mini" data-caption="Kompaktowy czasomierz „Design” — zainstalowana aplikacja na Maca z symulowanymi danymi i ukrytymi elementami sterowania." data-zoom="../assets/marketing/mac-timer-minimal-hidden.png" type="button">
+<img alt="Czasomierz „Design” w kompaktowym granatowym oknie „Minimal” po zniknięciu elementów sterowania" fetchpriority="high" height="480" src="../assets/marketing/mac-timer-minimal-hidden.png" width="1240"/>
+</button>
+<button aria-label="Powiększ: Kalendarz świata w sekcji otwierającej" class="image-button hero-calendar" data-caption="Kalendarz świata — październik 2026 ze świętami państwowymi, datami kalendarza chińskiego i szczegółami Święta Narodowego w zainstalowanej aplikacji na Maca." data-zoom="../assets/marketing/mac-world-calendar-month.png" type="button">
+<img alt="Siatka miesiąca i szczegóły świąt Kalendarza świata w jasnym oknie na Macu" decoding="async" height="1440" src="../assets/marketing/mac-world-calendar-month.png" width="2040"/>
+</button>
+<button aria-label="Powiększ: Biblioteka dźwięków w sekcji otwierającej" class="image-button hero-sounds" data-caption="Biblioteka dźwięków — dźwięki „World Ceremonial” z natywnymi wykresami fal, ulubionymi i elementami sterowania odtwarzaniem w zainstalowanej aplikacji na Maca." data-zoom="../assets/marketing/mac-sound-ceremonial.png" type="button">
+<img alt="Kolekcja „World Ceremonial” w Bibliotece dźwięków, z wykresami fal dzwonu, dzwonków, bębna i trąbki" decoding="async" height="1120" src="../assets/marketing/mac-sound-ceremonial.png" width="1440"/>
+</button>
+<button aria-label="Powiększ: „Planning” ze zdjęciem Dolomitów w sekcji otwierającej" class="image-button hero-photo" data-caption="Widok po Twojemu — „Planning” z czasem 20:04 na zdjęciu Dolomitów, z automatycznie ukrytymi elementami sterowania w zainstalowanej aplikacji na Maca." data-zoom="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" type="button">
+<img alt="„Planning” z czasem 20:04 na zdjęciu gór w widoku „Minimal”" decoding="async" height="468" src="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" width="658"/>
+</button>
+<button aria-label="Powiększ: wykresy raportu tygodniowego w sekcji otwierającej" class="image-button hero-report" data-caption="Twój tydzień w centrum uwagi — 30 przykładowych godzin w pięciu zadaniach, z sumami dziennymi i wykresami udziału zadań w zainstalowanej aplikacji na Maca." data-zoom="../assets/marketing/mac-report-week-daily-totals.png" type="button">
+<img alt="Tygodniowy raport czasu z kolorowymi skumulowanymi sumami dziennymi i wykresem udziału każdego zadania w 30 przykładowych godzinach" decoding="async" height="2396" src="../assets/marketing/mac-report-week-daily-totals.png" width="1520"/>
+</button>
+<div class="hero-menubar">
+<button aria-label="Powiększ: stan zadania „Planning” na pasku menu w sekcji otwierającej" class="image-button" data-caption="Twój czasomierz na pasku menu — „Planning” wstrzymany przy 20:04, widoczny obok ikon statusu macOS bez otwierania głównego okna." data-zoom="../assets/marketing/mac-menubar-status-planning.png" type="button">
+<img alt="Pasek menu macOS ze wskaźnikiem pauzy i napisem „Planning 20:04” obok systemowych ikon statusu" decoding="async" height="60" src="../assets/marketing/mac-menubar-status-planning.png" width="572"/>
+</button>
+<a href="#menu-bar">Twój czasomierz prosto na pasku menu.</a>
+</div>
+<span class="stage-caption">Twój czas. W skrócie.</span>
+</div>
+</section>
+<section aria-label="Poznaj funkcje XTimers" class="feature-overview wrap" id="features">
+<details class="feature-browser">
+<summary>Przeglądaj wszystkie 20 funkcji <span aria-hidden="true">+</span></summary>
+<nav aria-label="Wszystkie 20 funkcji według kategorii" class="feature-index">
+<div class="feature-group">
+<h3><a class="feature-category" href="#timers"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timers.png" width="16"/>Pomiar czasu<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#timers"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timers.png" width="16"/><span>Czasomierze i odliczanie</span></a></li>
+<li><a href="#reminders"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/reminders.png" width="16"/><span>Przypomnienia przez e-mail, SMS i połączenia</span></a></li>
+<li><a href="#sound-library"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/sound-library.png" width="16"/><span>Biblioteka dźwięków</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#task-sets"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/task-sets.png" width="16"/>Rutyny<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#task-sets"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/task-sets.png" width="16"/><span>Zestawy zadań i szablony wielokrotnego użytku</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#timer-views"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timer-views.png" width="16"/>Widoki<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#timer-views"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timer-views.png" width="16"/><span>Elastyczne widoki czasomierzy</span></a></li>
+<li><a href="#classic-interface"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/classic-interface.png" width="16"/><span>Klasyczny interfejs</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#world-calendar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-clocks.png" width="16"/>Czas na świecie<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#world-clocks"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-clocks.png" width="16"/><span>Zegary światowe</span></a></li>
+<li><a href="#world-calendar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-calendar.png" width="16"/><span>Kalendarz świata</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#time-reports"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/time-reports.png" width="16"/>Raporty<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#time-reports"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/time-reports.png" width="16"/><span>Raporty czasu i udostępnianie</span></a></li>
+<li><a href="#archives"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/archives.png" width="16"/><span>Archiwa</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#appearance"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/appearance.png" width="16"/>Wygląd<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#appearance"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/appearance.png" width="16"/><span>Dostosowywanie wyglądu</span></a></li>
+<li><a href="#languages"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/languages.png" width="16"/><span>Obsługa wielu języków</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#menu-bar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/menu-bar.png" width="16"/>Twoje urządzenia<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#menu-bar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/menu-bar.png" width="16"/><span>Integracja z paskiem menu i biurkiem</span></a></li>
+<li><a href="#live-activities"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/live-activities.png" width="16"/><span>Aktywności na żywo</span></a></li>
+<li><a href="#siri-shortcuts"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/siri-shortcuts.png" width="16"/><span>Siri i Skróty</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#offline"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/protected-sync.png" width="16"/>Synchronizacja i prywatność<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#offline"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/offline.png" width="16"/><span>Korzystanie offline bez konta</span></a></li>
+<li><a href="#synchronization"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/synchronization.png" width="16"/><span>Synchronizacja między urządzeniami</span></a></li>
+<li><a href="#protected-sync"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/protected-sync.png" width="16"/><span>Chroniona synchronizacja</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#activity-tracking"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/xhelpers-pro.png" width="16"/>Więcej na Macu<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#activity-tracking"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/activity-tracking.png" width="16"/><span>Automatyczne śledzenie aktywności aplikacji</span></a></li>
+<li><a href="#xhelpers-pro"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/xhelpers-pro.png" width="16"/><span>Korzyść XHelpers Pro</span></a></li>
+</ul>
+</div>
+</nav>
+</details>
+</section>
+<section aria-labelledby="timers-heading" class="highlight-row has-gallery" data-highlight="01" id="timers">
+<span class="anchor-target" id="count-up-timers"></span><span class="anchor-target" id="countdowns"></span><span class="anchor-target" id="running-timers"></span><span class="anchor-target" id="task-controls"></span><span class="anchor-target" id="notes-history"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">01</span>Czasomierze i odliczanie</p>
+<h2 id="timers-heading">Znajdź czas na to, co ważne.</h2>
+<p>Mierz poświęcony czas, odliczaj określony okres lub miej termin na oku. Uruchamiaj jedno zadanie lub kilka, wstrzymuj je i wznawiaj oraz dodawaj notatki do sesji. Twoje czasomierze dostosowują się do zmieniającego się dnia.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Zrzuty ekranu: Czasomierze i odliczanie" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Twoja przestrzeń czasomierzy</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Twoja przestrzeń czasomierzy" class="image-button capture-image" data-caption="Twoja przestrzeń czasomierzy — Obszar roboczy „Studio” łączy pięć stoperów, odliczanie „Focus sprint” i trzy zegary światowe." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="Obszar roboczy „Studio” łączy pięć stoperów, odliczanie „Focus sprint” i trzy zegary światowe." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>Obszar roboczy „Studio” łączy pięć stoperów, odliczanie „Focus sprint” i trzy zegary światowe.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Odliczanie po Twojemu</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Odliczanie po Twojemu" class="image-button capture-image" data-caption="Odliczanie po Twojemu — „Focus sprint”: 25-minutowe odliczanie w „Studio” z możliwością pauzy, ręcznym startem i dźwiękiem „Gentle Bell” na zakończenie." data-zoom="../assets/marketing/mac-countdown.png" type="button"><img alt="„Focus sprint”: 25-minutowe odliczanie w „Studio” z możliwością pauzy, ręcznym startem i dźwiękiem „Gentle Bell” na zakończenie." decoding="async" loading="lazy" src="../assets/marketing/mac-countdown.png"/></button>
+<figcaption>„Focus sprint”: 25-minutowe odliczanie w „Studio” z możliwością pauzy, ręcznym startem i dźwiękiem „Gentle Bell” na zakończenie.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="task-sets-heading" class="highlight-row" data-highlight="02" id="task-sets">
+<span class="anchor-target" id="routines"></span><span class="anchor-target" id="templates"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">02</span>Zestawy zadań i szablony wielokrotnego użytku</p>
+<h2 id="task-sets-heading">Miejsce na każdą rutynę.</h2>
+<p>Nadaj pracy, nauce i codziennemu życiu własne nazwane zestawy zadań. Zapisz zadanie lub cały zestaw jako szablon i przenieś znajomą rutynę do kolejnej sesji.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Zrzuty ekranu: Zestawy zadań i szablony wielokrotnego użytku" class="feature-gallery gallery-1">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Zestawy zadań</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Zestawy zadań" class="image-button capture-image" data-caption="Zestawy zadań — zestaw „Studio” z dziewięcioma aktywnymi zadaniami i szablonem „Studio Template” wielokrotnego użytku." data-zoom="../assets/marketing/mac-task-sets.png" type="button"><img alt="Zestaw zadań „Studio” z dziewięcioma aktywnymi zadaniami i szablonem „Studio Template” wielokrotnego użytku." decoding="async" loading="lazy" src="../assets/marketing/mac-task-sets.png"/></button>
+<figcaption>Zestaw zadań „Studio” z dziewięcioma aktywnymi zadaniami i szablonem „Studio Template” wielokrotnego użytku.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="timer-views-heading" class="highlight-row has-gallery" data-highlight="03" id="timer-views">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">03</span>Elastyczne widoki czasomierzy</p>
+<h2 id="timer-views-heading">Właściwy widok na tę chwilę.</h2>
+<p>Spójrz na całość lub skup się na jednym zadaniu. Mac oferuje widoki Lista, Siatka, Pojedynczy i Minimalny. Na telefonie iPhone i iPadzie wybierz Listę, Skupienie lub widok Pojedynczy, zależnie od chwili.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">W widokach „Single” i „Minimal” elementy sterowania znikają po odsunięciu wskaźnika i pojawiają się ponownie po najechaniu.</p>
+</div>
+<div aria-label="Zrzuty ekranu: Elastyczne widoki czasomierzy" class="feature-gallery gallery-14">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · lista</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Mac · lista" class="image-button capture-image" data-caption="Mac · lista — „Studio” w widoku listy z dziewięcioma zadaniami w kompaktowych wierszach." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="„Studio” w widoku listy z dziewięcioma zadaniami w kompaktowych wierszach." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>„Studio” w widoku listy z dziewięcioma zadaniami w kompaktowych wierszach.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · siatka</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Mac · siatka" class="image-button capture-image" data-caption="Mac · siatka — Czasomierze „Design”, „Research”, „Writing”, „Reading” i „Planning” w „Studio”, odliczanie „Focus sprint” oraz zegary Nowego Jorku, Londynu i Tokio." data-zoom="../assets/marketing/mac-grid-light.png" type="button"><img alt="Czasomierze „Design”, „Research”, „Writing”, „Reading” i „Planning” w „Studio”, odliczanie „Focus sprint” oraz zegary Nowego Jorku, Londynu i Tokio." decoding="async" loading="lazy" src="../assets/marketing/mac-grid-light.png"/></button>
+<figcaption>Czasomierze „Design”, „Research”, „Writing”, „Reading” i „Planning” w „Studio”, odliczanie „Focus sprint” oraz zegary Nowego Jorku, Londynu i Tokio.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · widoczne elementy sterowania · czysta czerń</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Mac · Single · widoczne elementy sterowania · czysta czerń" class="image-button capture-image" data-caption="Mac · Single · widoczne elementy sterowania · czysta czerń — „Planning” z czasem 20:04 w widoku „Single” zainstalowanej aplikacji na Maca, z widocznymi elementami sterowania i jednolicie czarnym tłem." data-zoom="../assets/marketing/mac-planning-single-black.png" type="button"><img alt="„Planning” z czasem 20:04 w widoku „Single” zainstalowanej aplikacji na Maca, z widocznymi elementami sterowania i jednolicie czarnym tłem." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-black.png"/></button>
+<figcaption>„Planning” z czasem 20:04 w widoku „Single” zainstalowanej aplikacji na Maca, z widocznymi elementami sterowania i jednolicie czarnym tłem.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · widoczne elementy sterowania · czysta czerń</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Mac · Minimal · widoczne elementy sterowania · czysta czerń" class="image-button capture-image" data-caption="Mac · Minimal · widoczne elementy sterowania · czysta czerń — „Planning” z czasem 20:04 w widoku „Minimal” zainstalowanej aplikacji na Maca, z widocznymi elementami sterowania i jednolicie czarnym tłem." data-zoom="../assets/marketing/mac-planning-minimal-black.png" type="button"><img alt="„Planning” z czasem 20:04 w widoku „Minimal” zainstalowanej aplikacji na Maca, z widocznymi elementami sterowania i jednolicie czarnym tłem." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-black.png"/></button>
+<figcaption>„Planning” z czasem 20:04 w widoku „Minimal” zainstalowanej aplikacji na Maca, z widocznymi elementami sterowania i jednolicie czarnym tłem.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · ukryte elementy sterowania · czysta czerń</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Mac · Single · ukryte elementy sterowania · czysta czerń" class="image-button capture-image" data-caption="Mac · Single · ukryte elementy sterowania · czysta czerń — „Planning” z czasem 20:04 w widoku „Single” zainstalowanej aplikacji na Maca, z ukrytymi elementami sterowania i jednolicie czarnym tłem." data-zoom="../assets/marketing/mac-planning-single-hidden-black.png" type="button"><img alt="„Planning” z czasem 20:04 w widoku „Single” zainstalowanej aplikacji na Maca, z ukrytymi elementami sterowania i jednolicie czarnym tłem." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-black.png"/></button>
+<figcaption>„Planning” z czasem 20:04 w widoku „Single” zainstalowanej aplikacji na Maca, z ukrytymi elementami sterowania i jednolicie czarnym tłem.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · ukryte elementy sterowania · czysta czerń</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Mac · Minimal · ukryte elementy sterowania · czysta czerń" class="image-button capture-image" data-caption="Mac · Minimal · ukryte elementy sterowania · czysta czerń — „Planning” z czasem 20:04 w widoku „Minimal” zainstalowanej aplikacji na Maca, z ukrytymi elementami sterowania i jednolicie czarnym tłem." data-zoom="../assets/marketing/mac-planning-minimal-hidden-black.png" type="button"><img alt="„Planning” z czasem 20:04 w widoku „Minimal” zainstalowanej aplikacji na Maca, z ukrytymi elementami sterowania i jednolicie czarnym tłem." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-black.png"/></button>
+<figcaption>„Planning” z czasem 20:04 w widoku „Minimal” zainstalowanej aplikacji na Maca, z ukrytymi elementami sterowania i jednolicie czarnym tłem.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · widoczne elementy sterowania · zdjęcie Yosemite</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Mac · Single · widoczne elementy sterowania · zdjęcie Yosemite" class="image-button capture-image" data-caption="Mac · Single · widoczne elementy sterowania · zdjęcie Yosemite — „Planning” z czasem 20:04 w widoku „Single” zainstalowanej aplikacji na Maca, z widocznymi elementami sterowania i zdjęciem Yosemite w tle." data-zoom="../assets/marketing/mac-planning-single-yosemite.png" type="button"><img alt="„Planning” z czasem 20:04 w widoku „Single” zainstalowanej aplikacji na Maca, z widocznymi elementami sterowania i zdjęciem Yosemite w tle." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-yosemite.png"/></button>
+<figcaption>„Planning” z czasem 20:04 w widoku „Single” zainstalowanej aplikacji na Maca, z widocznymi elementami sterowania i zdjęciem Yosemite w tle.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · widoczne elementy sterowania · zdjęcie Yosemite</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Mac · Minimal · widoczne elementy sterowania · zdjęcie Yosemite" class="image-button capture-image" data-caption="Mac · Minimal · widoczne elementy sterowania · zdjęcie Yosemite — „Planning” z czasem 20:04 w widoku „Minimal” zainstalowanej aplikacji na Maca, z widocznymi elementami sterowania i zdjęciem Yosemite w tle." data-zoom="../assets/marketing/mac-planning-minimal-yosemite.png" type="button"><img alt="„Planning” z czasem 20:04 w widoku „Minimal” zainstalowanej aplikacji na Maca, z widocznymi elementami sterowania i zdjęciem Yosemite w tle." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-yosemite.png"/></button>
+<figcaption>„Planning” z czasem 20:04 w widoku „Minimal” zainstalowanej aplikacji na Maca, z widocznymi elementami sterowania i zdjęciem Yosemite w tle.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · ukryte elementy sterowania · zdjęcie Yosemite</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Mac · Single · ukryte elementy sterowania · zdjęcie Yosemite" class="image-button capture-image" data-caption="Mac · Single · ukryte elementy sterowania · zdjęcie Yosemite — „Planning” z czasem 20:04 w widoku „Single” zainstalowanej aplikacji na Maca, z ukrytymi elementami sterowania i zdjęciem Yosemite w tle." data-zoom="../assets/marketing/mac-planning-single-hidden-yosemite.png" type="button"><img alt="„Planning” z czasem 20:04 w widoku „Single” zainstalowanej aplikacji na Maca, z ukrytymi elementami sterowania i zdjęciem Yosemite w tle." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-yosemite.png"/></button>
+<figcaption>„Planning” z czasem 20:04 w widoku „Single” zainstalowanej aplikacji na Maca, z ukrytymi elementami sterowania i zdjęciem Yosemite w tle.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · ukryte elementy sterowania · zdjęcie Yosemite</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Mac · Minimal · ukryte elementy sterowania · zdjęcie Yosemite" class="image-button capture-image" data-caption="Mac · Minimal · ukryte elementy sterowania · zdjęcie Yosemite — „Planning” z czasem 20:04 w widoku „Minimal” zainstalowanej aplikacji na Maca, z ukrytymi elementami sterowania i zdjęciem Yosemite w tle." data-zoom="../assets/marketing/mac-planning-minimal-hidden-yosemite.png" type="button"><img alt="„Planning” z czasem 20:04 w widoku „Minimal” zainstalowanej aplikacji na Maca, z ukrytymi elementami sterowania i zdjęciem Yosemite w tle." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-yosemite.png"/></button>
+<figcaption>„Planning” z czasem 20:04 w widoku „Minimal” zainstalowanej aplikacji na Maca, z ukrytymi elementami sterowania i zdjęciem Yosemite w tle.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · widoczne elementy sterowania · zdjęcie Dolomitów</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Mac · Single · widoczne elementy sterowania · zdjęcie Dolomitów" class="image-button capture-image" data-caption="Mac · Single · widoczne elementy sterowania · zdjęcie Dolomitów — „Planning” z czasem 20:04 w widoku „Single” zainstalowanej aplikacji na Maca, z widocznymi elementami sterowania i zdjęciem Dolomitów w tle." data-zoom="../assets/marketing/mac-planning-single-dolomites.png" type="button"><img alt="„Planning” z czasem 20:04 w widoku „Single” zainstalowanej aplikacji na Maca, z widocznymi elementami sterowania i zdjęciem Dolomitów w tle." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-dolomites.png"/></button>
+<figcaption>„Planning” z czasem 20:04 w widoku „Single” zainstalowanej aplikacji na Maca, z widocznymi elementami sterowania i zdjęciem Dolomitów w tle.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · widoczne elementy sterowania · zdjęcie Dolomitów</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Mac · Minimal · widoczne elementy sterowania · zdjęcie Dolomitów" class="image-button capture-image" data-caption="Mac · Minimal · widoczne elementy sterowania · zdjęcie Dolomitów — „Planning” z czasem 20:04 w widoku „Minimal” zainstalowanej aplikacji na Maca, z widocznymi elementami sterowania i zdjęciem Dolomitów w tle." data-zoom="../assets/marketing/mac-planning-minimal-dolomites.png" type="button"><img alt="„Planning” z czasem 20:04 w widoku „Minimal” zainstalowanej aplikacji na Maca, z widocznymi elementami sterowania i zdjęciem Dolomitów w tle." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-dolomites.png"/></button>
+<figcaption>„Planning” z czasem 20:04 w widoku „Minimal” zainstalowanej aplikacji na Maca, z widocznymi elementami sterowania i zdjęciem Dolomitów w tle.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · ukryte elementy sterowania · zdjęcie Dolomitów</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Mac · Single · ukryte elementy sterowania · zdjęcie Dolomitów" class="image-button capture-image" data-caption="Mac · Single · ukryte elementy sterowania · zdjęcie Dolomitów — „Planning” z czasem 20:04 w widoku „Single” zainstalowanej aplikacji na Maca, z ukrytymi elementami sterowania i zdjęciem Dolomitów w tle." data-zoom="../assets/marketing/mac-planning-single-hidden-dolomites.png" type="button"><img alt="„Planning” z czasem 20:04 w widoku „Single” zainstalowanej aplikacji na Maca, z ukrytymi elementami sterowania i zdjęciem Dolomitów w tle." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-dolomites.png"/></button>
+<figcaption>„Planning” z czasem 20:04 w widoku „Single” zainstalowanej aplikacji na Maca, z ukrytymi elementami sterowania i zdjęciem Dolomitów w tle.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · ukryte elementy sterowania · zdjęcie Dolomitów</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Mac · Minimal · ukryte elementy sterowania · zdjęcie Dolomitów" class="image-button capture-image" data-caption="Mac · Minimal · ukryte elementy sterowania · zdjęcie Dolomitów — „Planning” z czasem 20:04 w widoku „Minimal” zainstalowanej aplikacji na Maca, z ukrytymi elementami sterowania i zdjęciem Dolomitów w tle." data-zoom="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" type="button"><img alt="„Planning” z czasem 20:04 w widoku „Minimal” zainstalowanej aplikacji na Maca, z ukrytymi elementami sterowania i zdjęciem Dolomitów w tle." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-dolomites.png"/></button>
+<figcaption>„Planning” z czasem 20:04 w widoku „Minimal” zainstalowanej aplikacji na Maca, z ukrytymi elementami sterowania i zdjęciem Dolomitów w tle.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="world-clocks-heading" class="highlight-row has-gallery" data-highlight="04" id="world-clocks">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">04</span>Zegary światowe</p>
+<h2 id="world-clocks-heading">Miej swoje miejsca pod ręką.</h2>
+<p>Dodaj miasta i strefy czasowe, które są dla Ciebie ważne. Obok czasomierzy miej na oku współpracowników, rodzinę i plany podróży, wraz z bieżącym czasem lokalnym w każdym miejscu.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Zrzuty ekranu: Zegary światowe" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Zegary obok czasomierzy</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Zegary obok czasomierzy" class="image-button capture-image" data-caption="Zegary obok czasomierzy — Nowy Jork, Londyn i Tokio obok czasomierzy „Studio” w niebieskim obszarze roboczym z widokiem siatki." data-zoom="../assets/marketing/mac-grid-dark.png" type="button"><img alt="Nowy Jork, Londyn i Tokio obok czasomierzy „Studio” w niebieskim obszarze roboczym z widokiem siatki." decoding="async" loading="lazy" src="../assets/marketing/mac-grid-dark.png"/></button>
+<figcaption>Nowy Jork, Londyn i Tokio obok czasomierzy „Studio” w niebieskim obszarze roboczym z widokiem siatki.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Wybierz miejsce</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · przykładowa konfiguracja</span></div>
+<button aria-label="Powiększ: Wybierz miejsce" class="image-button capture-image" data-caption="Wybierz miejsce — Nowy Jork w edytorze zegarów zainstalowanej aplikacji na Maca, z mapą, czasem lokalnym i przesunięciem UTC−04:00." data-zoom="../assets/marketing/mac-clock-editor.png" type="button"><img alt="Nowy Jork w edytorze zegarów zainstalowanej aplikacji na Maca, z mapą, czasem lokalnym i przesunięciem UTC−04:00." decoding="async" loading="lazy" src="../assets/marketing/mac-clock-editor.png"/></button>
+<figcaption>Nowy Jork w edytorze zegarów zainstalowanej aplikacji na Maca, z mapą, czasem lokalnym i przesunięciem UTC−04:00.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="world-calendar-heading" class="highlight-row has-gallery" data-highlight="05" id="world-calendar">
+<span class="anchor-target" id="regional-holidays"></span><span class="anchor-target" id="world-events"></span><span class="anchor-target" id="apple-calendar"></span><span class="anchor-target" id="calendar-actions"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">05</span>Kalendarz świata</p>
+<h2 id="world-calendar-heading">Zobacz swój dzień w szerszym kontekście.</h2>
+<p>Odkrywaj święta, daty ważne dla kultury, wydarzenia światowe i chwile z historii. Dodaj widok swoich kalendarzy Apple tylko do odczytu, a następnie zamień datę lub wydarzenie w odliczanie albo osobiste przypomnienie.</p>
+<span class="platform-pill">Mac</span>
+<p class="feature-note">Pobierz katalog raz, aby przeglądać go offline. Dostęp do Twoich kalendarzy Apple jest opcjonalny i służy wyłącznie do odczytu.</p>
+</div>
+<div aria-label="Zrzuty ekranu: Kalendarz świata" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Miesiąc w skrócie</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · przykładowa konfiguracja</span></div>
+<button aria-label="Powiększ: Miesiąc w skrócie" class="image-button capture-image" data-caption="Miesiąc w skrócie — Październik 2026 z profilem świąt Chin kontynentalnych, datami kalendarza chińskiego i szczegółami Święta Narodowego." data-zoom="../assets/marketing/mac-world-calendar-month.png" type="button"><img alt="Październik 2026 z profilem świąt Chin kontynentalnych, datami kalendarza chińskiego i szczegółami Święta Narodowego." decoding="async" loading="lazy" src="../assets/marketing/mac-world-calendar-month.png"/></button>
+<figcaption>Październik 2026 z profilem świąt Chin kontynentalnych, datami kalendarza chińskiego i szczegółami Święta Narodowego.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Widok tygodnia i szczegóły daty</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · przykładowa konfiguracja</span></div>
+<button aria-label="Powiększ: Widok tygodnia i szczegóły daty" class="image-button capture-image" data-caption="Widok tygodnia i szczegóły daty — 27 września – 3 października, z wybranym 1 października i szczegółami Święta Narodowego obok widoku tygodnia." data-zoom="../assets/marketing/mac-world-calendar-week.png" type="button"><img alt="27 września – 3 października, z wybranym 1 października i szczegółami Święta Narodowego obok widoku tygodnia." decoding="async" loading="lazy" src="../assets/marketing/mac-world-calendar-week.png"/></button>
+<figcaption>27 września – 3 października, z wybranym 1 października i szczegółami Święta Narodowego obok widoku tygodnia.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="reminders-heading" class="highlight-row copy-only" data-highlight="06" id="reminders">
+<span class="anchor-target" id="email-sms"></span><span class="anchor-target" id="call-me"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">06</span>Przypomnienia przez e-mail, SMS i połączenia</p>
+<h2 id="reminders-heading">Przypomnienie Twoimi słowami.</h2>
+<p>Zaplanuj wiadomość do siebie po określonym czasie lub na konkretną datę i godzinę. Wybierz e-mail, SMS albo obsługiwane jednorazowe połączenie i śledź stan doręczenia obok swoich zadań.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Obowiązują warunki dostępności konta i usługi. SMS i połączenia wymagają własnego obsługiwanego, zweryfikowanego numeru oraz osobnej zgody. Połączenia obsługują numery z USA i Kanady, są w języku angielskim i nie są automatycznie ponawiane.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="sound-library-heading" class="highlight-row has-gallery" data-highlight="07" id="sound-library">
+<span class="anchor-target" id="sounds"></span><span class="anchor-target" id="interval-beeps"></span><span class="anchor-target" id="completion-alerts"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">07</span>Biblioteka dźwięków</p>
+<h2 id="sound-library-heading">Znajdź dźwięk na zakończenie.</h2>
+<p>Przeglądaj 66 dołączonych dźwięków, odsłuchuj je przed wyborem i zapisuj ulubione. Importuj własne nagrania lub korzystaj z sygnałów w regularnych odstępach, by śledzić upływ czasu podczas sesji.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Zrzuty ekranu: Biblioteka dźwięków" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Dźwięki na Twój dzień</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · przykładowa konfiguracja</span></div>
+<button aria-label="Powiększ: Dźwięki na Twój dzień" class="image-button capture-image" data-caption="Dźwięki na Twój dzień — Biblioteka dźwięków w zainstalowanej aplikacji na Maca z kolekcją „Classic Tones”, wykresami fal, ulubionymi i elementami sterowania odtwarzaniem." data-zoom="../assets/marketing/mac-sound-library.png" type="button"><img alt="Biblioteka dźwięków w zainstalowanej aplikacji na Maca z kolekcją „Classic Tones”, wykresami fal, ulubionymi i elementami sterowania odtwarzaniem." decoding="async" loading="lazy" src="../assets/marketing/mac-sound-library.png"/></button>
+<figcaption>Biblioteka dźwięków w zainstalowanej aplikacji na Maca z kolekcją „Classic Tones”, wykresami fal, ulubionymi i elementami sterowania odtwarzaniem.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Ceremonie świata</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · przykładowa konfiguracja</span></div>
+<button aria-label="Powiększ: Ceremonie świata" class="image-button capture-image" data-caption="Ceremonie świata — Dźwięki kolekcji „World Ceremonial”, od „Gentle Bell” i „Bright Chime” po „Ceremonial Drum” i „Trumpet Salute”." data-zoom="../assets/marketing/mac-sound-ceremonial.png" type="button"><img alt="Dźwięki kolekcji „World Ceremonial”, od „Gentle Bell” i „Bright Chime” po „Ceremonial Drum” i „Trumpet Salute”." decoding="async" loading="lazy" src="../assets/marketing/mac-sound-ceremonial.png"/></button>
+<figcaption>Dźwięki kolekcji „World Ceremonial”, od „Gentle Bell” i „Bright Chime” po „Ceremonial Drum” i „Trumpet Salute”.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="time-reports-heading" class="highlight-row has-gallery" data-highlight="08" id="time-reports">
+<span class="anchor-target" id="report-charts"></span><span class="anchor-target" id="report-exports"></span><span class="anchor-target" id="report-sharing"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">08</span>Raporty czasu i udostępnianie</p>
+<h2 id="time-reports-heading">Zobacz, na co poświęcasz czas.</h2>
+<p>Przeglądaj sesje, sumy dzienne i bieżące odczyty. Odkrywaj wykresy, porównuj okresy i filtruj według zadania lub zestawu. Zapisz CSV, HTML lub PDF, wyślij sobie raport e-mailem albo udostępnij go przez wygasający link.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Lokalne raporty i eksporty działają offline. E-mail i udostępnianie online wymagają połączenia.</p>
+</div>
+<div aria-label="Zrzuty ekranu: Raporty czasu i udostępnianie" class="feature-gallery gallery-4 report-gallery">
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>Sumy dzienne · Tydzień w skrócie</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowana historia</span></div>
+<button aria-label="Powiększ: Sumy dzienne · Tydzień w skrócie" class="image-button capture-image" data-caption="Sumy dzienne · Tydzień w skrócie — 21–25 września 2026 r.: 30 godzin w pięciu przykładowych zadaniach, z sumami dziennymi i udziałami zadań. „Design” to 12 godz. 05 min (40,3%)." data-zoom="../assets/marketing/mac-report-week-daily-totals.png" type="button"><img alt="21–25 września 2026 r.: 30 godzin w pięciu przykładowych zadaniach, z sumami dziennymi i udziałami zadań. „Design” to 12 godz. 05 min (40,3%)." decoding="async" loading="lazy" src="../assets/marketing/mac-report-week-daily-totals.png"/></button>
+<figcaption>21–25 września 2026 r.: 30 godzin w pięciu przykładowych zadaniach, z sumami dziennymi i udziałami zadań. „Design” to 12 godz. 05 min (40,3%).</figcaption>
+</figure>
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>Sesje · Kiedy wykonywano pracę</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowana historia</span></div>
+<button aria-label="Powiększ: Sesje · Kiedy wykonywano pracę" class="image-button capture-image" data-caption="Sesje · Kiedy wykonywano pracę — Przykładowy tydzień obejmujący 29 sesji i 30 godzin, z osią czasu pokazującą, kiedy wykonywano pracę od 21 do 25 września 2026 r." data-zoom="../assets/marketing/mac-report-week-sessions.png" type="button"><img alt="Przykładowy tydzień obejmujący 29 sesji i 30 godzin, z osią czasu pokazującą, kiedy wykonywano pracę od 21 do 25 września 2026 r." decoding="async" loading="lazy" src="../assets/marketing/mac-report-week-sessions.png"/></button>
+<figcaption>Przykładowy tydzień obejmujący 29 sesji i 30 godzin, z osią czasu pokazującą, kiedy wykonywano pracę od 21 do 25 września 2026 r.</figcaption>
+</figure>
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>Sesje · Jeden dzień w szczegółach</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowana historia</span></div>
+<button aria-label="Powiększ: Sesje · Jeden dzień w szczegółach" class="image-button capture-image" data-caption="Sesje · Jeden dzień w szczegółach — Sześć przykładowych sesji 24 września 2026 r., łącznie 6 godz. 15 min, z osią czasu dnia oraz godzinami rozpoczęcia i zakończenia każdej sesji." data-zoom="../assets/marketing/mac-report-day-sessions.png" type="button"><img alt="Sześć przykładowych sesji 24 września 2026 r., łącznie 6 godz. 15 min, z osią czasu dnia oraz godzinami rozpoczęcia i zakończenia każdej sesji." decoding="async" loading="lazy" src="../assets/marketing/mac-report-day-sessions.png"/></button>
+<figcaption>Sześć przykładowych sesji 24 września 2026 r., łącznie 6 godz. 15 min, z osią czasu dnia oraz godzinami rozpoczęcia i zakończenia każdej sesji.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Bieżące odczyty</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Bieżące odczyty" class="image-button capture-image" data-caption="Bieżące odczyty — Bieżące odczyty obszaru roboczego „Studio” z opcjami kopiowania, eksportowania i udostępniania." data-zoom="../assets/marketing/mac-report-current-readings.png" type="button"><img alt="Bieżące odczyty obszaru roboczego „Studio” z opcjami kopiowania, eksportowania i udostępniania." decoding="async" loading="lazy" src="../assets/marketing/mac-report-current-readings.png"/></button>
+<figcaption>Bieżące odczyty obszaru roboczego „Studio” z opcjami kopiowania, eksportowania i udostępniania.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="archives-heading" class="highlight-row" data-highlight="09" id="archives">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">09</span>Archiwa</p>
+<h2 id="archives-heading">Zachowaj ukończoną pracę.</h2>
+<p>Zarchiwizuj zestaw zadań i miej jego historię pod ręką. Przeszukuj wcześniejszą pracę, przeglądaj zapisane migawki i otwieraj raport, gdy chcesz wrócić do projektu lub rutyny.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Zrzuty ekranu: Archiwa" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Zapisany raport projektu</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Zapisany raport projektu" class="image-button capture-image" data-caption="Zapisany raport projektu — „Brand workshop” zapisany w archiwum, z zachowanymi w raporcie symulowanymi odczytami czasomierzy." data-zoom="../assets/marketing/mac-archive-report.png" type="button"><img alt="„Brand workshop” zapisany w archiwum, z zachowanymi w raporcie symulowanymi odczytami czasomierzy." decoding="async" loading="lazy" src="../assets/marketing/mac-archive-report.png"/></button>
+<figcaption>„Brand workshop” zapisany w archiwum, z zachowanymi w raporcie symulowanymi odczytami czasomierzy.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="appearance-heading" class="highlight-row has-gallery" data-highlight="10" id="appearance">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">10</span>Dostosowywanie wyglądu</p>
+<h2 id="appearance-heading">Nadaj przestrzeni własny charakter.</h2>
+<p>Wybierz jasny lub ciemny wygląd, jednolity kolor albo zdjęcie. Zbuduj bibliotekę teł z własnych obrazów i nadaj przestrzeni czasomierzy spokojny lub barwny charakter. Mac może także zmieniać zdjęcia z wybranego folderu.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Dostosuj używane urządzenie, w tym osobne ustawienia wyglądu dla Maca.</p>
+</div>
+<div aria-label="Zrzuty ekranu: Dostosowywanie wyglądu" class="feature-gallery gallery-4">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Jednolite tło · białe</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Jednolite tło · białe" class="image-button capture-image" data-caption="Jednolite tło · białe — Czasomierz „Design” w widoku „Single” na jednolitym białym tle." data-zoom="../assets/marketing/mac-single-light.png" type="button"><img alt="Czasomierz „Design” w widoku „Single” na jednolitym białym tle." decoding="async" loading="lazy" src="../assets/marketing/mac-single-light.png"/></button>
+<figcaption>Czasomierz „Design” w widoku „Single” na jednolitym białym tle.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Jednolity kolor · granatowy</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Jednolity kolor · granatowy" class="image-button capture-image" data-caption="Jednolity kolor · granatowy — Ten sam czasomierz „Design” na jednolitym granatowym tle." data-zoom="../assets/marketing/mac-timer-single.png" type="button"><img alt="Ten sam czasomierz „Design” na jednolitym granatowym tle." decoding="async" loading="lazy" src="../assets/marketing/mac-timer-single.png"/></button>
+<figcaption>Ten sam czasomierz „Design” na jednolitym granatowym tle.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Zdjęcie w tle</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Zdjęcie w tle" class="image-button capture-image" data-caption="Zdjęcie w tle — Czasomierz „Design” na tle dołączonego do XTimers zdjęcia Dolomitów." data-zoom="../assets/marketing/mac-single-photo.png" type="button"><img alt="Czasomierz „Design” na tle dołączonego do XTimers zdjęcia Dolomitów." decoding="async" loading="lazy" src="../assets/marketing/mac-single-photo.png"/></button>
+<figcaption>Czasomierz „Design” na tle dołączonego do XTimers zdjęcia Dolomitów.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Wybierz zdjęcie</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · przykładowa konfiguracja</span></div>
+<button aria-label="Powiększ: Wybierz zdjęcie" class="image-button capture-image" data-caption="Wybierz zdjęcie — Wybór tła w zainstalowanej aplikacji na Maca z dołączonymi zdjęciami i wybranym Yosemite." data-zoom="../assets/marketing/mac-background-library.png" type="button"><img alt="Wybór tła w zainstalowanej aplikacji na Maca z dołączonymi zdjęciami i wybranym Yosemite." decoding="async" loading="lazy" src="../assets/marketing/mac-background-library.png"/></button>
+<figcaption>Wybór tła w zainstalowanej aplikacji na Maca z dołączonymi zdjęciami i wybranym Yosemite.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="menu-bar-heading" class="highlight-row has-gallery" data-highlight="11" id="menu-bar">
+<span class="anchor-target" id="devices"></span><span class="anchor-target" id="mac-shortcuts"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">11</span>Integracja z paskiem menu i biurkiem</p>
+<h2 id="menu-bar-heading">Miej czas blisko swojej pracy.</h2>
+<p>Odczytuj nazwę zadania i wskazanie czasomierza bezpośrednio z paska menu Maca, bez otwierania głównego okna. Kliknij, aby szybko uruchamiać i wstrzymywać zadania, przełączać zestawy i otwierać raporty. Skrót globalny i okna zawsze na wierzchu zapewniają wygodny dostęp do sterowania.</p>
+<span class="platform-pill">Mac</span>
+</div>
+<div aria-label="Zrzuty ekranu: Integracja z paskiem menu i biurkiem" class="feature-gallery gallery-3 menu-bar-gallery">
+<figure class="capture-card capture-status-strip">
+<div class="capture-heading"><h3>Twój czasomierz w skrócie</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Twój czasomierz w skrócie" class="image-button capture-image" data-caption="Twój czasomierz w skrócie — „Planning” wstrzymany przy 20:04, widoczny bezpośrednio na pasku menu Maca podczas pracy w innej aplikacji." data-zoom="../assets/marketing/mac-menubar-status-planning.png" type="button"><img alt="„Planning” wstrzymany przy 20:04, widoczny bezpośrednio na pasku menu Maca obok systemowych ikon statusu" decoding="async" height="60" loading="lazy" src="../assets/marketing/mac-menubar-status-planning.png" width="572"/></button>
+<figcaption>Nazwa zadania, odczyt i wskaźnik pauzy pozostają widoczne na pasku menu. Kliknij element statusu, aby przejść do sterowania czasomierzem.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Obszar roboczy na pasku menu</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Obszar roboczy na pasku menu" class="image-button capture-image" data-caption="Obszar roboczy na pasku menu — „Design” i inne czasomierze „Studio”, zestawy zadań, raporty i elementy sterowania oknami na pasku menu Maca." data-zoom="../assets/marketing/mac-menu-bar.png" type="button"><img alt="„Design” i inne czasomierze „Studio”, zestawy zadań, raporty i elementy sterowania oknami na pasku menu Maca." decoding="async" loading="lazy" src="../assets/marketing/mac-menu-bar.png"/></button>
+<figcaption>„Design” i inne czasomierze „Studio”, zestawy zadań, raporty i elementy sterowania oknami na pasku menu Maca.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Kompaktowe okno czasomierza</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Kompaktowe okno czasomierza" class="image-button capture-image" data-caption="Kompaktowe okno czasomierza — Czasomierz „Design” z „Studio” w kompaktowym oknie „Minimal”." data-zoom="../assets/marketing/mac-timer-minimal.png" type="button"><img alt="Czasomierz „Design” z „Studio” w kompaktowym oknie „Minimal”." decoding="async" loading="lazy" src="../assets/marketing/mac-timer-minimal.png"/></button>
+<figcaption>Czasomierz „Design” z „Studio” w kompaktowym oknie „Minimal”.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="live-activities-heading" class="highlight-row has-gallery" data-highlight="12" id="live-activities">
+<span class="anchor-target" id="mobile"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">12</span>Aktywności na żywo</p>
+<h2 id="live-activities-heading">Twój czas w skrócie.</h2>
+<p>Zachowaj widoczność obsługiwanego czasomierza na ekranie blokady iPhone'a lub w Dynamic Island. Sprawdzaj zadanie i jego odczyt, a następnie wstrzymuj lub wznawiaj obsługiwane czasomierze bez otwierania całego obszaru roboczego.</p>
+<span class="platform-pill">iPhone</span>
+<p class="feature-note">Wymaga obsługiwanego urządzenia i uprawnienia systemowego. Zegary światowe nie tworzą Aktywności na żywo.</p>
+</div>
+<div aria-label="Zrzuty ekranu: Aktywności na żywo" class="feature-gallery gallery-2">
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>Na ekranie blokady</h3><span class="capture-status status-real">iPhone · bezpośredni zrzut ekranu</span></div>
+<button aria-label="Powiększ: Na ekranie blokady" class="image-button capture-image" data-caption="Na ekranie blokady — Aktywność na żywo z odliczaniem, nazwą zadania, pozostałym czasem i przyciskiem pauzy na ekranie blokady iPhone'a." data-zoom="../assets/marketing/ios-live-activity-lockscreen.png" type="button"><img alt="Aktywność na żywo z odliczaniem, nazwą zadania, pozostałym czasem i przyciskiem pauzy na ekranie blokady iPhone'a." decoding="async" height="2868" loading="lazy" src="../assets/marketing/ios-live-activity-lockscreen.png" width="1320"/></button>
+<figcaption>Aktywność na żywo z odliczaniem, nazwą zadania, pozostałym czasem i przyciskiem pauzy na ekranie blokady iPhone'a.</figcaption>
+</figure>
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>W Dynamic Island</h3><span class="capture-status status-real">iPhone · bezpośredni zrzut ekranu</span></div>
+<button aria-label="Powiększ: W Dynamic Island" class="image-button capture-image" data-caption="W Dynamic Island — Kompaktowe odliczanie pozostaje widoczne w Dynamic Island, gdy na telefonie iPhone otwarty jest ekran początkowy." data-zoom="../assets/marketing/ios-live-activity-island.png" type="button"><img alt="Kompaktowe odliczanie pozostaje widoczne w Dynamic Island, gdy na telefonie iPhone otwarty jest ekran początkowy." decoding="async" height="2868" loading="lazy" src="../assets/marketing/ios-live-activity-island.png" width="1320"/></button>
+<figcaption>Kompaktowe odliczanie pozostaje widoczne w Dynamic Island, gdy na telefonie iPhone otwarty jest ekran początkowy.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="siri-shortcuts-heading" class="highlight-row has-gallery" data-highlight="13" id="siri-shortcuts">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">13</span>Siri i Skróty</p>
+<h2 id="siri-shortcuts-heading">Zacznij słowem lub stuknięciem.</h2>
+<p>Uruchamiaj, wstrzymuj lub przełączaj stan obsługiwanego czasomierza za pomocą Siri i Skrótów. Dodaj systemowe elementy sterowania, aby uruchamiać nowy stoper lub wstrzymywać i wznawiać bieżące zadanie.</p>
+<span class="platform-pill">iPhone · iPad</span>
+<p class="feature-note">Samodzielne elementy sterowania systemu otwierają XTimers. Elementy Aktywności na żywo mogą działać bezpośrednio.</p>
+</div>
+<div aria-label="Zrzuty ekranu: Siri i Skróty" class="feature-gallery gallery-1">
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>Twoje skróty XTimers</h3><span class="capture-status status-real">iPhone · bezpośredni zrzut ekranu</span></div>
+<button aria-label="Powiększ: Twoje skróty XTimers" class="image-button capture-image" data-caption="Twoje skróty XTimers — Czynności „Toggle Timer”, „Start” i „Pause” w natywnej aplikacji Skróty." data-zoom="../assets/marketing/ios-siri-shortcuts.png" type="button"><img alt="Czynności „Toggle Timer”, „Start” i „Pause” w natywnej aplikacji Skróty." decoding="async" height="2622" loading="lazy" src="../assets/marketing/ios-siri-shortcuts.png" width="1206"/></button>
+<figcaption>Czynności „Toggle Timer”, „Start” i „Pause” w natywnej aplikacji Skróty.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="offline-heading" class="highlight-row" data-highlight="14" id="offline">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">14</span>Korzystanie offline bez konta</p>
+<h2 id="offline-heading">Zacznij. Bez logowania.</h2>
+<p>Korzystaj z podstawowych czasomierzy, odliczania, zestawów zadań, notatek, zegarów światowych i lokalnych raportów na swoim urządzeniu. Działaj dalej offline, a konto dodaj wtedy, gdy zechcesz używać funkcji sieciowych.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Zrzuty ekranu: Korzystanie offline bez konta" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Twój lokalny obszar roboczy Studio</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Twój lokalny obszar roboczy Studio" class="image-button capture-image" data-caption="Twój lokalny obszar roboczy Studio — Obszar roboczy „Studio” w aplikacji na Maca bez zalogowanego konta, z symulowanymi lokalnymi czasomierzami i zegarami światowymi." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="Obszar roboczy „Studio” w aplikacji na Maca bez zalogowanego konta, z symulowanymi lokalnymi czasomierzami i zegarami światowymi." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>Obszar roboczy „Studio” w aplikacji na Maca bez zalogowanego konta, z symulowanymi lokalnymi czasomierzami i zegarami światowymi.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="synchronization-heading" class="highlight-row" data-highlight="15" id="synchronization">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">15</span>Synchronizacja między urządzeniami</p>
+<h2 id="synchronization-heading">Wróć do znajomego obszaru roboczego.</h2>
+<p>Przenoś obsługiwane zadania, historię, szablony, ustawienia i własne pliki między komputerem Mac, iPhone'em i iPadem. Twoja praca lokalna pozostaje dostępna podczas przejściowych problemów z połączeniem.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Zaloguj się przez Apple, Google, kod e-mail lub hasło. Niektóre ustawienia urządzenia i dane przechowywane tylko lokalnie pozostają na danym urządzeniu.</p>
+</div>
+<div aria-label="Zrzuty ekranu: Synchronizacja między urządzeniami" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Na Macu</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Na Macu" class="image-button capture-image" data-caption="Na Macu — Przykładowe czasomierze i zegary „Studio” w zainstalowanej aplikacji na Maca." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="Przykładowe czasomierze i zegary „Studio” w zainstalowanej aplikacji na Maca." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>Przykładowe czasomierze i zegary „Studio” w zainstalowanej aplikacji na Maca.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="protected-sync-heading" class="highlight-row copy-only" data-highlight="16" id="protected-sync">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">16</span>Chroniona synchronizacja</p>
+<h2 id="protected-sync-heading">Wybierz ochronę przed przesłaniem.</h2>
+<p>Szyfruj nową zawartość czasomierzy i własne przesyłane pliki na urządzeniu przed <a href="privacy.html#xin-account">synchronizacją konta</a>. Odzyskaj klucz przez iCloud Keychain lub zapisany kod odzyskiwania.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Opcjonalne na obsługiwanych kontach. Nie obejmuje wiadomości przypomnień, metadanych konta i synchronizacji, treści utworzonych przed aktywacją ani lokalnej pamięci urządzenia.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="languages-heading" class="highlight-row has-gallery" data-highlight="17" id="languages">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">17</span>Obsługa wielu języków</p>
+<h2 id="languages-heading">Swobodnie w Twoim języku.</h2>
+<p>Wybierz jeden z 45 języków, dostosuj go do urządzenia lub ustaw własną preferencję. Regionalne formaty dat, godzin i liczb oraz układy od prawej do lewej sprawiają, że obszar roboczy jest znajomy.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Zrzuty ekranu: Obsługa wielu języków" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · angielski</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · przykładowa konfiguracja</span></div>
+<button aria-label="Powiększ: Mac · angielski" class="image-button capture-image" data-caption="Mac · angielski — Ustawienia ogólne po angielsku, uchwycone w zainstalowanej aplikacji na Maca z jasnym wyglądem." data-zoom="../assets/marketing/mac-settings-english.png" type="button"><img alt="Ustawienia ogólne po angielsku, uchwycone w zainstalowanej aplikacji na Maca z jasnym wyglądem." decoding="async" loading="lazy" src="../assets/marketing/mac-settings-english.png"/></button>
+<figcaption>Ustawienia ogólne po angielsku, uchwycone w zainstalowanej aplikacji na Maca z jasnym wyglądem.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · japoński</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · przykładowa konfiguracja</span></div>
+<button aria-label="Powiększ: Mac · japoński" class="image-button capture-image" data-caption="Mac · japoński — Ten sam ekran ustawień ogólnych po japońsku, z jasnym wyglądem." data-zoom="../assets/marketing/mac-settings-japanese.png" type="button"><img alt="Ten sam ekran ustawień ogólnych po japońsku, z jasnym wyglądem." decoding="async" loading="lazy" src="../assets/marketing/mac-settings-japanese.png"/></button>
+<figcaption>Ten sam ekran ustawień ogólnych po japońsku, z jasnym wyglądem.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="activity-tracking-heading" class="highlight-row" data-highlight="18" id="activity-tracking">
+<span class="anchor-target" id="extras"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">18</span>Automatyczne śledzenie aktywności aplikacji</p>
+<h2 id="activity-tracking-heading">Zobacz, ile czasu spędzasz w aplikacjach.</h2>
+<p>Dobrowolnie włącz śledzenie czasu w aplikacjach na pierwszym planie na Macu. Przeglądaj aktywności według dni, tygodni, miesięcy lub lat i wybierz sposób zliczania czasu nieobecności.</p>
+<span class="platform-pill">Mac · wybrane profile</span>
+<p class="feature-note">Dostępne w profilach lokalnych i starszego typu; ukryte na kontach z synchronizacją opartą przede wszystkim na danych lokalnych. Tożsamość aplikacji i czas bezczynności pozostają na tym Macu. Witryny, historia przeglądania i tytuły okien nie są rejestrowane.</p>
+</div>
+<div aria-label="Zrzuty ekranu: Automatyczne śledzenie aktywności aplikacji" class="feature-gallery gallery-1">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Ustawienia śledzenia aktywności</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · ustawienia</span></div>
+<button aria-label="Powiększ: Ustawienia śledzenia aktywności" class="image-button capture-image" data-caption="Ustawienia śledzenia aktywności — Natywne elementy sterowania w standardowej aplikacji XTimers: okres raportowania, przewijanie do aktywnego zadania i czas nieobecności. W tej konfiguracji śledzenie jest wyłączone." data-zoom="../assets/marketing/mac-activity-tracking-settings.png" type="button"><img alt="Natywne elementy sterowania w standardowej aplikacji XTimers: okres raportowania, przewijanie do aktywnego zadania i czas nieobecności. W tej konfiguracji śledzenie jest wyłączone." decoding="async" loading="lazy" src="../assets/marketing/mac-activity-tracking-settings.png"/></button>
+<figcaption>Natywne elementy sterowania w standardowej aplikacji XTimers: okres raportowania, przewijanie do aktywnego zadania i czas nieobecności. W tej konfiguracji śledzenie jest wyłączone.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="classic-interface-heading" class="highlight-row has-gallery" data-highlight="19" id="classic-interface">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">19</span>Klasyczny interfejs</p>
+<h2 id="classic-interface-heading">Jeszcze jeden sposób na znalezienie czasu.</h2>
+<p>Wybierz lokalny interfejs czasomierzy, dostępny tylko po angielsku, z osobnym obszarem roboczym. Przełączaj interfejsy w XTimers i korzystaj z wyglądu, który jest Ci znajomy.</p>
+<span class="platform-pill">Mac · tylko lokalnie</span>
+<p class="feature-note">Wymaga dołączonego środowiska uruchomieniowego Classic. Synchronizacja konta oraz dostarczanie e-maili i SMS należą do głównego interfejsu XTimers.</p>
+</div>
+<div aria-label="Zrzuty ekranu: Klasyczny interfejs" class="feature-gallery gallery-2">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Classic · dwie kolumny</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Classic · dwie kolumny" class="image-button capture-image" data-caption="Classic · dwie kolumny — Rozbudowana rutyna Classic z 20 nazwanymi zadaniami obejmującymi pracę twórczą, naukę i codzienne życie." data-zoom="../assets/marketing/classic-two-column.png" type="button"><img alt="Rozbudowana rutyna Classic z 20 nazwanymi zadaniami obejmującymi pracę twórczą, naukę i codzienne życie." decoding="async" loading="lazy" src="../assets/marketing/classic-two-column.png"/></button>
+<figcaption>Rozbudowana rutyna Classic z 20 nazwanymi zadaniami obejmującymi pracę twórczą, naukę i codzienne życie.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Classic · jedna kolumna</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · symulowane dane</span></div>
+<button aria-label="Powiększ: Classic · jedna kolumna" class="image-button capture-image" data-caption="Classic · jedna kolumna — Kompaktowy obszar roboczy Classic z pięcioma zadaniami: „Design”, „Research”, „Writing”, „Reading” i „Planning”." data-zoom="../assets/marketing/classic-one-column.png" type="button"><img alt="Kompaktowy obszar roboczy Classic z pięcioma zadaniami: „Design”, „Research”, „Writing”, „Reading” i „Planning”." decoding="async" loading="lazy" src="../assets/marketing/classic-one-column.png"/></button>
+<figcaption>Kompaktowy obszar roboczy Classic z pięcioma zadaniami: „Design”, „Research”, „Writing”, „Reading” i „Planning”.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="xhelpers-pro-heading" class="highlight-row" data-highlight="20" id="xhelpers-pro">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">20</span>Korzyść XHelpers Pro</p>
+<h2 id="xhelpers-pro-heading">Towarzysz Twojego Maca.</h2>
+<p>Poznaj XHelpers Pro, osobne narzędzie na Maca z szybkim dostępem do codziennych ustawień i funkcji. Użytkownicy XTimers mogą sprawdzić ofertę promocyjnej licencji, aby poznać aktualne warunki i szczegóły aktywacji.</p>
+<span class="platform-pill">Mac · osobna aplikacja</span>
+<a class="text-link" href="https://xintechllc.com/XHelpersPro/" rel="noopener noreferrer" target="_blank">Zobacz ofertę XHelpers Pro</a>
+</div>
+<div aria-label="Zrzuty ekranu: Korzyść XHelpers Pro" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Dołączona korzyść XHelpers Pro</h3><span class="capture-status status-real">Zainstalowana aplikacja na Maca · przykładowa konfiguracja</span></div>
+<button aria-label="Powiększ: Dołączona korzyść XHelpers Pro" class="image-button capture-image" data-caption="Dołączona korzyść XHelpers Pro — Ekran informacji o zainstalowanej aplikacji XTimers pokazuje dołączoną korzyść XHelpers Pro." data-zoom="../assets/marketing/mac-xhelpers-benefit.png" type="button"><img alt="Ekran informacji o zainstalowanej aplikacji XTimers pokazuje dołączoną korzyść XHelpers Pro." decoding="async" loading="lazy" src="../assets/marketing/mac-xhelpers-benefit.png"/></button>
+<figcaption>Ekran informacji o zainstalowanej aplikacji XTimers pokazuje dołączoną korzyść XHelpers Pro.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="download-heading" class="download-section" id="download">
+<div class="wrap download-inner">
+<div class="download-copy"><img alt="" height="64" loading="lazy" src="../assets/marketing/app-icon.png" width="64"/><h2 id="download-heading">Znajdź chwilę<br/>dla <em>siebie.</em></h2><p>Czasomierz do Twoich zadań. Przestrzeń na Twoje rutyny.</p></div>
+<div class="download-choices">
+<a class="download-choice" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" class="icon"><use href="#i-mac"></use></svg><span><strong>XTimers dla Mac</strong><small>Zobacz w Mac App Store</small></span></a>
+<a class="download-choice" href="#mobile"><svg aria-hidden="true" class="icon"><use href="#i-mobile"></use></svg><span><strong>XTimers na iPhone'a i iPada</strong><small>Poznaj wersję mobilną</small></span></a>
+<p class="download-note">Mac, iPhone i iPad. Każdy ma miejsce w Twoim dniu.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="faq-heading" class="section faq-section wrap" id="support">
+<div class="section-copy"><p class="eyebrow">Kilka przydatnych odpowiedzi</p><h2 id="faq-heading">Zanim<br/>znajdziesz czas.</h2><p>Masz na myśli coś innego?</p><a class="text-link" href="support.html" rel="noopener noreferrer" target="_blank">Odwiedź pomoc techniczną</a></div>
+<div class="faq-list">
+<details><summary>Czy potrzebuję konta?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Podstawowe lokalne czasomierze, odliczanie, zegary światowe i lokalne raporty nie wymagają konta. Zaloguj się, gdy zechcesz korzystać z synchronizacji konta lub przypomnień powiązanych z kontem.</p><p class="feature-note">XTimers używa Xin Account do identyfikacji i uwierzytelniania użytkownika. Xin Account to wspólna warstwa tożsamości dla XTimers i innych połączonych produktów wymienionych w ustawieniach konta; nie jest kontem produktu XTimers i nie zawiera timerów, raportów, dźwięków ani danych SMS XTimers.</p></details>
+<details><summary>Czy mogę korzystać z XTimers offline?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Podstawowy pomiar czasu i lokalne raporty działają offline. Synchronizacja, udostępnianie online i przypomnienia serwerowe wymagają połączenia. Kalendarz świata na Macu wymaga początkowego pobrania katalogu; zainstalowany katalog można potem przeglądać offline.</p></details>
+<details><summary>Czy kilka czasomierzy może działać jednocześnie?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Tak. Wybierz, czy przejście do innego zadania ma wstrzymać poprzedni obsługiwany czasomierz, czy pozostawić go uruchomionym. Zestawy zadań pomagają porządkować różne aktywności.</p></details>
+<details><summary>Czy funkcje są takie same na każdym urządzeniu?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Podstawowy obszar roboczy zawiera czasomierze, odliczanie, zegary, zestawy zadań i raporty. Mac dodaje sterowanie z paska menu i Kalendarz świata. iPhone obsługuje Aktywności na żywo na zgodnych urządzeniach, a iPad zapewnia przestrzeń na większe układy zadań.</p></details>
+<details><summary>Jak działają przypomnienia telefoniczne?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Przypomnienia trafiają na Twój własny obsługiwany, zweryfikowany numer po udzieleniu osobnej zgody na SMS lub połączenia. Dostępność zależy od konta, regionu i usługi. Zaplanowane połączenie wymaga potwierdzenia serwera; „Call Me” używa języka angielskiego i nie ponawia połączenia automatycznie.</p></details>
+</div>
+</section>
+</main>
+<footer class="site-footer wrap">
+<p class="footer-copy"><small>© 2026 Xintech LLC</small><span>Znajdź czas na to, co jest dla Ciebie ważne.</span></p>
+<div class="footer-links"><a href="#features">Funkcje</a><a href="#devices">Twoje urządzenia</a><a href="support.html" rel="noopener noreferrer" target="_blank">Pomoc</a><a href="privacy.html" rel="noopener noreferrer" target="_blank">Prywatność</a><a href="sms-terms.html" rel="noopener noreferrer" target="_blank">Warunki wysyłania wiadomości</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener noreferrer" target="_blank">Licencja</a><a href="terms.html">Warunki</a><a href="privacy-choices.html">Opcje dotyczące prywatności</a><a href="sms-opt-in.html">Zgoda na SMS</a></div>
+</footer>
+<dialog aria-labelledby="image-dialog-caption" class="image-dialog" id="image-dialog">
+<button aria-label="Pomniejsz i zamknij zrzut ekranu" class="image-dialog-zoom-out" type="button">
+<img alt="" id="image-dialog-img"/>
+</button>
+<p id="image-dialog-caption"></p>
+</dialog>
 </body>
 </html>

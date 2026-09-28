@@ -4,18 +4,31 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>XTimers — Mac, iPhone, iPad</title>
-<meta content="XTimers는 Mac, iPhone 및 iPad에서 타이머, 카운트다운, 시계, 작업 세트, 보고서, 맞춤 사운드 및 계정 알림을 제공하는 차분한 Apple 네이티브 타이머 작업 공간입니다." name="description"/>
 <meta content="#fbfaf7" name="theme-color"/>
-<meta content="XTimers" property="og:title"/>
-<meta content="Mac, iPhone, iPad용 타이머, 카운트다운, 시계, 보고서, 사운드 및 계정 알림." property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="https://xintechllc.com/XTimers/assets/flexible-timers/macos/1-single-light.png" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="XTimers" name="twitter:title"/>
-<meta content="Timers, countdowns, clocks, reports, sounds, and account reminders for Mac, iPhone, and iPad." name="twitter:description"/>
-<meta content="https://xintechllc.com/XTimers/assets/flexible-timers/macos/1-single-light.png" name="twitter:image"/>
-<link rel="canonical" href="https://xintechllc.com/XTimers/ko/">
+<meta content="경과 시간 측정. 카운트다운. 세계 시계. 세계 캘린더. 유연하게. 나에게 맞게. 타이머, 루틴, 알림, 보고서를 하나의 작업 공간에 모으세요." name="description"/>
+<title>XTimers — 경과 시간 측정. 카운트다운. 세계 시계. 세계 캘린더.</title>
+<link href="../assets/marketing/app-icon.png" rel="icon"/>
+<link href="../assets/marketing/styles.css" rel="stylesheet"/>
+<link href="../assets/marketing/site-style.css" rel="stylesheet"/>
+<script defer="" src="../assets/marketing/site.js"></script>
+<script data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19" defer="" src="https://cloud.umami.is/script.js"></script><script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script> <link rel="canonical" href="https://xintechllc.com/XTimers/ko/">
 <link rel="alternate" hreflang="ar" href="https://xintechllc.com/XTimers/ar/">
 <link rel="alternate" hreflang="bn" href="https://xintechllc.com/XTimers/bn/">
 <link rel="alternate" hreflang="ca" href="https://xintechllc.com/XTimers/ca/">
@@ -23,7 +36,7 @@
 <link rel="alternate" hreflang="da" href="https://xintechllc.com/XTimers/da/">
 <link rel="alternate" hreflang="de" href="https://xintechllc.com/XTimers/de/">
 <link rel="alternate" hreflang="el" href="https://xintechllc.com/XTimers/el/">
-<link rel="alternate" hreflang="en" href="https://xintechllc.com/XTimers/flexible-timers.html">
+<link rel="alternate" hreflang="en" href="https://xintechllc.com/XTimers/">
 <link rel="alternate" hreflang="es" href="https://xintechllc.com/XTimers/es/">
 <link rel="alternate" hreflang="fi" href="https://xintechllc.com/XTimers/fi/">
 <link rel="alternate" hreflang="fr" href="https://xintechllc.com/XTimers/fr/">
@@ -61,7 +74,7 @@
 <link rel="alternate" hreflang="vi" href="https://xintechllc.com/XTimers/vi/">
 <link rel="alternate" hreflang="zh-Hans" href="https://xintechllc.com/XTimers/zh-Hans/">
 <link rel="alternate" hreflang="zh-Hant" href="https://xintechllc.com/XTimers/zh-Hant/">
-<link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XTimers/flexible-timers.html">
+<link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XTimers/">
 
 
 
@@ -108,37 +121,43 @@
 
 
 
-<link href="../assets/flexible-timers/brand/favicon.png" rel="icon" type="image/png"/>
-<link href="../assets/flexible-timers/site.css" rel="stylesheet"/>
-<script data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19" defer="" src="https://cloud.umami.is/script.js"></script>
-<script>
-  window.addEventListener("click", function (event) {
-    var link = event.target.closest && event.target.closest("a[href]");
-    if (!link || !window.umami) return;
-    var href = link.getAttribute("href") || "";
-    var url = link.href || href;
-    var eventName = null;
-    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
-    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
-    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
-    else if (/support\.html/i.test(href)) eventName = "Support Click";
-    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
-    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
-    if (eventName) {
-      window.umami.track(eventName, { href: url, path: window.location.pathname });
-    }
-  });
-</script>
 </head>
 <body>
-<div class="page-shell">
-<header class="nav">
-<div class="nav-inner">
-<a aria-label="XTimers 홈" class="brand" href="index.html">
-<img alt="" class="brand-icon" height="36" src="../assets/flexible-timers/brand/app-icon.png" width="36"/>
-<span class="brand-text">XTimers<small>Mac • iPhone • iPad</small></span>
-</a>
-<div class="nav-actions"><a class="button primary" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12">Mac용 다운로드</a><details class="language-menu">
+<svg aria-hidden="true" class="svg-definitions" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<symbol id="i-clock" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></symbol>
+<symbol id="i-timer" viewbox="0 0 24 24"><circle cx="12" cy="14" r="8"></circle><path d="M12 10v4l3 2M9 2h6m-3 0v4m6 0 2 2"></path></symbol>
+<symbol id="i-countdown" viewbox="0 0 24 24"><path d="M6 3h12M6 21h12M7 3v4l5 5-5 5v4m10-18v4l-5 5 5 5v4M9 18h6"></path></symbol>
+<symbol id="i-folder" viewbox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h5l3 3h6a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7h18"></path></symbol>
+<symbol id="i-check" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></symbol>
+<symbol id="i-globe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><ellipse cx="12" cy="12" rx="4" ry="9"></ellipse><path d="M3 12h18"></path></symbol>
+<symbol id="i-calendar" viewbox="0 0 24 24"><rect height="16" rx="3" width="18" x="3" y="5"></rect><path d="M7 3v4m10-4v4M3 11h18m-14 4h3m4 0h3m-10 3h3"></path></symbol>
+<symbol id="i-chart" viewbox="0 0 24 24"><path d="M4 3v18h17M8 17v-5m5 5V7m5 10V4"></path></symbol>
+<symbol id="i-sound" viewbox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9H3m13-1a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"></path></symbol>
+<symbol id="i-mail" viewbox="0 0 24 24"><rect height="14" rx="3" width="18" x="3" y="5"></rect><path d="m3 7 9 6 9-6"></path></symbol>
+<symbol id="i-phone" viewbox="0 0 24 24"><path d="m8 3 3 5-3 3a14 14 0 0 0 5 5l3-3 5 3v3c0 2-2 3-4 2C10 19 5 14 3 7c-1-2 0-4 2-4h3Z"></path></symbol>
+<symbol id="i-sync" viewbox="0 0 24 24"><path d="M20 8a8 8 0 0 0-14-3L3 8m0-5v5h5m-4 8a8 8 0 0 0 14 3l3-3m0 5v-5h-5"></path></symbol>
+<symbol id="i-lock" viewbox="0 0 24 24"><rect height="11" rx="3" width="14" x="5" y="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"></path></symbol>
+<symbol id="i-mac" viewbox="0 0 24 24"><rect height="13" rx="2" width="18" x="3" y="3"></rect><path d="M9 21h6m-3-5v5"></path></symbol>
+<symbol id="i-mobile" viewbox="0 0 24 24"><rect height="20" rx="3" width="12" x="6" y="2"></rect><path d="M10 5h4m-3 14h2"></path></symbol>
+<symbol id="i-tablet" viewbox="0 0 24 24"><rect height="20" rx="3" width="18" x="3" y="2"></rect><path d="M10 19h4"></path></symbol>
+<symbol id="i-plus" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></symbol>
+<symbol id="i-expand" viewbox="0 0 24 24"><path d="M9 3H3v6m0-6 6 6m6 12h6v-6m0 6-6-6"></path></symbol>
+<symbol id="i-leaf" viewbox="0 0 24 24"><path d="M4 20 16 8M5 17C-1 5 13 7 20 3c2 13-4 19-12 15"></path></symbol>
+</defs>
+</svg>
+<a class="skip-link" href="#main">콘텐츠로 건너뛰기</a>
+<header class="site-header">
+<nav aria-label="주 탐색 메뉴" class="navigation wrap">
+<a aria-label="XTimers 홈" class="brand" href="#top"><img alt="" height="36" src="../assets/marketing/app-icon.png" width="36"/><span>XTimers</span></a>
+<button aria-controls="nav-links" aria-expanded="false" aria-label="탐색 메뉴 열기" class="menu-toggle" data-close-label="탐색 메뉴 닫기" data-open-label="탐색 메뉴 열기" type="button"><span></span><span></span></button>
+<div class="nav-links" id="nav-links">
+<a href="#features">기능</a>
+<a href="#devices">사용하는 기기</a>
+<a href="#support">질문</a>
+<div class="header-actions">
+<a class="button button-small button-ink" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12">Mac용 다운로드</a>
+<details class="language-menu">
             <summary>🌐 · 한국어</summary>
             <div class="language-menu-list" aria-label="언어">
               <a href="../ar/" lang="ar" dir="rtl">العربية</a>
@@ -148,7 +167,7 @@
               <a href="../da/" lang="da" dir="ltr">Dansk</a>
               <a href="../de/" lang="de" dir="ltr">Deutsch</a>
               <a href="../el/" lang="el" dir="ltr">Ελληνικά</a>
-              <a href="../flexible-timers.html" lang="en" dir="ltr">English</a>
+              <a href="../" lang="en" dir="ltr">English</a>
               <a href="../es/" lang="es" dir="ltr">Español</a>
               <a href="../fi/" lang="fi" dir="ltr">Suomi</a>
               <a href="../fr/" lang="fr" dir="ltr">Français</a>
@@ -187,34 +206,640 @@
               <a href="../zh-Hans/" lang="zh-Hans" dir="ltr">简体中文</a>
               <a href="../zh-Hant/" lang="zh-Hant" dir="ltr">繁體中文</a>
             </div>
-          </details></div>
+          </details>
 </div>
+</div>
+</nav>
 </header>
-<main id="top">
-<section aria-labelledby="hero-title" class="hero"><div><h1 id="hero-title">XTimers</h1><p class="hero-lede">Mac, iPhone, iPad용 타이머, 카운트다운, 시계, 보고서, 사운드 및 계정 알림. 구 명칭: Flexible Timers.</p></div><div aria-label="XTimers 앱 스크린샷" class="hero-visual"><div class="device-stage"><div class="desktop-card"><div aria-hidden="true" class="window-bar"><span class="traffic"></span><span class="traffic"></span><span class="traffic"></span><span class="window-title">XTimers for Mac</span></div><figure class="shot"><img alt="라이트 모드의 XTimers macOS 기본 타이머 창" height="1125" loading="eager" src="../assets/flexible-timers/macos/1-single-light.png" width="1800"/></figure></div><div aria-label="XTimers iPhone 스크린샷" class="phone-card"><figure class="shot"><img alt="라이트 모드의 XTimers iPhone 타이머 목록" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-1-timers-light.png" width="736"/></figure></div><div aria-label="XTimers iPad 스크린샷" class="tablet-card"><figure class="shot"><img alt="라이트 모드의 XTimers iPad 타이머 목록" height="1600" loading="eager" src="../assets/flexible-timers/ios/ipad-13-1-timers-light.png" width="1200"/></figure></div></div></div></section>
-<section aria-label="유연한 타이머 기능" class="section" id="features"><div class="feature-grid"><article class="feature-card"><h3>유연한 작업 유형</h3><p>타이머, 종료 시간 카운트다운, 세계 시계 및 계정 알림 작업.</p></article><article class="feature-card"><h3>작업 세트</h3><p>업무, 요리, 공부, 여행 및 재사용 가능한 루틴을 분리하세요.</p></article><article class="feature-card"><h3>보고서 및 아카이브</h3><p>스냅샷을 검토하고, 메모를 추가하고, 계정 이메일로 보고서를 보내세요.</p></article><article class="feature-card"><h3>소리 및 알림</h3><p>번들 사운드, 사용자 정의 사운드, 경고음 및 로컬 알림을 사용하세요.</p></article></div></section>
-<section aria-label="XTimers 플랫폼" class="section platform-section"><article class="platform" id="mac"><div class="platform-copy"><h2>Mac에서 집중 타이머 작업을 위해 제작되었습니다.</h2><p>작업 세트, 보고서, 동기화, 사용자 정의 사운드 및 메뉴 표시줄 상태가 포함된 SwiftUI 타이머.</p><div class="platform-list"><div class="platform-item"><span class="check">✓</span><span>단일 또는 확장 타이머 레이아웃.</span></div><div class="platform-item"><span class="check">✓</span><span>활성 타이머의 메뉴 표시줄 상태입니다.</span></div><div class="platform-item"><span class="check">✓</span><span>타이머, 카운트다운, 시계 및 미리 알림 작업.</span></div><div class="platform-item"><span class="check">✓</span><span>동기화, 보관, 보고서 및 사용자 정의 사운드.</span></div></div></div><div class="shot-stack"><figure class="shot"><img alt="XTimers macOS의 확장된 2열 타이머 창" height="1125" loading="eager" src="../assets/flexible-timers/macos/3-double-light.png" width="1800"/></figure><div class="shot-row"><figure class="shot"><img alt="라이트 모드의 XTimers macOS 타이머 추가 시트" height="1125" loading="eager" src="../assets/flexible-timers/macos/5-addtimer-light.png" width="1800"/></figure><figure class="shot"><img alt="라이트 모드의 XTimers macOS 카운트다운 추가 시트" height="1125" loading="eager" src="../assets/flexible-timers/macos/7-addcountdown-light.png" width="1800"/></figure></div></div></article><article class="platform reverse" id="ios"><div class="phone-showcase"><div class="phone-screen"><figure class="shot"><img alt="XTimers iPhone 스크린샷" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-1-timers-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="XTimers iPhone 스크린샷" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-4-add-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="XTimers iPhone 스크린샷" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-6-settings-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="XTimers iPhone 스크린샷" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-7-report-light.png" width="736"/></figure></div></div><div class="platform-copy"><h2>iPhone 및 iPad의 동일한 타이머 시스템.</h2><p>iPhone 및 iPad의 타이머, 시계, 보고서, 설정, 동기화, 알림 및 소리.</p><div class="platform-list"><div class="platform-item"><span class="check">✓</span><span>iPhone 목록 및 iPad 그리드 레이아웃.</span></div><div class="platform-item"><span class="check">✓</span><span>타이머, 카운트다운, 시계 및 미리 알림을 만듭니다.</span></div><div class="platform-item"><span class="check">✓</span><span>보고서, 설정, 소리 및 동기화.</span></div></div></div></article></section>
-<section aria-labelledby="sync-title" class="section" id="sync"><div class="account-panel"><div><h2 id="sync-title">Xin Account 로그인. XTimers 데이터는 별도로 유지됩니다.</h2><p>XTimers는 공유 로그인에 Xin Account를 사용하며 타이머, 보고서, 설정, 사운드 및 SMS 선택 사항은 XTimers 제품 데이터로 별도로 보관합니다. <a href="privacy.html#xin-account">계정 계층이 어떻게 작동하는지 알아보세요.</a></p></div><div class="account-list"><div class="account-row"><strong>여러 기기에서 로그인</strong><span>Xin Account는 사용자를 식별하고 연결된 각 XTimers 계정에 권한을 부여합니다.</span></div><div class="account-row"><strong>XTimers 데이터 동기화</strong><span>작업 세트, 아카이브, 설정 및 사운드는 연결된 XTimers 계정을 따릅니다.</span></div><div class="account-row"><strong>구분된 개인정보 보호 선택 사항</strong><span>로그아웃, 로컬 사본 제거, XTimers 데이터 삭제, 글로벌 Xin Account 삭제는 서로 다른 작업입니다.</span></div></div></div></section>
-</main>
-<footer><div>© 2017-2026 Xintech LLC.</div><div class="footer-links"><a href="support.html">지원</a><a href="privacy.html">개인정보</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a><a href="sms-terms.html">SMS 약관</a><a href="sms-opt-in.html">SMS 수신 동의</a></div></footer>
+<main id="main">
+<section aria-labelledby="hero-heading" class="hero wrap" id="top">
+<div class="hero-copy hero-hoefler">
+<div class="hero-copy-inner">
+<p class="eyebrow">Mac, iPhone, iPad용</p>
+<h1 aria-label="경과 시간 측정. 카운트다운. 세계 시계. 세계 캘린더." class="hero-timing-heading" id="hero-heading"><span class="hero-line">경과 시간 측정.</span> <span class="hero-line">카운트다운.</span> <span class="hero-line">세계 시계.</span> <span class="hero-line">세계 캘린더.</span></h1>
+<p class="hero-payoff">유연하게. 나에게 맞게.</p>
+<p class="hero-description">타이머, 카운트다운, 세계 시계를 하나의 작업 공간에 모으세요. 재사용 가능한 루틴, 알림, 보고서를 추가하고 레이아웃과 모양을 나에게 맞게 꾸밀 수 있습니다.</p>
+<p class="hero-note"><svg aria-hidden="true" class="icon"><use href="#i-check"></use></svg>기본 타이머는 오프라인에서도 작동합니다. 계정은 필요하지 않습니다.</p>
 </div>
-<script>
-      // ft-language-menu-dismiss: close the language dropdown when clicking
-      // outside it or pressing Escape. A native <details> otherwise only closes
-      // on a second click of its <summary>.
-      (function () {
-        function closeAll() {
-          document.querySelectorAll('details.language-menu[open]')
-            .forEach(function (d) { d.removeAttribute('open'); });
-        }
-        document.addEventListener('click', function (e) {
-          document.querySelectorAll('details.language-menu[open]')
-            .forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute('open'); });
-        });
-        document.addEventListener('keydown', function (e) {
-          if (e.key === 'Escape' || e.key === 'Esc') closeAll();
-        });
-      })();
-    </script>
+</div>
+<div class="hero-stage">
+<div class="floating-label"><span class="pulse-dot"></span>소중한 일을 위한 시간을 만드세요.</div>
+<button aria-label="설치된 Mac 앱의 ‘Studio’ 스크린샷 확대" class="image-button hero-mac" data-caption="‘Studio’ 작업 공간. 설치된 Mac 앱에서 예시 타이머, 카운트다운, 세계 시계를 표시한 모습." data-zoom="../assets/marketing/mac-dark.png" type="button">
+<img alt="설치된 XTimers의 ‘Studio’ 작업 공간. 남색 배경에 ‘Design’, ‘Research’, ‘Writing’, ‘Reading’, ‘Planning’의 예시 타이머, ‘Focus sprint’, 세계 시계 세 개를 표시한 모습" fetchpriority="high" height="796" src="../assets/marketing/mac-dark.png" width="1240"/>
+</button>
+<button aria-label="조작 버튼을 숨긴 작은 ‘Design’ 타이머 확대" class="image-button hero-mini" data-caption="작은 ‘Design’ 타이머. 설치된 Mac 앱에서 예시 데이터를 표시하며 조작 버튼은 숨겨져 있습니다." data-zoom="../assets/marketing/mac-timer-minimal-hidden.png" type="button">
+<img alt="조작 버튼이 사라진 뒤, 작은 남색 미니멀 창에 표시된 ‘Design’ 타이머" fetchpriority="high" height="480" src="../assets/marketing/mac-timer-minimal-hidden.png" width="1240"/>
+</button>
+<button aria-label="메인 비주얼의 세계 캘린더 확대" class="image-button hero-calendar" data-caption="세계 캘린더 — 설치된 Mac 앱에서 2026년 10월의 공휴일, 중국 음력 날짜, 국경절 세부 정보를 표시한 모습." data-zoom="../assets/marketing/mac-world-calendar-month.png" type="button">
+<img alt="라이트 모드의 Mac 창에 표시된 세계 캘린더의 월간 격자와 공휴일 세부 정보" decoding="async" height="1440" src="../assets/marketing/mac-world-calendar-month.png" width="2040"/>
+</button>
+<button aria-label="메인 비주얼의 사운드 보관함 확대" class="image-button hero-sounds" data-caption="사운드 보관함 — 설치된 Mac 앱의 세계의 의례음. 기본 파형 표시, 즐겨찾기, 재생 버튼이 보입니다." data-zoom="../assets/marketing/mac-sound-ceremonial.png" type="button">
+<img alt="사운드 보관함의 세계의 의례음 모음. 종, 차임, 북, 트럼펫의 파형을 표시합니다" decoding="async" height="1120" src="../assets/marketing/mac-sound-ceremonial.png" width="1440"/>
+</button>
+<button aria-label="메인 비주얼의 돌로미티 사진 위 ‘Planning’ 확대" class="image-button hero-photo" data-caption="나만의 보기. 돌로미티 사진 위에 ‘Planning’이 20:04를 표시하며, 설치된 Mac 앱의 조작 버튼은 자연스럽게 숨겨져 있습니다." data-zoom="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" type="button">
+<img alt="미니멀 보기에서 산 사진을 배경으로 20:04를 표시하는 ‘Planning’" decoding="async" height="468" src="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" width="658"/>
+</button>
+<button aria-label="메인 비주얼의 주간 보고서 차트 확대" class="image-button hero-report" data-caption="한 주를 자세히 — 설치된 Mac 앱에서 다섯 작업에 걸친 예시 30시간을 일별 합계와 작업별 비중 차트로 표시합니다." data-zoom="../assets/marketing/mac-report-week-daily-totals.png" type="button">
+<img alt="주간 시간 보고서. 다채로운 누적 일별 합계와 예시 30시간 중 각 작업의 비중을 보여 주는 차트" decoding="async" height="2396" src="../assets/marketing/mac-report-week-daily-totals.png" width="1520"/>
+</button>
+<div class="hero-menubar">
+<button aria-label="메인 비주얼의 ‘Planning’ 메뉴 막대 상태 확대" class="image-button" data-caption="메뉴 막대의 내 타이머 — 주 창을 열지 않아도 20:04에 일시 정지된 ‘Planning’이 macOS 상태 아이콘 옆에 표시됩니다." data-zoom="../assets/marketing/mac-menubar-status-planning.png" type="button">
+<img alt="macOS 메뉴 막대의 시스템 상태 아이콘 옆에 일시 정지 표시와 ‘Planning 20:04’가 표시된 모습" decoding="async" height="60" src="../assets/marketing/mac-menubar-status-planning.png" width="572"/>
+</button>
+<a href="#menu-bar">내 타이머를 메뉴 막대에 바로.</a>
+</div>
+<span class="stage-caption">나의 시간. 한눈에.</span>
+</div>
+</section>
+<section aria-label="XTimers 기능 살펴보기" class="feature-overview wrap" id="features">
+<details class="feature-browser">
+<summary>전체 20개 기능 살펴보기 <span aria-hidden="true">+</span></summary>
+<nav aria-label="카테고리별 전체 20개 기능" class="feature-index">
+<div class="feature-group">
+<h3><a class="feature-category" href="#timers"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timers.png" width="16"/>시간 측정<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#timers"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timers.png" width="16"/><span>타이머와 카운트다운</span></a></li>
+<li><a href="#reminders"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/reminders.png" width="16"/><span>이메일·SMS·전화 알림</span></a></li>
+<li><a href="#sound-library"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/sound-library.png" width="16"/><span>사운드 보관함</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#task-sets"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/task-sets.png" width="16"/>루틴<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#task-sets"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/task-sets.png" width="16"/><span>작업 세트와 재사용 가능한 템플릿</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#timer-views"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timer-views.png" width="16"/>보기<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#timer-views"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timer-views.png" width="16"/><span>다양한 타이머 보기</span></a></li>
+<li><a href="#classic-interface"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/classic-interface.png" width="16"/><span>클래식 인터페이스</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#world-calendar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-clocks.png" width="16"/>세계 시간<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#world-clocks"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-clocks.png" width="16"/><span>세계 시계</span></a></li>
+<li><a href="#world-calendar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-calendar.png" width="16"/><span>세계 캘린더</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#time-reports"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/time-reports.png" width="16"/>보고서<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#time-reports"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/time-reports.png" width="16"/><span>시간 보고서 및 공유</span></a></li>
+<li><a href="#archives"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/archives.png" width="16"/><span>보관함</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#appearance"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/appearance.png" width="16"/>모양<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#appearance"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/appearance.png" width="16"/><span>모양 사용자화</span></a></li>
+<li><a href="#languages"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/languages.png" width="16"/><span>다국어 지원</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#menu-bar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/menu-bar.png" width="16"/>사용하는 기기<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#menu-bar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/menu-bar.png" width="16"/><span>메뉴 막대 및 데스크탑 연동</span></a></li>
+<li><a href="#live-activities"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/live-activities.png" width="16"/><span>실시간 현황</span></a></li>
+<li><a href="#siri-shortcuts"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/siri-shortcuts.png" width="16"/><span>Siri 및 단축어</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#offline"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/protected-sync.png" width="16"/>동기화와 개인정보 보호<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#offline"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/offline.png" width="16"/><span>계정 없이 오프라인 사용</span></a></li>
+<li><a href="#synchronization"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/synchronization.png" width="16"/><span>기기 간 동기화</span></a></li>
+<li><a href="#protected-sync"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/protected-sync.png" width="16"/><span>보호된 동기화</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#activity-tracking"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/xhelpers-pro.png" width="16"/>Mac의 추가 기능<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#activity-tracking"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/activity-tracking.png" width="16"/><span>앱 사용 시간 자동 추적</span></a></li>
+<li><a href="#xhelpers-pro"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/xhelpers-pro.png" width="16"/><span>XHelpers Pro 혜택</span></a></li>
+</ul>
+</div>
+</nav>
+</details>
+</section>
+<section aria-labelledby="timers-heading" class="highlight-row has-gallery" data-highlight="01" id="timers">
+<span class="anchor-target" id="count-up-timers"></span><span class="anchor-target" id="countdowns"></span><span class="anchor-target" id="running-timers"></span><span class="anchor-target" id="task-controls"></span><span class="anchor-target" id="notes-history"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">01</span>타이머와 카운트다운</p>
+<h2 id="timers-heading">소중한 일을 위한 시간을 만드세요.</h2>
+<p>소요 시간을 기록하고, 정한 시간만큼 카운트다운하거나, 마감까지 남은 시간을 확인하세요. 하나 또는 여러 작업을 실행하고, 일시 정지·재개하며, 세션에 메모를 남길 수 있습니다. 하루가 달라지면 타이머도 그에 맞춰 유연하게 사용할 수 있습니다.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="타이머와 카운트다운 이미지" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>내 타이머 작업 공간</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="내 타이머 작업 공간 확대" class="image-button capture-image" data-caption="내 타이머 작업 공간 — ‘Studio’ 작업 공간에는 경과 시간 타이머 다섯 개, ‘Focus sprint’ 카운트다운, 세계 시계 세 개가 함께 있습니다." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="‘Studio’ 작업 공간에는 경과 시간 타이머 다섯 개, ‘Focus sprint’ 카운트다운, 세계 시계 세 개가 함께 있습니다." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>‘Studio’ 작업 공간에는 경과 시간 타이머 다섯 개, ‘Focus sprint’ 카운트다운, 세계 시계 세 개가 함께 있습니다.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>나에게 맞는 카운트다운</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="나에게 맞는 카운트다운 확대" class="image-button capture-image" data-caption="나에게 맞는 카운트다운 — ‘Focus sprint’: ‘Studio’의 일시 정지 가능한 25분 카운트다운. 수동으로 시작하고 끝날 때 ‘Gentle Bell’이 울리도록 설정되어 있습니다." data-zoom="../assets/marketing/mac-countdown.png" type="button"><img alt="‘Focus sprint’: ‘Studio’의 일시 정지 가능한 25분 카운트다운. 수동으로 시작하고 끝날 때 ‘Gentle Bell’이 울리도록 설정되어 있습니다." decoding="async" loading="lazy" src="../assets/marketing/mac-countdown.png"/></button>
+<figcaption>‘Focus sprint’: ‘Studio’의 일시 정지 가능한 25분 카운트다운. 수동으로 시작하고 끝날 때 ‘Gentle Bell’이 울리도록 설정되어 있습니다.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="task-sets-heading" class="highlight-row" data-highlight="02" id="task-sets">
+<span class="anchor-target" id="routines"></span><span class="anchor-target" id="templates"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">02</span>작업 세트와 재사용 가능한 템플릿</p>
+<h2 id="task-sets-heading">모든 루틴에 각자의 공간을.</h2>
+<p>업무, 학습, 일상생활에 각각 이름을 붙인 작업 세트를 만드세요. 작업 하나나 전체 세트를 템플릿으로 저장하면 다음 세션에서도 익숙한 루틴을 이어 갈 수 있습니다.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="작업 세트와 재사용 가능한 템플릿 이미지" class="feature-gallery gallery-1">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>작업 세트</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="작업 세트 확대" class="image-button capture-image" data-caption="작업 세트 — 아홉 개의 활성 작업과 재사용 가능한 ‘Studio Template’이 있는 ‘Studio’ 작업 세트." data-zoom="../assets/marketing/mac-task-sets.png" type="button"><img alt="아홉 개의 활성 작업과 재사용 가능한 ‘Studio Template’이 있는 ‘Studio’ 작업 세트." decoding="async" loading="lazy" src="../assets/marketing/mac-task-sets.png"/></button>
+<figcaption>아홉 개의 활성 작업과 재사용 가능한 ‘Studio Template’이 있는 ‘Studio’ 작업 세트.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="timer-views-heading" class="highlight-row has-gallery" data-highlight="03" id="timer-views">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">03</span>다양한 타이머 보기</p>
+<h2 id="timer-views-heading">지금에 맞는 보기.</h2>
+<p>전체를 살펴보거나 하나의 작업에 집중하세요. Mac에서는 목록, 격자, 단일, 미니멀 보기를 제공합니다. iPhone과 iPad에서는 상황에 맞게 목록, 집중, 단일 보기를 선택할 수 있습니다.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">단일 보기와 미니멀 보기에서는 포인터가 벗어나면 조작 버튼이 사라지고, 포인터를 올리면 다시 나타납니다.</p>
+</div>
+<div aria-label="다양한 타이머 보기 이미지" class="feature-gallery gallery-14">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 목록</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="Mac · 목록 확대" class="image-button capture-image" data-caption="Mac · 목록 — 목록 보기의 ‘Studio’. 아홉 개의 작업을 간결한 행으로 배치한 모습." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="목록 보기의 ‘Studio’. 아홉 개의 작업을 간결한 행으로 배치한 모습." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>목록 보기의 ‘Studio’. 아홉 개의 작업을 간결한 행으로 배치한 모습.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 격자</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="Mac · 격자 확대" class="image-button capture-image" data-caption="Mac · 격자 — ‘Studio’의 디자인(‘Design’), 조사(‘Research’), 글쓰기(‘Writing’), 독서(‘Reading’), 계획(‘Planning’) 타이머와 집중 작업용 ‘Focus sprint’, 뉴욕·런던·도쿄의 시계." data-zoom="../assets/marketing/mac-grid-light.png" type="button"><img alt="‘Studio’의 디자인(‘Design’), 조사(‘Research’), 글쓰기(‘Writing’), 독서(‘Reading’), 계획(‘Planning’) 타이머와 집중 작업용 ‘Focus sprint’, 뉴욕·런던·도쿄의 시계." decoding="async" loading="lazy" src="../assets/marketing/mac-grid-light.png"/></button>
+<figcaption>‘Studio’의 디자인(‘Design’), 조사(‘Research’), 글쓰기(‘Writing’), 독서(‘Reading’), 계획(‘Planning’) 타이머와 집중 작업용 ‘Focus sprint’, 뉴욕·런던·도쿄의 시계.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 단일, 조작 버튼 표시 · 순수한 검정</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="Mac · 단일, 조작 버튼 표시 · 순수한 검정 확대" class="image-button capture-image" data-caption="Mac · 단일, 조작 버튼 표시 · 순수한 검정 — 설치된 Mac 앱의 단일 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 표시 상태이고 배경은 검정 단색입니다." data-zoom="../assets/marketing/mac-planning-single-black.png" type="button"><img alt="설치된 Mac 앱의 단일 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 표시 상태이고 배경은 검정 단색입니다." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-black.png"/></button>
+<figcaption>설치된 Mac 앱의 단일 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 표시 상태이고 배경은 검정 단색입니다.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 미니멀, 조작 버튼 표시 · 순수한 검정</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="Mac · 미니멀, 조작 버튼 표시 · 순수한 검정 확대" class="image-button capture-image" data-caption="Mac · 미니멀, 조작 버튼 표시 · 순수한 검정 — 설치된 Mac 앱의 미니멀 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 표시 상태이고 배경은 검정 단색입니다." data-zoom="../assets/marketing/mac-planning-minimal-black.png" type="button"><img alt="설치된 Mac 앱의 미니멀 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 표시 상태이고 배경은 검정 단색입니다." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-black.png"/></button>
+<figcaption>설치된 Mac 앱의 미니멀 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 표시 상태이고 배경은 검정 단색입니다.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 단일, 조작 버튼 숨김 · 순수한 검정</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="Mac · 단일, 조작 버튼 숨김 · 순수한 검정 확대" class="image-button capture-image" data-caption="Mac · 단일, 조작 버튼 숨김 · 순수한 검정 — 설치된 Mac 앱의 단일 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 숨김 상태이고 배경은 검정 단색입니다." data-zoom="../assets/marketing/mac-planning-single-hidden-black.png" type="button"><img alt="설치된 Mac 앱의 단일 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 숨김 상태이고 배경은 검정 단색입니다." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-black.png"/></button>
+<figcaption>설치된 Mac 앱의 단일 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 숨김 상태이고 배경은 검정 단색입니다.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 미니멀, 조작 버튼 숨김 · 순수한 검정</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="Mac · 미니멀, 조작 버튼 숨김 · 순수한 검정 확대" class="image-button capture-image" data-caption="Mac · 미니멀, 조작 버튼 숨김 · 순수한 검정 — 설치된 Mac 앱의 미니멀 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 숨김 상태이고 배경은 검정 단색입니다." data-zoom="../assets/marketing/mac-planning-minimal-hidden-black.png" type="button"><img alt="설치된 Mac 앱의 미니멀 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 숨김 상태이고 배경은 검정 단색입니다." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-black.png"/></button>
+<figcaption>설치된 Mac 앱의 미니멀 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 숨김 상태이고 배경은 검정 단색입니다.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 단일, 조작 버튼 표시 · 요세미티 사진</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="Mac · 단일, 조작 버튼 표시 · 요세미티 사진 확대" class="image-button capture-image" data-caption="Mac · 단일, 조작 버튼 표시 · 요세미티 사진 — 설치된 Mac 앱의 단일 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 표시 상태이고 배경은 요세미티 사진입니다." data-zoom="../assets/marketing/mac-planning-single-yosemite.png" type="button"><img alt="설치된 Mac 앱의 단일 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 표시 상태이고 배경은 요세미티 사진입니다." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-yosemite.png"/></button>
+<figcaption>설치된 Mac 앱의 단일 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 표시 상태이고 배경은 요세미티 사진입니다.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 미니멀, 조작 버튼 표시 · 요세미티 사진</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="Mac · 미니멀, 조작 버튼 표시 · 요세미티 사진 확대" class="image-button capture-image" data-caption="Mac · 미니멀, 조작 버튼 표시 · 요세미티 사진 — 설치된 Mac 앱의 미니멀 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 표시 상태이고 배경은 요세미티 사진입니다." data-zoom="../assets/marketing/mac-planning-minimal-yosemite.png" type="button"><img alt="설치된 Mac 앱의 미니멀 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 표시 상태이고 배경은 요세미티 사진입니다." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-yosemite.png"/></button>
+<figcaption>설치된 Mac 앱의 미니멀 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 표시 상태이고 배경은 요세미티 사진입니다.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 단일, 조작 버튼 숨김 · 요세미티 사진</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="Mac · 단일, 조작 버튼 숨김 · 요세미티 사진 확대" class="image-button capture-image" data-caption="Mac · 단일, 조작 버튼 숨김 · 요세미티 사진 — 설치된 Mac 앱의 단일 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 숨김 상태이고 배경은 요세미티 사진입니다." data-zoom="../assets/marketing/mac-planning-single-hidden-yosemite.png" type="button"><img alt="설치된 Mac 앱의 단일 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 숨김 상태이고 배경은 요세미티 사진입니다." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-yosemite.png"/></button>
+<figcaption>설치된 Mac 앱의 단일 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 숨김 상태이고 배경은 요세미티 사진입니다.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 미니멀, 조작 버튼 숨김 · 요세미티 사진</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="Mac · 미니멀, 조작 버튼 숨김 · 요세미티 사진 확대" class="image-button capture-image" data-caption="Mac · 미니멀, 조작 버튼 숨김 · 요세미티 사진 — 설치된 Mac 앱의 미니멀 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 숨김 상태이고 배경은 요세미티 사진입니다." data-zoom="../assets/marketing/mac-planning-minimal-hidden-yosemite.png" type="button"><img alt="설치된 Mac 앱의 미니멀 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 숨김 상태이고 배경은 요세미티 사진입니다." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-yosemite.png"/></button>
+<figcaption>설치된 Mac 앱의 미니멀 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 숨김 상태이고 배경은 요세미티 사진입니다.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 단일, 조작 버튼 표시 · 돌로미티 사진</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="Mac · 단일, 조작 버튼 표시 · 돌로미티 사진 확대" class="image-button capture-image" data-caption="Mac · 단일, 조작 버튼 표시 · 돌로미티 사진 — 설치된 Mac 앱의 단일 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 표시 상태이고 배경은 돌로미티 사진입니다." data-zoom="../assets/marketing/mac-planning-single-dolomites.png" type="button"><img alt="설치된 Mac 앱의 단일 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 표시 상태이고 배경은 돌로미티 사진입니다." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-dolomites.png"/></button>
+<figcaption>설치된 Mac 앱의 단일 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 표시 상태이고 배경은 돌로미티 사진입니다.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 미니멀, 조작 버튼 표시 · 돌로미티 사진</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="Mac · 미니멀, 조작 버튼 표시 · 돌로미티 사진 확대" class="image-button capture-image" data-caption="Mac · 미니멀, 조작 버튼 표시 · 돌로미티 사진 — 설치된 Mac 앱의 미니멀 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 표시 상태이고 배경은 돌로미티 사진입니다." data-zoom="../assets/marketing/mac-planning-minimal-dolomites.png" type="button"><img alt="설치된 Mac 앱의 미니멀 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 표시 상태이고 배경은 돌로미티 사진입니다." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-dolomites.png"/></button>
+<figcaption>설치된 Mac 앱의 미니멀 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 표시 상태이고 배경은 돌로미티 사진입니다.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 단일, 조작 버튼 숨김 · 돌로미티 사진</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="Mac · 단일, 조작 버튼 숨김 · 돌로미티 사진 확대" class="image-button capture-image" data-caption="Mac · 단일, 조작 버튼 숨김 · 돌로미티 사진 — 설치된 Mac 앱의 단일 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 숨김 상태이고 배경은 돌로미티 사진입니다." data-zoom="../assets/marketing/mac-planning-single-hidden-dolomites.png" type="button"><img alt="설치된 Mac 앱의 단일 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 숨김 상태이고 배경은 돌로미티 사진입니다." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-dolomites.png"/></button>
+<figcaption>설치된 Mac 앱의 단일 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 숨김 상태이고 배경은 돌로미티 사진입니다.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 미니멀, 조작 버튼 숨김 · 돌로미티 사진</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="Mac · 미니멀, 조작 버튼 숨김 · 돌로미티 사진 확대" class="image-button capture-image" data-caption="Mac · 미니멀, 조작 버튼 숨김 · 돌로미티 사진 — 설치된 Mac 앱의 미니멀 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 숨김 상태이고 배경은 돌로미티 사진입니다." data-zoom="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" type="button"><img alt="설치된 Mac 앱의 미니멀 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 숨김 상태이고 배경은 돌로미티 사진입니다." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-dolomites.png"/></button>
+<figcaption>설치된 Mac 앱의 미니멀 보기에서 20:04를 표시하는 ‘Planning’. 조작 버튼은 숨김 상태이고 배경은 돌로미티 사진입니다.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="world-clocks-heading" class="highlight-row has-gallery" data-highlight="04" id="world-clocks">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">04</span>세계 시계</p>
+<h2 id="world-clocks-heading">소중한 곳들을 가까이에.</h2>
+<p>나에게 중요한 도시와 시간대를 추가하세요. 동료와 가족이 있는 곳, 여행할 곳의 현재 현지 시간을 타이머 옆에서 확인할 수 있습니다.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="세계 시계 이미지" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>타이머 옆의 세계 시계</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="타이머 옆의 세계 시계 확대" class="image-button capture-image" data-caption="타이머 옆의 세계 시계 — 파란색 격자 작업 공간에서 ‘Studio’ 타이머 옆에 뉴욕, 런던, 도쿄 시계를 표시한 모습." data-zoom="../assets/marketing/mac-grid-dark.png" type="button"><img alt="파란색 격자 작업 공간에서 ‘Studio’ 타이머 옆에 뉴욕, 런던, 도쿄 시계를 표시한 모습." decoding="async" loading="lazy" src="../assets/marketing/mac-grid-dark.png"/></button>
+<figcaption>파란색 격자 작업 공간에서 ‘Studio’ 타이머 옆에 뉴욕, 런던, 도쿄 시계를 표시한 모습.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>장소 선택</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 구성</span></div>
+<button aria-label="장소 선택 확대" class="image-button capture-image" data-caption="장소 선택 — 설치된 Mac 시계 편집기에서 뉴욕을 표시한 모습. 지도, 현지 시간, UTC−04:00 시차가 보입니다." data-zoom="../assets/marketing/mac-clock-editor.png" type="button"><img alt="설치된 Mac 시계 편집기에서 뉴욕을 표시한 모습. 지도, 현지 시간, UTC−04:00 시차가 보입니다." decoding="async" loading="lazy" src="../assets/marketing/mac-clock-editor.png"/></button>
+<figcaption>설치된 Mac 시계 편집기에서 뉴욕을 표시한 모습. 지도, 현지 시간, UTC−04:00 시차가 보입니다.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="world-calendar-heading" class="highlight-row has-gallery" data-highlight="05" id="world-calendar">
+<span class="anchor-target" id="regional-holidays"></span><span class="anchor-target" id="world-events"></span><span class="anchor-target" id="apple-calendar"></span><span class="anchor-target" id="calendar-actions"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">05</span>세계 캘린더</p>
+<h2 id="world-calendar-heading">오늘을 더 넓은 맥락에서 보세요.</h2>
+<p>공휴일, 문화 기념일, 세계 행사, 역사 속 순간을 살펴보세요. Apple 캘린더를 읽기 전용으로 표시하고, 날짜나 일정을 카운트다운 또는 개인 알림으로 바꿀 수 있습니다.</p>
+<span class="platform-pill">Mac</span>
+<p class="feature-note">카탈로그를 한 번 다운로드하면 오프라인으로 둘러볼 수 있습니다. Apple 캘린더 접근은 선택 사항이며 읽기 전용입니다.</p>
+</div>
+<div aria-label="세계 캘린더 이미지" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>한눈에 보는 한 달</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 구성</span></div>
+<button aria-label="한눈에 보는 한 달 확대" class="image-button capture-image" data-caption="한눈에 보는 한 달 — 중국 본토 공휴일 프로필을 적용한 2026년 10월. 중국 음력 날짜와 국경절 세부 정보가 표시됩니다." data-zoom="../assets/marketing/mac-world-calendar-month.png" type="button"><img alt="중국 본토 공휴일 프로필을 적용한 2026년 10월. 중국 음력 날짜와 국경절 세부 정보가 표시됩니다." decoding="async" loading="lazy" src="../assets/marketing/mac-world-calendar-month.png"/></button>
+<figcaption>중국 본토 공휴일 프로필을 적용한 2026년 10월. 중국 음력 날짜와 국경절 세부 정보가 표시됩니다.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>주 보기와 날짜 세부 정보</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 구성</span></div>
+<button aria-label="주 보기와 날짜 세부 정보 확대" class="image-button capture-image" data-caption="주 보기와 날짜 세부 정보 — 9월 27일~10월 3일. 10월 1일이 선택되어 있으며 주 보기 옆에 국경절 세부 정보가 표시됩니다." data-zoom="../assets/marketing/mac-world-calendar-week.png" type="button"><img alt="9월 27일~10월 3일. 10월 1일이 선택되어 있으며 주 보기 옆에 국경절 세부 정보가 표시됩니다." decoding="async" loading="lazy" src="../assets/marketing/mac-world-calendar-week.png"/></button>
+<figcaption>9월 27일~10월 3일. 10월 1일이 선택되어 있으며 주 보기 옆에 국경절 세부 정보가 표시됩니다.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="reminders-heading" class="highlight-row copy-only" data-highlight="06" id="reminders">
+<span class="anchor-target" id="email-sms"></span><span class="anchor-target" id="call-me"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">06</span>이메일·SMS·전화 알림</p>
+<h2 id="reminders-heading">내 말로 만드는 알림.</h2>
+<p>일정 시간이 지난 뒤 또는 특정 날짜와 시간에 자신에게 보낼 메시지를 예약하세요. 이메일, SMS, 조건에 맞는 일회성 전화 중에서 선택하고 작업 옆에서 전달 상태를 확인할 수 있습니다.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">계정 및 서비스 이용 가능 여부에 따라 제공됩니다. SMS와 전화에는 이용 조건을 충족하는 본인의 인증된 번호와 각각 별도의 동의가 필요합니다. 전화는 미국·캐나다 번호를 지원하고 영어로 제공되며 자동으로 재발신하지 않습니다.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="sound-library-heading" class="highlight-row has-gallery" data-highlight="07" id="sound-library">
+<span class="anchor-target" id="sounds"></span><span class="anchor-target" id="interval-beeps"></span><span class="anchor-target" id="completion-alerts"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">07</span>사운드 보관함</p>
+<h2 id="sound-library-heading">마무리를 알릴 소리를 찾아보세요.</h2>
+<p>기본 제공되는 66가지 소리를 미리 들어 보고 선택한 뒤 즐겨찾기에 저장하세요. 나만의 오디오를 가져오거나, 세션을 진행하는 동안 일정 간격의 알림음으로 시간의 흐름을 느낄 수 있습니다.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="사운드 보관함 이미지" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>하루를 위한 소리</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 구성</span></div>
+<button aria-label="하루를 위한 소리 확대" class="image-button capture-image" data-caption="하루를 위한 소리 — 설치된 Mac 앱의 사운드 보관함. ‘Classic Tones’, 파형, 즐겨찾기, 재생 버튼이 표시됩니다." data-zoom="../assets/marketing/mac-sound-library.png" type="button"><img alt="설치된 Mac 앱의 사운드 보관함. ‘Classic Tones’, 파형, 즐겨찾기, 재생 버튼이 표시됩니다." decoding="async" loading="lazy" src="../assets/marketing/mac-sound-library.png"/></button>
+<figcaption>설치된 Mac 앱의 사운드 보관함. ‘Classic Tones’, 파형, 즐겨찾기, 재생 버튼이 표시됩니다.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>세계의 의례음</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 구성</span></div>
+<button aria-label="세계의 의례음 확대" class="image-button capture-image" data-caption="세계의 의례음 — ‘Gentle Bell’과 ‘Bright Chime’부터 ‘Ceremonial Drum’과 ‘Trumpet Salute’까지, 세계의 의례음." data-zoom="../assets/marketing/mac-sound-ceremonial.png" type="button"><img alt="‘Gentle Bell’과 ‘Bright Chime’부터 ‘Ceremonial Drum’과 ‘Trumpet Salute’까지, 세계의 의례음." decoding="async" loading="lazy" src="../assets/marketing/mac-sound-ceremonial.png"/></button>
+<figcaption>‘Gentle Bell’과 ‘Bright Chime’부터 ‘Ceremonial Drum’과 ‘Trumpet Salute’까지, 세계의 의례음.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="time-reports-heading" class="highlight-row has-gallery" data-highlight="08" id="time-reports">
+<span class="anchor-target" id="report-charts"></span><span class="anchor-target" id="report-exports"></span><span class="anchor-target" id="report-sharing"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">08</span>시간 보고서 및 공유</p>
+<h2 id="time-reports-heading">시간이 어디에 쓰이는지 확인하세요.</h2>
+<p>세션, 일별 합계, 현재 측정값을 확인하세요. 차트를 살펴보고 기간을 비교하며 작업이나 세트별로 필터링할 수 있습니다. CSV, HTML, PDF로 저장하거나 보고서를 자신에게 이메일로 보내고, 만료되는 링크로 공유할 수 있습니다.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">로컬 보고서와 내보내기는 오프라인에서도 작동합니다. 이메일과 온라인 공유에는 연결이 필요합니다.</p>
+</div>
+<div aria-label="시간 보고서 및 공유 이미지" class="feature-gallery gallery-4 report-gallery">
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>일별 합계 · 한눈에 보는 한 주</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 기록</span></div>
+<button aria-label="일별 합계 · 한눈에 보는 한 주 확대" class="image-button capture-image" data-caption="일별 합계 · 한눈에 보는 한 주 — 2026년 9월 21~25일: 다섯 개의 예시 작업에 총 30시간. 일별 합계와 작업별 비중을 표시하며, ‘Design’은 12시간 05분(40.3%)을 차지합니다." data-zoom="../assets/marketing/mac-report-week-daily-totals.png" type="button"><img alt="2026년 9월 21~25일: 다섯 개의 예시 작업에 총 30시간. 일별 합계와 작업별 비중을 표시하며, ‘Design’은 12시간 05분(40.3%)을 차지합니다." decoding="async" loading="lazy" src="../assets/marketing/mac-report-week-daily-totals.png"/></button>
+<figcaption>2026년 9월 21~25일: 다섯 개의 예시 작업에 총 30시간. 일별 합계와 작업별 비중을 표시하며, ‘Design’은 12시간 05분(40.3%)을 차지합니다.</figcaption>
+</figure>
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>세션 · 작업한 시간대</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 기록</span></div>
+<button aria-label="세션 · 작업한 시간대 확대" class="image-button capture-image" data-caption="세션 · 작업한 시간대 — 29개 세션, 총 30시간으로 구성된 한 주의 예시. 2026년 9월 21~25일에 작업한 시간대를 타임라인으로 보여 줍니다." data-zoom="../assets/marketing/mac-report-week-sessions.png" type="button"><img alt="29개 세션, 총 30시간으로 구성된 한 주의 예시. 2026년 9월 21~25일에 작업한 시간대를 타임라인으로 보여 줍니다." decoding="async" loading="lazy" src="../assets/marketing/mac-report-week-sessions.png"/></button>
+<figcaption>29개 세션, 총 30시간으로 구성된 한 주의 예시. 2026년 9월 21~25일에 작업한 시간대를 타임라인으로 보여 줍니다.</figcaption>
+</figure>
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>세션 · 하루를 자세히</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 기록</span></div>
+<button aria-label="세션 · 하루를 자세히 확대" class="image-button capture-image" data-caption="세션 · 하루를 자세히 — 2026년 9월 24일의 예시 세션 여섯 개, 총 6시간 15분. 하루 타임라인과 각 세션의 시작·종료 시간을 표시합니다." data-zoom="../assets/marketing/mac-report-day-sessions.png" type="button"><img alt="2026년 9월 24일의 예시 세션 여섯 개, 총 6시간 15분. 하루 타임라인과 각 세션의 시작·종료 시간을 표시합니다." decoding="async" loading="lazy" src="../assets/marketing/mac-report-day-sessions.png"/></button>
+<figcaption>2026년 9월 24일의 예시 세션 여섯 개, 총 6시간 15분. 하루 타임라인과 각 세션의 시작·종료 시간을 표시합니다.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>현재 측정값</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="현재 측정값 확대" class="image-button capture-image" data-caption="현재 측정값 — ‘Studio’ 작업 공간의 현재 측정값. 복사, 내보내기, 공유 버튼이 표시됩니다." data-zoom="../assets/marketing/mac-report-current-readings.png" type="button"><img alt="‘Studio’ 작업 공간의 현재 측정값. 복사, 내보내기, 공유 버튼이 표시됩니다." decoding="async" loading="lazy" src="../assets/marketing/mac-report-current-readings.png"/></button>
+<figcaption>‘Studio’ 작업 공간의 현재 측정값. 복사, 내보내기, 공유 버튼이 표시됩니다.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="archives-heading" class="highlight-row" data-highlight="09" id="archives">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">09</span>보관함</p>
+<h2 id="archives-heading">마친 작업을 간직하세요.</h2>
+<p>작업 세트를 보관하고 그 기록을 가까이 두세요. 지난 작업을 검색하고 저장된 스냅샷을 둘러보세요. 프로젝트나 루틴을 돌아보고 싶을 때 보고서를 열 수 있습니다.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="보관함 이미지" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>저장한 프로젝트 보고서</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="저장한 프로젝트 보고서 확대" class="image-button capture-image" data-caption="저장한 프로젝트 보고서 — ‘Brand workshop’을 보관함에 저장한 모습. 예시 타이머 측정값도 보고서에 보존되어 있습니다." data-zoom="../assets/marketing/mac-archive-report.png" type="button"><img alt="‘Brand workshop’을 보관함에 저장한 모습. 예시 타이머 측정값도 보고서에 보존되어 있습니다." decoding="async" loading="lazy" src="../assets/marketing/mac-archive-report.png"/></button>
+<figcaption>‘Brand workshop’을 보관함에 저장한 모습. 예시 타이머 측정값도 보고서에 보존되어 있습니다.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="appearance-heading" class="highlight-row has-gallery" data-highlight="10" id="appearance">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">10</span>모양 사용자화</p>
+<h2 id="appearance-heading">나만의 공간으로 꾸미세요.</h2>
+<p>라이트 또는 다크, 단색 또는 사진을 선택하세요. 내 이미지로 배경 보관함을 만들어 작업 공간을 차분하게 또는 다채롭게 꾸밀 수 있습니다. Mac에서는 폴더의 사진을 순서대로 표시할 수도 있습니다.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">사용 중인 기기에 맞게 꾸미세요. Mac에만 별도로 적용하는 모양 설정도 가능합니다.</p>
+</div>
+<div aria-label="모양 사용자화 이미지" class="feature-gallery gallery-4">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>단색 배경 · 흰색</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="단색 배경 · 흰색 확대" class="image-button capture-image" data-caption="단색 배경 · 흰색 — 흰색 단색 배경에서 단일 보기로 표시된 ‘Design’ 타이머." data-zoom="../assets/marketing/mac-single-light.png" type="button"><img alt="흰색 단색 배경에서 단일 보기로 표시된 ‘Design’ 타이머." decoding="async" loading="lazy" src="../assets/marketing/mac-single-light.png"/></button>
+<figcaption>흰색 단색 배경에서 단일 보기로 표시된 ‘Design’ 타이머.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>단색 · 남색</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="단색 · 남색 확대" class="image-button capture-image" data-caption="단색 · 남색 — 같은 ‘Design’ 타이머를 남색 단색 배경에 표시한 모습." data-zoom="../assets/marketing/mac-timer-single.png" type="button"><img alt="같은 ‘Design’ 타이머를 남색 단색 배경에 표시한 모습." decoding="async" loading="lazy" src="../assets/marketing/mac-timer-single.png"/></button>
+<figcaption>같은 ‘Design’ 타이머를 남색 단색 배경에 표시한 모습.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>사진 배경</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="사진 배경 확대" class="image-button capture-image" data-caption="사진 배경 — XTimers에 포함된 돌로미티 사진을 배경으로 표시한 ‘Design’ 타이머." data-zoom="../assets/marketing/mac-single-photo.png" type="button"><img alt="XTimers에 포함된 돌로미티 사진을 배경으로 표시한 ‘Design’ 타이머." decoding="async" loading="lazy" src="../assets/marketing/mac-single-photo.png"/></button>
+<figcaption>XTimers에 포함된 돌로미티 사진을 배경으로 표시한 ‘Design’ 타이머.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>사진 선택</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 구성</span></div>
+<button aria-label="사진 선택 확대" class="image-button capture-image" data-caption="사진 선택 — 설치된 Mac 앱의 배경 선택 화면. 기본 제공 사진이 보이며 요세미티가 선택되어 있습니다." data-zoom="../assets/marketing/mac-background-library.png" type="button"><img alt="설치된 Mac 앱의 배경 선택 화면. 기본 제공 사진이 보이며 요세미티가 선택되어 있습니다." decoding="async" loading="lazy" src="../assets/marketing/mac-background-library.png"/></button>
+<figcaption>설치된 Mac 앱의 배경 선택 화면. 기본 제공 사진이 보이며 요세미티가 선택되어 있습니다.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="menu-bar-heading" class="highlight-row has-gallery" data-highlight="11" id="menu-bar">
+<span class="anchor-target" id="devices"></span><span class="anchor-target" id="mac-shortcuts"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">11</span>메뉴 막대 및 데스크탑 연동</p>
+<h2 id="menu-bar-heading">작업 가까이에 시간을 두세요.</h2>
+<p>주 창을 열지 않고도 Mac 메뉴 막대에서 작업 이름과 타이머 측정값을 바로 확인하세요. 클릭 한 번으로 작업을 시작하거나 일시 정지하고, 세트를 전환하거나 보고서를 열 수 있습니다. 전역 단축키와 항상 위에 표시되는 창으로 조작 기능을 가까이 둘 수 있습니다.</p>
+<span class="platform-pill">Mac</span>
+</div>
+<div aria-label="메뉴 막대 및 데스크탑 연동 이미지" class="feature-gallery gallery-3 menu-bar-gallery">
+<figure class="capture-card capture-status-strip">
+<div class="capture-heading"><h3>한눈에 보는 내 타이머</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="한눈에 보는 내 타이머 확대" class="image-button capture-image" data-caption="한눈에 보는 내 타이머 — 다른 앱에서 작업하는 동안에도 20:04에 일시 정지된 ‘Planning’이 Mac 메뉴 막대에 표시됩니다." data-zoom="../assets/marketing/mac-menubar-status-planning.png" type="button"><img alt="20:04에 일시 정지된 ‘Planning’이 Mac 메뉴 막대의 시스템 상태 아이콘 옆에 표시된 모습" decoding="async" height="60" loading="lazy" src="../assets/marketing/mac-menubar-status-planning.png" width="572"/></button>
+<figcaption>작업 이름, 측정값, 일시 정지 표시가 메뉴 막대에 계속 표시됩니다. 상태 항목을 클릭하면 타이머 조작 기능을 사용할 수 있습니다.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>메뉴 막대의 작업 공간</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="메뉴 막대의 작업 공간 확대" class="image-button capture-image" data-caption="메뉴 막대의 작업 공간 — Mac 메뉴 막대에 표시된 ‘Studio’의 ‘Design’과 다른 타이머, 작업 세트, 보고서, 창 제어 기능." data-zoom="../assets/marketing/mac-menu-bar.png" type="button"><img alt="Mac 메뉴 막대에 표시된 ‘Studio’의 ‘Design’과 다른 타이머, 작업 세트, 보고서, 창 제어 기능." decoding="async" loading="lazy" src="../assets/marketing/mac-menu-bar.png"/></button>
+<figcaption>Mac 메뉴 막대에 표시된 ‘Studio’의 ‘Design’과 다른 타이머, 작업 세트, 보고서, 창 제어 기능.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>작은 타이머 창</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="작은 타이머 창 확대" class="image-button capture-image" data-caption="작은 타이머 창 — 작은 미니멀 창에 표시된 ‘Studio’의 ‘Design’ 타이머." data-zoom="../assets/marketing/mac-timer-minimal.png" type="button"><img alt="작은 미니멀 창에 표시된 ‘Studio’의 ‘Design’ 타이머." decoding="async" loading="lazy" src="../assets/marketing/mac-timer-minimal.png"/></button>
+<figcaption>작은 미니멀 창에 표시된 ‘Studio’의 ‘Design’ 타이머.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="live-activities-heading" class="highlight-row has-gallery" data-highlight="12" id="live-activities">
+<span class="anchor-target" id="mobile"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">12</span>실시간 현황</p>
+<h2 id="live-activities-heading">내 시간을 한눈에.</h2>
+<p>지원되는 타이머를 iPhone 잠금 화면이나 다이내믹 아일랜드에 계속 표시하세요. 작업과 측정값을 확인하고 전체 작업 공간을 열지 않아도 지원되는 타이머를 일시 정지하거나 재개할 수 있습니다.</p>
+<span class="platform-pill">iPhone</span>
+<p class="feature-note">지원되는 기기와 시스템 권한이 필요합니다. 세계 시계는 실시간 현황을 만들지 않습니다.</p>
+</div>
+<div aria-label="실시간 현황 이미지" class="feature-gallery gallery-2">
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>잠금 화면에서</h3><span class="capture-status status-real">iPhone · 앱 화면 캡처</span></div>
+<button aria-label="잠금 화면에서 확대" class="image-button capture-image" data-caption="잠금 화면에서 — iPhone 잠금 화면의 카운트다운 실시간 현황. 작업 이름, 남은 시간, 일시 정지 버튼이 표시됩니다." data-zoom="../assets/marketing/ios-live-activity-lockscreen.png" type="button"><img alt="iPhone 잠금 화면의 카운트다운 실시간 현황. 작업 이름, 남은 시간, 일시 정지 버튼이 표시됩니다." decoding="async" height="2868" loading="lazy" src="../assets/marketing/ios-live-activity-lockscreen.png" width="1320"/></button>
+<figcaption>iPhone 잠금 화면의 카운트다운 실시간 현황. 작업 이름, 남은 시간, 일시 정지 버튼이 표시됩니다.</figcaption>
+</figure>
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>다이내믹 아일랜드에서</h3><span class="capture-status status-real">iPhone · 앱 화면 캡처</span></div>
+<button aria-label="다이내믹 아일랜드에서 확대" class="image-button capture-image" data-caption="다이내믹 아일랜드에서 — iPhone 홈 화면을 연 상태에서도 작은 카운트다운이 다이내믹 아일랜드에 계속 표시됩니다." data-zoom="../assets/marketing/ios-live-activity-island.png" type="button"><img alt="iPhone 홈 화면을 연 상태에서도 작은 카운트다운이 다이내믹 아일랜드에 계속 표시됩니다." decoding="async" height="2868" loading="lazy" src="../assets/marketing/ios-live-activity-island.png" width="1320"/></button>
+<figcaption>iPhone 홈 화면을 연 상태에서도 작은 카운트다운이 다이내믹 아일랜드에 계속 표시됩니다.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="siri-shortcuts-heading" class="highlight-row has-gallery" data-highlight="13" id="siri-shortcuts">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">13</span>Siri 및 단축어</p>
+<h2 id="siri-shortcuts-heading">말 한마디나 탭 한 번으로 시작하세요.</h2>
+<p>Siri와 단축어로 지원되는 타이머를 시작하거나 일시 정지하고 실행 상태를 전환하세요. 새 스톱워치를 시작하거나 현재 작업을 일시 정지·재개하는 시스템 제어 기능을 추가할 수 있습니다.</p>
+<span class="platform-pill">iPhone · iPad</span>
+<p class="feature-note">독립적인 시스템 제어 기능은 XTimers를 엽니다. 실시간 현황의 제어 기능은 그 자리에서 작동할 수 있습니다.</p>
+</div>
+<div aria-label="Siri 및 단축어 이미지" class="feature-gallery gallery-1">
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>XTimers 단축어</h3><span class="capture-status status-real">iPhone · 앱 화면 캡처</span></div>
+<button aria-label="XTimers 단축어 확대" class="image-button capture-image" data-caption="XTimers 단축어 — 기본 단축어 앱의 ‘Toggle Timer’, ‘Start’, ‘Pause’ 동작." data-zoom="../assets/marketing/ios-siri-shortcuts.png" type="button"><img alt="기본 단축어 앱의 ‘Toggle Timer’, ‘Start’, ‘Pause’ 동작." decoding="async" height="2622" loading="lazy" src="../assets/marketing/ios-siri-shortcuts.png" width="1206"/></button>
+<figcaption>기본 단축어 앱의 ‘Toggle Timer’, ‘Start’, ‘Pause’ 동작.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="offline-heading" class="highlight-row" data-highlight="14" id="offline">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">14</span>계정 없이 오프라인 사용</p>
+<h2 id="offline-heading">로그인 없이 시작하세요.</h2>
+<p>기기에서 기본 타이머, 카운트다운, 작업 세트, 메모, 세계 시계, 로컬 보고서를 사용하세요. 오프라인에서도 계속 작업하고, 연결 기능이 필요할 때 언제든 계정을 추가할 수 있습니다.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="계정 없이 오프라인 사용 이미지" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>내 로컬 ‘Studio’ 작업 공간</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="내 로컬 ‘Studio’ 작업 공간 확대" class="image-button capture-image" data-caption="내 로컬 ‘Studio’ 작업 공간 — 로그아웃한 Mac 앱의 ‘Studio’ 작업 공간. 예시 로컬 타이머와 세계 시계를 표시한 모습." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="로그아웃한 Mac 앱의 ‘Studio’ 작업 공간. 예시 로컬 타이머와 세계 시계를 표시한 모습." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>로그아웃한 Mac 앱의 ‘Studio’ 작업 공간. 예시 로컬 타이머와 세계 시계를 표시한 모습.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="synchronization-heading" class="highlight-row" data-highlight="15" id="synchronization">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">15</span>기기 간 동기화</p>
+<h2 id="synchronization-heading">익숙한 작업 공간에서 이어 가세요.</h2>
+<p>지원되는 작업, 기록, 템플릿, 설정, 사용자 에셋을 Mac, iPhone, iPad에서 함께 사용하세요. 연결이 일시적으로 끊겨도 로컬 작업은 계속 사용할 수 있습니다.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Apple, Google, 이메일 코드 또는 비밀번호로 로그인하세요. 일부 기기 설정과 로컬 전용 데이터는 각 기기에 그대로 남습니다.</p>
+</div>
+<div aria-label="기기 간 동기화 이미지" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac에서</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="Mac에서 확대" class="image-button capture-image" data-caption="Mac에서 — 설치된 Mac 앱에 표시된 ‘Studio’의 예시 타이머와 시계." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="설치된 Mac 앱에 표시된 ‘Studio’의 예시 타이머와 시계." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>설치된 Mac 앱에 표시된 ‘Studio’의 예시 타이머와 시계.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="protected-sync-heading" class="highlight-row copy-only" data-highlight="16" id="protected-sync">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">16</span>보호된 동기화</p>
+<h2 id="protected-sync-heading">업로드 전에 보호 방식을 선택하세요.</h2>
+<p>새 타이머 콘텐츠와 사용자 업로드 항목을 <a href="privacy.html#xin-account">계정 동기화</a> 전에 기기에서 암호화하세요. iCloud Keychain이나 저장한 복구 코드로 키를 복구할 수 있습니다.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">지원되는 계정에서 선택적으로 사용할 수 있습니다. 알림 메시지, 계정·동기화 메타데이터, 활성화 전에 생성된 콘텐츠, 기기 내 로컬 저장소는 제외됩니다.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="languages-heading" class="highlight-row has-gallery" data-highlight="17" id="languages">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">17</span>다국어 지원</p>
+<h2 id="languages-heading">내 언어로 편안하게.</h2>
+<p>45가지 언어 옵션 중에서 기기 설정을 따르거나 원하는 언어를 직접 선택하세요. 지역별 날짜·시간·숫자 형식과 오른쪽에서 왼쪽으로 읽는 레이아웃으로 작업 공간을 더욱 익숙하게 사용할 수 있습니다.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="다국어 지원 이미지" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 영어</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 구성</span></div>
+<button aria-label="Mac · 영어 확대" class="image-button capture-image" data-caption="Mac · 영어 — 설치된 Mac 앱을 라이트 모드로 촬영한 영어 일반 설정 화면." data-zoom="../assets/marketing/mac-settings-english.png" type="button"><img alt="설치된 Mac 앱을 라이트 모드로 촬영한 영어 일반 설정 화면." decoding="async" loading="lazy" src="../assets/marketing/mac-settings-english.png"/></button>
+<figcaption>설치된 Mac 앱을 라이트 모드로 촬영한 영어 일반 설정 화면.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · 일본어</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 구성</span></div>
+<button aria-label="Mac · 일본어 확대" class="image-button capture-image" data-caption="Mac · 일본어 — 같은 일반 설정 화면을 일본어와 라이트 모드로 표시한 모습." data-zoom="../assets/marketing/mac-settings-japanese.png" type="button"><img alt="같은 일반 설정 화면을 일본어와 라이트 모드로 표시한 모습." decoding="async" loading="lazy" src="../assets/marketing/mac-settings-japanese.png"/></button>
+<figcaption>같은 일반 설정 화면을 일본어와 라이트 모드로 표시한 모습.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="activity-tracking-heading" class="highlight-row" data-highlight="18" id="activity-tracking">
+<span class="anchor-target" id="extras"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">18</span>앱 사용 시간 자동 추적</p>
+<h2 id="activity-tracking-heading">앱에 쓴 시간을 모아 보세요.</h2>
+<p>원할 때 Mac의 맨 앞에 있는 앱에서 보낸 시간을 추적하세요. 일·주·월·년별로 활동을 검토하고, 자리 비운 시간을 계산하는 방식도 선택할 수 있습니다.</p>
+<span class="platform-pill">Mac · 일부 프로필</span>
+<p class="feature-note">로컬 및 기존 프로필에서 사용할 수 있으며, 로컬 우선 동기화 계정에서는 숨겨집니다. 앱 식별 정보와 유휴 시간은 이 Mac에만 저장됩니다. 웹사이트, 방문 기록, 창 제목은 수집하지 않습니다.</p>
+</div>
+<div aria-label="앱 사용 시간 자동 추적 이미지" class="feature-gallery gallery-1">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>사용 시간 추적 설정</h3><span class="capture-status status-real">설치된 Mac 앱 · 설정</span></div>
+<button aria-label="사용 시간 추적 설정 확대" class="image-button capture-image" data-caption="사용 시간 추적 설정 — 표준 XTimers의 기본 설정에서 보고 기간, 활성 작업으로 스크롤, 자리 비운 시간을 조정합니다. 이 구성에서는 추적이 꺼져 있습니다." data-zoom="../assets/marketing/mac-activity-tracking-settings.png" type="button"><img alt="표준 XTimers의 기본 설정에서 보고 기간, 활성 작업으로 스크롤, 자리 비운 시간을 조정합니다. 이 구성에서는 추적이 꺼져 있습니다." decoding="async" loading="lazy" src="../assets/marketing/mac-activity-tracking-settings.png"/></button>
+<figcaption>표준 XTimers의 기본 설정에서 보고 기간, 활성 작업으로 스크롤, 자리 비운 시간을 조정합니다. 이 구성에서는 추적이 꺼져 있습니다.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="classic-interface-heading" class="highlight-row has-gallery" data-highlight="19" id="classic-interface">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">19</span>클래식 인터페이스</p>
+<h2 id="classic-interface-heading">시간을 만드는 또 하나의 방법.</h2>
+<p>별도의 작업 공간을 갖춘 영어 전용 로컬 타이머 인터페이스를 선택할 수 있습니다. XTimers에서 인터페이스를 전환하고 익숙한 방식으로 계속 사용하세요.</p>
+<span class="platform-pill">Mac · 로컬 전용</span>
+<p class="feature-note">함께 제공되는 클래식 런타임이 필요합니다. 계정 동기화와 이메일·SMS 전송은 기본 XTimers 인터페이스에서 제공합니다.</p>
+</div>
+<div aria-label="클래식 인터페이스 이미지" class="feature-gallery gallery-2">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>클래식 · 두 열</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="클래식 · 두 열 확대" class="image-button capture-image" data-caption="클래식 · 두 열 — 창작, 학습, 일상생활에 걸친 20개의 이름 있는 작업으로 확장한 클래식 루틴." data-zoom="../assets/marketing/classic-two-column.png" type="button"><img alt="창작, 학습, 일상생활에 걸친 20개의 이름 있는 작업으로 확장한 클래식 루틴." decoding="async" loading="lazy" src="../assets/marketing/classic-two-column.png"/></button>
+<figcaption>창작, 학습, 일상생활에 걸친 20개의 이름 있는 작업으로 확장한 클래식 루틴.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>클래식 · 한 열</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 데이터</span></div>
+<button aria-label="클래식 · 한 열 확대" class="image-button capture-image" data-caption="클래식 · 한 열 — ‘Design’, ‘Research’, ‘Writing’, ‘Reading’, ‘Planning’의 다섯 작업으로 구성된 간결한 클래식 작업 공간." data-zoom="../assets/marketing/classic-one-column.png" type="button"><img alt="‘Design’, ‘Research’, ‘Writing’, ‘Reading’, ‘Planning’의 다섯 작업으로 구성된 간결한 클래식 작업 공간." decoding="async" loading="lazy" src="../assets/marketing/classic-one-column.png"/></button>
+<figcaption>‘Design’, ‘Research’, ‘Writing’, ‘Reading’, ‘Planning’의 다섯 작업으로 구성된 간결한 클래식 작업 공간.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="xhelpers-pro-heading" class="highlight-row" data-highlight="20" id="xhelpers-pro">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">20</span>XHelpers Pro 혜택</p>
+<h2 id="xhelpers-pro-heading">Mac과 함께하는 동반자.</h2>
+<p>일상적인 제어 기능에 빠르게 접근할 수 있는 별도의 Mac 유틸리티, XHelpers Pro를 살펴보세요. XTimers 사용자는 프로모션 라이선스 혜택 페이지에서 현재 이용 조건과 활성화 방법을 확인할 수 있습니다.</p>
+<span class="platform-pill">Mac · 별도 앱</span>
+<a class="text-link" href="https://xintechllc.com/XHelpersPro/" rel="noopener noreferrer" target="_blank">XHelpers Pro 혜택 보기</a>
+</div>
+<div aria-label="XHelpers Pro 혜택 이미지" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>포함된 XHelpers Pro 혜택</h3><span class="capture-status status-real">설치된 Mac 앱 · 예시 구성</span></div>
+<button aria-label="포함된 XHelpers Pro 혜택 확대" class="image-button capture-image" data-caption="포함된 XHelpers Pro 혜택 — 설치된 XTimers 앱의 정보 화면에서 포함된 XHelpers Pro 혜택을 보여 줍니다." data-zoom="../assets/marketing/mac-xhelpers-benefit.png" type="button"><img alt="설치된 XTimers 앱의 정보 화면에서 포함된 XHelpers Pro 혜택을 보여 줍니다." decoding="async" loading="lazy" src="../assets/marketing/mac-xhelpers-benefit.png"/></button>
+<figcaption>설치된 XTimers 앱의 정보 화면에서 포함된 XHelpers Pro 혜택을 보여 줍니다.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="download-heading" class="download-section" id="download">
+<div class="wrap download-inner">
+<div class="download-copy"><img alt="" height="64" loading="lazy" src="../assets/marketing/app-icon.png" width="64"/><h2 id="download-heading">잠깐의 시간을<br/><em>나 자신에게.</em></h2><p>작업을 위한 타이머. 루틴을 위한 공간.</p></div>
+<div class="download-choices">
+<a class="download-choice" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" class="icon"><use href="#i-mac"></use></svg><span><strong>XTimers는 Mac용</strong><small>Mac App Store에서 보기</small></span></a>
+<a class="download-choice" href="#mobile"><svg aria-hidden="true" class="icon"><use href="#i-mobile"></use></svg><span><strong>iPhone 및 iPad용 XTimers</strong><small>모바일 사용 경험 살펴보기</small></span></a>
+<p class="download-note">Mac, iPhone, iPad. 하루의 순간마다 각자의 자리에서.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="faq-heading" class="section faq-section wrap" id="support">
+<div class="section-copy"><p class="eyebrow">알아 두면 좋은 답변</p><h2 id="faq-heading">시간을 만들기<br/>전에.</h2><p>다른 궁금한 점이 있나요?</p><a class="text-link" href="support.html" rel="noopener noreferrer" target="_blank">지원 페이지 방문</a></div>
+<div class="faq-list">
+<details><summary>계정이 필요한가요?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>기본 로컬 타이머, 카운트다운, 세계 시계, 로컬 보고서는 계정 없이 사용할 수 있습니다. 계정 동기화나 계정 기반 알림을 사용하고 싶을 때 로그인하세요.</p><p class="feature-note">XTimers는 사용자를 식별하고 인증하기 위해 Xin Account를 사용합니다. Xin Account는 XTimers 및 계정 제어에 나열된 기타 연결된 제품을 위한 공유 ID 계층이며, XTimers 제품 계정이 아니며 XTimers 타이머, 보고서, 소리 또는 SMS 데이터를 포함하지 않습니다.</p></details>
+<details><summary>XTimers를 오프라인으로 사용할 수 있나요?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>기본 시간 측정과 로컬 보고서는 오프라인에서도 작동합니다. 동기화, 온라인 공유, 서버 알림에는 연결이 필요합니다. Mac의 세계 캘린더는 처음에 카탈로그를 다운로드해야 하며, 설치된 카탈로그는 이후 오프라인에서도 사용할 수 있습니다.</p></details>
+<details><summary>여러 타이머를 동시에 실행할 수 있나요?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>네. 다른 작업으로 이동할 때 이전의 지원되는 타이머를 일시 정지할지, 계속 실행할지 선택할 수 있습니다. 작업 세트로 다양한 활동을 정리할 수 있습니다.</p></details>
+<details><summary>모든 기기에서 같은 기능을 사용할 수 있나요?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>기본 작업 공간에는 타이머, 카운트다운, 시계, 작업 세트, 보고서가 포함됩니다. Mac에는 메뉴 막대 제어 기능과 세계 캘린더가 더해집니다. iPhone은 호환 기기에서 실시간 현황을 지원하며, iPad에서는 작업을 더 넓게 배치할 수 있습니다.</p></details>
+<details><summary>전화 알림은 어떻게 작동하나요?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>알림은 이용 조건을 충족하는 본인의 인증된 번호로 전송되며, SMS 또는 전화에 대한 별도 동의가 필요합니다. 이용 가능 여부는 계정, 지역, 서비스에 따라 다릅니다. 예약 전화는 서버 확인이 필요합니다. ‘Call Me’는 영어로 제공되며 자동으로 재발신하지 않습니다.</p></details>
+</div>
+</section>
+</main>
+<footer class="site-footer wrap">
+<p class="footer-copy"><small>© 2026 Xintech LLC</small><span>나에게 소중한 일을 위한 시간을 만드세요.</span></p>
+<div class="footer-links"><a href="#features">기능</a><a href="#devices">사용하는 기기</a><a href="support.html" rel="noopener noreferrer" target="_blank">지원</a><a href="privacy.html" rel="noopener noreferrer" target="_blank">개인정보</a><a href="sms-terms.html" rel="noopener noreferrer" target="_blank">메시지 이용 약관</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener noreferrer" target="_blank">라이선스</a><a href="terms.html">약관</a><a href="privacy-choices.html">개인 정보 선택</a><a href="sms-opt-in.html">SMS 수신 동의</a></div>
+</footer>
+<dialog aria-labelledby="image-dialog-caption" class="image-dialog" id="image-dialog">
+<button aria-label="축소하고 스크린샷 닫기" class="image-dialog-zoom-out" type="button">
+<img alt="" id="image-dialog-img"/>
+</button>
+<p id="image-dialog-caption"></p>
+</dialog>
 </body>
 </html>
