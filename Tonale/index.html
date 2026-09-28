@@ -138,7 +138,6 @@
     .sync { --icon: #7964e8; }
 
     .comparison-section { padding-block: 16px; }
-    .comparison { scroll-margin-top: 100px; }
     .comparison > summary {
       display: flex; align-items: center; justify-content: space-between; gap: 18px;
       min-height: 68px; padding: 14px 20px; list-style: none; cursor: pointer;
@@ -546,6 +545,15 @@
 
 <script>
   (function () {
+    var comparison = document.getElementById("compare");
+    comparison.addEventListener("toggle", function () {
+      if (!comparison.open) return;
+      comparison.scrollIntoView({
+        block: "start",
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth"
+      });
+    });
+
     var viewer = document.getElementById("viewer");
     var large = viewer.querySelector("img");
     document.querySelectorAll(".shot").forEach(function (shot) {
