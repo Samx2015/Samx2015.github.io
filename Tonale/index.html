@@ -21,6 +21,15 @@
       if (!link || !window.umami) return;
       var href = link.getAttribute("href") || "";
       var url = link.href || href;
+      if (link.getAttribute("data-portfolio-product")) {
+        window.umami.track("Portfolio App Click", {
+          href: url, path: window.location.pathname,
+          product: link.getAttribute("data-portfolio-product"),
+          source: link.getAttribute("data-portfolio-source"),
+          placement: link.getAttribute("data-portfolio-placement")
+        });
+        return;
+      }
       var eventName = null;
       if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
       else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
@@ -203,6 +212,12 @@
     .steps li:nth-child(3) { --step: #7964e8; }
     .steps b { color: var(--ink); font-weight: 600; }
     .steps a { color: inherit; }
+
+    .companion { display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center; padding: 22px 26px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel-soft); }
+    .companion > div { flex: 1 1 25rem; }
+    .companion h2 { margin: 0 0 6px; font-size: 1.2rem; font-weight: 600; }
+    .companion p { margin: 0; color: var(--muted); font-size: 0.92rem; line-height: 1.55; }
+    .companion a { display: inline-flex; align-items: center; min-height: 44px; max-width: 100%; color: var(--accent); font-size: 0.92rem; line-height: 1.5; text-underline-offset: 3px; }
 
     .site-footer { margin-top: clamp(2rem, 4vw, 2.75rem); border-top: 1px solid var(--line); }
     .site-footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 18px; padding: 18px 0 28px; color: var(--muted); font-size: 0.88rem; }
@@ -527,6 +542,13 @@
       </div>
     </div>
   </section>
+  <aside class="companion wrap" aria-labelledby="xtimers-title">
+    <div>
+      <h2 id="xtimers-title">Time a practice session.</h2>
+      <p>Use XTimers, a separate Mac app from Xintech LLC, to time practice sessions and focused work.</p>
+    </div>
+    <a href="https://apps.apple.com/app/apple-store/id1296620733?pt=118260248&amp;ct=portfolio_mac&amp;mt=8" data-portfolio-product="XTimers" data-portfolio-source="tonale" data-portfolio-placement="companion-card">XTimers on the Mac App Store <span aria-hidden="true">→</span></a>
+  </aside>
 </main>
 
 <footer class="site-footer">
