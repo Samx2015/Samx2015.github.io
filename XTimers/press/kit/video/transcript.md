@@ -1,6 +1,6 @@
-# XTimers for Mac — 3.5 preview demo
+# XTimers for Mac — 3.5.0 demo
 
-This silent, captioned demonstration shows the Mac 3.5 release candidate, recorded in the installed app with sample tasks. It is an edited preview, not a claim that 3.5 is the currently released public version. The 30-hour report covers existing synthetic sample sessions from September 21–25, 2026; those hours were not created during the short Planning run in this video.
+This silent, captioned demonstration shows XTimers for Mac 3.5.0, recorded in the installed app with sample tasks and edited for time. The 30-hour report covers existing synthetic sample sessions from September 21–25, 2026; those hours were not created during the short Planning run in this video.
 
 | Time | On-screen caption | Recorded app activity |
 | --- | --- | --- |

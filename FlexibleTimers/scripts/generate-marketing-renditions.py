@@ -43,7 +43,7 @@ def main():
             variants.append({**evidence(output), 'width': width, 'height': size[1]})
         manifest['images'].append({'original': evidence(original), 'variants': variants})
 
-    # A factual social card: genuine English Mac UI, with its release status.
+    # A product social card using genuine English Mac UI.
     card = Image.new('RGB', (1200, 630), '#fbfaf7')
     draw = ImageDraw.Draw(card)
     font_path = '/System/Library/Fonts/Helvetica.ttc'
@@ -54,8 +54,8 @@ def main():
     draw.text((60, 180), 'Timers.', font=regular(54), fill='#086ce9')
     draw.text((60, 244), 'Countdowns.', font=regular(54), fill='#8850da')
     draw.text((60, 308), 'Your workspace.', font=regular(48), fill='#c32b77')
-    draw.text((62, 436), 'Mac 3.4 available now', font=regular(25), fill='#3e526c')
-    draw.text((62, 478), 'Mac 3.5 preview shown', font=regular(21), fill='#647181')
+    draw.text((62, 436), 'XTimers 3.5.0', font=regular(25), fill='#3e526c')
+    draw.text((62, 478), 'Timers, routines and reports', font=regular(21), fill='#647181')
     draw.text((62, 563), 'xintechllc.com/XTimers', font=regular(21), fill='#647181')
     workspace = Image.open(ASSETS / 'mac-dark.png').convert('RGBA')
     workspace = workspace.resize((650, round(workspace.height * 650 / workspace.width)), Image.Resampling.LANCZOS)

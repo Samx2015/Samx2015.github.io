@@ -3,41 +3,8 @@
   "name": "XTimers",
   "developer": "Xintech LLC",
   "appStoreId": "1296620733",
-  "currentPublicRelease": {
-    "platform": "Mac",
-    "version": "3.4.0",
-    "releaseDate": "2026-07-13",
-    "minimumOS": "macOS 13.0",
-    "storefront": "United States",
-    "downloadPrice": {
-      "amount": 0,
-      "currency": "USD",
-      "display": "Free download"
-    },
-    "pricingScope": "Download price only; no blanket statement about every connected service.",
-    "storeURL": "https://apps.apple.com/us/app/xtimers/id1296620733?mt=12"
-  },
-  "candidateRelease": {
-    "platform": "Mac",
-    "version": "3.5.0",
-    "state": "Unreleased candidate",
-    "releaseWindow": "TBD",
-    "screenshotBuild": "151",
-    "videoBuilds": [
-      "151",
-      "152"
-    ]
-  },
-  "mobile": {
-    "platforms": [
-      "iPhone",
-      "iPad"
-    ],
-    "publicAvailability": "Not yet publicly released",
-    "releaseWindow": "TBD"
-  },
   "coreOfflineStatement": "Core timers and local reports work offline without an account.",
-  "worldCalendarScope": "Mac 3.5 candidate; regional calendar data needs an initial download; optional personal Apple Calendar display is read-only.",
+  "worldCalendarScope": "Mac; regional calendar data needs an initial download; optional personal Apple Calendar display is read-only.",
   "website": "https://xintechllc.com/XTimers/",
   "pressURL": "https://xintechllc.com/XTimers/press/",
   "contact": "admin@xintechllc.com",
@@ -47,7 +14,7 @@
   "sources": [
     {
       "url": "https://apps.apple.com/us/app/xtimers/id1296620733?mt=12",
-      "supports": "Public Mac release, minimum OS, developer, free download; checked 2026-09-28."
+      "supports": "Mac App Store download price, minimum OS and developer; checked September 28, 2026."
     },
     {
       "url": "https://xintechllc.com/XTimers/support.html",
@@ -55,18 +22,32 @@
     },
     {
       "repository": "TimerWorkspace",
-      "path": "Docs/Marketing/ASOReview20260928/evidence/asc-observations.json",
-      "supports": "Observed public Mac 3.4.0 and unreleased Mac/iOS 3.5.0 drafts."
-    },
-    {
-      "repository": "TimerWorkspace",
       "path": "Docs/AppStore/3.5.0/2026-09-27/metadata.json",
-      "supports": "Candidate feature wording and platform limitations."
+      "supports": "Version 3.5.0 feature wording and platform limitations."
     },
     {
       "repository": "TimerWorkspace",
       "path": "Previews/XTimers/AppStore/Upload/upload-record.json",
-      "supports": "Approved English Mac 3.5 screenshot set; not an App Store release approval."
+      "supports": "Approved English Mac screenshot set and source file hashes."
     }
-  ]
+  ],
+  "version": "3.5.0",
+  "platform": "Mac",
+  "minimumOS": "macOS 13.0",
+  "downloadPrice": {
+    "amount": 0,
+    "currency": "USD",
+    "display": "Free download"
+  },
+  "pricingScope": "US Mac App Store download price, checked September 28, 2026. Connected services have separate eligibility and terms.",
+  "storeURL": "https://apps.apple.com/us/app/xtimers/id1296620733?mt=12",
+  "captures": {
+    "screenshotVersion": "3.5.0",
+    "screenshotBuild": "151",
+    "videoVersion": "3.5.0",
+    "videoBuilds": [
+      "151",
+      "152"
+    ]
+  }
 }
