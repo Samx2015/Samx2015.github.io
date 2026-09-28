@@ -495,6 +495,15 @@
         if (!link || !window.umami) return;
         var href = link.getAttribute("href") || "";
         var url = link.href || href;
+        if (link.getAttribute("data-portfolio-product")) {
+          window.umami.track("Portfolio App Click", {
+            href: url, path: window.location.pathname,
+            product: link.getAttribute("data-portfolio-product"),
+            source: link.getAttribute("data-portfolio-source"),
+            placement: link.getAttribute("data-portfolio-placement")
+          });
+          return;
+        }
         var eventName = null;
         if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
         else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
@@ -1266,6 +1275,7 @@
       <a href="https://xintechllc.com/XHelpersPro/support.html">Support</a>
       <a href="https://xintechllc.com/XHelpersPro/privacy.html">Privacy</a>
       <a href="https://xintechllc.com/XHelpersPro/eula.html">EULA</a>
+      <a href="https://apps.apple.com/app/apple-store/id1296620733?pt=118260248&amp;ct=portfolio_mac&amp;mt=8" data-portfolio-product="XTimers" data-portfolio-source="xhelpers-pro" data-portfolio-placement="footer"><bdi>XTimers</bdi></a>
     </nav>
   </footer>
 </main>
