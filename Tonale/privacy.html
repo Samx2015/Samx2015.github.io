@@ -19,7 +19,7 @@ footer{max-width:880px;margin:0 auto;padding:24px;font-size:14px;color:#666;disp
 <main>
   <p><a href="./">← Tonale</a></p>
   <h1>Tonale Privacy Policy</h1>
-  <p class="note">Effective date: 2026-09-27 · Web copy: <a href="https://xintechllc.com/Tonale/privacy.html">https://xintechllc.com/Tonale/privacy.html</a></p>
+  <p class="note">Effective date: 2026-09-28 · Web copy: <a href="https://xintechllc.com/Tonale/privacy.html">https://xintechllc.com/Tonale/privacy.html</a></p>
 
   <h2 id="scope">Scope and Controller</h2>
   <p>This policy explains how Tonale handles information on your Mac, and when information goes to Xintech LLC or to another company. Xintech LLC is the controller of the information it receives.</p>
@@ -73,7 +73,7 @@ footer{max-width:880px;margin:0 auto;padding:24px;font-size:14px;color:#666;disp
   <h3 id="watch-on-youtube">Watch on YouTube</h3>
   <p>You can choose Watch on YouTube in the Playback menu, or on the player when a video cannot play there. Tonale then shows YouTube's own watch page for that video in a Tonale window.</p>
   <ul>
-    <li>The window shows <code>youtube.com</code> as a browser does, with YouTube's own cookies, ads, and controls. Tonale adds no script to the page and reads nothing from it except the page's address, which tells Tonale which video is showing.</li>
+    <li>The window shows <code>youtube.com</code> as a browser does, with YouTube's own cookies, ads, and controls. Tonale adds no script to the page. It observes the page's address and uses WebKit's public media-playback state, such as playing or paused, to identify the video and follow playback started in Tonale.</li>
     <li>Pages other than YouTube and Google's sign-in open in your default browser.</li>
     <li>If you chose to sign in to YouTube, the window uses your saved sign-in data (see <a href="#youtube-sign-in">Signing in to YouTube</a>). If you did not, it uses temporary website data, which is deleted when the window closes.</li>
   </ul>
@@ -94,7 +94,7 @@ footer{max-width:880px;margin:0 auto;padding:24px;font-size:14px;color:#666;disp
   <p>To show titles, durations, and the contents of public playlists, Tonale asks a service run by Xintech LLC at <code>dataol.net</code>. That service gets the details from Google with its own key. Tonale asks for your permission before it uses this service the first time.</p>
   <ul>
     <li>The request contains only the video or playlist identifiers you asked for, and a page token for long playlists. It carries no account, token, or cookie; the service refuses requests that have them.</li>
-    <li>The service stores nothing from these requests: no log record, no copy of the answer, and no record of your IP address. To limit request rates, it keeps a scrambled form of your IP address in memory for one minute.</li>
+    <li>The application service saves no individual request log, requested identifiers, copy of the answer, or IP address. To limit request rates, it uses a scrambled form of your IP address in memory for one-minute rate limits.</li>
     <li>Microsoft Azure hosts the service and may process connection information under its own terms.</li>
   </ul>
   <h3 id="youtube-account">Connecting your YouTube account (optional)</h3>
@@ -123,11 +123,11 @@ footer{max-width:880px;margin:0 auto;padding:24px;font-size:14px;color:#666;disp
   <h2 id="xin-account">Optional Xin Account and Sign-In</h2>
   <p>A Xin Account is the account that Xintech LLC's apps share. In Tonale it has one purpose: to keep your library the same on your Macs. Tonale works fully without it.</p>
   <ul>
-    <li>Supabase is Xintech LLC's sign-in provider. It processes the email address or the Apple or Google identity that you sign in with, sign-in events, session data, and ordinary request information such as IP address and time. If you sign in with an email address, Supabase also processes your password or the codes it emails to you. Sign-in codes, account confirmations, and password-reset messages are sent through Xintech LLC's email provider.</li>
+    <li>Supabase is Xintech LLC's sign-in provider. It processes the email address or the Apple or Google identity that you sign in with, sign-in events, session data, and ordinary request information such as IP address and time. For Google sign-in, Supabase may also retain the name and profile-picture address supplied by Google with your email and identity. If you sign in with an email address, Supabase also processes your password or the codes it emails to you. Sign-in codes, account confirmations, and password-reset messages are sent through Xintech LLC's email provider.</li>
     <li>With Sign in with Apple, macOS shows Apple's sign-in sheet, and Tonale asks Apple only for your email address. Xintech LLC's account service keeps Apple's refresh token, encrypted, so that it can end Tonale's Sign in with Apple access if you delete your Xin Account.</li>
     <li>With Google, Tonale opens Google's sign-in page in a secure browser window that macOS provides. After you sign in, a page on xintechllc.com gives the result back to Tonale. Tonale never sees your Google or Apple password.</li>
     <li>When you sign in once on a Mac, Xin apps that share sign-in, such as XHelpers Pro, can use the same sign-in on that Mac. When you sign out of Tonale, those apps are signed out on this Mac too.</li>
-    <li>Xintech LLC's account service runs on Microsoft Azure. It stores your account record with your email address; your Tonale membership and an identifier used only for Tonale; the identifier of your sign-in identity at Supabase; and a record of the Mac-wide sign-ins you use, with a random identifier for each Tonale installation. It does not store your name, and it does not use a hardware or device identifier.</li>
+    <li>Xintech LLC's account service runs on Microsoft Azure. It stores your account record with your email address; your Tonale membership and an identifier used only for Tonale; the identifier of your sign-in identity at Supabase; and a record of the Mac-wide sign-ins you use, with a random identifier for each Tonale installation. This Azure account record does not include your name; Supabase's sign-in record can, as described above. The account service does not use a hardware or device identifier.</li>
     <li>If you use Sign in with Apple with Hide My Email, Apple gives Xintech LLC a private relay address instead of your own.</li>
     <li>Signing out ends the session on this Mac. It deletes nothing on the server. Your synced library stays on this Mac, hidden, until you sign in to the same account again.</li>
   </ul>
@@ -178,7 +178,7 @@ footer{max-width:880px;margin:0 auto;padding:24px;font-size:14px;color:#666;disp
       <tr><td>YouTube sign-in session (Tonale's WebKit website data)</td><td>On your Mac, from the time you choose to sign in to YouTube until you sign out. Signing out deletes all of Tonale's WebKit website data. Nothing about the session goes to Xintech LLC.</td></tr>
       <tr><td>YouTube account connection (Google's tokens, your channel's name and identifiers)</td><td>In the Keychain on your Mac until you disconnect, switch accounts, or delete YouTube data, or until Google refuses the connection. Your channel's name is deleted if Tonale cannot get it again within 30 days. Never sent to Xintech LLC.</td></tr>
       <tr><td>Playlists imported from your YouTube account</td><td>On your Mac until you disconnect or delete them. Tonale updates them in the background from 23 days after their last update; after 30 days without an update, it removes what it imported for them. Titles and other details from YouTube are cleared after 30 days unless Tonale gets them again. Disconnecting also removes what sync sent.</td></tr>
-      <tr><td>Public YouTube requests</td><td>Nothing is stored. A scrambled form of your IP address stays in memory for one minute to limit request rates.</td></tr>
+      <tr><td>Public YouTube requests</td><td>No individual application request record or response copy is saved. Temporary, scrambled IP-address buckets enforce one-minute rate limits. Microsoft Azure may process connection information under its own terms.</td></tr>
       <tr><td>Your synced library</td><td>Until you delete your Tonale data or your Xin Account. The record of individual changes is removed after about 90 days, and sync receipts after about 30 days. Markers that record a deleted item stay until your Tonale data is deleted.</td></tr>
       <tr><td>Request records for account and sync requests</td><td>For each request, the service records the request path, result, and time; your IP address and the approximate location that comes from it; the user agent; and Tonale's platform, version, and build. Xintech LLC uses these records to run the service and to prevent abuse. They are kept with no fixed end date and are not deleted when you delete your account.</td></tr>
       <tr><td>Sign-in identity and sessions</td><td>Kept by Supabase while the identity exists. Supabase keeps its own sign-in logs under its policy.</td></tr>
