@@ -590,6 +590,7 @@ class WebsiteLocalizationScriptsTests(unittest.TestCase):
         <a href="terms.html">Terms</a>
         <a href="privacy-choices.html?source=footer#choices">Choices</a>
         <img src="assets/icon.png">
+        <source srcset="assets/small.webp 320w, assets/large.webp 640w">
         <a href="https://example.com/">External</a>
         </body>"""
         soup = authoring.BeautifulSoup(source, "html.parser")
@@ -602,8 +603,29 @@ class WebsiteLocalizationScriptsTests(unittest.TestCase):
         )
         self.assertEqual(soup.find("img")["src"], "../assets/icon.png")
         self.assertEqual(
+            soup.find("source")["srcset"],
+            "../assets/small.webp 320w, ../assets/large.webp 640w",
+        )
+        self.assertEqual(
             soup.find(string="External").parent["href"], "https://example.com/"
         )
+
+    def test_share_metadata_uses_local_copy_and_canonical_locale_url(self) -> None:
+        soup = authoring.BeautifulSoup(
+            '<html><head><link rel="canonical" href="https://xintechllc.com/XTimers/">'
+            '<meta property="og:url" content="https://xintechllc.com/XTimers/">'
+            '<meta property="og:image:alt" content="Preview image">'
+            '<meta name="twitter:image:alt" content="Preview image">'
+            '</head></html>', 'html.parser',
+        )
+        authoring.replace_copy(soup, {"Preview image": "Image d’aperçu"})
+        authoring.set_canonical(soup, "fr", "index.html")
+        self.assertEqual(
+            soup.find("meta", property="og:url")["content"],
+            "https://xintechllc.com/XTimers/fr/",
+        )
+        for attribute, name in [("property", "og:image:alt"), ("name", "twitter:image:alt")]:
+            self.assertEqual(soup.find("meta", attrs={attribute: name})["content"], "Image d’aperçu")
 
     def test_localized_copy_preserves_the_html_doctype(self) -> None:
         soup = authoring.BeautifulSoup(
@@ -2054,7 +2076,12 @@ class WebsiteLocalizationScriptsTests(unittest.TestCase):
 """
         generated = navigation.updated_sitemap(source, self.inventory)
         expected_urls = navigation.expected_sitemap_urls(self.inventory)
-        self.assertEqual(len(expected_urls), 9 + (len(self.inventory) - 1) * 8)
+        self.assertEqual(len(expected_urls), 14 + (len(self.inventory) - 1) * 8)
+        for path in (
+            "guides/", "guides/menu-bar-timer.html", "guides/multiple-task-timers.html",
+            "guides/recover-timer-data.html", "press/",
+        ):
+            self.assertIn(navigation.BASE_URL + path, expected_urls)
         expected_set = set(expected_urls)
         for item in self.inventory:
             identifier = item["identifier"]

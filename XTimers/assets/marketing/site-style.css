@@ -368,3 +368,31 @@ dialog::backdrop { background: rgb(37 31 24 / 84%); }
 .hero-stage { direction: ltr; }
 html[dir="rtl"] .feature-items { border-left: 0; border-right: 1px solid var(--line); padding-inline-start: 14px; padding-inline-end: 0; }
 .hero-hoefler .hero-timing-heading { font-size: min(clamp(30px, 11.2cqw, 56px), var(--headline-fit, 100px)); }
+
+/* Availability stays outside the artwork, with one persistent Mac action. */
+.navigation { gap: 16px; }
+.navigation .brand { flex-shrink: 0; }
+.navigation .nav-links { margin-inline-start: auto; gap: clamp(12px, 1.6vw, 24px); }
+.header-download { flex-shrink: 0; white-space: nowrap; text-align: center; }
+.release-note { margin-block: 14px 0; color: #626b76; font-size: 12px; line-height: 1.55; text-align: center; }
+.hero-stage picture { display: block; width: 100%; }
+@media (max-width: 1000px) {
+  .navigation { min-height: 64px; gap: 10px; }
+  .navigation .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; margin: 0; padding: 14px; max-height: calc(100dvh - 90px); overflow-y: auto; border: 1px solid var(--line); border-radius: 0 0 14px 14px; }
+  .navigation .nav-links.is-open { display: flex; flex-direction: column; align-items: stretch; gap: 6px; }
+  .navigation .nav-links > a { padding: 9px 3px; }
+  .navigation .header-actions { flex-direction: column; align-items: stretch; }
+  .navigation .language-menu-list { position: static; width: 100%; max-height: 40dvh; margin-top: 10px; box-shadow: none; }
+  .navigation .menu-toggle { display: flex; flex: 0 0 40px; flex-direction: column; align-items: center; justify-content: center; gap: 6px; width: 40px; height: 40px; padding: 9px; border: 1px solid var(--line); }
+  .navigation .menu-toggle span { display: block; width: 18px; height: 1px; background: var(--ink); }
+  .navigation .menu-toggle[aria-expanded="true"] span:first-child { transform: translateY(3.5px) rotate(45deg); }
+  .navigation .menu-toggle[aria-expanded="true"] span:last-child { transform: translateY(-3.5px) rotate(-45deg); }
+  .header-download { flex-shrink: 1; min-width: 0; margin-inline-start: auto; max-width: 56vw; white-space: normal; }
+}
+@media (max-width: 580px) {
+  .navigation .brand { font-size: 17px; }
+  .header-download { min-height: 40px; padding: 8px 12px; font-size: 12px; }
+  .release-note { font-size: 11px; text-align: start; }
+}
+@media (max-width: 360px) { .navigation .brand span { display: none; } }
+.download-section { position: relative; }

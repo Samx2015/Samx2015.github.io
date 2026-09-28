@@ -39,6 +39,11 @@ IDENTIFIER_PATTERN = re.compile(r"^[a-z]{2,3}(?:-[A-Z][A-Za-z]{1,7})?$")
 ENGLISH_SITEMAP_URLS = (
     BASE_URL,
     BASE_URL + "support.html",
+    BASE_URL + "guides/",
+    BASE_URL + "guides/menu-bar-timer.html",
+    BASE_URL + "guides/multiple-task-timers.html",
+    BASE_URL + "guides/recover-timer-data.html",
+    BASE_URL + "press/",
     LEGAL_BASE_URL + "terms.html",
     LEGAL_BASE_URL + "privacy.html",
     LEGAL_BASE_URL + "privacy-choices.html",

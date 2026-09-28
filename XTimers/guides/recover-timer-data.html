@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Missing XTimers data on Mac — Recovery and backup guide</title>
+  <meta name="description" content="What to preserve if XTimers tasks or history are missing, how the 3.5 preview Show Recovery Files control works, and the limits of upgrade snapshots.">
+  <link rel="canonical" href="https://xintechllc.com/XTimers/guides/recover-timer-data.html">
+  <link rel="icon" href="../assets/marketing/app-icon.png">
+  <link rel="stylesheet" href="../assets/marketing/styles.css">
+  <link rel="stylesheet" href="../assets/marketing/site-style.css">
+  <link rel="stylesheet" href="guides.css">
+  <script defer src="../assets/marketing/site.js"></script>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="If XTimers data is missing">
+  <meta property="og:description" content="Preserve what remains, understand recovery limits, and get help with your Mac timer data.">
+  <meta property="og:url" content="https://xintechllc.com/XTimers/guides/recover-timer-data.html">
+  <meta property="og:image" content="https://xintechllc.com/XTimers/assets/marketing/app-icon.png">
+  <meta property="og:image:alt" content="XTimers app icon">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to recovery guide</a>
+  <header class="site-header guide-header"><div class="wrap navigation">
+    <a class="brand" href="../"><img src="../assets/marketing/app-icon.png" width="32" height="32" alt="">XTimers</a>
+    <nav aria-label="Main navigation"><a href="./">Guides</a><a href="../support.html">Support</a><a class="button button-ink" href="mailto:admin@xintechllc.com?subject=XTimers%20Mac%20data%20recovery">Contact support</a></nav>
+  </div></header>
+  <main class="wrap guide-main" id="main">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../">XTimers</a><span aria-hidden="true">/</span><a href="./">Guides</a><span aria-hidden="true">/</span><span>Recovery</span></nav>
+    <div class="guide-intro">
+      <p class="eyebrow">English · Mac support</p>
+      <h1>If your timer data is missing,<br>preserve what remains.</h1>
+      <p class="lead">Missing tasks or history do not always mean the same thing. Check what you are viewing, avoid replacing files, and contact support before trying a manual restoration.</p>
+      <aside class="guide-note"><p><strong>Version note:</strong> the public Mac App Store version is <strong>3.4</strong> as of September 28, 2026. <strong>Show Recovery Files and the recovery protections described below belong to the 3.5 candidate.</strong> They are not a promise that the public 3.4 app contains them, or that every loss can be recovered.</p></aside>
+    </div>
+    <nav class="guide-jumps" aria-label="On this page"><a href="#first">First steps</a><a href="#recovery-files">Show Recovery Files</a><a href="#backup-limits">Backup limits</a><a href="#support">Get help</a></nav>
+    <section class="guide-section guide-prose" id="first" aria-labelledby="first-heading">
+      <h2 id="first-heading">Start with these checks.</h2>
+      <ol class="guide-steps">
+        <li><h3>Check the context before changing it</h3><p>Note the app version, the selected task set, and whether you are using the main XTimers interface or Classic. Classic has a separate local workspace. Note whether you are signed in and which account is displayed; do not sign out or delete an account as a recovery experiment.</p><p>If the problem is a report, also check its task selection and date range. A filtered report can omit data that is still present.</p></li>
+        <li><h3>Keep existing files and backups</h3><p>Avoid resetting the workspace, deleting app data or using a cleanup tool. Do not copy an old profile over the live app’s files. Preserve any existing Mac backup and note when you last saw the missing tasks.</p><p>If the app cannot open, contact support with the version and the error you see. You do not need to reinstall or repeatedly relaunch it before asking for help.</p></li>
+        <li><h3>Use the version-appropriate next step</h3><p>On public <strong>3.4</strong>, contact support and preserve your existing backups. If you are already using a <strong>3.5 preview</strong>, check for <strong>Show Recovery Files</strong> as described below. Installing a preview solely to try recovery is not a substitute for preserving the original files.</p></li>
+      </ol>
+    </section>
+    <section class="guide-section guide-prose" id="recovery-files" aria-labelledby="recovery-heading">
+      <p class="eyebrow">3.5 candidate</p>
+      <h2 id="recovery-heading">What “Show Recovery Files” does.</h2>
+      <p>Open <strong>Settings</strong>, select <strong>About</strong>, and look for <strong>Show Recovery Files</strong>. The button appears only when XTimers detects a recognized recovery condition. Clicking it reveals the relevant retained files or folders in <strong>Finder</strong>.</p>
+      <p><strong>It does not restore, merge or upload the files.</strong> Keep them in place. Make a separate copy before any repair, and ask support which material is relevant before moving or replacing anything.</p>
+      <p>Depending on what the app found, Finder may select:</p>
+      <ul>
+        <li><strong>LegacyAttic:</strong> retained data from an older app layout, when a recovery marker points to it.</li>
+        <li><strong>LegacyRecovery notices or a conflicting-data folder:</strong> information and material preserved when the app could not safely combine or open data.</li>
+        <li><strong>An unreadable current profile and UpgradeBackups, when available:</strong> the preserved original and any version snapshots relevant to that recovery condition.</li>
+      </ul>
+      <p>If the button is absent, that does not establish that all data is intact, or that no backup exists. The control is conditional, not a general backup browser. Contact support if the workspace is still wrong.</p>
+    </section>
+    <section class="guide-section guide-prose" id="backup-limits" aria-labelledby="backup-heading">
+      <p class="eyebrow">3.5 candidate</p>
+      <h2 id="backup-heading">What the protections can—and cannot—preserve.</h2>
+      <h3>Older app data</h3>
+      <p>The candidate attempts to import compatible legacy profiles only into an empty, uninitialized modern data folder. It preserves an existing modern workspace and retains older material for recovery rather than treating old data as permission to replace current work.</p>
+      <p>Successful recovery depends on the original files still being present and readable. These protections cannot recreate files already deleted by an earlier upgrade, cleanup or manual removal.</p>
+      <h3>Upgrade snapshots</h3>
+      <p>When the app version changes, the candidate makes a <strong>best-effort copy of top-level JSON files</strong> from its data folder into <code>UpgradeBackups</code>. It is designed to retain three versioned snapshot folders.</p>
+      <ul>
+        <li>This is not a continuous backup, and it is not a complete copy of the app’s data.</li>
+        <li>Nested folders, media and other files outside those top-level JSON files are not covered by this snapshot operation.</li>
+        <li>A snapshot may be absent or incomplete if copying fails or no eligible files existed. Older snapshot folders are pruned.</li>
+        <li>A retained snapshot is not proof that every task, session or attachment can be restored.</li>
+      </ul>
+      <p>Keep your usual Mac backup current before upgrading. A task template, an exported report and account synchronization serve different purposes; none should be treated as a guaranteed complete recovery copy.</p>
+    </section>
+    <section class="guide-section guide-prose" id="support" aria-labelledby="support-heading">
+      <h2 id="support-heading">Help support identify the right next step.</h2>
+      <p>Email <a href="mailto:admin@xintechllc.com?subject=XTimers%20Mac%20data%20recovery">admin@xintechllc.com</a> with:</p>
+      <ul>
+        <li>Your macOS and XTimers versions, and whether you use the main interface or Classic.</li>
+        <li>What is missing: named tasks, a task set, an archive, readings or report history.</li>
+        <li>When you last saw it, and whether the change followed an upgrade, account change or other action.</li>
+        <li>Whether <strong>Show Recovery Files</strong> is visible, and the folder names it reveals if you already used it.</li>
+        <li>Whether you have a Mac backup from before the problem.</li>
+      </ul>
+      <p>Do not send passwords, security codes, session tokens or recovery credentials. Retained app-data files can contain private information; describe what you have first, and let support explain what is needed.</p>
+      <div class="guide-actions"><a class="button button-ink" href="mailto:admin@xintechllc.com?subject=XTimers%20Mac%20data%20recovery">Contact XTimers support</a><a class="text-link" href="../support.html">Support and account help</a></div>
+    </section>
+    <nav class="guide-related" aria-label="Related guides"><a href="menu-bar-timer.html">Menu-bar timing guide</a><a href="multiple-task-timers.html">Task timers and reports</a><a href="./">All English Mac guides</a></nav>
+    <p class="guide-updated">Updated September 28, 2026. Recovery controls and snapshot behavior described here are from the 3.5 candidate; recovery is not guaranteed.</p>
+  </main>
+  <footer class="wrap guide-footer"><span>© 2026 Xintech LLC</span><nav aria-label="Footer"><a href="./">All guides</a><a href="../support.html">Support</a><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a></nav></footer>
+</body>
+</html>

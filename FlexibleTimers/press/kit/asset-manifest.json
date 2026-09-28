@@ -1,0 +1,651 @@
+{
+  "schemaVersion": 1,
+  "preparedAt": "2026-09-28T14:29:51.511515+00:00",
+  "publicRelease": {
+    "platform": "Mac",
+    "version": "3.4.0",
+    "releaseDate": "2026-07-13",
+    "minimumOS": "macOS 13.0",
+    "priceStatement": "Free download on the US Mac App Store, as checked 2026-09-28. This is not a claim that every connected service is free."
+  },
+  "picturedRelease": {
+    "platform": "Mac",
+    "version": "3.5.0",
+    "build": "151",
+    "state": "Candidate, not publicly released as of 2026-09-28",
+    "data": "Simulated local timer tasks and session history; not customer activity. Separate examples need not show identical times or task sets.",
+    "sourceRevision": "Not embedded in the captured installed binary; no claim of a source checkout match.",
+    "scope": "Still screenshots only. The separately listed video includes candidate builds 151 and 152."
+  },
+  "mobileAvailability": "iPhone and iPad versions are in preparation and not publicly released as of 2026-09-28.",
+  "reproductionNotes": [
+    "All PNG files are copied byte for byte from the approved inputs.",
+    "The ten 2880×1800 images are marketing compositions, not single full-desktop screenshots. Native UI and readings were not redrawn.",
+    "The raw native PNG files retain their original framing, including macOS status elements where present.",
+    "Credit Xintech LLC and retain the Mac 3.5 preview label when reproducing candidate images."
+  ],
+  "assets": [
+    {
+      "file": "screenshots/mac-3.5-preview/XTimers-Mac-App-Store-01-Overview-2880x1800.png",
+      "title": "Overview",
+      "kind": "marketing composition using genuine native app captures",
+      "versionLabel": "XTimers for Mac 3.5.0 preview, build 151; not the current public release",
+      "locale": "English",
+      "sha256": "d740cc8ff193efafa1b23138024e0636d8ef54f16337afb3acdd0948164400f2",
+      "bytes": 987424,
+      "width": 2880,
+      "height": 1800,
+      "credit": "Xintech LLC",
+      "caption": "XTimers for Mac 3.5 preview: overview. Sample local data.",
+      "source": {
+        "repository": "TimerWorkspace",
+        "path": "Previews/XTimers/AppStore/XTimers-Mac-App-Store-01-Overview-2880x1800.png",
+        "approvalRecord": "Previews/XTimers/AppStore/Upload/upload-record.json",
+        "inputImages": [
+          {
+            "filename": "mac-menubar-status-planning.png",
+            "width": 572,
+            "height": 60,
+            "sha256": "1f5f88f6a48ef2ca175ea1af6f713645fc7d20cb039b8d5e23d932a402da396f"
+          },
+          {
+            "filename": "mac-dark.png",
+            "width": 1240,
+            "height": 796,
+            "sha256": "dde39431a3cdf85369734a3973c282f580cbe79c51596edde68c4006e723c9a4"
+          },
+          {
+            "filename": "mac-planning-minimal-hidden-dolomites.png",
+            "width": 658,
+            "height": 468,
+            "sha256": "604ae02b04e102a2d4b3806636fb8ac3243e64968858970058491ccde79a845c"
+          },
+          {
+            "filename": "mac-report-week-daily-totals.png",
+            "width": 1520,
+            "height": 2396,
+            "sha256": "5909d1050b9860f3290f3fcecf12b245e443b588dc51293d312a6e1086707c34"
+          }
+        ],
+        "crops": {
+          "mac-menubar-status-planning.png": "Left 266.25 × 60 source pixels; unrelated status icons omitted.",
+          "mac-report-week-daily-totals.png": "Top 1520 × 1293.71 source pixels; session table and bottom controls omitted."
+        }
+      }
+    },
+    {
+      "file": "screenshots/mac-3.5-preview/XTimers-Mac-App-Store-02-Timer-Views-2880x1800.png",
+      "title": "Timer views",
+      "kind": "marketing composition using genuine native app captures",
+      "versionLabel": "XTimers for Mac 3.5.0 preview, build 151; not the current public release",
+      "locale": "English",
+      "sha256": "ad27cb534e4283799871b87b3fa8e0d4da70f7c8f5b4633e5e192a441a15d693",
+      "bytes": 828278,
+      "width": 2880,
+      "height": 1800,
+      "credit": "Xintech LLC",
+      "caption": "XTimers for Mac 3.5 preview: timer views. Sample local data.",
+      "source": {
+        "repository": "TimerWorkspace",
+        "path": "Previews/XTimers/AppStore/Features/XTimers-Mac-App-Store-02-Timer-Views-2880x1800.png",
+        "approvalRecord": "Previews/XTimers/AppStore/Upload/upload-record.json",
+        "inputImages": [
+          {
+            "filename": "mac-grid-dark.png",
+            "width": 1920,
+            "height": 1320,
+            "sha256": "cab2e59c62ee3581856207d3e4ed9193be77993839ff40a8aee0bbe43d0a4058",
+            "captureSession": "installed-studio-2026-09-27",
+            "capturedAt": null,
+            "pixelsEdited": false,
+            "crop": null,
+            "cropReason": null
+          },
+          {
+            "filename": "mac-planning-single-black.png",
+            "width": 680,
+            "height": 536,
+            "sha256": "397db86da1f835f87030a6ed015539f102b7baf025db0166a1705c051b01257e",
+            "captureSession": "installed-planning-2026-09-27",
+            "capturedAt": "2026-09-27T17:31:57-07:00",
+            "pixelsEdited": false,
+            "crop": null,
+            "cropReason": null
+          },
+          {
+            "filename": "mac-planning-minimal-hidden-dolomites.png",
+            "width": 658,
+            "height": 468,
+            "sha256": "604ae02b04e102a2d4b3806636fb8ac3243e64968858970058491ccde79a845c",
+            "captureSession": "installed-planning-2026-09-27",
+            "capturedAt": "2026-09-27T17:36:56-07:00",
+            "pixelsEdited": false,
+            "crop": null,
+            "cropReason": null
+          }
+        ]
+      }
+    },
+    {
+      "file": "screenshots/mac-3.5-preview/XTimers-Mac-App-Store-03-Task-Sets-2880x1800.png",
+      "title": "Task sets",
+      "kind": "marketing composition using genuine native app captures",
+      "versionLabel": "XTimers for Mac 3.5.0 preview, build 151; not the current public release",
+      "locale": "English",
+      "sha256": "604f854ce20847b9226a4e2e2fbb3c7b360b0017c7ae2477fc46b1aa130ef3c7",
+      "bytes": 506636,
+      "width": 2880,
+      "height": 1800,
+      "credit": "Xintech LLC",
+      "caption": "XTimers for Mac 3.5 preview: task sets. Sample local data.",
+      "source": {
+        "repository": "TimerWorkspace",
+        "path": "Previews/XTimers/AppStore/Features/XTimers-Mac-App-Store-03-Task-Sets-2880x1800.png",
+        "approvalRecord": "Previews/XTimers/AppStore/Upload/upload-record.json",
+        "inputImages": [
+          {
+            "filename": "mac-task-sets.png",
+            "width": 1080,
+            "height": 1272,
+            "sha256": "f53ec4c24d28db47fb5aace6cf9cb0337e91cc784929cb60c19fd2f4f6b8fdb3",
+            "captureSession": "installed-clean-english-2026-09-28",
+            "capturedAt": "2026-09-28T03:27:28-07:00",
+            "pixelsEdited": false,
+            "crop": null,
+            "cropReason": null
+          },
+          {
+            "filename": "mac-dark.png",
+            "width": 1240,
+            "height": 796,
+            "sha256": "dde39431a3cdf85369734a3973c282f580cbe79c51596edde68c4006e723c9a4",
+            "captureSession": "installed-studio-2026-09-27",
+            "capturedAt": null,
+            "pixelsEdited": false,
+            "crop": null,
+            "cropReason": null
+          }
+        ]
+      }
+    },
+    {
+      "file": "screenshots/mac-3.5-preview/XTimers-Mac-App-Store-04-World-Calendar-2880x1800.png",
+      "title": "World Calendar",
+      "kind": "marketing composition using genuine native app captures",
+      "versionLabel": "XTimers for Mac 3.5.0 preview, build 151; not the current public release",
+      "locale": "English",
+      "sha256": "c384c3b39e4e90a2a01b17fbcdba381be0dd96a299a52049b268b50396445601",
+      "bytes": 1062894,
+      "width": 2880,
+      "height": 1800,
+      "credit": "Xintech LLC",
+      "caption": "XTimers for Mac 3.5 preview: World Calendar. Sample local data.",
+      "source": {
+        "repository": "TimerWorkspace",
+        "path": "Previews/XTimers/AppStore/Features/XTimers-Mac-App-Store-04-World-Calendar-2880x1800.png",
+        "approvalRecord": "Previews/XTimers/AppStore/Upload/upload-record.json",
+        "inputImages": [
+          {
+            "filename": "mac-world-calendar-month.png",
+            "width": 2040,
+            "height": 1440,
+            "sha256": "c15e735adc847374207bec475af6a0cf3e3c59df378e7b60738689a285611206",
+            "captureSession": "installed-clean-english-2026-09-28",
+            "capturedAt": "2026-09-28T03:02:09-07:00",
+            "pixelsEdited": false,
+            "crop": null,
+            "cropReason": null
+          }
+        ]
+      }
+    },
+    {
+      "file": "screenshots/mac-3.5-preview/XTimers-Mac-App-Store-05-Time-Reports-2880x1800.png",
+      "title": "Time reports",
+      "kind": "marketing composition using genuine native app captures",
+      "versionLabel": "XTimers for Mac 3.5.0 preview, build 151; not the current public release",
+      "locale": "English",
+      "sha256": "b796962863a26347d1fa50863e87c361d321e1806cb1311516e2c4e28e76b59a",
+      "bytes": 442747,
+      "width": 2880,
+      "height": 1800,
+      "credit": "Xintech LLC",
+      "caption": "XTimers for Mac 3.5 preview: time reports. Sample local data.",
+      "source": {
+        "repository": "TimerWorkspace",
+        "path": "Previews/XTimers/AppStore/Features/XTimers-Mac-App-Store-05-Time-Reports-2880x1800.png",
+        "approvalRecord": "Previews/XTimers/AppStore/Upload/upload-record.json",
+        "inputImages": [
+          {
+            "filename": "mac-report-week-daily-totals.png",
+            "width": 1520,
+            "height": 2396,
+            "sha256": "5909d1050b9860f3290f3fcecf12b245e443b588dc51293d312a6e1086707c34",
+            "captureSession": "installed-clean-english-2026-09-28",
+            "capturedAt": "2026-09-28T02:57:21-07:00",
+            "pixelsEdited": false,
+            "crop": {
+              "x": 0,
+              "y": 0,
+              "width": 1520,
+              "height": 1298
+            },
+            "cropReason": "Keep the native window header, summary, daily totals, task-share chart and complete legend; omit the detailed table and footer."
+          }
+        ]
+      }
+    },
+    {
+      "file": "screenshots/mac-3.5-preview/XTimers-Mac-App-Store-06-Sound-Library-2880x1800.png",
+      "title": "Sound Library",
+      "kind": "marketing composition using genuine native app captures",
+      "versionLabel": "XTimers for Mac 3.5.0 preview, build 151; not the current public release",
+      "locale": "English",
+      "sha256": "af71d444e45e8693032ea198d7d20c64361d9b0b5a932c1a010ee3519cc6eec0",
+      "bytes": 384122,
+      "width": 2880,
+      "height": 1800,
+      "credit": "Xintech LLC",
+      "caption": "XTimers for Mac 3.5 preview: sound library. Sample local data.",
+      "source": {
+        "repository": "TimerWorkspace",
+        "path": "Previews/XTimers/AppStore/Features/XTimers-Mac-App-Store-06-Sound-Library-2880x1800.png",
+        "approvalRecord": "Previews/XTimers/AppStore/Upload/upload-record.json",
+        "inputImages": [
+          {
+            "filename": "mac-sound-ceremonial.png",
+            "width": 1440,
+            "height": 1120,
+            "sha256": "4995ca5d35f987df8942ab50a56fddeda95ce7e0e83c6b9c47dd0515327438d7",
+            "captureSession": "installed-clean-english-2026-09-28",
+            "capturedAt": "2026-09-28T02:36:07-07:00",
+            "pixelsEdited": false,
+            "crop": null,
+            "cropReason": null
+          }
+        ]
+      }
+    },
+    {
+      "file": "screenshots/mac-3.5-preview/XTimers-Mac-App-Store-07-Countdown-Controls-2880x1800.png",
+      "title": "Countdown controls",
+      "kind": "marketing composition using genuine native app captures",
+      "versionLabel": "XTimers for Mac 3.5.0 preview, build 151; not the current public release",
+      "locale": "English",
+      "sha256": "887b37fc4efdd3531c3a0fa2c42208c501935ee996f10849609aa39a3cd4e85b",
+      "bytes": 301926,
+      "width": 2880,
+      "height": 1800,
+      "credit": "Xintech LLC",
+      "caption": "XTimers for Mac 3.5 preview: countdown controls. Sample local data.",
+      "source": {
+        "repository": "TimerWorkspace",
+        "path": "Previews/XTimers/AppStore/Features/XTimers-Mac-App-Store-07-Countdown-Controls-2880x1800.png",
+        "approvalRecord": "Previews/XTimers/AppStore/Upload/upload-record.json",
+        "inputImages": [
+          {
+            "filename": "mac-countdown.png",
+            "width": 1160,
+            "height": 1260,
+            "sha256": "d35306455e90c02d8cdc10479d3b380dfcefbaf6ff88a93bfe6e25fb5236a8d7",
+            "captureSession": "installed-clean-english-2026-09-28",
+            "capturedAt": "2026-09-28T03:25:16-07:00",
+            "pixelsEdited": false,
+            "crop": null,
+            "cropReason": null
+          }
+        ]
+      }
+    },
+    {
+      "file": "screenshots/mac-3.5-preview/XTimers-Mac-App-Store-08-Appearance-2880x1800.png",
+      "title": "Appearance",
+      "kind": "marketing composition using genuine native app captures",
+      "versionLabel": "XTimers for Mac 3.5.0 preview, build 151; not the current public release",
+      "locale": "English",
+      "sha256": "a3a808cdb71be11ae16cb6eae9d553591d854bfc4f70ac47b14a26ddafadfcf1",
+      "bytes": 1620161,
+      "width": 2880,
+      "height": 1800,
+      "credit": "Xintech LLC",
+      "caption": "XTimers for Mac 3.5 preview: appearance. Sample local data.",
+      "source": {
+        "repository": "TimerWorkspace",
+        "path": "Previews/XTimers/AppStore/Features/XTimers-Mac-App-Store-08-Appearance-2880x1800.png",
+        "approvalRecord": "Previews/XTimers/AppStore/Upload/upload-record.json",
+        "inputImages": [
+          {
+            "filename": "mac-background-library.png",
+            "width": 1120,
+            "height": 1416,
+            "sha256": "95cd50357534936612e109f29d783fe4766b9d9dc3279e45064a5da10ac8b08d",
+            "captureSession": "installed-clean-english-2026-09-28",
+            "capturedAt": "2026-09-28T03:32:46-07:00",
+            "pixelsEdited": false,
+            "crop": null,
+            "cropReason": null
+          },
+          {
+            "filename": "mac-planning-minimal-hidden-dolomites.png",
+            "width": 658,
+            "height": 468,
+            "sha256": "604ae02b04e102a2d4b3806636fb8ac3243e64968858970058491ccde79a845c",
+            "captureSession": "installed-planning-2026-09-27",
+            "capturedAt": "2026-09-27T17:36:56-07:00",
+            "pixelsEdited": false,
+            "crop": null,
+            "cropReason": null
+          }
+        ]
+      }
+    },
+    {
+      "file": "screenshots/mac-3.5-preview/XTimers-Mac-App-Store-09-Menu-Bar-2880x1800.png",
+      "title": "Menu bar",
+      "kind": "marketing composition using genuine native app captures",
+      "versionLabel": "XTimers for Mac 3.5.0 preview, build 151; not the current public release",
+      "locale": "English",
+      "sha256": "4b467e6897da1322e273776e22d7da86eff93999fd4d013448e684f0adfadda8",
+      "bytes": 397316,
+      "width": 2880,
+      "height": 1800,
+      "credit": "Xintech LLC",
+      "caption": "XTimers for Mac 3.5 preview: menu bar. Sample local data.",
+      "source": {
+        "repository": "TimerWorkspace",
+        "path": "Previews/XTimers/AppStore/Features/XTimers-Mac-App-Store-09-Menu-Bar-2880x1800.png",
+        "approvalRecord": "Previews/XTimers/AppStore/Upload/upload-record.json",
+        "inputImages": [
+          {
+            "filename": "mac-menu-bar.png",
+            "width": 776,
+            "height": 1396,
+            "sha256": "9e1087844ab0d7d5e7c58335c96aa0a39c440c581c6cc00bd96bd90ede2bd9c7",
+            "captureSession": "installed-studio-2026-09-27",
+            "capturedAt": null,
+            "pixelsEdited": false,
+            "crop": null,
+            "cropReason": null
+          },
+          {
+            "filename": "mac-menubar-status-planning.png",
+            "width": 572,
+            "height": 60,
+            "sha256": "1f5f88f6a48ef2ca175ea1af6f713645fc7d20cb039b8d5e23d932a402da396f",
+            "captureSession": "installed-menubar-2026-09-27",
+            "capturedAt": "2026-09-27T18:40:23-07:00",
+            "pixelsEdited": false,
+            "crop": {
+              "x": 0,
+              "y": 0,
+              "width": 266.25,
+              "height": 60
+            },
+            "cropReason": "Show the complete pause glyph, Planning task name and 20:04 reading; omit unrelated macOS status icons."
+          }
+        ]
+      }
+    },
+    {
+      "file": "screenshots/mac-3.5-preview/XTimers-Mac-App-Store-10-World-Clocks-2880x1800.png",
+      "title": "World clocks",
+      "kind": "marketing composition using genuine native app captures",
+      "versionLabel": "XTimers for Mac 3.5.0 preview, build 151; not the current public release",
+      "locale": "English",
+      "sha256": "9ec325f01f940f53965c649c4e01d67508aacdb2dc686dfd431a4cc8b34c9eb9",
+      "bytes": 338377,
+      "width": 2880,
+      "height": 1800,
+      "credit": "Xintech LLC",
+      "caption": "XTimers for Mac 3.5 preview: world clocks. Sample local data.",
+      "source": {
+        "repository": "TimerWorkspace",
+        "path": "Previews/XTimers/AppStore/Features/XTimers-Mac-App-Store-10-World-Clocks-2880x1800.png",
+        "approvalRecord": "Previews/XTimers/AppStore/Upload/upload-record.json",
+        "inputImages": [
+          {
+            "filename": "mac-clock-editor.png",
+            "width": 1160,
+            "height": 1260,
+            "sha256": "41079882f34f88edadef74ee42c3fa6ec148cda9f554878d89ce8a3b3e0af303",
+            "captureSession": "installed-clean-english-2026-09-28",
+            "capturedAt": "2026-09-28T03:25:51-07:00",
+            "pixelsEdited": false,
+            "crop": null,
+            "cropReason": null
+          }
+        ]
+      }
+    },
+    {
+      "file": "native/mac-3.5-preview/mac-dark.png",
+      "title": "Timer workspace in dark appearance",
+      "kind": "unchanged native PNG capture",
+      "versionLabel": "XTimers for Mac 3.5.0 preview, build 151; not the current public release",
+      "locale": "English",
+      "sha256": "dde39431a3cdf85369734a3973c282f580cbe79c51596edde68c4006e723c9a4",
+      "bytes": 177055,
+      "width": 1240,
+      "height": 796,
+      "pixelsEdited": false,
+      "credit": "Xintech LLC",
+      "caption": "XTimers for Mac 3.5 preview: timer workspace in dark appearance. Sample local data.",
+      "source": {
+        "repository": "TimerWorkspace",
+        "path": "Previews/XTimers/assets/mac-dark.png",
+        "captureSession": "installed-studio-2026-09-27",
+        "capturedAt": null,
+        "provenanceRecord": "Previews/XTimers/INSTALLED_CAPTURE_PROVENANCE.json"
+      }
+    },
+    {
+      "file": "native/mac-3.5-preview/mac-light.png",
+      "title": "Timer workspace in light appearance",
+      "kind": "unchanged native PNG capture",
+      "versionLabel": "XTimers for Mac 3.5.0 preview, build 151; not the current public release",
+      "locale": "English",
+      "sha256": "4ccdb2cca8b96e7838475a4a2f7da7c5cc17466555361a4b140e6bc5381c037a",
+      "bytes": 145332,
+      "width": 1520,
+      "height": 640,
+      "pixelsEdited": false,
+      "credit": "Xintech LLC",
+      "caption": "XTimers for Mac 3.5 preview: timer workspace in light appearance. Sample local data.",
+      "source": {
+        "repository": "TimerWorkspace",
+        "path": "Previews/XTimers/assets/mac-light.png",
+        "captureSession": "installed-studio-2026-09-27",
+        "capturedAt": null,
+        "provenanceRecord": "Previews/XTimers/INSTALLED_CAPTURE_PROVENANCE.json"
+      }
+    },
+    {
+      "file": "native/mac-3.5-preview/mac-planning-minimal-black.png",
+      "title": "Minimal timer view",
+      "kind": "unchanged native PNG capture",
+      "versionLabel": "XTimers for Mac 3.5.0 preview, build 151; not the current public release",
+      "locale": "English",
+      "sha256": "6f8dba821af635c1f9d6102952f72ebe91134dc0dcbb4e09344a997486ad03dc",
+      "bytes": 49046,
+      "width": 658,
+      "height": 468,
+      "pixelsEdited": false,
+      "credit": "Xintech LLC",
+      "caption": "XTimers for Mac 3.5 preview: minimal timer view. Sample local data.",
+      "source": {
+        "repository": "TimerWorkspace",
+        "path": "Previews/XTimers/assets/mac-planning-minimal-black.png",
+        "captureSession": "installed-planning-2026-09-27",
+        "capturedAt": "2026-09-27T17:34:41-07:00",
+        "provenanceRecord": "Previews/XTimers/INSTALLED_CAPTURE_PROVENANCE.json"
+      }
+    },
+    {
+      "file": "native/mac-3.5-preview/mac-menubar-status-planning.png",
+      "title": "Menu-bar timer status",
+      "kind": "unchanged native PNG capture",
+      "versionLabel": "XTimers for Mac 3.5.0 preview, build 151; not the current public release",
+      "locale": "English",
+      "sha256": "1f5f88f6a48ef2ca175ea1af6f713645fc7d20cb039b8d5e23d932a402da396f",
+      "bytes": 12292,
+      "width": 572,
+      "height": 60,
+      "pixelsEdited": false,
+      "credit": "Xintech LLC",
+      "caption": "XTimers for Mac 3.5 preview: menu-bar timer status. Sample local data.",
+      "source": {
+        "repository": "TimerWorkspace",
+        "path": "Previews/XTimers/assets/mac-menubar-status-planning.png",
+        "captureSession": "installed-menubar-2026-09-27",
+        "capturedAt": "2026-09-27T18:40:23-07:00",
+        "provenanceRecord": "Previews/XTimers/INSTALLED_CAPTURE_PROVENANCE.json"
+      }
+    },
+    {
+      "file": "native/mac-3.5-preview/mac-report-week-daily-totals.png",
+      "title": "Weekly report with daily totals and task charts",
+      "kind": "unchanged native PNG capture",
+      "versionLabel": "XTimers for Mac 3.5.0 preview, build 151; not the current public release",
+      "locale": "English",
+      "sha256": "5909d1050b9860f3290f3fcecf12b245e443b588dc51293d312a6e1086707c34",
+      "bytes": 550445,
+      "width": 1520,
+      "height": 2396,
+      "pixelsEdited": false,
+      "credit": "Xintech LLC",
+      "caption": "XTimers for Mac 3.5 preview: weekly report with daily totals and task charts. Sample local data.",
+      "source": {
+        "repository": "TimerWorkspace",
+        "path": "Previews/XTimers/assets/mac-report-week-daily-totals.png",
+        "captureSession": "installed-clean-english-2026-09-28",
+        "capturedAt": "2026-09-28T02:57:21-07:00",
+        "provenanceRecord": "Previews/XTimers/INSTALLED_CAPTURE_PROVENANCE.json"
+      }
+    },
+    {
+      "file": "native/mac-3.5-preview/mac-world-calendar-month.png",
+      "title": "World Calendar month view",
+      "kind": "unchanged native PNG capture",
+      "versionLabel": "XTimers for Mac 3.5.0 preview, build 151; not the current public release",
+      "locale": "English",
+      "sha256": "c15e735adc847374207bec475af6a0cf3e3c59df378e7b60738689a285611206",
+      "bytes": 1256322,
+      "width": 2040,
+      "height": 1440,
+      "pixelsEdited": false,
+      "credit": "Xintech LLC",
+      "caption": "XTimers for Mac 3.5 preview: world calendar month view. Sample local data.",
+      "source": {
+        "repository": "TimerWorkspace",
+        "path": "Previews/XTimers/assets/mac-world-calendar-month.png",
+        "captureSession": "installed-clean-english-2026-09-28",
+        "capturedAt": "2026-09-28T03:02:09-07:00",
+        "provenanceRecord": "Previews/XTimers/INSTALLED_CAPTURE_PROVENANCE.json"
+      }
+    },
+    {
+      "file": "brand/xtimers-icon-1024.png",
+      "title": "XTimers app icon",
+      "kind": "existing public website brand asset",
+      "sha256": "d6907d441ba524bb8ad976fa56a55ffabc606359445451cab928aef470c391a2",
+      "bytes": 107111,
+      "width": 1024,
+      "height": 1024,
+      "credit": "Xintech LLC",
+      "source": {
+        "repository": "FlexibleTimers",
+        "path": "assets/marketing/app-icon.png"
+      }
+    },
+    {
+      "file": "video/XTimers-Mac-3.5-Preview-Demo-40s-1920x1080.mp4",
+      "title": "40-second Mac 3.5 preview walkthrough",
+      "kind": "Genuine native footage with editorial captions",
+      "versionLabel": "XTimers for Mac 3.5 preview; builds 151 and 152; not the current public release",
+      "sha256": "0409777bbd0ab4de8e8be6b86f4405e8ff4d408a87bf79c838bf7166999c3ecc",
+      "bytes": 863828,
+      "credit": "Xintech LLC",
+      "source": {
+        "repository": "TimerWorkspace",
+        "commit": "8a3bd613",
+        "path": "Previews/XTimers/Promotion/export/XTimers-Mac-3.5-Preview-Demo-40s-1920x1080.mp4"
+      },
+      "width": 1920,
+      "height": 1080,
+      "durationSeconds": 40,
+      "fps": 30,
+      "codec": "H.264",
+      "audioTracks": 0
+    },
+    {
+      "file": "video/XTimers-Mac-3.5-Preview-Demo-Poster.png",
+      "title": "Mac 3.5 preview walkthrough poster",
+      "kind": "Video companion file",
+      "versionLabel": "XTimers for Mac 3.5 preview; builds 151 and 152; not the current public release",
+      "sha256": "c8a901761ef97ac49791f25dbbb2f6b3b528384d001bc42239f3469573e60d27",
+      "bytes": 332113,
+      "credit": "Xintech LLC",
+      "source": {
+        "repository": "TimerWorkspace",
+        "commit": "8a3bd613",
+        "path": "Previews/XTimers/Promotion/export/XTimers-Mac-3.5-Preview-Demo-Poster.png"
+      },
+      "width": 1920,
+      "height": 1080,
+      "caption": "XTimers for Mac 3.5 preview walkthrough. Sample local tasks. Image: Xintech LLC."
+    },
+    {
+      "file": "video/XTimers-Mac-3.5-Preview-Demo.en.vtt",
+      "title": "English video captions",
+      "kind": "Video companion file",
+      "versionLabel": "XTimers for Mac 3.5 preview; builds 151 and 152; not the current public release",
+      "sha256": "9725d0785eb0d9bb9c0e8bcea93ced347fc40e728f2928102434dd07de4aa2d7",
+      "bytes": 418,
+      "credit": "Xintech LLC",
+      "source": {
+        "repository": "TimerWorkspace",
+        "commit": "8a3bd613",
+        "path": "Previews/XTimers/Promotion/export/XTimers-Mac-3.5-Preview-Demo.en.vtt"
+      }
+    },
+    {
+      "file": "video/transcript.md",
+      "title": "Video transcript",
+      "kind": "Video companion file",
+      "versionLabel": "XTimers for Mac 3.5 preview; builds 151 and 152; not the current public release",
+      "sha256": "fae37be6c9054876f19e39a678d91ffcb2fc129fef68bed4ac9d8a575d0c5fef",
+      "bytes": 1555,
+      "credit": "Xintech LLC",
+      "source": {
+        "repository": "TimerWorkspace",
+        "commit": "8a3bd613",
+        "path": "Previews/XTimers/Promotion/export/transcript.md"
+      }
+    },
+    {
+      "file": "video/public-provenance.json",
+      "title": "Sanitized public video provenance",
+      "kind": "Video companion file",
+      "versionLabel": "XTimers for Mac 3.5 preview; builds 151 and 152; not the current public release",
+      "sha256": "bc230ab0c339e5f8fba88e4c3d6e1bdb67bab542b793c423fa01c30fc3b7e300",
+      "bytes": 2785,
+      "credit": "Xintech LLC",
+      "source": {
+        "repository": "TimerWorkspace",
+        "commit": "8a3bd613",
+        "path": "Previews/XTimers/Promotion/export/public-provenance.json"
+      }
+    }
+  ],
+  "videoRelease": {
+    "version": "3.5.0",
+    "builds": [
+      "151",
+      "152"
+    ],
+    "state": "Unreleased Mac preview candidates; current public release remains 3.4.0",
+    "provenance": "video/public-provenance.json",
+    "footage": "Genuine native recordings; build 151 for task start and menu bar, build 152 for reports.",
+    "sampleData": "The existing synthetic 30-hour report week is separate from the short Planning run."
+  }
+}
