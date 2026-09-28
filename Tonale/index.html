@@ -87,10 +87,10 @@
     }
 
     .hero { padding: clamp(1.5rem, 4vw, 3rem) 0 clamp(1.25rem, 3vw, 2.25rem); }
-    .hero .wrap { display: grid; grid-template-columns: minmax(300px, 2fr) minmax(0, 3fr); gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; }
+    .hero .wrap { display: grid; grid-template-columns: minmax(300px, 2fr) minmax(0, 3fr); gap: clamp(1.5rem, 2.5vw, 2rem); align-items: center; }
     /* W1 — Airy classic, selected from the warm serif studies. */
     .hero-copy { --hero-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; container-type: inline-size; color: #3c2a22; }
-    .hero-copy-content { display: flex; flex-direction: column; justify-content: center; }
+    .hero-copy-content { display: flex; flex-direction: column; justify-content: center; width: max-content; max-width: 100%; margin-inline: auto; }
     .hero-copy h1 { margin: 0 0 33px; font-family: var(--hero-serif); font-size: clamp(29px, 8.8cqw, 51px); font-weight: 400; line-height: 1.15; letter-spacing: -.035em; }
     .hero-copy h1 span { display: block; }
     .hero-copy h1 span:last-child { color: #8c442d; }
@@ -221,6 +221,7 @@
 
     @media (max-width: 880px) {
       .hero .wrap, .get, .split, .split.flip, .points { grid-template-columns: 1fr; }
+      .hero-copy-content { width: 100%; margin-inline: 0; }
       .shots, .shots.wide-first { grid-template-columns: 1fr; row-gap: 24px; }
       .shots figure { display: block; grid-row: auto; }
       .flip > figure { order: 0; }
