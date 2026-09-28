@@ -1,0 +1,64 @@
+{
+  "title": "XTimers for Mac \u2014 3.5 preview demo",
+  "releaseStatus": "Mac 3.5 preview candidates; not a claim of current public availability",
+  "video": {
+    "file": "XTimers-Mac-3.5-Preview-Demo-40s-1920x1080.mp4",
+    "sha256": "0409777bbd0ab4de8e8be6b86f4405e8ff4d408a87bf79c838bf7166999c3ecc",
+    "width": 1920,
+    "height": 1080,
+    "durationSeconds": 40,
+    "fps": 30,
+    "codec": "H.264",
+    "audioTracks": 0
+  },
+  "captureMethod": "Genuine native macOS recordings of the installed XTimers app, edited with straight cuts, framing, scaling, and editorial captions. No generated or redrawn app UI.",
+  "captures": [
+    {
+      "sourceFile": "01-start-planning-clean.mov",
+      "sha256": "3bf3e53bd347ed1c249e49e148d2b68aeb0307949017befdaa775f7ca9bdbd76",
+      "capturedAtUTC": "2026-09-28T14:40:54.000000Z",
+      "width": 2080,
+      "height": 1120,
+      "sourceDurationSeconds": 12.035,
+      "version": "3.5.0",
+      "build": "151",
+      "executableSHA256": "155968e68240c01b947137a9d4b913360c45422bd627c39aeb876a7948d1c146"
+    },
+    {
+      "sourceFile": "03-menu-bar-reading.mov",
+      "sha256": "0d9e532b1e33534d6b78d3dc97fb56f592631fece70e10c62acb985934af7787",
+      "capturedAtUTC": "2026-09-28T14:41:45.000000Z",
+      "width": 280,
+      "height": 60,
+      "sourceDurationSeconds": 7.848333,
+      "version": "3.5.0",
+      "build": "151",
+      "executableSHA256": "155968e68240c01b947137a9d4b913360c45422bd627c39aeb876a7948d1c146"
+    },
+    {
+      "sourceFile": "04-sample-week-daily-totals-region.mov",
+      "sha256": "06ebb5cc560cefe32f89a3f200dadd34e98a2d073b770b58f79d5aaeb2604363",
+      "capturedAtUTC": "2026-09-28T14:55:56.000000Z",
+      "width": 1520,
+      "height": 2396,
+      "sourceDurationSeconds": 14.01,
+      "version": "3.5.0",
+      "build": "152",
+      "executableSHA256": "ea80c87b8d0d52462751330403518adeeb103805c435b7ad7eba3c51919ccf8c"
+    },
+    {
+      "sourceFile": "05-sample-week-sessions-region.mov",
+      "sha256": "36a65a45ba20f20c75afcc4c869d5e55ac1c6cad96ca4e32b178c166ab0a514b",
+      "capturedAtUTC": "2026-09-28T14:56:16.000000Z",
+      "width": 1520,
+      "height": 2396,
+      "sourceDurationSeconds": 13.73,
+      "version": "3.5.0",
+      "build": "152",
+      "executableSHA256": "ea80c87b8d0d52462751330403518adeeb103805c435b7ad7eba3c51919ccf8c"
+    }
+  ],
+  "sampleData": "The Reports sequence shows 29 existing synthetic sessions totaling 30 hours across Design, Research, Writing, Reading, and Planning, September 21\u201325, 2026. It is separate from the short real Planning resume shown earlier.",
+  "audio": "No narration, music, microphone, system sound, or audio track.",
+  "captions": "English captions are baked into the video; WebVTT and a descriptive transcript are supplied."
+}

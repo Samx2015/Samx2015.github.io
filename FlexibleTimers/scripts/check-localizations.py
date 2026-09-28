@@ -263,6 +263,12 @@ class PageParser(HTMLParser):
                 self.references.append(value)
                 if is_relative(value):
                     self.relative_references.append(value)
+        for candidate in attributes.get("srcset", "").split(","):
+            parts = candidate.strip().split()
+            if parts:
+                self.references.append(parts[0])
+                if is_relative(parts[0]):
+                    self.relative_references.append(parts[0])
 
     def handle_endtag(self, tag: str) -> None:
         if tag == "time" and self.current_policy_time is not None:
@@ -1132,7 +1138,8 @@ def main() -> int:
     # endpoint the provider redirects to rather than product content: they are
     # not localized routes, and treating every top-level directory as a locale
     # made this check fail on them.
-    ignored_directories = {"assets", "generated", "scripts", "auth"}
+    # Guides and press materials are explicitly labelled English pilot pages.
+    ignored_directories = {"assets", "generated", "scripts", "auth", "guides", "press"}
     actual_directories = {
         path.name
         for path in ROOT.iterdir()

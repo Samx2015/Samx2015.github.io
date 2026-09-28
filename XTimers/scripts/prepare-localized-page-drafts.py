@@ -1461,10 +1461,12 @@ TRANSLATABLE_META_NAMES = {
     "description",
     "twitter:description",
     "twitter:title",
+    "twitter:image:alt",
 }
 TRANSLATABLE_META_PROPERTIES = {
     "og:description",
     "og:title",
+    "og:image:alt",
     "twitter:description",
     "twitter:title",
 }
@@ -2230,19 +2232,28 @@ def replace_copy(soup: BeautifulSoup, translations: dict[str, str]) -> None:
 
 
 def adjust_relative_references(soup: BeautifulSoup) -> None:
+    def adjusted(value: str) -> str:
+        if value.startswith(("/", "#", "?", "../", "./", "//")):
+            return value
+        if re.match(r"^[A-Za-z][A-Za-z0-9+.-]*:", value):
+            return value
+        relative_path = value.split("#", 1)[0].split("?", 1)[0]
+        return value if relative_path in SOURCE_PAGES else "../" + value
+
     for tag in soup.find_all(True):
         for attribute in ("href", "src", "data-zoom"):
             value = tag.get(attribute)
             if not isinstance(value, str) or not value:
                 continue
-            if value.startswith(("/", "#", "?", "../", "./", "//")):
-                continue
-            if re.match(r"^[A-Za-z][A-Za-z0-9+.-]*:", value):
-                continue
-            relative_path = value.split("#", 1)[0].split("?", 1)[0]
-            if relative_path in SOURCE_PAGES:
-                continue
-            tag[attribute] = "../" + value
+            tag[attribute] = adjusted(value)
+        # Display renditions share the original English assets across locales.
+        if tag.has_attr("srcset"):
+            candidates = []
+            for candidate in tag["srcset"].split(","):
+                parts = candidate.strip().split()
+                if parts:
+                    candidates.append(" ".join([adjusted(parts[0]), *parts[1:]]))
+            tag["srcset"] = ", ".join(candidates)
 
 
 def set_canonical(soup: BeautifulSoup, locale: str, file_name: str) -> None:
@@ -2263,6 +2274,8 @@ def set_canonical(soup: BeautifulSoup, locale: str, file_name: str) -> None:
         canonical["href"] = f"{BASE_PRODUCT_URL}{locale}/{file_name}"
     else:
         canonical["href"] = f"{BASE_LEGAL_URL}{locale}/{file_name}"
+    for social_url in soup.find_all("meta", property="og:url"):
+        social_url["content"] = canonical["href"]
 
 
 def set_alternates(
