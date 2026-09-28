@@ -86,23 +86,25 @@
       box-shadow: inset -0.12rem 0 0 rgba(0, 0, 0, 0.18);
     }
 
-    .hero { padding: clamp(1.5rem, 4vw, 3rem) 0 clamp(1.25rem, 3vw, 2.25rem); background: linear-gradient(180deg, #f6f4ef, var(--paper)); }
+    .hero { padding: clamp(1.5rem, 4vw, 3rem) 0 clamp(1.25rem, 3vw, 2.25rem); }
     .hero .wrap { display: grid; grid-template-columns: minmax(300px, 2fr) minmax(0, 3fr); gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; }
-    h1 { margin: 0 0 1.1rem; font-size: clamp(2.2rem, 4vw, 3rem); font-weight: 600; line-height: 1.08; letter-spacing: -0.035em; }
-    .tagline { display: grid; gap: 5px; margin: 0; font-size: clamp(1.12rem, 1.6vw, 1.26rem); font-weight: 600; line-height: 1.35; letter-spacing: -0.02em; }
-    .tagline span:nth-child(1) { color: #315dc3; }
-    .tagline span:nth-child(2) { color: #14766f; }
-    .tagline span:nth-child(3) {
-      margin-top: 3px; color: #765090; font-family: ui-serif, Georgia, "Times New Roman", serif;
-      font-size: 1.2em; font-style: italic; font-weight: 500; letter-spacing: -0.025em;
-    }
-    .tagline em { text-decoration: underline 2px rgba(118, 80, 144, 0.3); text-underline-offset: 0.2em; }
-    .facts { max-width: 25rem; margin-top: 22px; padding-top: 15px; border-top: 1px solid #dce4e3; }
-    .facts p { display: flex; flex-wrap: wrap; gap: 7px 16px; margin: 0; color: #526968; font-size: 0.82rem; line-height: 1.7; }
-    .facts p span { display: inline-flex; align-items: center; gap: 7px; }
-    .facts .i { width: 15px; height: 15px; color: #327c79; }
-    .pill { display: inline-block; margin-top: 14px; padding: 5px 11px; border: 1px solid #d6e1f3; border-radius: 999px; background: #f0f5fd; color: #486081; font-size: 0.82rem; }
-    .pill b { color: #315991; font-weight: 650; }
+    /* W1 — Airy classic, selected from the warm serif studies. */
+    .hero-copy { --hero-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; container-type: inline-size; color: #3c2a22; }
+    .hero-copy-content { display: flex; flex-direction: column; justify-content: center; }
+    .hero-copy h1 { margin: 0 0 33px; font-family: var(--hero-serif); font-size: clamp(29px, 8.8cqw, 51px); font-weight: 400; line-height: 1.15; letter-spacing: -.035em; }
+    .hero-copy h1 span { display: block; }
+    .hero-copy h1 span:last-child { color: #8c442d; }
+    .hero-sources { display: grid; gap: 11px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: clamp(13px, 3.8cqw, 21px); font-weight: 400; line-height: 1.5; letter-spacing: -.01em; }
+    .hero-sources p { margin: 0; }
+    .hero-sources p:first-child { color: #315dc3; }
+    .hero-sources p:last-child { color: #14766f; }
+    .hero-signoff { margin: 29px 0 35px; color: #8c442d; font-family: var(--hero-serif); font-size: clamp(22px, 6.2cqw, 34px); font-weight: 400; line-height: 1.3; letter-spacing: -.015em; }
+    .hero-signoff em { font-family: inherit; font-weight: inherit; font-style: italic; }
+    .hero-facts { display: flex; flex-wrap: wrap; align-items: center; gap: 13px 20px; color: #74604b; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 11px; font-weight: 400; line-height: 1.5; }
+    .hero-trust { display: inline-flex; align-items: center; gap: 6px; }
+    .hero-trust .i { width: 16px; height: 16px; color: #8c442d; stroke-width: 1.6; }
+    .hero-system { white-space: nowrap; }
+    .hero-system b { font-weight: 600; }
 
     .shot { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
     .shot img { width: 100%; filter: drop-shadow(0 10px 22px rgba(21, 32, 51, 0.16)); }
@@ -264,18 +266,18 @@
 <main id="main">
   <section class="hero" id="top" aria-labelledby="hero-title">
     <div class="wrap">
-      <div>
-        <h1 id="hero-title">All your music.<br>One library.</h1>
-        <p class="tagline">
-          <span>Your own files.</span>
-          <span>Apple Music and YouTube.</span>
-          <span>Played <em>your way.</em></span>
-        </p>
-        <div class="facts">
-          <p>
-            <span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 3v6c0 4-5 7-8 9-3-2-8-5-8-9V6l8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>Signed and notarized</span>
-          </p>
-          <span class="pill"><b>macOS 14</b> or later</span>
+      <div class="hero-copy">
+        <div class="hero-copy-content">
+          <h1 id="hero-title"><span>All your music.</span><span>One library.</span></h1>
+          <div class="hero-sources">
+            <p>Your own files.</p>
+            <p>Apple Music and YouTube.</p>
+          </div>
+          <p class="hero-signoff">Played <em>your way.</em></p>
+          <div class="hero-facts">
+            <span class="hero-trust"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 3v6c0 4-5 7-8 9-3-2-8-5-8-9V6l8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>Signed and notarized</span>
+            <span class="hero-system"><b>macOS 14</b> or later</span>
+          </div>
         </div>
       </div>
       <figure>
