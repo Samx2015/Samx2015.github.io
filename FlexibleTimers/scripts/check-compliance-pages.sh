@@ -451,11 +451,11 @@ check "OAuth completion script is reachable" \
   url_ok "/assets/flexible-timers/auth-complete.js"
 
 check "Homepage distinguishes Xin sign-in from XTimers product data" \
-  page_text_has "/" "Xin Account sign-in\. XTimers data stays separate"
+  page_text_has "/" "XTimers uses a Xin Account.*shared identity layer.*not an XTimers product account and does not contain XTimers timers, reports, sounds, or SMS data"
 check "Homepage names operator (footer)" \
   page_has "/" "Xintech LLC"
 check "Homepage describes Apple platforms" \
-  page_text_has "/" "Mac, iPhone, and iPad"
+  page_text_has "/" "For Mac, iPhone &amp; iPad"
 check "Homepage links support page" \
   page_has "/" "href=\"support.html\""
 check "Homepage links privacy page" \
