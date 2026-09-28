@@ -1,0 +1,499 @@
+/* Six standalone art directions for the Tonale hero options gallery. */
+
+.design--07 .signoff em,
+.design--08 .signoff em,
+.design--09 .signoff em,
+.design--10 .signoff em,
+.design--11 .signoff em,
+.design--12 .signoff em {
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+/* 07 — Midnight spectrum */
+.design--07 {
+  color: #f7f6ff;
+  background: #10172c;
+}
+.design--07 .design-art {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 103% 4%, #833ea968 0, transparent 43%),
+    radial-gradient(ellipse at 0% 104%, #007e9660 0, transparent 46%);
+}
+.design--07 .design-art::before,
+.design--07 .design-art::after {
+  position: absolute;
+  content: "";
+  width: 40%;
+  aspect-ratio: 1;
+  top: -13%;
+  right: -7%;
+  border: 1px solid #f5c1ff55;
+  border-radius: 50%;
+  box-shadow: 0 0 0 14px #ba79dd14, 0 0 0 28px #ba79dd10, 0 0 0 42px #ba79dd0a;
+}
+.design--07 .design-art::after {
+  width: 22%;
+  top: auto;
+  right: auto;
+  bottom: -13%;
+  left: 7%;
+  border-color: #a5edf050;
+  box-shadow: 0 0 0 14px #50c8c018, 0 0 0 28px #50c8c00d;
+}
+.design--07 .design-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 486px;
+}
+.design--07 .headline {
+  margin: 0 0 27px;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  font-size: clamp(29px, 8.7cqw, 46px);
+  font-weight: 690;
+  line-height: 1.09;
+  letter-spacing: -0.055em;
+}
+.design--07 .headline span:last-child { color: #bee6f4; }
+.design--07 .sources {
+  display: grid;
+  gap: 7px;
+  font-size: clamp(15px, 3.65cqw, 18px);
+  font-weight: 450;
+  line-height: 1.45;
+  color: #c4cddd;
+}
+.design--07 .sources p { margin: 0; }
+.design--07 .signoff {
+  margin: 23px 0 0;
+  color: #f3b7d9;
+  font-size: clamp(23px, 5.5cqw, 29px);
+  font-weight: 520;
+  line-height: 1.25;
+  letter-spacing: -0.04em;
+}
+.design--07 .signoff em { font-style: normal; color: #b9b8ff; }
+.design--07 .details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 22px;
+  margin-top: 36px;
+  padding-top: 20px;
+  border-top: 1px solid #a3b6d32c;
+  color: #c0cee0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.design--07 .trust { display: inline-flex; align-items: center; gap: 7px; }
+.design--07 .trust svg { color: #8eddd0; }
+.design--07 .system b { font-weight: 650; color: #e4ecf8; }
+
+/* 08 — Botanical paper */
+.design--08 {
+  background: #f0f2e7;
+  color: #293e30;
+}
+.design--08 .design-art {
+  position: absolute;
+  inset: 14px;
+  border: 1px solid #80907740;
+}
+.design--08 .design-art::before,
+.design--08 .design-art::after {
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 104px;
+  top: -35px;
+  right: 11px;
+  border-radius: 100% 0 100% 0;
+  background: #829a7640;
+  transform: rotate(38deg);
+}
+.design--08 .design-art::after {
+  width: 38px;
+  height: 78px;
+  top: -25px;
+  right: 57px;
+  background: #a6b59945;
+  transform: rotate(-25deg);
+}
+.design--08 .design-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 486px;
+}
+.design--08 .headline {
+  margin: 0 0 28px;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: clamp(29px, 8.9cqw, 46px);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -0.055em;
+}
+.design--08 .headline span:last-child { font-style: italic; color: #61724a; }
+.design--08 .sources {
+  display: grid;
+  gap: 8px;
+  font-size: clamp(14px, 3.6cqw, 17px);
+  font-weight: 450;
+  line-height: 1.5;
+  color: #4a604b;
+}
+.design--08 .sources p { margin: 0; }
+.design--08 .signoff {
+  margin: 27px 0 0;
+  font-family: "Iowan Old Style", Palatino, Georgia, serif;
+  font-size: clamp(24px, 6cqw, 30px);
+  font-style: italic;
+  line-height: 1.3;
+  color: #6f663f;
+  letter-spacing: -0.035em;
+}
+.design--08 .signoff em { font-style: inherit; }
+.design--08 .details {
+  display: grid;
+  gap: 9px;
+  margin-top: 29px;
+  padding-top: 17px;
+  border-top: 1px solid #84907961;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #5a6b51;
+}
+.design--08 .trust { display: inline-flex; align-items: center; gap: 7px; }
+.design--08 .system b { font-weight: 600; }
+
+/* 09 — Soft studio */
+.design--09 {
+  background: #f1e9f2;
+  color: #443b51;
+}
+.design--09 .design-art {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 104% 11%, #f6cfb5 0, #f6cfb580 18%, transparent 43%),
+    radial-gradient(ellipse at 0 100%, #dfdcf7 0, transparent 52%);
+}
+.design--09 .design-art::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 50px;
+  right: -34px;
+  top: 16px;
+  border: 1px solid #ac85985c;
+  border-radius: 50%;
+  transform: rotate(-42deg);
+  box-shadow: 0 8px 0 -1px #f1e9f2, 0 9px 0 0 #ac85952b;
+}
+.design--09 .design-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 486px;
+  padding: clamp(26px, 7cqw, 36px);
+}
+.design--09 .headline {
+  margin: 0 0 24px;
+  font-family: "Avenir Next", Avenir, -apple-system, sans-serif;
+  font-size: clamp(28px, 8.4cqw, 43px);
+  font-weight: 650;
+  line-height: 1.13;
+  letter-spacing: -0.06em;
+}
+.design--09 .headline span:last-child { color: #8a628a; }
+.design--09 .sources {
+  display: grid;
+  gap: 7px;
+  padding: 16px 19px;
+  border: 1px solid #ffffffa8;
+  border-radius: 18px 18px 18px 4px;
+  background: #fffcf5b8;
+  color: #65556b;
+  font-size: clamp(14px, 3.5cqw, 17px);
+  font-weight: 500;
+  line-height: 1.45;
+}
+.design--09 .sources p { margin: 0; }
+.design--09 .signoff {
+  margin: 21px 0 0;
+  font-family: "Iowan Old Style", Georgia, serif;
+  font-size: clamp(24px, 5.9cqw, 30px);
+  font-style: italic;
+  line-height: 1.3;
+  letter-spacing: -0.045em;
+  color: #836078;
+}
+.design--09 .signoff em { font-style: inherit; }
+.design--09 .details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 28px;
+  padding-top: 0;
+  border-top: 0;
+  color: #65566a;
+  font-size: 11px;
+  line-height: 1.5;
+}
+.design--09 .trust,
+.design--09 .system {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 10px;
+  border: 1px solid #b7a3bc61;
+  border-radius: 100px;
+}
+.design--09 .system b { font-weight: 650; }
+
+/* 10 — Gallery label */
+.design--10 {
+  color: #242424;
+  background: #fffefa;
+}
+.design--10 .design-art {
+  position: absolute;
+  inset: auto;
+  width: 44px;
+  height: 7px;
+  top: 30px;
+  left: clamp(26px, 7cqw, 42px);
+  background: #242424;
+}
+.design--10 .design-art::after {
+  content: "";
+  position: absolute;
+  left: 55px;
+  top: 0;
+  height: 7px;
+  width: 7px;
+  border: 1px solid #242424;
+  box-sizing: border-box;
+}
+.design--10 .design-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 486px;
+  padding-top: 71px;
+}
+.design--10 .headline {
+  margin: 0 0 25px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(28px, 8.5cqw, 43px);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -0.062em;
+}
+.design--10 .headline span:last-child { padding-left: 6%; }
+.design--10 .sources {
+  display: grid;
+  gap: 11px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #414141;
+  font-size: clamp(14px, 3.35cqw, 16px);
+  line-height: 1.4;
+}
+.design--10 .sources p {
+  margin: 0;
+  padding-left: 12px;
+  border-left: 1px solid #252525;
+}
+.design--10 .sources p:last-child { border-color: #b7b7b2; }
+.design--10 .signoff {
+  margin: 28px 0 0;
+  text-align: right;
+  font-family: "Iowan Old Style", Georgia, serif;
+  font-size: clamp(23px, 5.8cqw, 29px);
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.045em;
+  line-height: 1.35;
+}
+.design--10 .signoff em { font-style: inherit; }
+.design--10 .details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 11px;
+  margin-top: 35px;
+  padding-top: 14px;
+  border-top: 1px solid #242424;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #53534e;
+}
+.design--10 .trust { display: inline-flex; align-items: center; gap: 6px; }
+.design--10 .system b { color: #242424; font-weight: 550; }
+
+/* 11 — Analog sleeve */
+.design--11 {
+  color: #462e24;
+  background: #f1e3c9;
+  border-top: 9px solid #b64627;
+}
+.design--11 .design-art {
+  position: absolute;
+  inset: auto;
+  width: 220px;
+  aspect-ratio: 1;
+  top: -85px;
+  right: -98px;
+  border: 1px solid #a7623d3d;
+  border-radius: 50%;
+  background: repeating-radial-gradient(circle, transparent 0 8px, #a7623d21 8px 9px);
+}
+.design--11 .design-art::after {
+  position: absolute;
+  content: "";
+  inset: 78px;
+  border: 1px solid #a7623d4d;
+  border-radius: 50%;
+  background: #cf7a4440;
+}
+.design--11 .design-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 477px;
+}
+.design--11 .headline {
+  margin: 0 0 25px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 8.5cqw, 44px);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.063em;
+}
+.design--11 .headline span:last-child { color: #b64627; }
+.design--11 .sources {
+  display: grid;
+  gap: 10px;
+  color: #634c3d;
+  font-family: "Avenir Next", Avenir, -apple-system, sans-serif;
+  font-size: clamp(13px, 3.35cqw, 16px);
+  font-weight: 650;
+  line-height: 1.45;
+}
+.design--11 .sources p { margin: 0; }
+.design--11 .signoff {
+  display: table;
+  margin: 26px 0 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #b64627;
+  color: #793e2b;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(22px, 5.5cqw, 28px);
+  font-style: italic;
+  line-height: 1.3;
+  letter-spacing: -0.045em;
+}
+.design--11 .signoff em { font-style: inherit; }
+.design--11 .details {
+  display: grid;
+  gap: 8px;
+  margin-top: 28px;
+  padding-top: 15px;
+  border-top: 1px solid #97735966;
+  font-family: "Avenir Next", Avenir, -apple-system, sans-serif;
+  color: #715746;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.design--11 .trust { display: inline-flex; align-items: center; gap: 7px; }
+.design--11 .system b { color: #593b2b; font-weight: 650; }
+
+/* 12 — Cobalt statement */
+.design--12 {
+  background: #2444e3;
+  color: #fff;
+}
+.design--12 .design-art {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 103% -2%, #425efc 0 24%, transparent 24.2%);
+}
+.design--12 .design-art::after {
+  position: absolute;
+  content: "";
+  top: 29px;
+  right: 24px;
+  width: 57px;
+  height: 26px;
+  border: 2px solid #ffa96f;
+  border-radius: 50%;
+  transform: rotate(-32deg);
+}
+.design--12 .design-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 486px;
+}
+.design--12 .headline {
+  margin: 0 0 26px;
+  font-family: "Arial Black", "Helvetica Neue", -apple-system, sans-serif;
+  font-size: clamp(28px, 8.8cqw, 47px);
+  font-weight: 850;
+  line-height: 1.07;
+  letter-spacing: -0.065em;
+}
+.design--12 .headline span:last-child { color: #ffe9d7; }
+.design--12 .sources {
+  display: grid;
+  gap: 9px;
+  padding-left: 13px;
+  border-left: 2px solid #ffa96f;
+  color: #edf1ff;
+  font-size: clamp(14px, 3.6cqw, 18px);
+  font-weight: 450;
+  line-height: 1.45;
+}
+.design--12 .sources p { margin: 0; }
+.design--12 .signoff {
+  position: relative;
+  align-self: flex-start;
+  margin: 26px 0 0;
+  padding-bottom: 4px;
+  font-family: "Iowan Old Style", Georgia, serif;
+  color: #ffdcc5;
+  font-size: clamp(24px, 6.3cqw, 33px);
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.25;
+  letter-spacing: -0.045em;
+}
+.design--12 .signoff::after {
+  position: absolute;
+  content: "";
+  left: 3%;
+  right: -2%;
+  bottom: -3px;
+  height: 6px;
+  border-top: 2px solid #ffa96f;
+  border-radius: 50%;
+  transform: rotate(-2deg);
+}
+.design--12 .signoff em { font-style: inherit; }
+.design--12 .details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin-top: 36px;
+  padding-top: 17px;
+  border-top: 1px solid #bac6ff70;
+  color: #e6ecff;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.design--12 .trust { display: inline-flex; align-items: center; gap: 7px; }
+.design--12 .trust svg { color: #ffcaab; }
+.design--12 .system b { color: #fff; font-weight: 650; }
