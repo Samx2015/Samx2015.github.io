@@ -1,5 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:tonale="https://xintechllc.com/Tonale/appcast" version="2.0"><channel><item><title>Tonale 1.0.1</title><pubDate>Sun, 27 Sep 2026 13:58:17 +0000</pubDate><sparkle:version>8</sparkle:version><sparkle:shortVersionString>1.0.1</sparkle:shortVersionString><sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion><tonale:databaseSchemaVersion>20</tonale:databaseSchemaVersion><tonale:syncSchemaVersion>3</tonale:syncSchemaVersion><description sparkle:format="markdown">Tonale 1.0.1 (8)
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:tonale="https://xintechllc.com/Tonale/appcast" version="2.0"><channel><item><title>Tonale 1.0.1</title><pubDate>Mon, 28 Sep 2026 17:13:58 +0000</pubDate><sparkle:version>9</sparkle:version><sparkle:shortVersionString>1.0.1</sparkle:shortVersionString><sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion><tonale:databaseSchemaVersion>20</tonale:databaseSchemaVersion><tonale:syncSchemaVersion>3</tonale:syncSchemaVersion><description sparkle:format="markdown">Tonale 1.0.1 (9)
+
+- Speaker Simulation now follows local audio and video, YouTube inside Tonale, Apple Music songs, and videos played through Music in the Direct edition.
+- Keep video in a separate window with its own pin, size modes, and controls and queue in another window.
+- Queue headings show the playlist or source name. Playback changes and local-source navigation avoid unnecessary layout flashes.
+- Improved Music video window handling and Apple Music media icons.
+- Refined YouTube settings, sign-in status, and the resizable account window.
+- Improved local-source consistency and duplicate management, including choosing which copy to keep.
+- About and update dialogs now display the build number.
+</description><enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/tonale-v1.0.1-9/Tonale-1.0.1-9.dmg" length="23642583" type="application/octet-stream" sparkle:edSignature="IKAkKBISuxQCixcBUC287Orfarw3n4HL3rp/PzXMlV/2YgNmHRtD6GLu5pHIKOz8RHMuhvkXcJ1m82CMNMz0AA==" /></item><item><title>Tonale 1.0.1</title><pubDate>Sun, 27 Sep 2026 13:58:17 +0000</pubDate><sparkle:version>8</sparkle:version><sparkle:shortVersionString>1.0.1</sparkle:shortVersionString><sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion><tonale:databaseSchemaVersion>20</tonale:databaseSchemaVersion><tonale:syncSchemaVersion>3</tonale:syncSchemaVersion><description sparkle:format="markdown">Tonale 1.0.1 (8)
 
 - Clarifies YouTube account connection and playlist import settings.
 - Groups YouTube import, playback and stored-data settings more clearly.
