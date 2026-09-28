@@ -1,9 +1,8 @@
 {
-  "title": "XTimers for Mac \u2014 3.5 preview demo",
-  "releaseStatus": "Mac 3.5 preview candidates; not a claim of current public availability",
+  "title": "XTimers for Mac — 3.5.0 demo",
   "video": {
-    "file": "XTimers-Mac-3.5-Preview-Demo-40s-1920x1080.mp4",
-    "sha256": "0409777bbd0ab4de8e8be6b86f4405e8ff4d408a87bf79c838bf7166999c3ecc",
+    "file": "XTimers-Mac-3.5.0-Demo-40s-1920x1080.mp4",
+    "sha256": "bbe8e5938afeb8b2937535b352585a390c79c5c651af47ade72bf1493724f2f9",
     "width": 1920,
     "height": 1080,
     "durationSeconds": 40,
@@ -58,7 +57,23 @@
       "executableSHA256": "ea80c87b8d0d52462751330403518adeeb103805c435b7ad7eba3c51919ccf8c"
     }
   ],
-  "sampleData": "The Reports sequence shows 29 existing synthetic sessions totaling 30 hours across Design, Research, Writing, Reading, and Planning, September 21\u201325, 2026. It is separate from the short real Planning resume shown earlier.",
+  "sampleData": "The Reports sequence shows 29 existing synthetic sessions totaling 30 hours across Design, Research, Writing, Reading, and Planning, September 21–25, 2026. It is separate from the short real Planning resume shown earlier.",
   "audio": "No narration, music, microphone, system sound, or audio track.",
-  "captions": "English captions are baked into the video; WebVTT and a descriptive transcript are supplied."
+  "captions": "English captions are baked into the video; WebVTT and a descriptive transcript are supplied.",
+  "presentationVersion": "3.5.0",
+  "presentationUpdatedAt": "2026-09-28T08:55:44.924501-07:00",
+  "supportingFiles": {
+    "poster": {
+      "file": "XTimers-Mac-3.5.0-Demo-Poster.png",
+      "sha256": "87471bbffa0b0c31f0818c2d4c362198582699d1788c36afd9fecb6fe456df8a"
+    },
+    "webVTT": {
+      "file": "XTimers-Mac-3.5.0-Demo.en.vtt",
+      "sha256": "9725d0785eb0d9bb9c0e8bcea93ced347fc40e728f2928102434dd07de4aa2d7"
+    },
+    "transcript": {
+      "file": "transcript.md",
+      "sha256": "1f6a0cd728ff1b87f9baf64b61cb02e3f7dfdeece2e09aa298d5cb09384f060e"
+    }
+  }
 }
