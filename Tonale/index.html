@@ -133,7 +133,7 @@
     .split .points { grid-template-columns: 1fr; }
     .split.flip { grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); }
     .flip > figure { order: -1; }
-    .shots .narrow img { max-width: 360px; margin-inline: auto; }
+    .shots .narrow .shot { max-width: min(360px, 70vw); margin-inline: auto; }
     .shots.wide-first { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); }
     .play { --icon: #3f5bd9; }
     .order { --icon: #0f8f8a; }
@@ -463,7 +463,7 @@
           </figure>
           <figure class="narrow">
             <button class="shot" type="button" aria-haspopup="dialog" aria-label="Enlarge screenshot: Audio Effects">
-              <img src="assets/screens/audio-effects.png" width="720" height="762" loading="lazy" alt="The Audio Effects window with the Full and Wide preset: bass, treble, width, punch and loudness compensation">
+              <img class="trim" style="--l:112;--t:76;--r:112;--b:148;--w:720" src="assets/screens/audio-effects.png?v=2" width="944" height="926" loading="lazy" alt="The Effects for Audio Player window with the Full and Wide preset: colored bass, treble, width and punch controls, and loudness compensation enabled">
             </button>
             <figcaption>Audio Effects</figcaption>
           </figure>
