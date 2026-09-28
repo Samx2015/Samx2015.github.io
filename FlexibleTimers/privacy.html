@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="xtimers-policy-effective-date" content="2026-08-23">
   <title>XTimers by Xintech LLC Privacy Policy</title>
   <link rel="stylesheet" href="assets/flexible-timers/page.css">
 <script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
@@ -79,12 +80,12 @@
     <p>
       XTimers is operated by Xintech LLC and uses Xin Account for shared
       sign-in. This policy explains the information processed for Xin Account
-      identity services and for XTimers timers, countdowns, activity tracking,
-      synchronization, reports, custom sounds, reminders, support, and
-      messaging features.
+      identity services and for XTimers timers, alarms, countdowns, activity
+      tracking, calendar features, synchronization, reports, custom sounds,
+      reminders, support, and messaging features.
     </p>
 
-    <h2 id="xin-account">Xin Account Identity and Sign-In</h2>
+    <h2 id="xin-account" data-policy-section="identity">Xin Account Identity and Sign-In</h2>
     <p>
       XTimers uses a Xin Account to identify and authenticate a user. A Xin
       Account is the shared identity layer for XTimers and any other connected
@@ -100,20 +101,24 @@
       Xintech LLC uses this information to authenticate the user, secure and
       recover the account, manage sessions and linked providers, authorize
       connected-product access, prevent abuse, and provide identity support.
+      A user may sign in with Apple or Google. The selected provider processes
+      the authentication information under its own privacy policy; XTimers
+      receives the provider identity and account information needed to link and
+      authenticate the Xin Account.
     </p>
 
-    <h2>XTimers Product and Contact Information</h2>
+    <h2 data-policy-section="product-data">XTimers Product and Contact Information</h2>
     <p>
       When a user connects XTimers to a Xin Account, XTimers processes a
       separate XTimers account identifier, its Xin Account association, product
       settings, and the contact email used for requested XTimers messages. When
-      the user enables SMS features, XTimers also processes a verified phone
-      number and SMS consent records. XTimers uses this product information to
+      the user sets up SMS features, XTimers also processes the proposed account
+      phone number, its verification status, and SMS consent records. XTimers uses this product information to
       synchronize XTimers data, deliver requested messages, prevent abuse, and
       provide XTimers product support.
     </p>
 
-    <h2>Timer, Task, and Report Content</h2>
+    <h2 data-policy-section="timer-reports">Timer, Task, and Report Content</h2>
     <p>
       Signed-in users may synchronize timer and countdown names, task sets,
       timer state, session history, application settings, archived snapshots,
@@ -126,17 +131,50 @@
 
     <p>
       Timer content synced to your devices is stored in the app's local data
-      area, protected by your device's own security (such as FileVault and
-      your login password) rather than app-level encryption. Sign-in
+      area, protected by operating-system and device protections—such as a
+      passcode and Data Protection on iPhone or iPad, or a login password and
+      FileVault on Mac—rather than separate app-level encryption. Sign-in
       credentials and protected-sync keys are stored in the system Keychain.
     </p>
 
-    <h2>Email and SMS Information</h2>
+    <h2 data-policy-section="alarms">Alarm Definitions, Devices, and Delivery Status</h2>
     <p>
-      XTimers currently sends email reports, verification messages, and
-      user-created reminders only to the signed-in user's own Xin Account email
-      address. SMS is sent only to the user's own verified, opted-in account
-      phone number. XTimers may process message content, delivery status,
+      Local-only alarms remain on the installation where they were created and
+      are not uploaded merely because a user signs in. If the user explicitly
+      promotes an alarm or creates a signed-in alarm, XTimers may synchronize
+      its name, schedule, recurrence, sound and presentation choices, enabled
+      state, revision history, and other definition metadata.
+    </p>
+    <p>
+      To implement a separate “Rings On” choice for each device,
+      XTimers processes per-installation identifiers and user-visible device
+      names, platform and alarm capabilities, desired target choices, and the
+      device's reported scheduling state. Scheduling and cancellation receipts
+      can include the alarm and device identifiers, definition revision,
+      desired and actual state, timestamps, attempt information, status or
+      failure reason, and evidence that an alarm was scheduled, stopped,
+      snoozed, fired, or canceled. This information keeps the shared list
+      truthful; a requested target is not represented as delivered until the
+      target device confirms it.
+    </p>
+    <p>
+      On iPhone and iPad, AlarmKit authorization and system scheduling are
+      handled by Apple. On Mac, alarms require the Mac to be awake, XTimers to
+      be running, and required permissions. Stop, snooze, fire, and cancellation
+      actions can be synchronized so other installations can update their
+      status, but an offline installation may act later or continue ringing.
+    </p>
+
+    <h2 data-policy-section="messaging">Email and SMS Information</h2>
+    <p>
+      XTimers currently sends email reports and user-created reminders only to
+      the signed-in user's own verified XTimers account email address, and may
+      attempt requested verification messages there. After a signed-in user
+      gives explicit consent, XTimers may attempt to send a setup verification
+      code to the user-entered proposed account phone number. User-created
+      reminder SMS may be attempted only after successful verification and
+      opt-in, and only to that same phone number. XTimers
+      may process message content, delivery status,
       scheduled time, and provider response metadata to deliver and troubleshoot
       these messages.
     </p>
@@ -149,27 +187,48 @@
       help.
     </p>
 
-    <h2>Custom Sounds</h2>
+    <h2 data-policy-section="sounds">Custom Sounds</h2>
     <p>
       A signed-in user can choose to synchronize custom sound files and their
       names and settings. XTimers stores those files with the user's account so
       they are available on the user's other devices.
     </p>
 
-    <h2>Automatic Activity Tracking</h2>
+    <h2 data-policy-section="backgrounds">Background Photos and Colors</h2>
+    <p>
+      A photo selected only as the current device's background remains on that
+      installation. When a signed-in user explicitly adds a color or photo to
+      the account Background Library, XTimers uploads and synchronizes the
+      image bytes or color value, content hash, user-visible name, settings, and
+      related metadata needed to manage that library across devices. The
+      account library is limited to 100 MB. Users can delete library items or
+      reset the local background in the app.
+    </p>
+
+    <h2 data-policy-section="activity">Automatic Activity Tracking</h2>
     <p>
       When the user enables automatic activity tracking, XTimers records
-      application activity on the user's Mac. Website-hostname tracking is
+      application activity on the user's Mac. Active browser-tab web-address
+      and title tracking is
       available only in the separately distributed XTimers Pro edition
       (downloaded from xintechllc.com, not the App Store); it never applies to
       the App Store edition. The underlying activity log is maintained on the
-      device and is not continuously uploaded. If the user explicitly emails or
-      publishes an activity report, the selected report content, including
-      application names (and, in XTimers Pro, website hostnames) shown in that
-      report, is sent to XTimers' service to perform the requested action.
+      device and is not continuously uploaded. While tracking runs, raw events
+      older than 365 days are removed. Turning tracking off stops XTimers app
+      recording and its browser integration but does not erase existing history;
+      Reset tracked data clears that local history. An installed browser
+      extension can continue its own active-tab queries and local delivery
+      attempts until the user disables or removes it. XTimers Pro stores the
+      full active-tab web address and title
+      locally, while activity summaries derive the website hostname. If the user explicitly emails or publishes an activity
+      report, the selected report content, including application names and
+      derived hostnames shown in that report, is sent to XTimers' service to
+      perform the requested action; raw web addresses and titles are not
+      included in those reports. The separately distributed browser component is covered by
+      the <a href="extension-privacy.html">XTimers Activity Extension Privacy Policy</a>.
     </p>
 
-    <h2>Personal Calendar Overlay</h2>
+    <h2 data-policy-section="calendar">Personal Calendar Overlay and Event Alerts</h2>
     <p>
       When the user turns on the Personal Calendar Overlay and grants permission,
       XTimers reads events from the calendars the user selects in Apple Calendar,
@@ -177,14 +236,18 @@
       configured there. XTimers does not connect to those calendar providers
       directly and never requests their account credentials; Apple Calendar
       continues to synchronize them under the user's own settings.
-      Event details are read on the device to display them and are not uploaded
-      to XTimers' service. XTimers stores only the user's on/off choice, the
-      identifiers of the calendars selected on that installation, and a record
-      of which privacy explanation was acknowledged. XTimers never creates,
-      edits, or deletes events in the user's calendars.
+      Event details—including title, start and end time, all-day and cancellation
+      state, and calendar name, identifier, and color—are read on the device to
+      display events or trigger user-selected advance alerts and are not
+      uploaded to XTimers' service. On Mac, XTimers may locally examine an event
+      web address, location, or notes to identify a supported HTTPS conference
+      link and open it when the user chooses. XTimers stores on the installation the
+      feature choices, selected-calendar identifiers, alert lead time, short-lived
+      alert acknowledgements, and a record of which privacy explanation was
+      acknowledged. XTimers never creates, edits, or deletes calendar events.
     </p>
 
-    <h2>Feedback and Customer Support</h2>
+    <h2 data-policy-section="support">Feedback and Customer Support</h2>
     <p>
       Users may submit feedback anonymously or choose to attach it to their
       signed-in account. XTimers stores the feedback text and operational
@@ -193,7 +256,7 @@
       although ordinary network request metadata may still be recorded.
     </p>
 
-    <h2>Device, Usage, Diagnostic, and Network Information</h2>
+    <h2 data-policy-section="diagnostics">Device, Usage, Diagnostic, and Network Information</h2>
     <p>
       XTimers may process a per-installation device identifier, push-notification
       token, platform, app version, build number, operating-system version,
@@ -211,14 +274,14 @@
       organization, request time, command name, and a stable hashed account
       identifier for authenticated requests. The app also submits Apple
       MetricKit diagnostic payloads that can contain crash, hang, CPU, disk,
-      energy, and other performance or technical information.
+      energy, launch, and other performance or technical information.
     </p>
 
-    <h2>How Information Is Used</h2>
+    <h2 data-policy-section="uses">How Information Is Used</h2>
     <ul>
       <li>Authenticate Xin Accounts and authorize connected XTimers accounts.</li>
       <li>Synchronize user-selected XTimers content across devices.</li>
-      <li>Run timers, reports, reminders, messaging, custom sounds, and sharing.</li>
+      <li>Run timers, alarms, reports, reminders, messaging, custom sounds, and sharing.</li>
       <li>Deliver push notifications and keep the user's devices in sync.</li>
       <li>Provide customer support and investigate reported problems.</li>
       <li>Protect accounts, enforce service limits, and prevent abuse.</li>
@@ -226,18 +289,26 @@
       <li>Meet legal, carrier, and operational requirements.</li>
     </ul>
 
-    <h2>Service Providers</h2>
+    <h2 data-policy-section="service-providers">Service Providers</h2>
     <p>
       Xintech LLC uses service providers for identity and authentication, cloud
       hosting and storage, email and SMS delivery, push notifications,
-      diagnostics, and website analytics. These providers may process
+      diagnostics, Apple system frameworks, and website analytics. Apple and
+      Google may also process a sign-in request when the user chooses the
+      corresponding provider. These providers may process
       information only as needed to perform services for Xintech LLC, subject
       to their applicable terms and privacy safeguards. Email and SMS providers
       receive the recipient, requested message content, and delivery metadata
       needed to send the user's message.
     </p>
+    <p>
+      When a user opens an external benefit or support link, XTimers does not
+      append an account identifier or personal data to the outbound link. The
+      destination still receives ordinary browser and network information, such
+      as an IP address and user agent, under its own privacy practices.
+    </p>
 
-    <h2>No Advertising Tracking, Sale, or Marketing Sharing</h2>
+    <h2 data-policy-section="no-sale">No Advertising Tracking, Sale, or Marketing Sharing</h2>
     <p>
       XTimers does not use the collected app data to track users across apps or
       websites owned by other companies for advertising. Xintech LLC does not
@@ -246,7 +317,7 @@
       affiliates for marketing or promotional purposes.
     </p>
 
-    <h2>Retention and Deletion</h2>
+    <h2 data-policy-section="retention">Retention and Deletion</h2>
     <p>
       Xin Account identity data is retained while needed to provide the shared
       identity and connected-product associations. XTimers product data is
@@ -257,19 +328,43 @@
       abuse prevention, and carrier or legal compliance.
     </p>
 
-    <h3>Sign Out and Remove From a Device</h3>
+    <p>
+      Active shared alarm definitions, current device targets, and current
+      delivery status are retained while needed to provide the connected
+      XTimers account. Records that an alarm was deleted and evidence that it
+      was canceled are kept for at least 90 days, and longer when an active
+      device target has not confirmed cancellation. This prevents an offline
+      device from incorrectly recreating or continuing the alarm. Retired or
+      stale devices may keep their last truthful reported status. This
+      operational retention does not replace an authenticated request to
+      delete the XTimers account itself.
+    </p>
+
+    <h3>Sign Out and Local Data</h3>
     <p>
       Signing out ends XTimers access on that device and pauses authenticated
-      synchronization. Removing XTimers or its local account data from a device
-      removes only that device's copies. Neither choice deletes the Xin Account
-      or the server copies of connected XTimers data.
+      synchronization. XTimers makes a best-effort attempt to cancel system
+      alarms owned by that installation before hiding its signed-in alarm state;
+      a pending or failed cancellation remains truthful when confirmation is
+      unavailable. Signing out preserves local timers and other local data;
+      XTimers does not currently provide a separate whole-app local-data reset
+      on Mac, iPhone, or iPad. Removing or uninstalling the app can leave
+      Application Support, container, or backup copies, depending on the
+      platform and system settings. Signing out or uninstalling does not delete
+      the Xin Account or server copies of connected XTimers data; use the
+      authenticated account-deletion actions for that purpose.
     </p>
 
     <h3>Delete XTimers Data</h3>
     <p>
       A signed-in user can delete one connected XTimers account. This removes
-      that account's active timer, snapshot, sound, feedback, reminder, message,
-      SMS configuration, and push-registration data from the XTimers service.
+      that account's data from the XTimers service, including active timers,
+      alarms, session and task history, device-targeting and scheduling-status
+      records, snapshots, sounds, Background Library content, feedback,
+      reminders, messages, published reports and report links, SMS configuration,
+      and push-registration data. XTimers makes a
+      best-effort attempt to cancel alarms scheduled by that installation before
+      removing its local account state.
       The Xin Account, shared sign-in identity, and any other connected product
       accounts remain available.
     </p>
@@ -287,6 +382,13 @@
     </p>
 
     <p>
+      If a deletion is interrupted, XTimers keeps a protected,
+      operation-scoped recovery record so it can resume the same request. That
+      record does not retain the emailed verification code or the user's
+      password.
+    </p>
+
+    <p>
       Separately maintained request logs, IP information, security records,
       deletion receipts, and diagnostic submissions may remain after either
       deletion scope when needed for security, troubleshooting, legal
@@ -295,37 +397,41 @@
       reasonably necessary for those purposes.
     </p>
 
-    <h2>Privacy Choices</h2>
+    <h2 data-policy-section="choices">Privacy Choices</h2>
     <p>
       Users can manage synchronization and activity-tracking features in the
-      app, sign out, remove local data from a device, delete XTimers data while
+      app, sign out, delete XTimers data while
       keeping Xin Account, delete the global Xin Account and every listed
       product, and opt out of SMS by replying STOP. See the
       <a href="privacy-choices.html">XTimers Privacy Choices</a> page for details.
     </p>
 
-    <h2>Security</h2>
+    <h2 data-policy-section="security">Security</h2>
     <p>
       Xintech LLC uses administrative, technical, and organizational measures
       intended to protect XTimers information. No storage or transmission system
       can be guaranteed to be completely secure.
     </p>
 
-    <h2>Website Analytics</h2>
+    <h2 data-policy-section="website-analytics">Website Analytics</h2>
     <p>
       This website uses Umami Cloud, a cookie-free analytics service, to count
       page visits and basic website actions such as App Store, download,
-      support, privacy, terms, and email-link clicks. These website metrics are
-      separate from the XTimers app data described above.
+      support, privacy, terms, and email-link clicks. Umami receives connection
+      and browser information used for aggregate metrics, including the page,
+      referrer, browser, operating system, device type, language, screen size,
+      and approximate location. Umami states that it does not store IP
+      addresses and uses an anonymized, rotating session identifier. These
+      website metrics are separate from the XTimers app data described above.
     </p>
 
-    <h2>Contact</h2>
+    <h2 data-policy-section="contact">Contact</h2>
     <p>
       For questions or requests, see
       <a href="https://xintechllc.com/XTimers/support.html">xintechllc.com/XTimers/support.html</a>.
     </p>
 
-    <p>Last updated: August 21, 2026.</p>
+    <p>Last updated: <time datetime="2026-08-23">August 23, 2026</time>.</p>
 
     <footer>
       <div>© 2026 Xintech LLC. All rights reserved.</div>
@@ -334,6 +440,7 @@
         <a href="support.html">Support</a>
         <a href="privacy.html">Privacy</a>
         <a href="privacy-choices.html">Privacy Choices</a>
+        <a href="terms.html">Terms</a>
         <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a>
         <a href="sms-terms.html">SMS Terms</a>
         <a href="sms-opt-in.html">SMS Opt-In</a>

@@ -4,18 +4,31 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>XTimers — Mac, iPhone és iPad</title>
-<meta content="Az XTimers egy nyugodt, natív Apple időzítő-munkaterület időzítőkhöz, visszaszámlálókhoz, órákhoz, feladatkészletekhez, jelentésekhez, egyéni hangokhoz és fiók-emlékeztetőkhöz Macen, iPhone-on és iPaden." name="description"/>
 <meta content="#fbfaf7" name="theme-color"/>
-<meta content="XTimers" property="og:title"/>
-<meta content="Időzítők, visszaszámlálók, órák, jelentések, hangok és fiók-emlékeztetők Machez, iPhone-hoz és iPadhez." property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="https://xintechllc.com/XTimers/assets/flexible-timers/macos/1-single-light.png" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="XTimers" name="twitter:title"/>
-<meta content="Timers, countdowns, clocks, reports, sounds, and account reminders for Mac, iPhone, and iPad." name="twitter:description"/>
-<meta content="https://xintechllc.com/XTimers/assets/flexible-timers/macos/1-single-light.png" name="twitter:image"/>
-<link rel="canonical" href="https://xintechllc.com/XTimers/hu/">
+<meta content="Mérd az időt. Számolj vissza. Világórák. Világnaptár. Rugalmas. Testreszabható. Egyesítsd az időmérőket, rutinokat, emlékeztetőket és kimutatásokat egy munkaterületen." name="description"/>
+<title>XTimers — Mérd az időt. Számolj vissza. Világórák. Világnaptár.</title>
+<link href="../assets/marketing/app-icon.png" rel="icon"/>
+<link href="../assets/marketing/styles.css" rel="stylesheet"/>
+<link href="../assets/marketing/site-style.css" rel="stylesheet"/>
+<script defer="" src="../assets/marketing/site.js"></script>
+<script data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19" defer="" src="https://cloud.umami.is/script.js"></script><script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script> <link rel="canonical" href="https://xintechllc.com/XTimers/hu/">
 <link rel="alternate" hreflang="ar" href="https://xintechllc.com/XTimers/ar/">
 <link rel="alternate" hreflang="bn" href="https://xintechllc.com/XTimers/bn/">
 <link rel="alternate" hreflang="ca" href="https://xintechllc.com/XTimers/ca/">
@@ -23,7 +36,7 @@
 <link rel="alternate" hreflang="da" href="https://xintechllc.com/XTimers/da/">
 <link rel="alternate" hreflang="de" href="https://xintechllc.com/XTimers/de/">
 <link rel="alternate" hreflang="el" href="https://xintechllc.com/XTimers/el/">
-<link rel="alternate" hreflang="en" href="https://xintechllc.com/XTimers/flexible-timers.html">
+<link rel="alternate" hreflang="en" href="https://xintechllc.com/XTimers/">
 <link rel="alternate" hreflang="es" href="https://xintechllc.com/XTimers/es/">
 <link rel="alternate" hreflang="fi" href="https://xintechllc.com/XTimers/fi/">
 <link rel="alternate" hreflang="fr" href="https://xintechllc.com/XTimers/fr/">
@@ -61,7 +74,7 @@
 <link rel="alternate" hreflang="vi" href="https://xintechllc.com/XTimers/vi/">
 <link rel="alternate" hreflang="zh-Hans" href="https://xintechllc.com/XTimers/zh-Hans/">
 <link rel="alternate" hreflang="zh-Hant" href="https://xintechllc.com/XTimers/zh-Hant/">
-<link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XTimers/flexible-timers.html">
+<link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XTimers/">
 
 
 
@@ -108,37 +121,43 @@
 
 
 
-<link href="../assets/flexible-timers/brand/favicon.png" rel="icon" type="image/png"/>
-<link href="../assets/flexible-timers/site.css" rel="stylesheet"/>
-<script data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19" defer="" src="https://cloud.umami.is/script.js"></script>
-<script>
-  window.addEventListener("click", function (event) {
-    var link = event.target.closest && event.target.closest("a[href]");
-    if (!link || !window.umami) return;
-    var href = link.getAttribute("href") || "";
-    var url = link.href || href;
-    var eventName = null;
-    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
-    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
-    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
-    else if (/support\.html/i.test(href)) eventName = "Support Click";
-    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
-    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
-    if (eventName) {
-      window.umami.track(eventName, { href: url, path: window.location.pathname });
-    }
-  });
-</script>
 </head>
 <body>
-<div class="page-shell">
-<header class="nav">
-<div class="nav-inner">
-<a aria-label="XTimers kezdőlap" class="brand" href="index.html">
-<img alt="" class="brand-icon" height="36" src="../assets/flexible-timers/brand/app-icon.png" width="36"/>
-<span class="brand-text">XTimers<small>Mac • iPhone • iPad</small></span>
-</a>
-<div class="nav-actions"><a class="button primary" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12">Letöltés Machez</a><details class="language-menu">
+<svg aria-hidden="true" class="svg-definitions" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<symbol id="i-clock" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></symbol>
+<symbol id="i-timer" viewbox="0 0 24 24"><circle cx="12" cy="14" r="8"></circle><path d="M12 10v4l3 2M9 2h6m-3 0v4m6 0 2 2"></path></symbol>
+<symbol id="i-countdown" viewbox="0 0 24 24"><path d="M6 3h12M6 21h12M7 3v4l5 5-5 5v4m10-18v4l-5 5 5 5v4M9 18h6"></path></symbol>
+<symbol id="i-folder" viewbox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h5l3 3h6a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7h18"></path></symbol>
+<symbol id="i-check" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></symbol>
+<symbol id="i-globe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><ellipse cx="12" cy="12" rx="4" ry="9"></ellipse><path d="M3 12h18"></path></symbol>
+<symbol id="i-calendar" viewbox="0 0 24 24"><rect height="16" rx="3" width="18" x="3" y="5"></rect><path d="M7 3v4m10-4v4M3 11h18m-14 4h3m4 0h3m-10 3h3"></path></symbol>
+<symbol id="i-chart" viewbox="0 0 24 24"><path d="M4 3v18h17M8 17v-5m5 5V7m5 10V4"></path></symbol>
+<symbol id="i-sound" viewbox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9H3m13-1a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"></path></symbol>
+<symbol id="i-mail" viewbox="0 0 24 24"><rect height="14" rx="3" width="18" x="3" y="5"></rect><path d="m3 7 9 6 9-6"></path></symbol>
+<symbol id="i-phone" viewbox="0 0 24 24"><path d="m8 3 3 5-3 3a14 14 0 0 0 5 5l3-3 5 3v3c0 2-2 3-4 2C10 19 5 14 3 7c-1-2 0-4 2-4h3Z"></path></symbol>
+<symbol id="i-sync" viewbox="0 0 24 24"><path d="M20 8a8 8 0 0 0-14-3L3 8m0-5v5h5m-4 8a8 8 0 0 0 14 3l3-3m0 5v-5h-5"></path></symbol>
+<symbol id="i-lock" viewbox="0 0 24 24"><rect height="11" rx="3" width="14" x="5" y="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"></path></symbol>
+<symbol id="i-mac" viewbox="0 0 24 24"><rect height="13" rx="2" width="18" x="3" y="3"></rect><path d="M9 21h6m-3-5v5"></path></symbol>
+<symbol id="i-mobile" viewbox="0 0 24 24"><rect height="20" rx="3" width="12" x="6" y="2"></rect><path d="M10 5h4m-3 14h2"></path></symbol>
+<symbol id="i-tablet" viewbox="0 0 24 24"><rect height="20" rx="3" width="18" x="3" y="2"></rect><path d="M10 19h4"></path></symbol>
+<symbol id="i-plus" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></symbol>
+<symbol id="i-expand" viewbox="0 0 24 24"><path d="M9 3H3v6m0-6 6 6m6 12h6v-6m0 6-6-6"></path></symbol>
+<symbol id="i-leaf" viewbox="0 0 24 24"><path d="M4 20 16 8M5 17C-1 5 13 7 20 3c2 13-4 19-12 15"></path></symbol>
+</defs>
+</svg>
+<a class="skip-link" href="#main">Ugrás a tartalomhoz</a>
+<header class="site-header">
+<nav aria-label="Fő navigáció" class="navigation wrap">
+<a aria-label="XTimers kezdőlap" class="brand" href="#top"><img alt="" height="36" src="../assets/marketing/app-icon.png" width="36"/><span>XTimers</span></a>
+<button aria-controls="nav-links" aria-expanded="false" aria-label="Navigáció megnyitása" class="menu-toggle" data-close-label="Navigáció bezárása" data-open-label="Navigáció megnyitása" type="button"><span></span><span></span></button>
+<div class="nav-links" id="nav-links">
+<a href="#features">Funkciók</a>
+<a href="#devices">Eszközeid</a>
+<a href="#support">Kérdések</a>
+<div class="header-actions">
+<a class="button button-small button-ink" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12">Letöltés Mac részére</a>
+<details class="language-menu">
             <summary>🌐 · Magyar</summary>
             <div class="language-menu-list" aria-label="Nyelv">
               <a href="../ar/" lang="ar" dir="rtl">العربية</a>
@@ -148,7 +167,7 @@
               <a href="../da/" lang="da" dir="ltr">Dansk</a>
               <a href="../de/" lang="de" dir="ltr">Deutsch</a>
               <a href="../el/" lang="el" dir="ltr">Ελληνικά</a>
-              <a href="../flexible-timers.html" lang="en" dir="ltr">English</a>
+              <a href="../" lang="en" dir="ltr">English</a>
               <a href="../es/" lang="es" dir="ltr">Español</a>
               <a href="../fi/" lang="fi" dir="ltr">Suomi</a>
               <a href="../fr/" lang="fr" dir="ltr">Français</a>
@@ -187,34 +206,640 @@
               <a href="../zh-Hans/" lang="zh-Hans" dir="ltr">简体中文</a>
               <a href="../zh-Hant/" lang="zh-Hant" dir="ltr">繁體中文</a>
             </div>
-          </details></div>
+          </details>
 </div>
+</div>
+</nav>
 </header>
-<main id="top">
-<section aria-labelledby="hero-title" class="hero"><div><h1 id="hero-title">XTimers</h1><p class="hero-lede">Időzítők, visszaszámlálók, órák, jelentések, hangok és fiók-emlékeztetők Machez, iPhone-hoz és iPadhez. Korábbi nevén Flexible Timers.</p></div><div aria-label="XTimers alkalmazás képernyőképei" class="hero-visual"><div class="device-stage"><div class="desktop-card"><div aria-hidden="true" class="window-bar"><span class="traffic"></span><span class="traffic"></span><span class="traffic"></span><span class="window-title">XTimers Machez</span></div><figure class="shot"><img alt="Az XTimers macOS fő időzítőablaka világos módban" height="1125" loading="eager" src="../assets/flexible-timers/macos/1-single-light.png" width="1800"/></figure></div><div aria-label="XTimers iPhone-képernyőkép" class="phone-card"><figure class="shot"><img alt="Az XTimers iPhone időzítőlistája világos módban" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-1-timers-light.png" width="736"/></figure></div><div aria-label="XTimers iPad-képernyőkép" class="tablet-card"><figure class="shot"><img alt="Az XTimers iPad időzítőlistája világos módban" height="1600" loading="eager" src="../assets/flexible-timers/ios/ipad-13-1-timers-light.png" width="1200"/></figure></div></div></div></section>
-<section aria-label="Rugalmas időzítőfunkciók" class="section" id="features"><div class="feature-grid"><article class="feature-card"><h3>Rugalmas feladattípusok</h3><p>Időzítők, befejezési idejű visszaszámlálók, világórák és fiók-emlékeztető feladatok.</p></article><article class="feature-card"><h3>Feladatkészletek</h3><p>Külön munka, főzés, tanulás, utazás és újrafelhasználható rutinok.</p></article><article class="feature-card"><h3>Jelentések és archívumok</h3><p>Tekintse át a pillanatképeket, adjon hozzá jegyzeteket, és küldjön jelentéseket a fiók e-mail-címére.</p></article><article class="feature-card"><h3>Hangok és értesítések</h3><p>Használjon beépített hangokat, egyéni hangokat, sípolásokat és helyi értesítéseket.</p></article></div></section>
-<section aria-label="XTimers platformok" class="section platform-section"><article class="platform" id="mac"><div class="platform-copy"><h2>Fókuszált időzítőmunkára készült Macen.</h2><p>SwiftUI-időzítők feladatkészletekkel, jelentésekkel, szinkronizálással, egyéni hangokkal és menüsor-állapottal.</p><div class="platform-list"><div class="platform-item"><span class="check">✓</span><span>Egyszeres vagy kibontott időzítő-elrendezések.</span></div><div class="platform-item"><span class="check">✓</span><span>Menüsor-állapot az aktív időzítőhöz.</span></div><div class="platform-item"><span class="check">✓</span><span>Időzítők, visszaszámlálók, órák és emlékeztető feladatok.</span></div><div class="platform-item"><span class="check">✓</span><span>Szinkronizálás, archívumok, jelentések és egyéni hangok.</span></div></div></div><div class="shot-stack"><figure class="shot"><img alt="Az XTimers macOS kibontott, kétoszlopos időzítőablaka" height="1125" loading="eager" src="../assets/flexible-timers/macos/3-double-light.png" width="1800"/></figure><div class="shot-row"><figure class="shot"><img alt="Az XTimers macOS időzítő-hozzáadási lapja világos módban" height="1125" loading="eager" src="../assets/flexible-timers/macos/5-addtimer-light.png" width="1800"/></figure><figure class="shot"><img alt="Az XTimers macOS visszaszámláló-hozzáadási lapja világos módban" height="1125" loading="eager" src="../assets/flexible-timers/macos/7-addcountdown-light.png" width="1800"/></figure></div></div></article><article class="platform reverse" id="ios"><div class="phone-showcase"><div class="phone-screen"><figure class="shot"><img alt="XTimers iPhone-képernyőkép" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-1-timers-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="XTimers iPhone-képernyőkép" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-4-add-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="XTimers iPhone-képernyőkép" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-6-settings-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="XTimers iPhone-képernyőkép" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-7-report-light.png" width="736"/></figure></div></div><div class="platform-copy"><h2>Ugyanaz az időzítőrendszer iPhone-on és iPaden.</h2><p>Időzítők, órák, jelentések, beállítások, szinkronizálás, értesítések és hangok iPhone-on és iPaden.</p><div class="platform-list"><div class="platform-item"><span class="check">✓</span><span>iPhone-lista- és iPad-rácselrendezések.</span></div><div class="platform-item"><span class="check">✓</span><span>Hozzon létre időzítőket, visszaszámlálókat, órákat és emlékeztetőket.</span></div><div class="platform-item"><span class="check">✓</span><span>Jelentések, beállítások, hangok és szinkronizálás.</span></div></div></div></article></section>
-<section aria-labelledby="sync-title" class="section" id="sync"><div class="account-panel"><div><h2 id="sync-title">Bejelentkezés Xin Account használatával. Az XTimers-adatok külön maradnak.</h2><p>Az XTimers az Ön Xin Account-ját használja a közös bejelentkezéshez, miközben az időzítőket, jelentéseket, beállításokat, hangokat és SMS-beállításokat különálló XTimers-termékadatokként kezeli. <a href="privacy.html#xin-account">Ismerje meg a fiókrétegek működését.</a></p></div><div class="account-list"><div class="account-row"><strong>Bejelentkezés több eszközön</strong><span>Az Ön Xin Account-ja azonosítja Önt, és engedélyezi minden csatlakoztatott XTimers-fiók elérését.</span></div><div class="account-row"><strong>XTimers-adatok szinkronizálása</strong><span>A feladatkészletek, archívumok, beállítások és hangok a csatlakoztatott XTimers-fiókhoz tartoznak.</span></div><div class="account-row"><strong>Különálló adatvédelmi választási lehetőségek</strong><span>A kijelentkezés, a helyi másolatok eltávolítása, az XTimers-adatok törlése és a globális Xin Account törlése különálló műveletek.</span></div></div></div></section>
-</main>
-<footer><div>© 2017-2026 Xintech LLC.</div><div class="footer-links"><a href="support.html">Támogatás</a><a href="privacy.html">Adatvédelem</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a><a href="sms-terms.html">SMS-feltételek</a><a href="sms-opt-in.html">SMS-hozzájárulás</a></div></footer>
+<main id="main">
+<section aria-labelledby="hero-heading" class="hero wrap" id="top">
+<div class="hero-copy hero-hoefler">
+<div class="hero-copy-inner">
+<p class="eyebrow">Mac, iPhone és iPad készülékre</p>
+<h1 aria-label="Mérd az időt. Számolj vissza. Világórák. Világnaptár." class="hero-timing-heading" id="hero-heading"><span class="hero-line">Mérd az időt.</span> <span class="hero-line">Számolj vissza.</span> <span class="hero-line">Világórák.</span> <span class="hero-line">Világnaptár.</span></h1>
+<p class="hero-payoff">Rugalmas. Testreszabható.</p>
+<p class="hero-description">Egyesítsd az időmérőket, visszaszámlálókat és világórákat egyetlen munkaterületen. Adj hozzá újrafelhasználható rutinokat, emlékeztetőket és kimutatásokat, az elrendezést és megjelenést pedig alakítsd a saját ízlésedre.</p>
+<p class="hero-note"><svg aria-hidden="true" class="icon"><use href="#i-check"></use></svg>Az alapvető időmérők offline is működnek. Fiók nélkül.</p>
 </div>
-<script>
-      // ft-language-menu-dismiss: close the language dropdown when clicking
-      // outside it or pressing Escape. A native <details> otherwise only closes
-      // on a second click of its <summary>.
-      (function () {
-        function closeAll() {
-          document.querySelectorAll('details.language-menu[open]')
-            .forEach(function (d) { d.removeAttribute('open'); });
-        }
-        document.addEventListener('click', function (e) {
-          document.querySelectorAll('details.language-menu[open]')
-            .forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute('open'); });
-        });
-        document.addEventListener('keydown', function (e) {
-          if (e.key === 'Escape' || e.key === 'Esc') closeAll();
-        });
-      })();
-    </script>
+</div>
+<div class="hero-stage">
+<div class="floating-label"><span class="pulse-dot"></span>Szánj időt arra, ami fontos.</div>
+<button aria-label="Nagyítás: „Studio” képernyőkép a telepített Mac-alkalmazásban" class="image-button hero-mac" data-caption="„Studio” munkaterület – a telepített Mac-alkalmazás szimulált időmérőkkel, visszaszámlálóval és világórákkal." data-zoom="../assets/marketing/mac-dark.png" type="button">
+<img alt="A „Studio” munkaterület a telepített XTimers alkalmazásban, szimulált „Design”, „Research”, „Writing”, „Reading” és „Planning” időmérőkkel, „Focus sprint” visszaszámlálóval és három világórával, sötétkék háttéren" fetchpriority="high" height="796" src="../assets/marketing/mac-dark.png" width="1240"/>
+</button>
+<button aria-label="Nagyítás: kompakt „Design” időmérő rejtett vezérlőkkel" class="image-button hero-mini" data-caption="Kompakt „Design” időmérő – a telepített Mac-alkalmazás szimulált adatokkal és rejtett vezérlőkkel." data-zoom="../assets/marketing/mac-timer-minimal-hidden.png" type="button">
+<img alt="A „Design” időmérő kompakt, sötétkék „Minimal” ablakban a vezérlők eltűnése után" fetchpriority="high" height="480" src="../assets/marketing/mac-timer-minimal-hidden.png" width="1240"/>
+</button>
+<button aria-label="Nagyítás: Világnaptár a nyitó szakaszban" class="image-button hero-calendar" data-caption="Világnaptár – 2026. október munkaszüneti napokkal, kínai naptári dátumokkal és a nemzeti ünnep részleteivel a telepített Mac-alkalmazásban." data-zoom="../assets/marketing/mac-world-calendar-month.png" type="button">
+<img alt="A Világnaptár havi rácsa és ünneprészletei világos Mac-ablakban" decoding="async" height="1440" src="../assets/marketing/mac-world-calendar-month.png" width="2040"/>
+</button>
+<button aria-label="Nagyítás: Hangkönyvtár a nyitó szakaszban" class="image-button hero-sounds" data-caption="Hangkönyvtár – „World Ceremonial” hangok natív hullámformákkal, kedvencekkel és lejátszási vezérlőkkel a telepített Mac-alkalmazásban." data-zoom="../assets/marketing/mac-sound-ceremonial.png" type="button">
+<img alt="A Hangkönyvtár „World Ceremonial” gyűjteménye harang-, csengő-, dob- és trombitahangok hullámformáival" decoding="async" height="1120" src="../assets/marketing/mac-sound-ceremonial.png" width="1440"/>
+</button>
+<button aria-label="Nagyítás: „Planning” a Dolomitok fotójával a nyitó szakaszban" class="image-button hero-photo" data-caption="Saját nézet – a „Planning” 20:04-es értékkel a Dolomitokat ábrázoló fotón, a telepített Mac-alkalmazásban automatikusan elrejtett vezérlőkkel." data-zoom="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" type="button">
+<img alt="„Planning” 20:04-es értékkel, hegyi fotó előtt, „Minimal” nézetben" decoding="async" height="468" src="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" width="658"/>
+</button>
+<button aria-label="Nagyítás: heti kimutatás diagramjai a nyitó szakaszban" class="image-button hero-report" data-caption="A heted fókuszban – 30 mintaóra öt feladatra bontva, napi összesítésekkel és feladatarány-diagramokkal a telepített Mac-alkalmazásban." data-zoom="../assets/marketing/mac-report-week-daily-totals.png" type="button">
+<img alt="Heti időkimutatás színes, halmozott napi összesítésekkel és az egyes feladatok 30 mintaórából való részesedését mutató diagrammal" decoding="async" height="2396" src="../assets/marketing/mac-report-week-daily-totals.png" width="1520"/>
+</button>
+<div class="hero-menubar">
+<button aria-label="Nagyítás: a „Planning” menüsávállapota a nyitó szakaszban" class="image-button" data-caption="Időmérőd a menüsávban – a „Planning” 20:04-nél szüneteltetve, a macOS állapotikonjai mellett látható, a főablak megnyitása nélkül." data-zoom="../assets/marketing/mac-menubar-status-planning.png" type="button">
+<img alt="A macOS menüsávja szünetjelzővel és „Planning 20:04” felirattal a rendszer állapotikonjai mellett" decoding="async" height="60" src="../assets/marketing/mac-menubar-status-planning.png" width="572"/>
+</button>
+<a href="#menu-bar">Időmérőd közvetlenül a menüsávban.</a>
+</div>
+<span class="stage-caption">Az időd. Egy pillantásra.</span>
+</div>
+</section>
+<section aria-label="Fedezd fel az XTimers funkcióit" class="feature-overview wrap" id="features">
+<details class="feature-browser">
+<summary>Mind a 20 funkció megtekintése <span aria-hidden="true">+</span></summary>
+<nav aria-label="Mind a 20 funkció kategóriák szerint" class="feature-index">
+<div class="feature-group">
+<h3><a class="feature-category" href="#timers"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timers.png" width="16"/>Időmérés<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#timers"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timers.png" width="16"/><span>Időmérők és visszaszámlálók</span></a></li>
+<li><a href="#reminders"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/reminders.png" width="16"/><span>Emlékeztetők e-mailben, SMS-ben és hívással</span></a></li>
+<li><a href="#sound-library"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/sound-library.png" width="16"/><span>Hangkönyvtár</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#task-sets"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/task-sets.png" width="16"/>Rutinok<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#task-sets"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/task-sets.png" width="16"/><span>Feladatcsoportok és újrafelhasználható sablonok</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#timer-views"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timer-views.png" width="16"/>Nézetek<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#timer-views"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timer-views.png" width="16"/><span>Rugalmas időmérőnézetek</span></a></li>
+<li><a href="#classic-interface"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/classic-interface.png" width="16"/><span>Klasszikus felület</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#world-calendar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-clocks.png" width="16"/>Világidő<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#world-clocks"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-clocks.png" width="16"/><span>Világórák</span></a></li>
+<li><a href="#world-calendar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-calendar.png" width="16"/><span>Világnaptár</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#time-reports"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/time-reports.png" width="16"/>Kimutatások<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#time-reports"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/time-reports.png" width="16"/><span>Időkimutatások és megosztás</span></a></li>
+<li><a href="#archives"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/archives.png" width="16"/><span>Archívumok</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#appearance"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/appearance.png" width="16"/>Megjelenés<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#appearance"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/appearance.png" width="16"/><span>Megjelenés testreszabása</span></a></li>
+<li><a href="#languages"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/languages.png" width="16"/><span>Többnyelvű támogatás</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#menu-bar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/menu-bar.png" width="16"/>Eszközeid<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#menu-bar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/menu-bar.png" width="16"/><span>Menüsáv- és asztali integráció</span></a></li>
+<li><a href="#live-activities"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/live-activities.png" width="16"/><span>Élő tevékenységek</span></a></li>
+<li><a href="#siri-shortcuts"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/siri-shortcuts.png" width="16"/><span>Siri és Parancsok</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#offline"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/protected-sync.png" width="16"/>Szinkronizálás és adatvédelem<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#offline"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/offline.png" width="16"/><span>Offline használat fiók nélkül</span></a></li>
+<li><a href="#synchronization"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/synchronization.png" width="16"/><span>Eszközök közötti szinkronizálás</span></a></li>
+<li><a href="#protected-sync"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/protected-sync.png" width="16"/><span>Védett szinkronizálás</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#activity-tracking"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/xhelpers-pro.png" width="16"/>Több lehetőség Mac gépen<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#activity-tracking"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/activity-tracking.png" width="16"/><span>Alkalmazástevékenység automatikus követése</span></a></li>
+<li><a href="#xhelpers-pro"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/xhelpers-pro.png" width="16"/><span>XHelpers Pro kedvezmény</span></a></li>
+</ul>
+</div>
+</nav>
+</details>
+</section>
+<section aria-labelledby="timers-heading" class="highlight-row has-gallery" data-highlight="01" id="timers">
+<span class="anchor-target" id="count-up-timers"></span><span class="anchor-target" id="countdowns"></span><span class="anchor-target" id="running-timers"></span><span class="anchor-target" id="task-controls"></span><span class="anchor-target" id="notes-history"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">01</span>Időmérők és visszaszámlálók</p>
+<h2 id="timers-heading">Szánj időt arra, ami fontos.</h2>
+<p>Mérd az eltöltött időt, számolj vissza egy időtartamot, vagy tarts szem előtt egy határidőt. Futtass egy vagy több feladatot, szüneteltesd és folytasd őket, és vezess jegyzeteket a munkamenetekhez. Időmérőid a napod változásaihoz igazodnak.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Képek – Időmérők és visszaszámlálók" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Időmérő-munkaterületed</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Időmérő-munkaterületed" class="image-button capture-image" data-caption="Időmérő-munkaterületed — A „Studio” munkaterület öt stoppert, egy „Focus sprint” visszaszámlálót és három világórát egyesít." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="A „Studio” munkaterület öt stoppert, egy „Focus sprint” visszaszámlálót és három világórát egyesít." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>A „Studio” munkaterület öt stoppert, egy „Focus sprint” visszaszámlálót és három világórát egyesít.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Visszaszámlálás a saját igényeidre</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Visszaszámlálás a saját igényeidre" class="image-button capture-image" data-caption="Visszaszámlálás a saját igényeidre — „Focus sprint”: szüneteltethető, 25 perces visszaszámlálás a „Studio” terében, kézi indítással és „Gentle Bell” záróhanggal." data-zoom="../assets/marketing/mac-countdown.png" type="button"><img alt="„Focus sprint”: szüneteltethető, 25 perces visszaszámlálás a „Studio” terében, kézi indítással és „Gentle Bell” záróhanggal." decoding="async" loading="lazy" src="../assets/marketing/mac-countdown.png"/></button>
+<figcaption>„Focus sprint”: szüneteltethető, 25 perces visszaszámlálás a „Studio” terében, kézi indítással és „Gentle Bell” záróhanggal.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="task-sets-heading" class="highlight-row" data-highlight="02" id="task-sets">
+<span class="anchor-target" id="routines"></span><span class="anchor-target" id="templates"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">02</span>Feladatcsoportok és újrafelhasználható sablonok</p>
+<h2 id="task-sets-heading">Minden rutinnak megvan a helye.</h2>
+<p>Adj saját nevű feladatcsoportot a munkának, tanulásnak és mindennapoknak. Ments egy feladatot vagy egy egész csoportot sablonként, és vidd át a megszokott rutint a következő munkamenetbe.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Képek – Feladatcsoportok és újrafelhasználható sablonok" class="feature-gallery gallery-1">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Feladatkészletek</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Feladatcsoportok" class="image-button capture-image" data-caption="Feladatcsoportok – a „Studio” feladatcsoport kilenc aktív feladattal és újrafelhasználható „Studio Template” sablonnal." data-zoom="../assets/marketing/mac-task-sets.png" type="button"><img alt="A „Studio” feladatcsoport kilenc aktív feladattal és újrafelhasználható „Studio Template” sablonnal." decoding="async" loading="lazy" src="../assets/marketing/mac-task-sets.png"/></button>
+<figcaption>A „Studio” feladatcsoport kilenc aktív feladattal és újrafelhasználható „Studio Template” sablonnal.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="timer-views-heading" class="highlight-row has-gallery" data-highlight="03" id="timer-views">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">03</span>Rugalmas időmérőnézetek</p>
+<h2 id="timer-views-heading">A megfelelő nézet éppen most.</h2>
+<p>Tekintsd át az egészet, vagy összpontosíts egy feladatra. A Mac Lista, Rács, Egy feladat és Minimális nézetet kínál. iPhone és iPad készüléken válaszd a Lista, Fókusz vagy Egy feladat nézetet az adott pillanathoz.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">A „Single” és „Minimal” nézetben a vezérlők eltűnnek, amikor elviszed a mutatót, és rámutatáskor újra megjelennek.</p>
+</div>
+<div aria-label="Képek – Rugalmas időmérőnézetek" class="feature-gallery gallery-14">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · lista</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Mac · lista" class="image-button capture-image" data-caption="Mac · lista — A „Studio” listanézetben, kilenc feladattal, kompakt sorokba rendezve." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="A „Studio” listanézetben, kilenc feladattal, kompakt sorokba rendezve." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>A „Studio” listanézetben, kilenc feladattal, kompakt sorokba rendezve.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · rács</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Mac · rács" class="image-button capture-image" data-caption="Mac · rács — A „Studio” „Design”, „Research”, „Writing”, „Reading” és „Planning” időmérői, a „Focus sprint”, valamint New York, London és Tokió órái." data-zoom="../assets/marketing/mac-grid-light.png" type="button"><img alt="A „Studio” „Design”, „Research”, „Writing”, „Reading” és „Planning” időmérői, a „Focus sprint”, valamint New York, London és Tokió órái." decoding="async" loading="lazy" src="../assets/marketing/mac-grid-light.png"/></button>
+<figcaption>A „Studio” „Design”, „Research”, „Writing”, „Reading” és „Planning” időmérői, a „Focus sprint”, valamint New York, London és Tokió órái.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · látható vezérlők · tiszta fekete</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Mac · Single · látható vezérlők · tiszta fekete" class="image-button capture-image" data-caption="Mac · Single · látható vezérlők · tiszta fekete — A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Single” nézetében, látható vezérlőkkel és tiszta fekete háttérrel." data-zoom="../assets/marketing/mac-planning-single-black.png" type="button"><img alt="A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Single” nézetében, látható vezérlőkkel és tiszta fekete háttérrel." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-black.png"/></button>
+<figcaption>A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Single” nézetében, látható vezérlőkkel és tiszta fekete háttérrel.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · látható vezérlők · tiszta fekete</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Mac · Minimal · látható vezérlők · tiszta fekete" class="image-button capture-image" data-caption="Mac · Minimal · látható vezérlők · tiszta fekete — A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Minimal” nézetében, látható vezérlőkkel és tiszta fekete háttérrel." data-zoom="../assets/marketing/mac-planning-minimal-black.png" type="button"><img alt="A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Minimal” nézetében, látható vezérlőkkel és tiszta fekete háttérrel." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-black.png"/></button>
+<figcaption>A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Minimal” nézetében, látható vezérlőkkel és tiszta fekete háttérrel.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · rejtett vezérlők · tiszta fekete</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Mac · Single · rejtett vezérlők · tiszta fekete" class="image-button capture-image" data-caption="Mac · Single · rejtett vezérlők · tiszta fekete — A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Single” nézetében, rejtett vezérlőkkel és tiszta fekete háttérrel." data-zoom="../assets/marketing/mac-planning-single-hidden-black.png" type="button"><img alt="A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Single” nézetében, rejtett vezérlőkkel és tiszta fekete háttérrel." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-black.png"/></button>
+<figcaption>A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Single” nézetében, rejtett vezérlőkkel és tiszta fekete háttérrel.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · rejtett vezérlők · tiszta fekete</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Mac · Minimal · rejtett vezérlők · tiszta fekete" class="image-button capture-image" data-caption="Mac · Minimal · rejtett vezérlők · tiszta fekete — A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Minimal” nézetében, rejtett vezérlőkkel és tiszta fekete háttérrel." data-zoom="../assets/marketing/mac-planning-minimal-hidden-black.png" type="button"><img alt="A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Minimal” nézetében, rejtett vezérlőkkel és tiszta fekete háttérrel." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-black.png"/></button>
+<figcaption>A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Minimal” nézetében, rejtett vezérlőkkel és tiszta fekete háttérrel.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · látható vezérlők · Yosemite-fotó</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Mac · Single · látható vezérlők · Yosemite-fotó" class="image-button capture-image" data-caption="Mac · Single · látható vezérlők · Yosemite-fotó — A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Single” nézetében, látható vezérlőkkel és Yosemite-fotóháttérrel." data-zoom="../assets/marketing/mac-planning-single-yosemite.png" type="button"><img alt="A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Single” nézetében, látható vezérlőkkel és Yosemite-fotóháttérrel." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-yosemite.png"/></button>
+<figcaption>A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Single” nézetében, látható vezérlőkkel és Yosemite-fotóháttérrel.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · látható vezérlők · Yosemite-fotó</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Mac · Minimal · látható vezérlők · Yosemite-fotó" class="image-button capture-image" data-caption="Mac · Minimal · látható vezérlők · Yosemite-fotó — A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Minimal” nézetében, látható vezérlőkkel és Yosemite-fotóháttérrel." data-zoom="../assets/marketing/mac-planning-minimal-yosemite.png" type="button"><img alt="A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Minimal” nézetében, látható vezérlőkkel és Yosemite-fotóháttérrel." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-yosemite.png"/></button>
+<figcaption>A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Minimal” nézetében, látható vezérlőkkel és Yosemite-fotóháttérrel.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · rejtett vezérlők · Yosemite-fotó</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Mac · Single · rejtett vezérlők · Yosemite-fotó" class="image-button capture-image" data-caption="Mac · Single · rejtett vezérlők · Yosemite-fotó — A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Single” nézetében, rejtett vezérlőkkel és Yosemite-fotóháttérrel." data-zoom="../assets/marketing/mac-planning-single-hidden-yosemite.png" type="button"><img alt="A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Single” nézetében, rejtett vezérlőkkel és Yosemite-fotóháttérrel." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-yosemite.png"/></button>
+<figcaption>A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Single” nézetében, rejtett vezérlőkkel és Yosemite-fotóháttérrel.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · rejtett vezérlők · Yosemite-fotó</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Mac · Minimal · rejtett vezérlők · Yosemite-fotó" class="image-button capture-image" data-caption="Mac · Minimal · rejtett vezérlők · Yosemite-fotó — A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Minimal” nézetében, rejtett vezérlőkkel és Yosemite-fotóháttérrel." data-zoom="../assets/marketing/mac-planning-minimal-hidden-yosemite.png" type="button"><img alt="A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Minimal” nézetében, rejtett vezérlőkkel és Yosemite-fotóháttérrel." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-yosemite.png"/></button>
+<figcaption>A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Minimal” nézetében, rejtett vezérlőkkel és Yosemite-fotóháttérrel.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · látható vezérlők · Dolomitok-fotó</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Mac · Single · látható vezérlők · Dolomitok-fotó" class="image-button capture-image" data-caption="Mac · Single · látható vezérlők · Dolomitok-fotó — A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Single” nézetében, látható vezérlőkkel és a Dolomitokat ábrázoló fotóháttérrel." data-zoom="../assets/marketing/mac-planning-single-dolomites.png" type="button"><img alt="A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Single” nézetében, látható vezérlőkkel és a Dolomitokat ábrázoló fotóháttérrel." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-dolomites.png"/></button>
+<figcaption>A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Single” nézetében, látható vezérlőkkel és a Dolomitokat ábrázoló fotóháttérrel.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · látható vezérlők · Dolomitok-fotó</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Mac · Minimal · látható vezérlők · Dolomitok-fotó" class="image-button capture-image" data-caption="Mac · Minimal · látható vezérlők · Dolomitok-fotó — A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Minimal” nézetében, látható vezérlőkkel és a Dolomitokat ábrázoló fotóháttérrel." data-zoom="../assets/marketing/mac-planning-minimal-dolomites.png" type="button"><img alt="A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Minimal” nézetében, látható vezérlőkkel és a Dolomitokat ábrázoló fotóháttérrel." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-dolomites.png"/></button>
+<figcaption>A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Minimal” nézetében, látható vezérlőkkel és a Dolomitokat ábrázoló fotóháttérrel.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · rejtett vezérlők · Dolomitok-fotó</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Mac · Single · rejtett vezérlők · Dolomitok-fotó" class="image-button capture-image" data-caption="Mac · Single · rejtett vezérlők · Dolomitok-fotó — A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Single” nézetében, rejtett vezérlőkkel és a Dolomitokat ábrázoló fotóháttérrel." data-zoom="../assets/marketing/mac-planning-single-hidden-dolomites.png" type="button"><img alt="A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Single” nézetében, rejtett vezérlőkkel és a Dolomitokat ábrázoló fotóháttérrel." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-dolomites.png"/></button>
+<figcaption>A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Single” nézetében, rejtett vezérlőkkel és a Dolomitokat ábrázoló fotóháttérrel.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · rejtett vezérlők · Dolomitok-fotó</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Mac · Minimal · rejtett vezérlők · Dolomitok-fotó" class="image-button capture-image" data-caption="Mac · Minimal · rejtett vezérlők · Dolomitok-fotó — A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Minimal” nézetében, rejtett vezérlőkkel és a Dolomitokat ábrázoló fotóháttérrel." data-zoom="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" type="button"><img alt="A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Minimal” nézetében, rejtett vezérlőkkel és a Dolomitokat ábrázoló fotóháttérrel." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-dolomites.png"/></button>
+<figcaption>A „Planning” 20:04-es értékkel a telepített Mac-alkalmazás „Minimal” nézetében, rejtett vezérlőkkel és a Dolomitokat ábrázoló fotóháttérrel.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="world-clocks-heading" class="highlight-row has-gallery" data-highlight="04" id="world-clocks">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">04</span>Világórák</p>
+<h2 id="world-clocks-heading">Tartsd közel a fontos helyeket.</h2>
+<p>Add hozzá a számodra fontos városokat és időzónákat. Tartsd szem előtt a munkatársakat, a családot és az utazási terveket az időmérők mellett, minden hely aktuális helyi idejével.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Képek – Világórák" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Órák az időmérőid mellett</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Órák az időmérőid mellett" class="image-button capture-image" data-caption="Órák az időmérőid mellett — New York, London és Tokió a „Studio” időmérői mellett, kék rácsos munkaterületen." data-zoom="../assets/marketing/mac-grid-dark.png" type="button"><img alt="New York, London és Tokió a „Studio” időmérői mellett, kék rácsos munkaterületen." decoding="async" loading="lazy" src="../assets/marketing/mac-grid-dark.png"/></button>
+<figcaption>New York, London és Tokió a „Studio” időmérői mellett, kék rácsos munkaterületen.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Válassz helyet</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · mintabeállítás</span></div>
+<button aria-label="Nagyítás: Válassz helyet" class="image-button capture-image" data-caption="Válassz helyet — New York a telepített Mac-alkalmazás óraszerkesztőjében, térképpel, helyi idővel és UTC−04:00 eltolással." data-zoom="../assets/marketing/mac-clock-editor.png" type="button"><img alt="New York a telepített Mac-alkalmazás óraszerkesztőjében, térképpel, helyi idővel és UTC−04:00 eltolással." decoding="async" loading="lazy" src="../assets/marketing/mac-clock-editor.png"/></button>
+<figcaption>New York a telepített Mac-alkalmazás óraszerkesztőjében, térképpel, helyi idővel és UTC−04:00 eltolással.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="world-calendar-heading" class="highlight-row has-gallery" data-highlight="05" id="world-calendar">
+<span class="anchor-target" id="regional-holidays"></span><span class="anchor-target" id="world-events"></span><span class="anchor-target" id="apple-calendar"></span><span class="anchor-target" id="calendar-actions"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">05</span>Világnaptár</p>
+<h2 id="world-calendar-heading">Lásd a napodat összefüggéseiben.</h2>
+<p>Fedezz fel ünnepeket, kulturális dátumokat, világméretű eseményeket és történelmi pillanatokat. Add hozzá Apple-naptáraid csak olvasható nézetét, majd készíts egy dátumból vagy eseményből visszaszámlálót vagy személyes emlékeztetőt.</p>
+<span class="platform-pill">Mac</span>
+<p class="feature-note">Töltsd le egyszer a katalógust, és böngészd offline. Az Apple-naptáraidhoz való hozzáférés választható és csak olvasási jogosultságot ad.</p>
+</div>
+<div aria-label="Képek – Világnaptár" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>A hónap áttekintése</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · mintabeállítás</span></div>
+<button aria-label="Nagyítás: A hónap áttekintése" class="image-button capture-image" data-caption="A hónap áttekintése — 2026. október a kontinentális Kína ünnepprofiljával, kínai naptári dátumokkal és a nemzeti ünnep részleteivel." data-zoom="../assets/marketing/mac-world-calendar-month.png" type="button"><img alt="2026. október a kontinentális Kína ünnepprofiljával, kínai naptári dátumokkal és a nemzeti ünnep részleteivel." decoding="async" loading="lazy" src="../assets/marketing/mac-world-calendar-month.png"/></button>
+<figcaption>2026. október a kontinentális Kína ünnepprofiljával, kínai naptári dátumokkal és a nemzeti ünnep részleteivel.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Heti nézet és a dátum részletei</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · mintabeállítás</span></div>
+<button aria-label="Nagyítás: Heti nézet és a dátum részletei" class="image-button capture-image" data-caption="Heti nézet és a dátum részletei — Szeptember 27. – október 3., kijelölt október 1-jével és a nemzeti ünnep részleteivel a hét mellett." data-zoom="../assets/marketing/mac-world-calendar-week.png" type="button"><img alt="Szeptember 27. – október 3., kijelölt október 1-jével és a nemzeti ünnep részleteivel a hét mellett." decoding="async" loading="lazy" src="../assets/marketing/mac-world-calendar-week.png"/></button>
+<figcaption>Szeptember 27. – október 3., kijelölt október 1-jével és a nemzeti ünnep részleteivel a hét mellett.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="reminders-heading" class="highlight-row copy-only" data-highlight="06" id="reminders">
+<span class="anchor-target" id="email-sms"></span><span class="anchor-target" id="call-me"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">06</span>Emlékeztetők e-mailben, SMS-ben és hívással</p>
+<h2 id="reminders-heading">Emlékeztető a saját szavaiddal.</h2>
+<p>Ütemezz magadnak üzenetet egy időtartam elteltére vagy adott dátumra és időpontra. Válassz e-mailt, SMS-t vagy támogatott egyszeri hívást, és kövesd a kézbesítés állapotát a feladataid mellett.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">A fiók és a szolgáltatás elérhetőségi feltételei érvényesek. Az SMS-ekhez és hívásokhoz saját, támogatott, ellenőrzött telefonszám és külön hozzájárulás szükséges. A hívások amerikai és kanadai számokat támogatnak, angol nyelvűek, és nincs automatikus újratárcsázás.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="sound-library-heading" class="highlight-row has-gallery" data-highlight="07" id="sound-library">
+<span class="anchor-target" id="sounds"></span><span class="anchor-target" id="interval-beeps"></span><span class="anchor-target" id="completion-alerts"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">07</span>Hangkönyvtár</p>
+<h2 id="sound-library-heading">Találd meg a záróhangot.</h2>
+<p>Böngéssz 66 beépített hang között, hallgasd meg őket választás előtt, és mentsd a kedvenceidet. Importálj saját hangfájlokat, vagy használj időközönkénti hangjelzéseket, hogy a munkamenet közben is kövesd az idő múlását.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Képek – Hangkönyvtár" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Hangok a napodhoz</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · mintabeállítás</span></div>
+<button aria-label="Nagyítás: Hangok a napodhoz" class="image-button capture-image" data-caption="Hangok a napodhoz — A telepített Mac-alkalmazás hangkönyvtára „Classic Tones” hangokkal, hullámformákkal, kedvencekkel és lejátszási vezérlőkkel." data-zoom="../assets/marketing/mac-sound-library.png" type="button"><img alt="A telepített Mac-alkalmazás hangkönyvtára „Classic Tones” hangokkal, hullámformákkal, kedvencekkel és lejátszási vezérlőkkel." decoding="async" loading="lazy" src="../assets/marketing/mac-sound-library.png"/></button>
+<figcaption>A telepített Mac-alkalmazás hangkönyvtára „Classic Tones” hangokkal, hullámformákkal, kedvencekkel és lejátszási vezérlőkkel.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>A világ szertartásai</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · mintabeállítás</span></div>
+<button aria-label="Nagyítás: A világ szertartásai" class="image-button capture-image" data-caption="A világ szertartásai — A „World Ceremonial” hangjai a „Gentle Bell” és „Bright Chime” hangoktól a „Ceremonial Drum” és „Trumpet Salute” hangokig." data-zoom="../assets/marketing/mac-sound-ceremonial.png" type="button"><img alt="A „World Ceremonial” hangjai a „Gentle Bell” és „Bright Chime” hangoktól a „Ceremonial Drum” és „Trumpet Salute” hangokig." decoding="async" loading="lazy" src="../assets/marketing/mac-sound-ceremonial.png"/></button>
+<figcaption>A „World Ceremonial” hangjai a „Gentle Bell” és „Bright Chime” hangoktól a „Ceremonial Drum” és „Trumpet Salute” hangokig.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="time-reports-heading" class="highlight-row has-gallery" data-highlight="08" id="time-reports">
+<span class="anchor-target" id="report-charts"></span><span class="anchor-target" id="report-exports"></span><span class="anchor-target" id="report-sharing"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">08</span>Időkimutatások és megosztás</p>
+<h2 id="time-reports-heading">Lásd, mire megy el az időd.</h2>
+<p>Tekintsd át a munkameneteket, napi összesítéseket vagy aktuális értékeket. Fedezd fel a diagramokat, hasonlíts össze időszakokat, és szűrj feladatra vagy csoportra. Ments CSV-, HTML- vagy PDF-fájlt, küldj magadnak kimutatást e-mailben, vagy oszd meg lejáró hivatkozással.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">A helyi kimutatások és exportálások offline is működnek. Az e-mailhez és online megosztáshoz kapcsolat kell.</p>
+</div>
+<div aria-label="Képek – Időkimutatások és megosztás" class="feature-gallery gallery-4 report-gallery">
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>Napi összesítések · A hét áttekintése</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált előzmények</span></div>
+<button aria-label="Nagyítás: Napi összesítések · A hét áttekintése" class="image-button capture-image" data-caption="Napi összesítések · A hét áttekintése — 2026. szeptember 21–25.: 30 óra öt mintafeladatban, napi összesítésekkel és feladatarányokkal. A „Design” 12 óra 05 percet tesz ki (40,3%)." data-zoom="../assets/marketing/mac-report-week-daily-totals.png" type="button"><img alt="2026. szeptember 21–25.: 30 óra öt mintafeladatban, napi összesítésekkel és feladatarányokkal. A „Design” 12 óra 05 percet tesz ki (40,3%)." decoding="async" loading="lazy" src="../assets/marketing/mac-report-week-daily-totals.png"/></button>
+<figcaption>2026. szeptember 21–25.: 30 óra öt mintafeladatban, napi összesítésekkel és feladatarányokkal. A „Design” 12 óra 05 percet tesz ki (40,3%).</figcaption>
+</figure>
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>Munkamenetek · Mikor zajlott a munka</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált előzmények</span></div>
+<button aria-label="Nagyítás: Munkamenetek · Mikor zajlott a munka" class="image-button capture-image" data-caption="Munkamenetek · Mikor zajlott a munka — Egy mintahét 29 munkamenettel és 30 órával; az idővonal megmutatja, mikor zajlott a munka 2026. szeptember 21–25. között." data-zoom="../assets/marketing/mac-report-week-sessions.png" type="button"><img alt="Egy mintahét 29 munkamenettel és 30 órával; az idővonal megmutatja, mikor zajlott a munka 2026. szeptember 21–25. között." decoding="async" loading="lazy" src="../assets/marketing/mac-report-week-sessions.png"/></button>
+<figcaption>Egy mintahét 29 munkamenettel és 30 órával; az idővonal megmutatja, mikor zajlott a munka 2026. szeptember 21–25. között.</figcaption>
+</figure>
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>Munkamenetek · Egy nap részletesen</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált előzmények</span></div>
+<button aria-label="Nagyítás: Munkamenetek · Egy nap részletesen" class="image-button capture-image" data-caption="Munkamenetek · Egy nap részletesen — Hat mintamunkamenet 2026. szeptember 24-én, összesen 6 óra 15 perc, a nap idővonalával és az egyes kezdési és befejezési időpontokkal." data-zoom="../assets/marketing/mac-report-day-sessions.png" type="button"><img alt="Hat mintamunkamenet 2026. szeptember 24-én, összesen 6 óra 15 perc, a nap idővonalával és az egyes kezdési és befejezési időpontokkal." decoding="async" loading="lazy" src="../assets/marketing/mac-report-day-sessions.png"/></button>
+<figcaption>Hat mintamunkamenet 2026. szeptember 24-én, összesen 6 óra 15 perc, a nap idővonalával és az egyes kezdési és befejezési időpontokkal.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Aktuális értékek</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Aktuális értékek" class="image-button capture-image" data-caption="Aktuális értékek — A „Studio” munkaterület aktuális értékei, másolási, exportálási és megosztási vezérlőkkel." data-zoom="../assets/marketing/mac-report-current-readings.png" type="button"><img alt="A „Studio” munkaterület aktuális értékei, másolási, exportálási és megosztási vezérlőkkel." decoding="async" loading="lazy" src="../assets/marketing/mac-report-current-readings.png"/></button>
+<figcaption>A „Studio” munkaterület aktuális értékei, másolási, exportálási és megosztási vezérlőkkel.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="archives-heading" class="highlight-row" data-highlight="09" id="archives">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">09</span>Archívumok</p>
+<h2 id="archives-heading">Őrizd meg az elvégzett munkát.</h2>
+<p>Archiválj egy feladatcsoportot, és tartsd kéznél az előzményeit. Keress a korábbi munkák között, böngészd a mentett pillanatképeket, és nyiss meg egy kimutatást, ha visszatérnél egy projekthez vagy rutinhoz.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Képek – Archívumok" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mentett projektkimutatás</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Mentett projektkimutatás" class="image-button capture-image" data-caption="Mentett projektkimutatás — A „Brand workshop” archívumként mentve, a szimulált időmérőértékekkel együtt megőrizve a kimutatásban." data-zoom="../assets/marketing/mac-archive-report.png" type="button"><img alt="A „Brand workshop” archívumként mentve, a szimulált időmérőértékekkel együtt megőrizve a kimutatásban." decoding="async" loading="lazy" src="../assets/marketing/mac-archive-report.png"/></button>
+<figcaption>A „Brand workshop” archívumként mentve, a szimulált időmérőértékekkel együtt megőrizve a kimutatásban.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="appearance-heading" class="highlight-row has-gallery" data-highlight="10" id="appearance">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">10</span>Megjelenés testreszabása</p>
+<h2 id="appearance-heading">Alakítsd a teret a sajátoddá.</h2>
+<p>Válassz világos vagy sötét megjelenést, egyszínű hátteret vagy fotót. Építs háttérkönyvtárat saját képeidből, és alakítsd az időmérők terét visszafogottra vagy színesre. Mac gépen egy mappa fotóit is váltogathatod.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Szabd személyre az éppen használt eszközt, beleértve a Mac gépre külön megadott megjelenési beállításokat.</p>
+</div>
+<div aria-label="Képek – Megjelenés testreszabása" class="feature-gallery gallery-4">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Egyszínű háttér · fehér</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Egyszínű háttér · fehér" class="image-button capture-image" data-caption="Egyszínű háttér · fehér — A „Design” időmérő „Single” nézetben, egyszínű fehér háttérrel." data-zoom="../assets/marketing/mac-single-light.png" type="button"><img alt="A „Design” időmérő „Single” nézetben, egyszínű fehér háttérrel." decoding="async" loading="lazy" src="../assets/marketing/mac-single-light.png"/></button>
+<figcaption>A „Design” időmérő „Single” nézetben, egyszínű fehér háttérrel.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Egyszínű háttér · sötétkék</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Egyszínű háttér · sötétkék" class="image-button capture-image" data-caption="Egyszínű háttér · sötétkék — Ugyanaz a „Design” időmérő egyszínű sötétkék háttérrel." data-zoom="../assets/marketing/mac-timer-single.png" type="button"><img alt="Ugyanaz a „Design” időmérő egyszínű sötétkék háttérrel." decoding="async" loading="lazy" src="../assets/marketing/mac-timer-single.png"/></button>
+<figcaption>Ugyanaz a „Design” időmérő egyszínű sötétkék háttérrel.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Fotóháttér</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Fotóháttér" class="image-button capture-image" data-caption="Fotóháttér — A „Design” időmérő az XTimers mellékelt, Dolomitokat ábrázoló fotóján." data-zoom="../assets/marketing/mac-single-photo.png" type="button"><img alt="A „Design” időmérő az XTimers mellékelt, Dolomitokat ábrázoló fotóján." decoding="async" loading="lazy" src="../assets/marketing/mac-single-photo.png"/></button>
+<figcaption>A „Design” időmérő az XTimers mellékelt, Dolomitokat ábrázoló fotóján.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Válassz fotót</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · mintabeállítás</span></div>
+<button aria-label="Nagyítás: Válassz fotót" class="image-button capture-image" data-caption="Válassz fotót — A telepített Mac-alkalmazás háttérválasztója a mellékelt fotókkal és a kiválasztott Yosemite-képpel." data-zoom="../assets/marketing/mac-background-library.png" type="button"><img alt="A telepített Mac-alkalmazás háttérválasztója a mellékelt fotókkal és a kiválasztott Yosemite-képpel." decoding="async" loading="lazy" src="../assets/marketing/mac-background-library.png"/></button>
+<figcaption>A telepített Mac-alkalmazás háttérválasztója a mellékelt fotókkal és a kiválasztott Yosemite-képpel.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="menu-bar-heading" class="highlight-row has-gallery" data-highlight="11" id="menu-bar">
+<span class="anchor-target" id="devices"></span><span class="anchor-target" id="mac-shortcuts"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">11</span>Menüsáv- és asztali integráció</p>
+<h2 id="menu-bar-heading">Tartsd az időt a munkád közelében.</h2>
+<p>Nézd meg a feladat nevét és az időmérő értékét közvetlenül a Mac menüsávjában, a főablak megnyitása nélkül. Egy kattintással gyorsan indíthatsz és szüneteltethetsz feladatokat, válthatsz csoportot és nyithatsz kimutatást. A globális billentyűparancs és a mindig felül maradó ablakok kéznél tartják a vezérlőket.</p>
+<span class="platform-pill">Mac</span>
+</div>
+<div aria-label="Képek – Menüsáv- és asztali integráció" class="feature-gallery gallery-3 menu-bar-gallery">
+<figure class="capture-card capture-status-strip">
+<div class="capture-heading"><h3>Az időmérőd egy pillantásra</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Az időmérőd egy pillantásra" class="image-button capture-image" data-caption="Az időmérőd egy pillantásra – a „Planning” 20:04-nél szüneteltetve, közvetlenül a Mac menüsávjában látható, miközben másik alkalmazásban dolgozol." data-zoom="../assets/marketing/mac-menubar-status-planning.png" type="button"><img alt="A „Planning” 20:04-nél szüneteltetve, közvetlenül a Mac menüsávjában, a rendszer állapotikonjai mellett" decoding="async" height="60" loading="lazy" src="../assets/marketing/mac-menubar-status-planning.png" width="572"/></button>
+<figcaption>A feladat neve, az időérték és a szünetjelző látható marad a menüsávban. Kattints az állapotelemre az időmérő vezérlőinek eléréséhez.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Munkaterület a menüsávban</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Munkaterület a menüsávban" class="image-button capture-image" data-caption="Munkaterület a menüsávban — A „Studio” „Design” és további időmérői, feladatcsoportjai, kimutatásai és ablakvezérlői a Mac menüsávjában." data-zoom="../assets/marketing/mac-menu-bar.png" type="button"><img alt="A „Studio” „Design” és további időmérői, feladatcsoportjai, kimutatásai és ablakvezérlői a Mac menüsávjában." decoding="async" loading="lazy" src="../assets/marketing/mac-menu-bar.png"/></button>
+<figcaption>A „Studio” „Design” és további időmérői, feladatcsoportjai, kimutatásai és ablakvezérlői a Mac menüsávjában.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Kompakt időmérőablak</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Kompakt időmérőablak" class="image-button capture-image" data-caption="Kompakt időmérőablak — A „Studio” „Design” időmérője kompakt „Minimal” ablakban." data-zoom="../assets/marketing/mac-timer-minimal.png" type="button"><img alt="A „Studio” „Design” időmérője kompakt „Minimal” ablakban." decoding="async" loading="lazy" src="../assets/marketing/mac-timer-minimal.png"/></button>
+<figcaption>A „Studio” „Design” időmérője kompakt „Minimal” ablakban.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="live-activities-heading" class="highlight-row has-gallery" data-highlight="12" id="live-activities">
+<span class="anchor-target" id="mobile"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">12</span>Élő tevékenységek</p>
+<h2 id="live-activities-heading">Az időd egy pillantásra.</h2>
+<p>Tartsd láthatóan a támogatott időmérőt az iPhone zárolási képernyőjén vagy a Dynamic Islanden. Nézd meg a feladatot és az értékét, majd szüneteltesd vagy folytasd a támogatott időmérőket a teljes munkaterület megnyitása nélkül.</p>
+<span class="platform-pill">iPhone</span>
+<p class="feature-note">Támogatott eszköz és rendszerengedély szükséges. A világórák nem hoznak létre élő tevékenységeket.</p>
+</div>
+<div aria-label="Képek – Élő tevékenységek" class="feature-gallery gallery-2">
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>A zárolási képernyődön</h3><span class="capture-status status-real">iPhone · közvetlen képernyőkép</span></div>
+<button aria-label="Nagyítás: A zárolási képernyődön" class="image-button capture-image" data-caption="A zárolási képernyődön — Visszaszámláló élő tevékenység az iPhone zárolási képernyőjén, a feladat nevével, a hátralévő idővel és szüneteltetés gombbal." data-zoom="../assets/marketing/ios-live-activity-lockscreen.png" type="button"><img alt="Visszaszámláló élő tevékenység az iPhone zárolási képernyőjén, a feladat nevével, a hátralévő idővel és szüneteltetés gombbal." decoding="async" height="2868" loading="lazy" src="../assets/marketing/ios-live-activity-lockscreen.png" width="1320"/></button>
+<figcaption>Visszaszámláló élő tevékenység az iPhone zárolási képernyőjén, a feladat nevével, a hátralévő idővel és szüneteltetés gombbal.</figcaption>
+</figure>
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>A Dynamic Islanden</h3><span class="capture-status status-real">iPhone · közvetlen képernyőkép</span></div>
+<button aria-label="Nagyítás: A Dynamic Islanden" class="image-button capture-image" data-caption="A Dynamic Islanden — A kompakt visszaszámláló az iPhone főképernyőjének megnyitásakor is látható marad a Dynamic Islanden." data-zoom="../assets/marketing/ios-live-activity-island.png" type="button"><img alt="A kompakt visszaszámláló az iPhone főképernyőjének megnyitásakor is látható marad a Dynamic Islanden." decoding="async" height="2868" loading="lazy" src="../assets/marketing/ios-live-activity-island.png" width="1320"/></button>
+<figcaption>A kompakt visszaszámláló az iPhone főképernyőjének megnyitásakor is látható marad a Dynamic Islanden.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="siri-shortcuts-heading" class="highlight-row has-gallery" data-highlight="13" id="siri-shortcuts">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">13</span>Siri és Parancsok</p>
+<h2 id="siri-shortcuts-heading">Kezdd egy szóval vagy koppintással.</h2>
+<p>Indítsd el, szüneteltesd vagy váltsd át a támogatott időmérő állapotát Siri és a Parancsok segítségével. Adj hozzá rendszervezérlőket új stopper indításához, illetve az aktuális feladat szüneteltetéséhez és folytatásához.</p>
+<span class="platform-pill">iPhone · iPad</span>
+<p class="feature-note">Az önálló rendszervezérlők megnyitják az XTimers alkalmazást. Az élő tevékenységek vezérlői helyben is működhetnek.</p>
+</div>
+<div aria-label="Képek – Siri és Parancsok" class="feature-gallery gallery-1">
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>XTimers-parancsaid</h3><span class="capture-status status-real">iPhone · közvetlen képernyőkép</span></div>
+<button aria-label="Nagyítás: XTimers-parancsaid" class="image-button capture-image" data-caption="XTimers-parancsaid — „Toggle Timer”, „Start” és „Pause” műveletek a natív Parancsok alkalmazásban." data-zoom="../assets/marketing/ios-siri-shortcuts.png" type="button"><img alt="„Toggle Timer”, „Start” és „Pause” műveletek a natív Parancsok alkalmazásban." decoding="async" height="2622" loading="lazy" src="../assets/marketing/ios-siri-shortcuts.png" width="1206"/></button>
+<figcaption>„Toggle Timer”, „Start” és „Pause” műveletek a natív Parancsok alkalmazásban.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="offline-heading" class="highlight-row" data-highlight="14" id="offline">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">14</span>Offline használat fiók nélkül</p>
+<h2 id="offline-heading">Vágj bele. Bejelentkezés nélkül.</h2>
+<p>Használd az alapvető időmérőket, visszaszámlálókat, feladatcsoportokat, jegyzeteket, világórákat és helyi kimutatásokat az eszközödön. Folytasd offline, és adj hozzá fiókot, amikor hálózati funkciókat szeretnél.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Képek – Offline használat fiók nélkül" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Saját helyi Studio-munkaterületed</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Saját helyi Studio-munkaterületed" class="image-button capture-image" data-caption="Saját helyi Studio-munkaterületed — A „Studio” munkaterület a kijelentkezett Mac-alkalmazásban, szimulált helyi időmérőkkel és világórákkal." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="A „Studio” munkaterület a kijelentkezett Mac-alkalmazásban, szimulált helyi időmérőkkel és világórákkal." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>A „Studio” munkaterület a kijelentkezett Mac-alkalmazásban, szimulált helyi időmérőkkel és világórákkal.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="synchronization-heading" class="highlight-row" data-highlight="15" id="synchronization">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">15</span>Eszközök közötti szinkronizálás</p>
+<h2 id="synchronization-heading">Folytasd ismerős munkaterületen.</h2>
+<p>Vidd magaddal a támogatott feladatokat, előzményeket, sablonokat, beállításokat és egyéni fájlokat Mac, iPhone és iPad készülékeid között. Helyi munkád átmeneti kapcsolódási problémák esetén is elérhető marad.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Jelentkezz be Apple- vagy Google-fiókkal, e-mailes kóddal vagy jelszóval. Bizonyos eszközbeállítások és csak helyben tárolt adatok az adott eszközön maradnak.</p>
+</div>
+<div aria-label="Képek – Eszközök közötti szinkronizálás" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac gépen</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Mac gépen" class="image-button capture-image" data-caption="Mac gépen — A „Studio” mintaidőmérői és órái a telepített Mac-alkalmazásban." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="A „Studio” mintaidőmérői és órái a telepített Mac-alkalmazásban." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>A „Studio” mintaidőmérői és órái a telepített Mac-alkalmazásban.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="protected-sync-heading" class="highlight-row copy-only" data-highlight="16" id="protected-sync">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">16</span>Védett szinkronizálás</p>
+<h2 id="protected-sync-heading">Válassz védelmet a feltöltés előtt.</h2>
+<p>Titkosítsd az időmérők új tartalmát és az egyéni feltöltéseket az eszközödön a <a href="privacy.html#xin-account">fiókszinkronizálás</a> előtt. A kulcsot az iCloud Keychain vagy egy elmentett helyreállítási kód segítségével állíthatod vissza.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Támogatott fiókoknál választható. Nem terjed ki az emlékeztető üzenetekre, a fiók és a szinkronizálás metaadataira, az aktiválás előtti tartalmakra és az eszköz helyi tárhelyére.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="languages-heading" class="highlight-row has-gallery" data-highlight="17" id="languages">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">17</span>Többnyelvű támogatás</p>
+<h2 id="languages-heading">Otthonosan a saját nyelveden.</h2>
+<p>Válassz 45 nyelv közül, kövesd az eszköz nyelvét, vagy állítsd be a sajátodat. A helyi dátum-, idő- és számformátumok, valamint a jobbról balra haladó elrendezések ismerőssé teszik a munkaterületet.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Képek – Többnyelvű támogatás" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · angol</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · mintabeállítás</span></div>
+<button aria-label="Nagyítás: Mac · angol" class="image-button capture-image" data-caption="Mac · angol — Általános beállítások angolul, a telepített Mac-alkalmazásban, világos megjelenéssel rögzítve." data-zoom="../assets/marketing/mac-settings-english.png" type="button"><img alt="Általános beállítások angolul, a telepített Mac-alkalmazásban, világos megjelenéssel rögzítve." decoding="async" loading="lazy" src="../assets/marketing/mac-settings-english.png"/></button>
+<figcaption>Általános beállítások angolul, a telepített Mac-alkalmazásban, világos megjelenéssel rögzítve.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · japán</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · mintabeállítás</span></div>
+<button aria-label="Nagyítás: Mac · japán" class="image-button capture-image" data-caption="Mac · japán — Ugyanaz az Általános beállítások képernyő japánul, világos megjelenéssel." data-zoom="../assets/marketing/mac-settings-japanese.png" type="button"><img alt="Ugyanaz az Általános beállítások képernyő japánul, világos megjelenéssel." decoding="async" loading="lazy" src="../assets/marketing/mac-settings-japanese.png"/></button>
+<figcaption>Ugyanaz az Általános beállítások képernyő japánul, világos megjelenéssel.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="activity-tracking-heading" class="highlight-row" data-highlight="18" id="activity-tracking">
+<span class="anchor-target" id="extras"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">18</span>Alkalmazástevékenység automatikus követése</p>
+<h2 id="activity-tracking-heading">Lásd, mennyi időt töltesz az alkalmazásokban.</h2>
+<p>Saját döntésed alapján követheted az előtérben lévő Mac-alkalmazásokban töltött időt. Tekintsd át a tevékenységeidet napi, heti, havi vagy éves bontásban, és válaszd ki a távolléti idő elszámolásának módját.</p>
+<span class="platform-pill">Mac · kiválasztott profilok</span>
+<p class="feature-note">Helyi és régebbi profilokban érhető el; a helyi adatokat előnyben részesítő szinkronizálási fiókoknál rejtve marad. Az alkalmazások azonosítóadatai és a tétlenségi idő ezen a Mac gépen maradnak. A webhelyeket, böngészési előzményeket és ablakcímeket nem rögzíti.</p>
+</div>
+<div aria-label="Képek – Alkalmazástevékenység automatikus követése" class="feature-gallery gallery-1">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Tevékenységkövetés vezérlői</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · beállítások</span></div>
+<button aria-label="Nagyítás: Tevékenységkövetés vezérlői" class="image-button capture-image" data-caption="Tevékenységkövetés vezérlői — Natív vezérlők a normál XTimers alkalmazásban a kimutatási időszakhoz, az aktív feladathoz görgetéshez és a távolléti időhöz. Ebben a beállításban a követés ki van kapcsolva." data-zoom="../assets/marketing/mac-activity-tracking-settings.png" type="button"><img alt="Natív vezérlők a normál XTimers alkalmazásban a kimutatási időszakhoz, az aktív feladathoz görgetéshez és a távolléti időhöz. Ebben a beállításban a követés ki van kapcsolva." decoding="async" loading="lazy" src="../assets/marketing/mac-activity-tracking-settings.png"/></button>
+<figcaption>Natív vezérlők a normál XTimers alkalmazásban a kimutatási időszakhoz, az aktív feladathoz görgetéshez és a távolléti időhöz. Ebben a beállításban a követés ki van kapcsolva.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="classic-interface-heading" class="highlight-row has-gallery" data-highlight="19" id="classic-interface">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">19</span>Klasszikus felület</p>
+<h2 id="classic-interface-heading">Még egy mód arra, hogy időt teremts.</h2>
+<p>Válassz kizárólag angol nyelvű, helyi időmérőfelületet saját, külön munkaterülettel. Válts felületet az XTimers alkalmazásból, és használd a számodra ismerős megjelenést.</p>
+<span class="platform-pill">Mac · csak helyben</span>
+<p class="feature-note">A mellékelt Classic futtatókörnyezet szükséges. A fiókszinkronizálás és az e-mail/SMS kézbesítése az XTimers fő felületéhez tartozik.</p>
+</div>
+<div aria-label="Képek – Klasszikus felület" class="feature-gallery gallery-2">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Classic · két oszlop</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Classic · két oszlop" class="image-button capture-image" data-caption="Classic · két oszlop — Kibővített Classic-rutin 20 elnevezett feladattal, a kreatív munkától a tanuláson át a mindennapokig." data-zoom="../assets/marketing/classic-two-column.png" type="button"><img alt="Kibővített Classic-rutin 20 elnevezett feladattal, a kreatív munkától a tanuláson át a mindennapokig." decoding="async" loading="lazy" src="../assets/marketing/classic-two-column.png"/></button>
+<figcaption>Kibővített Classic-rutin 20 elnevezett feladattal, a kreatív munkától a tanuláson át a mindennapokig.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Classic · egy oszlop</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · szimulált adatok</span></div>
+<button aria-label="Nagyítás: Classic · egy oszlop" class="image-button capture-image" data-caption="Classic · egy oszlop — Kompakt Classic-munkaterület öt feladattal: „Design”, „Research”, „Writing”, „Reading” és „Planning”." data-zoom="../assets/marketing/classic-one-column.png" type="button"><img alt="Kompakt Classic-munkaterület öt feladattal: „Design”, „Research”, „Writing”, „Reading” és „Planning”." decoding="async" loading="lazy" src="../assets/marketing/classic-one-column.png"/></button>
+<figcaption>Kompakt Classic-munkaterület öt feladattal: „Design”, „Research”, „Writing”, „Reading” és „Planning”.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="xhelpers-pro-heading" class="highlight-row" data-highlight="20" id="xhelpers-pro">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">20</span>XHelpers Pro kedvezmény</p>
+<h2 id="xhelpers-pro-heading">Társ a Mac gépedhez.</h2>
+<p>Ismerd meg az XHelpers Pro különálló Mac-segédprogramot, amellyel gyorsan eléred a mindennapi vezérlőket. Az XTimers felhasználói a promóciós licencajánlatban találják az aktuális feltételeket és az aktiválás részleteit.</p>
+<span class="platform-pill">Mac · külön alkalmazás</span>
+<a class="text-link" href="https://xintechllc.com/XHelpersPro/" rel="noopener noreferrer" target="_blank">Az XHelpers Pro ajánlat megtekintése</a>
+</div>
+<div aria-label="Képek – XHelpers Pro kedvezmény" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mellékelt XHelpers Pro kedvezmény</h3><span class="capture-status status-real">Telepített Mac-alkalmazás · mintabeállítás</span></div>
+<button aria-label="Nagyítás: Mellékelt XHelpers Pro kedvezmény" class="image-button capture-image" data-caption="Mellékelt XHelpers Pro kedvezmény — A telepített XTimers alkalmazás Névjegy képernyőjén látható a mellékelt XHelpers Pro kedvezmény." data-zoom="../assets/marketing/mac-xhelpers-benefit.png" type="button"><img alt="A telepített XTimers alkalmazás Névjegy képernyőjén látható a mellékelt XHelpers Pro kedvezmény." decoding="async" loading="lazy" src="../assets/marketing/mac-xhelpers-benefit.png"/></button>
+<figcaption>A telepített XTimers alkalmazás Névjegy képernyőjén látható a mellékelt XHelpers Pro kedvezmény.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="download-heading" class="download-section" id="download">
+<div class="wrap download-inner">
+<div class="download-copy"><img alt="" height="64" loading="lazy" src="../assets/marketing/app-icon.png" width="64"/><h2 id="download-heading">Szánj egy kis időt<br/><em>magadra.</em></h2><p>Időmérő a feladataidhoz. Tér a rutinjaidnak.</p></div>
+<div class="download-choices">
+<a class="download-choice" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" class="icon"><use href="#i-mac"></use></svg><span><strong>XTimers a következőhöz: Mac</strong><small>Megtekintés a Mac App Store áruházban</small></span></a>
+<a class="download-choice" href="#mobile"><svg aria-hidden="true" class="icon"><use href="#i-mobile"></use></svg><span><strong>XTimers iPhone és iPad készülékre</strong><small>Fedezd fel a mobilos élményt</small></span></a>
+<p class="download-note">Mac, iPhone és iPad. Mindegyiknek helye van a napodban.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="faq-heading" class="section faq-section wrap" id="support">
+<div class="section-copy"><p class="eyebrow">Néhány hasznos válasz</p><h2 id="faq-heading">Mielőtt<br/>időt szánsz rá.</h2><p>Másra vagy kíváncsi?</p><a class="text-link" href="support.html" rel="noopener noreferrer" target="_blank">Támogatás felkeresése</a></div>
+<div class="faq-list">
+<details><summary>Szükségem van fiókra?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Az alapvető helyi időmérőkhöz, visszaszámlálókhoz, világórákhoz és helyi kimutatásokhoz nem kell fiók. Akkor jelentkezz be, ha fiókszinkronizálást vagy fiókhoz kötött emlékeztetőket szeretnél.</p><p class="feature-note">XTimers egy Xin Account-t használ a felhasználó azonosítására és hitelesítésére. A(z) Xin Account a megosztott azonosító réteg XTimers és az összes egyéb, a fiókvezérlőkben felsorolt kapcsolódó termék számára; ez nem XTimers termékfiók, és nem tartalmaz XTimers időzítőket, jelentéseket, hangokat vagy SMS adatokat.</p></details>
+<details><summary>Használhatom offline az XTimers alkalmazást?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Az alapvető időmérés és a helyi kimutatások offline is működnek. A szinkronizáláshoz, az online megosztáshoz és a szerveres emlékeztetőkhöz kapcsolat kell. A Világnaptár Mac gépen először katalógusletöltést igényel; a telepített katalógus utána offline is használható.</p></details>
+<details><summary>Futhat egyszerre több időmérő?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Igen. Kiválaszthatod, hogy egy másik feladatra váltás szüneteltesse-e az előző támogatott időmérőt, vagy hagyja tovább futni. A feladatcsoportok segítenek rendben tartani a különböző tevékenységeket.</p></details>
+<details><summary>Minden eszközön ugyanazok a funkciók érhetők el?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Az alapmunkaterület időmérőket, visszaszámlálókat, órákat, feladatcsoportokat és kimutatásokat tartalmaz. A Mac menüsávvezérlőkkel és Világnaptárral egészíti ki. Az iPhone kompatibilis készülékeken támogatja az élő tevékenységeket, az iPad pedig több helyet ad a nagyobb feladatelrendezéseknek.</p></details>
+<details><summary>Hogyan működnek a telefonos emlékeztetők?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Az emlékeztetők a saját, támogatott, ellenőrzött számodra érkeznek, külön SMS- vagy hívási hozzájárulással. Az elérhetőség a fióktól, régiótól és szolgáltatástól függ. Az ütemezett híváshoz szerveres megerősítés kell; a „Call Me” angol nyelvű, és nem tárcsáz újra automatikusan.</p></details>
+</div>
+</section>
+</main>
+<footer class="site-footer wrap">
+<p class="footer-copy"><small>© 2026 Xintech LLC</small><span>Szánj időt arra, ami fontos neked.</span></p>
+<div class="footer-links"><a href="#features">Funkciók</a><a href="#devices">Eszközeid</a><a href="support.html" rel="noopener noreferrer" target="_blank">Támogatás</a><a href="privacy.html" rel="noopener noreferrer" target="_blank">Adatvédelem</a><a href="sms-terms.html" rel="noopener noreferrer" target="_blank">Üzenetküldési feltételek</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener noreferrer" target="_blank">Licenc</a><a href="terms.html">Feltételek</a><a href="privacy-choices.html">Adatvédelmi beállítások</a><a href="sms-opt-in.html">SMS-hozzájárulás</a></div>
+</footer>
+<dialog aria-labelledby="image-dialog-caption" class="image-dialog" id="image-dialog">
+<button aria-label="Kicsinyítés és a képernyőkép bezárása" class="image-dialog-zoom-out" type="button">
+<img alt="" id="image-dialog-img"/>
+</button>
+<p id="image-dialog-caption"></p>
+</dialog>
 </body>
 </html>

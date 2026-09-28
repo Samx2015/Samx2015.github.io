@@ -4,18 +4,31 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>XTimers — Mac, iPhone, iPad</title>
-<meta content="XTimers on rauhallinen, Applen alustoille luotu ajastintyötila ajastimille, laskureille, kelloille, tehtäväjoukoille, raporteille, mukautetuille äänille ja tilimuistutuksille Macissa, iPhonessa ja iPadissa." name="description"/>
 <meta content="#fbfaf7" name="theme-color"/>
-<meta content="XTimers" property="og:title"/>
-<meta content="Ajastimet, lähtölaskennat, kellot, raportit, äänet ja tilimuistutukset Macille, iPhonelle ja iPadille." property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="https://xintechllc.com/XTimers/assets/flexible-timers/macos/1-single-light.png" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="XTimers" name="twitter:title"/>
-<meta content="Timers, countdowns, clocks, reports, sounds, and account reminders for Mac, iPhone, and iPad." name="twitter:description"/>
-<meta content="https://xintechllc.com/XTimers/assets/flexible-timers/macos/1-single-light.png" name="twitter:image"/>
-<link rel="canonical" href="https://xintechllc.com/XTimers/fi/">
+<meta content="Mittaa aikaa. Laske alaspäin. Maailmankellot. Maailmankalenteri. Joustava. Muokattava. Kokoa ajastimet, rutiinit, muistutukset ja raportit yhteen työtilaan." name="description"/>
+<title>XTimers — Mittaa aikaa. Laske alaspäin. Maailmankellot. Maailmankalenteri.</title>
+<link href="../assets/marketing/app-icon.png" rel="icon"/>
+<link href="../assets/marketing/styles.css" rel="stylesheet"/>
+<link href="../assets/marketing/site-style.css" rel="stylesheet"/>
+<script defer="" src="../assets/marketing/site.js"></script>
+<script data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19" defer="" src="https://cloud.umami.is/script.js"></script><script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script> <link rel="canonical" href="https://xintechllc.com/XTimers/fi/">
 <link rel="alternate" hreflang="ar" href="https://xintechllc.com/XTimers/ar/">
 <link rel="alternate" hreflang="bn" href="https://xintechllc.com/XTimers/bn/">
 <link rel="alternate" hreflang="ca" href="https://xintechllc.com/XTimers/ca/">
@@ -23,7 +36,7 @@
 <link rel="alternate" hreflang="da" href="https://xintechllc.com/XTimers/da/">
 <link rel="alternate" hreflang="de" href="https://xintechllc.com/XTimers/de/">
 <link rel="alternate" hreflang="el" href="https://xintechllc.com/XTimers/el/">
-<link rel="alternate" hreflang="en" href="https://xintechllc.com/XTimers/flexible-timers.html">
+<link rel="alternate" hreflang="en" href="https://xintechllc.com/XTimers/">
 <link rel="alternate" hreflang="es" href="https://xintechllc.com/XTimers/es/">
 <link rel="alternate" hreflang="fi" href="https://xintechllc.com/XTimers/fi/">
 <link rel="alternate" hreflang="fr" href="https://xintechllc.com/XTimers/fr/">
@@ -61,7 +74,7 @@
 <link rel="alternate" hreflang="vi" href="https://xintechllc.com/XTimers/vi/">
 <link rel="alternate" hreflang="zh-Hans" href="https://xintechllc.com/XTimers/zh-Hans/">
 <link rel="alternate" hreflang="zh-Hant" href="https://xintechllc.com/XTimers/zh-Hant/">
-<link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XTimers/flexible-timers.html">
+<link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XTimers/">
 
 
 
@@ -108,37 +121,43 @@
 
 
 
-<link href="../assets/flexible-timers/brand/favicon.png" rel="icon" type="image/png"/>
-<link href="../assets/flexible-timers/site.css" rel="stylesheet"/>
-<script data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19" defer="" src="https://cloud.umami.is/script.js"></script>
-<script>
-  window.addEventListener("click", function (event) {
-    var link = event.target.closest && event.target.closest("a[href]");
-    if (!link || !window.umami) return;
-    var href = link.getAttribute("href") || "";
-    var url = link.href || href;
-    var eventName = null;
-    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
-    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
-    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
-    else if (/support\.html/i.test(href)) eventName = "Support Click";
-    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
-    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
-    if (eventName) {
-      window.umami.track(eventName, { href: url, path: window.location.pathname });
-    }
-  });
-</script>
 </head>
 <body>
-<div class="page-shell">
-<header class="nav">
-<div class="nav-inner">
-<a aria-label="XTimers-etusivu" class="brand" href="index.html">
-<img alt="" class="brand-icon" height="36" src="../assets/flexible-timers/brand/app-icon.png" width="36"/>
-<span class="brand-text">XTimers<small>Mac • iPhone • iPad</small></span>
-</a>
-<div class="nav-actions"><a class="button primary" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12">Lataa Macille</a><details class="language-menu">
+<svg aria-hidden="true" class="svg-definitions" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<symbol id="i-clock" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></symbol>
+<symbol id="i-timer" viewbox="0 0 24 24"><circle cx="12" cy="14" r="8"></circle><path d="M12 10v4l3 2M9 2h6m-3 0v4m6 0 2 2"></path></symbol>
+<symbol id="i-countdown" viewbox="0 0 24 24"><path d="M6 3h12M6 21h12M7 3v4l5 5-5 5v4m10-18v4l-5 5 5 5v4M9 18h6"></path></symbol>
+<symbol id="i-folder" viewbox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h5l3 3h6a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7h18"></path></symbol>
+<symbol id="i-check" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></symbol>
+<symbol id="i-globe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><ellipse cx="12" cy="12" rx="4" ry="9"></ellipse><path d="M3 12h18"></path></symbol>
+<symbol id="i-calendar" viewbox="0 0 24 24"><rect height="16" rx="3" width="18" x="3" y="5"></rect><path d="M7 3v4m10-4v4M3 11h18m-14 4h3m4 0h3m-10 3h3"></path></symbol>
+<symbol id="i-chart" viewbox="0 0 24 24"><path d="M4 3v18h17M8 17v-5m5 5V7m5 10V4"></path></symbol>
+<symbol id="i-sound" viewbox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9H3m13-1a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"></path></symbol>
+<symbol id="i-mail" viewbox="0 0 24 24"><rect height="14" rx="3" width="18" x="3" y="5"></rect><path d="m3 7 9 6 9-6"></path></symbol>
+<symbol id="i-phone" viewbox="0 0 24 24"><path d="m8 3 3 5-3 3a14 14 0 0 0 5 5l3-3 5 3v3c0 2-2 3-4 2C10 19 5 14 3 7c-1-2 0-4 2-4h3Z"></path></symbol>
+<symbol id="i-sync" viewbox="0 0 24 24"><path d="M20 8a8 8 0 0 0-14-3L3 8m0-5v5h5m-4 8a8 8 0 0 0 14 3l3-3m0 5v-5h-5"></path></symbol>
+<symbol id="i-lock" viewbox="0 0 24 24"><rect height="11" rx="3" width="14" x="5" y="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"></path></symbol>
+<symbol id="i-mac" viewbox="0 0 24 24"><rect height="13" rx="2" width="18" x="3" y="3"></rect><path d="M9 21h6m-3-5v5"></path></symbol>
+<symbol id="i-mobile" viewbox="0 0 24 24"><rect height="20" rx="3" width="12" x="6" y="2"></rect><path d="M10 5h4m-3 14h2"></path></symbol>
+<symbol id="i-tablet" viewbox="0 0 24 24"><rect height="20" rx="3" width="18" x="3" y="2"></rect><path d="M10 19h4"></path></symbol>
+<symbol id="i-plus" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></symbol>
+<symbol id="i-expand" viewbox="0 0 24 24"><path d="M9 3H3v6m0-6 6 6m6 12h6v-6m0 6-6-6"></path></symbol>
+<symbol id="i-leaf" viewbox="0 0 24 24"><path d="M4 20 16 8M5 17C-1 5 13 7 20 3c2 13-4 19-12 15"></path></symbol>
+</defs>
+</svg>
+<a class="skip-link" href="#main">Siirry sisältöön</a>
+<header class="site-header">
+<nav aria-label="Päänavigaatio" class="navigation wrap">
+<a aria-label="XTimers-etusivu" class="brand" href="#top"><img alt="" height="36" src="../assets/marketing/app-icon.png" width="36"/><span>XTimers</span></a>
+<button aria-controls="nav-links" aria-expanded="false" aria-label="Avaa navigaatio" class="menu-toggle" data-close-label="Sulje navigaatio" data-open-label="Avaa navigaatio" type="button"><span></span><span></span></button>
+<div class="nav-links" id="nav-links">
+<a href="#features">Ominaisuudet</a>
+<a href="#devices">Laitteesi</a>
+<a href="#support">Kysymyksiä</a>
+<div class="header-actions">
+<a class="button button-small button-ink" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12">Lataa Macille</a>
+<details class="language-menu">
             <summary>🌐 · Suomi</summary>
             <div class="language-menu-list" aria-label="Kieli">
               <a href="../ar/" lang="ar" dir="rtl">العربية</a>
@@ -148,7 +167,7 @@
               <a href="../da/" lang="da" dir="ltr">Dansk</a>
               <a href="../de/" lang="de" dir="ltr">Deutsch</a>
               <a href="../el/" lang="el" dir="ltr">Ελληνικά</a>
-              <a href="../flexible-timers.html" lang="en" dir="ltr">English</a>
+              <a href="../" lang="en" dir="ltr">English</a>
               <a href="../es/" lang="es" dir="ltr">Español</a>
               <a href="../fi/" lang="fi" dir="ltr" aria-current="page">Suomi</a>
               <a href="../fr/" lang="fr" dir="ltr">Français</a>
@@ -187,34 +206,640 @@
               <a href="../zh-Hans/" lang="zh-Hans" dir="ltr">简体中文</a>
               <a href="../zh-Hant/" lang="zh-Hant" dir="ltr">繁體中文</a>
             </div>
-          </details></div>
+          </details>
 </div>
+</div>
+</nav>
 </header>
-<main id="top">
-<section aria-labelledby="hero-title" class="hero"><div><h1 id="hero-title">XTimers</h1><p class="hero-lede">Ajastimet, lähtölaskennat, kellot, raportit, äänet ja tilimuistutukset Macille, iPhonelle ja iPadille. Aiemmin Flexible Timers.</p></div><div aria-label="XTimers-sovelluksen kuvakaappaukset" class="hero-visual"><div class="device-stage"><div class="desktop-card"><div aria-hidden="true" class="window-bar"><span class="traffic"></span><span class="traffic"></span><span class="traffic"></span><span class="window-title">XTimers for Mac</span></div><figure class="shot"><img alt="XTimersin macOS-pääajastinikkuna vaaleassa tilassa" height="1125" loading="eager" src="../assets/flexible-timers/macos/1-single-light.png" width="1800"/></figure></div><div aria-label="XTimersin iPhone-kuvakaappaus" class="phone-card"><figure class="shot"><img alt="XTimersin iPhone-ajastinluettelo vaaleassa tilassa" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-1-timers-light.png" width="736"/></figure></div><div aria-label="XTimersin iPad-kuvakaappaus" class="tablet-card"><figure class="shot"><img alt="XTimersin iPad-ajastinluettelo vaaleassa tilassa" height="1600" loading="eager" src="../assets/flexible-timers/ios/ipad-13-1-timers-light.png" width="1200"/></figure></div></div></div></section>
-<section aria-label="Monipuoliset ajastinominaisuudet" class="section" id="features"><div class="feature-grid"><article class="feature-card"><h3>Joustavat tehtävätyypit</h3><p>Ajastimet, päättymisajan laskurit, maailmankellot ja tilin muistutustehtävät.</p></article><article class="feature-card"><h3>Tehtäväjoukot</h3><p>Erilliset työt, ruoanlaitto, opiskelut, matkustaminen ja uudelleenkäytettävät rutiinit.</p></article><article class="feature-card"><h3>Raportit ja arkistot</h3><p>Tarkastele tilannekuvia, lisää muistiinpanoja ja lähetä raportteja tilisi sähköpostiisi.</p></article><article class="feature-card"><h3>Äänet ja ilmoitukset</h3><p>Käytä niputettuja ääniä, mukautettuja ääniä, piippauksia ja paikallisia ilmoituksia.</p></article></div></section>
-<section aria-label="XTimers-alustat" class="section platform-section"><article class="platform" id="mac"><div class="platform-copy"><h2>Suunniteltu keskittyvään ajastintyöhön Mac:lla.</h2><p>SwiftUI-ajastimet, joissa on tehtäväjoukot, raportit, synkronointi, mukautetut äänet ja valikkorivin tila.</p><div class="platform-list"><div class="platform-item"><span class="check">✓</span><span>Yksittäinen tai laajennettu ajastinasettelu.</span></div><div class="platform-item"><span class="check">✓</span><span>Aktiivisen ajastimen valikkopalkin tila.</span></div><div class="platform-item"><span class="check">✓</span><span>Ajastimet, lähtölaskenta, kellot ja muistutustehtävät.</span></div><div class="platform-item"><span class="check">✓</span><span>Synkronointi, arkistot, raportit ja mukautetut äänet.</span></div></div></div><div class="shot-stack"><figure class="shot"><img alt="XTimersin laajennettu kaksipalstainen macOS-ajastinikkuna" height="1125" loading="eager" src="../assets/flexible-timers/macos/3-double-light.png" width="1800"/></figure><div class="shot-row"><figure class="shot"><img alt="XTimersin macOS-ajastimen lisäysnäkymä vaaleassa tilassa" height="1125" loading="eager" src="../assets/flexible-timers/macos/5-addtimer-light.png" width="1800"/></figure><figure class="shot"><img alt="XTimersin macOS-laskurin lisäysnäkymä vaaleassa tilassa" height="1125" loading="eager" src="../assets/flexible-timers/macos/7-addcountdown-light.png" width="1800"/></figure></div></div></article><article class="platform reverse" id="ios"><div class="phone-showcase"><div class="phone-screen"><figure class="shot"><img alt="XTimersin iPhone-kuvakaappaus" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-1-timers-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="XTimersin iPhone-kuvakaappaus" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-4-add-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="XTimersin iPhone-kuvakaappaus" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-6-settings-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="XTimersin iPhone-kuvakaappaus" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-7-report-light.png" width="736"/></figure></div></div><div class="platform-copy"><h2>Sama ajastinjärjestelmä iPhone:ssa ja iPad:ssa.</h2><p>Ajastimet, kellot, raportit, asetukset, synkronointi, ilmoitukset ja äänet iPhone:ssa ja iPad:ssa.</p><div class="platform-list"><div class="platform-item"><span class="check">✓</span><span>iPhone-luettelo ja iPad-ruudukkoasettelut.</span></div><div class="platform-item"><span class="check">✓</span><span>Luo ajastimia, lähtölaskuja, kelloja ja muistutuksia.</span></div><div class="platform-item"><span class="check">✓</span><span>Raportit, asetukset, äänet ja synkronointi.</span></div></div></div></article></section>
-<section aria-labelledby="sync-title" class="section" id="sync"><div class="account-panel"><div><h2 id="sync-title">Kirjautuminen Xin Account -tilillä. XTimers-tiedot pysyvät erillään.</h2><p>XTimers käyttää Xin Account -tiliäsi yhteiseen kirjautumiseen ja pitää ajastimet, raportit, asetukset, äänet ja SMS-valinnat erillisinä XTimers-tuotetietoina. <a href="privacy.html#xin-account">Lue, miten tilikerrokset toimivat.</a></p></div><div class="account-list"><div class="account-row"><strong>Kirjaudu eri laitteilla</strong><span>Xin Account tunnistaa sinut ja valtuuttaa jokaisen yhdistetyn XTimers-tilin.</span></div><div class="account-row"><strong>Synkronoi XTimers-tiedot</strong><span>Tehtäväjoukot, arkistot, asetukset ja äänet seuraavat yhdistettyä XTimers-tiliä.</span></div><div class="account-row"><strong>Erilliset tietosuojavalinnat</strong><span>Uloskirjautuminen, paikallisten kopioiden poistaminen, XTimers-tietojen poistaminen ja yleisen Xin Account -tilin poistaminen ovat eri toimintoja.</span></div></div></div></section>
-</main>
-<footer><div>© 2017-2026 Xintech LLC.</div><div class="footer-links"><a href="support.html">Tuki</a><a href="privacy.html">Tietosuoja</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a><a href="sms-terms.html">SMS-ehdot</a><a href="sms-opt-in.html">SMS-suostumus</a></div></footer>
+<main id="main">
+<section aria-labelledby="hero-heading" class="hero wrap" id="top">
+<div class="hero-copy hero-hoefler">
+<div class="hero-copy-inner">
+<p class="eyebrow">Macille, iPhonelle ja iPadille</p>
+<h1 aria-label="Mittaa aikaa. Laske alaspäin. Maailmankellot. Maailmankalenteri." class="hero-timing-heading" id="hero-heading"><span class="hero-line">Mittaa aikaa.</span> <span class="hero-line">Laske alaspäin.</span> <span class="hero-line">Maailmankellot.</span> <span class="hero-line">Maailmankalenteri.</span></h1>
+<p class="hero-payoff">Joustava. Muokattava.</p>
+<p class="hero-description">Yhdistä ajastimet, lähtölaskennat ja maailmankellot yhteen työtilaan. Lisää uudelleenkäytettäviä rutiineja, muistutuksia ja raportteja sekä mukauta asettelu ja ulkoasu omaksesi.</p>
+<p class="hero-note"><svg aria-hidden="true" class="icon"><use href="#i-check"></use></svg>Perusajastimet toimivat ilman verkkoyhteyttä. Tiliä ei tarvita.</p>
 </div>
-<script>
-      // ft-language-menu-dismiss: close the language dropdown when clicking
-      // outside it or pressing Escape. A native <details> otherwise only closes
-      // on a second click of its <summary>.
-      (function () {
-        function closeAll() {
-          document.querySelectorAll('details.language-menu[open]')
-            .forEach(function (d) { d.removeAttribute('open'); });
-        }
-        document.addEventListener('click', function (e) {
-          document.querySelectorAll('details.language-menu[open]')
-            .forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute('open'); });
-        });
-        document.addEventListener('keydown', function (e) {
-          if (e.key === 'Escape' || e.key === 'Esc') closeAll();
-        });
-      })();
-    </script>
+</div>
+<div class="hero-stage">
+<div class="floating-label"><span class="pulse-dot"></span>Varaa aikaa tärkeille asioille.</div>
+<button aria-label="Suurenna: ”Studio”-kuvakaappaus asennetusta Mac-sovelluksesta" class="image-button hero-mac" data-caption="”Studio”-työtila — asennettu Mac-sovellus, jossa on simuloituja ajastimia, lähtölaskenta ja maailmankellot." data-zoom="../assets/marketing/mac-dark.png" type="button">
+<img alt="”Studio”-työtila asennetussa XTimers-sovelluksessa, simuloidut ”Design”-, ”Research”-, ”Writing”-, ”Reading”- ja ”Planning”-ajastimet, ”Focus sprint” sekä kolme maailmankelloa laivastonsinisellä taustalla" fetchpriority="high" height="796" src="../assets/marketing/mac-dark.png" width="1240"/>
+</button>
+<button aria-label="Suurenna: pienikokoinen ”Design”-ajastin, jonka säätimet on piilotettu" class="image-button hero-mini" data-caption="Pienikokoinen ”Design”-ajastin — asennettu Mac-sovellus, jossa on simuloituja tietoja ja piilotetut säätimet." data-zoom="../assets/marketing/mac-timer-minimal-hidden.png" type="button">
+<img alt="”Design”-ajastin pienikokoisessa laivastonsinisessä ”Minimal”-ikkunassa säätimien häivyttyä" fetchpriority="high" height="480" src="../assets/marketing/mac-timer-minimal-hidden.png" width="1240"/>
+</button>
+<button aria-label="Suurenna: Maailmankalenteri aloitusosiossa" class="image-button hero-calendar" data-caption="Maailmankalenteri — lokakuu 2026, yleiset vapaapäivät, kiinalaisen kalenterin päivämäärät ja kansallispäivän tiedot asennetussa Mac-sovelluksessa." data-zoom="../assets/marketing/mac-world-calendar-month.png" type="button">
+<img alt="Maailmankalenterin kuukausiruudukko ja juhlapäivien tiedot vaaleassa Mac-ikkunassa" decoding="async" height="1440" src="../assets/marketing/mac-world-calendar-month.png" width="2040"/>
+</button>
+<button aria-label="Suurenna: Äänikirjasto aloitusosiossa" class="image-button hero-sounds" data-caption="Äänikirjasto — ”World Ceremonial” -äänet, natiivit aaltomuodot, suosikit ja toistosäätimet asennetussa Mac-sovelluksessa." data-zoom="../assets/marketing/mac-sound-ceremonial.png" type="button">
+<img alt="Äänikirjaston ”World Ceremonial” -kokoelma kellon, helähdyksen, rummun ja trumpetin aaltomuotoineen" decoding="async" height="1120" src="../assets/marketing/mac-sound-ceremonial.png" width="1440"/>
+</button>
+<button aria-label="Suurenna: ”Planning” Dolomiittien valokuvan päällä aloitusosiossa" class="image-button hero-photo" data-caption="Omannäköisesi näkymä — ”Planning” lukemassa 20:04 Dolomiittien valokuvan päällä, säätimet automaattisesti piilossa asennetussa Mac-sovelluksessa." data-zoom="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" type="button">
+<img alt="”Planning” lukemassa 20:04 vuoristokuvan päällä ”Minimal”-näkymässä" decoding="async" height="468" src="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" width="658"/>
+</button>
+<button aria-label="Suurenna: viikkoraportin kaaviot aloitusosiossa" class="image-button hero-report" data-caption="Viikkosi tarkastelussa — 30 esimerkkituntia viidessä tehtävässä, päivittäiset summat ja tehtäväosuuksien kaaviot asennetussa Mac-sovelluksessa." data-zoom="../assets/marketing/mac-report-week-daily-totals.png" type="button">
+<img alt="Viikoittainen aikaraportti, jossa on värikkäät pinotut päivittäiset summat ja kaavio kunkin tehtävän osuudesta 30 esimerkkitunnista" decoding="async" height="2396" src="../assets/marketing/mac-report-week-daily-totals.png" width="1520"/>
+</button>
+<div class="hero-menubar">
+<button aria-label="Suurenna: ”Planning”-tehtävän tila valikkorivillä aloitusosiossa" class="image-button" data-caption="Ajastimesi valikkorivillä — ”Planning” keskeytettynä lukemaan 20:04, näkyvissä macOS-tilakuvakkeiden vieressä avaamatta pääikkunaa." data-zoom="../assets/marketing/mac-menubar-status-planning.png" type="button">
+<img alt="macOS-valikkorivi, jossa on keskeytysilmaisin ja ”Planning 20:04” järjestelmän tilakuvakkeiden vieressä" decoding="async" height="60" src="../assets/marketing/mac-menubar-status-planning.png" width="572"/>
+</button>
+<a href="#menu-bar">Ajastimesi suoraan valikkorivillä.</a>
+</div>
+<span class="stage-caption">Aikasi. Yhdellä silmäyksellä.</span>
+</div>
+</section>
+<section aria-label="Tutustu XTimersin ominaisuuksiin" class="feature-overview wrap" id="features">
+<details class="feature-browser">
+<summary>Tutustu kaikkiin 20 ominaisuuteen <span aria-hidden="true">+</span></summary>
+<nav aria-label="Kaikki 20 ominaisuutta luokittain" class="feature-index">
+<div class="feature-group">
+<h3><a class="feature-category" href="#timers"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timers.png" width="16"/>Ajanotto<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#timers"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timers.png" width="16"/><span>Ajastimet ja lähtölaskennat</span></a></li>
+<li><a href="#reminders"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/reminders.png" width="16"/><span>Muistutukset sähköpostilla, SMS-viestillä ja puhelulla</span></a></li>
+<li><a href="#sound-library"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/sound-library.png" width="16"/><span>Äänikirjasto</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#task-sets"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/task-sets.png" width="16"/>Rutiinit<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#task-sets"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/task-sets.png" width="16"/><span>Tehtäväryhmät ja uudelleenkäytettävät mallipohjat</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#timer-views"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timer-views.png" width="16"/>Näkymät<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#timer-views"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timer-views.png" width="16"/><span>Joustavat ajastinnäkymät</span></a></li>
+<li><a href="#classic-interface"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/classic-interface.png" width="16"/><span>Perinteinen käyttöliittymä</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#world-calendar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-clocks.png" width="16"/>Maailmanajat<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#world-clocks"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-clocks.png" width="16"/><span>Maailmankellot</span></a></li>
+<li><a href="#world-calendar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-calendar.png" width="16"/><span>Maailmankalenteri</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#time-reports"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/time-reports.png" width="16"/>Raportit<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#time-reports"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/time-reports.png" width="16"/><span>Aikaraportit ja jakaminen</span></a></li>
+<li><a href="#archives"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/archives.png" width="16"/><span>Arkistot</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#appearance"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/appearance.png" width="16"/>Ulkoasu<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#appearance"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/appearance.png" width="16"/><span>Ulkoasun mukauttaminen</span></a></li>
+<li><a href="#languages"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/languages.png" width="16"/><span>Monikielinen tuki</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#menu-bar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/menu-bar.png" width="16"/>Laitteesi<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#menu-bar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/menu-bar.png" width="16"/><span>Valikkorivi- ja työpöytäintegraatio</span></a></li>
+<li><a href="#live-activities"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/live-activities.png" width="16"/><span>Live-aktiviteetit</span></a></li>
+<li><a href="#siri-shortcuts"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/siri-shortcuts.png" width="16"/><span>Siri ja Pikakomennot</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#offline"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/protected-sync.png" width="16"/>Synkronointi ja tietosuoja<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#offline"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/offline.png" width="16"/><span>Käyttö ilman verkkoyhteyttä ja tiliä</span></a></li>
+<li><a href="#synchronization"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/synchronization.png" width="16"/><span>Laitteiden välinen synkronointi</span></a></li>
+<li><a href="#protected-sync"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/protected-sync.png" width="16"/><span>Suojattu synkronointi</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#activity-tracking"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/xhelpers-pro.png" width="16"/>Enemmän Macilla<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#activity-tracking"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/activity-tracking.png" width="16"/><span>Sovellusten käytön automaattinen seuranta</span></a></li>
+<li><a href="#xhelpers-pro"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/xhelpers-pro.png" width="16"/><span>XHelpers Pro -etu</span></a></li>
+</ul>
+</div>
+</nav>
+</details>
+</section>
+<section aria-labelledby="timers-heading" class="highlight-row has-gallery" data-highlight="01" id="timers">
+<span class="anchor-target" id="count-up-timers"></span><span class="anchor-target" id="countdowns"></span><span class="anchor-target" id="running-timers"></span><span class="anchor-target" id="task-controls"></span><span class="anchor-target" id="notes-history"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">01</span>Ajastimet ja lähtölaskennat</p>
+<h2 id="timers-heading">Varaa aikaa tärkeille asioille.</h2>
+<p>Seuraa käytettyä aikaa, laske alaspäin tietty kesto tai pidä määräaika näkyvissä. Käynnistä yksi tai useita tehtäviä, keskeytä ja jatka sekä liitä muistiinpanoja istuntoihin. Ajastimesi mukautuvat päiväsi muutoksiin.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Kuvat: Ajastimet ja lähtölaskennat" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Ajastintyötilasi</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Ajastintyötilasi" class="image-button capture-image" data-caption="Ajastintyötilasi — ”Studio”-työtila yhdistää viisi kulunutta aikaa mittaavaa ajastinta, ”Focus sprint” -lähtölaskennan ja kolme maailmankelloa." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="”Studio”-työtila yhdistää viisi kulunutta aikaa mittaavaa ajastinta, ”Focus sprint” -lähtölaskennan ja kolme maailmankelloa." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>”Studio”-työtila yhdistää viisi kulunutta aikaa mittaavaa ajastinta, ”Focus sprint” -lähtölaskennan ja kolme maailmankelloa.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Omannäköisesi lähtölaskenta</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Omannäköisesi lähtölaskenta" class="image-button capture-image" data-caption="Omannäköisesi lähtölaskenta — ”Focus sprint”: keskeytettävä 25 minuutin lähtölaskenta ”Studio”-työtilassa, käsin käynnistettävä ja päättyy ”Gentle Bell” -ääneen." data-zoom="../assets/marketing/mac-countdown.png" type="button"><img alt="”Focus sprint”: keskeytettävä 25 minuutin lähtölaskenta ”Studio”-työtilassa, käsin käynnistettävä ja päättyy ”Gentle Bell” -ääneen." decoding="async" loading="lazy" src="../assets/marketing/mac-countdown.png"/></button>
+<figcaption>”Focus sprint”: keskeytettävä 25 minuutin lähtölaskenta ”Studio”-työtilassa, käsin käynnistettävä ja päättyy ”Gentle Bell” -ääneen.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="task-sets-heading" class="highlight-row" data-highlight="02" id="task-sets">
+<span class="anchor-target" id="routines"></span><span class="anchor-target" id="templates"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">02</span>Tehtäväryhmät ja uudelleenkäytettävät mallipohjat</p>
+<h2 id="task-sets-heading">Paikka jokaiselle rutiinille.</h2>
+<p>Anna työlle, oppimiselle ja arjelle omat nimetyt tehtäväryhmänsä. Tallenna tehtävä tai koko ryhmä mallipohjaksi ja tuo tuttu rutiini seuraavaan istuntoosi.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Kuvat: Tehtäväryhmät ja uudelleenkäytettävät mallipohjat" class="feature-gallery gallery-1">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Tehtäväjoukot</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Tehtäväryhmät" class="image-button capture-image" data-caption="Tehtäväryhmät — ”Studio”-tehtäväryhmä, jossa on yhdeksän aktiivista tehtävää ja uudelleenkäytettävä ”Studio Template” -mallipohja." data-zoom="../assets/marketing/mac-task-sets.png" type="button"><img alt="”Studio”-tehtäväryhmä, jossa on yhdeksän aktiivista tehtävää ja uudelleenkäytettävä ”Studio Template” -mallipohja." decoding="async" loading="lazy" src="../assets/marketing/mac-task-sets.png"/></button>
+<figcaption>”Studio”-tehtäväryhmä, jossa on yhdeksän aktiivista tehtävää ja uudelleenkäytettävä ”Studio Template” -mallipohja.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="timer-views-heading" class="highlight-row has-gallery" data-highlight="03" id="timer-views">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">03</span>Joustavat ajastinnäkymät</p>
+<h2 id="timer-views-heading">Sopiva näkymä juuri nyt.</h2>
+<p>Näe kokonaisuus tai keskity yhteen tehtävään. Mac tarjoaa Luettelo-, Ruudukko-, Yksittäinen- ja Minimaalinen-näkymät. iPhonessa ja iPadissa voit valita hetkeen sopivan Luettelo-, Keskittyminen- tai Yksittäinen-näkymän.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">”Single”- ja ”Minimal”-näkymissä säätimet häipyvät, kun osoitin poistuu, ja tulevat esiin, kun viet osoittimen takaisin.</p>
+</div>
+<div aria-label="Kuvat: Joustavat ajastinnäkymät" class="feature-gallery gallery-14">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · luettelo</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Mac · luettelo" class="image-button capture-image" data-caption="Mac · luettelo — ”Studio” luettelonäkymässä, yhdeksän tehtävää tiiviillä riveillä." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="”Studio” luettelonäkymässä, yhdeksän tehtävää tiiviillä riveillä." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>”Studio” luettelonäkymässä, yhdeksän tehtävää tiiviillä riveillä.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · ruudukko</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Mac · ruudukko" class="image-button capture-image" data-caption="Mac · ruudukko — ”Studion” ”Design”-, ”Research”-, ”Writing”-, ”Reading”- ja ”Planning”-ajastimet, ”Focus sprint” sekä New Yorkin, Lontoon ja Tokion kellot." data-zoom="../assets/marketing/mac-grid-light.png" type="button"><img alt="”Studion” ”Design”-, ”Research”-, ”Writing”-, ”Reading”- ja ”Planning”-ajastimet, ”Focus sprint” sekä New Yorkin, Lontoon ja Tokion kellot." decoding="async" loading="lazy" src="../assets/marketing/mac-grid-light.png"/></button>
+<figcaption>”Studion” ”Design”-, ”Research”-, ”Writing”-, ”Reading”- ja ”Planning”-ajastimet, ”Focus sprint” sekä New Yorkin, Lontoon ja Tokion kellot.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · säätimet näkyvissä · täysmusta</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Mac · Single · säätimet näkyvissä · täysmusta" class="image-button capture-image" data-caption="Mac · Single · säätimet näkyvissä · täysmusta — ”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Single”-näkymässä, näkyvillä säätimillä ja täysmustalla taustalla." data-zoom="../assets/marketing/mac-planning-single-black.png" type="button"><img alt="”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Single”-näkymässä, näkyvillä säätimillä ja täysmustalla taustalla." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-black.png"/></button>
+<figcaption>”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Single”-näkymässä, näkyvillä säätimillä ja täysmustalla taustalla.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · säätimet näkyvissä · täysmusta</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Mac · Minimal · säätimet näkyvissä · täysmusta" class="image-button capture-image" data-caption="Mac · Minimal · säätimet näkyvissä · täysmusta — ”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Minimal”-näkymässä, näkyvillä säätimillä ja täysmustalla taustalla." data-zoom="../assets/marketing/mac-planning-minimal-black.png" type="button"><img alt="”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Minimal”-näkymässä, näkyvillä säätimillä ja täysmustalla taustalla." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-black.png"/></button>
+<figcaption>”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Minimal”-näkymässä, näkyvillä säätimillä ja täysmustalla taustalla.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · säätimet piilotettu · täysmusta</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Mac · Single · säätimet piilotettu · täysmusta" class="image-button capture-image" data-caption="Mac · Single · säätimet piilotettu · täysmusta — ”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Single”-näkymässä, piilotetuilla säätimillä ja täysmustalla taustalla." data-zoom="../assets/marketing/mac-planning-single-hidden-black.png" type="button"><img alt="”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Single”-näkymässä, piilotetuilla säätimillä ja täysmustalla taustalla." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-black.png"/></button>
+<figcaption>”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Single”-näkymässä, piilotetuilla säätimillä ja täysmustalla taustalla.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · säätimet piilotettu · täysmusta</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Mac · Minimal · säätimet piilotettu · täysmusta" class="image-button capture-image" data-caption="Mac · Minimal · säätimet piilotettu · täysmusta — ”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Minimal”-näkymässä, piilotetuilla säätimillä ja täysmustalla taustalla." data-zoom="../assets/marketing/mac-planning-minimal-hidden-black.png" type="button"><img alt="”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Minimal”-näkymässä, piilotetuilla säätimillä ja täysmustalla taustalla." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-black.png"/></button>
+<figcaption>”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Minimal”-näkymässä, piilotetuilla säätimillä ja täysmustalla taustalla.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · säätimet näkyvissä · Yosemiten valokuva</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Mac · Single · säätimet näkyvissä · Yosemiten valokuva" class="image-button capture-image" data-caption="Mac · Single · säätimet näkyvissä · Yosemiten valokuva — ”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Single”-näkymässä, näkyvillä säätimillä ja Yosemiten kuvataustalla." data-zoom="../assets/marketing/mac-planning-single-yosemite.png" type="button"><img alt="”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Single”-näkymässä, näkyvillä säätimillä ja Yosemiten kuvataustalla." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-yosemite.png"/></button>
+<figcaption>”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Single”-näkymässä, näkyvillä säätimillä ja Yosemiten kuvataustalla.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · säätimet näkyvissä · Yosemiten valokuva</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Mac · Minimal · säätimet näkyvissä · Yosemiten valokuva" class="image-button capture-image" data-caption="Mac · Minimal · säätimet näkyvissä · Yosemiten valokuva — ”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Minimal”-näkymässä, näkyvillä säätimillä ja Yosemiten kuvataustalla." data-zoom="../assets/marketing/mac-planning-minimal-yosemite.png" type="button"><img alt="”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Minimal”-näkymässä, näkyvillä säätimillä ja Yosemiten kuvataustalla." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-yosemite.png"/></button>
+<figcaption>”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Minimal”-näkymässä, näkyvillä säätimillä ja Yosemiten kuvataustalla.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · säätimet piilotettu · Yosemiten valokuva</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Mac · Single · säätimet piilotettu · Yosemiten valokuva" class="image-button capture-image" data-caption="Mac · Single · säätimet piilotettu · Yosemiten valokuva — ”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Single”-näkymässä, piilotetuilla säätimillä ja Yosemiten kuvataustalla." data-zoom="../assets/marketing/mac-planning-single-hidden-yosemite.png" type="button"><img alt="”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Single”-näkymässä, piilotetuilla säätimillä ja Yosemiten kuvataustalla." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-yosemite.png"/></button>
+<figcaption>”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Single”-näkymässä, piilotetuilla säätimillä ja Yosemiten kuvataustalla.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · säätimet piilotettu · Yosemiten valokuva</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Mac · Minimal · säätimet piilotettu · Yosemiten valokuva" class="image-button capture-image" data-caption="Mac · Minimal · säätimet piilotettu · Yosemiten valokuva — ”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Minimal”-näkymässä, piilotetuilla säätimillä ja Yosemiten kuvataustalla." data-zoom="../assets/marketing/mac-planning-minimal-hidden-yosemite.png" type="button"><img alt="”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Minimal”-näkymässä, piilotetuilla säätimillä ja Yosemiten kuvataustalla." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-yosemite.png"/></button>
+<figcaption>”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Minimal”-näkymässä, piilotetuilla säätimillä ja Yosemiten kuvataustalla.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · säätimet näkyvissä · Dolomiittien valokuva</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Mac · Single · säätimet näkyvissä · Dolomiittien valokuva" class="image-button capture-image" data-caption="Mac · Single · säätimet näkyvissä · Dolomiittien valokuva — ”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Single”-näkymässä, näkyvillä säätimillä ja Dolomiittien kuvataustalla." data-zoom="../assets/marketing/mac-planning-single-dolomites.png" type="button"><img alt="”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Single”-näkymässä, näkyvillä säätimillä ja Dolomiittien kuvataustalla." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-dolomites.png"/></button>
+<figcaption>”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Single”-näkymässä, näkyvillä säätimillä ja Dolomiittien kuvataustalla.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · säätimet näkyvissä · Dolomiittien valokuva</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Mac · Minimal · säätimet näkyvissä · Dolomiittien valokuva" class="image-button capture-image" data-caption="Mac · Minimal · säätimet näkyvissä · Dolomiittien valokuva — ”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Minimal”-näkymässä, näkyvillä säätimillä ja Dolomiittien kuvataustalla." data-zoom="../assets/marketing/mac-planning-minimal-dolomites.png" type="button"><img alt="”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Minimal”-näkymässä, näkyvillä säätimillä ja Dolomiittien kuvataustalla." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-dolomites.png"/></button>
+<figcaption>”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Minimal”-näkymässä, näkyvillä säätimillä ja Dolomiittien kuvataustalla.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Single · säätimet piilotettu · Dolomiittien valokuva</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Mac · Single · säätimet piilotettu · Dolomiittien valokuva" class="image-button capture-image" data-caption="Mac · Single · säätimet piilotettu · Dolomiittien valokuva — ”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Single”-näkymässä, piilotetuilla säätimillä ja Dolomiittien kuvataustalla." data-zoom="../assets/marketing/mac-planning-single-hidden-dolomites.png" type="button"><img alt="”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Single”-näkymässä, piilotetuilla säätimillä ja Dolomiittien kuvataustalla." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-dolomites.png"/></button>
+<figcaption>”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Single”-näkymässä, piilotetuilla säätimillä ja Dolomiittien kuvataustalla.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal · säätimet piilotettu · Dolomiittien valokuva</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Mac · Minimal · säätimet piilotettu · Dolomiittien valokuva" class="image-button capture-image" data-caption="Mac · Minimal · säätimet piilotettu · Dolomiittien valokuva — ”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Minimal”-näkymässä, piilotetuilla säätimillä ja Dolomiittien kuvataustalla." data-zoom="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" type="button"><img alt="”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Minimal”-näkymässä, piilotetuilla säätimillä ja Dolomiittien kuvataustalla." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-dolomites.png"/></button>
+<figcaption>”Planning” lukemassa 20:04 asennetun Mac-sovelluksen ”Minimal”-näkymässä, piilotetuilla säätimillä ja Dolomiittien kuvataustalla.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="world-clocks-heading" class="highlight-row has-gallery" data-highlight="04" id="world-clocks">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">04</span>Maailmankellot</p>
+<h2 id="world-clocks-heading">Pidä tärkeät paikat lähellä.</h2>
+<p>Lisää sinulle tärkeät kaupungit ja aikavyöhykkeet. Pidä työtoverit, perhe ja matkasuunnitelmat mielessä ajastimien rinnalla ja näe kunkin paikan tämänhetkinen paikallisaika.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Kuvat: Maailmankellot" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Kellot ajastimiesi rinnalla</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Kellot ajastimiesi rinnalla" class="image-button capture-image" data-caption="Kellot ajastimiesi rinnalla — New York, Lontoo ja Tokio ”Studio”-ajastimien rinnalla sinisessä ruudukkotyötilassa." data-zoom="../assets/marketing/mac-grid-dark.png" type="button"><img alt="New York, Lontoo ja Tokio ”Studio”-ajastimien rinnalla sinisessä ruudukkotyötilassa." decoding="async" loading="lazy" src="../assets/marketing/mac-grid-dark.png"/></button>
+<figcaption>New York, Lontoo ja Tokio ”Studio”-ajastimien rinnalla sinisessä ruudukkotyötilassa.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Valitse paikka</h3><span class="capture-status status-real">Asennettu Mac-sovellus · esimerkkikokoonpano</span></div>
+<button aria-label="Suurenna: Valitse paikka" class="image-button capture-image" data-caption="Valitse paikka — New York asennetun Mac-sovelluksen kelloeditorissa karttoineen, paikallisaikoineen ja UTC−04:00-aikaeroineen." data-zoom="../assets/marketing/mac-clock-editor.png" type="button"><img alt="New York asennetun Mac-sovelluksen kelloeditorissa karttoineen, paikallisaikoineen ja UTC−04:00-aikaeroineen." decoding="async" loading="lazy" src="../assets/marketing/mac-clock-editor.png"/></button>
+<figcaption>New York asennetun Mac-sovelluksen kelloeditorissa karttoineen, paikallisaikoineen ja UTC−04:00-aikaeroineen.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="world-calendar-heading" class="highlight-row has-gallery" data-highlight="05" id="world-calendar">
+<span class="anchor-target" id="regional-holidays"></span><span class="anchor-target" id="world-events"></span><span class="anchor-target" id="apple-calendar"></span><span class="anchor-target" id="calendar-actions"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">05</span>Maailmankalenteri</p>
+<h2 id="world-calendar-heading">Näe päiväsi osana kokonaisuutta.</h2>
+<p>Tutustu juhlapäiviin, kulttuurisiin merkkipäiviin, maailman tapahtumiin ja historian hetkiin. Lisää Apple-kalentereistasi vain lukuun tarkoitettu näkymä ja tee sitten päivämäärästä tai tapahtumasta lähtölaskenta tai henkilökohtainen muistutus.</p>
+<span class="platform-pill">Mac</span>
+<p class="feature-note">Lataa luettelo kerran, niin voit selata sitä ilman verkkoyhteyttä. Pääsy Apple-kalentereihisi on valinnainen ja vain lukuun.</p>
+</div>
+<div aria-label="Kuvat: Maailmankalenteri" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Kuukausi yhdellä silmäyksellä</h3><span class="capture-status status-real">Asennettu Mac-sovellus · esimerkkikokoonpano</span></div>
+<button aria-label="Suurenna: Kuukausi yhdellä silmäyksellä" class="image-button capture-image" data-caption="Kuukausi yhdellä silmäyksellä — Lokakuu 2026 Manner-Kiinan juhlapäiväprofiililla, kiinalaisen kalenterin päivämäärillä ja kansallispäivän tiedoilla." data-zoom="../assets/marketing/mac-world-calendar-month.png" type="button"><img alt="Lokakuu 2026 Manner-Kiinan juhlapäiväprofiililla, kiinalaisen kalenterin päivämäärillä ja kansallispäivän tiedoilla." decoding="async" loading="lazy" src="../assets/marketing/mac-world-calendar-month.png"/></button>
+<figcaption>Lokakuu 2026 Manner-Kiinan juhlapäiväprofiililla, kiinalaisen kalenterin päivämäärillä ja kansallispäivän tiedoilla.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Viikkonäkymä ja päivämäärän tiedot</h3><span class="capture-status status-real">Asennettu Mac-sovellus · esimerkkikokoonpano</span></div>
+<button aria-label="Suurenna: Viikkonäkymä ja päivämäärän tiedot" class="image-button capture-image" data-caption="Viikkonäkymä ja päivämäärän tiedot — 27. syyskuuta – 3. lokakuuta, 1. lokakuuta valittuna ja sen kansallispäivän tiedot viikon vieressä." data-zoom="../assets/marketing/mac-world-calendar-week.png" type="button"><img alt="27. syyskuuta – 3. lokakuuta, 1. lokakuuta valittuna ja sen kansallispäivän tiedot viikon vieressä." decoding="async" loading="lazy" src="../assets/marketing/mac-world-calendar-week.png"/></button>
+<figcaption>27. syyskuuta – 3. lokakuuta, 1. lokakuuta valittuna ja sen kansallispäivän tiedot viikon vieressä.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="reminders-heading" class="highlight-row copy-only" data-highlight="06" id="reminders">
+<span class="anchor-target" id="email-sms"></span><span class="anchor-target" id="call-me"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">06</span>Muistutukset sähköpostilla, SMS-viestillä ja puhelulla</p>
+<h2 id="reminders-heading">Muistutus omin sanoin.</h2>
+<p>Ajasta viesti itsellesi tietyn ajan kuluttua tai tiettynä päivänä ja kellonaikana. Valitse sähköposti, SMS tai tuettu kertaluonteinen puhelu ja seuraa toimituksen tilaa tehtäviesi rinnalla.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Tilin ja palvelun saatavuusehdot ovat voimassa. SMS-viestit ja puhelut edellyttävät omaa tuettua, vahvistettua numeroa ja erillistä suostumusta. Puhelut toimivat Yhdysvaltojen ja Kanadan numeroihin, ovat englanninkielisiä eikä niitä soiteta automaattisesti uudelleen.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="sound-library-heading" class="highlight-row has-gallery" data-highlight="07" id="sound-library">
+<span class="anchor-target" id="sounds"></span><span class="anchor-target" id="interval-beeps"></span><span class="anchor-target" id="completion-alerts"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">07</span>Äänikirjasto</p>
+<h2 id="sound-library-heading">Löydä sopiva päätösääni.</h2>
+<p>Selaa 66 mukana tulevaa ääntä, kuuntele ennen valintaa ja tallenna suosikkisi. Tuo omaa ääntä tai käytä tasavälein toistuvia äänimerkkejä, jotta pysyt ajan tasalla istunnon jatkuessa.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Kuvat: Äänikirjasto" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Ääniä päivääsi</h3><span class="capture-status status-real">Asennettu Mac-sovellus · esimerkkikokoonpano</span></div>
+<button aria-label="Suurenna: Ääniä päivääsi" class="image-button capture-image" data-caption="Ääniä päivääsi — Asennetun Mac-sovelluksen äänikirjasto, ”Classic Tones” -äänet, aaltomuodot, suosikit ja toistosäätimet." data-zoom="../assets/marketing/mac-sound-library.png" type="button"><img alt="Asennetun Mac-sovelluksen äänikirjasto, ”Classic Tones” -äänet, aaltomuodot, suosikit ja toistosäätimet." decoding="async" loading="lazy" src="../assets/marketing/mac-sound-library.png"/></button>
+<figcaption>Asennetun Mac-sovelluksen äänikirjasto, ”Classic Tones” -äänet, aaltomuodot, suosikit ja toistosäätimet.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Maailman seremoniat</h3><span class="capture-status status-real">Asennettu Mac-sovellus · esimerkkikokoonpano</span></div>
+<button aria-label="Suurenna: Maailman seremoniat" class="image-button capture-image" data-caption="Maailman seremoniat — ”World Ceremonial” -äänet ”Gentle Bell”- ja ”Bright Chime” -äänistä ”Ceremonial Drum”- ja ”Trumpet Salute” -ääniin." data-zoom="../assets/marketing/mac-sound-ceremonial.png" type="button"><img alt="”World Ceremonial” -äänet ”Gentle Bell”- ja ”Bright Chime” -äänistä ”Ceremonial Drum”- ja ”Trumpet Salute” -ääniin." decoding="async" loading="lazy" src="../assets/marketing/mac-sound-ceremonial.png"/></button>
+<figcaption>”World Ceremonial” -äänet ”Gentle Bell”- ja ”Bright Chime” -äänistä ”Ceremonial Drum”- ja ”Trumpet Salute” -ääniin.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="time-reports-heading" class="highlight-row has-gallery" data-highlight="08" id="time-reports">
+<span class="anchor-target" id="report-charts"></span><span class="anchor-target" id="report-exports"></span><span class="anchor-target" id="report-sharing"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">08</span>Aikaraportit ja jakaminen</p>
+<h2 id="time-reports-heading">Näe, mihin aikasi kuluu.</h2>
+<p>Tarkastele istuntoja, päivittäisiä summia tai nykyisiä lukemia. Tutki kaavioita, vertaile jaksoja ja suodata tehtävän tai ryhmän mukaan. Tallenna CSV-, HTML- tai PDF-tiedosto, lähetä raportti itsellesi sähköpostilla tai jaa se vanhenevalla linkillä.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Paikalliset raportit ja viennit toimivat ilman verkkoyhteyttä. Sähköposti ja verkkojakaminen tarvitsevat yhteyden.</p>
+</div>
+<div aria-label="Kuvat: Aikaraportit ja jakaminen" class="feature-gallery gallery-4 report-gallery">
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>Päivittäiset summat · Viikko yhdellä silmäyksellä</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloitu historia</span></div>
+<button aria-label="Suurenna: Päivittäiset summat · Viikko yhdellä silmäyksellä" class="image-button capture-image" data-caption="Päivittäiset summat · Viikko yhdellä silmäyksellä — 21.–25. syyskuuta 2026: 30 tuntia viidessä esimerkkitehtävässä, päivittäiset summat ja tehtävien osuudet. ”Design” kattaa 12 h 05 min (40,3 %)." data-zoom="../assets/marketing/mac-report-week-daily-totals.png" type="button"><img alt="21.–25. syyskuuta 2026: 30 tuntia viidessä esimerkkitehtävässä, päivittäiset summat ja tehtävien osuudet. ”Design” kattaa 12 h 05 min (40,3 %)." decoding="async" loading="lazy" src="../assets/marketing/mac-report-week-daily-totals.png"/></button>
+<figcaption>21.–25. syyskuuta 2026: 30 tuntia viidessä esimerkkitehtävässä, päivittäiset summat ja tehtävien osuudet. ”Design” kattaa 12 h 05 min (40,3 %).</figcaption>
+</figure>
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>Istunnot · Milloin työtä tehtiin</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloitu historia</span></div>
+<button aria-label="Suurenna: Istunnot · Milloin työtä tehtiin" class="image-button capture-image" data-caption="Istunnot · Milloin työtä tehtiin — Esimerkkiviikko, jossa on 29 istuntoa ja 30 tuntia, sekä aikajana, joka näyttää työskentelyn ajankohdat 21.–25. syyskuuta 2026." data-zoom="../assets/marketing/mac-report-week-sessions.png" type="button"><img alt="Esimerkkiviikko, jossa on 29 istuntoa ja 30 tuntia, sekä aikajana, joka näyttää työskentelyn ajankohdat 21.–25. syyskuuta 2026." decoding="async" loading="lazy" src="../assets/marketing/mac-report-week-sessions.png"/></button>
+<figcaption>Esimerkkiviikko, jossa on 29 istuntoa ja 30 tuntia, sekä aikajana, joka näyttää työskentelyn ajankohdat 21.–25. syyskuuta 2026.</figcaption>
+</figure>
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>Istunnot · Yksi päivä tarkemmin</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloitu historia</span></div>
+<button aria-label="Suurenna: Istunnot · Yksi päivä tarkemmin" class="image-button capture-image" data-caption="Istunnot · Yksi päivä tarkemmin — Kuusi esimerkki-istuntoa 24. syyskuuta 2026, yhteensä 6 h 15 min, päivän aikajanalla ja kunkin istunnon aloitus- ja lopetusajoilla." data-zoom="../assets/marketing/mac-report-day-sessions.png" type="button"><img alt="Kuusi esimerkki-istuntoa 24. syyskuuta 2026, yhteensä 6 h 15 min, päivän aikajanalla ja kunkin istunnon aloitus- ja lopetusajoilla." decoding="async" loading="lazy" src="../assets/marketing/mac-report-day-sessions.png"/></button>
+<figcaption>Kuusi esimerkki-istuntoa 24. syyskuuta 2026, yhteensä 6 h 15 min, päivän aikajanalla ja kunkin istunnon aloitus- ja lopetusajoilla.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Nykyiset lukemat</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Nykyiset lukemat" class="image-button capture-image" data-caption="Nykyiset lukemat — ”Studio”-työtilan nykyiset lukemat sekä kopioinnin, viennin ja jakamisen säätimet." data-zoom="../assets/marketing/mac-report-current-readings.png" type="button"><img alt="”Studio”-työtilan nykyiset lukemat sekä kopioinnin, viennin ja jakamisen säätimet." decoding="async" loading="lazy" src="../assets/marketing/mac-report-current-readings.png"/></button>
+<figcaption>”Studio”-työtilan nykyiset lukemat sekä kopioinnin, viennin ja jakamisen säätimet.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="archives-heading" class="highlight-row" data-highlight="09" id="archives">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">09</span>Arkistot</p>
+<h2 id="archives-heading">Säilytä valmistunut työsi.</h2>
+<p>Arkistoi tehtäväryhmä ja pidä sen historia saatavilla. Etsi aiempia töitä, selaa tallennettuja tilannekuvia ja avaa raportti, kun haluat palata projektiin tai rutiiniin.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Kuvat: Arkistot" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Tallennettu projektiraportti</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Tallennettu projektiraportti" class="image-button capture-image" data-caption="Tallennettu projektiraportti — ”Brand workshop” tallennettuna arkistoon siten, että simuloidut ajastinlukemat säilyvät raportissa." data-zoom="../assets/marketing/mac-archive-report.png" type="button"><img alt="”Brand workshop” tallennettuna arkistoon siten, että simuloidut ajastinlukemat säilyvät raportissa." decoding="async" loading="lazy" src="../assets/marketing/mac-archive-report.png"/></button>
+<figcaption>”Brand workshop” tallennettuna arkistoon siten, että simuloidut ajastinlukemat säilyvät raportissa.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="appearance-heading" class="highlight-row has-gallery" data-highlight="10" id="appearance">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">10</span>Ulkoasun mukauttaminen</p>
+<h2 id="appearance-heading">Tee tilasta oman tuntuinen.</h2>
+<p>Valitse vaalea tai tumma ulkoasu, tasainen väri tai valokuva. Rakenna taustakirjasto omista kuvistasi ja tee ajastintyötilastasi niin rauhallinen tai värikäs kuin haluat. Mac voi myös vaihtaa kuvia kansiosta.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Mukauta käyttämääsi laitetta, mukaan lukien Mac-kohtaiset ulkoasupoikkeukset.</p>
+</div>
+<div aria-label="Kuvat: Ulkoasun mukauttaminen" class="feature-gallery gallery-4">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Yksivärinen tausta · valkoinen</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Yksivärinen tausta · valkoinen" class="image-button capture-image" data-caption="Yksivärinen tausta · valkoinen — ”Design”-ajastin ”Single”-näkymässä tasaisen valkoisella taustalla." data-zoom="../assets/marketing/mac-single-light.png" type="button"><img alt="”Design”-ajastin ”Single”-näkymässä tasaisen valkoisella taustalla." decoding="async" loading="lazy" src="../assets/marketing/mac-single-light.png"/></button>
+<figcaption>”Design”-ajastin ”Single”-näkymässä tasaisen valkoisella taustalla.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Tasainen väri · laivastonsininen</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Tasainen väri · laivastonsininen" class="image-button capture-image" data-caption="Tasainen väri · laivastonsininen — Sama ”Design”-ajastin tasaisella laivastonsinisellä taustalla." data-zoom="../assets/marketing/mac-timer-single.png" type="button"><img alt="Sama ”Design”-ajastin tasaisella laivastonsinisellä taustalla." decoding="async" loading="lazy" src="../assets/marketing/mac-timer-single.png"/></button>
+<figcaption>Sama ”Design”-ajastin tasaisella laivastonsinisellä taustalla.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Kuvatausta</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Kuvatausta" class="image-button capture-image" data-caption="Kuvatausta — ”Design”-ajastin XTimersin mukana tulevan Dolomiittien valokuvan päällä." data-zoom="../assets/marketing/mac-single-photo.png" type="button"><img alt="”Design”-ajastin XTimersin mukana tulevan Dolomiittien valokuvan päällä." decoding="async" loading="lazy" src="../assets/marketing/mac-single-photo.png"/></button>
+<figcaption>”Design”-ajastin XTimersin mukana tulevan Dolomiittien valokuvan päällä.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Valitse kuva</h3><span class="capture-status status-real">Asennettu Mac-sovellus · esimerkkikokoonpano</span></div>
+<button aria-label="Suurenna: Valitse kuva" class="image-button capture-image" data-caption="Valitse kuva — Asennetun Mac-sovelluksen taustavalitsin, mukana tulevat valokuvat ja Yosemite valittuna." data-zoom="../assets/marketing/mac-background-library.png" type="button"><img alt="Asennetun Mac-sovelluksen taustavalitsin, mukana tulevat valokuvat ja Yosemite valittuna." decoding="async" loading="lazy" src="../assets/marketing/mac-background-library.png"/></button>
+<figcaption>Asennetun Mac-sovelluksen taustavalitsin, mukana tulevat valokuvat ja Yosemite valittuna.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="menu-bar-heading" class="highlight-row has-gallery" data-highlight="11" id="menu-bar">
+<span class="anchor-target" id="devices"></span><span class="anchor-target" id="mac-shortcuts"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">11</span>Valikkorivi- ja työpöytäintegraatio</p>
+<h2 id="menu-bar-heading">Pidä aika lähellä työtäsi.</h2>
+<p>Näe tehtävän nimi ja ajastimen lukema suoraan Macin valikkorivillä avaamatta pääikkunaa. Klikkaa, niin pääset nopeasti käynnistämään ja keskeyttämään tehtäviä, vaihtamaan ryhmiä ja avaamaan raportteja. Yleinen pikanäppäin ja päällimmäisinä pysyvät ikkunat pitävät säätimet lähellä.</p>
+<span class="platform-pill">Mac</span>
+</div>
+<div aria-label="Kuvat: Valikkorivi- ja työpöytäintegraatio" class="feature-gallery gallery-3 menu-bar-gallery">
+<figure class="capture-card capture-status-strip">
+<div class="capture-heading"><h3>Ajastimesi yhdellä silmäyksellä</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Ajastimesi yhdellä silmäyksellä" class="image-button capture-image" data-caption="Ajastimesi yhdellä silmäyksellä — ”Planning” keskeytettynä lukemaan 20:04, suoraan Macin valikkorivillä, kun työskentelet toisessa sovelluksessa." data-zoom="../assets/marketing/mac-menubar-status-planning.png" type="button"><img alt="”Planning” keskeytettynä lukemaan 20:04, suoraan Macin valikkorivillä järjestelmän tilakuvakkeiden vieressä" decoding="async" height="60" loading="lazy" src="../assets/marketing/mac-menubar-status-planning.png" width="572"/></button>
+<figcaption>Tehtävän nimi, lukema ja keskeytysilmaisin pysyvät näkyvissä valikkorivillä. Klikkaa tilakohdetta päästäksesi ajastimen säätimiin.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Valikkorivin työtila</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Valikkorivin työtila" class="image-button capture-image" data-caption="Valikkorivin työtila — ”Studion” ”Design”-ajastin ja muut ajastimet, tehtäväryhmät, raportit ja ikkunasäätimet Macin valikkorivillä." data-zoom="../assets/marketing/mac-menu-bar.png" type="button"><img alt="”Studion” ”Design”-ajastin ja muut ajastimet, tehtäväryhmät, raportit ja ikkunasäätimet Macin valikkorivillä." decoding="async" loading="lazy" src="../assets/marketing/mac-menu-bar.png"/></button>
+<figcaption>”Studion” ”Design”-ajastin ja muut ajastimet, tehtäväryhmät, raportit ja ikkunasäätimet Macin valikkorivillä.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Pienikokoinen ajastinikkuna</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Pienikokoinen ajastinikkuna" class="image-button capture-image" data-caption="Pienikokoinen ajastinikkuna — ”Studion” ”Design”-ajastin pienikokoisessa ”Minimal”-ikkunassa." data-zoom="../assets/marketing/mac-timer-minimal.png" type="button"><img alt="”Studion” ”Design”-ajastin pienikokoisessa ”Minimal”-ikkunassa." decoding="async" loading="lazy" src="../assets/marketing/mac-timer-minimal.png"/></button>
+<figcaption>”Studion” ”Design”-ajastin pienikokoisessa ”Minimal”-ikkunassa.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="live-activities-heading" class="highlight-row has-gallery" data-highlight="12" id="live-activities">
+<span class="anchor-target" id="mobile"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">12</span>Live-aktiviteetit</p>
+<h2 id="live-activities-heading">Aikasi yhdellä silmäyksellä.</h2>
+<p>Pidä tuettu ajastin näkyvissä iPhonen lukitulla näytöllä tai Dynamic Islandissa. Näe tehtävä ja sen lukema sekä keskeytä tai jatka tuettuja ajastimia avaamatta koko työtilaa.</p>
+<span class="platform-pill">iPhone</span>
+<p class="feature-note">Edellyttää tuettua laitetta ja järjestelmän lupaa. Maailmankellot eivät luo Live-aktiviteetteja.</p>
+</div>
+<div aria-label="Kuvat: Live-aktiviteetit" class="feature-gallery gallery-2">
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>Lukitulla näytölläsi</h3><span class="capture-status status-real">iPhone · suora kuvakaappaus</span></div>
+<button aria-label="Suurenna: Lukitulla näytölläsi" class="image-button capture-image" data-caption="Lukitulla näytölläsi — Lähtölaskennan Live-aktiviteetti iPhonen lukitulla näytöllä, tehtävän nimi, jäljellä oleva aika ja keskeytyspainike." data-zoom="../assets/marketing/ios-live-activity-lockscreen.png" type="button"><img alt="Lähtölaskennan Live-aktiviteetti iPhonen lukitulla näytöllä, tehtävän nimi, jäljellä oleva aika ja keskeytyspainike." decoding="async" height="2868" loading="lazy" src="../assets/marketing/ios-live-activity-lockscreen.png" width="1320"/></button>
+<figcaption>Lähtölaskennan Live-aktiviteetti iPhonen lukitulla näytöllä, tehtävän nimi, jäljellä oleva aika ja keskeytyspainike.</figcaption>
+</figure>
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>Dynamic Islandissa</h3><span class="capture-status status-real">iPhone · suora kuvakaappaus</span></div>
+<button aria-label="Suurenna: Dynamic Islandissa" class="image-button capture-image" data-caption="Dynamic Islandissa — Pienikokoinen lähtölaskenta pysyy näkyvissä Dynamic Islandissa, kun iPhonen Koti-valikko on avoinna." data-zoom="../assets/marketing/ios-live-activity-island.png" type="button"><img alt="Pienikokoinen lähtölaskenta pysyy näkyvissä Dynamic Islandissa, kun iPhonen Koti-valikko on avoinna." decoding="async" height="2868" loading="lazy" src="../assets/marketing/ios-live-activity-island.png" width="1320"/></button>
+<figcaption>Pienikokoinen lähtölaskenta pysyy näkyvissä Dynamic Islandissa, kun iPhonen Koti-valikko on avoinna.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="siri-shortcuts-heading" class="highlight-row has-gallery" data-highlight="13" id="siri-shortcuts">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">13</span>Siri ja Pikakomennot</p>
+<h2 id="siri-shortcuts-heading">Aloita sanalla tai napautuksella.</h2>
+<p>Käynnistä, keskeytä tai vaihda tuetun ajastimen tilaa Sirin ja Pikakomentojen avulla. Lisää järjestelmäsäätimiä uuden sekuntikellon käynnistämiseen tai nykyisen tehtävän keskeyttämiseen ja jatkamiseen.</p>
+<span class="platform-pill">iPhone · iPad</span>
+<p class="feature-note">Erilliset järjestelmäsäätimet avaavat XTimersin. Live-aktiviteetin säätimet voivat toimia suoraan paikallaan.</p>
+</div>
+<div aria-label="Kuvat: Siri ja Pikakomennot" class="feature-gallery gallery-1">
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>XTimers-pikakomentosi</h3><span class="capture-status status-real">iPhone · suora kuvakaappaus</span></div>
+<button aria-label="Suurenna: XTimers-pikakomentosi" class="image-button capture-image" data-caption="XTimers-pikakomentosi — ”Toggle Timer”-, ”Start”- ja ”Pause”-toiminnot natiivissa Pikakomennot-sovelluksessa." data-zoom="../assets/marketing/ios-siri-shortcuts.png" type="button"><img alt="”Toggle Timer”-, ”Start”- ja ”Pause”-toiminnot natiivissa Pikakomennot-sovelluksessa." decoding="async" height="2622" loading="lazy" src="../assets/marketing/ios-siri-shortcuts.png" width="1206"/></button>
+<figcaption>”Toggle Timer”-, ”Start”- ja ”Pause”-toiminnot natiivissa Pikakomennot-sovelluksessa.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="offline-heading" class="highlight-row" data-highlight="14" id="offline">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">14</span>Käyttö ilman verkkoyhteyttä ja tiliä</p>
+<h2 id="offline-heading">Aloita. Kirjautumista ei tarvita.</h2>
+<p>Käytä perusajastimia, lähtölaskentoja, tehtäväryhmiä, muistiinpanoja, maailmankelloja ja paikallisia raportteja laitteellasi. Jatka ilman verkkoyhteyttä ja lisää tili, kun haluat verkko-ominaisuuksia.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Kuvat: Käyttö ilman verkkoyhteyttä ja tiliä" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Paikallinen Studio-työtilasi</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Paikallinen Studio-työtilasi" class="image-button capture-image" data-caption="Paikallinen Studio-työtilasi — ”Studio”-työtila Mac-sovelluksessa ilman kirjautumista, simuloidut paikalliset ajastimet ja maailmankellot." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="”Studio”-työtila Mac-sovelluksessa ilman kirjautumista, simuloidut paikalliset ajastimet ja maailmankellot." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>”Studio”-työtila Mac-sovelluksessa ilman kirjautumista, simuloidut paikalliset ajastimet ja maailmankellot.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="synchronization-heading" class="highlight-row" data-highlight="15" id="synchronization">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">15</span>Laitteiden välinen synkronointi</p>
+<h2 id="synchronization-heading">Jatka tutussa työtilassa.</h2>
+<p>Siirrä tuetut tehtävät, historia, mallipohjat, asetukset ja omat tiedostot Macin, iPhonen ja iPadin välillä. Paikallinen työsi pysyy saatavilla tilapäisten yhteysongelmien aikana.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Kirjaudu Apple- tai Google-tilillä, sähköpostikoodilla tai salasanalla. Osa laiteasetuksista ja vain paikallisista tiedoista pysyy omalla laitteellaan.</p>
+</div>
+<div aria-label="Kuvat: Laitteiden välinen synkronointi" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Macilla</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Macilla" class="image-button capture-image" data-caption="Macilla — ”Studion” esimerkkiajastimet ja kellot asennetussa Mac-sovelluksessa." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="”Studion” esimerkkiajastimet ja kellot asennetussa Mac-sovelluksessa." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>”Studion” esimerkkiajastimet ja kellot asennetussa Mac-sovelluksessa.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="protected-sync-heading" class="highlight-row copy-only" data-highlight="16" id="protected-sync">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">16</span>Suojattu synkronointi</p>
+<h2 id="protected-sync-heading">Valitse suojaus ennen lähettämistä.</h2>
+<p>Salaa ajastimien uusi sisältö ja omat verkkoon lähetettävät tiedostot laitteellasi ennen <a href="privacy.html#xin-account">tilin synkronointia</a>. Palauta avain iCloud Keychain -avainnipun tai tallennetun palautuskoodin avulla.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Valinnainen tuetuilla tileillä. Ei kata muistutusviestejä, tilin tai synkronoinnin metatietoja, ennen aktivointia luotua sisältöä eikä laitteen paikallista tallennustilaa.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="languages-heading" class="highlight-row has-gallery" data-highlight="17" id="languages">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">17</span>Monikielinen tuki</p>
+<h2 id="languages-heading">Tuttua käyttöä omalla kielelläsi.</h2>
+<p>Valitse 45 kielivaihtoehdosta, seuraa laitteesi kieltä tai määritä oma valintasi. Alueelliset päivämäärä-, aika- ja lukumuodot sekä oikealta vasemmalle etenevät asettelut tekevät työtilasta tutun tuntuisen.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Kuvat: Monikielinen tuki" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · englanti</h3><span class="capture-status status-real">Asennettu Mac-sovellus · esimerkkikokoonpano</span></div>
+<button aria-label="Suurenna: Mac · englanti" class="image-button capture-image" data-caption="Mac · englanti — Yleiset asetukset englanniksi, kuvattu asennetusta Mac-sovelluksesta vaaleassa ulkoasussa." data-zoom="../assets/marketing/mac-settings-english.png" type="button"><img alt="Yleiset asetukset englanniksi, kuvattu asennetusta Mac-sovelluksesta vaaleassa ulkoasussa." decoding="async" loading="lazy" src="../assets/marketing/mac-settings-english.png"/></button>
+<figcaption>Yleiset asetukset englanniksi, kuvattu asennetusta Mac-sovelluksesta vaaleassa ulkoasussa.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · japani</h3><span class="capture-status status-real">Asennettu Mac-sovellus · esimerkkikokoonpano</span></div>
+<button aria-label="Suurenna: Mac · japani" class="image-button capture-image" data-caption="Mac · japani — Sama Yleiset asetukset -näkymä japaniksi ja vaaleassa ulkoasussa." data-zoom="../assets/marketing/mac-settings-japanese.png" type="button"><img alt="Sama Yleiset asetukset -näkymä japaniksi ja vaaleassa ulkoasussa." decoding="async" loading="lazy" src="../assets/marketing/mac-settings-japanese.png"/></button>
+<figcaption>Sama Yleiset asetukset -näkymä japaniksi ja vaaleassa ulkoasussa.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="activity-tracking-heading" class="highlight-row" data-highlight="18" id="activity-tracking">
+<span class="anchor-target" id="extras"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">18</span>Sovellusten käytön automaattinen seuranta</p>
+<h2 id="activity-tracking-heading">Katso, miten sovellusaikasi kertyy.</h2>
+<p>Ota halutessasi käyttöön etualalla olevissa Mac-sovelluksissa käytetyn ajan seuranta. Tarkastele toimintaasi päivän, viikon, kuukauden tai vuoden mukaan ja valitse, miten poissaoloaika lasketaan.</p>
+<span class="platform-pill">Mac · valitut profiilit</span>
+<p class="feature-note">Saatavilla paikallisissa ja vanhoissa profiileissa; piilotettu paikallista tallennusta ensisijaisesti käyttäviltä synkronointitileiltä. Sovellusten tunnistetiedot ja toimettomuusaika pysyvät tällä Macilla. Verkkosivustoja, selaushistoriaa tai ikkunoiden otsikoita ei tallenneta.</p>
+</div>
+<div aria-label="Kuvat: Sovellusten käytön automaattinen seuranta" class="feature-gallery gallery-1">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Käytön seurannan säätimet</h3><span class="capture-status status-real">Asennettu Mac-sovellus · asetukset</span></div>
+<button aria-label="Suurenna: Käytön seurannan säätimet" class="image-button capture-image" data-caption="Käytön seurannan säätimet — Tavallisen XTimers-sovelluksen natiivit säätimet raportointijaksolle, aktiiviseen tehtävään vierittämiselle ja poissaoloajalle. Seuranta on pois päältä tässä kokoonpanossa." data-zoom="../assets/marketing/mac-activity-tracking-settings.png" type="button"><img alt="Tavallisen XTimers-sovelluksen natiivit säätimet raportointijaksolle, aktiiviseen tehtävään vierittämiselle ja poissaoloajalle. Seuranta on pois päältä tässä kokoonpanossa." decoding="async" loading="lazy" src="../assets/marketing/mac-activity-tracking-settings.png"/></button>
+<figcaption>Tavallisen XTimers-sovelluksen natiivit säätimet raportointijaksolle, aktiiviseen tehtävään vierittämiselle ja poissaoloajalle. Seuranta on pois päältä tässä kokoonpanossa.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="classic-interface-heading" class="highlight-row has-gallery" data-highlight="19" id="classic-interface">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">19</span>Perinteinen käyttöliittymä</p>
+<h2 id="classic-interface-heading">Toinen tapa järjestää aikaa.</h2>
+<p>Valitse vain englanniksi saatava paikallinen ajastinkäyttöliittymä, jolla on oma erillinen työtila. Vaihda käyttöliittymää XTimers-sovelluksessa ja säilytä itsellesi tuttu esitystapa.</p>
+<span class="platform-pill">Mac · vain paikallisesti</span>
+<p class="feature-note">Edellyttää mukana tulevaa Classic-ajoympäristöä. Tilin synkronointi sekä sähköposti- ja SMS-toimitukset kuuluvat XTimersin pääkäyttöliittymään.</p>
+</div>
+<div aria-label="Kuvat: Perinteinen käyttöliittymä" class="feature-gallery gallery-2">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Classic · kaksi saraketta</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Classic · kaksi saraketta" class="image-button capture-image" data-caption="Classic · kaksi saraketta — Laajennettu Classic-rutiini, jossa on 20 nimettyä tehtävää luovaan työhön, oppimiseen ja arkeen." data-zoom="../assets/marketing/classic-two-column.png" type="button"><img alt="Laajennettu Classic-rutiini, jossa on 20 nimettyä tehtävää luovaan työhön, oppimiseen ja arkeen." decoding="async" loading="lazy" src="../assets/marketing/classic-two-column.png"/></button>
+<figcaption>Laajennettu Classic-rutiini, jossa on 20 nimettyä tehtävää luovaan työhön, oppimiseen ja arkeen.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Classic · yksi sarake</h3><span class="capture-status status-real">Asennettu Mac-sovellus · simuloidut tiedot</span></div>
+<button aria-label="Suurenna: Classic · yksi sarake" class="image-button capture-image" data-caption="Classic · yksi sarake — Pienikokoinen Classic-työtila, jossa on viisi tehtävää: ”Design”, ”Research”, ”Writing”, ”Reading” ja ”Planning”." data-zoom="../assets/marketing/classic-one-column.png" type="button"><img alt="Pienikokoinen Classic-työtila, jossa on viisi tehtävää: ”Design”, ”Research”, ”Writing”, ”Reading” ja ”Planning”." decoding="async" loading="lazy" src="../assets/marketing/classic-one-column.png"/></button>
+<figcaption>Pienikokoinen Classic-työtila, jossa on viisi tehtävää: ”Design”, ”Research”, ”Writing”, ”Reading” ja ”Planning”.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="xhelpers-pro-heading" class="highlight-row" data-highlight="20" id="xhelpers-pro">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">20</span>XHelpers Pro -etu</p>
+<h2 id="xhelpers-pro-heading">Kumppani Macillesi.</h2>
+<p>Tutustu XHelpers Pro -apuohjelmaan, erilliseen Mac-sovellukseen, jolla pääset nopeasti arjen säätimiin. XTimers-käyttäjät voivat tarkistaa tarjouslisenssin ajantasaiset ehdot ja aktivointitiedot.</p>
+<span class="platform-pill">Mac · erillinen sovellus</span>
+<a class="text-link" href="https://xintechllc.com/XHelpersPro/" rel="noopener noreferrer" target="_blank">Katso XHelpers Pro -tarjous</a>
+</div>
+<div aria-label="Kuvat: XHelpers Pro -etu" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mukana tuleva XHelpers Pro -etu</h3><span class="capture-status status-real">Asennettu Mac-sovellus · esimerkkikokoonpano</span></div>
+<button aria-label="Suurenna: Mukana tuleva XHelpers Pro -etu" class="image-button capture-image" data-caption="Mukana tuleva XHelpers Pro -etu — Asennetun XTimers-sovelluksen Tietoja-näkymä näyttää mukana tulevan XHelpers Pro -edun." data-zoom="../assets/marketing/mac-xhelpers-benefit.png" type="button"><img alt="Asennetun XTimers-sovelluksen Tietoja-näkymä näyttää mukana tulevan XHelpers Pro -edun." decoding="async" loading="lazy" src="../assets/marketing/mac-xhelpers-benefit.png"/></button>
+<figcaption>Asennetun XTimers-sovelluksen Tietoja-näkymä näyttää mukana tulevan XHelpers Pro -edun.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="download-heading" class="download-section" id="download">
+<div class="wrap download-inner">
+<div class="download-copy"><img alt="" height="64" loading="lazy" src="../assets/marketing/app-icon.png" width="64"/><h2 id="download-heading">Varaa hetki aikaa<br/><em>itsellesi.</em></h2><p>Ajastin tehtävillesi. Tila rutiineillesi.</p></div>
+<div class="download-choices">
+<a class="download-choice" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" class="icon"><use href="#i-mac"></use></svg><span><strong>XTimers Macille</strong><small>Näytä Mac App Store -kaupassa</small></span></a>
+<a class="download-choice" href="#mobile"><svg aria-hidden="true" class="icon"><use href="#i-mobile"></use></svg><span><strong>XTimers iPhonelle ja iPadille</strong><small>Tutustu mobiilikäyttöön</small></span></a>
+<p class="download-note">Mac, iPhone ja iPad. Jokaisella on paikkansa päivässäsi.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="faq-heading" class="section faq-section wrap" id="support">
+<div class="section-copy"><p class="eyebrow">Muutama hyödyllinen vastaus</p><h2 id="faq-heading">Ennen kuin<br/>varaat aikaa.</h2><p>Onko mielessäsi jotain muuta?</p><a class="text-link" href="support.html" rel="noopener noreferrer" target="_blank">Siirry tukipalveluun</a></div>
+<div class="faq-list">
+<details><summary>Tarvitsenko tilin?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Paikalliset perusajastimet, lähtölaskennat, maailmankellot ja paikalliset raportit eivät vaadi tiliä. Kirjaudu sisään, kun haluat tilin synkronoinnin tai tiliin liitetyt muistutukset.</p><p class="feature-note">XTimers käyttää Xin Account tunnistamaan ja valtuuttamaan käyttäjän. Xin Account on jaettu identiteettikerros XTimers:lle ja kaikille muille tilinhallinnassa luetelluille liitetyille tuotteille; se ei ole XTimers-tuotetili, eikä se sisällä XTimers-ajastimia, raportteja, ääniä tai SMS-tietoja.</p></details>
+<details><summary>Voinko käyttää XTimers-sovellusta ilman verkkoyhteyttä?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Perusajanotto ja paikalliset raportit toimivat ilman verkkoyhteyttä. Synkronointi, verkkojakaminen ja palvelinmuistutukset vaativat yhteyden. Macin Maailmankalenteri vaatii luettelon lataamisen ensin; asennettua luetteloa voi sen jälkeen käyttää ilman yhteyttä.</p></details>
+<details><summary>Voiko useita ajastimia olla käynnissä yhtä aikaa?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Kyllä. Valitse, keskeyttääkö toiseen tehtävään siirtyminen edellisen tuetun ajastimen vai jatkaako se käyntiä. Tehtäväryhmät auttavat pitämään eri tekemiset järjestyksessä.</p></details>
+<details><summary>Ovatko ominaisuudet samat kaikilla laitteilla?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Perustyötilaan kuuluvat ajastimet, lähtölaskennat, kellot, tehtäväryhmät ja raportit. Mac lisää valikkorivin säätimet ja Maailmankalenterin. iPhone tukee Live-aktiviteetteja yhteensopivilla laitteilla, ja iPad antaa tilaa laajemmille tehtäväasetteluille.</p></details>
+<details><summary>Miten puhelinmuistutukset toimivat?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Muistutukset lähetetään omaan tuettuun, vahvistettuun numeroosi erillisellä SMS- tai puhelusuostumuksella. Saatavuus riippuu tilistäsi, alueestasi ja palvelusta. Ajastettu puhelu tarvitsee palvelimen vahvistuksen; ”Call Me” on englanninkielinen eikä soita automaattisesti uudelleen.</p></details>
+</div>
+</section>
+</main>
+<footer class="site-footer wrap">
+<p class="footer-copy"><small>© 2026 Xintech LLC</small><span>Varaa aikaa sille, mikä on sinulle tärkeää.</span></p>
+<div class="footer-links"><a href="#features">Ominaisuudet</a><a href="#devices">Laitteesi</a><a href="support.html" rel="noopener noreferrer" target="_blank">Tuki</a><a href="privacy.html" rel="noopener noreferrer" target="_blank">Tietosuoja</a><a href="sms-terms.html" rel="noopener noreferrer" target="_blank">Viestipalvelun ehdot</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener noreferrer" target="_blank">Lisenssi</a><a href="terms.html">Käyttöehdot</a><a href="privacy-choices.html">Yksityisyyden suojausvaihtoehdot</a><a href="sms-opt-in.html">SMS-suostumus</a></div>
+</footer>
+<dialog aria-labelledby="image-dialog-caption" class="image-dialog" id="image-dialog">
+<button aria-label="Pienennä ja sulje kuvakaappaus" class="image-dialog-zoom-out" type="button">
+<img alt="" id="image-dialog-img"/>
+</button>
+<p id="image-dialog-caption"></p>
+</dialog>
 </body>
 </html>

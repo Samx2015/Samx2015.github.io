@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Flexible Timers by Xintech LLC SMS Opt-In Evidence</title>
+  <title>XTimers by Xintech LLC SMS Opt-In Evidence</title>
   <link rel="stylesheet" href="assets/flexible-timers/page.css">
 <script defer src="https://cloud.umami.is/script.js" data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19"></script>
 <script>
@@ -74,29 +74,30 @@
 </head>
 <body>
   <main>
-    <h1>Flexible Timers by Xintech LLC SMS Opt-In Evidence</h1>
+    <h1>XTimers by Xintech LLC SMS Opt-In Evidence</h1>
 
     <p>
-      This page documents the Flexible Timers SMS opt-in flow for Twilio
-      toll-free verification. Flexible Timers is operated by Xintech LLC. The
-      end business shown to users is Flexible Timers by Xintech LLC. Flexible
-      Timers SMS is limited to account phone verification codes and
-      user-created timer/reminder SMS sent only to a signed-in user's own
-      verified, opted-in account phone number. Flexible Timers does not let
-      users message arbitrary third parties, does not send marketing text
+      This page documents the XTimers SMS opt-in flow for toll-free-number
+      verification. XTimers is operated by Xintech LLC. The end business shown
+      to users is XTimers by Xintech LLC. After a signed-in user gives explicit
+      consent, XTimers may attempt to send a setup verification code to the
+      user-entered proposed account phone number. After successful verification
+      and opt-in, user-created timer/reminder SMS may be attempted only to that
+      same phone number. XTimers does not let
+      users message arbitrary third parties, does not send marketing SMS
       messages, and does not provide two-way SMS chat.
     </p>
 
     <h2>Opt-In Flow</h2>
     <ol>
-      <li>User signs in to Flexible Timers.</li>
+      <li>User signs in to XTimers.</li>
       <li>User opens Account Info.</li>
       <li>User opens Set Up SMS.</li>
       <li>User enters their own phone number.</li>
       <li>The SMS consent checkbox is not pre-selected.</li>
       <li>User affirmatively checks the SMS consent checkbox.</li>
       <li>User can open the SMS Terms and Privacy Policy links from the same screen.</li>
-      <li>User clicks Continue to request a one-time verification code.</li>
+      <li>User clicks Continue to request a one-time verification code at the proposed account phone number.</li>
       <li>
         After the phone is verified and opted in, the user may schedule reminder SMS
         only to that same verified, opted-in account phone number.
@@ -105,53 +106,45 @@
 
     <h2>Consent Language</h2>
     <p class="quote">
-      I agree to receive SMS verification codes and reminder messages I schedule
-      for myself from Flexible Timers by Xintech LLC at this phone number.
+      I agree to receive SMS verification codes and reminder messages from
+      XTimers by Xintech LLC that I schedule for myself at this phone number.
       Standard message and data rates may apply. Reply STOP to opt out and HELP
-      for help. Message frequency varies. Flexible Timers will not send
+      for help. Message frequency varies. XTimers will not send
       marketing texts. Consent is not a condition of purchase.
     </p>
 
-    <h2>Screenshot</h2>
+    <h2>Current Consent Evidence</h2>
     <p>
-      The opt-in screen shows the phone number field, an unchecked affirmative
-      checkbox, consent language naming Flexible Timers by Xintech LLC, SMS
-      Terms link, Privacy Policy link, STOP/HELP wording, message frequency
-      disclosure, message/data rates disclosure, and the owner-phone-only SMS
-      scope.
-    </p>
-    <img
-      src="assets/sms-consent.png"
-      alt="Flexible Timers by Xintech LLC SMS consent screen showing phone entry, an unchecked consent checkbox, terms, privacy, STOP and HELP language">
-
-    <h2>Sample Production Messages</h2>
-    <p class="quote">
-      Flexible Timers verification code: 123456. This code expires in 10
-      minutes. Reply STOP to opt out, HELP for help.
-    </p>
-    <p class="quote">
-      Flexible Timers reminder: You scheduled this SMS reminder for 4:00 PM:
-      Pick up child for after-school piano class. Reply STOP to opt out, HELP
-      for help.
+      The live opt-in screen shows the exact consent language above, the phone
+      number field, an unchecked affirmative checkbox, SMS Terms and Privacy
+      Policy links, STOP/HELP wording, message-frequency and message/data-rate
+      disclosures, and the owner-phone-only SMS scope.
     </p>
 
-    <h2>Keyword Responses</h2>
+    <h2>Sample Message Formats</h2>
+    <p>
+      Verification delivery can use a provider- or region-specific template.
+      A representative verification message format is:
+    </p>
+    <p class="quote">
+      123456 is your verification code.
+    </p>
+    <p>
+      A scheduled reminder uses the user-created reminder text, subject to
+      trimming and delivery-provider formatting. For example, a reminder may contain:
+    </p>
+    <p class="quote">
+      Pick up child for after-school piano class.
+    </p>
+
+    <h2>Keyword Instructions</h2>
     <p>
       Inbound keywords are used only for compliance and account-phone messaging
-      controls. Flexible Timers does not accept general SMS conversations.
-    </p>
-    <p class="quote">
-      STOP response: You are opted out of Flexible Timers SMS. No more messages
-      will be sent. Reply START to opt in again.
-    </p>
-    <p class="quote">
-      HELP response: Flexible Timers sends account verification codes and
-      reminder SMS you schedule for yourself. Help:
-      https://xintechllc.com/FlexibleTimers/support.html. Reply STOP to opt out.
-    </p>
-    <p class="quote">
-      START response: You have opted back in to Flexible Timers SMS messages.
-      Message frequency varies. Reply STOP to opt out, HELP for help.
+      controls. STOP opts out, HELP requests help, and START or YES may opt a
+      previously opted-out phone number back in after app consent. Carrier and
+      provider handling may vary; XTimers does not promise a particular
+      automated keyword response. XTimers does not accept general SMS
+      conversations.
     </p>
 
     <h2>Support and Policies</h2>
@@ -161,13 +154,15 @@
       <a href="support.html">Support</a>
     </div>
 
-    <p>Last updated: June 15, 2026.</p>
+    <p>Last updated: August 23, 2026.</p>
     <footer>
       <div>© 2026 Xintech LLC. All rights reserved.</div>
       <div class="footer-links">
         <a href="index.html">Home</a>
         <a href="support.html">Support</a>
         <a href="privacy.html">Privacy</a>
+        <a href="privacy-choices.html">Privacy Choices</a>
+        <a href="terms.html">Terms</a>
         <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a>
         <a href="sms-terms.html">SMS Terms</a>
         <a href="sms-opt-in.html">SMS Opt-In</a>

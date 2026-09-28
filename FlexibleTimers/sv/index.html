@@ -4,18 +4,31 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>XTimers — Mac, iPhone, iPad</title>
-<meta content="XTimers är en lugn, Apple-anpassad arbetsyta för timers, nedräkningar, klockor, uppgiftsuppsättningar, rapporter, anpassade ljud och kontopåminnelser på Mac, iPhone och iPad." name="description"/>
 <meta content="#fbfaf7" name="theme-color"/>
-<meta content="XTimers" property="og:title"/>
-<meta content="Timers, nedräkningar, klockor, rapporter, ljud och kontopåminnelser för Mac, iPhone och iPad." property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="https://xintechllc.com/XTimers/assets/flexible-timers/macos/1-single-light.png" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="XTimers" name="twitter:title"/>
-<meta content="Timers, countdowns, clocks, reports, sounds, and account reminders for Mac, iPhone, and iPad." name="twitter:description"/>
-<meta content="https://xintechllc.com/XTimers/assets/flexible-timers/macos/1-single-light.png" name="twitter:image"/>
-<link rel="canonical" href="https://xintechllc.com/XTimers/sv/">
+<meta content="Mät tid. Räkna ned. Världsklockor. Världskalender. Flexibelt. Anpassningsbart. Samla tidtagare, rutiner, påminnelser och rapporter i en arbetsyta." name="description"/>
+<title>XTimers — Mät tid. Räkna ned. Världsklockor. Världskalender.</title>
+<link href="../assets/marketing/app-icon.png" rel="icon"/>
+<link href="../assets/marketing/styles.css" rel="stylesheet"/>
+<link href="../assets/marketing/site-style.css" rel="stylesheet"/>
+<script defer="" src="../assets/marketing/site.js"></script>
+<script data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19" defer="" src="https://cloud.umami.is/script.js"></script><script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script> <link rel="canonical" href="https://xintechllc.com/XTimers/sv/">
 <link rel="alternate" hreflang="ar" href="https://xintechllc.com/XTimers/ar/">
 <link rel="alternate" hreflang="bn" href="https://xintechllc.com/XTimers/bn/">
 <link rel="alternate" hreflang="ca" href="https://xintechllc.com/XTimers/ca/">
@@ -23,7 +36,7 @@
 <link rel="alternate" hreflang="da" href="https://xintechllc.com/XTimers/da/">
 <link rel="alternate" hreflang="de" href="https://xintechllc.com/XTimers/de/">
 <link rel="alternate" hreflang="el" href="https://xintechllc.com/XTimers/el/">
-<link rel="alternate" hreflang="en" href="https://xintechllc.com/XTimers/flexible-timers.html">
+<link rel="alternate" hreflang="en" href="https://xintechllc.com/XTimers/">
 <link rel="alternate" hreflang="es" href="https://xintechllc.com/XTimers/es/">
 <link rel="alternate" hreflang="fi" href="https://xintechllc.com/XTimers/fi/">
 <link rel="alternate" hreflang="fr" href="https://xintechllc.com/XTimers/fr/">
@@ -61,7 +74,7 @@
 <link rel="alternate" hreflang="vi" href="https://xintechllc.com/XTimers/vi/">
 <link rel="alternate" hreflang="zh-Hans" href="https://xintechllc.com/XTimers/zh-Hans/">
 <link rel="alternate" hreflang="zh-Hant" href="https://xintechllc.com/XTimers/zh-Hant/">
-<link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XTimers/flexible-timers.html">
+<link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XTimers/">
 
 
 
@@ -108,37 +121,43 @@
 
 
 
-<link href="../assets/flexible-timers/brand/favicon.png" rel="icon" type="image/png"/>
-<link href="../assets/flexible-timers/site.css" rel="stylesheet"/>
-<script data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19" defer="" src="https://cloud.umami.is/script.js"></script>
-<script>
-  window.addEventListener("click", function (event) {
-    var link = event.target.closest && event.target.closest("a[href]");
-    if (!link || !window.umami) return;
-    var href = link.getAttribute("href") || "";
-    var url = link.href || href;
-    var eventName = null;
-    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
-    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
-    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
-    else if (/support\.html/i.test(href)) eventName = "Support Click";
-    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
-    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
-    if (eventName) {
-      window.umami.track(eventName, { href: url, path: window.location.pathname });
-    }
-  });
-</script>
 </head>
 <body>
-<div class="page-shell">
-<header class="nav">
-<div class="nav-inner">
-<a aria-label="XTimers startsida" class="brand" href="index.html">
-<img alt="" class="brand-icon" height="36" src="../assets/flexible-timers/brand/app-icon.png" width="36"/>
-<span class="brand-text">XTimers<small>Mac • iPhone • iPad</small></span>
-</a>
-<div class="nav-actions"><a class="button primary" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12">Ladda ner för Mac</a><details class="language-menu">
+<svg aria-hidden="true" class="svg-definitions" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<symbol id="i-clock" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></symbol>
+<symbol id="i-timer" viewbox="0 0 24 24"><circle cx="12" cy="14" r="8"></circle><path d="M12 10v4l3 2M9 2h6m-3 0v4m6 0 2 2"></path></symbol>
+<symbol id="i-countdown" viewbox="0 0 24 24"><path d="M6 3h12M6 21h12M7 3v4l5 5-5 5v4m10-18v4l-5 5 5 5v4M9 18h6"></path></symbol>
+<symbol id="i-folder" viewbox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h5l3 3h6a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7h18"></path></symbol>
+<symbol id="i-check" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></symbol>
+<symbol id="i-globe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><ellipse cx="12" cy="12" rx="4" ry="9"></ellipse><path d="M3 12h18"></path></symbol>
+<symbol id="i-calendar" viewbox="0 0 24 24"><rect height="16" rx="3" width="18" x="3" y="5"></rect><path d="M7 3v4m10-4v4M3 11h18m-14 4h3m4 0h3m-10 3h3"></path></symbol>
+<symbol id="i-chart" viewbox="0 0 24 24"><path d="M4 3v18h17M8 17v-5m5 5V7m5 10V4"></path></symbol>
+<symbol id="i-sound" viewbox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9H3m13-1a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"></path></symbol>
+<symbol id="i-mail" viewbox="0 0 24 24"><rect height="14" rx="3" width="18" x="3" y="5"></rect><path d="m3 7 9 6 9-6"></path></symbol>
+<symbol id="i-phone" viewbox="0 0 24 24"><path d="m8 3 3 5-3 3a14 14 0 0 0 5 5l3-3 5 3v3c0 2-2 3-4 2C10 19 5 14 3 7c-1-2 0-4 2-4h3Z"></path></symbol>
+<symbol id="i-sync" viewbox="0 0 24 24"><path d="M20 8a8 8 0 0 0-14-3L3 8m0-5v5h5m-4 8a8 8 0 0 0 14 3l3-3m0 5v-5h-5"></path></symbol>
+<symbol id="i-lock" viewbox="0 0 24 24"><rect height="11" rx="3" width="14" x="5" y="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"></path></symbol>
+<symbol id="i-mac" viewbox="0 0 24 24"><rect height="13" rx="2" width="18" x="3" y="3"></rect><path d="M9 21h6m-3-5v5"></path></symbol>
+<symbol id="i-mobile" viewbox="0 0 24 24"><rect height="20" rx="3" width="12" x="6" y="2"></rect><path d="M10 5h4m-3 14h2"></path></symbol>
+<symbol id="i-tablet" viewbox="0 0 24 24"><rect height="20" rx="3" width="18" x="3" y="2"></rect><path d="M10 19h4"></path></symbol>
+<symbol id="i-plus" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></symbol>
+<symbol id="i-expand" viewbox="0 0 24 24"><path d="M9 3H3v6m0-6 6 6m6 12h6v-6m0 6-6-6"></path></symbol>
+<symbol id="i-leaf" viewbox="0 0 24 24"><path d="M4 20 16 8M5 17C-1 5 13 7 20 3c2 13-4 19-12 15"></path></symbol>
+</defs>
+</svg>
+<a class="skip-link" href="#main">Hoppa till innehåll</a>
+<header class="site-header">
+<nav aria-label="Huvudnavigering" class="navigation wrap">
+<a aria-label="XTimers startsida" class="brand" href="#top"><img alt="" height="36" src="../assets/marketing/app-icon.png" width="36"/><span>XTimers</span></a>
+<button aria-controls="nav-links" aria-expanded="false" aria-label="Öppna navigering" class="menu-toggle" data-close-label="Stäng navigering" data-open-label="Öppna navigering" type="button"><span></span><span></span></button>
+<div class="nav-links" id="nav-links">
+<a href="#features">Funktioner</a>
+<a href="#devices">Dina enheter</a>
+<a href="#support">Frågor</a>
+<div class="header-actions">
+<a class="button button-small button-ink" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12">Ladda ner för Mac</a>
+<details class="language-menu">
             <summary>🌐 · Svenska</summary>
             <div class="language-menu-list" aria-label="Språk">
               <a href="../ar/" lang="ar" dir="rtl">العربية</a>
@@ -148,7 +167,7 @@
               <a href="../da/" lang="da" dir="ltr">Dansk</a>
               <a href="../de/" lang="de" dir="ltr">Deutsch</a>
               <a href="../el/" lang="el" dir="ltr">Ελληνικά</a>
-              <a href="../flexible-timers.html" lang="en" dir="ltr">English</a>
+              <a href="../" lang="en" dir="ltr">English</a>
               <a href="../es/" lang="es" dir="ltr">Español</a>
               <a href="../fi/" lang="fi" dir="ltr">Suomi</a>
               <a href="../fr/" lang="fr" dir="ltr">Français</a>
@@ -187,34 +206,640 @@
               <a href="../zh-Hans/" lang="zh-Hans" dir="ltr">简体中文</a>
               <a href="../zh-Hant/" lang="zh-Hant" dir="ltr">繁體中文</a>
             </div>
-          </details></div>
+          </details>
 </div>
+</div>
+</nav>
 </header>
-<main id="top">
-<section aria-labelledby="hero-title" class="hero"><div><h1 id="hero-title">XTimers</h1><p class="hero-lede">Timers, nedräkningar, klockor, rapporter, ljud och kontopåminnelser för Mac, iPhone och iPad. Tidigare Flexible Timers.</p></div><div aria-label="Skärmbilder från XTimers" class="hero-visual"><div class="device-stage"><div class="desktop-card"><div aria-hidden="true" class="window-bar"><span class="traffic"></span><span class="traffic"></span><span class="traffic"></span><span class="window-title">XTimers för Mac</span></div><figure class="shot"><img alt="XTimers huvudfönster för timers på macOS i ljust läge" height="1125" loading="eager" src="../assets/flexible-timers/macos/1-single-light.png" width="1800"/></figure></div><div aria-label="Skärmbild av XTimers på iPhone" class="phone-card"><figure class="shot"><img alt="XTimers timerlista på iPhone i ljust läge" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-1-timers-light.png" width="736"/></figure></div><div aria-label="Skärmbild av XTimers på iPad" class="tablet-card"><figure class="shot"><img alt="XTimers timerlista på iPad i ljust läge" height="1600" loading="eager" src="../assets/flexible-timers/ios/ipad-13-1-timers-light.png" width="1200"/></figure></div></div></div></section>
-<section aria-label="Funktioner för flexibla timers" class="section" id="features"><div class="feature-grid"><article class="feature-card"><h3>Flexibla uppgiftstyper</h3><p>Timers, sluttidsnedräkningar, världsklockor och kontopåminnelser.</p></article><article class="feature-card"><h3>Uppgiftsuppsättningar</h3><p>Separat arbete, matlagning, studier, resor och återanvändbara rutiner.</p></article><article class="feature-card"><h3>Rapporter och arkiv</h3><p>Granska ögonblicksbilder, lägg till anteckningar och skicka rapporter till ditt kontos e-postadress.</p></article><article class="feature-card"><h3>Ljud och notiser</h3><p>Använd buntade ljud, anpassade ljud, pip och lokala aviseringar.</p></article></div></section>
-<section aria-label="XTimers-plattformar" class="section platform-section"><article class="platform" id="mac"><div class="platform-copy"><h2>Byggd för fokuserat timerarbete på Mac.</h2><p>SwiftUI timers med uppgiftsuppsättningar, rapporter, synkronisering, anpassade ljud och menyradsstatus.</p><div class="platform-list"><div class="platform-item"><span class="check">✓</span><span>Enstaka eller utökade timerlayouter.</span></div><div class="platform-item"><span class="check">✓</span><span>Menyradsstatus för den aktiva timern.</span></div><div class="platform-item"><span class="check">✓</span><span>Timers, nedräkningar, klockor och påminnelser.</span></div><div class="platform-item"><span class="check">✓</span><span>Synkronisera, arkivera, rapporter och anpassade ljud.</span></div></div></div><div class="shot-stack"><figure class="shot"><img alt="XTimers utökade timerfönster med två kolumner på macOS" height="1125" loading="eager" src="../assets/flexible-timers/macos/3-double-light.png" width="1800"/></figure><div class="shot-row"><figure class="shot"><img alt="XTimers formulär för att lägga till en timer på macOS i ljust läge" height="1125" loading="eager" src="../assets/flexible-timers/macos/5-addtimer-light.png" width="1800"/></figure><figure class="shot"><img alt="XTimers formulär för att lägga till en nedräkning på macOS i ljust läge" height="1125" loading="eager" src="../assets/flexible-timers/macos/7-addcountdown-light.png" width="1800"/></figure></div></div></article><article class="platform reverse" id="ios"><div class="phone-showcase"><div class="phone-screen"><figure class="shot"><img alt="Skärmbild av XTimers på iPhone" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-1-timers-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="Skärmbild av XTimers på iPhone" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-4-add-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="Skärmbild av XTimers på iPhone" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-6-settings-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="Skärmbild av XTimers på iPhone" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-7-report-light.png" width="736"/></figure></div></div><div class="platform-copy"><h2>Samma timersystem på iPhone och iPad.</h2><p>Timers, klockor, rapporter, inställningar, synkronisering, aviseringar och ljud på iPhone och iPad.</p><div class="platform-list"><div class="platform-item"><span class="check">✓</span><span>iPhone-lista och iPad-rutnätslayouter.</span></div><div class="platform-item"><span class="check">✓</span><span>Skapa timers, nedräkningar, klockor och påminnelser.</span></div><div class="platform-item"><span class="check">✓</span><span>Rapporter, inställningar, ljud och synkronisering.</span></div></div></div></article></section>
-<section aria-labelledby="sync-title" class="section" id="sync"><div class="account-panel"><div><h2 id="sync-title">Inloggning med Xin Account. XTimers-data hålls åtskilda.</h2><p>XTimers använder ditt Xin Account för delad inloggning medan XTimers behåller dina timer, rapporter, inställningar, ljud och SMS-val som XTimers-produktdata. <a href="privacy.html#xin-account">Läs om hur kontolagren fungerar.</a></p></div><div class="account-list"><div class="account-row"><strong>Logga in på flera enheter</strong><span>Ditt Xin Account identifierar dig och auktoriserar varje anslutet XTimers-konto.</span></div><div class="account-row"><strong>Synkronisera XTimers-data</strong><span>Uppgiftsuppsättningar, arkiv, inställningar och ljud följer det anslutna XTimers-kontot.</span></div><div class="account-row"><strong>Separata integritetsval</strong><span>Att logga ut, ta bort lokala kopior, radera XTimers-data och radera det globala Xin Account är separata åtgärder.</span></div></div></div></section>
-</main>
-<footer><div>© 2017-2026 Xintech LLC.</div><div class="footer-links"><a href="support.html">Support</a><a href="privacy.html">Integritet</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a><a href="sms-terms.html">SMS-villkor</a><a href="sms-opt-in.html">SMS-samtycke</a></div></footer>
+<main id="main">
+<section aria-labelledby="hero-heading" class="hero wrap" id="top">
+<div class="hero-copy hero-hoefler">
+<div class="hero-copy-inner">
+<p class="eyebrow">För Mac, iPhone &amp; iPad</p>
+<h1 aria-label="Mät tid. Räkna ned. Världsklockor. Världskalender." class="hero-timing-heading" id="hero-heading"><span class="hero-line">Mät tid.</span> <span class="hero-line">Räkna ned.</span> <span class="hero-line">Världsklockor.</span> <span class="hero-line">Världskalender.</span></h1>
+<p class="hero-payoff">Flexibelt. Anpassningsbart.</p>
+<p class="hero-description">Samla tidtagare, nedräkningar och världsklockor i en arbetsyta. Lägg till återanvändbara rutiner, påminnelser och rapporter, med layouter och utseende som du kan göra till dina egna.</p>
+<p class="hero-note"><svg aria-hidden="true" class="icon"><use href="#i-check"></use></svg>De grundläggande tidtagarna fungerar offline. Inget konto behövs.</p>
 </div>
-<script>
-      // ft-language-menu-dismiss: close the language dropdown when clicking
-      // outside it or pressing Escape. A native <details> otherwise only closes
-      // on a second click of its <summary>.
-      (function () {
-        function closeAll() {
-          document.querySelectorAll('details.language-menu[open]')
-            .forEach(function (d) { d.removeAttribute('open'); });
-        }
-        document.addEventListener('click', function (e) {
-          document.querySelectorAll('details.language-menu[open]')
-            .forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute('open'); });
-        });
-        document.addEventListener('keydown', function (e) {
-          if (e.key === 'Escape' || e.key === 'Esc') closeAll();
-        });
-      })();
-    </script>
+</div>
+<div class="hero-stage">
+<div class="floating-label"><span class="pulse-dot"></span>Avsätt tid för det som betyder något.</div>
+<button aria-label="Förstora: skärmbild av ”Studio” i den installerade Mac-appen" class="image-button hero-mac" data-caption="Arbetsytan ”Studio” — den installerade Mac-appen med simulerade tidtagare, en nedräkning och världsklockor." data-zoom="../assets/marketing/mac-dark.png" type="button">
+<img alt="Arbetsytan ”Studio” i den installerade XTimers-appen, med simulerade tidtagare för ”Design”, ”Research”, ”Writing”, ”Reading” och ”Planning”, ”Focus sprint” och tre världsklockor på marinblå bakgrund" fetchpriority="high" height="796" src="../assets/marketing/mac-dark.png" width="1240"/>
+</button>
+<button aria-label="Förstora: kompakt ”Design”-tidtagare med dolda reglage" class="image-button hero-mini" data-caption="En kompakt ”Design”-tidtagare — den installerade Mac-appen med simulerade data och dolda reglage." data-zoom="../assets/marketing/mac-timer-minimal-hidden.png" type="button">
+<img alt="”Design”-tidtagaren i ett kompakt marinblått minimalfönster efter att reglagen har dolts" fetchpriority="high" height="480" src="../assets/marketing/mac-timer-minimal-hidden.png" width="1240"/>
+</button>
+<button aria-label="Förstora: Världskalender i introduktionen" class="image-button hero-calendar" data-caption="Världskalender — oktober 2026 med helgdagar, kinesiska kalenderdatum och information om nationaldagen i den installerade Mac-appen." data-zoom="../assets/marketing/mac-world-calendar-month.png" type="button">
+<img alt="Världskalenderns månadsrutnät och helgdagsdetaljer i ett ljust Mac-fönster" decoding="async" height="1440" src="../assets/marketing/mac-world-calendar-month.png" width="2040"/>
+</button>
+<button aria-label="Förstora: Ljudbibliotek i introduktionen" class="image-button hero-sounds" data-caption="Ljudbibliotek — ”World Ceremonial”-ljud med inbyggda vågformer, favoriter och uppspelningsreglage i den installerade Mac-appen." data-zoom="../assets/marketing/mac-sound-ceremonial.png" type="button">
+<img alt="Ljudbibliotekets ”World Ceremonial”-samling, med vågformer för klocka, klockspel, trumma och trumpet" decoding="async" height="1120" src="../assets/marketing/mac-sound-ceremonial.png" width="1440"/>
+</button>
+<button aria-label="Förstora: ”Planning” med fotot av Dolomiterna i introduktionen" class="image-button hero-photo" data-caption="Din egen vy — ”Planning” på 20:04 över fotot av Dolomiterna, med automatiskt dolda reglage i den installerade Mac-appen." data-zoom="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" type="button">
+<img alt="”Planning” på 20:04 över ett bergsfoto i minimalvyn" decoding="async" height="468" src="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" width="658"/>
+</button>
+<button aria-label="Förstora: veckorapportens diagram i introduktionen" class="image-button hero-report" data-caption="Din vecka i fokus — 30 exempeltimmar över fem uppgifter, med dagssummor och diagram över uppgiftsandelar i den installerade Mac-appen." data-zoom="../assets/marketing/mac-report-week-daily-totals.png" type="button">
+<img alt="Veckorapport över tid med färgglada staplade dagssummor och ett diagram som visar varje uppgifts andel av 30 exempeltimmar" decoding="async" height="2396" src="../assets/marketing/mac-report-week-daily-totals.png" width="1520"/>
+</button>
+<div class="hero-menubar">
+<button aria-label="Förstora: menyradsstatus för ”Planning” i introduktionen" class="image-button" data-caption="Din tidtagare i menyraden — ”Planning” pausad vid 20:04, synlig bredvid statussymbolerna i macOS utan att öppna huvudfönstret." data-zoom="../assets/marketing/mac-menubar-status-planning.png" type="button">
+<img alt="Menyraden i macOS med en pausindikator och ”Planning 20:04” bredvid systemstatussymboler" decoding="async" height="60" src="../assets/marketing/mac-menubar-status-planning.png" width="572"/>
+</button>
+<a href="#menu-bar">Din tidtagare, direkt i menyraden.</a>
+</div>
+<span class="stage-caption">Din tid. I överblick.</span>
+</div>
+</section>
+<section aria-label="Utforska funktionerna i XTimers" class="feature-overview wrap" id="features">
+<details class="feature-browser">
+<summary>Se alla 20 funktioner <span aria-hidden="true">+</span></summary>
+<nav aria-label="Alla 20 funktioner efter kategori" class="feature-index">
+<div class="feature-group">
+<h3><a class="feature-category" href="#timers"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timers.png" width="16"/>Tidtagning<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#timers"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timers.png" width="16"/><span>Tidtagare och nedräkningar</span></a></li>
+<li><a href="#reminders"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/reminders.png" width="16"/><span>Påminnelser via e-post, SMS och samtal</span></a></li>
+<li><a href="#sound-library"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/sound-library.png" width="16"/><span>Ljudbibliotek</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#task-sets"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/task-sets.png" width="16"/>Rutiner<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#task-sets"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/task-sets.png" width="16"/><span>Uppgiftsgrupper och återanvändbara mallar</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#timer-views"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timer-views.png" width="16"/>Vyer<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#timer-views"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timer-views.png" width="16"/><span>Flexibla tidtagarvyer</span></a></li>
+<li><a href="#classic-interface"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/classic-interface.png" width="16"/><span>Klassiskt gränssnitt</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#world-calendar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-clocks.png" width="16"/>Världstid<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#world-clocks"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-clocks.png" width="16"/><span>Världsklockor</span></a></li>
+<li><a href="#world-calendar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-calendar.png" width="16"/><span>Världskalender</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#time-reports"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/time-reports.png" width="16"/>Rapporter<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#time-reports"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/time-reports.png" width="16"/><span>Tidsrapporter och delning</span></a></li>
+<li><a href="#archives"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/archives.png" width="16"/><span>Arkiv</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#appearance"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/appearance.png" width="16"/>Utseende<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#appearance"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/appearance.png" width="16"/><span>Anpassning av utseende</span></a></li>
+<li><a href="#languages"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/languages.png" width="16"/><span>Stöd för flera språk</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#menu-bar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/menu-bar.png" width="16"/>Dina enheter<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#menu-bar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/menu-bar.png" width="16"/><span>Integrering med menyrad och skrivbord</span></a></li>
+<li><a href="#live-activities"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/live-activities.png" width="16"/><span>Liveaktiviteter</span></a></li>
+<li><a href="#siri-shortcuts"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/siri-shortcuts.png" width="16"/><span>Siri och Genvägar</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#offline"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/protected-sync.png" width="16"/>Synkronisering och integritet<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#offline"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/offline.png" width="16"/><span>Offlineanvändning utan konto</span></a></li>
+<li><a href="#synchronization"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/synchronization.png" width="16"/><span>Synkronisering mellan enheter</span></a></li>
+<li><a href="#protected-sync"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/protected-sync.png" width="16"/><span>Skyddad synkronisering</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#activity-tracking"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/xhelpers-pro.png" width="16"/>Mer på Mac<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#activity-tracking"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/activity-tracking.png" width="16"/><span>Automatisk registrering av appaktivitet</span></a></li>
+<li><a href="#xhelpers-pro"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/xhelpers-pro.png" width="16"/><span>XHelpers Pro-förmån</span></a></li>
+</ul>
+</div>
+</nav>
+</details>
+</section>
+<section aria-labelledby="timers-heading" class="highlight-row has-gallery" data-highlight="01" id="timers">
+<span class="anchor-target" id="count-up-timers"></span><span class="anchor-target" id="countdowns"></span><span class="anchor-target" id="running-timers"></span><span class="anchor-target" id="task-controls"></span><span class="anchor-target" id="notes-history"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">01</span>Tidtagare och nedräkningar</p>
+<h2 id="timers-heading">Avsätt tid för det som betyder något.</h2>
+<p>Mät förfluten tid, räkna ned en viss tid eller håll en deadline i sikte. Kör en eller flera uppgifter, pausa och återuppta dem och spara anteckningar med dina sessioner. Tidtagarna anpassar sig när dagen förändras.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Bilder: Tidtagare och nedräkningar" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Din arbetsyta för tidtagning</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Din arbetsyta för tidtagning" class="image-button capture-image" data-caption="Din arbetsyta för tidtagning — Arbetsytan ”Studio” kombinerar fem tidtagare för förfluten tid, en ”Focus sprint”-nedräkning och tre världsklockor." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="Arbetsytan ”Studio” kombinerar fem tidtagare för förfluten tid, en ”Focus sprint”-nedräkning och tre världsklockor." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>Arbetsytan ”Studio” kombinerar fem tidtagare för förfluten tid, en ”Focus sprint”-nedräkning och tre världsklockor.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>En nedräkning som är din egen</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: En nedräkning som är din egen" class="image-button capture-image" data-caption="En nedräkning som är din egen — ”Focus sprint”: en pausbar nedräkning på 25 minuter i ”Studio”, inställd på att starta manuellt och avslutas med ”Gentle Bell”." data-zoom="../assets/marketing/mac-countdown.png" type="button"><img alt="”Focus sprint”: en pausbar nedräkning på 25 minuter i ”Studio”, inställd på att starta manuellt och avslutas med ”Gentle Bell”." decoding="async" loading="lazy" src="../assets/marketing/mac-countdown.png"/></button>
+<figcaption>”Focus sprint”: en pausbar nedräkning på 25 minuter i ”Studio”, inställd på att starta manuellt och avslutas med ”Gentle Bell”.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="task-sets-heading" class="highlight-row" data-highlight="02" id="task-sets">
+<span class="anchor-target" id="routines"></span><span class="anchor-target" id="templates"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">02</span>Uppgiftsgrupper och återanvändbara mallar</p>
+<h2 id="task-sets-heading">En plats för varje rutin.</h2>
+<p>Ge arbete, lärande och vardagsliv egna namngivna uppgiftsgrupper. Spara en uppgift eller en hel grupp som mall och ta med en välbekant rutin till nästa session.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Bilder: Uppgiftsgrupper och återanvändbara mallar" class="feature-gallery gallery-1">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Uppgiftsuppsättningar</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Uppgiftsgrupper" class="image-button capture-image" data-caption="Uppgiftsgrupper — Uppgiftsgruppen ”Studio” med nio aktiva uppgifter och en återanvändbar ”Studio Template”-mall." data-zoom="../assets/marketing/mac-task-sets.png" type="button"><img alt="Uppgiftsgruppen ”Studio” med nio aktiva uppgifter och en återanvändbar ”Studio Template”-mall." decoding="async" loading="lazy" src="../assets/marketing/mac-task-sets.png"/></button>
+<figcaption>Uppgiftsgruppen ”Studio” med nio aktiva uppgifter och en återanvändbar ”Studio Template”-mall.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="timer-views-heading" class="highlight-row has-gallery" data-highlight="03" id="timer-views">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">03</span>Flexibla tidtagarvyer</p>
+<h2 id="timer-views-heading">Rätt vy för stunden.</h2>
+<p>Se helheten eller ge en uppgift din uppmärksamhet. Mac erbjuder vyerna Lista, Rutnät, Enskild och Minimal. På iPhone och iPad väljer du Lista, Fokus eller Enskild efter behov.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">I vyerna Enskild och Minimal döljs reglagen när pekaren lämnar området och visas igen när du håller pekaren över det.</p>
+</div>
+<div aria-label="Bilder: Flexibla tidtagarvyer" class="feature-gallery gallery-14">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · lista</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Mac · lista" class="image-button capture-image" data-caption="Mac · lista — ”Studio” i listvy med nio uppgifter i kompakta rader." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="”Studio” i listvy med nio uppgifter i kompakta rader." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>”Studio” i listvy med nio uppgifter i kompakta rader.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · rutnät</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Mac · rutnät" class="image-button capture-image" data-caption="Mac · rutnät — ”Studio”-tidtagarna ”Design”, ”Research”, ”Writing”, ”Reading” och ”Planning”, ”Focus sprint” samt klockor för New York, London och Tokyo." data-zoom="../assets/marketing/mac-grid-light.png" type="button"><img alt="”Studio”-tidtagarna ”Design”, ”Research”, ”Writing”, ”Reading” och ”Planning”, ”Focus sprint” samt klockor för New York, London och Tokyo." decoding="async" loading="lazy" src="../assets/marketing/mac-grid-light.png"/></button>
+<figcaption>”Studio”-tidtagarna ”Design”, ”Research”, ”Writing”, ”Reading” och ”Planning”, ”Focus sprint” samt klockor för New York, London och Tokyo.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Enskild, synliga reglage · Helt svart</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Mac · Enskild, synliga reglage · Helt svart" class="image-button capture-image" data-caption="Mac · Enskild, synliga reglage · Helt svart — ”Planning” på 20:04 i vyn Enskild i den installerade Mac-appen, med synliga reglage och en helt svart bakgrund." data-zoom="../assets/marketing/mac-planning-single-black.png" type="button"><img alt="”Planning” på 20:04 i vyn Enskild i den installerade Mac-appen, med synliga reglage och en helt svart bakgrund." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-black.png"/></button>
+<figcaption>”Planning” på 20:04 i vyn Enskild i den installerade Mac-appen, med synliga reglage och en helt svart bakgrund.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal, synliga reglage · Helt svart</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Mac · Minimal, synliga reglage · Helt svart" class="image-button capture-image" data-caption="Mac · Minimal, synliga reglage · Helt svart — ”Planning” på 20:04 i minimalvyn i den installerade Mac-appen, med synliga reglage och en helt svart bakgrund." data-zoom="../assets/marketing/mac-planning-minimal-black.png" type="button"><img alt="”Planning” på 20:04 i minimalvyn i den installerade Mac-appen, med synliga reglage och en helt svart bakgrund." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-black.png"/></button>
+<figcaption>”Planning” på 20:04 i minimalvyn i den installerade Mac-appen, med synliga reglage och en helt svart bakgrund.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Enskild, dolda reglage · Helt svart</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Mac · Enskild, dolda reglage · Helt svart" class="image-button capture-image" data-caption="Mac · Enskild, dolda reglage · Helt svart — ”Planning” på 20:04 i vyn Enskild i den installerade Mac-appen, med dolda reglage och en helt svart bakgrund." data-zoom="../assets/marketing/mac-planning-single-hidden-black.png" type="button"><img alt="”Planning” på 20:04 i vyn Enskild i den installerade Mac-appen, med dolda reglage och en helt svart bakgrund." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-black.png"/></button>
+<figcaption>”Planning” på 20:04 i vyn Enskild i den installerade Mac-appen, med dolda reglage och en helt svart bakgrund.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal, dolda reglage · Helt svart</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Mac · Minimal, dolda reglage · Helt svart" class="image-button capture-image" data-caption="Mac · Minimal, dolda reglage · Helt svart — ”Planning” på 20:04 i minimalvyn i den installerade Mac-appen, med dolda reglage och en helt svart bakgrund." data-zoom="../assets/marketing/mac-planning-minimal-hidden-black.png" type="button"><img alt="”Planning” på 20:04 i minimalvyn i den installerade Mac-appen, med dolda reglage och en helt svart bakgrund." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-black.png"/></button>
+<figcaption>”Planning” på 20:04 i minimalvyn i den installerade Mac-appen, med dolda reglage och en helt svart bakgrund.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Enskild, synliga reglage · Yosemite-foto</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Mac · Enskild, synliga reglage · Yosemite-foto" class="image-button capture-image" data-caption="Mac · Enskild, synliga reglage · Yosemite-foto — ”Planning” på 20:04 i vyn Enskild i den installerade Mac-appen, med synliga reglage och Yosemite-fotot som bakgrund." data-zoom="../assets/marketing/mac-planning-single-yosemite.png" type="button"><img alt="”Planning” på 20:04 i vyn Enskild i den installerade Mac-appen, med synliga reglage och Yosemite-fotot som bakgrund." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-yosemite.png"/></button>
+<figcaption>”Planning” på 20:04 i vyn Enskild i den installerade Mac-appen, med synliga reglage och Yosemite-fotot som bakgrund.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal, synliga reglage · Yosemite-foto</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Mac · Minimal, synliga reglage · Yosemite-foto" class="image-button capture-image" data-caption="Mac · Minimal, synliga reglage · Yosemite-foto — ”Planning” på 20:04 i minimalvyn i den installerade Mac-appen, med synliga reglage och Yosemite-fotot som bakgrund." data-zoom="../assets/marketing/mac-planning-minimal-yosemite.png" type="button"><img alt="”Planning” på 20:04 i minimalvyn i den installerade Mac-appen, med synliga reglage och Yosemite-fotot som bakgrund." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-yosemite.png"/></button>
+<figcaption>”Planning” på 20:04 i minimalvyn i den installerade Mac-appen, med synliga reglage och Yosemite-fotot som bakgrund.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Enskild, dolda reglage · Yosemite-foto</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Mac · Enskild, dolda reglage · Yosemite-foto" class="image-button capture-image" data-caption="Mac · Enskild, dolda reglage · Yosemite-foto — ”Planning” på 20:04 i vyn Enskild i den installerade Mac-appen, med dolda reglage och Yosemite-fotot som bakgrund." data-zoom="../assets/marketing/mac-planning-single-hidden-yosemite.png" type="button"><img alt="”Planning” på 20:04 i vyn Enskild i den installerade Mac-appen, med dolda reglage och Yosemite-fotot som bakgrund." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-yosemite.png"/></button>
+<figcaption>”Planning” på 20:04 i vyn Enskild i den installerade Mac-appen, med dolda reglage och Yosemite-fotot som bakgrund.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal, dolda reglage · Yosemite-foto</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Mac · Minimal, dolda reglage · Yosemite-foto" class="image-button capture-image" data-caption="Mac · Minimal, dolda reglage · Yosemite-foto — ”Planning” på 20:04 i minimalvyn i den installerade Mac-appen, med dolda reglage och Yosemite-fotot som bakgrund." data-zoom="../assets/marketing/mac-planning-minimal-hidden-yosemite.png" type="button"><img alt="”Planning” på 20:04 i minimalvyn i den installerade Mac-appen, med dolda reglage och Yosemite-fotot som bakgrund." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-yosemite.png"/></button>
+<figcaption>”Planning” på 20:04 i minimalvyn i den installerade Mac-appen, med dolda reglage och Yosemite-fotot som bakgrund.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Enskild, synliga reglage · Foto av Dolomiterna</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Mac · Enskild, synliga reglage · Foto av Dolomiterna" class="image-button capture-image" data-caption="Mac · Enskild, synliga reglage · Foto av Dolomiterna — ”Planning” på 20:04 i vyn Enskild i den installerade Mac-appen, med synliga reglage och fotot av Dolomiterna som bakgrund." data-zoom="../assets/marketing/mac-planning-single-dolomites.png" type="button"><img alt="”Planning” på 20:04 i vyn Enskild i den installerade Mac-appen, med synliga reglage och fotot av Dolomiterna som bakgrund." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-dolomites.png"/></button>
+<figcaption>”Planning” på 20:04 i vyn Enskild i den installerade Mac-appen, med synliga reglage och fotot av Dolomiterna som bakgrund.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal, synliga reglage · Foto av Dolomiterna</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Mac · Minimal, synliga reglage · Foto av Dolomiterna" class="image-button capture-image" data-caption="Mac · Minimal, synliga reglage · Foto av Dolomiterna — ”Planning” på 20:04 i minimalvyn i den installerade Mac-appen, med synliga reglage och fotot av Dolomiterna som bakgrund." data-zoom="../assets/marketing/mac-planning-minimal-dolomites.png" type="button"><img alt="”Planning” på 20:04 i minimalvyn i den installerade Mac-appen, med synliga reglage och fotot av Dolomiterna som bakgrund." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-dolomites.png"/></button>
+<figcaption>”Planning” på 20:04 i minimalvyn i den installerade Mac-appen, med synliga reglage och fotot av Dolomiterna som bakgrund.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Enskild, dolda reglage · Foto av Dolomiterna</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Mac · Enskild, dolda reglage · Foto av Dolomiterna" class="image-button capture-image" data-caption="Mac · Enskild, dolda reglage · Foto av Dolomiterna — ”Planning” på 20:04 i vyn Enskild i den installerade Mac-appen, med dolda reglage och fotot av Dolomiterna som bakgrund." data-zoom="../assets/marketing/mac-planning-single-hidden-dolomites.png" type="button"><img alt="”Planning” på 20:04 i vyn Enskild i den installerade Mac-appen, med dolda reglage och fotot av Dolomiterna som bakgrund." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-dolomites.png"/></button>
+<figcaption>”Planning” på 20:04 i vyn Enskild i den installerade Mac-appen, med dolda reglage och fotot av Dolomiterna som bakgrund.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Minimal, dolda reglage · Foto av Dolomiterna</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Mac · Minimal, dolda reglage · Foto av Dolomiterna" class="image-button capture-image" data-caption="Mac · Minimal, dolda reglage · Foto av Dolomiterna — ”Planning” på 20:04 i minimalvyn i den installerade Mac-appen, med dolda reglage och fotot av Dolomiterna som bakgrund." data-zoom="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" type="button"><img alt="”Planning” på 20:04 i minimalvyn i den installerade Mac-appen, med dolda reglage och fotot av Dolomiterna som bakgrund." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-dolomites.png"/></button>
+<figcaption>”Planning” på 20:04 i minimalvyn i den installerade Mac-appen, med dolda reglage och fotot av Dolomiterna som bakgrund.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="world-clocks-heading" class="highlight-row has-gallery" data-highlight="04" id="world-clocks">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">04</span>Världsklockor</p>
+<h2 id="world-clocks-heading">Ha dina platser nära.</h2>
+<p>Lägg till städerna och tidszonerna som betyder något för dig. Håll koll på kollegor, familj och resplaner bredvid dina tidtagare, med aktuell lokal tid för varje plats.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Bilder: Världsklockor" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Klockor bredvid dina tidtagare</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Klockor bredvid dina tidtagare" class="image-button capture-image" data-caption="Klockor bredvid dina tidtagare — New York, London och Tokyo bredvid ”Studio”-tidtagarna i en blå rutnätsarbetsyta." data-zoom="../assets/marketing/mac-grid-dark.png" type="button"><img alt="New York, London och Tokyo bredvid ”Studio”-tidtagarna i en blå rutnätsarbetsyta." decoding="async" loading="lazy" src="../assets/marketing/mac-grid-dark.png"/></button>
+<figcaption>New York, London och Tokyo bredvid ”Studio”-tidtagarna i en blå rutnätsarbetsyta.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Välj en plats</h3><span class="capture-status status-real">Installerad Mac-app · exempelkonfiguration</span></div>
+<button aria-label="Förstora: Välj en plats" class="image-button capture-image" data-caption="Välj en plats — New York i klockredigeraren i den installerade Mac-appen, med karta, lokal tid och tidsförskjutningen UTC−04:00." data-zoom="../assets/marketing/mac-clock-editor.png" type="button"><img alt="New York i klockredigeraren i den installerade Mac-appen, med karta, lokal tid och tidsförskjutningen UTC−04:00." decoding="async" loading="lazy" src="../assets/marketing/mac-clock-editor.png"/></button>
+<figcaption>New York i klockredigeraren i den installerade Mac-appen, med karta, lokal tid och tidsförskjutningen UTC−04:00.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="world-calendar-heading" class="highlight-row has-gallery" data-highlight="05" id="world-calendar">
+<span class="anchor-target" id="regional-holidays"></span><span class="anchor-target" id="world-events"></span><span class="anchor-target" id="apple-calendar"></span><span class="anchor-target" id="calendar-actions"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">05</span>Världskalender</p>
+<h2 id="world-calendar-heading">Sätt din dag i ett sammanhang.</h2>
+<p>Utforska helgdagar, kulturella märkesdagar, globala händelser och historiska ögonblick. Lägg till en skrivskyddad vy av dina Apple-kalendrar och gör sedan ett datum eller en händelse till en nedräkning eller personlig påminnelse.</p>
+<span class="platform-pill">Mac</span>
+<p class="feature-note">Hämta katalogen en gång för att bläddra i den offline. Åtkomst till dina Apple-kalendrar är valfri och skrivskyddad.</p>
+</div>
+<div aria-label="Bilder: Världskalender" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Månaden i överblick</h3><span class="capture-status status-real">Installerad Mac-app · exempelkonfiguration</span></div>
+<button aria-label="Förstora: Månaden i överblick" class="image-button capture-image" data-caption="Månaden i överblick — Oktober 2026 med helgdagsprofilen för Fastlandskina, kinesiska kalenderdatum och information om nationaldagen." data-zoom="../assets/marketing/mac-world-calendar-month.png" type="button"><img alt="Oktober 2026 med helgdagsprofilen för Fastlandskina, kinesiska kalenderdatum och information om nationaldagen." decoding="async" loading="lazy" src="../assets/marketing/mac-world-calendar-month.png"/></button>
+<figcaption>Oktober 2026 med helgdagsprofilen för Fastlandskina, kinesiska kalenderdatum och information om nationaldagen.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Veckovy och datumdetaljer</h3><span class="capture-status status-real">Installerad Mac-app · exempelkonfiguration</span></div>
+<button aria-label="Förstora: Veckovy och datumdetaljer" class="image-button capture-image" data-caption="Veckovy och datumdetaljer — 27 september–3 oktober, med 1 oktober vald och information om nationaldagen bredvid veckan." data-zoom="../assets/marketing/mac-world-calendar-week.png" type="button"><img alt="27 september–3 oktober, med 1 oktober vald och information om nationaldagen bredvid veckan." decoding="async" loading="lazy" src="../assets/marketing/mac-world-calendar-week.png"/></button>
+<figcaption>27 september–3 oktober, med 1 oktober vald och information om nationaldagen bredvid veckan.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="reminders-heading" class="highlight-row copy-only" data-highlight="06" id="reminders">
+<span class="anchor-target" id="email-sms"></span><span class="anchor-target" id="call-me"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">06</span>Påminnelser via e-post, SMS och samtal</p>
+<h2 id="reminders-heading">En påminnelse med dina egna ord.</h2>
+<p>Schemalägg ett meddelande till dig själv efter en viss tid eller vid ett bestämt datum och klockslag. Välj e-post, SMS eller ett engångssamtal som stöds och håll koll på leveransstatus bredvid uppgifterna.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Tillgängligheten beror på kontot och tjänsten. SMS och samtal kräver ditt eget nummer som stöds och är verifierat, samt separat samtycke. Samtal stöder nummer i USA/Kanada, använder engelska och ringer inte automatiskt upp igen.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="sound-library-heading" class="highlight-row has-gallery" data-highlight="07" id="sound-library">
+<span class="anchor-target" id="sounds"></span><span class="anchor-target" id="interval-beeps"></span><span class="anchor-target" id="completion-alerts"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">07</span>Ljudbibliotek</p>
+<h2 id="sound-library-heading">Hitta din avslutande ton.</h2>
+<p>Bläddra bland 66 medföljande ljud, lyssna innan du väljer och spara dina favoriter. Importera eget ljud eller använd intervallpip för att hålla koll på tiden medan sessionen fortsätter.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Bilder: Ljudbibliotek" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Ljud för din dag</h3><span class="capture-status status-real">Installerad Mac-app · exempelkonfiguration</span></div>
+<button aria-label="Förstora: Ljud för din dag" class="image-button capture-image" data-caption="Ljud för din dag — Ljudbiblioteket i den installerade Mac-appen med ”Classic Tones”, vågformer, favoriter och uppspelningsreglage." data-zoom="../assets/marketing/mac-sound-library.png" type="button"><img alt="Ljudbiblioteket i den installerade Mac-appen med ”Classic Tones”, vågformer, favoriter och uppspelningsreglage." decoding="async" loading="lazy" src="../assets/marketing/mac-sound-library.png"/></button>
+<figcaption>Ljudbiblioteket i den installerade Mac-appen med ”Classic Tones”, vågformer, favoriter och uppspelningsreglage.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>World Ceremonial</h3><span class="capture-status status-real">Installerad Mac-app · exempelkonfiguration</span></div>
+<button aria-label="Förstora: World Ceremonial" class="image-button capture-image" data-caption="World Ceremonial — ”World Ceremonial”-ljud, från ”Gentle Bell” och ”Bright Chime” till ”Ceremonial Drum” och ”Trumpet Salute”." data-zoom="../assets/marketing/mac-sound-ceremonial.png" type="button"><img alt="”World Ceremonial”-ljud, från ”Gentle Bell” och ”Bright Chime” till ”Ceremonial Drum” och ”Trumpet Salute”." decoding="async" loading="lazy" src="../assets/marketing/mac-sound-ceremonial.png"/></button>
+<figcaption>”World Ceremonial”-ljud, från ”Gentle Bell” och ”Bright Chime” till ”Ceremonial Drum” och ”Trumpet Salute”.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="time-reports-heading" class="highlight-row has-gallery" data-highlight="08" id="time-reports">
+<span class="anchor-target" id="report-charts"></span><span class="anchor-target" id="report-exports"></span><span class="anchor-target" id="report-sharing"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">08</span>Tidsrapporter och delning</p>
+<h2 id="time-reports-heading">Se vart din tid tar vägen.</h2>
+<p>Granska sessioner, dagssummor eller aktuella tider. Utforska diagram, jämför perioder och filtrera efter uppgift eller grupp. Spara en CSV-, HTML- eller PDF-fil, skicka en rapport till dig själv via e-post eller dela den med en länk som löper ut.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Lokala rapporter och exporter fungerar offline. E-post och onlinedelning kräver en anslutning.</p>
+</div>
+<div aria-label="Bilder: Tidsrapporter och delning" class="feature-gallery gallery-4 report-gallery">
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>Dagssummor · Veckan i överblick</h3><span class="capture-status status-real">Installerad Mac-app · simulerad historik</span></div>
+<button aria-label="Förstora: Dagssummor · Veckan i överblick" class="image-button capture-image" data-caption="Dagssummor · Veckan i överblick — 21–25 september 2026: 30 timmar fördelade på fem exempeluppgifter, med dagssummor och uppgiftsandelar. ”Design” står för 12 tim 05 min (40,3 %)." data-zoom="../assets/marketing/mac-report-week-daily-totals.png" type="button"><img alt="21–25 september 2026: 30 timmar fördelade på fem exempeluppgifter, med dagssummor och uppgiftsandelar. ”Design” står för 12 tim 05 min (40,3 %)." decoding="async" loading="lazy" src="../assets/marketing/mac-report-week-daily-totals.png"/></button>
+<figcaption>21–25 september 2026: 30 timmar fördelade på fem exempeluppgifter, med dagssummor och uppgiftsandelar. ”Design” står för 12 tim 05 min (40,3 %).</figcaption>
+</figure>
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>Sessioner · När arbetet skedde</h3><span class="capture-status status-real">Installerad Mac-app · simulerad historik</span></div>
+<button aria-label="Förstora: Sessioner · När arbetet skedde" class="image-button capture-image" data-caption="Sessioner · När arbetet skedde — En exempelvecka med 29 sessioner och 30 timmar, med en tidslinje som visar när arbetet skedde den 21–25 september 2026." data-zoom="../assets/marketing/mac-report-week-sessions.png" type="button"><img alt="En exempelvecka med 29 sessioner och 30 timmar, med en tidslinje som visar när arbetet skedde den 21–25 september 2026." decoding="async" loading="lazy" src="../assets/marketing/mac-report-week-sessions.png"/></button>
+<figcaption>En exempelvecka med 29 sessioner och 30 timmar, med en tidslinje som visar när arbetet skedde den 21–25 september 2026.</figcaption>
+</figure>
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>Sessioner · En dag i detalj</h3><span class="capture-status status-real">Installerad Mac-app · simulerad historik</span></div>
+<button aria-label="Förstora: Sessioner · En dag i detalj" class="image-button capture-image" data-caption="Sessioner · En dag i detalj — Sex exempelsessioner den 24 september 2026, totalt 6 tim 15 min, med dagens tidslinje och individuella start- och sluttider." data-zoom="../assets/marketing/mac-report-day-sessions.png" type="button"><img alt="Sex exempelsessioner den 24 september 2026, totalt 6 tim 15 min, med dagens tidslinje och individuella start- och sluttider." decoding="async" loading="lazy" src="../assets/marketing/mac-report-day-sessions.png"/></button>
+<figcaption>Sex exempelsessioner den 24 september 2026, totalt 6 tim 15 min, med dagens tidslinje och individuella start- och sluttider.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Aktuella tider</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Aktuella tider" class="image-button capture-image" data-caption="Aktuella tider — Aktuella tider för arbetsytan ”Studio”, med reglage för kopiering, export och delning." data-zoom="../assets/marketing/mac-report-current-readings.png" type="button"><img alt="Aktuella tider för arbetsytan ”Studio”, med reglage för kopiering, export och delning." decoding="async" loading="lazy" src="../assets/marketing/mac-report-current-readings.png"/></button>
+<figcaption>Aktuella tider för arbetsytan ”Studio”, med reglage för kopiering, export och delning.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="archives-heading" class="highlight-row" data-highlight="09" id="archives">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">09</span>Arkiv</p>
+<h2 id="archives-heading">Spara arbetet du har slutfört.</h2>
+<p>Arkivera en uppgiftsgrupp och ha historiken nära till hands. Sök i tidigare arbete, bläddra bland sparade ögonblicksbilder och öppna en rapport när du vill återvända till ett projekt eller en rutin.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Bilder: Arkiv" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>En sparad projektrapport</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: En sparad projektrapport" class="image-button capture-image" data-caption="En sparad projektrapport — ”Brand workshop” sparad som arkiv, med de simulerade tidtagarvärdena bevarade i rapporten." data-zoom="../assets/marketing/mac-archive-report.png" type="button"><img alt="”Brand workshop” sparad som arkiv, med de simulerade tidtagarvärdena bevarade i rapporten." decoding="async" loading="lazy" src="../assets/marketing/mac-archive-report.png"/></button>
+<figcaption>”Brand workshop” sparad som arkiv, med de simulerade tidtagarvärdena bevarade i rapporten.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="appearance-heading" class="highlight-row has-gallery" data-highlight="10" id="appearance">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">10</span>Anpassning av utseende</p>
+<h2 id="appearance-heading">Gör arbetsytan till din egen.</h2>
+<p>Välj ljust eller mörkt, en enfärgad bakgrund eller ett foto. Bygg ett bakgrundsbibliotek med dina egna bilder och gör arbetsytan så lugn eller färgglad som du vill. Mac kan även växla mellan foton från en mapp.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Anpassa enheten du använder, även med egna utseendeinställningar som gäller specifikt för Mac.</p>
+</div>
+<div aria-label="Bilder: Anpassning av utseende" class="feature-gallery gallery-4">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Enfärgad bakgrund · vit</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Enfärgad bakgrund · vit" class="image-button capture-image" data-caption="Enfärgad bakgrund · vit — ”Design”-tidtagaren i vyn Enskild på en enfärgad vit bakgrund." data-zoom="../assets/marketing/mac-single-light.png" type="button"><img alt="”Design”-tidtagaren i vyn Enskild på en enfärgad vit bakgrund." decoding="async" loading="lazy" src="../assets/marketing/mac-single-light.png"/></button>
+<figcaption>”Design”-tidtagaren i vyn Enskild på en enfärgad vit bakgrund.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Enfärgat · marinblått</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Enfärgat · marinblått" class="image-button capture-image" data-caption="Enfärgat · marinblått — Samma ”Design”-tidtagare på en enfärgad marinblå bakgrund." data-zoom="../assets/marketing/mac-timer-single.png" type="button"><img alt="Samma ”Design”-tidtagare på en enfärgad marinblå bakgrund." decoding="async" loading="lazy" src="../assets/marketing/mac-timer-single.png"/></button>
+<figcaption>Samma ”Design”-tidtagare på en enfärgad marinblå bakgrund.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Fotobakgrund</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Fotobakgrund" class="image-button capture-image" data-caption="Fotobakgrund — ”Design”-tidtagaren över det medföljande fotot av Dolomiterna i XTimers." data-zoom="../assets/marketing/mac-single-photo.png" type="button"><img alt="”Design”-tidtagaren över det medföljande fotot av Dolomiterna i XTimers." decoding="async" loading="lazy" src="../assets/marketing/mac-single-photo.png"/></button>
+<figcaption>”Design”-tidtagaren över det medföljande fotot av Dolomiterna i XTimers.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Välj ett foto</h3><span class="capture-status status-real">Installerad Mac-app · exempelkonfiguration</span></div>
+<button aria-label="Förstora: Välj ett foto" class="image-button capture-image" data-caption="Välj ett foto — Bakgrundsväljaren i den installerade Mac-appen, med medföljande foton och Yosemite valt." data-zoom="../assets/marketing/mac-background-library.png" type="button"><img alt="Bakgrundsväljaren i den installerade Mac-appen, med medföljande foton och Yosemite valt." decoding="async" loading="lazy" src="../assets/marketing/mac-background-library.png"/></button>
+<figcaption>Bakgrundsväljaren i den installerade Mac-appen, med medföljande foton och Yosemite valt.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="menu-bar-heading" class="highlight-row has-gallery" data-highlight="11" id="menu-bar">
+<span class="anchor-target" id="devices"></span><span class="anchor-target" id="mac-shortcuts"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">11</span>Integrering med menyrad och skrivbord</p>
+<h2 id="menu-bar-heading">Håll tiden nära ditt arbete.</h2>
+<p>Se uppgiftsnamnet och tiden direkt i menyraden på din Mac utan att öppna huvudfönstret. Klicka för snabb åtkomst till att starta och pausa uppgifter, byta grupper och öppna rapporter. Ett systemomfattande kortkommando och fönster som alltid ligger överst håller reglagen nära.</p>
+<span class="platform-pill">Mac</span>
+</div>
+<div aria-label="Bilder: Integrering med menyrad och skrivbord" class="feature-gallery gallery-3 menu-bar-gallery">
+<figure class="capture-card capture-status-strip">
+<div class="capture-heading"><h3>Din tidtagare i överblick</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Din tidtagare i överblick" class="image-button capture-image" data-caption="Din tidtagare i överblick — ”Planning” pausad vid 20:04, synlig direkt i menyraden på Mac medan du arbetar i en annan app." data-zoom="../assets/marketing/mac-menubar-status-planning.png" type="button"><img alt="”Planning” pausad vid 20:04, synlig direkt i menyraden på Mac bredvid systemstatussymboler" decoding="async" height="60" loading="lazy" src="../assets/marketing/mac-menubar-status-planning.png" width="572"/></button>
+<figcaption>Uppgiftsnamn, tid och pausindikator förblir synliga i menyraden. Klicka på statusobjektet för att komma åt tidtagarreglagen.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Arbetsytan i menyraden</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Arbetsytan i menyraden" class="image-button capture-image" data-caption="Arbetsytan i menyraden — ”Design”-tidtagaren och andra tidtagare i ”Studio”, uppgiftsgrupper, rapporter och fönsterreglage i menyraden på Mac." data-zoom="../assets/marketing/mac-menu-bar.png" type="button"><img alt="”Design”-tidtagaren och andra tidtagare i ”Studio”, uppgiftsgrupper, rapporter och fönsterreglage i menyraden på Mac." decoding="async" loading="lazy" src="../assets/marketing/mac-menu-bar.png"/></button>
+<figcaption>”Design”-tidtagaren och andra tidtagare i ”Studio”, uppgiftsgrupper, rapporter och fönsterreglage i menyraden på Mac.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Ett kompakt tidtagarfönster</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Ett kompakt tidtagarfönster" class="image-button capture-image" data-caption="Ett kompakt tidtagarfönster — ”Design”-tidtagaren från ”Studio” i ett kompakt minimalfönster." data-zoom="../assets/marketing/mac-timer-minimal.png" type="button"><img alt="”Design”-tidtagaren från ”Studio” i ett kompakt minimalfönster." decoding="async" loading="lazy" src="../assets/marketing/mac-timer-minimal.png"/></button>
+<figcaption>”Design”-tidtagaren från ”Studio” i ett kompakt minimalfönster.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="live-activities-heading" class="highlight-row has-gallery" data-highlight="12" id="live-activities">
+<span class="anchor-target" id="mobile"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">12</span>Liveaktiviteter</p>
+<h2 id="live-activities-heading">Din tid, i överblick.</h2>
+<p>Håll en tidtagare som stöds synlig på låsskärmen eller i Dynamic Island på din iPhone. Se uppgiften och tiden och pausa eller återuppta tidtagare som stöds utan att öppna hela arbetsytan.</p>
+<span class="platform-pill">iPhone</span>
+<p class="feature-note">Kräver en enhet som stöds och systembehörighet. Världsklockor skapar inte liveaktiviteter.</p>
+</div>
+<div aria-label="Bilder: Liveaktiviteter" class="feature-gallery gallery-2">
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>På din låsskärm</h3><span class="capture-status status-real">iPhone · skärmbild från enheten</span></div>
+<button aria-label="Förstora: På din låsskärm" class="image-button capture-image" data-caption="På din låsskärm — En liveaktivitet med nedräkning, uppgiftsnamn, återstående tid och pausknapp på låsskärmen på iPhone." data-zoom="../assets/marketing/ios-live-activity-lockscreen.png" type="button"><img alt="En liveaktivitet med nedräkning, uppgiftsnamn, återstående tid och pausknapp på låsskärmen på iPhone." decoding="async" height="2868" loading="lazy" src="../assets/marketing/ios-live-activity-lockscreen.png" width="1320"/></button>
+<figcaption>En liveaktivitet med nedräkning, uppgiftsnamn, återstående tid och pausknapp på låsskärmen på iPhone.</figcaption>
+</figure>
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>I Dynamic Island</h3><span class="capture-status status-real">iPhone · skärmbild från enheten</span></div>
+<button aria-label="Förstora: I Dynamic Island" class="image-button capture-image" data-caption="I Dynamic Island — En kompakt nedräkning förblir synlig i Dynamic Island medan hemskärmen på iPhone är öppen." data-zoom="../assets/marketing/ios-live-activity-island.png" type="button"><img alt="En kompakt nedräkning förblir synlig i Dynamic Island medan hemskärmen på iPhone är öppen." decoding="async" height="2868" loading="lazy" src="../assets/marketing/ios-live-activity-island.png" width="1320"/></button>
+<figcaption>En kompakt nedräkning förblir synlig i Dynamic Island medan hemskärmen på iPhone är öppen.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="siri-shortcuts-heading" class="highlight-row has-gallery" data-highlight="13" id="siri-shortcuts">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">13</span>Siri och Genvägar</p>
+<h2 id="siri-shortcuts-heading">Börja med ett ord eller ett tryck.</h2>
+<p>Starta, pausa eller växla en tidtagare som stöds med Siri och Genvägar. Lägg till systemreglage för att starta ett nytt stoppur eller pausa och återuppta den aktuella uppgiften.</p>
+<span class="platform-pill">iPhone · iPad</span>
+<p class="feature-note">Fristående systemreglage öppnar XTimers. Reglage för liveaktiviteter kan fungera direkt.</p>
+</div>
+<div aria-label="Bilder: Siri och Genvägar" class="feature-gallery gallery-1">
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>Dina XTimers-genvägar</h3><span class="capture-status status-real">iPhone · skärmbild från enheten</span></div>
+<button aria-label="Förstora: Dina XTimers-genvägar" class="image-button capture-image" data-caption="Dina XTimers-genvägar — Åtgärderna ”Toggle Timer”, ”Start” och ”Pause” i den inbyggda appen Genvägar." data-zoom="../assets/marketing/ios-siri-shortcuts.png" type="button"><img alt="Åtgärderna ”Toggle Timer”, ”Start” och ”Pause” i den inbyggda appen Genvägar." decoding="async" height="2622" loading="lazy" src="../assets/marketing/ios-siri-shortcuts.png" width="1206"/></button>
+<figcaption>Åtgärderna ”Toggle Timer”, ”Start” och ”Pause” i den inbyggda appen Genvägar.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="offline-heading" class="highlight-row" data-highlight="14" id="offline">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">14</span>Offlineanvändning utan konto</p>
+<h2 id="offline-heading">Kom igång. Ingen inloggning behövs.</h2>
+<p>Använd grundläggande tidtagare, nedräkningar, uppgiftsgrupper, anteckningar, världsklockor och lokala rapporter på din enhet. Fortsätt offline och lägg till ett konto när du vill ha uppkopplade funktioner.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Bilder: Offlineanvändning utan konto" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Din lokala ”Studio”-arbetsyta</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Din lokala ”Studio”-arbetsyta" class="image-button capture-image" data-caption="Din lokala ”Studio”-arbetsyta — Arbetsytan ”Studio” i Mac-appen utan inloggning, med simulerade lokala tidtagare och världsklockor." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="Arbetsytan ”Studio” i Mac-appen utan inloggning, med simulerade lokala tidtagare och världsklockor." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>Arbetsytan ”Studio” i Mac-appen utan inloggning, med simulerade lokala tidtagare och världsklockor.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="synchronization-heading" class="highlight-row" data-highlight="15" id="synchronization">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">15</span>Synkronisering mellan enheter</p>
+<h2 id="synchronization-heading">Fortsätt i en välbekant arbetsyta.</h2>
+<p>Ta med uppgifter som stöds, historik, mallar, inställningar och eget material mellan Mac, iPhone och iPad. Ditt lokala arbete förblir tillgängligt vid tillfälliga anslutningsproblem.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Logga in med Apple, Google, en e-postkod eller ett lösenord. Vissa enhetsinställningar och data som bara är lokala stannar på respektive enhet.</p>
+</div>
+<div aria-label="Bilder: Synkronisering mellan enheter" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>På Mac</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: På Mac" class="image-button capture-image" data-caption="På Mac — Exempeltidtagarna och -klockorna i ”Studio” i den installerade Mac-appen." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="Exempeltidtagarna och -klockorna i ”Studio” i den installerade Mac-appen." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>Exempeltidtagarna och -klockorna i ”Studio” i den installerade Mac-appen.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="protected-sync-heading" class="highlight-row copy-only" data-highlight="16" id="protected-sync">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">16</span>Skyddad synkronisering</p>
+<h2 id="protected-sync-heading">Välj skydd före uppladdning.</h2>
+<p>Kryptera nytt tidtagarinnehåll och egna uppladdningar på enheten före <a href="privacy.html#xin-account">kontosynkronisering</a>. Återställ nyckeln via iCloud Keychain eller en sparad återställningskod.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Valfritt för konton som stöds. Omfattar inte påminnelsemeddelanden, konto-/synkroniseringsmetadata, innehåll skapat före aktivering eller lokal lagring på enheten.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="languages-heading" class="highlight-row has-gallery" data-highlight="17" id="languages">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">17</span>Stöd för flera språk</p>
+<h2 id="languages-heading">Hemma i ditt eget språk.</h2>
+<p>Välj mellan 45 språkalternativ, följ enheten eller välj det språk du föredrar. Regionala datum, klockslag och tal samt layouter från höger till vänster gör att arbetsytan känns bekant.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Bilder: Stöd för flera språk" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · engelska</h3><span class="capture-status status-real">Installerad Mac-app · exempelkonfiguration</span></div>
+<button aria-label="Förstora: Mac · engelska" class="image-button capture-image" data-caption="Mac · engelska — Allmänna inställningar på engelska, tagna från den installerade Mac-appen med ljust utseende." data-zoom="../assets/marketing/mac-settings-english.png" type="button"><img alt="Allmänna inställningar på engelska, tagna från den installerade Mac-appen med ljust utseende." decoding="async" loading="lazy" src="../assets/marketing/mac-settings-english.png"/></button>
+<figcaption>Allmänna inställningar på engelska, tagna från den installerade Mac-appen med ljust utseende.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · japanska</h3><span class="capture-status status-real">Installerad Mac-app · exempelkonfiguration</span></div>
+<button aria-label="Förstora: Mac · japanska" class="image-button capture-image" data-caption="Mac · japanska — Samma skärm med allmänna inställningar på japanska, med ljust utseende." data-zoom="../assets/marketing/mac-settings-japanese.png" type="button"><img alt="Samma skärm med allmänna inställningar på japanska, med ljust utseende." decoding="async" loading="lazy" src="../assets/marketing/mac-settings-japanese.png"/></button>
+<figcaption>Samma skärm med allmänna inställningar på japanska, med ljust utseende.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="activity-tracking-heading" class="highlight-row" data-highlight="18" id="activity-tracking">
+<span class="anchor-target" id="extras"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">18</span>Automatisk registrering av appaktivitet</p>
+<h2 id="activity-tracking-heading">Se hur din tid i appar summeras.</h2>
+<p>Välj att registrera tiden i Mac-appar i förgrunden. Se dina aktiviteter per dag, vecka, månad eller år och välj hur frånvarotid räknas.</p>
+<span class="platform-pill">Mac · utvalda profiler</span>
+<p class="feature-note">Tillgängligt i lokala och äldre profiler; dolt för konton med lokalt prioriterad synkronisering. Appidentitet och inaktiv tid stannar på denna Mac. Webbplatser, webbhistorik och fönstertitlar registreras inte.</p>
+</div>
+<div aria-label="Bilder: Automatisk registrering av appaktivitet" class="feature-gallery gallery-1">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Reglage för aktivitetsregistrering</h3><span class="capture-status status-real">Installerad Mac-app · inställningar</span></div>
+<button aria-label="Förstora: Reglage för aktivitetsregistrering" class="image-button capture-image" data-caption="Reglage för aktivitetsregistrering — Inbyggda reglage i standardversionen av XTimers för rapportperiod, rullning till aktiv uppgift och frånvarotid. Registrering är avstängd i den här konfigurationen." data-zoom="../assets/marketing/mac-activity-tracking-settings.png" type="button"><img alt="Inbyggda reglage i standardversionen av XTimers för rapportperiod, rullning till aktiv uppgift och frånvarotid. Registrering är avstängd i den här konfigurationen." decoding="async" loading="lazy" src="../assets/marketing/mac-activity-tracking-settings.png"/></button>
+<figcaption>Inbyggda reglage i standardversionen av XTimers för rapportperiod, rullning till aktiv uppgift och frånvarotid. Registrering är avstängd i den här konfigurationen.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="classic-interface-heading" class="highlight-row has-gallery" data-highlight="19" id="classic-interface">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">19</span>Klassiskt gränssnitt</p>
+<h2 id="classic-interface-heading">Ett annat sätt att skapa tid.</h2>
+<p>Välj ett lokalt tidtagargränssnitt som bara är på engelska, med en egen separat arbetsyta. Byt gränssnitt i XTimers och behåll den presentation som känns välbekant.</p>
+<span class="platform-pill">Mac · endast lokalt</span>
+<p class="feature-note">Kräver den medföljande Classic-körmiljön. Kontosynkronisering och leverans via e-post/SMS hör till huvudgränssnittet i XTimers.</p>
+</div>
+<div aria-label="Bilder: Klassiskt gränssnitt" class="feature-gallery gallery-2">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Classic · två kolumner</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Classic · två kolumner" class="image-button capture-image" data-caption="Classic · två kolumner — En utökad Classic-rutin med 20 namngivna uppgifter för kreativt arbete, lärande och vardagsliv." data-zoom="../assets/marketing/classic-two-column.png" type="button"><img alt="En utökad Classic-rutin med 20 namngivna uppgifter för kreativt arbete, lärande och vardagsliv." decoding="async" loading="lazy" src="../assets/marketing/classic-two-column.png"/></button>
+<figcaption>En utökad Classic-rutin med 20 namngivna uppgifter för kreativt arbete, lärande och vardagsliv.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Classic · en kolumn</h3><span class="capture-status status-real">Installerad Mac-app · simulerade data</span></div>
+<button aria-label="Förstora: Classic · en kolumn" class="image-button capture-image" data-caption="Classic · en kolumn — En kompakt Classic-arbetsyta med fem uppgifter: ”Design”, ”Research”, ”Writing”, ”Reading” och ”Planning”." data-zoom="../assets/marketing/classic-one-column.png" type="button"><img alt="En kompakt Classic-arbetsyta med fem uppgifter: ”Design”, ”Research”, ”Writing”, ”Reading” och ”Planning”." decoding="async" loading="lazy" src="../assets/marketing/classic-one-column.png"/></button>
+<figcaption>En kompakt Classic-arbetsyta med fem uppgifter: ”Design”, ”Research”, ”Writing”, ”Reading” och ”Planning”.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="xhelpers-pro-heading" class="highlight-row" data-highlight="20" id="xhelpers-pro">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">20</span>XHelpers Pro-förmån</p>
+<h2 id="xhelpers-pro-heading">En följeslagare till din Mac.</h2>
+<p>Utforska XHelpers Pro, ett separat Mac-verktyg med snabb åtkomst till vardagliga reglage. XTimers-användare kan se kampanjerbjudandet för licensen för aktuella villkor och aktiveringsinformation.</p>
+<span class="platform-pill">Mac · separat app</span>
+<a class="text-link" href="https://xintechllc.com/XHelpersPro/" rel="noopener noreferrer" target="_blank">Se XHelpers Pro-erbjudandet</a>
+</div>
+<div aria-label="Bilder: XHelpers Pro-förmån" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Inkluderad XHelpers Pro-förmån</h3><span class="capture-status status-real">Installerad Mac-app · exempelkonfiguration</span></div>
+<button aria-label="Förstora: Inkluderad XHelpers Pro-förmån" class="image-button capture-image" data-caption="Inkluderad XHelpers Pro-förmån — Om-skärmen i den installerade XTimers-appen visar den inkluderade XHelpers Pro-förmånen." data-zoom="../assets/marketing/mac-xhelpers-benefit.png" type="button"><img alt="Om-skärmen i den installerade XTimers-appen visar den inkluderade XHelpers Pro-förmånen." decoding="async" loading="lazy" src="../assets/marketing/mac-xhelpers-benefit.png"/></button>
+<figcaption>Om-skärmen i den installerade XTimers-appen visar den inkluderade XHelpers Pro-förmånen.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="download-heading" class="download-section" id="download">
+<div class="wrap download-inner">
+<div class="download-copy"><img alt="" height="64" loading="lazy" src="../assets/marketing/app-icon.png" width="64"/><h2 id="download-heading">Avsätt lite tid<br/>för <em>dig själv.</em></h2><p>En tidtagare för dina uppgifter. En plats för dina rutiner.</p></div>
+<div class="download-choices">
+<a class="download-choice" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" class="icon"><use href="#i-mac"></use></svg><span><strong>XTimers för Mac</strong><small>Visa i Mac App Store</small></span></a>
+<a class="download-choice" href="#mobile"><svg aria-hidden="true" class="icon"><use href="#i-mobile"></use></svg><span><strong>XTimers för iPhone &amp; iPad</strong><small>Utforska mobilupplevelsen</small></span></a>
+<p class="download-note">Mac, iPhone och iPad. Var och en med sin plats i din dag.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="faq-heading" class="section faq-section wrap" id="support">
+<div class="section-copy"><p class="eyebrow">Några användbara svar</p><h2 id="faq-heading">Innan du<br/>avsätter tid.</h2><p>Har du något annat i åtanke?</p><a class="text-link" href="support.html" rel="noopener noreferrer" target="_blank">Besök supporten</a></div>
+<div class="faq-list">
+<details><summary>Behöver jag ett konto?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Inget konto behövs för grundläggande lokala tidtagare, nedräkningar, världsklockor och lokala rapporter. Logga in när du vill använda kontosynkronisering eller kontobaserade påminnelser.</p><p class="feature-note">XTimers använder en Xin Account för att identifiera och autentisera en användare. En Xin Account är det delade identitetslagret för XTimers och alla andra anslutna produkter som listas under kontokontroller; det är inte ett XTimers produktkonto och innehåller inte XTimers timers, rapporter, ljud eller SMS data.</p></details>
+<details><summary>Kan jag använda XTimers offline?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Grundläggande tidtagning och lokala rapporter fungerar offline. Synkronisering, onlinedelning och serverpåminnelser kräver en anslutning. Världskalender på Mac kräver först att katalogen hämtas; den installerade katalogen kan sedan användas offline.</p></details>
+<details><summary>Kan flera tidtagare köras samtidigt?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Ja. Välj om byte till en annan uppgift pausar den föregående tidtagaren som stöds eller låter den fortsätta. Uppgiftsgrupper hjälper dig att hålla ordning på olika aktiviteter.</p></details>
+<details><summary>Är funktionerna desamma på alla enheter?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Den grundläggande arbetsytan innehåller tidtagare, nedräkningar, klockor, uppgiftsgrupper och rapporter. Mac lägger till menyradsreglage och Världskalender. iPhone stöder liveaktiviteter på kompatibla enheter, medan iPad ger utrymme för större uppgiftslayouter.</p></details>
+<details><summary>Hur fungerar telefonpåminnelser?<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Påminnelser skickas till ditt eget nummer som stöds och är verifierat, med separat samtycke för SMS eller samtal. Tillgängligheten beror på kontot, regionen och tjänsten. Ett schemalagt samtal kräver serverbekräftelse; ”Call Me” använder engelska och ringer inte automatiskt upp igen.</p></details>
+</div>
+</section>
+</main>
+<footer class="site-footer wrap">
+<p class="footer-copy"><small>© 2026 Xintech LLC</small><span>Avsätt tid för det som betyder något för dig.</span></p>
+<div class="footer-links"><a href="#features">Funktioner</a><a href="#devices">Dina enheter</a><a href="support.html" rel="noopener noreferrer" target="_blank">Support</a><a href="privacy.html" rel="noopener noreferrer" target="_blank">Integritet</a><a href="sms-terms.html" rel="noopener noreferrer" target="_blank">Meddelandevillkor</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener noreferrer" target="_blank">Licens</a><a href="terms.html">Villkor</a><a href="privacy-choices.html">Val av integritetsinställningar</a><a href="sms-opt-in.html">SMS-samtycke</a></div>
+</footer>
+<dialog aria-labelledby="image-dialog-caption" class="image-dialog" id="image-dialog">
+<button aria-label="Förminska och stäng skärmbilden" class="image-dialog-zoom-out" type="button">
+<img alt="" id="image-dialog-img"/>
+</button>
+<p id="image-dialog-caption"></p>
+</dialog>
 </body>
 </html>

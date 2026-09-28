@@ -4,18 +4,31 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>XTimers — Mac, iPhone και iPad</title>
-<meta content="Το XTimers είναι ένας ήρεμος χώρος εργασίας χρονομέτρων για το οικοσύστημα της Apple, με χρονόμετρα, αντίστροφες μετρήσεις, ρολόγια, σύνολα εργασιών, αναφορές, προσαρμοσμένους ήχους και υπενθυμίσεις λογαριασμού σε Mac, iPhone και iPad." name="description"/>
 <meta content="#fbfaf7" name="theme-color"/>
-<meta content="XTimers" property="og:title"/>
-<meta content="Χρονόμετρα, αντίστροφες μετρήσεις, ρολόγια, αναφορές, ήχοι και υπενθυμίσεις λογαριασμού για Mac, iPhone και iPad." property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="https://xintechllc.com/XTimers/assets/flexible-timers/macos/1-single-light.png" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="XTimers" name="twitter:title"/>
-<meta content="Timers, countdowns, clocks, reports, sounds, and account reminders for Mac, iPhone, and iPad." name="twitter:description"/>
-<meta content="https://xintechllc.com/XTimers/assets/flexible-timers/macos/1-single-light.png" name="twitter:image"/>
-<link rel="canonical" href="https://xintechllc.com/XTimers/el/">
+<meta content="Χρονομέτρηση. Αντίστροφη μέτρηση. Παγκόσμια ρολόγια. Παγκόσμιο ημερολόγιο. Ευέλικτο. Προσαρμόσιμο. Συγκεντρώστε χρονόμετρα, ρουτίνες, υπενθυμίσεις και αναφορές σε έναν χώρο εργασίας." name="description"/>
+<title>XTimers — Χρονομέτρηση. Αντίστροφη μέτρηση. Παγκόσμια ρολόγια. Παγκόσμιο ημερολόγιο.</title>
+<link href="../assets/marketing/app-icon.png" rel="icon"/>
+<link href="../assets/marketing/styles.css" rel="stylesheet"/>
+<link href="../assets/marketing/site-style.css" rel="stylesheet"/>
+<script defer="" src="../assets/marketing/site.js"></script>
+<script data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19" defer="" src="https://cloud.umami.is/script.js"></script><script>
+  window.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[href]");
+    if (!link || !window.umami) return;
+    var href = link.getAttribute("href") || "";
+    var url = link.href || href;
+    var eventName = null;
+    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
+    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
+    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
+    else if (/support\.html/i.test(href)) eventName = "Support Click";
+    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
+    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
+    if (eventName) {
+      window.umami.track(eventName, { href: url, path: window.location.pathname });
+    }
+  });
+</script> <link rel="canonical" href="https://xintechllc.com/XTimers/el/">
 <link rel="alternate" hreflang="ar" href="https://xintechllc.com/XTimers/ar/">
 <link rel="alternate" hreflang="bn" href="https://xintechllc.com/XTimers/bn/">
 <link rel="alternate" hreflang="ca" href="https://xintechllc.com/XTimers/ca/">
@@ -23,7 +36,7 @@
 <link rel="alternate" hreflang="da" href="https://xintechllc.com/XTimers/da/">
 <link rel="alternate" hreflang="de" href="https://xintechllc.com/XTimers/de/">
 <link rel="alternate" hreflang="el" href="https://xintechllc.com/XTimers/el/">
-<link rel="alternate" hreflang="en" href="https://xintechllc.com/XTimers/flexible-timers.html">
+<link rel="alternate" hreflang="en" href="https://xintechllc.com/XTimers/">
 <link rel="alternate" hreflang="es" href="https://xintechllc.com/XTimers/es/">
 <link rel="alternate" hreflang="fi" href="https://xintechllc.com/XTimers/fi/">
 <link rel="alternate" hreflang="fr" href="https://xintechllc.com/XTimers/fr/">
@@ -61,7 +74,7 @@
 <link rel="alternate" hreflang="vi" href="https://xintechllc.com/XTimers/vi/">
 <link rel="alternate" hreflang="zh-Hans" href="https://xintechllc.com/XTimers/zh-Hans/">
 <link rel="alternate" hreflang="zh-Hant" href="https://xintechllc.com/XTimers/zh-Hant/">
-<link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XTimers/flexible-timers.html">
+<link rel="alternate" hreflang="x-default" href="https://xintechllc.com/XTimers/">
 
 
 
@@ -108,37 +121,43 @@
 
 
 
-<link href="../assets/flexible-timers/brand/favicon.png" rel="icon" type="image/png"/>
-<link href="../assets/flexible-timers/site.css" rel="stylesheet"/>
-<script data-website-id="4ef1f6b7-ba4a-45e0-9ae8-3a9751e03d19" defer="" src="https://cloud.umami.is/script.js"></script>
-<script>
-  window.addEventListener("click", function (event) {
-    var link = event.target.closest && event.target.closest("a[href]");
-    if (!link || !window.umami) return;
-    var href = link.getAttribute("href") || "";
-    var url = link.href || href;
-    var eventName = null;
-    if (href.indexOf("apps.apple.com") !== -1) eventName = "App Store Click";
-    else if (/\.dmg(\?|#|$)/i.test(href) || href.indexOf("/releases/download/") !== -1) eventName = "Download Click";
-    else if (href.indexOf("mailto:") === 0) eventName = "Email Click";
-    else if (/support\.html/i.test(href)) eventName = "Support Click";
-    else if (/privacy\.html/i.test(href)) eventName = "Privacy Click";
-    else if (/eula\.html|terms\.html/i.test(href)) eventName = "Terms Click";
-    if (eventName) {
-      window.umami.track(eventName, { href: url, path: window.location.pathname });
-    }
-  });
-</script>
 </head>
 <body>
-<div class="page-shell">
-<header class="nav">
-<div class="nav-inner">
-<a aria-label="Αρχική σελίδα XTimers" class="brand" href="index.html">
-<img alt="" class="brand-icon" height="36" src="../assets/flexible-timers/brand/app-icon.png" width="36"/>
-<span class="brand-text">XTimers<small>Mac • iPhone • iPad</small></span>
-</a>
-<div class="nav-actions"><a class="button primary" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12">Λήψη για Mac</a><details class="language-menu">
+<svg aria-hidden="true" class="svg-definitions" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<symbol id="i-clock" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></symbol>
+<symbol id="i-timer" viewbox="0 0 24 24"><circle cx="12" cy="14" r="8"></circle><path d="M12 10v4l3 2M9 2h6m-3 0v4m6 0 2 2"></path></symbol>
+<symbol id="i-countdown" viewbox="0 0 24 24"><path d="M6 3h12M6 21h12M7 3v4l5 5-5 5v4m10-18v4l-5 5 5 5v4M9 18h6"></path></symbol>
+<symbol id="i-folder" viewbox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h5l3 3h6a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7h18"></path></symbol>
+<symbol id="i-check" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></symbol>
+<symbol id="i-globe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><ellipse cx="12" cy="12" rx="4" ry="9"></ellipse><path d="M3 12h18"></path></symbol>
+<symbol id="i-calendar" viewbox="0 0 24 24"><rect height="16" rx="3" width="18" x="3" y="5"></rect><path d="M7 3v4m10-4v4M3 11h18m-14 4h3m4 0h3m-10 3h3"></path></symbol>
+<symbol id="i-chart" viewbox="0 0 24 24"><path d="M4 3v18h17M8 17v-5m5 5V7m5 10V4"></path></symbol>
+<symbol id="i-sound" viewbox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9H3m13-1a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"></path></symbol>
+<symbol id="i-mail" viewbox="0 0 24 24"><rect height="14" rx="3" width="18" x="3" y="5"></rect><path d="m3 7 9 6 9-6"></path></symbol>
+<symbol id="i-phone" viewbox="0 0 24 24"><path d="m8 3 3 5-3 3a14 14 0 0 0 5 5l3-3 5 3v3c0 2-2 3-4 2C10 19 5 14 3 7c-1-2 0-4 2-4h3Z"></path></symbol>
+<symbol id="i-sync" viewbox="0 0 24 24"><path d="M20 8a8 8 0 0 0-14-3L3 8m0-5v5h5m-4 8a8 8 0 0 0 14 3l3-3m0 5v-5h-5"></path></symbol>
+<symbol id="i-lock" viewbox="0 0 24 24"><rect height="11" rx="3" width="14" x="5" y="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"></path></symbol>
+<symbol id="i-mac" viewbox="0 0 24 24"><rect height="13" rx="2" width="18" x="3" y="3"></rect><path d="M9 21h6m-3-5v5"></path></symbol>
+<symbol id="i-mobile" viewbox="0 0 24 24"><rect height="20" rx="3" width="12" x="6" y="2"></rect><path d="M10 5h4m-3 14h2"></path></symbol>
+<symbol id="i-tablet" viewbox="0 0 24 24"><rect height="20" rx="3" width="18" x="3" y="2"></rect><path d="M10 19h4"></path></symbol>
+<symbol id="i-plus" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></symbol>
+<symbol id="i-expand" viewbox="0 0 24 24"><path d="M9 3H3v6m0-6 6 6m6 12h6v-6m0 6-6-6"></path></symbol>
+<symbol id="i-leaf" viewbox="0 0 24 24"><path d="M4 20 16 8M5 17C-1 5 13 7 20 3c2 13-4 19-12 15"></path></symbol>
+</defs>
+</svg>
+<a class="skip-link" href="#main">Μετάβαση στο περιεχόμενο</a>
+<header class="site-header">
+<nav aria-label="Κύρια πλοήγηση" class="navigation wrap">
+<a aria-label="Αρχική σελίδα XTimers" class="brand" href="#top"><img alt="" height="36" src="../assets/marketing/app-icon.png" width="36"/><span>XTimers</span></a>
+<button aria-controls="nav-links" aria-expanded="false" aria-label="Άνοιγμα πλοήγησης" class="menu-toggle" data-close-label="Κλείσιμο πλοήγησης" data-open-label="Άνοιγμα πλοήγησης" type="button"><span></span><span></span></button>
+<div class="nav-links" id="nav-links">
+<a href="#features">Δυνατότητες</a>
+<a href="#devices">Οι συσκευές σας</a>
+<a href="#support">Ερωτήσεις</a>
+<div class="header-actions">
+<a class="button button-small button-ink" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12">Λήψη για Mac</a>
+<details class="language-menu">
             <summary>🌐 · Ελληνικά</summary>
             <div class="language-menu-list" aria-label="Γλώσσα">
               <a href="../ar/" lang="ar" dir="rtl">العربية</a>
@@ -148,7 +167,7 @@
               <a href="../da/" lang="da" dir="ltr">Dansk</a>
               <a href="../de/" lang="de" dir="ltr">Deutsch</a>
               <a href="../el/" lang="el" dir="ltr" aria-current="page">Ελληνικά</a>
-              <a href="../flexible-timers.html" lang="en" dir="ltr">English</a>
+              <a href="../" lang="en" dir="ltr">English</a>
               <a href="../es/" lang="es" dir="ltr">Español</a>
               <a href="../fi/" lang="fi" dir="ltr">Suomi</a>
               <a href="../fr/" lang="fr" dir="ltr">Français</a>
@@ -187,34 +206,640 @@
               <a href="../zh-Hans/" lang="zh-Hans" dir="ltr">简体中文</a>
               <a href="../zh-Hant/" lang="zh-Hant" dir="ltr">繁體中文</a>
             </div>
-          </details></div>
+          </details>
 </div>
+</div>
+</nav>
 </header>
-<main id="top">
-<section aria-labelledby="hero-title" class="hero"><div><h1 id="hero-title">XTimers</h1><p class="hero-lede">Χρονόμετρα, αντίστροφες μετρήσεις, ρολόγια, αναφορές, ήχοι και υπενθυμίσεις λογαριασμού για Mac, iPhone και iPad. Παλαιότερα γνωστό ως Flexible Timers.</p></div><div aria-label="Στιγμιότυπα οθόνης της εφαρμογής XTimers" class="hero-visual"><div class="device-stage"><div class="desktop-card"><div aria-hidden="true" class="window-bar"><span class="traffic"></span><span class="traffic"></span><span class="traffic"></span><span class="window-title">XTimers για Mac</span></div><figure class="shot"><img alt="Κύριο παράθυρο χρονομέτρων του XTimers σε macOS σε φωτεινή εμφάνιση" height="1125" loading="eager" src="../assets/flexible-timers/macos/1-single-light.png" width="1800"/></figure></div><div aria-label="Στιγμιότυπο οθόνης του XTimers σε iPhone" class="phone-card"><figure class="shot"><img alt="Λίστα χρονομέτρων του XTimers σε iPhone σε φωτεινή εμφάνιση" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-1-timers-light.png" width="736"/></figure></div><div aria-label="Στιγμιότυπο οθόνης του XTimers σε iPad" class="tablet-card"><figure class="shot"><img alt="Λίστα χρονομέτρων του XTimers σε iPad σε φωτεινή εμφάνιση" height="1600" loading="eager" src="../assets/flexible-timers/ios/ipad-13-1-timers-light.png" width="1200"/></figure></div></div></div></section>
-<section aria-label="Δυνατότητες ευέλικτων χρονομέτρων" class="section" id="features"><div class="feature-grid"><article class="feature-card"><h3>Ευέλικτοι τύποι εργασιών</h3><p>Χρονόμετρα, αντίστροφες μετρήσεις με ώρα λήξης, παγκόσμια ρολόγια και εργασίες υπενθύμισης λογαριασμού.</p></article><article class="feature-card"><h3>Σύνολα εργασιών</h3><p>Ξεχωρίστε τη δουλειά, το μαγείρεμα, τη μελέτη, τα ταξίδια και τις επαναχρησιμοποιήσιμες ρουτίνες.</p></article><article class="feature-card"><h3>Αναφορές και αρχειοθετήσεις</h3><p>Δείτε στιγμιότυπα, προσθέστε σημειώσεις και στείλτε αναφορές στο email του λογαριασμού σας.</p></article><article class="feature-card"><h3>Ήχοι και ειδοποιήσεις</h3><p>Χρησιμοποιήστε ενσωματωμένους ήχους, προσαρμοσμένους ήχους, ηχητικά σήματα και τοπικές ειδοποιήσεις.</p></article></div></section>
-<section aria-label="Πλατφόρμες XTimers" class="section platform-section"><article class="platform" id="mac"><div class="platform-copy"><h2>Φτιαγμένο για συγκεντρωμένη εργασία με χρονόμετρα στο Mac.</h2><p>Χρονόμετρα SwiftUI με σύνολα εργασιών, αναφορές, συγχρονισμό, προσαρμοσμένους ήχους και κατάσταση στη γραμμή μενού.</p><div class="platform-list"><div class="platform-item"><span class="check">✓</span><span>Απλές ή εκτεταμένες διατάξεις χρονομέτρων.</span></div><div class="platform-item"><span class="check">✓</span><span>Κατάσταση στη γραμμή μενού για το ενεργό χρονόμετρο.</span></div><div class="platform-item"><span class="check">✓</span><span>Χρονόμετρα, αντίστροφες μετρήσεις, ρολόγια και εργασίες υπενθύμισης.</span></div><div class="platform-item"><span class="check">✓</span><span>Συγχρονισμός, αρχειοθετήσεις, αναφορές και προσαρμοσμένοι ήχοι.</span></div></div></div><div class="shot-stack"><figure class="shot"><img alt="Εκτεταμένο παράθυρο χρονομέτρων δύο στηλών του XTimers σε macOS" height="1125" loading="eager" src="../assets/flexible-timers/macos/3-double-light.png" width="1800"/></figure><div class="shot-row"><figure class="shot"><img alt="Φύλλο προσθήκης χρονομέτρου του XTimers σε macOS σε φωτεινή εμφάνιση" height="1125" loading="eager" src="../assets/flexible-timers/macos/5-addtimer-light.png" width="1800"/></figure><figure class="shot"><img alt="Φύλλο προσθήκης αντίστροφης μέτρησης του XTimers σε macOS σε φωτεινή εμφάνιση" height="1125" loading="eager" src="../assets/flexible-timers/macos/7-addcountdown-light.png" width="1800"/></figure></div></div></article><article class="platform reverse" id="ios"><div class="phone-showcase"><div class="phone-screen"><figure class="shot"><img alt="Στιγμιότυπο οθόνης του XTimers σε iPhone" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-1-timers-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="Στιγμιότυπο οθόνης του XTimers σε iPhone" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-4-add-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="Στιγμιότυπο οθόνης του XTimers σε iPhone" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-6-settings-light.png" width="736"/></figure></div><div class="phone-screen"><figure class="shot"><img alt="Στιγμιότυπο οθόνης του XTimers σε iPhone" height="1600" loading="eager" src="../assets/flexible-timers/ios/iphone-6.9-7-report-light.png" width="736"/></figure></div></div><div class="platform-copy"><h2>Το ίδιο σύστημα χρονομέτρων σε iPhone και iPad.</h2><p>Χρονόμετρα, ρολόγια, αναφορές, ρυθμίσεις, συγχρονισμός, ειδοποιήσεις και ήχοι σε iPhone και iPad.</p><div class="platform-list"><div class="platform-item"><span class="check">✓</span><span>Διάταξη λίστας σε iPhone και πλέγματος σε iPad.</span></div><div class="platform-item"><span class="check">✓</span><span>Δημιουργήστε χρονόμετρα, αντίστροφες μετρήσεις, ρολόγια και υπενθυμίσεις.</span></div><div class="platform-item"><span class="check">✓</span><span>Αναφορές, ρυθμίσεις, ήχοι και συγχρονισμός.</span></div></div></div></article></section>
-<section aria-labelledby="sync-title" class="section" id="sync"><div class="account-panel"><div><h2 id="sync-title">Σύνδεση με Xin Account. Τα δεδομένα XTimers παραμένουν ξεχωριστά.</h2><p>Το XTimers χρησιμοποιεί το Xin Account σας για κοινόχρηστη σύνδεση, ενώ διατηρεί τα χρονόμετρα, τις αναφορές, τις ρυθμίσεις, τους ήχους και τις επιλογές SMS σας ως δεδομένα προϊόντος XTimers. <a href="privacy.html#xin-account">Μάθετε πώς λειτουργούν τα επίπεδα λογαριασμού.</a></p></div><div class="account-list"><div class="account-row"><strong>Σύνδεση σε πολλές συσκευές</strong><span>Το Xin Account σας σας αναγνωρίζει και εξουσιοδοτεί κάθε συνδεδεμένο λογαριασμό XTimers.</span></div><div class="account-row"><strong>Συγχρονισμός δεδομένων XTimers</strong><span>Τα σύνολα εργασιών, τα αρχεία, οι ρυθμίσεις και οι ήχοι ακολουθούν τον συνδεδεμένο λογαριασμό XTimers.</span></div><div class="account-row"><strong>Ξεχωριστές επιλογές απορρήτου</strong><span>Η αποσύνδεση, η αφαίρεση τοπικών αντιγράφων, η διαγραφή δεδομένων XTimers και η διαγραφή του καθολικού Xin Account αποτελούν ξεχωριστές ενέργειες.</span></div></div></div></section>
-</main>
-<footer><div>© 2017-2026 Xintech LLC.</div><div class="footer-links"><a href="support.html">Υποστήριξη</a><a href="privacy.html">Απόρρητο</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA</a><a href="sms-terms.html">Όροι SMS</a><a href="sms-opt-in.html">Συγκατάθεση SMS</a></div></footer>
+<main id="main">
+<section aria-labelledby="hero-heading" class="hero wrap" id="top">
+<div class="hero-copy hero-hoefler">
+<div class="hero-copy-inner">
+<p class="eyebrow">Για Mac, iPhone &amp; iPad</p>
+<h1 aria-label="Χρονομέτρηση. Αντίστροφη μέτρηση. Παγκόσμια ρολόγια. Παγκόσμιο ημερολόγιο." class="hero-timing-heading" id="hero-heading"><span class="hero-line">Χρονομέτρηση.</span> <span class="hero-line">Αντίστροφη μέτρηση.</span> <span class="hero-line">Παγκόσμια ρολόγια.</span> <span class="hero-line">Παγκόσμιο ημερολόγιο.</span></h1>
+<p class="hero-payoff">Ευέλικτο. Προσαρμόσιμο.</p>
+<p class="hero-description">Συγκεντρώστε χρονόμετρα, αντίστροφες μετρήσεις και παγκόσμια ρολόγια σε έναν χώρο εργασίας. Προσθέστε επαναχρησιμοποιήσιμες ρουτίνες, υπενθυμίσεις και αναφορές, με διατάξεις και εμφάνιση που μπορείτε να προσαρμόσετε στα μέτρα σας.</p>
+<p class="hero-note"><svg aria-hidden="true" class="icon"><use href="#i-check"></use></svg>Τα βασικά χρονόμετρα λειτουργούν εκτός σύνδεσης. Δεν χρειάζεται λογαριασμός.</p>
 </div>
-<script>
-      // ft-language-menu-dismiss: close the language dropdown when clicking
-      // outside it or pressing Escape. A native <details> otherwise only closes
-      // on a second click of its <summary>.
-      (function () {
-        function closeAll() {
-          document.querySelectorAll('details.language-menu[open]')
-            .forEach(function (d) { d.removeAttribute('open'); });
-        }
-        document.addEventListener('click', function (e) {
-          document.querySelectorAll('details.language-menu[open]')
-            .forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute('open'); });
-        });
-        document.addEventListener('keydown', function (e) {
-          if (e.key === 'Escape' || e.key === 'Esc') closeAll();
-        });
-      })();
-    </script>
+</div>
+<div class="hero-stage">
+<div class="floating-label"><span class="pulse-dot"></span>Βρείτε χρόνο για όσα έχουν σημασία.</div>
+<button aria-label="Μεγέθυνση στιγμιότυπου του «Studio» από την εγκατεστημένη εφαρμογή Mac" class="image-button hero-mac" data-caption="Χώρος εργασίας «Studio» — εγκατεστημένη εφαρμογή Mac με προσομοιωμένα χρονόμετρα, μία αντίστροφη μέτρηση και παγκόσμια ρολόγια." data-zoom="../assets/marketing/mac-dark.png" type="button">
+<img alt="Ο χώρος εργασίας «Studio» στο εγκατεστημένο XTimers, με προσομοιωμένα χρονόμετρα «Design», «Research», «Writing», «Reading» και «Planning», το «Focus sprint» και τρία παγκόσμια ρολόγια σε σκούρο μπλε φόντο" fetchpriority="high" height="796" src="../assets/marketing/mac-dark.png" width="1240"/>
+</button>
+<button aria-label="Μεγέθυνση μικρού χρονομέτρου «Design» με κρυμμένα χειριστήρια" class="image-button hero-mini" data-caption="Ένα μικρό χρονόμετρο «Design» — εγκατεστημένη εφαρμογή Mac με προσομοιωμένα δεδομένα και κρυμμένα χειριστήρια." data-zoom="../assets/marketing/mac-timer-minimal-hidden.png" type="button">
+<img alt="Το χρονόμετρο «Design» σε ένα μικρό σκούρο μπλε παράθυρο «Minimal», αφού κρυφτούν σταδιακά τα χειριστήριά του" fetchpriority="high" height="480" src="../assets/marketing/mac-timer-minimal-hidden.png" width="1240"/>
+</button>
+<button aria-label="Μεγέθυνση: Παγκόσμιο ημερολόγιο στην εισαγωγική ενότητα" class="image-button hero-calendar" data-caption="Παγκόσμιο ημερολόγιο — Οκτώβριος 2026 με επίσημες αργίες, ημερομηνίες του κινεζικού ημερολογίου και λεπτομέρειες για την Εθνική Ημέρα στην εγκατεστημένη εφαρμογή Mac." data-zoom="../assets/marketing/mac-world-calendar-month.png" type="button">
+<img alt="Το πλέγμα μήνα και οι λεπτομέρειες αργιών του Παγκόσμιου ημερολογίου σε φωτεινό παράθυρο Mac" decoding="async" height="1440" src="../assets/marketing/mac-world-calendar-month.png" width="2040"/>
+</button>
+<button aria-label="Μεγέθυνση: Βιβλιοθήκη ήχων στην εισαγωγική ενότητα" class="image-button hero-sounds" data-caption="Βιβλιοθήκη ήχων — Ήχοι της συλλογής «World Ceremonial» με εγγενείς κυματομορφές, αγαπημένα και χειριστήρια αναπαραγωγής στην εγκατεστημένη εφαρμογή Mac." data-zoom="../assets/marketing/mac-sound-ceremonial.png" type="button">
+<img alt="Η συλλογή τελετουργικών ήχων του κόσμου «World Ceremonial» της βιβλιοθήκης ήχων, με κυματομορφές καμπάνας, μελωδικού κουδουνιού, τυμπάνου και τρομπέτας" decoding="async" height="1120" src="../assets/marketing/mac-sound-ceremonial.png" width="1440"/>
+</button>
+<button aria-label="Μεγέθυνση: Το «Planning» με τη φωτογραφία των Δολομιτών στην εισαγωγική ενότητα" class="image-button hero-photo" data-caption="Μια προβολή στα μέτρα σας — Το «Planning» στα 20:04 πάνω στη φωτογραφία των Δολομιτών, με τα χειριστήρια να έχουν κρυφτεί αυτόματα στην εγκατεστημένη εφαρμογή Mac." data-zoom="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" type="button">
+<img alt="Το «Planning» στα 20:04 πάνω σε μια φωτογραφία βουνού, στην προβολή «Minimal»" decoding="async" height="468" src="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" width="658"/>
+</button>
+<button aria-label="Μεγέθυνση γραφημάτων εβδομαδιαίας αναφοράς στην εισαγωγική ενότητα" class="image-button hero-report" data-caption="Η εβδομάδα σας στο επίκεντρο — 30 ενδεικτικές ώρες σε πέντε εργασίες, με ημερήσια σύνολα και γραφήματα μεριδίων ανά εργασία στην εγκατεστημένη εφαρμογή Mac." data-zoom="../assets/marketing/mac-report-week-daily-totals.png" type="button">
+<img alt="Εβδομαδιαία αναφορά χρόνου με πολύχρωμα στοιβαγμένα ημερήσια σύνολα και γράφημα που δείχνει το μερίδιο κάθε εργασίας από 30 ενδεικτικές ώρες" decoding="async" height="2396" src="../assets/marketing/mac-report-week-daily-totals.png" width="1520"/>
+</button>
+<div class="hero-menubar">
+<button aria-label="Μεγέθυνση: Η κατάσταση του «Planning» στη γραμμή μενού, στην εισαγωγική ενότητα" class="image-button" data-caption="Το χρονόμετρό σας στη γραμμή μενού — Το «Planning» σε παύση στα 20:04, ορατό δίπλα στα εικονίδια κατάστασης του macOS χωρίς να ανοίξετε το κύριο παράθυρο." data-zoom="../assets/marketing/mac-menubar-status-planning.png" type="button">
+<img alt="Η γραμμή μενού του macOS με ένδειξη παύσης και «Planning 20:04» δίπλα στα εικονίδια κατάστασης του συστήματος" decoding="async" height="60" src="../assets/marketing/mac-menubar-status-planning.png" width="572"/>
+</button>
+<a href="#menu-bar">Το χρονόμετρό σας, απευθείας στη γραμμή μενού.</a>
+</div>
+<span class="stage-caption">Ο χρόνος σας. Με μια ματιά.</span>
+</div>
+</section>
+<section aria-label="Ανακαλύψτε τις δυνατότητες του XTimers" class="feature-overview wrap" id="features">
+<details class="feature-browser">
+<summary>Δείτε και τις 20 δυνατότητες <span aria-hidden="true">+</span></summary>
+<nav aria-label="Και οι 20 δυνατότητες ανά κατηγορία" class="feature-index">
+<div class="feature-group">
+<h3><a class="feature-category" href="#timers"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timers.png" width="16"/>Χρονομέτρηση<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#timers"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timers.png" width="16"/><span>Χρονόμετρα και αντίστροφες μετρήσεις</span></a></li>
+<li><a href="#reminders"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/reminders.png" width="16"/><span>Υπενθυμίσεις μέσω email, SMS και κλήσεων</span></a></li>
+<li><a href="#sound-library"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/sound-library.png" width="16"/><span>Βιβλιοθήκη ήχων</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#task-sets"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/task-sets.png" width="16"/>Ρουτίνες<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#task-sets"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/task-sets.png" width="16"/><span>Σύνολα εργασιών και επαναχρησιμοποιήσιμα πρότυπα</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#timer-views"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timer-views.png" width="16"/>Προβολές<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#timer-views"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/timer-views.png" width="16"/><span>Ευέλικτες προβολές χρονομέτρων</span></a></li>
+<li><a href="#classic-interface"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/classic-interface.png" width="16"/><span>Κλασικό περιβάλλον</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#world-calendar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-clocks.png" width="16"/>Παγκόσμια ώρα<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#world-clocks"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-clocks.png" width="16"/><span>Παγκόσμια ρολόγια</span></a></li>
+<li><a href="#world-calendar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/world-calendar.png" width="16"/><span>Παγκόσμιο ημερολόγιο</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#time-reports"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/time-reports.png" width="16"/>Αναφορές<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#time-reports"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/time-reports.png" width="16"/><span>Αναφορές χρόνου και κοινή χρήση</span></a></li>
+<li><a href="#archives"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/archives.png" width="16"/><span>Αρχεία</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#appearance"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/appearance.png" width="16"/>Εμφάνιση<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#appearance"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/appearance.png" width="16"/><span>Προσαρμογή εμφάνισης</span></a></li>
+<li><a href="#languages"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/languages.png" width="16"/><span>Υποστήριξη πολλών γλωσσών</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#menu-bar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/menu-bar.png" width="16"/>Οι συσκευές σας<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#menu-bar"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/menu-bar.png" width="16"/><span>Ενσωμάτωση στη γραμμή μενού και στην επιφάνεια εργασίας</span></a></li>
+<li><a href="#live-activities"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/live-activities.png" width="16"/><span>Ζωντανές δραστηριότητες</span></a></li>
+<li><a href="#siri-shortcuts"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/siri-shortcuts.png" width="16"/><span>Siri και Συντομεύσεις</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#offline"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/protected-sync.png" width="16"/>Συγχρονισμός &amp; απόρρητο<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#offline"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/offline.png" width="16"/><span>Χρήση εκτός σύνδεσης χωρίς λογαριασμό</span></a></li>
+<li><a href="#synchronization"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/synchronization.png" width="16"/><span>Συγχρονισμός μεταξύ συσκευών</span></a></li>
+<li><a href="#protected-sync"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/protected-sync.png" width="16"/><span>Προστατευμένος συγχρονισμός</span></a></li>
+</ul>
+</div>
+<div class="feature-group">
+<h3><a class="feature-category" href="#activity-tracking"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/xhelpers-pro.png" width="16"/>Περισσότερα στο Mac<span aria-hidden="true">↘</span></a></h3>
+<ul class="feature-items">
+<li><a href="#activity-tracking"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/activity-tracking.png" width="16"/><span>Αυτόματη παρακολούθηση δραστηριότητας εφαρμογών</span></a></li>
+<li><a href="#xhelpers-pro"><img alt="" aria-hidden="true" class="feature-icon" height="16" src="../assets/marketing/feature-icons/xhelpers-pro.png" width="16"/><span>Προνόμιο XHelpers Pro</span></a></li>
+</ul>
+</div>
+</nav>
+</details>
+</section>
+<section aria-labelledby="timers-heading" class="highlight-row has-gallery" data-highlight="01" id="timers">
+<span class="anchor-target" id="count-up-timers"></span><span class="anchor-target" id="countdowns"></span><span class="anchor-target" id="running-timers"></span><span class="anchor-target" id="task-controls"></span><span class="anchor-target" id="notes-history"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">01</span>Χρονόμετρα και αντίστροφες μετρήσεις</p>
+<h2 id="timers-heading">Βρείτε χρόνο για όσα έχουν σημασία.</h2>
+<p>Μετρήστε τον χρόνο που αφιερώνετε, ξεκινήστε μια αντίστροφη μέτρηση συγκεκριμένης διάρκειας ή έχετε μια προθεσμία στο οπτικό σας πεδίο. Εκτελέστε μία ή περισσότερες εργασίες, θέστε τες σε παύση και συνεχίστε τες, και κρατήστε σημειώσεις στις συνεδρίες σας. Τα χρονόμετρά σας προσαρμόζονται καθώς αλλάζει η μέρα σας.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Εικόνες χρονομέτρων και αντίστροφων μετρήσεων" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Ο χώρος των χρονομέτρων σας</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Ο χώρος των χρονομέτρων σας" class="image-button capture-image" data-caption="Ο χώρος των χρονομέτρων σας — Ο χώρος εργασίας «Studio» συνδυάζει πέντε χρονόμετρα μέτρησης χρόνου που έχει περάσει, μια αντίστροφη μέτρηση «Focus sprint» και τρία παγκόσμια ρολόγια." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="Ο χώρος εργασίας «Studio» συνδυάζει πέντε χρονόμετρα μέτρησης χρόνου που έχει περάσει, μια αντίστροφη μέτρηση «Focus sprint» και τρία παγκόσμια ρολόγια." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>Ο χώρος εργασίας «Studio» συνδυάζει πέντε χρονόμετρα μέτρησης χρόνου που έχει περάσει, μια αντίστροφη μέτρηση «Focus sprint» και τρία παγκόσμια ρολόγια.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Μια αντίστροφη μέτρηση στα μέτρα σας</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Μια αντίστροφη μέτρηση στα μέτρα σας" class="image-button capture-image" data-caption="Μια αντίστροφη μέτρηση στα μέτρα σας — «Focus sprint»: αντίστροφη μέτρηση 25 λεπτών στο «Studio», με δυνατότητα παύσης, χειροκίνητη έναρξη και ήχο «Gentle Bell» στη λήξη." data-zoom="../assets/marketing/mac-countdown.png" type="button"><img alt="«Focus sprint»: αντίστροφη μέτρηση 25 λεπτών στο «Studio», με δυνατότητα παύσης, χειροκίνητη έναρξη και ήχο «Gentle Bell» στη λήξη." decoding="async" loading="lazy" src="../assets/marketing/mac-countdown.png"/></button>
+<figcaption>«Focus sprint»: αντίστροφη μέτρηση 25 λεπτών στο «Studio», με δυνατότητα παύσης, χειροκίνητη έναρξη και ήχο «Gentle Bell» στη λήξη.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="task-sets-heading" class="highlight-row" data-highlight="02" id="task-sets">
+<span class="anchor-target" id="routines"></span><span class="anchor-target" id="templates"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">02</span>Σύνολα εργασιών και επαναχρησιμοποιήσιμα πρότυπα</p>
+<h2 id="task-sets-heading">Ένας χώρος για κάθε ρουτίνα.</h2>
+<p>Δώστε στη δουλειά, τη μάθηση και την καθημερινή ζωή τα δικά τους ονομασμένα σύνολα εργασιών. Αποθηκεύστε μια εργασία ή ένα ολόκληρο σύνολο ως πρότυπο και φέρτε μια οικεία ρουτίνα στην επόμενη συνεδρία σας.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Εικόνες συνόλων εργασιών και επαναχρησιμοποιήσιμων προτύπων" class="feature-gallery gallery-1">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Σύνολα εργασιών</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Σύνολα εργασιών" class="image-button capture-image" data-caption="Σύνολα εργασιών — Το σύνολο εργασιών «Studio» με εννέα ενεργές εργασίες και ένα επαναχρησιμοποιήσιμο πρότυπο «Studio Template»." data-zoom="../assets/marketing/mac-task-sets.png" type="button"><img alt="Το σύνολο εργασιών «Studio» με εννέα ενεργές εργασίες και ένα επαναχρησιμοποιήσιμο πρότυπο «Studio Template»." decoding="async" loading="lazy" src="../assets/marketing/mac-task-sets.png"/></button>
+<figcaption>Το σύνολο εργασιών «Studio» με εννέα ενεργές εργασίες και ένα επαναχρησιμοποιήσιμο πρότυπο «Studio Template».</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="timer-views-heading" class="highlight-row has-gallery" data-highlight="03" id="timer-views">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">03</span>Ευέλικτες προβολές χρονομέτρων</p>
+<h2 id="timer-views-heading">Η σωστή προβολή για κάθε στιγμή.</h2>
+<p>Δείτε τη συνολική εικόνα ή εστιάστε σε μία εργασία. Το Mac προσφέρει τις προβολές λίστας («List»), πλέγματος («Grid»), μεμονωμένης εργασίας («Single») και λιτής εμφάνισης («Minimal»). Στο iPhone και το iPad, επιλέξτε λίστα («List»), εστίαση («Focus») ή μεμονωμένη εργασία («Single»), ανάλογα με τη στιγμή.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Στις προβολές «Single» και «Minimal», τα χειριστήρια κρύβονται σταδιακά όταν απομακρύνεται ο δείκτης και επανεμφανίζονται όταν τον τοποθετείτε επάνω τους.</p>
+</div>
+<div aria-label="Εικόνες ευέλικτων προβολών χρονομέτρων" class="feature-gallery gallery-14">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Λίστα</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Mac · Λίστα" class="image-button capture-image" data-caption="Mac · Λίστα — Το «Studio» σε προβολή «List», με εννέα εργασίες τοποθετημένες σε συμπαγείς σειρές." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="Το «Studio» σε προβολή «List», με εννέα εργασίες τοποθετημένες σε συμπαγείς σειρές." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>Το «Studio» σε προβολή «List», με εννέα εργασίες τοποθετημένες σε συμπαγείς σειρές.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Πλέγμα</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Mac · Πλέγμα" class="image-button capture-image" data-caption="Mac · Πλέγμα — Τα χρονόμετρα «Design», «Research», «Writing», «Reading» και «Planning» του «Studio», το «Focus sprint» και ρολόγια για τη Νέα Υόρκη, το Λονδίνο και το Τόκιο." data-zoom="../assets/marketing/mac-grid-light.png" type="button"><img alt="Τα χρονόμετρα «Design», «Research», «Writing», «Reading» και «Planning» του «Studio», το «Focus sprint» και ρολόγια για τη Νέα Υόρκη, το Λονδίνο και το Τόκιο." decoding="async" loading="lazy" src="../assets/marketing/mac-grid-light.png"/></button>
+<figcaption>Τα χρονόμετρα «Design», «Research», «Writing», «Reading» και «Planning» του «Studio», το «Focus sprint» και ρολόγια για τη Νέα Υόρκη, το Λονδίνο και το Τόκιο.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Μεμονωμένη προβολή, ορατά χειριστήρια · Απόλυτο μαύρο</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Mac · Μεμονωμένη προβολή, ορατά χειριστήρια · Απόλυτο μαύρο" class="image-button capture-image" data-caption="Mac · Μεμονωμένη προβολή, ορατά χειριστήρια · Απόλυτο μαύρο — Το «Planning» στα 20:04 στην προβολή «Single» της εγκατεστημένης εφαρμογής Mac, με ορατά χειριστήρια και απόλυτα μαύρο φόντο." data-zoom="../assets/marketing/mac-planning-single-black.png" type="button"><img alt="Το «Planning» στα 20:04 στην προβολή «Single» της εγκατεστημένης εφαρμογής Mac, με ορατά χειριστήρια και απόλυτα μαύρο φόντο." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-black.png"/></button>
+<figcaption>Το «Planning» στα 20:04 στην προβολή «Single» της εγκατεστημένης εφαρμογής Mac, με ορατά χειριστήρια και απόλυτα μαύρο φόντο.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Λιτή προβολή, ορατά χειριστήρια · Απόλυτο μαύρο</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Mac · Λιτή προβολή, ορατά χειριστήρια · Απόλυτο μαύρο" class="image-button capture-image" data-caption="Mac · Λιτή προβολή, ορατά χειριστήρια · Απόλυτο μαύρο — Το «Planning» στα 20:04 στην προβολή «Minimal» της εγκατεστημένης εφαρμογής Mac, με ορατά χειριστήρια και απόλυτα μαύρο φόντο." data-zoom="../assets/marketing/mac-planning-minimal-black.png" type="button"><img alt="Το «Planning» στα 20:04 στην προβολή «Minimal» της εγκατεστημένης εφαρμογής Mac, με ορατά χειριστήρια και απόλυτα μαύρο φόντο." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-black.png"/></button>
+<figcaption>Το «Planning» στα 20:04 στην προβολή «Minimal» της εγκατεστημένης εφαρμογής Mac, με ορατά χειριστήρια και απόλυτα μαύρο φόντο.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Μεμονωμένη προβολή, κρυμμένα χειριστήρια · Απόλυτο μαύρο</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Mac · Μεμονωμένη προβολή, κρυμμένα χειριστήρια · Απόλυτο μαύρο" class="image-button capture-image" data-caption="Mac · Μεμονωμένη προβολή, κρυμμένα χειριστήρια · Απόλυτο μαύρο — Το «Planning» στα 20:04 στην προβολή «Single» της εγκατεστημένης εφαρμογής Mac, με κρυμμένα χειριστήρια και απόλυτα μαύρο φόντο." data-zoom="../assets/marketing/mac-planning-single-hidden-black.png" type="button"><img alt="Το «Planning» στα 20:04 στην προβολή «Single» της εγκατεστημένης εφαρμογής Mac, με κρυμμένα χειριστήρια και απόλυτα μαύρο φόντο." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-black.png"/></button>
+<figcaption>Το «Planning» στα 20:04 στην προβολή «Single» της εγκατεστημένης εφαρμογής Mac, με κρυμμένα χειριστήρια και απόλυτα μαύρο φόντο.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Λιτή προβολή, κρυμμένα χειριστήρια · Απόλυτο μαύρο</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Mac · Λιτή προβολή, κρυμμένα χειριστήρια · Απόλυτο μαύρο" class="image-button capture-image" data-caption="Mac · Λιτή προβολή, κρυμμένα χειριστήρια · Απόλυτο μαύρο — Το «Planning» στα 20:04 στην προβολή «Minimal» της εγκατεστημένης εφαρμογής Mac, με κρυμμένα χειριστήρια και απόλυτα μαύρο φόντο." data-zoom="../assets/marketing/mac-planning-minimal-hidden-black.png" type="button"><img alt="Το «Planning» στα 20:04 στην προβολή «Minimal» της εγκατεστημένης εφαρμογής Mac, με κρυμμένα χειριστήρια και απόλυτα μαύρο φόντο." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-black.png"/></button>
+<figcaption>Το «Planning» στα 20:04 στην προβολή «Minimal» της εγκατεστημένης εφαρμογής Mac, με κρυμμένα χειριστήρια και απόλυτα μαύρο φόντο.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Μεμονωμένη προβολή, ορατά χειριστήρια · Φωτογραφία Yosemite</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Mac · Μεμονωμένη προβολή, ορατά χειριστήρια · Φωτογραφία Yosemite" class="image-button capture-image" data-caption="Mac · Μεμονωμένη προβολή, ορατά χειριστήρια · Φωτογραφία Yosemite — Το «Planning» στα 20:04 στην προβολή «Single» της εγκατεστημένης εφαρμογής Mac, με ορατά χειριστήρια και φόντο τη φωτογραφία του Yosemite." data-zoom="../assets/marketing/mac-planning-single-yosemite.png" type="button"><img alt="Το «Planning» στα 20:04 στην προβολή «Single» της εγκατεστημένης εφαρμογής Mac, με ορατά χειριστήρια και φόντο τη φωτογραφία του Yosemite." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-yosemite.png"/></button>
+<figcaption>Το «Planning» στα 20:04 στην προβολή «Single» της εγκατεστημένης εφαρμογής Mac, με ορατά χειριστήρια και φόντο τη φωτογραφία του Yosemite.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Λιτή προβολή, ορατά χειριστήρια · Φωτογραφία Yosemite</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Mac · Λιτή προβολή, ορατά χειριστήρια · Φωτογραφία Yosemite" class="image-button capture-image" data-caption="Mac · Λιτή προβολή, ορατά χειριστήρια · Φωτογραφία Yosemite — Το «Planning» στα 20:04 στην προβολή «Minimal» της εγκατεστημένης εφαρμογής Mac, με ορατά χειριστήρια και φόντο τη φωτογραφία του Yosemite." data-zoom="../assets/marketing/mac-planning-minimal-yosemite.png" type="button"><img alt="Το «Planning» στα 20:04 στην προβολή «Minimal» της εγκατεστημένης εφαρμογής Mac, με ορατά χειριστήρια και φόντο τη φωτογραφία του Yosemite." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-yosemite.png"/></button>
+<figcaption>Το «Planning» στα 20:04 στην προβολή «Minimal» της εγκατεστημένης εφαρμογής Mac, με ορατά χειριστήρια και φόντο τη φωτογραφία του Yosemite.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Μεμονωμένη προβολή, κρυμμένα χειριστήρια · Φωτογραφία Yosemite</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Mac · Μεμονωμένη προβολή, κρυμμένα χειριστήρια · Φωτογραφία Yosemite" class="image-button capture-image" data-caption="Mac · Μεμονωμένη προβολή, κρυμμένα χειριστήρια · Φωτογραφία Yosemite — Το «Planning» στα 20:04 στην προβολή «Single» της εγκατεστημένης εφαρμογής Mac, με κρυμμένα χειριστήρια και φόντο τη φωτογραφία του Yosemite." data-zoom="../assets/marketing/mac-planning-single-hidden-yosemite.png" type="button"><img alt="Το «Planning» στα 20:04 στην προβολή «Single» της εγκατεστημένης εφαρμογής Mac, με κρυμμένα χειριστήρια και φόντο τη φωτογραφία του Yosemite." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-yosemite.png"/></button>
+<figcaption>Το «Planning» στα 20:04 στην προβολή «Single» της εγκατεστημένης εφαρμογής Mac, με κρυμμένα χειριστήρια και φόντο τη φωτογραφία του Yosemite.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Λιτή προβολή, κρυμμένα χειριστήρια · Φωτογραφία Yosemite</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Mac · Λιτή προβολή, κρυμμένα χειριστήρια · Φωτογραφία Yosemite" class="image-button capture-image" data-caption="Mac · Λιτή προβολή, κρυμμένα χειριστήρια · Φωτογραφία Yosemite — Το «Planning» στα 20:04 στην προβολή «Minimal» της εγκατεστημένης εφαρμογής Mac, με κρυμμένα χειριστήρια και φόντο τη φωτογραφία του Yosemite." data-zoom="../assets/marketing/mac-planning-minimal-hidden-yosemite.png" type="button"><img alt="Το «Planning» στα 20:04 στην προβολή «Minimal» της εγκατεστημένης εφαρμογής Mac, με κρυμμένα χειριστήρια και φόντο τη φωτογραφία του Yosemite." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-yosemite.png"/></button>
+<figcaption>Το «Planning» στα 20:04 στην προβολή «Minimal» της εγκατεστημένης εφαρμογής Mac, με κρυμμένα χειριστήρια και φόντο τη φωτογραφία του Yosemite.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Μεμονωμένη προβολή, ορατά χειριστήρια · Φωτογραφία Δολομιτών</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Mac · Μεμονωμένη προβολή, ορατά χειριστήρια · Φωτογραφία Δολομιτών" class="image-button capture-image" data-caption="Mac · Μεμονωμένη προβολή, ορατά χειριστήρια · Φωτογραφία Δολομιτών — Το «Planning» στα 20:04 στην προβολή «Single» της εγκατεστημένης εφαρμογής Mac, με ορατά χειριστήρια και φόντο τη φωτογραφία των Δολομιτών." data-zoom="../assets/marketing/mac-planning-single-dolomites.png" type="button"><img alt="Το «Planning» στα 20:04 στην προβολή «Single» της εγκατεστημένης εφαρμογής Mac, με ορατά χειριστήρια και φόντο τη φωτογραφία των Δολομιτών." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-dolomites.png"/></button>
+<figcaption>Το «Planning» στα 20:04 στην προβολή «Single» της εγκατεστημένης εφαρμογής Mac, με ορατά χειριστήρια και φόντο τη φωτογραφία των Δολομιτών.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Λιτή προβολή, ορατά χειριστήρια · Φωτογραφία Δολομιτών</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Mac · Λιτή προβολή, ορατά χειριστήρια · Φωτογραφία Δολομιτών" class="image-button capture-image" data-caption="Mac · Λιτή προβολή, ορατά χειριστήρια · Φωτογραφία Δολομιτών — Το «Planning» στα 20:04 στην προβολή «Minimal» της εγκατεστημένης εφαρμογής Mac, με ορατά χειριστήρια και φόντο τη φωτογραφία των Δολομιτών." data-zoom="../assets/marketing/mac-planning-minimal-dolomites.png" type="button"><img alt="Το «Planning» στα 20:04 στην προβολή «Minimal» της εγκατεστημένης εφαρμογής Mac, με ορατά χειριστήρια και φόντο τη φωτογραφία των Δολομιτών." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-dolomites.png"/></button>
+<figcaption>Το «Planning» στα 20:04 στην προβολή «Minimal» της εγκατεστημένης εφαρμογής Mac, με ορατά χειριστήρια και φόντο τη φωτογραφία των Δολομιτών.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Μεμονωμένη προβολή, κρυμμένα χειριστήρια · Φωτογραφία Δολομιτών</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Mac · Μεμονωμένη προβολή, κρυμμένα χειριστήρια · Φωτογραφία Δολομιτών" class="image-button capture-image" data-caption="Mac · Μεμονωμένη προβολή, κρυμμένα χειριστήρια · Φωτογραφία Δολομιτών — Το «Planning» στα 20:04 στην προβολή «Single» της εγκατεστημένης εφαρμογής Mac, με κρυμμένα χειριστήρια και φόντο τη φωτογραφία των Δολομιτών." data-zoom="../assets/marketing/mac-planning-single-hidden-dolomites.png" type="button"><img alt="Το «Planning» στα 20:04 στην προβολή «Single» της εγκατεστημένης εφαρμογής Mac, με κρυμμένα χειριστήρια και φόντο τη φωτογραφία των Δολομιτών." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-single-hidden-dolomites.png"/></button>
+<figcaption>Το «Planning» στα 20:04 στην προβολή «Single» της εγκατεστημένης εφαρμογής Mac, με κρυμμένα χειριστήρια και φόντο τη φωτογραφία των Δολομιτών.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Λιτή προβολή, κρυμμένα χειριστήρια · Φωτογραφία Δολομιτών</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Mac · Λιτή προβολή, κρυμμένα χειριστήρια · Φωτογραφία Δολομιτών" class="image-button capture-image" data-caption="Mac · Λιτή προβολή, κρυμμένα χειριστήρια · Φωτογραφία Δολομιτών — Το «Planning» στα 20:04 στην προβολή «Minimal» της εγκατεστημένης εφαρμογής Mac, με κρυμμένα χειριστήρια και φόντο τη φωτογραφία των Δολομιτών." data-zoom="../assets/marketing/mac-planning-minimal-hidden-dolomites.png" type="button"><img alt="Το «Planning» στα 20:04 στην προβολή «Minimal» της εγκατεστημένης εφαρμογής Mac, με κρυμμένα χειριστήρια και φόντο τη φωτογραφία των Δολομιτών." decoding="async" loading="lazy" src="../assets/marketing/mac-planning-minimal-hidden-dolomites.png"/></button>
+<figcaption>Το «Planning» στα 20:04 στην προβολή «Minimal» της εγκατεστημένης εφαρμογής Mac, με κρυμμένα χειριστήρια και φόντο τη φωτογραφία των Δολομιτών.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="world-clocks-heading" class="highlight-row has-gallery" data-highlight="04" id="world-clocks">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">04</span>Παγκόσμια ρολόγια</p>
+<h2 id="world-clocks-heading">Κρατήστε κοντά τους τόπους σας.</h2>
+<p>Προσθέστε τις πόλεις και τις ζώνες ώρας που σας ενδιαφέρουν. Έχετε στο οπτικό σας πεδίο συναδέλφους, οικογένεια και ταξιδιωτικά σχέδια δίπλα στα χρονόμετρά σας, με την τρέχουσα τοπική ώρα κάθε τόπου.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Εικόνες παγκόσμιων ρολογιών" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Ρολόγια δίπλα στα χρονόμετρά σας</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Ρολόγια δίπλα στα χρονόμετρά σας" class="image-button capture-image" data-caption="Ρολόγια δίπλα στα χρονόμετρά σας — Νέα Υόρκη, Λονδίνο και Τόκιο δίπλα στα χρονόμετρα του «Studio», σε μπλε χώρο εργασίας με προβολή «Grid»." data-zoom="../assets/marketing/mac-grid-dark.png" type="button"><img alt="Νέα Υόρκη, Λονδίνο και Τόκιο δίπλα στα χρονόμετρα του «Studio», σε μπλε χώρο εργασίας με προβολή «Grid»." decoding="async" loading="lazy" src="../assets/marketing/mac-grid-dark.png"/></button>
+<figcaption>Νέα Υόρκη, Λονδίνο και Τόκιο δίπλα στα χρονόμετρα του «Studio», σε μπλε χώρο εργασίας με προβολή «Grid».</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Επιλέξτε έναν τόπο</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · ενδεικτική διαμόρφωση</span></div>
+<button aria-label="Μεγέθυνση: Επιλέξτε έναν τόπο" class="image-button capture-image" data-caption="Επιλέξτε έναν τόπο — Η Νέα Υόρκη στον επεξεργαστή ρολογιών της εγκατεστημένης εφαρμογής Mac, με τον χάρτη της, την τοπική ώρα και τη διαφορά UTC−04:00." data-zoom="../assets/marketing/mac-clock-editor.png" type="button"><img alt="Η Νέα Υόρκη στον επεξεργαστή ρολογιών της εγκατεστημένης εφαρμογής Mac, με τον χάρτη της, την τοπική ώρα και τη διαφορά UTC−04:00." decoding="async" loading="lazy" src="../assets/marketing/mac-clock-editor.png"/></button>
+<figcaption>Η Νέα Υόρκη στον επεξεργαστή ρολογιών της εγκατεστημένης εφαρμογής Mac, με τον χάρτη της, την τοπική ώρα και τη διαφορά UTC−04:00.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="world-calendar-heading" class="highlight-row has-gallery" data-highlight="05" id="world-calendar">
+<span class="anchor-target" id="regional-holidays"></span><span class="anchor-target" id="world-events"></span><span class="anchor-target" id="apple-calendar"></span><span class="anchor-target" id="calendar-actions"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">05</span>Παγκόσμιο ημερολόγιο</p>
+<h2 id="world-calendar-heading">Δώστε στη μέρα σας το πλαίσιό της.</h2>
+<p>Εξερευνήστε αργίες, πολιτιστικές ημερομηνίες, παγκόσμια γεγονότα και ιστορικές στιγμές. Προσθέστε μια προβολή μόνο για ανάγνωση των ημερολογίων σας της Apple και έπειτα μετατρέψτε μια ημερομηνία ή ένα γεγονός σε αντίστροφη μέτρηση ή προσωπική υπενθύμιση.</p>
+<span class="platform-pill">Mac</span>
+<p class="feature-note">Κατεβάστε τον κατάλογο μία φορά για να τον περιηγείστε εκτός σύνδεσης. Η πρόσβαση στα ημερολόγιά σας της Apple είναι προαιρετική και μόνο για ανάγνωση.</p>
+</div>
+<div aria-label="Εικόνες Παγκόσμιου ημερολογίου" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Ο μήνας με μια ματιά</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · ενδεικτική διαμόρφωση</span></div>
+<button aria-label="Μεγέθυνση: Ο μήνας με μια ματιά" class="image-button capture-image" data-caption="Ο μήνας με μια ματιά — Οκτώβριος 2026 με το προφίλ αργιών της ηπειρωτικής Κίνας, ημερομηνίες του κινεζικού ημερολογίου και λεπτομέρειες για την Εθνική Ημέρα." data-zoom="../assets/marketing/mac-world-calendar-month.png" type="button"><img alt="Οκτώβριος 2026 με το προφίλ αργιών της ηπειρωτικής Κίνας, ημερομηνίες του κινεζικού ημερολογίου και λεπτομέρειες για την Εθνική Ημέρα." decoding="async" loading="lazy" src="../assets/marketing/mac-world-calendar-month.png"/></button>
+<figcaption>Οκτώβριος 2026 με το προφίλ αργιών της ηπειρωτικής Κίνας, ημερομηνίες του κινεζικού ημερολογίου και λεπτομέρειες για την Εθνική Ημέρα.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Προβολή εβδομάδας και λεπτομέρειες ημερομηνίας</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · ενδεικτική διαμόρφωση</span></div>
+<button aria-label="Μεγέθυνση: Προβολή εβδομάδας και λεπτομέρειες ημερομηνίας" class="image-button capture-image" data-caption="Προβολή εβδομάδας και λεπτομέρειες ημερομηνίας — 27 Σεπτεμβρίου–3 Οκτωβρίου, με επιλεγμένη την 1η Οκτωβρίου και τις λεπτομέρειες της Εθνικής Ημέρας δίπλα στην εβδομάδα." data-zoom="../assets/marketing/mac-world-calendar-week.png" type="button"><img alt="27 Σεπτεμβρίου–3 Οκτωβρίου, με επιλεγμένη την 1η Οκτωβρίου και τις λεπτομέρειες της Εθνικής Ημέρας δίπλα στην εβδομάδα." decoding="async" loading="lazy" src="../assets/marketing/mac-world-calendar-week.png"/></button>
+<figcaption>27 Σεπτεμβρίου–3 Οκτωβρίου, με επιλεγμένη την 1η Οκτωβρίου και τις λεπτομέρειες της Εθνικής Ημέρας δίπλα στην εβδομάδα.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="reminders-heading" class="highlight-row copy-only" data-highlight="06" id="reminders">
+<span class="anchor-target" id="email-sms"></span><span class="anchor-target" id="call-me"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">06</span>Υπενθυμίσεις μέσω email, SMS και κλήσεων</p>
+<h2 id="reminders-heading">Μια υπενθύμιση με τα δικά σας λόγια.</h2>
+<p>Προγραμματίστε ένα μήνυμα στον εαυτό σας μετά από κάποιο χρονικό διάστημα ή σε συγκεκριμένη ημερομηνία και ώρα. Επιλέξτε email, SMS ή μια εφάπαξ κλήση, εφόσον πληρούνται οι προϋποθέσεις, και παρακολουθήστε την κατάσταση παράδοσής της δίπλα στις εργασίες σας.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Ισχύουν περιορισμοί διαθεσιμότητας λογαριασμού και υπηρεσίας. Τα SMS και οι κλήσεις απαιτούν δικό σας, επαληθευμένο αριθμό που πληροί τις προϋποθέσεις και ξεχωριστή συγκατάθεση. Οι κλήσεις υποστηρίζουν αριθμούς ΗΠΑ/Καναδά, γίνονται στα αγγλικά και δεν επαναλαμβάνονται αυτόματα.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="sound-library-heading" class="highlight-row has-gallery" data-highlight="07" id="sound-library">
+<span class="anchor-target" id="sounds"></span><span class="anchor-target" id="interval-beeps"></span><span class="anchor-target" id="completion-alerts"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">07</span>Βιβλιοθήκη ήχων</p>
+<h2 id="sound-library-heading">Βρείτε τον ήχο που κλείνει τη συνεδρία σας.</h2>
+<p>Περιηγηθείτε στους 66 ενσωματωμένους ήχους, ακούστε τους πριν επιλέξετε και αποθηκεύστε τους αγαπημένους σας. Εισαγάγετε τα δικά σας αρχεία ήχου ή χρησιμοποιήστε ηχητικά σήματα ανά διαστήματα για να έχετε αίσθηση του χρόνου όσο συνεχίζεται η συνεδρία σας.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Εικόνες βιβλιοθήκης ήχων" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Ήχοι για τη μέρα σας</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · ενδεικτική διαμόρφωση</span></div>
+<button aria-label="Μεγέθυνση: Ήχοι για τη μέρα σας" class="image-button capture-image" data-caption="Ήχοι για τη μέρα σας — Η βιβλιοθήκη ήχων της εγκατεστημένης εφαρμογής Mac με τη συλλογή «Classic Tones», κυματομορφές, αγαπημένα και χειριστήρια αναπαραγωγής." data-zoom="../assets/marketing/mac-sound-library.png" type="button"><img alt="Η βιβλιοθήκη ήχων της εγκατεστημένης εφαρμογής Mac με τη συλλογή «Classic Tones», κυματομορφές, αγαπημένα και χειριστήρια αναπαραγωγής." decoding="async" loading="lazy" src="../assets/marketing/mac-sound-library.png"/></button>
+<figcaption>Η βιβλιοθήκη ήχων της εγκατεστημένης εφαρμογής Mac με τη συλλογή «Classic Tones», κυματομορφές, αγαπημένα και χειριστήρια αναπαραγωγής.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Τελετουργικοί ήχοι του κόσμου</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · ενδεικτική διαμόρφωση</span></div>
+<button aria-label="Μεγέθυνση: Τελετουργικοί ήχοι του κόσμου" class="image-button capture-image" data-caption="Τελετουργικοί ήχοι του κόσμου — Ήχοι της συλλογής «World Ceremonial», από τα «Gentle Bell» και «Bright Chime» μέχρι τα «Ceremonial Drum» και «Trumpet Salute»." data-zoom="../assets/marketing/mac-sound-ceremonial.png" type="button"><img alt="Ήχοι της συλλογής «World Ceremonial», από τα «Gentle Bell» και «Bright Chime» μέχρι τα «Ceremonial Drum» και «Trumpet Salute»." decoding="async" loading="lazy" src="../assets/marketing/mac-sound-ceremonial.png"/></button>
+<figcaption>Ήχοι της συλλογής «World Ceremonial», από τα «Gentle Bell» και «Bright Chime» μέχρι τα «Ceremonial Drum» και «Trumpet Salute».</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="time-reports-heading" class="highlight-row has-gallery" data-highlight="08" id="time-reports">
+<span class="anchor-target" id="report-charts"></span><span class="anchor-target" id="report-exports"></span><span class="anchor-target" id="report-sharing"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">08</span>Αναφορές χρόνου και κοινή χρήση</p>
+<h2 id="time-reports-heading">Δείτε πού πηγαίνει ο χρόνος σας.</h2>
+<p>Εξετάστε συνεδρίες, ημερήσια σύνολα ή τρέχουσες ενδείξεις. Εξερευνήστε γραφήματα, συγκρίνετε περιόδους και φιλτράρετε ανά εργασία ή σύνολο. Αποθηκεύστε ένα αρχείο CSV, HTML ή PDF, στείλτε μια αναφορά στον εαυτό σας μέσω email ή μοιραστείτε τη με έναν σύνδεσμο που λήγει.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Οι τοπικές αναφορές και εξαγωγές λειτουργούν εκτός σύνδεσης. Το email και η διαδικτυακή κοινή χρήση απαιτούν σύνδεση.</p>
+</div>
+<div aria-label="Εικόνες αναφορών χρόνου και κοινής χρήσης" class="feature-gallery gallery-4 report-gallery">
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>Ημερήσια σύνολα · Η εβδομάδα με μια ματιά</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένο ιστορικό</span></div>
+<button aria-label="Μεγέθυνση: Ημερήσια σύνολα · Η εβδομάδα με μια ματιά" class="image-button capture-image" data-caption="Ημερήσια σύνολα · Η εβδομάδα με μια ματιά — 21–25 Σεπτεμβρίου 2026: 30 ώρες σε πέντε ενδεικτικές εργασίες, με ημερήσια σύνολα και μερίδια ανά εργασία. Το «Design» αντιστοιχεί σε 12 ώ. 05 λ. (40,3%)." data-zoom="../assets/marketing/mac-report-week-daily-totals.png" type="button"><img alt="21–25 Σεπτεμβρίου 2026: 30 ώρες σε πέντε ενδεικτικές εργασίες, με ημερήσια σύνολα και μερίδια ανά εργασία. Το «Design» αντιστοιχεί σε 12 ώ. 05 λ. (40,3%)." decoding="async" loading="lazy" src="../assets/marketing/mac-report-week-daily-totals.png"/></button>
+<figcaption>21–25 Σεπτεμβρίου 2026: 30 ώρες σε πέντε ενδεικτικές εργασίες, με ημερήσια σύνολα και μερίδια ανά εργασία. Το «Design» αντιστοιχεί σε 12 ώ. 05 λ. (40,3%).</figcaption>
+</figure>
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>Συνεδρίες · Πότε έγινε η εργασία</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένο ιστορικό</span></div>
+<button aria-label="Μεγέθυνση: Συνεδρίες · Πότε έγινε η εργασία" class="image-button capture-image" data-caption="Συνεδρίες · Πότε έγινε η εργασία — Ένα δείγμα εβδομάδας με 29 συνεδρίες και 30 ώρες, με χρονογραμμή που δείχνει πότε έγινε η εργασία στις 21–25 Σεπτεμβρίου 2026." data-zoom="../assets/marketing/mac-report-week-sessions.png" type="button"><img alt="Ένα δείγμα εβδομάδας με 29 συνεδρίες και 30 ώρες, με χρονογραμμή που δείχνει πότε έγινε η εργασία στις 21–25 Σεπτεμβρίου 2026." decoding="async" loading="lazy" src="../assets/marketing/mac-report-week-sessions.png"/></button>
+<figcaption>Ένα δείγμα εβδομάδας με 29 συνεδρίες και 30 ώρες, με χρονογραμμή που δείχνει πότε έγινε η εργασία στις 21–25 Σεπτεμβρίου 2026.</figcaption>
+</figure>
+<figure class="capture-card capture-report">
+<div class="capture-heading"><h3>Συνεδρίες · Μια μέρα αναλυτικά</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένο ιστορικό</span></div>
+<button aria-label="Μεγέθυνση: Συνεδρίες · Μια μέρα αναλυτικά" class="image-button capture-image" data-caption="Συνεδρίες · Μια μέρα αναλυτικά — Έξι ενδεικτικές συνεδρίες στις 24 Σεπτεμβρίου 2026, συνολικής διάρκειας 6 ώ. 15 λ., με τη χρονογραμμή της ημέρας και ξεχωριστές ώρες έναρξης και λήξης." data-zoom="../assets/marketing/mac-report-day-sessions.png" type="button"><img alt="Έξι ενδεικτικές συνεδρίες στις 24 Σεπτεμβρίου 2026, συνολικής διάρκειας 6 ώ. 15 λ., με τη χρονογραμμή της ημέρας και ξεχωριστές ώρες έναρξης και λήξης." decoding="async" loading="lazy" src="../assets/marketing/mac-report-day-sessions.png"/></button>
+<figcaption>Έξι ενδεικτικές συνεδρίες στις 24 Σεπτεμβρίου 2026, συνολικής διάρκειας 6 ώ. 15 λ., με τη χρονογραμμή της ημέρας και ξεχωριστές ώρες έναρξης και λήξης.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Τρέχουσες ενδείξεις</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Τρέχουσες ενδείξεις" class="image-button capture-image" data-caption="Τρέχουσες ενδείξεις — Οι τρέχουσες ενδείξεις για τον χώρο εργασίας «Studio», με χειριστήρια αντιγραφής, εξαγωγής και κοινής χρήσης." data-zoom="../assets/marketing/mac-report-current-readings.png" type="button"><img alt="Οι τρέχουσες ενδείξεις για τον χώρο εργασίας «Studio», με χειριστήρια αντιγραφής, εξαγωγής και κοινής χρήσης." decoding="async" loading="lazy" src="../assets/marketing/mac-report-current-readings.png"/></button>
+<figcaption>Οι τρέχουσες ενδείξεις για τον χώρο εργασίας «Studio», με χειριστήρια αντιγραφής, εξαγωγής και κοινής χρήσης.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="archives-heading" class="highlight-row" data-highlight="09" id="archives">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">09</span>Αρχεία</p>
+<h2 id="archives-heading">Κρατήστε τη δουλειά που ολοκληρώσατε.</h2>
+<p>Αρχειοθετήστε ένα σύνολο εργασιών και κρατήστε το ιστορικό του εύκολα προσβάσιμο. Αναζητήστε προηγούμενη δουλειά, περιηγηθείτε σε αποθηκευμένα στιγμιότυπα και ανοίξτε μια αναφορά όταν θέλετε να ξαναδείτε ένα έργο ή μια ρουτίνα.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Εικόνες αρχείων" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Μια αποθηκευμένη αναφορά έργου</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Μια αποθηκευμένη αναφορά έργου" class="image-button capture-image" data-caption="Μια αποθηκευμένη αναφορά έργου — Το «Brand workshop» αποθηκευμένο ως αρχείο, με τις προσομοιωμένες ενδείξεις των χρονομέτρων του διατηρημένες στην αναφορά." data-zoom="../assets/marketing/mac-archive-report.png" type="button"><img alt="Το «Brand workshop» αποθηκευμένο ως αρχείο, με τις προσομοιωμένες ενδείξεις των χρονομέτρων του διατηρημένες στην αναφορά." decoding="async" loading="lazy" src="../assets/marketing/mac-archive-report.png"/></button>
+<figcaption>Το «Brand workshop» αποθηκευμένο ως αρχείο, με τις προσομοιωμένες ενδείξεις των χρονομέτρων του διατηρημένες στην αναφορά.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="appearance-heading" class="highlight-row has-gallery" data-highlight="10" id="appearance">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">10</span>Προσαρμογή εμφάνισης</p>
+<h2 id="appearance-heading">Κάντε τον χώρο δικό σας.</h2>
+<p>Επιλέξτε φωτεινή ή σκοτεινή εμφάνιση, μονόχρωμο φόντο ή φωτογραφία. Δημιουργήστε μια βιβλιοθήκη φόντων με τις δικές σας εικόνες και κάντε τον χώρο των χρονομέτρων σας όσο ήρεμο ή πολύχρωμο θέλετε. Το Mac μπορεί επίσης να εναλλάσσει φωτογραφίες από έναν φάκελο.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Προσαρμόστε τη συσκευή που χρησιμοποιείτε, συμπεριλαμβανομένων ξεχωριστών ρυθμίσεων εμφάνισης για το Mac.</p>
+</div>
+<div aria-label="Εικόνες προσαρμογής εμφάνισης" class="feature-gallery gallery-4">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Μονόχρωμο φόντο · λευκό</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Μονόχρωμο φόντο · λευκό" class="image-button capture-image" data-caption="Μονόχρωμο φόντο · λευκό — Το χρονόμετρο «Design» στην προβολή «Single» με απλό λευκό φόντο." data-zoom="../assets/marketing/mac-single-light.png" type="button"><img alt="Το χρονόμετρο «Design» στην προβολή «Single» με απλό λευκό φόντο." decoding="async" loading="lazy" src="../assets/marketing/mac-single-light.png"/></button>
+<figcaption>Το χρονόμετρο «Design» στην προβολή «Single» με απλό λευκό φόντο.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Μονόχρωμο φόντο · σκούρο μπλε</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Μονόχρωμο φόντο · σκούρο μπλε" class="image-button capture-image" data-caption="Μονόχρωμο φόντο · σκούρο μπλε — Το ίδιο χρονόμετρο «Design» σε μονόχρωμο σκούρο μπλε φόντο." data-zoom="../assets/marketing/mac-timer-single.png" type="button"><img alt="Το ίδιο χρονόμετρο «Design» σε μονόχρωμο σκούρο μπλε φόντο." decoding="async" loading="lazy" src="../assets/marketing/mac-timer-single.png"/></button>
+<figcaption>Το ίδιο χρονόμετρο «Design» σε μονόχρωμο σκούρο μπλε φόντο.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Φωτογραφικό φόντο</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Φωτογραφικό φόντο" class="image-button capture-image" data-caption="Φωτογραφικό φόντο — Το χρονόμετρο «Design» πάνω στη φωτογραφία των Δολομιτών που περιλαμβάνεται στο XTimers." data-zoom="../assets/marketing/mac-single-photo.png" type="button"><img alt="Το χρονόμετρο «Design» πάνω στη φωτογραφία των Δολομιτών που περιλαμβάνεται στο XTimers." decoding="async" loading="lazy" src="../assets/marketing/mac-single-photo.png"/></button>
+<figcaption>Το χρονόμετρο «Design» πάνω στη φωτογραφία των Δολομιτών που περιλαμβάνεται στο XTimers.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Επιλέξτε μια φωτογραφία</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · ενδεικτική διαμόρφωση</span></div>
+<button aria-label="Μεγέθυνση: Επιλέξτε μια φωτογραφία" class="image-button capture-image" data-caption="Επιλέξτε μια φωτογραφία — Ο επιλογέας φόντου της εγκατεστημένης εφαρμογής Mac, με τις ενσωματωμένες φωτογραφίες και επιλεγμένο το Yosemite." data-zoom="../assets/marketing/mac-background-library.png" type="button"><img alt="Ο επιλογέας φόντου της εγκατεστημένης εφαρμογής Mac, με τις ενσωματωμένες φωτογραφίες και επιλεγμένο το Yosemite." decoding="async" loading="lazy" src="../assets/marketing/mac-background-library.png"/></button>
+<figcaption>Ο επιλογέας φόντου της εγκατεστημένης εφαρμογής Mac, με τις ενσωματωμένες φωτογραφίες και επιλεγμένο το Yosemite.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="menu-bar-heading" class="highlight-row has-gallery" data-highlight="11" id="menu-bar">
+<span class="anchor-target" id="devices"></span><span class="anchor-target" id="mac-shortcuts"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">11</span>Ενσωμάτωση στη γραμμή μενού και στην επιφάνεια εργασίας</p>
+<h2 id="menu-bar-heading">Κρατήστε τον χρόνο κοντά στη δουλειά σας.</h2>
+<p>Δείτε το όνομα της εργασίας και την ένδειξη του χρονομέτρου απευθείας στη γραμμή μενού του Mac, χωρίς να ανοίξετε το κύριο παράθυρο. Κάντε κλικ για γρήγορη πρόσβαση στην έναρξη και παύση εργασιών, την εναλλαγή συνόλων και το άνοιγμα αναφορών. Μια συντόμευση για όλο το σύστημα και παράθυρα που παραμένουν πάντα στο προσκήνιο κρατούν τα χειριστήρια κοντά σας.</p>
+<span class="platform-pill">Mac</span>
+</div>
+<div aria-label="Εικόνες ενσωμάτωσης στη γραμμή μενού και στην επιφάνεια εργασίας" class="feature-gallery gallery-3 menu-bar-gallery">
+<figure class="capture-card capture-status-strip">
+<div class="capture-heading"><h3>Το χρονόμετρό σας με μια ματιά</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Το χρονόμετρό σας με μια ματιά" class="image-button capture-image" data-caption="Το χρονόμετρό σας με μια ματιά — Το «Planning» σε παύση στα 20:04, ορατό απευθείας στη γραμμή μενού του Mac ενώ εργάζεστε σε άλλη εφαρμογή." data-zoom="../assets/marketing/mac-menubar-status-planning.png" type="button"><img alt="Το «Planning» σε παύση στα 20:04, ορατό απευθείας στη γραμμή μενού του Mac δίπλα στα εικονίδια κατάστασης του συστήματος" decoding="async" height="60" loading="lazy" src="../assets/marketing/mac-menubar-status-planning.png" width="572"/></button>
+<figcaption>Το όνομα της εργασίας, η ένδειξη και το σύμβολο παύσης παραμένουν ορατά στη γραμμή μενού. Κάντε κλικ στο στοιχείο κατάστασης για πρόσβαση στα χειριστήρια του χρονομέτρου.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Ο χώρος εργασίας στη γραμμή μενού</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Ο χώρος εργασίας στη γραμμή μενού" class="image-button capture-image" data-caption="Ο χώρος εργασίας στη γραμμή μενού — Το «Design» και άλλα χρονόμετρα του «Studio», σύνολα εργασιών, αναφορές και χειριστήρια παραθύρων στη γραμμή μενού του Mac." data-zoom="../assets/marketing/mac-menu-bar.png" type="button"><img alt="Το «Design» και άλλα χρονόμετρα του «Studio», σύνολα εργασιών, αναφορές και χειριστήρια παραθύρων στη γραμμή μενού του Mac." decoding="async" loading="lazy" src="../assets/marketing/mac-menu-bar.png"/></button>
+<figcaption>Το «Design» και άλλα χρονόμετρα του «Studio», σύνολα εργασιών, αναφορές και χειριστήρια παραθύρων στη γραμμή μενού του Mac.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Ένα μικρό παράθυρο χρονομέτρου</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Ένα μικρό παράθυρο χρονομέτρου" class="image-button capture-image" data-caption="Ένα μικρό παράθυρο χρονομέτρου — Το χρονόμετρο «Design» του «Studio» σε ένα μικρό παράθυρο «Minimal»." data-zoom="../assets/marketing/mac-timer-minimal.png" type="button"><img alt="Το χρονόμετρο «Design» του «Studio» σε ένα μικρό παράθυρο «Minimal»." decoding="async" loading="lazy" src="../assets/marketing/mac-timer-minimal.png"/></button>
+<figcaption>Το χρονόμετρο «Design» του «Studio» σε ένα μικρό παράθυρο «Minimal».</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="live-activities-heading" class="highlight-row has-gallery" data-highlight="12" id="live-activities">
+<span class="anchor-target" id="mobile"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">12</span>Ζωντανές δραστηριότητες</p>
+<h2 id="live-activities-heading">Ο χρόνος σας, με μια ματιά.</h2>
+<p>Κρατήστε ένα υποστηριζόμενο χρονόμετρο ορατό στην οθόνη κλειδώματος ή στο Dynamic Island του iPhone σας. Δείτε την εργασία και την ένδειξή της και έπειτα θέστε σε παύση ή συνεχίστε υποστηριζόμενα χρονόμετρα χωρίς να ανοίξετε ολόκληρο τον χώρο εργασίας.</p>
+<span class="platform-pill">iPhone</span>
+<p class="feature-note">Απαιτείται υποστηριζόμενη συσκευή και άδεια συστήματος. Τα παγκόσμια ρολόγια δεν δημιουργούν Ζωντανές δραστηριότητες.</p>
+</div>
+<div aria-label="Εικόνες Ζωντανών δραστηριοτήτων" class="feature-gallery gallery-2">
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>Στην οθόνη κλειδώματός σας</h3><span class="capture-status status-real">iPhone · Λήψη από τη συσκευή</span></div>
+<button aria-label="Μεγέθυνση: Στην οθόνη κλειδώματός σας" class="image-button capture-image" data-caption="Στην οθόνη κλειδώματός σας — Μια Ζωντανή δραστηριότητα αντίστροφης μέτρησης με το όνομα της εργασίας, τον χρόνο που απομένει και ένα χειριστήριο παύσης στην οθόνη κλειδώματος του iPhone." data-zoom="../assets/marketing/ios-live-activity-lockscreen.png" type="button"><img alt="Μια Ζωντανή δραστηριότητα αντίστροφης μέτρησης με το όνομα της εργασίας, τον χρόνο που απομένει και ένα χειριστήριο παύσης στην οθόνη κλειδώματος του iPhone." decoding="async" height="2868" loading="lazy" src="../assets/marketing/ios-live-activity-lockscreen.png" width="1320"/></button>
+<figcaption>Μια Ζωντανή δραστηριότητα αντίστροφης μέτρησης με το όνομα της εργασίας, τον χρόνο που απομένει και ένα χειριστήριο παύσης στην οθόνη κλειδώματος του iPhone.</figcaption>
+</figure>
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>Στο Dynamic Island</h3><span class="capture-status status-real">iPhone · Λήψη από τη συσκευή</span></div>
+<button aria-label="Μεγέθυνση: Στο Dynamic Island" class="image-button capture-image" data-caption="Στο Dynamic Island — Μια μικρή αντίστροφη μέτρηση παραμένει ορατή στο Dynamic Island ενώ είναι ανοιχτή η οθόνη Αφετηρίας του iPhone." data-zoom="../assets/marketing/ios-live-activity-island.png" type="button"><img alt="Μια μικρή αντίστροφη μέτρηση παραμένει ορατή στο Dynamic Island ενώ είναι ανοιχτή η οθόνη Αφετηρίας του iPhone." decoding="async" height="2868" loading="lazy" src="../assets/marketing/ios-live-activity-island.png" width="1320"/></button>
+<figcaption>Μια μικρή αντίστροφη μέτρηση παραμένει ορατή στο Dynamic Island ενώ είναι ανοιχτή η οθόνη Αφετηρίας του iPhone.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="siri-shortcuts-heading" class="highlight-row has-gallery" data-highlight="13" id="siri-shortcuts">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">13</span>Siri και Συντομεύσεις</p>
+<h2 id="siri-shortcuts-heading">Ξεκινήστε με μια λέξη ή ένα άγγιγμα.</h2>
+<p>Ξεκινήστε, θέστε σε παύση ή αλλάξτε την κατάσταση λειτουργίας ενός υποστηριζόμενου χρονομέτρου με τη Siri και τις Συντομεύσεις. Προσθέστε χειριστήρια συστήματος για να ξεκινάτε ένα νέο χρονόμετρο ή να θέτετε σε παύση και να συνεχίζετε την τρέχουσα εργασία.</p>
+<span class="platform-pill">iPhone · iPad</span>
+<p class="feature-note">Τα αυτόνομα χειριστήρια συστήματος ανοίγουν το XTimers. Τα χειριστήρια Ζωντανών δραστηριοτήτων μπορούν να ενεργούν επιτόπου.</p>
+</div>
+<div aria-label="Εικόνες Siri και Συντομεύσεων" class="feature-gallery gallery-1">
+<figure class="capture-card capture-phone">
+<div class="capture-heading"><h3>Οι συντομεύσεις σας για το XTimers</h3><span class="capture-status status-real">iPhone · Λήψη από τη συσκευή</span></div>
+<button aria-label="Μεγέθυνση: Οι συντομεύσεις σας για το XTimers" class="image-button capture-image" data-caption="Οι συντομεύσεις σας για το XTimers — Οι ενέργειες «Toggle Timer», «Start» και «Pause» στην εφαρμογή Συντομεύσεις του συστήματος." data-zoom="../assets/marketing/ios-siri-shortcuts.png" type="button"><img alt="Οι ενέργειες «Toggle Timer», «Start» και «Pause» στην εφαρμογή Συντομεύσεις του συστήματος." decoding="async" height="2622" loading="lazy" src="../assets/marketing/ios-siri-shortcuts.png" width="1206"/></button>
+<figcaption>Οι ενέργειες «Toggle Timer», «Start» και «Pause» στην εφαρμογή Συντομεύσεις του συστήματος.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="offline-heading" class="highlight-row" data-highlight="14" id="offline">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">14</span>Χρήση εκτός σύνδεσης χωρίς λογαριασμό</p>
+<h2 id="offline-heading">Κάντε την αρχή. Δεν χρειάζεται σύνδεση σε λογαριασμό.</h2>
+<p>Χρησιμοποιήστε βασικά χρονόμετρα, αντίστροφες μετρήσεις, σύνολα εργασιών, σημειώσεις, παγκόσμια ρολόγια και τοπικές αναφορές στη συσκευή σας. Συνεχίστε εκτός σύνδεσης και προσθέστε λογαριασμό όποτε θελήσετε δυνατότητες που απαιτούν σύνδεση.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Εικόνες χρήσης εκτός σύνδεσης χωρίς λογαριασμό" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Ο τοπικός σας χώρος εργασίας «Studio»</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Ο τοπικός σας χώρος εργασίας «Studio»" class="image-button capture-image" data-caption="Ο τοπικός σας χώρος εργασίας «Studio» — Ο χώρος εργασίας «Studio» στην εφαρμογή Mac χωρίς σύνδεση σε λογαριασμό, με προσομοιωμένα τοπικά χρονόμετρα και παγκόσμια ρολόγια." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="Ο χώρος εργασίας «Studio» στην εφαρμογή Mac χωρίς σύνδεση σε λογαριασμό, με προσομοιωμένα τοπικά χρονόμετρα και παγκόσμια ρολόγια." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>Ο χώρος εργασίας «Studio» στην εφαρμογή Mac χωρίς σύνδεση σε λογαριασμό, με προσομοιωμένα τοπικά χρονόμετρα και παγκόσμια ρολόγια.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="synchronization-heading" class="highlight-row" data-highlight="15" id="synchronization">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">15</span>Συγχρονισμός μεταξύ συσκευών</p>
+<h2 id="synchronization-heading">Συνεχίστε σε έναν οικείο χώρο εργασίας.</h2>
+<p>Μεταφέρετε υποστηριζόμενες εργασίες, ιστορικό, πρότυπα, ρυθμίσεις και προσαρμοσμένα αρχεία μεταξύ Mac, iPhone και iPad. Η τοπική σας δουλειά παραμένει διαθέσιμη κατά τη διάρκεια προσωρινών προβλημάτων σύνδεσης.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Συνδεθείτε με Apple, Google, κωδικό μέσω email ή συνθηματικό. Ορισμένες ρυθμίσεις συσκευής και δεδομένα αποκλειστικά τοπικής χρήσης παραμένουν στη δική τους συσκευή.</p>
+</div>
+<div aria-label="Εικόνες συγχρονισμού μεταξύ συσκευών" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Στο Mac</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Στο Mac" class="image-button capture-image" data-caption="Στο Mac — Τα ενδεικτικά χρονόμετρα και ρολόγια του «Studio» στην εγκατεστημένη εφαρμογή Mac." data-zoom="../assets/marketing/mac-light.png" type="button"><img alt="Τα ενδεικτικά χρονόμετρα και ρολόγια του «Studio» στην εγκατεστημένη εφαρμογή Mac." decoding="async" loading="lazy" src="../assets/marketing/mac-light.png"/></button>
+<figcaption>Τα ενδεικτικά χρονόμετρα και ρολόγια του «Studio» στην εγκατεστημένη εφαρμογή Mac.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="protected-sync-heading" class="highlight-row copy-only" data-highlight="16" id="protected-sync">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">16</span>Προστατευμένος συγχρονισμός</p>
+<h2 id="protected-sync-heading">Επιλέξτε προστασία πριν από τη μεταφόρτωση.</h2>
+<p>Κρυπτογραφήστε το νέο περιεχόμενο των χρονομέτρων και τα προσαρμοσμένα αρχεία προς μεταφόρτωση στη συσκευή σας πριν από τον <a href="privacy.html#xin-account">συγχρονισμό λογαριασμού</a>. Ανακτήστε το κλειδί σας μέσω του iCloud Keychain ή ενός αποθηκευμένου κωδικού ανάκτησης.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+<p class="feature-note">Προαιρετικό σε υποστηριζόμενους λογαριασμούς. Εξαιρούνται τα μηνύματα υπενθυμίσεων, τα μεταδεδομένα λογαριασμού/συγχρονισμού, το περιεχόμενο που δημιουργήθηκε πριν από την ενεργοποίηση και η τοπική αποθήκευση στη συσκευή.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="languages-heading" class="highlight-row has-gallery" data-highlight="17" id="languages">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">17</span>Υποστήριξη πολλών γλωσσών</p>
+<h2 id="languages-heading">Σαν στο σπίτι σας, στη γλώσσα σας.</h2>
+<p>Επιλέξτε ανάμεσα σε 45 γλώσσες, ακολουθήστε τη γλώσσα της συσκευής σας ή ορίστε αυτή που προτιμάτε. Οι τοπικές μορφές ημερομηνιών, ωρών και αριθμών, μαζί με τις διατάξεις από δεξιά προς τα αριστερά, κάνουν τον χώρο εργασίας πιο οικείο.</p>
+<span class="platform-pill">Mac · iPhone · iPad</span>
+</div>
+<div aria-label="Εικόνες υποστήριξης πολλών γλωσσών" class="feature-gallery gallery-2">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Αγγλικά</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · ενδεικτική διαμόρφωση</span></div>
+<button aria-label="Μεγέθυνση: Mac · Αγγλικά" class="image-button capture-image" data-caption="Mac · Αγγλικά — Γενικές ρυθμίσεις στα αγγλικά, σε λήψη από την εγκατεστημένη εφαρμογή Mac με φωτεινή εμφάνιση." data-zoom="../assets/marketing/mac-settings-english.png" type="button"><img alt="Γενικές ρυθμίσεις στα αγγλικά, σε λήψη από την εγκατεστημένη εφαρμογή Mac με φωτεινή εμφάνιση." decoding="async" loading="lazy" src="../assets/marketing/mac-settings-english.png"/></button>
+<figcaption>Γενικές ρυθμίσεις στα αγγλικά, σε λήψη από την εγκατεστημένη εφαρμογή Mac με φωτεινή εμφάνιση.</figcaption>
+</figure>
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Mac · Ιαπωνικά</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · ενδεικτική διαμόρφωση</span></div>
+<button aria-label="Μεγέθυνση: Mac · Ιαπωνικά" class="image-button capture-image" data-caption="Mac · Ιαπωνικά — Η ίδια οθόνη γενικών ρυθμίσεων στα ιαπωνικά, με φωτεινή εμφάνιση." data-zoom="../assets/marketing/mac-settings-japanese.png" type="button"><img alt="Η ίδια οθόνη γενικών ρυθμίσεων στα ιαπωνικά, με φωτεινή εμφάνιση." decoding="async" loading="lazy" src="../assets/marketing/mac-settings-japanese.png"/></button>
+<figcaption>Η ίδια οθόνη γενικών ρυθμίσεων στα ιαπωνικά, με φωτεινή εμφάνιση.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="activity-tracking-heading" class="highlight-row" data-highlight="18" id="activity-tracking">
+<span class="anchor-target" id="extras"></span>
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">18</span>Αυτόματη παρακολούθηση δραστηριότητας εφαρμογών</p>
+<h2 id="activity-tracking-heading">Δείτε πώς κατανέμεται ο χρόνος σας στις εφαρμογές.</h2>
+<p>Ενεργοποιήστε προαιρετικά την παρακολούθηση του χρόνου στις εφαρμογές που βρίσκονται στο προσκήνιο στο Mac. Εξετάστε τη δραστηριότητά σας ανά ημέρα, εβδομάδα, μήνα ή έτος, με επιλογές για το πώς υπολογίζεται ο χρόνος απουσίας.</p>
+<span class="platform-pill">Mac · επιλεγμένα προφίλ</span>
+<p class="feature-note">Διαθέσιμη σε τοπικά προφίλ και προφίλ παλαιού τύπου· κρυφή σε λογαριασμούς συγχρονισμού που δίνουν προτεραιότητα στα τοπικά δεδομένα. Η ταυτότητα των εφαρμογών και ο χρόνος αδράνειας παραμένουν σε αυτό το Mac. Δεν καταγράφονται ιστότοποι, ιστορικό περιήγησης ή τίτλοι παραθύρων.</p>
+</div>
+<div aria-label="Εικόνες αυτόματης παρακολούθησης δραστηριότητας εφαρμογών" class="feature-gallery gallery-1">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Χειριστήρια παρακολούθησης δραστηριότητας</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · ρυθμίσεις</span></div>
+<button aria-label="Μεγέθυνση: Χειριστήρια παρακολούθησης δραστηριότητας" class="image-button capture-image" data-caption="Χειριστήρια παρακολούθησης δραστηριότητας — Εγγενή χειριστήρια στο κύριο περιβάλλον του XTimers για την περίοδο αναφοράς, την κύλιση στην ενεργή εργασία και τον χρόνο απουσίας. Η παρακολούθηση είναι απενεργοποιημένη σε αυτή τη διαμόρφωση." data-zoom="../assets/marketing/mac-activity-tracking-settings.png" type="button"><img alt="Εγγενή χειριστήρια στο κύριο περιβάλλον του XTimers για την περίοδο αναφοράς, την κύλιση στην ενεργή εργασία και τον χρόνο απουσίας. Η παρακολούθηση είναι απενεργοποιημένη σε αυτή τη διαμόρφωση." decoding="async" loading="lazy" src="../assets/marketing/mac-activity-tracking-settings.png"/></button>
+<figcaption>Εγγενή χειριστήρια στο κύριο περιβάλλον του XTimers για την περίοδο αναφοράς, την κύλιση στην ενεργή εργασία και τον χρόνο απουσίας. Η παρακολούθηση είναι απενεργοποιημένη σε αυτή τη διαμόρφωση.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="classic-interface-heading" class="highlight-row has-gallery" data-highlight="19" id="classic-interface">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">19</span>Κλασικό περιβάλλον</p>
+<h2 id="classic-interface-heading">Ένας ακόμη τρόπος να βρείτε χρόνο.</h2>
+<p>Επιλέξτε ένα τοπικό περιβάλλον χρονομέτρων μόνο στα αγγλικά, με τον δικό του ξεχωριστό χώρο εργασίας. Αλλάξτε περιβάλλον μέσα από το XTimers και κρατήστε την παρουσίαση που σας είναι οικεία.</p>
+<span class="platform-pill">Mac · μόνο τοπικά</span>
+<p class="feature-note">Απαιτείται το ενσωματωμένο περιβάλλον εκτέλεσης Classic. Ο συγχρονισμός λογαριασμού και η αποστολή email/SMS ανήκουν στο κύριο περιβάλλον του XTimers.</p>
+</div>
+<div aria-label="Εικόνες κλασικού περιβάλλοντος" class="feature-gallery gallery-2">
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Κλασικό · δύο στήλες</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Κλασικό · δύο στήλες" class="image-button capture-image" data-caption="Κλασικό · δύο στήλες — Μια εκτεταμένη ρουτίνα στο κλασικό περιβάλλον με 20 ονομασμένες εργασίες για δημιουργική δουλειά, μάθηση και καθημερινή ζωή." data-zoom="../assets/marketing/classic-two-column.png" type="button"><img alt="Μια εκτεταμένη ρουτίνα στο κλασικό περιβάλλον με 20 ονομασμένες εργασίες για δημιουργική δουλειά, μάθηση και καθημερινή ζωή." decoding="async" loading="lazy" src="../assets/marketing/classic-two-column.png"/></button>
+<figcaption>Μια εκτεταμένη ρουτίνα στο κλασικό περιβάλλον με 20 ονομασμένες εργασίες για δημιουργική δουλειά, μάθηση και καθημερινή ζωή.</figcaption>
+</figure>
+<figure class="capture-card capture-portrait">
+<div class="capture-heading"><h3>Κλασικό · μία στήλη</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · προσομοιωμένα δεδομένα</span></div>
+<button aria-label="Μεγέθυνση: Κλασικό · μία στήλη" class="image-button capture-image" data-caption="Κλασικό · μία στήλη — Ένας μικρός χώρος εργασίας στο κλασικό περιβάλλον με πέντε εργασίες: «Design», «Research», «Writing», «Reading» και «Planning»." data-zoom="../assets/marketing/classic-one-column.png" type="button"><img alt="Ένας μικρός χώρος εργασίας στο κλασικό περιβάλλον με πέντε εργασίες: «Design», «Research», «Writing», «Reading» και «Planning»." decoding="async" loading="lazy" src="../assets/marketing/classic-one-column.png"/></button>
+<figcaption>Ένας μικρός χώρος εργασίας στο κλασικό περιβάλλον με πέντε εργασίες: «Design», «Research», «Writing», «Reading» και «Planning».</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="xhelpers-pro-heading" class="highlight-row" data-highlight="20" id="xhelpers-pro">
+<div class="wrap highlight-inner">
+<div class="highlight-copy">
+<p class="eyebrow"><span class="feature-number">20</span>Προνόμιο XHelpers Pro</p>
+<h2 id="xhelpers-pro-heading">Ένας σύντροφος για το Mac σας.</h2>
+<p>Ανακαλύψτε το XHelpers Pro, ένα ξεχωριστό βοηθητικό εργαλείο για Mac με γρήγορη πρόσβαση σε καθημερινά χειριστήρια. Οι χρήστες του XTimers μπορούν να επισκεφθούν την προσφορά προωθητικής άδειας χρήσης για τους ισχύοντες όρους και τις λεπτομέρειες ενεργοποίησης.</p>
+<span class="platform-pill">Mac · ξεχωριστή εφαρμογή</span>
+<a class="text-link" href="https://xintechllc.com/XHelpersPro/" rel="noopener noreferrer" target="_blank">Δείτε την προσφορά XHelpers Pro</a>
+</div>
+<div aria-label="Εικόνες προνομίου XHelpers Pro" class="feature-gallery gallery-1">
+<figure class="capture-card capture-desktop">
+<div class="capture-heading"><h3>Το προνόμιο XHelpers Pro που περιλαμβάνεται</h3><span class="capture-status status-real">Εγκατεστημένη εφαρμογή Mac · ενδεικτική διαμόρφωση</span></div>
+<button aria-label="Μεγέθυνση: Το προνόμιο XHelpers Pro που περιλαμβάνεται" class="image-button capture-image" data-caption="Το προνόμιο XHelpers Pro που περιλαμβάνεται — Η οθόνη πληροφοριών της εγκατεστημένης εφαρμογής XTimers δείχνει το προνόμιο XHelpers Pro που περιλαμβάνεται." data-zoom="../assets/marketing/mac-xhelpers-benefit.png" type="button"><img alt="Η οθόνη πληροφοριών της εγκατεστημένης εφαρμογής XTimers δείχνει το προνόμιο XHelpers Pro που περιλαμβάνεται." decoding="async" loading="lazy" src="../assets/marketing/mac-xhelpers-benefit.png"/></button>
+<figcaption>Η οθόνη πληροφοριών της εγκατεστημένης εφαρμογής XTimers δείχνει το προνόμιο XHelpers Pro που περιλαμβάνεται.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="download-heading" class="download-section" id="download">
+<div class="wrap download-inner">
+<div class="download-copy"><img alt="" height="64" loading="lazy" src="../assets/marketing/app-icon.png" width="64"/><h2 id="download-heading">Βρείτε λίγο χρόνο<br/>για <em>εσάς.</em></h2><p>Ένα χρονόμετρο για τις εργασίες σας. Ένας χώρος για τις ρουτίνες σας.</p></div>
+<div class="download-choices">
+<a class="download-choice" href="https://apps.apple.com/us/app/flexible-timers/id1296620733?mt=12" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" class="icon"><use href="#i-mac"></use></svg><span><strong>XTimers για Mac</strong><small>Προβολή στο Mac App Store</small></span></a>
+<a class="download-choice" href="#mobile"><svg aria-hidden="true" class="icon"><use href="#i-mobile"></use></svg><span><strong>XTimers για iPhone &amp; iPad</strong><small>Ανακαλύψτε την εμπειρία στις φορητές συσκευές</small></span></a>
+<p class="download-note">Mac, iPhone και iPad. Καθένα με τη θέση του στη μέρα σας.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="faq-heading" class="section faq-section wrap" id="support">
+<div class="section-copy"><p class="eyebrow">Μερικές χρήσιμες απαντήσεις</p><h2 id="faq-heading">Πριν<br/>βρείτε χρόνο.</h2><p>Έχετε κάτι άλλο στο μυαλό σας;</p><a class="text-link" href="support.html" rel="noopener noreferrer" target="_blank">Επισκεφθείτε την υποστήριξη</a></div>
+<div class="faq-list">
+<details><summary>Χρειάζομαι λογαριασμό;<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Δεν χρειάζεται λογαριασμός για τα βασικά τοπικά χρονόμετρα, τις αντίστροφες μετρήσεις, τα παγκόσμια ρολόγια και τις τοπικές αναφορές. Συνδεθείτε όταν θελήσετε συγχρονισμό λογαριασμού ή υπενθυμίσεις μέσω λογαριασμού.</p><p class="feature-note">XTimers χρησιμοποιεί ένα Xin Account για να ταυτοποιήσει και να πιστοποιήσει έναν χρήστη. Ένα Xin Account είναι το κοινό επίπεδο ταυτότητας για το XTimers και οποιαδήποτε άλλα συνδεδεμένα προϊόντα που αναγράφονται στους ελέγχους λογαριασμού· δεν είναι λογαριασμός προϊόντος XTimers και δεν περιέχει χρονόμετρα, αναφορές, ήχους ή δεδομένα XTimers, SMS.</p></details>
+<details><summary>Μπορώ να χρησιμοποιήσω το XTimers εκτός σύνδεσης;<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Η βασική χρονομέτρηση και οι τοπικές αναφορές λειτουργούν εκτός σύνδεσης. Ο συγχρονισμός, η διαδικτυακή κοινή χρήση και οι υπενθυμίσεις μέσω διακομιστή απαιτούν σύνδεση. Το Παγκόσμιο ημερολόγιο στο Mac χρειάζεται μια αρχική λήψη καταλόγου· ο εγκατεστημένος κατάλογος μπορεί στη συνέχεια να χρησιμοποιηθεί εκτός σύνδεσης.</p></details>
+<details><summary>Μπορούν να λειτουργούν πολλά χρονόμετρα ταυτόχρονα;<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Ναι. Επιλέξτε αν η μετάβαση σε άλλη εργασία θέτει σε παύση το προηγούμενο υποστηριζόμενο χρονόμετρο ή το αφήνει να συνεχίσει. Τα σύνολα εργασιών βοηθούν στην οργάνωση διαφορετικών δραστηριοτήτων.</p></details>
+<details><summary>Είναι ίδιες οι δυνατότητες σε κάθε συσκευή;<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Ο βασικός χώρος εργασίας περιλαμβάνει χρονόμετρα, αντίστροφες μετρήσεις, ρολόγια, σύνολα εργασιών και αναφορές. Το Mac προσθέτει χειριστήρια στη γραμμή μενού και το Παγκόσμιο ημερολόγιο. Το iPhone υποστηρίζει Ζωντανές δραστηριότητες σε συμβατές συσκευές, ενώ το iPad προσφέρει χώρο για μεγαλύτερες διατάξεις εργασιών.</p></details>
+<details><summary>Πώς λειτουργούν οι τηλεφωνικές υπενθυμίσεις;<svg aria-hidden="true" class="icon"><use href="#i-plus"></use></svg></summary><p>Οι υπενθυμίσεις στέλνονται στον δικό σας, επαληθευμένο αριθμό που πληροί τις προϋποθέσεις, με ξεχωριστή συγκατάθεση για SMS ή κλήσεις. Η διαθεσιμότητα εξαρτάται από τον λογαριασμό, την περιοχή και την υπηρεσία. Μια προγραμματισμένη κλήση χρειάζεται επιβεβαίωση από τον διακομιστή· η λειτουργία «Call Me» χρησιμοποιεί αγγλικά και δεν επαναλαμβάνει αυτόματα την κλήση.</p></details>
+</div>
+</section>
+</main>
+<footer class="site-footer wrap">
+<p class="footer-copy"><small>© 2026 Xintech LLC</small><span>Βρείτε χρόνο για όσα έχουν σημασία για εσάς.</span></p>
+<div class="footer-links"><a href="#features">Δυνατότητες</a><a href="#devices">Οι συσκευές σας</a><a href="support.html" rel="noopener noreferrer" target="_blank">Υποστήριξη</a><a href="privacy.html" rel="noopener noreferrer" target="_blank">Απόρρητο</a><a href="sms-terms.html" rel="noopener noreferrer" target="_blank">Όροι μηνυμάτων</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener noreferrer" target="_blank">Άδεια χρήσης</a><a href="terms.html">Όροι χρήσης</a><a href="privacy-choices.html">Επιλογές προστασίας προσωπικών δεδομένων</a><a href="sms-opt-in.html">Συγκατάθεση SMS</a></div>
+</footer>
+<dialog aria-labelledby="image-dialog-caption" class="image-dialog" id="image-dialog">
+<button aria-label="Σμίκρυνση και κλείσιμο στιγμιότυπου οθόνης" class="image-dialog-zoom-out" type="button">
+<img alt="" id="image-dialog-img"/>
+</button>
+<p id="image-dialog-caption"></p>
+</dialog>
 </body>
 </html>
