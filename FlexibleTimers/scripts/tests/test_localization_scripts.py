@@ -1904,6 +1904,44 @@ class WebsiteLocalizationScriptsTests(unittest.TestCase):
         choices = (ROOT / "privacy-choices.html").read_text(encoding="utf-8")
         self.assertIn("Bounded cancellation, deletion, security, and diagnostic evidence", choices)
 
+    def test_live_homepage_checks_use_approved_copy_and_reject_missing_claims(self) -> None:
+        checker_script = (ROOT / "scripts" / "check-compliance-pages.sh").read_text(
+            encoding="utf-8"
+        )
+        homepage = " ".join((ROOT / "index.html").read_text(encoding="utf-8").split())
+        cases = {
+            "Homepage distinguishes Xin sign-in from XTimers product data": [
+                ("XTimers uses a Xin Account", "XTimers uses an account"),
+                ("shared identity layer", "profile"),
+                ("not an XTimers product account", "an XTimers product account"),
+                ("does not contain XTimers timers", "contains XTimers timers"),
+            ],
+            "Homepage describes Apple platforms": [
+                ("For Mac, iPhone &amp; iPad", "For iPhone &amp; iPad"),
+                ("For Mac, iPhone &amp; iPad", "For Mac &amp; iPad"),
+                ("For Mac, iPhone &amp; iPad", "For Mac &amp; iPhone"),
+            ],
+        }
+        for label, mutations in cases.items():
+            marker = f'check "{label}" \\\n'
+            self.assertIn(marker, checker_script)
+            assertion = checker_script.split(marker, 1)[1].splitlines()[0].strip()
+            prefix = 'page_text_has "/" "'
+            self.assertTrue(assertion.startswith(prefix), label)
+            self.assertTrue(assertion.endswith('"'), label)
+            pattern = assertion[len(prefix):-1]
+
+            def matches(text: str) -> bool:
+                return subprocess.run(
+                    ["grep", "-Eq", pattern], input=text, text=True, check=False
+                ).returncode == 0
+
+            self.assertTrue(matches(homepage), label)
+            for before, after in mutations:
+                with self.subTest(check=label, missing=before):
+                    self.assertIn(before, homepage)
+                    self.assertFalse(matches(homepage.replace(before, after)))
+
     def test_sms_pages_distinguish_proposed_phone_verification_from_reminders(self) -> None:
         pages = [
             "privacy.html",
