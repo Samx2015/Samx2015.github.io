@@ -1,0 +1,430 @@
+/* Left-column design studies. Each treatment is deliberately self-contained. */
+
+.design--01 .details,
+.design--02 .details,
+.design--03 .details,
+.design--04 .details,
+.design--05 .details,
+.design--06 .details { margin-top: 0; }
+
+.design--01 .signoff em,
+.design--02 .signoff em,
+.design--03 .signoff em,
+.design--04 .signoff em,
+.design--05 .signoff em,
+.design--06 .signoff em { font-family: inherit; font-weight: inherit; }
+
+/* 01 — Quiet modern */
+.design--01 {
+  background: #fbfcfc;
+  color: #18272b;
+}
+.design--01 .design-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.design--01 .headline {
+  margin: 0 0 26px;
+  font-size: clamp(30px, 8.9cqw, 51px);
+  font-weight: 650;
+  line-height: 1.1;
+  letter-spacing: -.057em;
+}
+.design--01 .headline::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 4px;
+  margin-bottom: 23px;
+  border-radius: 2px;
+  background: #4168db;
+}
+.design--01 .sources {
+  display: grid;
+  gap: 8px;
+  font-size: clamp(15px, 4.3cqw, 22px);
+  font-weight: 550;
+  line-height: 1.45;
+  letter-spacing: -.025em;
+}
+.design--01 .sources p { margin: 0; }
+.design--01 .sources p:first-child { color: #4168db; }
+.design--01 .signoff {
+  margin: 20px 0 30px;
+  font-size: clamp(20px, 5.8cqw, 31px);
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -.035em;
+}
+.design--01 .signoff em { color: #4168db; font-style: normal; }
+.design--01 .details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 13px 20px;
+  padding-top: 20px;
+  border-top: 1px solid #dfe5e7;
+  color: #66777d;
+  font-size: 12px;
+  line-height: 1.45;
+}
+.design--01 .trust { display: inline-flex; align-items: center; gap: 7px; }
+.design--01 .trust svg { color: #5a8780; }
+.design--01 .system { white-space: nowrap; }
+.design--01 .system b { color: #34484f; font-weight: 600; }
+
+/* 02 — Editorial */
+.design--02 {
+  background: #fffdf7;
+  color: #27251f;
+}
+.design--02 .design-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.design--02 .headline {
+  margin: 0 0 24px;
+  padding-top: 21px;
+  border-top: 3px solid #cf5532;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(31px, 9.1cqw, 53px);
+  font-weight: 400;
+  line-height: 1.07;
+  letter-spacing: -.06em;
+}
+.design--02 .headline span:last-child { font-style: italic; color: #a74327; }
+.design--02 .sources {
+  display: grid;
+  gap: 6px;
+  padding-left: 14px;
+  border-left: 1px solid #c9bca7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: clamp(14px, 4cqw, 21px);
+  line-height: 1.5;
+  letter-spacing: -.015em;
+}
+.design--02 .sources p { margin: 0; }
+.design--02 .signoff {
+  margin: 24px 0 28px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(23px, 6.7cqw, 35px);
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -.035em;
+}
+.design--02 .signoff em { color: #a74327; }
+.design--02 .details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 18px;
+  padding-top: 15px;
+  border-top: 1px solid #d5cdbd;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #766c5d;
+}
+.design--02 .trust { display: inline-flex; align-items: center; gap: 6px; }
+.design--02 .trust svg { color: #a74327; }
+.design--02 .system { white-space: nowrap; }
+.design--02 .system b { font-weight: 600; }
+
+/* 03 — Swiss poster */
+.design--03 {
+  background: #e0f348;
+  color: #151713;
+}
+.design--03 .design-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+.design--03 .headline {
+  margin: 0 0 24px;
+  padding-bottom: 21px;
+  border-bottom: 5px solid currentColor;
+  font-size: clamp(32px, 9.4cqw, 54px);
+  font-weight: 800;
+  line-height: .98;
+  letter-spacing: -.065em;
+}
+.design--03 .headline span + span { margin-top: 8px; }
+.design--03 .sources {
+  display: grid;
+  gap: 9px;
+  font-size: clamp(15px, 4.3cqw, 23px);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -.04em;
+}
+.design--03 .sources p { margin: 0; }
+.design--03 .signoff {
+  align-self: flex-start;
+  margin: 25px 0 28px;
+  padding: 9px 12px 10px;
+  background: #151713;
+  color: #e0f348;
+  font-size: clamp(18px, 5cqw, 26px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -.035em;
+}
+.design--03 .signoff em { font-style: normal; }
+.design--03 .details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 17px;
+  padding-top: 13px;
+  border-top: 1px solid #151713;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+.design--03 .trust { display: inline-flex; align-items: center; gap: 6px; }
+.design--03 .system { white-space: nowrap; }
+.design--03 .system b { font-weight: 700; }
+
+/* 04 — Warm listening room */
+.design--04 {
+  background: #eee4d4;
+  color: #3c2a22;
+}
+.design--04 .design-art {
+  position: absolute;
+  width: 85%;
+  aspect-ratio: 1;
+  top: -21%;
+  right: -32%;
+  bottom: auto;
+  left: auto;
+  border: 1px solid #c4a886;
+  border-radius: 50%;
+  opacity: .65;
+  box-shadow: 0 0 0 13px #eee4d4, 0 0 0 14px #c4a886,
+    0 0 0 27px #eee4d4, 0 0 0 28px #c4a886,
+    0 0 0 41px #eee4d4, 0 0 0 42px #c4a886;
+}
+.design--04 .design-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.design--04 .headline {
+  margin: 0 0 27px;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: clamp(32px, 9.2cqw, 53px);
+  font-weight: 500;
+  line-height: 1.06;
+  letter-spacing: -.057em;
+}
+.design--04 .headline span:last-child { color: #8c442d; }
+.design--04 .sources {
+  display: grid;
+  gap: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: clamp(14px, 4.1cqw, 22px);
+  font-weight: 450;
+  line-height: 1.4;
+  letter-spacing: -.02em;
+}
+.design--04 .sources p { margin: 0; }
+.design--04 .signoff {
+  margin: 24px 0 29px;
+  color: #8c442d;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: clamp(23px, 6.7cqw, 36px);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -.025em;
+}
+.design--04 .signoff em { font-style: italic; }
+.design--04 .details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 18px;
+  padding-top: 17px;
+  border-top: 1px solid #cbb79d;
+  color: #74604b;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+}
+.design--04 .trust { display: inline-flex; align-items: center; gap: 6px; }
+.design--04 .trust svg { color: #8c442d; }
+.design--04 .system { white-space: nowrap; }
+.design--04 .system b { font-weight: 600; }
+
+/* 05 — Bauhaus */
+.design--05 {
+  background: #f4f0e6;
+  color: #20272b;
+}
+.design--05 .design-art {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  width: 49px;
+  height: 111px;
+  background: #e0b82b;
+  border-bottom-left-radius: 49px;
+}
+.design--05 .design-art::before {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: -24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #c94b36;
+}
+.design--05 .design-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", sans-serif;
+}
+.design--05 .headline {
+  margin: 0 0 24px;
+  font-size: clamp(30px, 8.7cqw, 50px);
+  font-weight: 750;
+  line-height: 1.11;
+  letter-spacing: -.06em;
+}
+.design--05 .headline::before {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 17px;
+  margin-bottom: 20px;
+  border-radius: 34px 34px 0 0;
+  background: #345aaf;
+}
+.design--05 .headline span:last-child { color: #345aaf; }
+.design--05 .sources {
+  display: grid;
+  gap: 9px;
+  padding-left: 13px;
+  border-left: 4px solid #c94b36;
+  font-size: clamp(14px, 4cqw, 21px);
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -.025em;
+}
+.design--05 .sources p { margin: 0; }
+.design--05 .signoff {
+  margin: 21px 0 27px;
+  font-size: clamp(22px, 6.1cqw, 32px);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -.045em;
+}
+.design--05 .signoff em {
+  padding-bottom: 2px;
+  border-bottom: 4px solid #e0b82b;
+  font-style: normal;
+}
+.design--05 .details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 18px;
+  padding-top: 16px;
+  border-top: 1px solid #d6cdb9;
+  color: #625e52;
+  font-size: 11px;
+  line-height: 1.5;
+}
+.design--05 .trust { display: inline-flex; align-items: center; gap: 6px; }
+.design--05 .trust svg { color: #345aaf; }
+.design--05 .system { white-space: nowrap; }
+.design--05 .system b { font-weight: 700; }
+
+/* 06 — Art Deco */
+.design--06 {
+  background: #103e36;
+  color: #f2e8c9;
+}
+.design--06 .design-art {
+  position: absolute;
+  inset: 14px;
+  border: 1px solid #9b8551;
+  pointer-events: none;
+}
+.design--06 .design-art::before {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border: 1px solid rgb(185 157 96 / 38%);
+}
+.design--06 .design-art::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: calc(50% - 4px);
+  width: 8px;
+  height: 8px;
+  background: #c7a566;
+  transform: rotate(45deg);
+}
+.design--06 .design-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.design--06 .headline {
+  margin: 0 0 25px;
+  font-family: "Bodoni 72", Didot, "Times New Roman", serif;
+  font-size: clamp(31px, 9cqw, 53px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -.042em;
+}
+.design--06 .headline span:last-child { color: #d6b87e; }
+.design--06 .sources {
+  display: grid;
+  gap: 8px;
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", sans-serif;
+  font-size: clamp(13px, 3.75cqw, 20px);
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: -.025em;
+}
+.design--06 .sources p { margin: 0; }
+.design--06 .signoff {
+  margin: 23px 0 27px;
+  font-family: "Bodoni 72", Didot, "Times New Roman", serif;
+  font-size: clamp(24px, 6.8cqw, 37px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: #d6b87e;
+  letter-spacing: -.025em;
+}
+.design--06 .signoff em { font-style: italic; }
+.design--06 .details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 15px;
+  padding-top: 16px;
+  border-top: 1px solid rgb(185 157 96 / 50%);
+  color: #ceceaf;
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", sans-serif;
+  font-size: 10px;
+  line-height: 1.5;
+}
+.design--06 .trust { display: inline-flex; align-items: center; gap: 6px; }
+.design--06 .trust svg { color: #d6b87e; }
+.design--06 .system { white-space: nowrap; }
+.design--06 .system b { font-weight: 600; }
