@@ -19,7 +19,7 @@ footer{max-width:880px;margin:0 auto;padding:24px;font-size:14px;color:#666;disp
 <main>
   <p><a href="./">← Tonale</a></p>
   <h1>Tonale Privacy Policy</h1>
-  <p class="note">Effective date: 2026-09-28 · Web copy: <a href="https://xintechllc.com/Tonale/privacy.html">https://xintechllc.com/Tonale/privacy.html</a></p>
+  <p class="note">Effective date: 2026-09-29 · Web copy: <a href="https://xintechllc.com/Tonale/privacy.html">https://xintechllc.com/Tonale/privacy.html</a></p>
 
   <h2 id="scope">Scope and Controller</h2>
   <p>This policy explains how Tonale handles information on your Mac, and when information goes to Xintech LLC or to another company. Xintech LLC is the controller of the information it receives.</p>
@@ -167,6 +167,18 @@ footer{max-width:880px;margin:0 auto;padding:24px;font-size:14px;color:#666;disp
 
   <h2 id="website-analytics">Website Analytics</h2>
   <p>The Tonale web page at <code>https://xintechllc.com/Tonale/</code> uses Umami Cloud, provided by Umami Software, Inc., to count visits and clicks on its download, support, privacy, and license links. Umami may process the page path and search, referrer, title, browser, operating system, device type, screen size, language, campaign parameters, approximate location derived from your IP address, and the name and target of each counted click. Umami states that it does not use analytics cookies or conventional fingerprinting and does not store IP addresses. This data is kept according to Xintech LLC's Umami Cloud plan and settings, currently up to six months. The Tonale app sends nothing to Umami. See <a href="https://umami.is/privacy">https://umami.is/privacy</a>.</p>
+
+  <h2 id="data-protection">How Tonale Protects Your Data</h2>
+  <p>Tonale uses these measures to protect your information, including the Google user data it receives when you connect your YouTube account:</p>
+  <ul>
+    <li><strong>Least access.</strong> Tonale asks Google only for read-only access to YouTube (<code>youtube.readonly</code>). It cannot change or delete anything on YouTube, and it never sees your Google password.</li>
+    <li><strong>Protected sign-in.</strong> Google's consent page opens in your default browser. Tonale uses PKCE (Proof Key for Code Exchange), so a sign-in code is useless to anyone but the Tonale that asked for it, and Google returns that code only to an address on your own Mac (<code>127.0.0.1</code>).</li>
+    <li><strong>Encrypted connections.</strong> Tonale connects to Google, YouTube, and Xintech LLC's services only over HTTPS (TLS). macOS App Transport Security enforces this, and Tonale makes no exceptions to it. Requests that use your YouTube account go directly from your Mac to Google.</li>
+    <li><strong>Tokens in the Keychain.</strong> Tonale keeps Google's tokens in the macOS data-protection Keychain on this Mac, which stores them encrypted. Only Tonale can read them, and only while your Mac is unlocked. They do not sync to iCloud, and Tonale sends them only to Google.</li>
+    <li><strong>App Sandbox.</strong> Tonale runs in Apple's App Sandbox. Your library, including what you import from YouTube, stays in Tonale's own container on your Mac, which other apps cannot read without your permission. If FileVault is on, macOS also encrypts it on disk.</li>
+    <li><strong>Synced library.</strong> If you sign in, Tonale syncs only the items listed under <a href="#sync">What syncs</a>; for YouTube, only the video identifier and whether the video came from a connected YouTube account. They travel over HTTPS to Xintech LLC's service at <code>dataol.net</code>, which accepts a sync request only with your session and gives it only your own account's library. Microsoft Azure Table storage encrypts the stored data at rest.</li>
+    <li><strong>Limited keeping.</strong> Tonale updates the YouTube data it keeps, or deletes it, within 30 days. Disconnect revokes Tonale's access at Google and deletes what Tonale imported. See <a href="#retention">Retention</a> and <a href="#deletion">Deleting Your Data</a>.</li>
+  </ul>
 
   <h2 id="retention">Retention</h2>
   <div class="table">
