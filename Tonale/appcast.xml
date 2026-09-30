@@ -1,5 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:tonale="https://xintechllc.com/Tonale/appcast" version="2.0"><channel><item><title>Tonale 1.0.1</title><pubDate>Wed, 30 Sep 2026 04:15:30 +0000</pubDate><sparkle:version>10</sparkle:version><sparkle:shortVersionString>1.0.1</sparkle:shortVersionString><sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion><tonale:databaseSchemaVersion>21</tonale:databaseSchemaVersion><tonale:syncSchemaVersion>3</tonale:syncSchemaVersion><description sparkle:format="markdown">Saved YouTube playlists now sync across your Tonale account.
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:tonale="https://xintechllc.com/Tonale/appcast" version="2.0"><channel><item><title>Tonale 1.0.1</title><pubDate>Wed, 30 Sep 2026 15:02:54 +0000</pubDate><sparkle:version>11</sparkle:version><sparkle:shortVersionString>1.0.1</sparkle:shortVersionString><sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion><tonale:databaseSchemaVersion>21</tonale:databaseSchemaVersion><tonale:syncSchemaVersion>3</tonale:syncSchemaVersion><description sparkle:format="markdown">Tonale 1.0.1 (11)
+
+- Local audio and video now share one Local Media page and one Files &amp; Folders window.
+- Use All, Audio and Video filters in Local Media and Apple Music; Tonale remembers your selections.
+- Add mixed files and folders in one step, with one import report. Rescan or reconnect selected sources together.
+- Browse large local libraries faster, with improved search, sorting and missing-file filtering.
+- Smoother Apple Music filter changes and improved playlist layouts, window sizing and list columns.
+</description><enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/tonale-v1.0.1-11/Tonale-1.0.1-11.dmg" length="24318526" type="application/octet-stream" sparkle:edSignature="p7fS2tOzplhofCYJNpOlOY6zY+o+AbkbwmVQQPV6BAfHmrqpfHoRIjv0GN8yznvvDZH8h2cfQoB9SEGqakJEAQ==" /></item><item><title>Tonale 1.0.1</title><pubDate>Wed, 30 Sep 2026 04:15:30 +0000</pubDate><sparkle:version>10</sparkle:version><sparkle:shortVersionString>1.0.1</sparkle:shortVersionString><sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion><tonale:databaseSchemaVersion>21</tonale:databaseSchemaVersion><tonale:syncSchemaVersion>3</tonale:syncSchemaVersion><description sparkle:format="markdown">Saved YouTube playlists now sync across your Tonale account.
 
 - Restore saved playlist links on another Mac using that Mac's permitted YouTube access.
 - Keep imported titles and cached videos on each Mac while syncing playlist references and your custom labels.
