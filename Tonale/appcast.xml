@@ -1,5 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:tonale="https://xintechllc.com/Tonale/appcast" version="2.0"><channel><item><title>Tonale 1.0.1</title><pubDate>Wed, 30 Sep 2026 15:02:54 +0000</pubDate><sparkle:version>11</sparkle:version><sparkle:shortVersionString>1.0.1</sparkle:shortVersionString><sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion><tonale:databaseSchemaVersion>21</tonale:databaseSchemaVersion><tonale:syncSchemaVersion>3</tonale:syncSchemaVersion><description sparkle:format="markdown">Tonale 1.0.1 (11)
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:tonale="https://xintechllc.com/Tonale/appcast" version="2.0"><channel><item><title>Tonale 1.0.1</title><pubDate>Thu, 01 Oct 2026 23:43:21 +0000</pubDate><sparkle:version>12</sparkle:version><sparkle:shortVersionString>1.0.1</sparkle:shortVersionString><sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion><tonale:databaseSchemaVersion>21</tonale:databaseSchemaVersion><tonale:syncSchemaVersion>3</tonale:syncSchemaVersion><description sparkle:format="markdown">Tonale 1.0.1 (12)
+
+- Undo and redo playlist edits, including Delete Playlist and Delete Saved Filter, from Edit ▸ Undo.
+- Tonale remembers your queue and offers to resume where you stopped. Play a whole list from one button and see what is playing at the bottom of the library.
+- Find items in All Media by source, kind and playlist name. Add a whole list to a playlist, and mix sources in playlists you make in Tonale.
+- Playlist and item commands are in the menu bar. Sync shows its status, catches up when you return to Tonale, and lets you compare both versions in a conflict.
+- Clearer deletion and missing-file messages, YouTube connections in Settings, and consistent wording in all 25 languages.
+- Erase Tonale Data… and Uninstall Tonale… in the Tonale menu remove Tonale's data, or Tonale itself, from this Mac.
+</description><enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/tonale-v1.0.1-12/Tonale-1.0.1-12.dmg" length="26103877" type="application/octet-stream" sparkle:edSignature="ZvtHkigFgjZVbVRnm2bYgWIYepnQfITEpOH97TQ6iWFVJY2SKyDLFN8l7RzV5RtyHO9F2rncI4lbpteH4OsoBg==" /></item><item><title>Tonale 1.0.1</title><pubDate>Wed, 30 Sep 2026 15:02:54 +0000</pubDate><sparkle:version>11</sparkle:version><sparkle:shortVersionString>1.0.1</sparkle:shortVersionString><sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion><tonale:databaseSchemaVersion>21</tonale:databaseSchemaVersion><tonale:syncSchemaVersion>3</tonale:syncSchemaVersion><description sparkle:format="markdown">Tonale 1.0.1 (11)
 
 - Local audio and video now share one Local Media page and one Files &amp; Folders window.
 - Use All, Audio and Video filters in Local Media and Apple Music; Tonale remembers your selections.
