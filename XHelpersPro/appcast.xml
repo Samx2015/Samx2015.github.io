@@ -4,22 +4,25 @@
         <title>XHelpers Pro</title>
         <item>
             <title>1.0.12</title>
-            <pubDate>Mon, 28 Sep 2026 10:39:48 -0700</pubDate>
+            <pubDate>Thu, 01 Oct 2026 17:26:49 -0700</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>29</sparkle:version>
+            <sparkle:version>30</sparkle:version>
             <sparkle:shortVersionString>1.0.12</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-XHelpers Pro 1.0.12 (29)
+XHelpers Pro 1.0.12 (30)
 
-- Audio Mixer now leaves Tonale and its own playback helpers to Tonale, so the two apps can run together without Pro capturing Tonale-owned audio.
-- Improved audio helper identification and handling when a process exits or changes ownership.
-- Improved detection of the installed Tonale app, excluding build and release copies.
-- Updated shared player windows and audio effects controls.
-- Completed translations of 34 shared player labels in 25 languages.
+- AI Usage keeps reading Codex usage after the Codex CLI is upgraded, and finds a correctly signed Codex or Claude Code however it was installed, so automatic sign-in renewal keeps working.
+- Help in the AI Usage card now appears only over its own control and disappears as soon as the pointer moves away.
+- Install Apps & Dev Tools now installs Claude Code and Codex CLI with their vendors' own installers, which keep them up to date.
+- Manage Fonts adds Hack, DejaVu Sans Mono, Hack Nerd Font and JetBrains Mono Nerd Font.
+- The detached video window's menus now offer audio effects, playback details, opening files, settings and queue actions.
+- Player messages count a single item correctly and read more clearly.
+- The app is about 60 MB smaller: the Finder and Quick Look extensions now carry only their own text.
+- Completed translations in 25 languages.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.12-29/XHelpersPro-1.0.12-29-macOS.dmg" length="141433605" type="application/octet-stream" sparkle:edSignature="5w8k2Up0hKylxJ2feibP5fohi8CetZ/YQ+OT7b6n+qGQUeBdK2ceIzVKK0NMe3a24o9k4WkbQYz9ZdsfKnUdDg=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.12-30/XHelpersPro-1.0.12-30-macOS.dmg" length="130143795" type="application/octet-stream" sparkle:edSignature="EAL5IjKzWmPime8X2XfYbHfEfQbJCiTtGv+BX/+Dum26hnkKCp9CTWMdOJASnHWg5JMpq86pib66OX0NUPEuBA=="/>
         </item>
     </channel>
 </rss>
