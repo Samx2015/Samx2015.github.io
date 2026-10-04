@@ -1,5 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:tonale="https://xintechllc.com/Tonale/appcast" version="2.0"><channel><item><title>Tonale 1.0.1</title><pubDate>Fri, 02 Oct 2026 10:26:34 +0000</pubDate><sparkle:version>13</sparkle:version><sparkle:shortVersionString>1.0.1</sparkle:shortVersionString><sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion><tonale:databaseSchemaVersion>21</tonale:databaseSchemaVersion><tonale:syncSchemaVersion>3</tonale:syncSchemaVersion><description sparkle:format="markdown">Tonale 1.0.1 (13) improves syncing and recovery across your Macs.
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:tonale="https://xintechllc.com/Tonale/appcast" version="2.0"><channel><item><title>Tonale 1.0.1</title><pubDate>Sun, 04 Oct 2026 14:25:41 +0000</pubDate><sparkle:version>14</sparkle:version><sparkle:shortVersionString>1.0.1</sparkle:shortVersionString><sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion><tonale:databaseSchemaVersion>21</tonale:databaseSchemaVersion><tonale:syncSchemaVersion>3</tonale:syncSchemaVersion><description sparkle:format="markdown">Tonale 1.0.1 (14)
+
+- Switching playlists no longer moves Play All, Search or the YouTube source and update controls; they stay in one row.
+- Play All and Play Shuffled work while a playlist is still loading, and play the whole playlist.
+- Videos without a title or length yet are counted in a small information button that offers Refresh Titles and Durations.
+- On macOS 27, column widths you set stay in place when you switch between playlists.
+- Importing from your YouTube account has a larger Import Playlist button, with the selected playlist and its item count beside it.
+- The player opens directly in the layout of the item that starts playing.
+</description><enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/tonale-v1.0.1-14/Tonale-1.0.1-14.dmg" length="27158247" type="application/octet-stream" sparkle:edSignature="AL+a/gzjX6YKOz9ZuQjUJ/nDwO9kcgZjQ3stGPXtmEeT6S23jkBU5SRmLaoR/47A/Bqj3zRrUBZ0JtsYTjmNAA==" /></item><item><title>Tonale 1.0.1</title><pubDate>Fri, 02 Oct 2026 10:26:34 +0000</pubDate><sparkle:version>13</sparkle:version><sparkle:shortVersionString>1.0.1</sparkle:shortVersionString><sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion><tonale:databaseSchemaVersion>21</tonale:databaseSchemaVersion><tonale:syncSchemaVersion>3</tonale:syncSchemaVersion><description sparkle:format="markdown">Tonale 1.0.1 (13) improves syncing and recovery across your Macs.
 
 - Clearer sync status, conflict choices and sign-out warnings.
 - More reliable Keep It, Undo and queue recovery when items are restored.
