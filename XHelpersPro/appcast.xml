@@ -3,26 +3,26 @@
     <channel>
         <title>XHelpers Pro</title>
         <item>
-            <title>1.0.12</title>
-            <pubDate>Thu, 01 Oct 2026 17:26:49 -0700</pubDate>
+            <title>1.0.13</title>
+            <pubDate>Sun, 04 Oct 2026 11:59:37 -0700</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>30</sparkle:version>
-            <sparkle:shortVersionString>1.0.12</sparkle:shortVersionString>
+            <sparkle:version>31</sparkle:version>
+            <sparkle:shortVersionString>1.0.13</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-XHelpers Pro 1.0.12 (30)
+XHelpers Pro 1.0.13 (31)
 
-- AI Usage keeps reading Codex usage after the Codex CLI is upgraded, and finds a correctly signed Codex or Claude Code however it was installed, so automatic sign-in renewal keeps working.
-- Help in the AI Usage card now appears only over its own control and disappears as soon as the pointer moves away.
-- Install Apps & Dev Tools now installs Claude Code and Codex CLI with their vendors' own installers, which keep them up to date.
-- Manage Fonts adds Hack, DejaVu Sans Mono, Hack Nerd Font and JetBrains Mono Nerd Font.
-- The detached video window's menus now offer audio effects, playback details, opening files, settings and queue actions.
-- Player messages count a single item correctly and read more clearly.
-- The app is about 60 MB smaller: the Finder and Quick Look extensions now carry only their own text.
-- Completed translations in 25 languages.
+- AI Usage adds guided recovery and improves Claude sign-in renewal while keeping available usage readings current.
+- Cleanup tools preserve previous choices, scan coverage, reports, and recoverable sessions. Duplicate reviews add search and focused exact-copy scans.
+- App removal improves batch review, explains paused plans, and keeps recovery sessions available while Put Back is working.
+- File utilities and app installers provide clearer progress, results, and cancellation, including confirmation before stopping an installation.
+- Text and Markdown editors open at a useful size, with improved outline navigation and layouts that fit the available screen.
+- Window outlines preserve your chosen color when other windows temporarily change their appearance.
+- Quitting and restarting for a language change correctly closes open sheets.
+- Updated translations in all 25 supported languages.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.12-30/XHelpersPro-1.0.12-30-macOS.dmg" length="130143795" type="application/octet-stream" sparkle:edSignature="EAL5IjKzWmPime8X2XfYbHfEfQbJCiTtGv+BX/+Dum26hnkKCp9CTWMdOJASnHWg5JMpq86pib66OX0NUPEuBA=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.13-31/XHelpersPro-1.0.13-31-macOS.dmg" length="134873396" type="application/octet-stream" sparkle:edSignature="lQTiGHPfLCz93dmxldjtB18i4ZVeh8VgCiiVh3H+hQYip6KykFP/5NcbKoVevsqnVeEzpn4Yi3J8Ulf5vepvBg=="/>
         </item>
     </channel>
 </rss>
