@@ -3,26 +3,23 @@
     <channel>
         <title>XHelpers Pro</title>
         <item>
-            <title>1.0.13</title>
-            <pubDate>Sun, 04 Oct 2026 11:59:37 -0700</pubDate>
+            <title>1.0.14</title>
+            <pubDate>Mon, 05 Oct 2026 11:45:01 -0700</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>31</sparkle:version>
-            <sparkle:shortVersionString>1.0.13</sparkle:shortVersionString>
+            <sparkle:version>32</sparkle:version>
+            <sparkle:shortVersionString>1.0.14</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-XHelpers Pro 1.0.13 (31)
+XHelpers Pro 1.0.14 (32)
 
-- AI Usage adds guided recovery and improves Claude sign-in renewal while keeping available usage readings current.
-- Cleanup tools preserve previous choices, scan coverage, reports, and recoverable sessions. Duplicate reviews add search and focused exact-copy scans.
-- App removal improves batch review, explains paused plans, and keeps recovery sessions available while Put Back is working.
-- File utilities and app installers provide clearer progress, results, and cancellation, including confirmation before stopping an installation.
-- Text and Markdown editors open at a useful size, with improved outline navigation and layouts that fit the available screen.
-- Window outlines preserve your chosen color when other windows temporarily change their appearance.
-- Quitting and restarting for a language change correctly closes open sheets.
-- Updated translations in all 25 supported languages.
+- Use the new xhelperspro command helper to play or queue audio and video, open pictures and documents, and open Pro tools from scripts.
+- Audio tracks can show who requested playback, with a highlighted requester label that also works when Pro is already running.
+- The audio player opens at a size that fits its content without visibly widening afterward, with clearer playback controls and easier navigation between video and control windows.
+- AI Usage now shows available Codex credits with whole-number balances.
+- Updated player labels and command messages in all 25 supported languages.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.13-31/XHelpersPro-1.0.13-31-macOS.dmg" length="134873396" type="application/octet-stream" sparkle:edSignature="lQTiGHPfLCz93dmxldjtB18i4ZVeh8VgCiiVh3H+hQYip6KykFP/5NcbKoVevsqnVeEzpn4Yi3J8Ulf5vepvBg=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.14-32/XHelpersPro-1.0.14-32-macOS.dmg" length="135109182" type="application/octet-stream" sparkle:edSignature="WxUzW0UrxGkQu5LvGdKsyt094svJl495OihQuQoKrX/Y9in9EBBRzgczz7wT7s9KvSFUeqDy/Aa7S852LS8wCg=="/>
         </item>
     </channel>
 </rss>
