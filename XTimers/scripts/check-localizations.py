@@ -1138,8 +1138,8 @@ def main() -> int:
     # endpoint the provider redirects to rather than product content: they are
     # not localized routes, and treating every top-level directory as a locale
     # made this check fail on them.
-    # Guides and press materials are explicitly labelled English pilot pages.
-    ignored_directories = {"assets", "generated", "scripts", "auth", "guides", "press"}
+    # Guides, press materials, and the historical download archive are English pages.
+    ignored_directories = {"assets", "generated", "scripts", "auth", "guides", "press", "History"}
     actual_directories = {
         path.name
         for path in ROOT.iterdir()
