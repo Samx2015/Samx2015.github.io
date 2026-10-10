@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://xintechllc.com/XAction/">
     <link rel="icon" type="image/png" href="/XAction/assets/favicon.png">
     <link rel="apple-touch-icon" href="/XAction/assets/apple-touch-icon.png">
-    <meta name="theme-color" content="#120f33">
+    <meta name="theme-color" content="#f3f5ff">
     <meta property="og:title" content="XActions: Alerts you can answer">
     <meta property="og:description" content="Alerts and decisions from your apps, agents, scripts, and servers. Answer them on iPhone and Mac.">
     <meta property="og:type" content="website">
@@ -23,7 +23,7 @@
     <meta name="twitter:image" content="https://xintechllc.com/XAction/assets/og-image.jpg">
     <style>
       :root {
-        color-scheme: light dark;
+        color-scheme: light;
         --ink: #141826;
         --muted: #5b6275;
         --paper: #f6f7fb;
@@ -33,23 +33,10 @@
         --blue: #407aff;
         --violet: #7352f5;
         --ember: #ff6e33;
-        --code-bg: #0f1222;
-        --code-ink: #e3e7f6;
-        --code-muted: #8a91ad;
+        --code-bg: #f7f8fc;
+        --code-ink: #1f2433;
+        --code-muted: #6b7286;
         --shadow: 0 14px 32px rgba(20, 24, 38, 0.1);
-      }
-
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --ink: #eef0f8;
-          --muted: #a2a8bc;
-          --paper: #0b0d16;
-          --surface: #141826;
-          --line: #262b3f;
-          --accent: #93abff;
-          --code-bg: #070912;
-          --shadow: 0 14px 32px rgba(0, 0, 0, 0.35);
-        }
       }
 
       * {
@@ -86,14 +73,14 @@
         padding-right: 24px;
       }
 
-      /* Hero: always dark, in the app icon's colours. */
+      /* Hero: a light wash of the app icon's colours. */
       .hero {
         overflow: hidden;
-        color: #fff;
+        border-bottom: 1px solid var(--line);
         background:
-          radial-gradient(60% 70% at 12% 20%, rgba(64, 122, 255, 0.38), transparent 70%),
-          radial-gradient(50% 60% at 88% 30%, rgba(255, 110, 51, 0.22), transparent 70%),
-          linear-gradient(135deg, #0c1033 0%, #1a1450 52%, #33123a 100%);
+          radial-gradient(55% 70% at 10% 15%, rgba(64, 122, 255, 0.16), transparent 70%),
+          radial-gradient(45% 60% at 92% 25%, rgba(255, 110, 51, 0.12), transparent 70%),
+          linear-gradient(135deg, #f3f5ff 0%, #f5f1ff 55%, #fff5f0 100%);
       }
 
       .topbar {
@@ -109,7 +96,7 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        color: #fff;
+        color: var(--ink);
         font-size: 1.15rem;
         font-weight: 650;
         text-decoration: none;
@@ -130,13 +117,13 @@
       }
 
       .topnav a {
-        color: rgba(255, 255, 255, 0.82);
+        color: var(--muted);
         text-decoration: none;
       }
 
       .topnav a:hover,
       .topnav a:focus-visible {
-        color: #fff;
+        color: var(--ink);
       }
 
       .hero-grid {
@@ -157,7 +144,7 @@
       }
 
       .hero h1 span {
-        background: linear-gradient(90deg, #7fa6ff, #b39bff 55%, #ff9a6b);
+        background: linear-gradient(90deg, #2f63f0, #6a45ee 55%, #f0592a);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
@@ -166,7 +153,7 @@
       .lead {
         max-width: 30em;
         margin: 0 0 22px;
-        color: rgba(255, 255, 255, 0.8);
+        color: var(--muted);
         font-size: 1.1rem;
       }
 
@@ -183,10 +170,10 @@
         justify-content: center;
         min-height: 50px;
         padding: 0 24px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        border: 0;
         border-radius: 13px;
         background: linear-gradient(90deg, var(--blue), var(--violet));
-        box-shadow: 0 10px 26px rgba(84, 92, 250, 0.4);
+        box-shadow: 0 10px 24px rgba(84, 92, 250, 0.28);
         color: #fff;
         font-size: 1.02rem;
         font-weight: 650;
@@ -201,7 +188,7 @@
       }
 
       .text-link {
-        color: #fff;
+        color: var(--accent);
         font-weight: 600;
         text-decoration: none;
       }
@@ -213,7 +200,7 @@
 
       .fine {
         margin: 14px 0 0;
-        color: rgba(255, 255, 255, 0.62);
+        color: var(--muted);
         font-size: 0.88rem;
       }
 
@@ -225,10 +212,10 @@
 
       .mac-window {
         overflow: hidden;
-        border: 1px solid rgba(255, 255, 255, 0.22);
+        border: 1px solid var(--line);
         border-radius: 10px;
         background: #fff;
-        box-shadow: 0 34px 70px rgba(0, 0, 0, 0.45);
+        box-shadow: 0 26px 56px rgba(40, 46, 90, 0.2);
       }
 
       .phone {
@@ -237,8 +224,8 @@
         border-radius: 15% / 7%;
         background: #050507;
         box-shadow:
-          0 0 0 1px rgba(255, 255, 255, 0.16),
-          0 26px 52px rgba(0, 0, 0, 0.5);
+          0 0 0 1px rgba(20, 24, 38, 0.12),
+          0 22px 44px rgba(40, 46, 90, 0.28);
       }
 
       .phone img {
@@ -412,8 +399,8 @@
       .code {
         overflow: hidden;
         border-radius: 14px;
+        border: 1px solid var(--line);
         background: var(--code-bg);
-        box-shadow: var(--shadow);
       }
 
       .code-bar {
@@ -421,16 +408,16 @@
         align-items: center;
         justify-content: space-between;
         padding: 8px 12px 8px 16px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        border-bottom: 1px solid var(--line);
         color: var(--code-muted);
         font-size: 0.85rem;
       }
 
       .copy {
         padding: 4px 12px;
-        border: 1px solid rgba(255, 255, 255, 0.16);
+        border: 1px solid var(--line);
         border-radius: 8px;
-        background: rgba(255, 255, 255, 0.06);
+        background: var(--surface);
         color: var(--code-ink);
         font: inherit;
         cursor: pointer;
@@ -438,7 +425,7 @@
 
       .copy:hover,
       .copy:focus-visible {
-        background: rgba(255, 255, 255, 0.12);
+        background: var(--paper);
       }
 
       pre {
@@ -449,9 +436,9 @@
         font: 0.86rem/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
       }
 
-      .tok-str { color: #ffb38a; }
-      .tok-flag { color: #9db8ff; }
-      .tok-url { color: #b9a6ff; }
+      .tok-str { color: #b4461b; }
+      .tok-flag { color: #2f5bd8; }
+      .tok-url { color: #6a3fd6; }
 
       .dev-notes {
         display: grid;
