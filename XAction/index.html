@@ -6,7 +6,7 @@
     <title>XActions: Alerts you can answer, on iPhone and Mac</title>
     <meta
       name="description"
-      content="XActions brings alerts and decisions from your own apps, agents, scripts, and servers to iPhone and Mac. Choose an option, confirm a request, and see the result in the same Inbox item."
+      content="XActions brings alerts and decisions from your own apps, agents, scripts, and servers to iPhone and Mac. Answer them and see the result in the same Inbox item."
     >
     <link rel="canonical" href="https://xintechllc.com/XAction/">
     <link rel="icon" type="image/png" href="/XAction/assets/favicon.png">
@@ -36,7 +36,7 @@
         --code-bg: #0f1222;
         --code-ink: #e3e7f6;
         --code-muted: #8a91ad;
-        --shadow: 0 18px 40px rgba(20, 24, 38, 0.1);
+        --shadow: 0 14px 32px rgba(20, 24, 38, 0.1);
       }
 
       @media (prefers-color-scheme: dark) {
@@ -48,7 +48,7 @@
           --line: #262b3f;
           --accent: #93abff;
           --code-bg: #070912;
-          --shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+          --shadow: 0 14px 32px rgba(0, 0, 0, 0.35);
         }
       }
 
@@ -65,7 +65,7 @@
         color: var(--ink);
         background: var(--paper);
         font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        line-height: 1.55;
+        line-height: 1.5;
         -webkit-font-smoothing: antialiased;
       }
 
@@ -82,12 +82,12 @@
       .wrap {
         width: min(100%, 1120px);
         margin: 0 auto;
-        padding: 0 24px;
+        padding-left: 24px;
+        padding-right: 24px;
       }
 
       /* Hero: always dark, in the app icon's colours. */
       .hero {
-        position: relative;
         overflow: hidden;
         color: #fff;
         background:
@@ -101,8 +101,8 @@
         align-items: center;
         justify-content: space-between;
         gap: 16px;
-        padding-top: 18px;
-        padding-bottom: 18px;
+        padding-top: 16px;
+        padding-bottom: 16px;
       }
 
       .brand {
@@ -116,15 +116,14 @@
       }
 
       .brand img {
-        width: 34px;
-        height: 34px;
+        width: 32px;
+        height: 32px;
         border-radius: 8px;
       }
 
       .topnav {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
         justify-content: flex-end;
         gap: 6px 22px;
         font-size: 0.95rem;
@@ -144,38 +143,15 @@
         display: grid;
         grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
         align-items: center;
-        gap: 48px;
-        padding-top: 40px;
-        padding-bottom: 88px;
-      }
-
-      .eyebrow {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        margin: 0 0 18px;
-        padding: 5px 12px;
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.07);
-        color: rgba(255, 255, 255, 0.86);
-        font-size: 0.85rem;
-        font-weight: 560;
-      }
-
-      .eyebrow::before {
-        width: 7px;
-        height: 7px;
-        border-radius: 999px;
-        background: var(--ember);
-        box-shadow: 0 0 10px var(--ember);
-        content: "";
+        gap: 40px;
+        padding-top: 20px;
+        padding-bottom: 52px;
       }
 
       .hero h1 {
-        margin: 0 0 18px;
-        font-size: clamp(2.5rem, 6vw, 4.1rem);
-        line-height: 1.02;
+        margin: 0 0 14px;
+        font-size: clamp(2.3rem, 5.2vw, 3.6rem);
+        line-height: 1.03;
         font-weight: 760;
         letter-spacing: -0.02em;
       }
@@ -188,32 +164,31 @@
       }
 
       .lead {
-        max-width: 34em;
-        margin: 0 0 30px;
+        max-width: 30em;
+        margin: 0 0 22px;
         color: rgba(255, 255, 255, 0.8);
-        font-size: 1.15rem;
+        font-size: 1.1rem;
       }
 
       .actions {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        gap: 14px 22px;
+        gap: 12px 22px;
       }
 
       .button {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
-        min-height: 54px;
-        padding: 0 26px;
+        min-height: 50px;
+        padding: 0 24px;
         border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 14px;
+        border-radius: 13px;
         background: linear-gradient(90deg, var(--blue), var(--violet));
-        box-shadow: 0 12px 30px rgba(84, 92, 250, 0.4);
+        box-shadow: 0 10px 26px rgba(84, 92, 250, 0.4);
         color: #fff;
-        font-size: 1.05rem;
+        font-size: 1.02rem;
         font-weight: 650;
         text-decoration: none;
         transition: filter 0.15s ease, transform 0.15s ease;
@@ -237,9 +212,9 @@
       }
 
       .fine {
-        margin: 18px 0 0;
+        margin: 14px 0 0;
         color: rgba(255, 255, 255, 0.62);
-        font-size: 0.9rem;
+        font-size: 0.88rem;
       }
 
       /* A Mac window with an iPhone in front of it. */
@@ -251,9 +226,9 @@
       .mac-window {
         overflow: hidden;
         border: 1px solid rgba(255, 255, 255, 0.22);
-        border-radius: 12px;
+        border-radius: 10px;
         background: #fff;
-        box-shadow: 0 40px 80px rgba(0, 0, 0, 0.45);
+        box-shadow: 0 34px 70px rgba(0, 0, 0, 0.45);
       }
 
       .phone {
@@ -263,7 +238,7 @@
         background: #050507;
         box-shadow:
           0 0 0 1px rgba(255, 255, 255, 0.16),
-          0 30px 60px rgba(0, 0, 0, 0.55);
+          0 26px 52px rgba(0, 0, 0, 0.5);
       }
 
       .phone img {
@@ -279,105 +254,85 @@
 
       /* Content sections. */
       section {
-        padding: 88px 0;
-      }
-
-      .section-head {
-        max-width: 640px;
-        margin: 0 0 44px;
-      }
-
-      .kicker {
-        margin: 0 0 10px;
-        background: linear-gradient(90deg, var(--blue), var(--violet));
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        font-size: 0.85rem;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
+        padding: 56px 0;
       }
 
       h2 {
-        margin: 0 0 12px;
-        font-size: clamp(1.9rem, 4vw, 2.6rem);
-        line-height: 1.1;
+        margin: 0 0 20px;
+        font-size: clamp(1.55rem, 3vw, 2.05rem);
+        line-height: 1.15;
         font-weight: 720;
         letter-spacing: -0.015em;
       }
 
-      .section-head p:last-child {
-        margin: 0;
+      .sub {
+        margin: -12px 0 20px;
         color: var(--muted);
-        font-size: 1.08rem;
       }
 
-      .steps {
+      .grid {
         display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 18px;
+        gap: 14px;
         margin: 0;
         padding: 0;
         list-style: none;
-        counter-reset: step;
+      }
+
+      .grid-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .grid-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
       }
 
       .card {
-        padding: 24px;
         border: 1px solid var(--line);
-        border-radius: 16px;
+        border-radius: 14px;
         background: var(--surface);
       }
 
-      .steps li {
-        counter-increment: step;
-      }
-
-      .steps li::before {
+      /* Icon or step number on the left, title and one line on the right. */
+      .item {
         display: grid;
-        place-items: center;
-        width: 38px;
-        height: 38px;
-        margin-bottom: 16px;
-        border-radius: 11px;
-        background: linear-gradient(135deg, var(--blue), var(--violet));
-        color: #fff;
-        font-weight: 700;
-        content: counter(step);
+        grid-template-columns: auto minmax(0, 1fr);
+        align-items: start;
+        column-gap: 14px;
+        padding: 16px 18px;
       }
 
-      .card h3 {
-        margin: 0 0 6px;
-        font-size: 1.1rem;
+      .item h3 {
+        margin: 1px 0 2px;
+        font-size: 1rem;
         line-height: 1.3;
       }
 
-      .card p {
+      .item p {
         margin: 0;
         color: var(--muted);
+        font-size: 0.94rem;
       }
 
-      .features {
+      .badge {
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 18px;
-      }
-
-      .icon {
-        display: grid;
+        grid-row: span 2;
         place-items: center;
-        width: 44px;
-        height: 44px;
-        margin-bottom: 16px;
-        border-radius: 12px;
-        background: color-mix(in srgb, var(--tint) 14%, transparent);
-        color: var(--tint);
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+        background: color-mix(in srgb, var(--tint, var(--violet)) 14%, transparent);
+        color: var(--tint, var(--violet));
+        font-weight: 700;
       }
 
-      .icon svg {
-        width: 24px;
-        height: 24px;
+      .steps .badge {
+        background: linear-gradient(135deg, var(--blue), var(--violet));
+        color: #fff;
+      }
+
+      .badge svg {
+        width: 20px;
+        height: 20px;
         fill: none;
         stroke: currentColor;
         stroke-width: 1.8;
@@ -392,6 +347,10 @@
       .tint-pink { --tint: #e0457b; }
       .tint-teal { --tint: #0e9bb0; }
 
+      .features {
+        margin-top: 14px;
+      }
+
       /* Screenshots. */
       .shots {
         background: var(--surface);
@@ -399,20 +358,19 @@
         border-bottom: 1px solid var(--line);
       }
 
-      .shots h3 {
-        margin: 0 0 18px;
-        font-size: 1.2rem;
-      }
-
       .rail {
         display: grid;
         grid-auto-flow: column;
-        gap: 22px;
+        gap: 18px;
         margin: 0 -24px;
-        padding: 6px 24px 22px;
+        padding: 4px 24px 18px;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         scroll-padding: 0 24px;
+      }
+
+      .rail + .rail {
+        margin-top: 18px;
       }
 
       .rail figure {
@@ -421,12 +379,11 @@
       }
 
       .rail-phones {
-        grid-auto-columns: max(180px, calc((100% - 4 * 22px) / 5));
+        grid-auto-columns: max(150px, calc((100% - 4 * 18px) / 5));
       }
 
       .rail-macs {
-        grid-auto-columns: max(300px, 78%);
-        margin-top: 8px;
+        grid-auto-columns: max(300px, calc((100% - 18px) / 2));
       }
 
       .rail .mac-window {
@@ -439,35 +396,22 @@
       }
 
       figcaption {
-        margin-top: 14px;
-      }
-
-      figcaption strong {
-        display: block;
-        font-size: 1rem;
-      }
-
-      figcaption span {
-        color: var(--muted);
-        font-size: 0.92rem;
-      }
-
-      .shots-gap {
-        height: 52px;
+        margin-top: 10px;
+        font-size: 0.93rem;
+        font-weight: 600;
       }
 
       /* Developers. */
       .dev-grid {
         display: grid;
-        grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+        grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
         align-items: start;
-        gap: 28px;
+        gap: 24px;
       }
 
       .code {
-        position: relative;
         overflow: hidden;
-        border-radius: 16px;
+        border-radius: 14px;
         background: var(--code-bg);
         box-shadow: var(--shadow);
       }
@@ -476,14 +420,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 14px 10px 18px;
+        padding: 8px 12px 8px 16px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         color: var(--code-muted);
         font-size: 0.85rem;
       }
 
       .copy {
-        padding: 6px 12px;
+        padding: 4px 12px;
         border: 1px solid rgba(255, 255, 255, 0.16);
         border-radius: 8px;
         background: rgba(255, 255, 255, 0.06);
@@ -499,10 +443,10 @@
 
       pre {
         margin: 0;
-        padding: 18px;
+        padding: 14px 16px;
         overflow-x: auto;
         color: var(--code-ink);
-        font: 0.88rem/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font: 0.86rem/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
       }
 
       .tok-str { color: #ffb38a; }
@@ -510,16 +454,12 @@
       .tok-url { color: #b9a6ff; }
 
       .dev-notes {
-        margin: 22px 0 0;
-        padding: 0;
-        list-style: none;
         display: grid;
-        gap: 12px;
+        gap: 6px;
+        margin: 16px 0 0;
+        padding-left: 18px;
         color: var(--muted);
-      }
-
-      .dev-notes strong {
-        color: var(--ink);
+        font-size: 0.94rem;
       }
 
       .dev-notes code {
@@ -532,39 +472,42 @@
 
       .levels {
         width: 100%;
+        padding: 14px 18px;
+      }
+
+      .levels table {
+        width: 100%;
         border-collapse: collapse;
-        font-size: 0.95rem;
+        font-size: 0.92rem;
       }
 
       .levels caption {
-        margin-bottom: 10px;
+        margin-bottom: 6px;
         text-align: left;
         font-weight: 700;
       }
 
       .levels th,
       .levels td {
-        padding: 9px 4px;
+        padding: 5px 4px;
         border-bottom: 1px solid var(--line);
         text-align: left;
         vertical-align: top;
       }
 
+      .levels tr:last-child th,
+      .levels tr:last-child td {
+        border-bottom: 0;
+      }
+
       .levels th {
-        width: 7.5em;
         white-space: nowrap;
       }
 
       .levels th span {
-        display: inline-grid;
-        place-items: center;
-        width: 22px;
-        height: 22px;
-        margin-right: 8px;
-        border-radius: 6px;
-        background: color-mix(in srgb, var(--violet) 14%, transparent);
+        display: inline-block;
+        width: 1.3em;
         color: var(--violet);
-        font-size: 0.8rem;
       }
 
       .levels td {
@@ -573,17 +516,12 @@
 
       /* FAQ. */
       .faq {
-        display: grid;
-        gap: 12px;
-        max-width: 820px;
-      }
-
-      .faq details {
-        padding: 0;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: start;
       }
 
       .faq summary {
-        padding: 18px 22px;
+        padding: 13px 18px;
         cursor: pointer;
         font-weight: 650;
         list-style: none;
@@ -605,48 +543,15 @@
 
       .faq details p {
         margin: 0;
-        padding: 0 22px 20px;
+        padding: 0 18px 14px;
         color: var(--muted);
-      }
-
-      /* Closing call to action. */
-      .closing {
-        padding: 0 0 88px;
-      }
-
-      .closing-card {
-        display: grid;
-        grid-template-columns: auto minmax(0, 1fr) auto;
-        align-items: center;
-        gap: 26px;
-        padding: 34px;
-        border-radius: 22px;
-        color: #fff;
-        background:
-          radial-gradient(70% 120% at 0% 0%, rgba(64, 122, 255, 0.45), transparent 70%),
-          linear-gradient(120deg, #141448, #2b1650 60%, #3b1638);
-      }
-
-      .closing-card img {
-        width: 84px;
-        height: 84px;
-        border-radius: 19px;
-      }
-
-      .closing-card h2 {
-        margin: 0 0 4px;
-        font-size: 1.8rem;
-      }
-
-      .closing-card p {
-        margin: 0;
-        color: rgba(255, 255, 255, 0.75);
+        font-size: 0.94rem;
       }
 
       footer {
         border-top: 1px solid var(--line);
         color: var(--muted);
-        font-size: 0.93rem;
+        font-size: 0.92rem;
       }
 
       .footer-inner {
@@ -654,9 +559,9 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        gap: 12px 24px;
-        padding-top: 26px;
-        padding-bottom: 26px;
+        gap: 10px 24px;
+        padding-top: 20px;
+        padding-bottom: 20px;
       }
 
       .footer-inner p {
@@ -666,7 +571,7 @@
       .footer-links {
         display: flex;
         flex-wrap: wrap;
-        gap: 8px 20px;
+        gap: 6px 18px;
       }
 
       .footer-links a {
@@ -681,13 +586,13 @@
       @media (max-width: 920px) {
         .hero-grid {
           grid-template-columns: minmax(0, 1fr);
-          gap: 44px;
-          padding-top: 24px;
-          padding-bottom: 64px;
+          gap: 32px;
+          padding-bottom: 44px;
         }
 
-        .steps,
-        .features {
+        .grid-4,
+        .grid-3,
+        .faq {
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
 
@@ -707,40 +612,39 @@
         }
 
         section {
-          padding: 64px 0;
+          padding: 40px 0;
         }
 
-        .steps,
-        .features {
+        .grid-4,
+        .grid-3,
+        .faq {
           grid-template-columns: minmax(0, 1fr);
+        }
+
+        .grid {
+          gap: 10px;
+        }
+
+        .item {
+          padding: 13px 15px;
         }
 
         .rail {
           margin: 0 -16px;
-          padding: 6px 16px 22px;
+          padding: 4px 16px 16px;
           scroll-padding: 0 16px;
         }
 
         .rail-phones {
-          grid-auto-columns: 62%;
+          grid-auto-columns: 46%;
         }
 
         .rail-macs {
-          grid-auto-columns: 88%;
+          grid-auto-columns: 86%;
         }
 
         .button {
           width: 100%;
-        }
-
-        .closing {
-          padding-bottom: 64px;
-        }
-
-        .closing-card {
-          grid-template-columns: minmax(0, 1fr);
-          justify-items: start;
-          padding: 26px;
         }
       }
 
@@ -759,12 +663,12 @@
     <header class="hero">
       <div class="wrap topbar">
         <a class="brand" href="/XAction/" aria-label="XActions home">
-          <img src="/XAction/assets/app-icon.webp" alt="" width="34" height="34">
+          <img src="/XAction/assets/app-icon.webp" alt="" width="32" height="32">
           <span>XActions</span>
         </a>
         <nav class="topnav" aria-label="Page sections">
           <a href="#how">How it works</a>
-          <a href="#features">Features</a>
+          <a href="#screens">Screenshots</a>
           <a href="#developers">Developers</a>
           <a class="topnav-keep" href="https://dataol.net/xactions/support">Support</a>
         </nav>
@@ -772,12 +676,10 @@
 
       <div class="wrap hero-grid">
         <div>
-          <p class="eyebrow">For iPhone and Mac</p>
           <h1>Alerts you can <span>answer.</span></h1>
           <p class="lead">
-            XActions brings alerts and decisions from your own apps, agents, scripts, and servers
-            to your iPhone and Mac. Choose an option, confirm a request, and see the result
-            in the same Inbox item.
+            Alerts and decisions from your own apps, agents, scripts, and servers.
+            Answer them on iPhone or Mac and see the result in the same place.
           </p>
           <div class="actions">
             <a class="button" href="https://apps.apple.com/app/xactions/id6792130828">View on the App Store</a>
@@ -808,144 +710,118 @@
     <main>
       <section id="how">
         <div class="wrap">
-          <div class="section-head">
-            <p class="kicker">How it works</p>
-            <h2>From request to result</h2>
-            <p>
-              Your automation asks. You decide. It reports back. Every step stays in one Inbox item,
-              so you always know whether a request was answered and how it turned out.
-            </p>
-          </div>
-          <ol class="steps">
-            <li class="card">
+          <h2>From request to result</h2>
+          <ol class="grid grid-4 steps">
+            <li class="card item">
+              <span class="badge">1</span>
               <h3>Your publisher asks</h3>
-              <p>An app, agent, script, or server posts an alert or a request to one of your private topics.</p>
+              <p>An app, agent, script, or server posts to your private topic.</p>
             </li>
-            <li class="card">
+            <li class="card item">
+              <span class="badge">2</span>
               <h3>You review</h3>
-              <p>See the message, who sent it, and when the request expires, on your iPhone or Mac.</p>
+              <p>See the message, sender, and expiry on iPhone or Mac.</p>
             </li>
-            <li class="card">
+            <li class="card item">
+              <span class="badge">3</span>
               <h3>You answer</h3>
-              <p>Choose from two to five options, confirm, or decline. Consequential answers ask you to confirm once more.</p>
+              <p>Pick an option, confirm, or decline.</p>
             </li>
-            <li class="card">
+            <li class="card item">
+              <span class="badge">4</span>
               <h3>It reports back</h3>
-              <p>Your publisher receives the decision, does its work, and reports Completed or Failed with a summary.</p>
+              <p>Completed or Failed, with a summary.</p>
             </li>
           </ol>
-        </div>
-      </section>
 
-      <section id="features" style="padding-top: 0">
-        <div class="wrap">
-          <div class="section-head">
-            <p class="kicker">Features</p>
-            <h2>Built for the alerts that need you</h2>
-            <p>Quiet when it should be, loud when it has to be, and always clear about what happened.</p>
-          </div>
-          <div class="features">
-            <article class="card">
-              <div class="icon tint-blue" aria-hidden="true">
+          <div class="grid grid-3 features">
+            <article class="card item">
+              <span class="badge tint-blue" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.5 5.1 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.5-6.9A2 2 0 0 0 16.7 4H7.3a2 2 0 0 0-1.8 1.1z"/></svg>
-              </div>
-              <h3>Every alert, one Inbox</h3>
-              <p>Alerts from all your topics land in one Inbox, kept in sync between your iPhone and Mac. Expired, cancelled, and replaced requests stay clearly marked.</p>
+              </span>
+              <h3>One Inbox</h3>
+              <p>Every topic in one place, synced across iPhone and Mac.</p>
             </article>
-            <article class="card">
-              <div class="icon tint-violet" aria-hidden="true">
+            <article class="card item">
+              <span class="badge tint-violet" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
-              </div>
+              </span>
               <h3>Seven attention levels</h3>
-              <p>From silent background updates and badges to Time Sensitive alerts with sound and repeating alarms. You decide how far each publisher can go.</p>
+              <p>From silent badges to Time Sensitive repeating alarms.</p>
             </article>
-            <article class="card">
-              <div class="icon tint-ember" aria-hidden="true">
+            <article class="card item">
+              <span class="badge tint-ember" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></svg>
-              </div>
+              </span>
               <h3>Mac First</h3>
-              <p>Let your Mac alert you first and reach your iPhone only if you haven't handled it. Choose one Primary Mac or all of them.</p>
+              <p>Your Mac alerts first; your iPhone only if you don't respond.</p>
             </article>
-            <article class="card">
-              <div class="icon tint-green" aria-hidden="true">
+            <article class="card item">
+              <span class="badge tint-green" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
-              </div>
+              </span>
               <h3>Phone call fallback</h3>
-              <p>Optionally get an automated call when an alert goes unacknowledged, on your verified US or Canadian number, with separate account and topic consent.</p>
+              <p>An optional call when an alert goes unacknowledged (US and Canada).</p>
             </article>
-            <article class="card">
-              <div class="icon tint-pink" aria-hidden="true">
+            <article class="card item">
+              <span class="badge tint-pink" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
-              </div>
-              <h3>Private topics, scoped publishers</h3>
-              <p>Each topic has its own private publishing address. Give each publisher only the topic and capabilities it needs, and revoke access at any time.</p>
+              </span>
+              <h3>Scoped publishers</h3>
+              <p>Each gets only the topic and capabilities it needs.</p>
             </article>
-            <article class="card">
-              <div class="icon tint-teal" aria-hidden="true">
+            <article class="card item">
+              <span class="badge tint-teal" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
-              </div>
-              <h3>Start without an account</h3>
-              <p>Start on iPhone right away, anonymously. Add a free account to recover it, use more devices, and answer from the native Mac app.</p>
+              </span>
+              <h3>No account to start</h3>
+              <p>Start on iPhone anonymously. A free account adds the Mac.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="shots" aria-labelledby="shots-title">
+      <section id="screens" class="shots">
         <div class="wrap">
-          <div class="section-head">
-            <p class="kicker">See it</p>
-            <h2 id="shots-title">Made for iPhone. Native on Mac.</h2>
-            <p>Read formatted messages, follow links, and answer with native controls on either device.</p>
-          </div>
-
-          <h3>On iPhone</h3>
+          <h2>On iPhone and Mac</h2>
           <div class="rail rail-phones">
             <figure>
               <div class="phone"><img src="/XAction/assets/screens/iphone-01-inbox.webp" alt="iPhone Inbox listing alerts from several publishers" width="660" height="1434" loading="lazy"></div>
-              <figcaption><strong>Every alert, one Inbox</strong><span>From your apps, scripts and agents</span></figcaption>
+              <figcaption>Every alert, one Inbox</figcaption>
             </figure>
             <figure>
               <div class="phone"><img src="/XAction/assets/screens/iphone-02-choice.webp" alt="iPhone alert asking the user to choose the next step" width="660" height="1434" loading="lazy"></div>
-              <figcaption><strong>Answer from the alert</strong><span>Pick an option and the sender gets it</span></figcaption>
+              <figcaption>Answer from the alert</figcaption>
             </figure>
             <figure>
               <div class="phone"><img src="/XAction/assets/screens/iphone-03-confirmation.webp" alt="iPhone confirmation prompt before a consequential action" width="660" height="1434" loading="lazy"></div>
-              <figcaption><strong>Confirm before it runs</strong><span>Consequential steps wait for your OK</span></figcaption>
+              <figcaption>Confirm before it runs</figcaption>
             </figure>
             <figure>
               <div class="phone"><img src="/XAction/assets/screens/iphone-04-completed.webp" alt="iPhone alert showing the response was received and the publisher reported Completed" width="660" height="1434" loading="lazy"></div>
-              <figcaption><strong>See every result</strong><span>Receipts and outcomes for each answer</span></figcaption>
+              <figcaption>See every result</figcaption>
             </figure>
             <figure>
               <div class="phone"><img src="/XAction/assets/screens/iphone-05-failed.webp" alt="iPhone alert showing the publisher reported Failed with a summary" width="660" height="1434" loading="lazy"></div>
-              <figcaption><strong>Know when it fails</strong><span>Clear reports, nothing hidden</span></figcaption>
+              <figcaption>Know when it fails</figcaption>
             </figure>
           </div>
-
-          <div class="shots-gap"></div>
-
-          <h3>On Mac</h3>
           <div class="rail rail-macs">
             <figure>
-              <div class="mac-window"><img src="/XAction/assets/screens/mac-01-release-approval.webp" alt="Mac Inbox with a release approval request" width="1600" height="949" loading="lazy"></div>
-              <figcaption><strong>Approve releases from your Mac</strong><span>Context, checks and a one-click answer</span></figcaption>
-            </figure>
-            <figure>
               <div class="mac-window"><img src="/XAction/assets/screens/mac-02-incident-choice.webp" alt="Mac Inbox with an incident asking the user to choose the next step" width="1600" height="949" loading="lazy"></div>
-              <figcaption><strong>Respond to incidents in place</strong><span>Choose the next step without switching tools</span></figcaption>
+              <figcaption>Respond to incidents in place</figcaption>
             </figure>
             <figure>
               <div class="mac-window"><img src="/XAction/assets/screens/mac-03-confirm-release.webp" alt="Mac confirmation prompt before rolling out a release" width="1600" height="949" loading="lazy"></div>
-              <figcaption><strong>Confirm before it runs</strong><span>A native prompt guards consequential actions</span></figcaption>
+              <figcaption>A native prompt guards each step</figcaption>
             </figure>
             <figure>
               <div class="mac-window"><img src="/XAction/assets/screens/mac-04-report-completed.webp" alt="Mac Inbox showing a request acknowledged across devices and reported Completed" width="1600" height="949" loading="lazy"></div>
-              <figcaption><strong>Follow every request to done</strong><span>Acknowledgements and receipts across your devices</span></figcaption>
+              <figcaption>Follow every request to done</figcaption>
             </figure>
             <figure>
               <div class="mac-window"><img src="/XAction/assets/screens/mac-05-backup-failed.webp" alt="Mac Inbox showing a backup request the publisher reported as Failed" width="1600" height="949" loading="lazy"></div>
-              <figcaption><strong>Understand what went wrong</strong><span>Failures arrive with the details you need</span></figcaption>
+              <figcaption>Understand what went wrong</figcaption>
             </figure>
           </div>
         </div>
@@ -953,14 +829,8 @@
 
       <section id="developers">
         <div class="wrap">
-          <div class="section-head">
-            <p class="kicker">Developers</p>
-            <h2>Send an alert with one request</h2>
-            <p>
-              Create a topic in the app and copy its private publishing URL. Anything that can make
-              an HTTPS request can send to it: a cron job, a CI pipeline, a home server, or an AI agent.
-            </p>
-          </div>
+          <h2>Send an alert with one request</h2>
+          <p class="sub">Create a topic in the app, copy its private URL, and post JSON to it from anything that speaks HTTPS.</p>
           <div class="dev-grid">
             <div>
               <div class="code">
@@ -974,23 +844,22 @@
   <span class="tok-url">https://dataol.net/x/your-private-topic</span></code></pre>
               </div>
               <ul class="dev-notes">
-                <li><strong>JSON in, notification out.</strong> <code>body</code> is required; <code>title</code> and <code>source</code> are optional and shown as sent.</li>
-                <li><strong>Choose the attention level</strong> with <code>attention.mode</code>, <code>attention.sound</code>, and <code>escalation</code>, within the limits each topic and publisher allows.</li>
-                <li><strong>Ask for a decision.</strong> Choices and confirmations use the publisher API with a scoped credential you create in the app. Your sender receives the decision, confirms receipt, does the work, and reports the outcome.</li>
-                <li><strong>Keep the URL secret.</strong> Anyone who has it can publish to that topic. If it leaks, delete the topic and create a new one.</li>
+                <li><code>body</code> is required; <code>attention</code> and <code>escalation</code> pick the level, within each publisher's limits.</li>
+                <li>Choices and confirmations use the publisher API with a scoped credential from the app.</li>
+                <li>Keep the URL secret: anyone who has it can publish to that topic.</li>
               </ul>
             </div>
-            <div class="card">
-              <table class="levels">
+            <div class="card levels">
+              <table>
                 <caption>Attention levels</caption>
                 <tbody>
-                  <tr><th scope="row"><span>1</span>Background</th><td>Updates the app silently</td></tr>
-                  <tr><th scope="row"><span>2</span>Badge</th><td>Sets the app icon badge</td></tr>
-                  <tr><th scope="row"><span>3</span>Quiet</th><td>Delivered quietly, no sound</td></tr>
-                  <tr><th scope="row"><span>4</span>Notify</th><td>A standard notification (the default)</td></tr>
-                  <tr><th scope="row"><span>5</span>Chime</th><td>A notification with sound</td></tr>
+                  <tr><th scope="row"><span>1</span>Background</th><td>Silent app update</td></tr>
+                  <tr><th scope="row"><span>2</span>Badge</th><td>App icon badge</td></tr>
+                  <tr><th scope="row"><span>3</span>Quiet</th><td>Delivered quietly</td></tr>
+                  <tr><th scope="row"><span>4</span>Notify</th><td>Notification (default)</td></tr>
+                  <tr><th scope="row"><span>5</span>Chime</th><td>Notification with sound</td></tr>
                   <tr><th scope="row"><span>6</span>Important</th><td>Time Sensitive, with sound</td></tr>
-                  <tr><th scope="row"><span>7</span>Urgent</th><td>Time Sensitive with a repeating alarm, plus an optional phone call</td></tr>
+                  <tr><th scope="row"><span>7</span>Urgent</th><td>Repeating alarm, optional call</td></tr>
                 </tbody>
               </table>
             </div>
@@ -1000,53 +869,34 @@
 
       <section id="faq" style="padding-top: 0">
         <div class="wrap">
-          <div class="section-head">
-            <p class="kicker">Questions</p>
-            <h2>Good to know</h2>
-          </div>
-          <div class="faq">
+          <h2>Questions</h2>
+          <div class="grid faq">
             <details class="card">
-              <summary>How much does XActions cost?</summary>
-              <p>XActions 1.0 is free, with no in-app purchases and no subscription.</p>
+              <summary>How much does it cost?</summary>
+              <p>XActions 1.0 is free, with no in-app purchases or subscription.</p>
             </details>
             <details class="card">
-              <summary>Do I need a Mac?</summary>
-              <p>No. Everything works on iPhone. The Mac app is optional and uses the same account, so your Inbox and topics follow you.</p>
-            </details>
-            <details class="card">
-              <summary>Do I need an account?</summary>
-              <p>Not on iPhone: you can start anonymously. A free account lets you recover your data, sign in on more devices, and use the Mac app, which always requires one.</p>
+              <summary>Do I need an account or a Mac?</summary>
+              <p>Neither. Start on iPhone anonymously. The Mac app is optional and needs a free account.</p>
             </details>
             <details class="card">
               <summary>Does XActions run my commands?</summary>
-              <p>No. XActions carries the request, your answer, and the result. Your own publisher receives the decision and performs the operation, so you stay in control of what actually runs.</p>
+              <p>No. It carries the request, your answer, and the result. Your own publisher does the work.</p>
             </details>
             <details class="card">
               <summary>Can I rely on it for emergencies?</summary>
-              <p>No. XActions is a best-effort automation service, not an emergency, medical, life-safety, alarm-monitoring, or 911 replacement. Delivery and sound also depend on your device settings.</p>
+              <p>No. XActions is a best-effort automation service, not an emergency, medical, life-safety, alarm-monitoring, or 911 replacement.</p>
             </details>
           </div>
         </div>
       </section>
-
-      <div class="closing">
-        <div class="wrap">
-          <div class="closing-card">
-            <img src="/XAction/assets/app-icon.webp" alt="" width="84" height="84" loading="lazy">
-            <div>
-              <h2>Get XActions</h2>
-              <p>Free for iPhone and Mac, with no subscription.</p>
-            </div>
-            <a class="button" href="https://apps.apple.com/app/xactions/id6792130828">View on the App Store</a>
-          </div>
-        </div>
-      </div>
     </main>
 
     <footer>
       <div class="wrap footer-inner">
         <p>© 2026 <a href="/">Xintech LLC</a></p>
         <nav class="footer-links" aria-label="Footer">
+          <a href="https://apps.apple.com/app/xactions/id6792130828">App Store</a>
           <a href="https://dataol.net/xactions/support">Support</a>
           <a href="https://dataol.net/xactions/privacy">Privacy Policy</a>
           <a href="https://dataol.net/xactions/terms">Terms</a>
