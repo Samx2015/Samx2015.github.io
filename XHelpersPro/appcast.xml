@@ -3,22 +3,25 @@
     <channel>
         <title>XHelpers Pro</title>
         <item>
-            <title>1.0.16</title>
-            <pubDate>Sun, 11 Oct 2026 23:42:11 -0700</pubDate>
+            <title>1.0.17</title>
+            <pubDate>Mon, 12 Oct 2026 16:54:01 -0700</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>34</sparkle:version>
-            <sparkle:shortVersionString>1.0.16</sparkle:shortVersionString>
+            <sparkle:version>35</sparkle:version>
+            <sparkle:shortVersionString>1.0.17</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-XHelpers Pro 1.0.16 (34)
+XHelpers Pro 1.0.17 (35)
 
-- Resolution window: a new table-and-inspector layout, plus a per-display refresh rate ceiling that unlocks larger HiDPI presets on fast external displays and is reapplied after login, wake and reconnects.
-- Reclaim Disk Space and App Cleanup: large results are paged; your choices, focus and drafts survive refreshes; Undo and Resume offers stay current; Trash deletions report partial results and blockers clearly.
-- Duplicates review adds Quick Look for images and keeps keeper choices consistent when scanning again.
-- Updated translations in all 25 supported languages.
+- Blocker Alerts: when a password, permission, Gatekeeper or other system dialog is left waiting while you are away, XHelpers Pro sends an XActions push. It stays off until you turn it on and add the push action, and it never answers a dialog for you.
+- Keep Mac Awake: a new "Also Hold Off the Screen Saver" option keeps the screen saver and its lock from starting while the display is kept awake.
+- Status menu: Record Clipboard History joins the Windows & Input column as a toggle, permission states show as a glyph instead of a truncated title, the two grid columns line up, and the Snap & Arrange submenu icons share one size and column.
+- Reclaim Disk Space, App Cleanup and Redundancy: plainer wording throughout, counted confirmations, Put Back from the results screen, Undo of just the latest move, a confirmation before stopping a running uninstall, VoiceOver names for row buttons, and a Full Disk Access offer when Review Plan hits its limits.
+- Capture Text warms up text recognition after launch so the first capture no longer stalls.
+- The image editor appears in Open With for every image type it can open.
+- Updated cleanup messages in all 25 supported languages.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.16-34/XHelpersPro-1.0.16-34-macOS.dmg" length="136483153" type="application/octet-stream" sparkle:edSignature="N06T5CGXbeOCdFk9sr4QSsPEymSLfg8FP/Pwad/X04cH7izVcjtWYu5mZb+9II29dwFUsyOwZ76HghXGVlWEDg=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.17-35/XHelpersPro-1.0.17-35-macOS.dmg" length="136994327" type="application/octet-stream" sparkle:edSignature="MA4hJ+SlWrp1tQhAJKivKBHQloQhf1dd5MjSxo/qrHezkOCWZ9yDsQPqznuWQ9w3iCGJeUI6nE7IJFZMb81zAg=="/>
         </item>
     </channel>
 </rss>
