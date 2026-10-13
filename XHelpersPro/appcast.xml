@@ -3,25 +3,27 @@
     <channel>
         <title>XHelpers Pro</title>
         <item>
-            <title>1.0.17</title>
-            <pubDate>Mon, 12 Oct 2026 16:54:01 -0700</pubDate>
+            <title>1.0.18</title>
+            <pubDate>Tue, 13 Oct 2026 16:11:09 -0700</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>35</sparkle:version>
-            <sparkle:shortVersionString>1.0.17</sparkle:shortVersionString>
+            <sparkle:version>36</sparkle:version>
+            <sparkle:shortVersionString>1.0.18</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-XHelpers Pro 1.0.17 (35)
+XHelpers Pro 1.0.18 (36)
 
-- Blocker Alerts: when a password, permission, Gatekeeper or other system dialog is left waiting while you are away, XHelpers Pro sends an XActions push. It stays off until you turn it on and add the push action, and it never answers a dialog for you.
-- Keep Mac Awake: a new "Also Hold Off the Screen Saver" option keeps the screen saver and its lock from starting while the display is kept awake.
-- Status menu: Record Clipboard History joins the Windows & Input column as a toggle, permission states show as a glyph instead of a truncated title, the two grid columns line up, and the Snap & Arrange submenu icons share one size and column.
-- Reclaim Disk Space, App Cleanup and Redundancy: plainer wording throughout, counted confirmations, Put Back from the results screen, Undo of just the latest move, a confirmation before stopping a running uninstall, VoiceOver names for row buttons, and a Full Disk Access offer when Review Plan hits its limits.
-- Capture Text warms up text recognition after launch so the first capture no longer stalls.
-- The image editor appears in Open With for every image type it can open.
-- Updated cleanup messages in all 25 supported languages.
+- Reclaim Disk Space: after you quit an app with the Quit button, its locked caches unlock on their own; lock cards and the Storage Map name the open apps; the Trash step offers Full Disk Access when it needs it; "Empty Only Reclaim's Items…" says exactly what it empties; Guide Me says when the Trash is already empty and offers Select Recommended only when there is something to select.
+- Redundancy & Clutter: remembers your folders, size floor and checks between launches; says before a scan which checks can move files and afterwards what could not be read; Select All Except Keepers with a counted confirmation; Overlapping Folders keeps one name and states its size floor; Level and Risk sort by severity.
+- Uninstall an App: a counted Find App Leftovers confirmation with its size; drafts can be removed from All Uninstall Sessions; All Apps offers Resume or Open and searches by name; Kept Items says why each item was kept; blocked uninstalls and failed Put Backs are explained instead of holding up Finish.
+- Keep Mac Awake: "Also Hold Off Screen Saver" now reliably keeps the screen saver and the lock screen from starting.
+- Blocker Alerts: a fixed-size settings window with colored status, idle times up to 1 hour, and a topic field that accepts a bare topic ID.
+- Status menu: every main-menu row shares one height, and the hover highlight no longer overlaps trailing text and glyphs.
+- Scroll Speed and Pointer Speed: two devices with the same name (for example two "USB Receiver"s) both stay listed, so the dialog no longer disables itself.
+- AI Usage: Claude sign-in keeps its credential under XHelpers Pro's own keychain access, so the repeated keychain approvals are gone and existing accounts move over on their next refresh; a token renewal that stalls before anything is sent now waits for the network instead of asking you to reconnect in the browser.
+- Updated translations in all 25 supported languages.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.17-35/XHelpersPro-1.0.17-35-macOS.dmg" length="136994327" type="application/octet-stream" sparkle:edSignature="MA4hJ+SlWrp1tQhAJKivKBHQloQhf1dd5MjSxo/qrHezkOCWZ9yDsQPqznuWQ9w3iCGJeUI6nE7IJFZMb81zAg=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.18-36/XHelpersPro-1.0.18-36-macOS.dmg" length="137704311" type="application/octet-stream" sparkle:edSignature="nRmK0MFEaqgQOuWIVcOi+yWCeWJM8J1V7n0c9rDjCUhATy730zUsguiJkr4C4WkZJnlMjtnSr1xJID5S1c9ICA=="/>
         </item>
     </channel>
 </rss>
