@@ -3,22 +3,20 @@
     <channel>
         <title>XHelpers Pro</title>
         <item>
-            <title>1.0.19</title>
-            <pubDate>Sun, 18 Oct 2026 19:01:22 -0700</pubDate>
+            <title>1.0.20</title>
+            <pubDate>Mon, 19 Oct 2026 00:48:23 -0700</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>37</sparkle:version>
-            <sparkle:shortVersionString>1.0.19</sparkle:shortVersionString>
+            <sparkle:version>38</sparkle:version>
+            <sparkle:shortVersionString>1.0.20</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-XHelpers Pro 1.0.19 (37)
+XHelpers Pro 1.0.20 (38)
 
-- AI Usage: a free ChatGPT plan shows a Free badge, its 30-day Codex window is labeled Monthly, and its billing reads "None (Free plan)" instead of Unavailable. When a Claude account's billing date has passed, the menu bar card offers "Check billing date", which reads the next one from claude.ai in Chrome.
-- Text Editor: the file browser takes multiple selections with Command- and Shift-click, and its context menu acts on the whole selection.
-- Text Editor, File Viewer, Markdown Preview and AI Settings windows now zoom or restore when you double-click anywhere on the title bar, not only along its top edge.
-- Updated translations in all 25 supported languages.
+- Xin account: "Account…" in the menu works again. Sign in with email and a password, an emailed sign-in code, Google, or Sign in with Apple. Signing in is optional; the local tools and your license keep working signed out.
+- AI Usage: while you are signed in, readings sync across your Macs.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.19-37/XHelpersPro-1.0.19-37-macOS.dmg" length="138561256" type="application/octet-stream" sparkle:edSignature="NLzY4tQUqxBqjrHnqegPktc5jXM/F9UWQ3uY5d3S0iB9aift0Y/YzIsDxG+SE448/d9XmDZfs3kVGp6Y3dkeDw=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.20-38/XHelpersPro-1.0.20-38-macOS.dmg" length="138558598" type="application/octet-stream" sparkle:edSignature="W1sJgV+yuoSRjxS8zLMr36m1+zBhPJv9PLFCZ6TOKBuYuDKwObWhP5nPWBuFtAmaTS/AkLHwrNTV5aNQJ2GKCQ=="/>
         </item>
     </channel>
 </rss>
