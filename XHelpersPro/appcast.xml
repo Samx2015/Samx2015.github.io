@@ -3,24 +3,21 @@
     <channel>
         <title>XHelpers Pro</title>
         <item>
-            <title>1.0.22</title>
-            <pubDate>Wed, 28 Oct 2026 02:21:28 -0700</pubDate>
+            <title>1.0.23</title>
+            <pubDate>Wed, 28 Oct 2026 03:04:52 -0700</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>40</sparkle:version>
-            <sparkle:shortVersionString>1.0.22</sparkle:shortVersionString>
+            <sparkle:version>41</sparkle:version>
+            <sparkle:shortVersionString>1.0.23</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-XHelpers Pro 1.0.22 (40)
+XHelpers Pro 1.0.23 (41)
 
-- Reclaim Disk Space: Guide Me works through size groups and finishes each cleanup on its own page; Show Everything's Storage Map groups findings by family, with Open Cleanup. Every cleanup shows a progress sheet and a one-line result, deletions made by an app's own tool keep the session open, and results that could not be confirmed are kept apart from failures. Uninstall an App now sits above Reclaim Disk Space in the status menu.
-- Screen Tools: ⌃⌘S shows or hides the Screen Shelf, which opens at least three rows tall. Screen Pins no longer take ⇧⌘T, which stays Reopen Closed Tab in Safari and Chrome; Reopen Closed Pin remains in the Screen Tools menu. The Text Editor's File Browser and the Markdown outline give ⌃⌘S up.
-- Utilities: shortcuts work on every keyboard layout in the File Viewer, Image Tools and the Screen Shelf; focus, selections and exact text survive Find, paste, rename, reload and line moves; rejected launches, partly accepted inputs, kept PDFs and time-outs are explained instead of lost.
-- Mac Health: memory, disk, fan, GPU and process readings that are unavailable or incomplete say so, CPU cluster readings retry, and battery capacity reads the same everywhere.
-- AI Usage: accounts look the same on every Mac, and hover cards and card choices follow you.
-- Fixed a crash when displays change. Updated translations in all 25 supported languages.
+- Screen Shelf: fixed a crash when opening the shelf for the first time after launch, which 1.0.22 caused once the shelf had been opened at its new, taller size. If opening the shelf ever stops the app again, the next launch resets the shelf's window size and position by itself and does not reopen it at launch; your images are never touched.
+- Reclaim Disk Space: every action that deletes something asks in the same way, with the count and the size it frees. In Guide Me, the button at the bottom always leads on (Continue, Next Undecided, Back to Groups), and a cleanup you set aside reads Later, one you keep reads Kept.
+- Updated translations in all 25 supported languages.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.22-40/XHelpersPro-1.0.22-40-macOS.dmg" length="145389730" type="application/octet-stream" sparkle:edSignature="kTV8jbXSXYQVpNEURS/1fVwmf2OwR29zCmrrRSI+5iyWZyja2WfBg2JNcTmq5x3MdeSnw3TiIfhhZuecjebfCA=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.23-41/XHelpersPro-1.0.23-41-macOS.dmg" length="145364145" type="application/octet-stream" sparkle:edSignature="gNQecGw9emk3xlfA91lZnHjEAEQHp2pQShdOcNCFdq7fRLbU/WdIgAU9xqtfGJIXMDcaTupbN4GaQ67VAdhVAw=="/>
         </item>
     </channel>
 </rss>
