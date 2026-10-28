@@ -3,24 +3,24 @@
     <channel>
         <title>XHelpers Pro</title>
         <item>
-            <title>1.0.21</title>
-            <pubDate>Fri, 23 Oct 2026 17:45:54 -0700</pubDate>
+            <title>1.0.22</title>
+            <pubDate>Wed, 28 Oct 2026 02:21:28 -0700</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>39</sparkle:version>
-            <sparkle:shortVersionString>1.0.21</sparkle:shortVersionString>
+            <sparkle:version>40</sparkle:version>
+            <sparkle:shortVersionString>1.0.22</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-XHelpers Pro 1.0.21 (39)
+XHelpers Pro 1.0.22 (40)
 
-- Screen Tools and Utilities: a long review pass across Screenshot, Capture Text, Read Aloud, Measure Screen Region, Pick Screen Color, the Screen Shelf and pins, Image Tools and Batch, PDF Quick Actions, Text Editor, Text Tools, the Large Text and Binary viewers, Extract Archive, Extract Audio, Install Apps and Manage Fonts. Every window lists its keys under Help ▸ Keys and Gestures (⌘?); drops from Photos, Mail and Safari work everywhere; choices are remembered; saving and naming never overwrite; more actions can be undone; interruptions, offline runs and full disks are explained instead of failing silently; windows open faster and on the display you are using.
-- Reclaim Disk Space: Show Everything and Guide Me now cover npm and SwiftPM caches, Ollama models, Tart VMs, Xcode simulator runtimes and devices, DeviceSupport, build output inside repositories, Git worktrees, unsaved screen recordings (with Move to Movies), old temporary folders, large hidden data in your home folder, Photos, Voice Memos and cloud guidance, and /Users/Shared. After a move, Show Everything offers "Empty N Moved Items…".
-- Mac Health: SMART drive readings, energy per app, CPU cluster load, GPU, network and battery alerts, and an incident history, with their privacy description.
-- Displays: the status menu offers Disconnect and Reconnect for external displays. Dim Displays moved to ⌃⌘B and Toggle Display Dimming to ⌃⌘D.
-- AI Usage: the menu bar shows another Mac's fresh reading, the limit-reset row stays on cards with three quota windows, and the status menu opens with its last header and recomputes afterwards.
-- Updated translations in all 25 supported languages.
+- Reclaim Disk Space: Guide Me works through size groups and finishes each cleanup on its own page; Show Everything's Storage Map groups findings by family, with Open Cleanup. Every cleanup shows a progress sheet and a one-line result, deletions made by an app's own tool keep the session open, and results that could not be confirmed are kept apart from failures. Uninstall an App now sits above Reclaim Disk Space in the status menu.
+- Screen Tools: ⌃⌘S shows or hides the Screen Shelf, which opens at least three rows tall. Screen Pins no longer take ⇧⌘T, which stays Reopen Closed Tab in Safari and Chrome; Reopen Closed Pin remains in the Screen Tools menu. The Text Editor's File Browser and the Markdown outline give ⌃⌘S up.
+- Utilities: shortcuts work on every keyboard layout in the File Viewer, Image Tools and the Screen Shelf; focus, selections and exact text survive Find, paste, rename, reload and line moves; rejected launches, partly accepted inputs, kept PDFs and time-outs are explained instead of lost.
+- Mac Health: memory, disk, fan, GPU and process readings that are unavailable or incomplete say so, CPU cluster readings retry, and battery capacity reads the same everywhere.
+- AI Usage: accounts look the same on every Mac, and hover cards and card choices follow you.
+- Fixed a crash when displays change. Updated translations in all 25 supported languages.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.21-39/XHelpersPro-1.0.21-39-macOS.dmg" length="144579826" type="application/octet-stream" sparkle:edSignature="6UFF40NYYm/utsLryKBYbGqoiq2cZsOyPMl8iMX3yhsPteybmxmH+1i9hZsHY4PZ9I+TH50KH89/JVlf6LsUAw=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.22-40/XHelpersPro-1.0.22-40-macOS.dmg" length="145389730" type="application/octet-stream" sparkle:edSignature="kTV8jbXSXYQVpNEURS/1fVwmf2OwR29zCmrrRSI+5iyWZyja2WfBg2JNcTmq5x3MdeSnw3TiIfhhZuecjebfCA=="/>
         </item>
     </channel>
 </rss>
