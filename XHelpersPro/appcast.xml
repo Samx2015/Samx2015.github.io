@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>XHelpers Pro</title>
+        <item>
+            <title>1.0.28</title>
+            <pubDate>Fri, 06 Nov 2026 06:56:00 -0800</pubDate>
+            <link>https://xintechllc.com/XHelpersPro/</link>
+            <sparkle:version>46</sparkle:version>
+            <sparkle:shortVersionString>1.0.28</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[
+XHelpers Pro 1.0.28 (46)
+
+- One tap of the Dictation key inserts a result that is still waiting for a check, as you dictated it. While it waits, the floating panel shows the text and "Insert now". A fix that arrives later comes as a replacement offer.
+- In the Review panel, one tap does what Return does, and two quick taps still dictate more. "Hold to talk" works the same way: a press under 0.3 s counts as a tap. You can turn this off with "Tap the Dictation key to insert" in Dictation settings › Apps.
+- When the text has line breaks, Return and the tap now choose "Insert with line breaks". Some apps, such as terminals, take line breaks only by paste; the panel says how to turn on Paste directly for that app.
+- The Decisions API's answer has its own line in both panels, and the Decisions API and GPT-6 Luna each have a longer time limit you can set. GPT-6 Luna starts beside the Decisions API, so a result waits only for whichever finishes last, and a check that fails no longer stops the review.
+- The misheard-word check can read up to 10 KB of context: the field's text, other text from the same window, and, if you turn it on, the window read from a screenshot on this Mac. Only the words are sent. The Privacy Policy is updated.
+- "Use OpenAI's Fast mode" gets GPT-6 Luna's answers sooner, at twice the price per token.
+- The floating panel's lines show what they mean with colour and a symbol, and the panel no longer shifts as lines come and go.
+- Updated translations in all 25 supported languages.
+
+]]></description>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.28-46/XHelpersPro-1.0.28-46-macOS.dmg" length="165762547" type="application/octet-stream" sparkle:edSignature="SKRQuxCrq5NvNy5aJ/IdQBN/Lebzh3pVKC8J8R/iFd/fAEYlhT2afe/7c9Mtsncj5E77QiQfvmBFzxFg5IJsCA=="/>
+        </item>
+    </channel>
+</rss>
