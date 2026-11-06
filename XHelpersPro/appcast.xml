@@ -3,26 +3,27 @@
     <channel>
         <title>XHelpers Pro</title>
         <item>
-            <title>1.0.28</title>
-            <pubDate>Fri, 06 Nov 2026 06:56:00 -0800</pubDate>
+            <title>1.0.29</title>
+            <pubDate>Fri, 06 Nov 2026 11:49:28 -0800</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>46</sparkle:version>
-            <sparkle:shortVersionString>1.0.28</sparkle:shortVersionString>
+            <sparkle:version>47</sparkle:version>
+            <sparkle:shortVersionString>1.0.29</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-XHelpers Pro 1.0.28 (46)
+XHelpers Pro 1.0.29 (47)
 
-- One tap of the Dictation key inserts a result that is still waiting for a check, as you dictated it. While it waits, the floating panel shows the text and "Insert now". A fix that arrives later comes as a replacement offer.
-- In the Review panel, one tap does what Return does, and two quick taps still dictate more. "Hold to talk" works the same way: a press under 0.3 s counts as a tap. You can turn this off with "Tap the Dictation key to insert" in Dictation settings › Apps.
-- When the text has line breaks, Return and the tap now choose "Insert with line breaks". Some apps, such as terminals, take line breaks only by paste; the panel says how to turn on Paste directly for that app.
-- The Decisions API's answer has its own line in both panels, and the Decisions API and GPT-6 Luna each have a longer time limit you can set. GPT-6 Luna starts beside the Decisions API, so a result waits only for whichever finishes last, and a check that fails no longer stops the review.
-- The misheard-word check can read up to 10 KB of context: the field's text, other text from the same window, and, if you turn it on, the window read from a screenshot on this Mac. Only the words are sent. The Privacy Policy is updated.
-- "Use OpenAI's Fast mode" gets GPT-6 Luna's answers sooner, at twice the price per token.
-- The floating panel's lines show what they mean with colour and a symbol, and the panel no longer shifts as lines come and go.
+- GPT-6 Luna reviews your text again after you edit it in the Review panel, and a newer edit replaces the earlier review. You can turn this off with "Review again after you edit".
+- Luna's request now fits a full 10 KB of context, sees more of the words Pro was unsure of and reviews longer dictations, and the panel says so if a request can't be sent. A new dictation no longer stops Luna's review of an earlier result.
+- Pro can remember unusual words from an app's window and what you correct in the Review panel, for each app on this Mac, and give them to Luna as evidence. Each option is off until you turn it on and agree, and you can see and remove everything under Apps.
+- Each app can have its own word list, added to your Dictionary for dictations in that app.
+- Line breaks now go in by default. Where Pro can only type, such as web apps and terminals, it can paste them once you agree. "Always insert as one line" opts an app out.
+- The misheard-word check also runs on the OpenAI speech engines, in English.
+- Luna's progress is easier to see on both panels.
+- Because what is sent has changed, you'll be asked to agree to the misheard-word check again. The Privacy Policy is updated.
 - Updated translations in all 25 supported languages.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.28-46/XHelpersPro-1.0.28-46-macOS.dmg" length="165762547" type="application/octet-stream" sparkle:edSignature="SKRQuxCrq5NvNy5aJ/IdQBN/Lebzh3pVKC8J8R/iFd/fAEYlhT2afe/7c9Mtsncj5E77QiQfvmBFzxFg5IJsCA=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.29-47/XHelpersPro-1.0.29-47-macOS.dmg" length="166417633" type="application/octet-stream" sparkle:edSignature="D5TnR/0U6xEUkfTywevUfFq4bC2i9hebDRM2OBHThJbUpODe+4hEkEEw7yAPaL8dfo0tUypQUvKPz4P4o0reDw=="/>
         </item>
     </channel>
 </rss>
