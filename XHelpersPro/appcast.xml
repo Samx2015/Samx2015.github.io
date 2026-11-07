@@ -3,25 +3,22 @@
     <channel>
         <title>XHelpers Pro</title>
         <item>
-            <title>1.0.30</title>
-            <pubDate>Sat, 07 Nov 2026 00:47:02 -0800</pubDate>
+            <title>1.0.31</title>
+            <pubDate>Sat, 07 Nov 2026 07:25:13 -0800</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>48</sparkle:version>
-            <sparkle:shortVersionString>1.0.30</sparkle:shortVersionString>
+            <sparkle:version>49</sparkle:version>
+            <sparkle:shortVersionString>1.0.31</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-XHelpers Pro 1.0.30 (48)
+XHelpers Pro 1.0.31 (49)
 
-- Dictation settings are reorganized into seven panes: General, Voice & Language, Writing & Review, Words & Formatting, AI Review, Apps, and Privacy & Usage. Search opens the section that holds a setting.
-- Your Dictionary and each app's word list now share one editor. Resetting an app's settings keeps its words and what Pro has learned.
-- Settings say what an option needs and why it is paused, and a saved choice that is paused can be turned off where it is shown. An amount that can't be saved stays beside its field.
-- One tap of the Dictation key now works in every Review panel that opens by itself.
-- When GPT-6 Luna takes words out, the text keeps one space, and "Use original" brings back exactly what you said. A respelling such as "GPT6" to "GPT-6" now goes in by default.
-- The Dictation settings window and its sidebar grow for longer translations, so pane titles stay on one line.
-- Updated translations in all 25 supported languages.
+- In the Review panel, "Before:" and "After:" now show the whole text, not two lines. The panel opens wider and grows taller for a long dictation, and only what the screen can't hold scrolls.
+- The floating recording panel shows the whole text before and after GPT-6 Luna's review too.
+- "After:" keeps its room only while GPT-6 Luna is checking, so "No change" leaves no blank space.
+- A correct fix from GPT-6 Luna that changes most of a short sentence now goes in by default instead of waiting as a suggestion. A change to a negation, a number, code or a Dictionary word still waits.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.30-48/XHelpersPro-1.0.30-48-macOS.dmg" length="166728178" type="application/octet-stream" sparkle:edSignature="RTRZL6vdEoZnQQm+c9o+FZRSu+vEu+jZlbrmMDAAk9wPlKqsV+Kj5Ct+k12tnqf0KhpK6RCgb6Ug4Q6jeY2VDw=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.31-49/XHelpersPro-1.0.31-49-macOS.dmg" length="166817146" type="application/octet-stream" sparkle:edSignature="LoEoyJH4E0qjHpnZU1tJadccjjZEOoX096KI5qcDwQ+n8Ahb6pIamG9cIbk/8wePQpRLJxw8GIt08jSQC/EhCg=="/>
         </item>
     </channel>
 </rss>
