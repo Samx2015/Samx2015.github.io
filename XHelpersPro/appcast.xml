@@ -3,27 +3,25 @@
     <channel>
         <title>XHelpers Pro</title>
         <item>
-            <title>1.0.29</title>
-            <pubDate>Fri, 06 Nov 2026 11:49:28 -0800</pubDate>
+            <title>1.0.30</title>
+            <pubDate>Sat, 07 Nov 2026 00:47:02 -0800</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>47</sparkle:version>
-            <sparkle:shortVersionString>1.0.29</sparkle:shortVersionString>
+            <sparkle:version>48</sparkle:version>
+            <sparkle:shortVersionString>1.0.30</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-XHelpers Pro 1.0.29 (47)
+XHelpers Pro 1.0.30 (48)
 
-- GPT-6 Luna reviews your text again after you edit it in the Review panel, and a newer edit replaces the earlier review. You can turn this off with "Review again after you edit".
-- Luna's request now fits a full 10 KB of context, sees more of the words Pro was unsure of and reviews longer dictations, and the panel says so if a request can't be sent. A new dictation no longer stops Luna's review of an earlier result.
-- Pro can remember unusual words from an app's window and what you correct in the Review panel, for each app on this Mac, and give them to Luna as evidence. Each option is off until you turn it on and agree, and you can see and remove everything under Apps.
-- Each app can have its own word list, added to your Dictionary for dictations in that app.
-- Line breaks now go in by default. Where Pro can only type, such as web apps and terminals, it can paste them once you agree. "Always insert as one line" opts an app out.
-- The misheard-word check also runs on the OpenAI speech engines, in English.
-- Luna's progress is easier to see on both panels.
-- Because what is sent has changed, you'll be asked to agree to the misheard-word check again. The Privacy Policy is updated.
+- Dictation settings are reorganized into seven panes: General, Voice & Language, Writing & Review, Words & Formatting, AI Review, Apps, and Privacy & Usage. Search opens the section that holds a setting.
+- Your Dictionary and each app's word list now share one editor. Resetting an app's settings keeps its words and what Pro has learned.
+- Settings say what an option needs and why it is paused, and a saved choice that is paused can be turned off where it is shown. An amount that can't be saved stays beside its field.
+- One tap of the Dictation key now works in every Review panel that opens by itself.
+- When GPT-6 Luna takes words out, the text keeps one space, and "Use original" brings back exactly what you said. A respelling such as "GPT6" to "GPT-6" now goes in by default.
+- The Dictation settings window and its sidebar grow for longer translations, so pane titles stay on one line.
 - Updated translations in all 25 supported languages.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.29-47/XHelpersPro-1.0.29-47-macOS.dmg" length="166417633" type="application/octet-stream" sparkle:edSignature="D5TnR/0U6xEUkfTywevUfFq4bC2i9hebDRM2OBHThJbUpODe+4hEkEEw7yAPaL8dfo0tUypQUvKPz4P4o0reDw=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.30-48/XHelpersPro-1.0.30-48-macOS.dmg" length="166728178" type="application/octet-stream" sparkle:edSignature="RTRZL6vdEoZnQQm+c9o+FZRSu+vEu+jZlbrmMDAAk9wPlKqsV+Kj5Ct+k12tnqf0KhpK6RCgb6Ug4Q6jeY2VDw=="/>
         </item>
     </channel>
 </rss>
