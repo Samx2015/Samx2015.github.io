@@ -3,22 +3,29 @@
     <channel>
         <title>XHelpers Pro</title>
         <item>
-            <title>1.0.31</title>
-            <pubDate>Sat, 07 Nov 2026 07:25:13 -0800</pubDate>
+            <title>1.0.32</title>
+            <pubDate>Mon, 09 Nov 2026 16:17:03 -0800</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>49</sparkle:version>
-            <sparkle:shortVersionString>1.0.31</sparkle:shortVersionString>
+            <sparkle:version>50</sparkle:version>
+            <sparkle:shortVersionString>1.0.32</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-XHelpers Pro 1.0.31 (49)
+XHelpers Pro 1.0.32 (50)
 
-- In the Review panel, "Before:" and "After:" now show the whole text, not two lines. The panel opens wider and grows taller for a long dictation, and only what the screen can't hold scrolls.
-- The floating recording panel shows the whole text before and after GPT-6 Luna's review too.
-- "After:" keeps its room only while GPT-6 Luna is checking, so "No change" leaves no blank space.
-- A correct fix from GPT-6 Luna that changes most of a short sentence now goes in by default instead of waiting as a suggestion. A change to a negation, a number, code or a Dictionary word still waits.
+- New: Polish Selection. Select text in any app and press ⌃⌘; to have GPT-6 Luna polish it. You see the result first, then replace the selection or copy it. It uses your OpenAI API profile or ChatGPT subscription, and asks before anything is sent.
+- New in Dictation: one GPT-6 Luna menu with four levels (Off, Fix words, Fix and tidy, Polish), a Polish button in the Review panel, and one screen for everything you have approved to leave this Mac.
+- New: Qwen3-ASR 1.7B, an on-device speech model for Dictation and Live Subtitles, on Apple silicon Macs with 16 GB of memory or more. It is a 4 GB download that you start yourself.
+- New: Gemma 4 31B, an optional on-device translator for Text Tools, Screen Tools' Translate and Live Subtitles, on Macs with 32 GB of memory or more. It is an 18 GB download and much slower than Apple's translator. In our Japanese-to-Chinese test it made far fewer errors.
+- The speech model menus now say what each model is good at and which ones this Mac can run, and a download checks for free disk space first.
+- While you dictate, Return stops and inserts what you have so far, and Escape cancels.
+- Showing live words inside the app you're dictating into is now an option, off by default. They show in the floating panel otherwise.
+- Long Dictation settings panes now have tabs.
+- Text typed into Chromium-based apps no longer comes out garbled.
+- Live Subtitles with Qwen3-ASR shows each finished phrase sooner.
+- Display menus can now disconnect the display that Blackout Built-in Display is mirroring to.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.31-49/XHelpersPro-1.0.31-49-macOS.dmg" length="166817146" type="application/octet-stream" sparkle:edSignature="LoEoyJH4E0qjHpnZU1tJadccjjZEOoX096KI5qcDwQ+n8Ahb6pIamG9cIbk/8wePQpRLJxw8GIt08jSQC/EhCg=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.32-50/XHelpersPro-1.0.32-50-macOS.dmg" length="176455199" type="application/octet-stream" sparkle:edSignature="Si0fjfY3E0I1dYEg4JdaCkgCvXeV79kPm42sJbqgC0H8fk97qiL8jTIn4RVTjxgx6V1vh/vhW3OC0Y+RcBWOBA=="/>
         </item>
     </channel>
 </rss>
