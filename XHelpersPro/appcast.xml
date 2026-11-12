@@ -3,29 +3,32 @@
     <channel>
         <title>XHelpers Pro</title>
         <item>
-            <title>1.0.32</title>
-            <pubDate>Mon, 09 Nov 2026 16:17:03 -0800</pubDate>
+            <title>1.0.33</title>
+            <pubDate>Wed, 11 Nov 2026 18:12:21 -0800</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>50</sparkle:version>
-            <sparkle:shortVersionString>1.0.32</sparkle:shortVersionString>
+            <sparkle:version>51</sparkle:version>
+            <sparkle:shortVersionString>1.0.33</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-XHelpers Pro 1.0.32 (50)
+XHelpers Pro 1.0.33 (51)
 
-- New: Polish Selection. Select text in any app and press ⌃⌘; to have GPT-6 Luna polish it. You see the result first, then replace the selection or copy it. It uses your OpenAI API profile or ChatGPT subscription, and asks before anything is sent.
-- New in Dictation: one GPT-6 Luna menu with four levels (Off, Fix words, Fix and tidy, Polish), a Polish button in the Review panel, and one screen for everything you have approved to leave this Mac.
-- New: Qwen3-ASR 1.7B, an on-device speech model for Dictation and Live Subtitles, on Apple silicon Macs with 16 GB of memory or more. It is a 4 GB download that you start yourself.
-- New: Gemma 4 31B, an optional on-device translator for Text Tools, Screen Tools' Translate and Live Subtitles, on Macs with 32 GB of memory or more. It is an 18 GB download and much slower than Apple's translator. In our Japanese-to-Chinese test it made far fewer errors.
-- The speech model menus now say what each model is good at and which ones this Mac can run, and a download checks for free disk space first.
-- While you dictate, Return stops and inserts what you have so far, and Escape cancels.
-- Showing live words inside the app you're dictating into is now an option, off by default. They show in the floating panel otherwise.
-- Long Dictation settings panes now have tabs.
-- Text typed into Chromium-based apps no longer comes out garbled.
-- Live Subtitles with Qwen3-ASR shows each finished phrase sooner.
-- Display menus can now disconnect the display that Blackout Built-in Display is mirroring to.
+- New: Disk Speed (Utilities › Disk Speed…). Test how fast a drive writes and reads, including flash drives: large and small transfers in MB/s with a graph, hints, and your last results. It writes one temporary file and removes it afterwards.
+- New: Screen Shelf keeps each new screenshot you take while "Add new screenshots to Screen Shelf" is on (the default), including one you drag from its thumbnail into another app. Saved screenshots, and your Markup edits to them, are added when XHelpers Pro can read the folder they are saved in (Desktop, Documents and Downloads need Full Disk Access).
+- Dictation: the floating panel's words stay in one box, in one place, from "Listening…" until the result is in, and live words appear whole. "Insert now" is a quiet row under them.
+- Dictation: Before and After are larger and easier to read, the same on both panels.
+- Dictation: "Insert at the current cursor" now goes to the window that has the keyboard, such as a floating window over another app, not to the app in front.
+- Dictation: GPT-6 Luna's effort is Medium unless you choose another.
+- Dictation: the typing-in-place input source has its own "XH" icon instead of a microphone that looked like macOS Dictation; Dictation settings offer Update… to install it.
+- Dictation: the floating panel shows your words larger, on a clearer background, and in full; it scrolls only when the screen runs out of room. It is a little wider and keeps more room free beside the cursor.
+- Dictation: the Review panel is tidier and shorter: a one-line status, a calmer Decisions API line, and GPT-6 Luna's card shows clearly when it is checking and when it has finished, with a countdown while it waits for you to stop typing.
+- Dictation: with "Insert at the current cursor" on, the Insert button names the app the text will go to.
+- Dictation: a dictation is never sent to XHelpers Pro itself unless one of its text fields has the cursor.
+- Dictation: Pro's own windows and alerts now open above the Dictation panels.
+- Dictation: the Review panel shows GPT-6 Luna's review of a result that was already inserted.
+- Dictation: the floating panel's language and speech model menus open under their buttons, and a model that still needs a download says so.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.32-50/XHelpersPro-1.0.32-50-macOS.dmg" length="176455199" type="application/octet-stream" sparkle:edSignature="Si0fjfY3E0I1dYEg4JdaCkgCvXeV79kPm42sJbqgC0H8fk97qiL8jTIn4RVTjxgx6V1vh/vhW3OC0Y+RcBWOBA=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.33/XHelpersPro-1.0.33-51-macOS.dmg" length="177819640" type="application/octet-stream" sparkle:edSignature="ERKJEHq8pbry3f3sCXB21C77BolgM2djmyya48gJld2y6rFEzrFGDyDxtZe6PBPuimRmaQ6oZH7LxNcUpluaDQ=="/>
         </item>
     </channel>
 </rss>
