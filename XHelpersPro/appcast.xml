@@ -3,32 +3,30 @@
     <channel>
         <title>XHelpers Pro</title>
         <item>
-            <title>1.0.33</title>
-            <pubDate>Wed, 11 Nov 2026 18:12:21 -0800</pubDate>
+            <title>1.0.34</title>
+            <pubDate>Mon, 16 Nov 2026 06:18:48 -0800</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>51</sparkle:version>
-            <sparkle:shortVersionString>1.0.33</sparkle:shortVersionString>
+            <sparkle:version>52</sparkle:version>
+            <sparkle:shortVersionString>1.0.34</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-XHelpers Pro 1.0.33 (51)
+XHelpers Pro 1.0.34 (52)
 
-- New: Disk Speed (Utilities › Disk Speed…). Test how fast a drive writes and reads, including flash drives: large and small transfers in MB/s with a graph, hints, and your last results. It writes one temporary file and removes it afterwards.
-- New: Screen Shelf keeps each new screenshot you take while "Add new screenshots to Screen Shelf" is on (the default), including one you drag from its thumbnail into another app. Saved screenshots, and your Markup edits to them, are added when XHelpers Pro can read the folder they are saved in (Desktop, Documents and Downloads need Full Disk Access).
-- Dictation: the floating panel's words stay in one box, in one place, from "Listening…" until the result is in, and live words appear whole. "Insert now" is a quiet row under them.
-- Dictation: Before and After are larger and easier to read, the same on both panels.
-- Dictation: "Insert at the current cursor" now goes to the window that has the keyboard, such as a floating window over another app, not to the app in front.
-- Dictation: GPT-6 Luna's effort is Medium unless you choose another.
-- Dictation: the typing-in-place input source has its own "XH" icon instead of a microphone that looked like macOS Dictation; Dictation settings offer Update… to install it.
-- Dictation: the floating panel shows your words larger, on a clearer background, and in full; it scrolls only when the screen runs out of room. It is a little wider and keeps more room free beside the cursor.
-- Dictation: the Review panel is tidier and shorter: a one-line status, a calmer Decisions API line, and GPT-6 Luna's card shows clearly when it is checking and when it has finished, with a countdown while it waits for you to stop typing.
-- Dictation: with "Insert at the current cursor" on, the Insert button names the app the text will go to.
-- Dictation: a dictation is never sent to XHelpers Pro itself unless one of its text fields has the cursor.
-- Dictation: Pro's own windows and alerts now open above the Dictation panels.
-- Dictation: the Review panel shows GPT-6 Luna's review of a result that was already inserted.
-- Dictation: the floating panel's language and speech model menus open under their buttons, and a model that still needs a download says so.
+- New: the Shelf, formerly Screen Shelf, holds files, images and pasted text as well as screenshots. Drag or paste them in, or use "Add to Shelf" in Image Tools and "Add Frame to Shelf" in Quick Video.
+- New: Shelf Sync shows your Shelf on your other Macs, through Xintech's cloud storage, with your Xin account and a linked license. You choose what syncs: everything, nothing or each item. Synced items are kept for a limited time, and screenshots added automatically sync only if you turn that on.
+- Shelf: opens at the size of its items, zooms on a title-bar double-click, takes part in window tiling, and comes forward without bringing Pro's other windows with it. Screen Tools Settings opens above a floating Shelf.
+- Screen Tools: a capture no longer hides XHelpers Pro's own windows, so you can capture the Shelf, pins, Image Tools or the player.
+- Text Editor, Markdown Preview, File Viewer, Image Tools and PDF Tools have a File menu in the menu bar, with Copy File Name, Copy File Path and Show in Finder.
+- Dictation: GPT-6 Luna's After text is what goes in; none of its changes is held back as a suggestion.
+- Dictation: GPT-6 Luna's Polish stays within what you said and no longer swaps in text from the window you are dictating into.
+- Dictation: "Insert at the current cursor" inserts into the field that has the keyboard, in Chromium-based apps too.
+- Dictation: when secure input stops a recording, the floating panel says so clearly.
+- Dictation: GPT-6 Luna's card keeps its place when you dictate more words into the Review panel.
+- AI Usage: the menu bar shows first the accounts your Codex and Claude Code command-line tools use by default.
+- Auto Blackout: a built-in display you dimmed to zero yourself is no longer brightened again a minute later.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.33/XHelpersPro-1.0.33-51-macOS.dmg" length="177819640" type="application/octet-stream" sparkle:edSignature="ERKJEHq8pbry3f3sCXB21C77BolgM2djmyya48gJld2y6rFEzrFGDyDxtZe6PBPuimRmaQ6oZH7LxNcUpluaDQ=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.34/XHelpersPro-1.0.34-52-macOS.dmg" length="178926685" type="application/octet-stream" sparkle:edSignature="SakHFwNqudUVzlZzkZ7thq13GMPAhornCnziaxALkg1znNZmdHoz9P6+5auvhLXQT7HlOMdgZK83OGuQfkBMAw=="/>
         </item>
     </channel>
 </rss>
