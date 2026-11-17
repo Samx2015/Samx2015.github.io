@@ -3,30 +3,24 @@
     <channel>
         <title>XHelpers Pro</title>
         <item>
-            <title>1.0.34</title>
-            <pubDate>Mon, 16 Nov 2026 06:18:48 -0800</pubDate>
+            <title>1.0.35</title>
+            <pubDate>Tue, 17 Nov 2026 10:41:06 -0800</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>52</sparkle:version>
-            <sparkle:shortVersionString>1.0.34</sparkle:shortVersionString>
+            <sparkle:version>53</sparkle:version>
+            <sparkle:shortVersionString>1.0.35</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-XHelpers Pro 1.0.34 (52)
+XHelpers Pro 1.0.35 (53)
 
-- New: the Shelf, formerly Screen Shelf, holds files, images and pasted text as well as screenshots. Drag or paste them in, or use "Add to Shelf" in Image Tools and "Add Frame to Shelf" in Quick Video.
-- New: Shelf Sync shows your Shelf on your other Macs, through Xintech's cloud storage, with your Xin account and a linked license. You choose what syncs: everything, nothing or each item. Synced items are kept for a limited time, and screenshots added automatically sync only if you turn that on.
-- Shelf: opens at the size of its items, zooms on a title-bar double-click, takes part in window tiling, and comes forward without bringing Pro's other windows with it. Screen Tools Settings opens above a floating Shelf.
-- Screen Tools: a capture no longer hides XHelpers Pro's own windows, so you can capture the Shelf, pins, Image Tools or the player.
-- Text Editor, Markdown Preview, File Viewer, Image Tools and PDF Tools have a File menu in the menu bar, with Copy File Name, Copy File Path and Show in Finder.
-- Dictation: GPT-6 Luna's After text is what goes in; none of its changes is held back as a suggestion.
-- Dictation: GPT-6 Luna's Polish stays within what you said and no longer swaps in text from the window you are dictating into.
-- Dictation: "Insert at the current cursor" inserts into the field that has the keyboard, in Chromium-based apps too.
-- Dictation: when secure input stops a recording, the floating panel says so clearly.
-- Dictation: GPT-6 Luna's card keeps its place when you dictate more words into the Review panel.
-- AI Usage: the menu bar shows first the accounts your Codex and Claude Code command-line tools use by default.
-- Auto Blackout: a built-in display you dimmed to zero yourself is no longer brightened again a minute later.
+- New: Look Up's word library remembers the words you look up with ⌃⌘D once a definition has stayed open a second, and the next time you look one up, a line beside it says when you first learned it, how often you have seen it and what it means. It is off until you turn it on in Look Up's settings, and it is kept in your Xin account, so your other Macs share it.
+- New: the Word Library window lists your words with search and sorting, and lets you remove words, import a word list (CSV or tab-separated files, Anki and Quizlet exports, Youdao's wordbook, or one word per line) with a preview of its columns, undo an import, reclaim space and delete the library.
+- Look Up's diagnostic log no longer records the word you looked up, the text around it or captured images.
+- Dictation: words go into Chrome's installed web apps, such as YouTube, as they do in Chrome.
+- The ⌃⌘Z dimming toggle keeps a monitor's own brightness and contrast to restore until the monitor confirms them, so it no longer leaves an external display black after waking.
+- The Word Library and Redundancy & Clutter's image preview open centred on your display instead of at its bottom-left corner.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.34/XHelpersPro-1.0.34-52-macOS.dmg" length="178926685" type="application/octet-stream" sparkle:edSignature="SakHFwNqudUVzlZzkZ7thq13GMPAhornCnziaxALkg1znNZmdHoz9P6+5auvhLXQT7HlOMdgZK83OGuQfkBMAw=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.35/XHelpersPro-1.0.35-53-macOS.dmg" length="180041830" type="application/octet-stream" sparkle:edSignature="UkBwKbLighDkD3R63LJpGHjFeI4bgfBPx4pWXXsawylwEIH+VNvKeXEnan6auxNNKQFVN7W+cnNbEizdsT3pCQ=="/>
         </item>
     </channel>
 </rss>
