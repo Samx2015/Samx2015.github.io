@@ -3,24 +3,29 @@
     <channel>
         <title>XHelpers Pro</title>
         <item>
-            <title>1.0.35</title>
-            <pubDate>Tue, 17 Nov 2026 10:41:06 -0800</pubDate>
+            <title>1.0.36</title>
+            <pubDate>Sat, 21 Nov 2026 11:10:28 -0800</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>53</sparkle:version>
-            <sparkle:shortVersionString>1.0.35</sparkle:shortVersionString>
+            <sparkle:version>54</sparkle:version>
+            <sparkle:shortVersionString>1.0.36</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-XHelpers Pro 1.0.35 (53)
+XHelpers Pro 1.0.36 (54)
 
-- New: Look Up's word library remembers the words you look up with ⌃⌘D once a definition has stayed open a second, and the next time you look one up, a line beside it says when you first learned it, how often you have seen it and what it means. It is off until you turn it on in Look Up's settings, and it is kept in your Xin account, so your other Macs share it.
-- New: the Word Library window lists your words with search and sorting, and lets you remove words, import a word list (CSV or tab-separated files, Anki and Quizlet exports, Youdao's wordbook, or one word per line) with a preview of its columns, undo an import, reclaim space and delete the library.
-- Look Up's diagnostic log no longer records the word you looked up, the text around it or captured images.
-- Dictation: words go into Chrome's installed web apps, such as YouTube, as they do in Chrome.
-- The ⌃⌘Z dimming toggle keeps a monitor's own brightness and contrast to restore until the monitor confirms them, so it no longer leaves an external display black after waking.
-- The Word Library and Redundancy & Clutter's image preview open centred on your display instead of at its bottom-left corner.
+- New: Capture & Explain (⇧⌘2) explains the part of the screen you select and answers your questions about it, on this Mac with Apple Intelligence, or with GPT-6 Luna through your OpenAI API profile once you approve that. For a minute after Capture Text, its message offers More…, and the Screen Tools menu has Explain Last Text Capture….
+- New: Look Up finds phrases, such as "give up" where you read "gave up", and the words you select, and can explain a word or phrase with GPT-6 Luna through your OpenAI API profile once you turn that on in Look Up's settings.
+- New: Speaking Coach (Utilities › Speaking Coach…) for practising reading English aloud. It measures your pace, pauses and the words it heard on this Mac, can give feedback on individual sounds, and keeps no recording unless you save one.
+- New: World Calendar (Utilities › World Calendar, ⌃⌘C), the calendar XTimers shows: week, month and year views, public holidays for your region, the Chinese lunisolar calendar, global observances, historical events, and, if you turn it on, events from your own calendars.
+- New: AI Settings lists what each feature may send to which AI service, the approvals you gave, and one monthly spending cap, $25 to start, for Look Up's and Capture & Explain's requests.
+- Look Up's word library can also count a phrase found through its base form, and a word only GPT-6 Luna explained, once you accept its updated approval.
+- Reclaim Disk Space opens on Quick Savings: what you can remove, in three lines by what removing it costs you. It also finds developer storage (build output of any build system, Xcode's data, Homebrew's and compilers' caches, preference files no app owns) and guides you to Docker Desktop's, OrbStack's, Colima's and UTM's own clean-up. Each item says whether something may still be using it, and checks after the first are faster.
+- AI Usage: click a saved account's card to choose the account Codex or Claude Code uses; accounts saved on your other Macs are listed with how to connect them here; Check billing date opens the account's billing page.
+- Dictation: an app that hands over its context can help GPT-6 Luna, once you approve it for that app; Dictation's settings are searchable; the floating panel shows your last words.
+- ⌃⌘Z blacks displays out at their lowest hardware brightness, with no overlay.
+- Closing the Shelf returns focus to the app you opened it from.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.35/XHelpersPro-1.0.35-53-macOS.dmg" length="180041830" type="application/octet-stream" sparkle:edSignature="UkBwKbLighDkD3R63LJpGHjFeI4bgfBPx4pWXXsawylwEIH+VNvKeXEnan6auxNNKQFVN7W+cnNbEizdsT3pCQ=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.36/XHelpersPro-1.0.36-54-macOS.dmg" length="194983783" type="application/octet-stream" sparkle:edSignature="6/KouFltNZjOvX317wOoAoJWqzO4FWlyD0V6NqFhL3vQSJ9d2uYbwjSZ/Ozat0P8luCo2IH31Vk1B1ncdub9DQ=="/>
         </item>
     </channel>
 </rss>
