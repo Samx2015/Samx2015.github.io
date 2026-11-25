@@ -3,23 +3,20 @@
     <channel>
         <title>XHelpers Pro</title>
         <item>
-            <title>1.0.38</title>
-            <pubDate>Tue, 24 Nov 2026 23:55:49 -0800</pubDate>
+            <title>1.0.39</title>
+            <pubDate>Wed, 25 Nov 2026 02:55:54 -0800</pubDate>
             <link>https://xintechllc.com/XHelpersPro/</link>
-            <sparkle:version>56</sparkle:version>
-            <sparkle:shortVersionString>1.0.38</sparkle:shortVersionString>
+            <sparkle:version>57</sparkle:version>
+            <sparkle:shortVersionString>1.0.39</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[
-XHelpers Pro 1.0.38 (56)
+XHelpers Pro 1.0.39 (57)
 
-- Alerts and dialogs that appear when no XHelpers Pro window is open now come forward on their own, without bringing Pro's other windows with them, and afterwards the keyboard goes back to the app you were using. A dialog you open while another of Pro's dialogs is up waits for it.
-- Safe: its password, file chooser and save dialogs come forward on their own, and its progress window behaves like an ordinary window. If you have moved on to something else when a Safe finishes, Finder is no longer brought forward; a small notice says it is done, and clicking it shows the result.
-- The guide for adding XHelpers Pro to a Privacy & Security list is now an ordinary window that stays open while macOS asks to quit and reopen the app.
-- Look Up: clicking the question field, or Approve, no longer closes the definition, and Return goes to the question field. When there is no room around the word for the explanation, it appears beside the definition.
-- Dictation's Review panel opens at the right height after it was collapsed and shown again.
+- Look Up: clicking the question field or Approve, or scrolling GPT-6 Luna's card, no longer closes the definition. Clicking or scrolling anywhere else still closes Look Up, as do Esc and ⌃⌘D.
+- Quick Audio: the file chooser for Play Audio and Add to Queue comes forward on its own when no player window is open.
 
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.38-56/XHelpersPro-1.0.38-56-macOS.dmg" length="197868431" type="application/octet-stream" sparkle:edSignature="7LwkTIj80/c8NIONNs2KepIDouTSkzJwtYJ9THwrrRkySHlhDeUmIktxF8fU3krrA41vyq9ZYhaVP7+9YuR2DQ=="/>
+            <enclosure url="https://github.com/Samx2015/Samx2015.github.io/releases/download/v1.0.39/XHelpersPro-1.0.39-57-macOS.dmg" length="197863176" type="application/octet-stream" sparkle:edSignature="CWYqFp+Sm6ZGhI0aQYPNltQwJoRyPToZU5f5pJKofcIBNW9ZAJakKsTiM3MLY81FRsyzyyaoCI8FFNfrixnrCA=="/>
         </item>
     </channel>
 </rss>
